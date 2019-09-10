@@ -3,7 +3,7 @@
 	<info>
 		<name>Gunslinger</name>
 		<update version="0.0.3">
-			<file name="gunslinger.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/homebrew/reddit/arcane-artillery/gunslinger.xml" />
+			<file name="gunslinger.xml" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/homebrew/reddit/arcane-artillery/gunslinger.xml" />
 		</update>
 	</info>
 
