@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/reddit/reddit-unearthed-arcana/source.xml" />
+		</update>
+	</info>
+	<element name="Reddit: Unearthed Arcana" type="Source" source="Core" id="ID_RDDT_SOURCE_REDDIT_UNEARTHED_ARCANA">
+		<description>
+			<![CDATA[<p>Homebrew content posted on the r/UnearthedArcana Subreddit.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">RDDT</set>
+			<set name="url">https://www.reddit.com/r/UnearthedArcana/</set>
+			<set name="author" abbreviation="RDDT">Unearthed Arcana Subreddit</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

@@ -7,6 +7,9 @@
 		</update>
 	</info>
 	<files>
-
+		<file name="source.xml" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/reddit/reddit-dnd/source.xml" />
+	
+		<!-- backgrounds -->
+		<file name="background-bodyguard.xml" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/reddit/reddit-dnd/backgrounds/background-bodyguard.xml" />
 	</files>
 </index>

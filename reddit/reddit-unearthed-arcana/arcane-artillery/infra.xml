@@ -3,7 +3,7 @@
 	<info>
 		<name>Infrastructure</name>
 		<update version="0.0.1">
-			<file name="infra.xml" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/homebrew/reddit/arcane-artillery/infra.xml" />
+			<file name="infra.xml" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery/infra.xml" />
 		</update>
 	</info>
 
