@@ -22,11 +22,7 @@
 				You may draw or holster two sidearms instead of one, you may ignore the loading property and not need a free hand to reload two wielded ranged weapons, and you may wield two one-handed ranged weapons even if they do not have the light property.
 			</description>
 		</sheet>
-		<rules>
-			
-		</rules>
-	</element>
-	
+	</element>	
 	<element name="Archaic Gunmaster" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_ARCHAIC_GUNMASTER" >
 		<requirements />
 		<prerequisite>Primitive and Misfire Rules implemented</prerequisite>
@@ -43,11 +39,7 @@
 				You may make more than two attacks with a primitive firearms without the firearm's misfire count increasing, these weapons only misfire if you roll a 1, and you may ignore the loading property for non-heavy firearms.
 			</description>
 		</sheet>
-		<rules>
-			
-		</rules>
-	</element>
-	
+	</element>	
 	<element name="Gunmaster" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_GUNMASTER" >
 		<requirements />
 		<description>
@@ -63,11 +55,7 @@
 				You may ignore the loading property for non-heavy firearms, if you are disarmed you may use your reaction to draw and fire a light sidearm, and all the normal ranges for firearms you wield is increased by 10.
 			</description>
 		</sheet>
-		<rules>
-			
-		</rules>
-	</element>
-	
+	</element>	
 	<element name="Bayoneteer" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_BAYONETEER" >
 		<requirements>ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SIDEARMS|ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_LONGARMS</requirements>
 		<prerequisite>Proficiency in firearms</prerequisite>
@@ -88,8 +76,7 @@
 		<rules>
 			<!-- todo: improvised weapon proficiency -->
 		</rules>
-	</element>
-	
+	</element>	
 	<element name="Buccaneer" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_BUCCANEER" >
 		<requirements />
 		<description>
@@ -108,8 +95,7 @@
 		<rules>
 			<!-- todo: implement +1 AC when wielding correct weapons -->
 		</rules>
-	</element>
-	
+	</element>	
 	<element name="Close Quarters Shooter" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_CLOSE_QUARTERS_SHOOTER" >
 		<requirements />
 		<description>
@@ -125,11 +111,7 @@
 				You do not have disadvantage when making ranged attacks at 5 feet, you never suffer disadvantage when making ranged attacks within 30 feet, if you would have disadvantage, you are instead prevented from having advantage. You may also make opportunity attacks with ranged weapons at a range of 15 feet.
 			</description>
 		</sheet>
-		<rules>
-			
-		</rules>
-	</element>
-	
+	</element>	
 	<element name="Gunsmith Initiate" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_GUNSMITH_INITATE" >
 		<requirements>[int:13],ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS</requirements>
 		<prerequisite>Intelligence 13, proficiency in smith's tools or tinker's tools</prerequisite>
@@ -141,11 +123,7 @@
 				Your proficiency bonus is doubled in tinker's tools and/or smith's tools, and you can now craft primitive firearms. You are assumed to have gotten the materials for the firearm you wish to craft before you took this feat. You craft these guns at a rate of 5gp per hour.
 			</description>
 		</sheet>
-		<rules>
-			
-		</rules>
-	</element>
-	
+	</element>	
 	<element name="Gunsmith Adept" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_GUNSMITH_ADEPT" >
 		<requirements>ID_RDDT_AA_FEAT_GUNSMITH_INITATE,[level:12]</requirements>
 		<prerequisite>Gunsmith Initiage, player level 12</prerequisite>
@@ -160,11 +138,7 @@
 			
 			</description>
 		</sheet>
-		<rules>
-			
-		</rules>
-	</element>
-	
+	</element>	
 	<element name="Mounted Shooting" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_MOUNTED_SHOOTING" >
 		<requirements />
 		<description>
@@ -183,8 +157,7 @@
 		<rules>
 		
 		</rules>
-	</element>
-	
+	</element>	
 	<element name="Pistol Whipper" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_PISTOL_WHIPPER" >
 		<requirements />
 		<description>
@@ -198,8 +171,7 @@
 		<rules>
 			<select type="Ability Score Improvement" name="Pistol Whipper" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
 		</rules>
-	</element>
-	
+	</element>	
 	<element name="Rifle Master" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_RIFLE_MASTER" >
 		<requirements />
 		<description>
@@ -219,8 +191,7 @@
 		<rules>
 		
 		</rules>
-	</element>
-	
+	</element>	
 	<element name="Scattershot Master" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_SCATTERSHOT_MASTER" >
 		<requirements />
 		<description>
@@ -239,8 +210,7 @@
 		<rules>
 		
 		</rules>
-	</element>
-	
+	</element>	
 	<element name="Sidearm Master" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_SIDEARM_MASTER" >
 		<requirements />
 		<description>
@@ -259,8 +229,7 @@
 		<rules>
 		
 		</rules>
-	</element>
-	
+	</element>	
 	<element name="Six-Gun Ace" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_SIX-GUN_ACE" >
 		<requirements />
 		<description>
@@ -279,8 +248,7 @@
 		<rules>
 		
 		</rules>
-	</element>
-	
+	</element>	
 	<element name="Superior Marksman" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_SUPERIOR_MARKSMAN" >
 		<requirements />
 		<description>
@@ -296,11 +264,7 @@
 				When wielding ranged weapons with the bulky property you gain +1 to attack rolls, you may use a bonus action to make an attack without advantage or disadvantage and on a hit deal double damage, and if you make an attack with advantage you may reroll one of the attack rolls once.
 			</description>
 		</sheet>
-		<rules>
-			
-		</rules>
-	</element>
-	
+	</element>	
 	<element name="Suppressive Fire" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_SUPPRESSIVE_FIRE" >
 		<requirements />
 		<description>
@@ -316,11 +280,7 @@
 				When wielding a firearm with the automatic or burst fire property and at least half of the gun's reload count loaded you may use your action to lay down suppressive fire in a 10 foot radius within your weapon's normal range. This consumes half your reload count in ammo and prevents you from taking bonus actions. Until the start of your next turn creatures in the area have disadvantage on attack rolls and Dex saving throws, they can only move at half speed and cannot dash, and if they take an action or move into the area you may make an attack against them. You can make this attack an equal number of times to half your proficiency bonus. You cannot make this attack against the same creature more than once and this attack does not consume ammunition.
 			</description>
 		</sheet>
-		<rules>
-			
-		</rules>
-	</element>
-	
+	</element>	
 	<element name="Tricky" type="Feat" source="Arcane Artillery" id="ID_RDDT_AA_FEAT_TRICKY" >
 		<requirements />
 		<description>
@@ -343,6 +303,5 @@
 			<stat name="superiority dice:dc" value="superiority dice:dc:ability" />
 			<select name="Tricky" type="Archetype Feature" supports="Virtuoso Tricks" number="2" />
 		</rules>
-	</element>
-	
+	</element>	
 </elements>

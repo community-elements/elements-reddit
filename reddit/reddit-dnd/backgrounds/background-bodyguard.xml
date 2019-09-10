@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	
-	<element name="Bodyguard" type="Background" source="Reddit" id="ID_RDDT_BACKGROUND_BODYGUARD">
+	<element name="Bodyguard" type="Background" source="Reddit: DnD" id="ID_RDDT_BACKGROUND_BODYGUARD">
 		<description>
 			<p>You have spent your life protecting someone else’s. Perhaps it was a noble, or a powerful crime boss; maybe even a brutal warlord. Maybe instead of someone more powerful than you, it was a physically weaker companion or family member. Whatever the case, your life up to this point has been focused around protecting someone.</p>
 			<ul class="unstyled">
@@ -68,7 +68,7 @@
 		</rules>			
 	</element>
 	
-	<element name="Feature: Guardian’s Eye" type="Background Feature" source="Reddit" id="ID_RDDT_BACKGROUND_FEATURE_BODYGUARD_GUARDIANS_EYE">
+	<element name="Feature: Guardian’s Eye" type="Background Feature" source="Reddit: DnD" id="ID_RDDT_BACKGROUND_FEATURE_BODYGUARD_GUARDIANS_EYE">
 		<supports>Background Feature</supports>
 		<description>
 			<p>I have a keen eye when it comes to safety. My companions and I can travel at a normal speed through crowds; and I can always pick out the safest route to take through a town or city. This doesn’t account for unseen or hidden dangers, such as a lair of vampires hiding in the noble quarter; but I can easily avoid slums and areas where thugs might hang around.</p>
