@@ -3,7 +3,7 @@
 	<info>
 		<name>Guns</name>
 		<update version="0.0.1">
-			<file name="guns.xml" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery/guns.xml" />
+			<file name="guns.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery/guns.xml" />
 		</update>
 	</info>
 

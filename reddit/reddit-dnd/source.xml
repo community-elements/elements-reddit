@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1">
-			<file name="source.xml" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/reddit/reddit-dnd/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-dnd/source.xml" />
 		</update>
 	</info>
 	<element name="Reddit: DnD" type="Source" source="Core" id="ID_RDDT_SOURCE_REDDIT_DND">

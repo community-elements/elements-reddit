@@ -3,18 +3,18 @@
 	<info>
 		<name>r/UnearthedArcana</name>
 		<update version="0.0.1">
-			<file name="reddit-unearthed-arcana.index" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/reddit/reddit-unearthed-arcana.index" />
+			<file name="reddit-unearthed-arcana.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana.index" />
 		</update>
 	</info>
 	<files>
-		<file name="arcane-artillery.index" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery.index" />		
+		<file name="arcane-artillery.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery.index" />		
 
-		<file name="source.xml" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/reddit/reddit-unearthed-arcana/source.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/source.xml" />
 		
 		<!-- archetypes -->
-		<file name="monk-fourelementsremastered.xml" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/reddit/reddit-unearthed-arcana/archetypes/monk-fourelementsremastered.xml" />
+		<file name="monk-fourelementsremastered.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/archetypes/monk-fourelementsremastered.xml" />
 		
 		<!-- backgrounds -->
-		<file name="background-goat.xml" url="https://raw.githubusercontent.com/ColdAnkles/elements-reddit/master/reddit/reddit-unearthed-arcana/backgrounds/background-goat.xml" />		
+		<file name="background-goat.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/backgrounds/background-goat.xml" />		
 	</files>
 </index>
