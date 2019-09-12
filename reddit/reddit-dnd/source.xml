@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-dnd/source.xml" />
+		</update>
+	</info>
+	<element name="Reddit: DnD" type="Source" source="Core" id="ID_RDDT_SOURCE_REDDIT_DND">
+		<description>
+			<![CDATA[<p>Homebrew content posted on the r/DnD Subreddit.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">RDDT</set>
+			<set name="url">https://www.reddit.com/r/DnD/</set>
+			<set name="author" abbreviation="RDDT">DnD Subreddit</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>
