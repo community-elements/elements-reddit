@@ -15,6 +15,9 @@
 		<file name="monk-fourelementsremastered.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/archetypes/monk-fourelementsremastered.xml" />
 		
 		<!-- backgrounds -->
-		<file name="background-goat.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/backgrounds/background-goat.xml" />		
+		<file name="background-goat.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/backgrounds/background-goat.xml" />	
+
+		<!-- spells -->
+		<file name="spells.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/spells.index"	/>
 	</files>
 </index>
