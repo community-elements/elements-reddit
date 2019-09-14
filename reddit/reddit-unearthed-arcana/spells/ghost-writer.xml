@@ -27,6 +27,7 @@
       <set name="materialComponent">Two quills from different creatures</set>
       <set name="isConcentration">false</set>
       <set name="isRitual">true</set>
+      <set name="sourceUrl">https://www.reddit.com/r/UnearthedArcana/comments/bx31p9/ghost_writer_a_simple_roleplay_spell_for_those/</set>
     </setters>
   </element>
 </elements>

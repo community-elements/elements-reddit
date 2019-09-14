@@ -7,17 +7,19 @@
 		</update>
 	</info>
 	<files>
-		<file name="arcane-artillery.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery.index" />		
-
 		<file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/source.xml" />
 		
 		<!-- archetypes -->
-		<file name="monk-fourelementsremastered.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/archetypes/monk-fourelementsremastered.xml" />
+		<file name="archetypes.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/archetypes.index"/>
 		
 		<!-- backgrounds -->
-		<file name="background-goat.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/backgrounds/background-goat.xml" />	
+		<file name="backgrounds.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/backgrounds.index"/>
 
 		<!-- spells -->
 		<file name="spells.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/spells.index"	/>
+
+		<!-- compendiums -->
+		<file name="arcane-artillery.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery.index" />
+
 	</files>
 </index>
