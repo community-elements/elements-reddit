@@ -9,7 +9,7 @@
     </update>
   </info>
 
-  <element name="Ghost Writer" type="Spell" source="Reddit" id="ID_RDDT_MISC_SPELL_GHOST_WRITER">
+  <element name="Ghost Writer" type="Spell" source="Reddit: Unearthed Arcana" id="ID_RDDT_MISC_SPELL_GHOST_WRITER">
     <supports>Bard, Warlock, Wizard</supports>
     <description>
       <p>You touch a suitable writing surface, and for the duration of this spell anything that you speak aloud is transcribed to that surface in the written script of a language that you know. You determine the language, handwriting style and color of the script transcribed to theis surface.</p>
