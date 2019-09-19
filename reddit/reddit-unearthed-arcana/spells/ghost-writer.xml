@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Ghost Writer</name>
+    <description>Ghost Writer | A simple roleplay spell for those who wish to increase productivity, or merely give their wrist a break.</description>
+    <author url="https://www.reddit.com/user/TheDungeonNovice/">u/TheDungeonNovice</author>
+    <update version="0.0.1">
+      <file name="ghost-writer.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/spells/ghost-writer.xml" />
+    </update>
+  </info>
+
+  <element name="Ghost Writer" type="Spell" source="Reddit: Unearthed Arcana" id="ID_RDDT_MISC_SPELL_GHOST_WRITER">
+    <supports>Bard, Warlock, Wizard</supports>
+    <description>
+      <p>You touch a suitable writing surface, and for the duration of this spell anything that you speak aloud is transcribed to that surface in the written script of a language that you know. You determine the language, handwriting style and color of the script transcribed to theis surface.</p>
+      <p class="indent">If the writing surface is one that can be manipulated to be read from further such as a book with multiple pages, then the text will continue to transcribe to any subsequent pages so long as the spell lasts. These writings are permanent, but can be removed or damagedd as simply as those created by any common or mundane ink.</p>
+    </description>
+    <setters>
+      <set name="level">1</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 hour</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">Two quills from different creatures</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">true</set>
+      <set name="sourceUrl">https://www.reddit.com/r/UnearthedArcana/comments/bx31p9/ghost_writer_a_simple_roleplay_spell_for_those/</set>
+    </setters>
+  </element>
+</elements>
