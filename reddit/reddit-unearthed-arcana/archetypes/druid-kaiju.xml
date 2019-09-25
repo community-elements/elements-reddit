@@ -4,7 +4,7 @@
 		<name>Druid Circle: Circle of The Strange Beasts</name>
     	<description>Circle of The Strange Beasts from Reddit</description>
     	<author url="https://www.reddit.com/r/UnearthedArcana/comments/cv9jqd/circle_of_the_strange_beasts_a_kaijuthemed/">u/MsierScratch</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="druid-kaiju.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/archetypes/druid-kaiju.xml" />
 		</update>
 	</info>
@@ -56,9 +56,10 @@
 			<p>Starting at 2nd level, you can choose, during a long rest, a monstrosity that you have seen before with a challenge rating of 1 or lower. You can use your Wild shape feature to assume this creature's shape. Once you've used your Wild shape feature this way, you must finish a long rest before using it in this manner again. You can choose another monstrosity to turn into once in a number of days equal to 10 minus your Wisdom modifier. Starting at 6th level, you can transform into a monstrosity with a challenge rating as high as your druid level divided by 2, rounded down.</p>
 		</description>
 		<sheet>
-			<description>You can choose, during a long rest, a monstrosity that you have seen before with a challenge rating of 1 or lower. You can use your Wild shape feature to assume this creature's shape. Once you've used your Wild shape feature this way, you must finish a long rest before using it in this manner again. You can choose another monstrosity to turn into once in a number of days equal to 10 minus your Wisdom modifier. Starting at 6th level, you can transform into a monstrosity with a challenge rating as high as your druid level divided by 2, rounded down.</description>
+			<description>You can choose, during a long rest, a monstrosity that you have seen before with a challenge rating of 1 or lower. You can use your Wild shape feature to assume this creature's shape. Once you've used your Wild shape feature this way, you must finish a long rest before using it in this manner again. You can choose another monstrosity to turn into once in a number of days equal to 10 minus your Wisdom modifier.</description>
+			<description level="6">You can choose, during a long rest, a monstrosity that you have seen before with a challenge rating of 1 or lower. You can use your Wild shape feature to assume this creature's shape. Once you've used your Wild shape feature this way, you must finish a long rest before using it in this manner again. You can choose another monstrosity to turn into once in a number of days equal to 10 minus your Wisdom modifier. Starting at 6th level, you can transform into a monstrosity with a challenge rating as high as your druid level divided by 2, rounded down. </description>
 		</sheet>
-    </element>
+	</element>
 	<element name="Monster March" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_MONSTER_MARCH">
 		<description>
 			<p>Starting at 6th level, you always have the enlarge/reduce spell prepared, and it doesn't count against your number of prepared spells per day. Also, when you use your Wild shape feature, you can use a free action to immediately spend a 2nd level or higher spell slot to cast it on yourself.</p>
