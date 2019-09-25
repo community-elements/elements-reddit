@@ -61,10 +61,10 @@
     </element>
 	<element name="Monster March" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_MONSTER_MARCH">
 		<description>
-			<p>Starting at 6th level, you always have the enlarge/reduce spell prepared, and it doesn't count against your number of prepared spells per day. Also, when you use your Wild shape feature, you can use a free action to immediatly spend a 2nd level or higher spell slot to cast it on yourself.</p>
+			<p>Starting at 6th level, you always have the enlarge/reduce spell prepared, and it doesn't count against your number of prepared spells per day. Also, when you use your Wild shape feature, you can use a free action to immediately spend a 2nd level or higher spell slot to cast it on yourself.</p>
 		</description>
 		<sheet>
-			<description>You always have the enlarge/reduce spell prepared, and it doesn't count against your number of prepared spells per day. Also, when you use your Wild shape feature, you can use a free action to immediatly spend a 2nd level or higher spell slot to cast it on yourself.</description>
+			<description>You always have the enlarge/reduce spell prepared, and it doesn't count against your number of prepared spells per day. Also, when you use your Wild shape feature, you can use a free action to immediately spend a 2nd level or higher spell slot to cast it on yourself.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" level="6" spellcasting="Druid" prepared="true" />
