@@ -21,7 +21,7 @@
 		</setters>
 	</element>
 	
-	<element name="Circle of The Strange Beasts" type="Archetype" source="Reddit" id="ID_RDDT_ARCHETYPE_CIRCLE_OF_THE_STRANGE_BEASTS">
+	<element name="Circle of The Strange Beasts" type="Archetype" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CIRCLE_OF_THE_STRANGE_BEASTS">
 		<supports>Druid Circle</supports>
 		<description>
 			<p>From time to time, gigantic creatures appear in the realm of men. Awakened from their slumber when nature's balance is endangered or created by sinister experiments mixing magic and science, those immense beasts are considered by many folks to be the incarnation of Nature itself, expressing it's wrath. The druids affiliated with the circle of the Strange beasts use nature's power to imitate those creatures, themselves becoming monstrous giants when the primal world's safety is in the balance.</p>
@@ -43,7 +43,7 @@
 		</rules>
 	</element>
 
-	<element name="Beastly Instinct" type="Archetype Feature" source="Reddit" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_BEASTLY_INSTINCT">
+	<element name="Beastly Instinct" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_BEASTLY_INSTINCT">
 		<description>
 			<p>When you join this circle at 2nd level, you become far more sensitive to monstrosities very existence due to your privileged link with them. You can take 1 minute to focus, allowing you to sense the presence and general location of monstrosities and circle of Strange beasts druids within a 1000ft radius around you for 10 minutes. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest.</p>
 		</description>
@@ -51,7 +51,7 @@
 			<description>When you join this circle at 2nd level, you become far more sensitive to monstrosities very existence due to your privileged link with them. You can take 1 minute to focus, allowing you to sense the presence and general location of monstrosities and circle of Strange beasts druids within a 1000ft radius around you for 10 minutes. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest.</description>
 		</sheet>
     </element>
-	<element name="Monster of the Week" type="Archetype Feature" source="Reddit" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_MONSTER_OF_THE_WEEK">
+	<element name="Monster of the Week" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_MONSTER_OF_THE_WEEK">
 		<description>
 			<p>Starting at 2nd level, you can choose, during a long rest, a monstrosity that you have seen before with a challenge rating of 1 or lower. You can use your Wild shape feature to assume this creature's shape. Once you've used your Wild shape feature this way, you must finish a long rest before using it in this manner again. You can choose another monstrosity to turn into once in a number of days equal to 10 minus your Wisdom modifier. Starting at 6th level, you can transform into a monstrosity with a challenge rating as high as your druid level divided by 2, rounded down.</p>
 		</description>
@@ -59,7 +59,7 @@
 			<description>You can choose, during a long rest, a monstrosity that you have seen before with a challenge rating of 1 or lower. You can use your Wild shape feature to assume this creature's shape. Once you've used your Wild shape feature this way, you must finish a long rest before using it in this manner again. You can choose another monstrosity to turn into once in a number of days equal to 10 minus your Wisdom modifier. Starting at 6th level, you can transform into a monstrosity with a challenge rating as high as your druid level divided by 2, rounded down.</description>
 		</sheet>
     </element>
-	<element name="Monster March" type="Archetype Feature" source="Reddit" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_MONSTER_MARCH">
+	<element name="Monster March" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_MONSTER_MARCH">
 		<description>
 			<p>Starting at 6th level, you always have the enlarge/reduce spell prepared, and it doesn't count against your number of prepared spells per day. Also, when you use your Wild shape feature, you can use a free action to immediatly spend a 2nd level or higher spell slot to cast it on yourself.</p>
 		</description>
@@ -70,7 +70,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" level="6" spellcasting="Druid" prepared="true" />
 		</rules>
     </element>
-	<element name="Fearsome Titan" type="Archetype Feature" source="Reddit" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_FEARSOME_TITAN">
+	<element name="Fearsome Titan" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_FEARSOME_TITAN">
 		<description>
 			<p>When you reach 10th level, you become capable of inspiring fear in your foes through your monstrous appearance. When you use your Monster march feature to enlarge your Wild shape, each hostile creature that can see you must succeed on a Wisdom saving throw or be frightened. A creature who failed it's saving throw can try again at the end of each of it's turn to end it. The effect also ends if you're not under your Wild shape form anymore or if the creature can't hear or see you anymore. A creature that succeeds on this saving throw is immune to this feature for 24 hours.</p>
 		</description>
@@ -78,7 +78,7 @@
 			<description>When you use your Monster march feature to enlarge your Wild shape, each hostile creature that can see you must succeed on a Wisdom saving throw or be frightened. A creature who failed it's saving throw can try again at the end of each of it's turn to end it. The effect also ends if you're not under your Wild shape form anymore or if the creature can't hear or see you anymore. A creature that succeeds on this saving throw is immune to this feature for 24 hours.</description>
 		</sheet>
     </element>
-	<element name="Nature's Ire" type="Archetype Feature" source="Reddit" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_NATURES_IRE">
+	<element name="Nature's Ire" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_NATURES_IRE">
 		<description>
 			<p>When you reach 14th level, you can channel nature's strength and fury in a powerful energy blast coming from your monstrous form. While you are transformed by Wild shape, you can use an action to breathe out a destructive blast in a 60-foot cone. Each creature in the cone must make a Dexterity saving throw. A creature takes 9d8 fire, cold, lightning, acid or radiant (you choose the damage's nature when you use this feature) damage on a failed save, or half as much damage on a successful one. Once you use this feature, you can’t use it again until you finish a long rest.</p>
 		</description>
