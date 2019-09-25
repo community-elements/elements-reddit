@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
-	<element name="Reddit: Strange Beasts" type="Source" source="Core" id="ID_RDDT_SOURCE_STRANGE_BEASTS">
+	<!-- <element name="Reddit: Strange Beasts" type="Source" source="Core" id="ID_RDDT_SOURCE_STRANGE_BEASTS"> -->
 		<description>
 			<![CDATA[<p>From time to time, gigantic creatures appear in the realm of men. Awakened from their slumber when nature's balance is endangered or created by sinister experiments mixing magic and science, those immense beasts are considered by many folks to be the incarnation of Nature itself, expressing it's wrath. The druids affiliated with the circle of the Strange beasts use nature's power to imitate those creatures, themselves becoming monstrous giants when the primal world's safety is in the balance.</p>]]>
 		</description>
@@ -48,7 +48,7 @@
 			<p>When you join this circle at 2nd level, you become far more sensitive to monstrosities very existence due to your privileged link with them. You can take 1 minute to focus, allowing you to sense the presence and general location of monstrosities and Circle of Strange Beasts Druids druids within a 1000ft radius around you for 10 minutes. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest.</p>
 		</description>
 		<sheet>
-			<description>When you join this circle at 2nd level, you become far more sensitive to monstrosities very existence due to your privileged link with them. You can take 1 minute to focus, allowing you to sense the presence and general location of monstrosities and Circle of Strange Beasts Druids within a 1000ft radius around you for 10 minutes. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest.</description>
+			<description>You can take 1 minute to focus, allowing you to sense the presence and general location of monstrosities and circle of Strange beasts druids within a 1000ft radius around you for 10 minutes. You can use this feature {{wisdom:modifier}} times. You regain any expended uses when you finish a long rest.</description>
 		</sheet>
     </element>
 	<element name="Monster of the Week" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_MONSTER_OF_THE_WEEK">
