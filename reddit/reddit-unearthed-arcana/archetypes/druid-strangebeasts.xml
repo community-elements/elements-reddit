@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
-	<!-- <element name="Reddit: Strange Beasts" type="Source" source="Core" id="ID_RDDT_SOURCE_STRANGE_BEASTS"> -->
+	<!-- <element name="Reddit: Strange Beasts" type="Source" source="Core" id="ID_RDDT_SOURCE_STRANGE_BEASTS"> 
 		<description>
 			<![CDATA[<p>From time to time, gigantic creatures appear in the realm of men. Awakened from their slumber when nature's balance is endangered or created by sinister experiments mixing magic and science, those immense beasts are considered by many folks to be the incarnation of Nature itself, expressing it's wrath. The druids affiliated with the circle of the Strange beasts use nature's power to imitate those creatures, themselves becoming monstrous giants when the primal world's safety is in the balance.</p>]]>
 		</description>
@@ -19,7 +19,7 @@
 			<set name="author" url="https://www.reddit.com/user/MsierScratch">MsierScratch</set>
 			<set name="homebrew">true</set>
 		</setters>
-	</element>
+	</element> -->
 	
 	<element name="Circle of The Strange Beasts" type="Archetype" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CIRCLE_OF_THE_STRANGE_BEASTS">
 		<supports>Druid Circle</supports>
