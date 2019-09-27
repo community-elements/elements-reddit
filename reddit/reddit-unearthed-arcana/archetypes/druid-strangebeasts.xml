@@ -61,11 +61,12 @@
 		</description>
 		<sheet>
 			<description>You can choose, during a long rest, a monstrosity that you have seen before with a challenge rating of 1 or lower. You can use your Wild shape feature to assume this creature's shape. Once you've used your Wild shape feature this way, you must finish a long rest before using it in this manner again. You can choose another monstrosity to turn into once every {{monster of the week:count}} days.</description>
-			<description level="6">You can choose, during a long rest, a monstrosity that you have seen before with a challenge rating of 1 or lower. You can use your Wild shape feature to assume this creature's shape. Once you've used your Wild shape feature this way, you must finish a long rest before using it in this manner again. You can choose another monstrosity to turn into once in a number of days equal to {{monster of the week:count}}. Starting at 6th level, you can transform into a monstrosity with a challenge rating as high as your druid level divided by 2, rounded down. </description>
+			<description level="6">You can choose, during a long rest, a monstrosity that you have seen before with a challenge rating of {{monster of the week:cr}} or lower. You can use your Wild shape feature to assume this creature's shape. Once you've used your Wild shape feature this way, you must finish a long rest before using it in this manner again. You can choose another monstrosity to turn into once in a number of days equal to {{monster of the week:count}}.</description>
 		</sheet>
 		<rules>
 			<stat name="monster of the week:count" value="10" />
 			<stat name="monster of the week:count" value="-wisdom:modifier" />
+			<stat name="monster of the week:cr" value="level:druid:half" />
 		</rules>
 	</element>
 	<element name="Monster March" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STRANGE_BEASTS_MONSTER_MARCH">
