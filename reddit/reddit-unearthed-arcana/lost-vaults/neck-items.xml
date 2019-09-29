@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Lost Vaults: Neck Items</name>
+        <description>Lost Vaults: Neck Items</description>
+        <author url="https://www.reddit.com/user/MrBakudan/">u/MrBakudan</author>
+        <update version="0.0.1">
+            <file name="neck-items.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/lost-vaults/neck-items.xml" />
+        </update>
+    </info>
+
+</elements>
