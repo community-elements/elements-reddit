@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Arts (Divine Domain)</name>
+		<update version="0.0.1">
+			<file name="cleric-artsdomain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/archetypes/cleric-artsdomain.xml" />
+		</update>
+	</info>
+	
+	<element name="Arts Domain" type="Archetype" source="Reddit: Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_CLERIC_DIVINE_DOMAIN_ARTS">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>This Domain focuses on the fundamental goodness of art in all its forms from paintings and crafts to poetry and song. There is beauty in art and the protection and curation of that beauty is of paramount importance to the clerics of this Domain.</p>
+			<p class="indent">The followers of this Domain are part historians, part curators, and part artists. Where art is persecuted, they protect it. Where art is bidden, they liberate it. Where art is absent, they create it. There is no length these clerics will not go to see that the beauty bestowed on this world is admired and enjoyed.</p>
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_DOMAIN_SPELLS" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_BONUS_PROFICIENCIES" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_DIVINE_MAKER" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_CD_DIVINE_INSPIRATION" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_SELF_REFLECTION" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_POTENT_SPELLCASTING" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_LIFE_IMITATES_ART" />
+		</description>
+		<sheet>
+			<description>The fundamental goodness of art in all its forms from paintings and crafts to poetry and song.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_DIVINE_MAKER" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_CD_DIVINE_INSPIRATION" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_SELF_REFLECTION" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_LIFE_IMITATES_ART" level="17" />
+		</rules>
+	</element>
+	<element name="Domain Spells" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_DOMAIN_SPELLS">
+		<description>
+			<p>You gain domain spells at the cleric levels listed in the Arts Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
+			<h5>Arts Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>comprehend languages, silent image</em></td></tr>
+				<tr><td>3rd</td><td><em>alter self, locate object</em></td></tr>
+				<tr><td>5th</td><td><em>hypnotic pattern, major image</em></td></tr>
+				<tr><td>7th</td><td><em>fabricate, stone shape</em></td></tr>
+				<tr><td>9th</td><td><em>animate objects, creation</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_OBJECT" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONE_SHAPE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CREATION" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you choose this domain at 1st level you gain proficiency in the History skill and two of your choice from Calligrapher’s Supplies,Jeweler’s Tools, Leatherworker’s Tools, Mason’s Tools, two Musical Instruments, Painter’s Supplies, Potter’s Tools, Weaver’s Tools, or Woodcarver’s Tools.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in the History skill and two of your choice from Calligrapher’s Supplies, Jeweler’s Tools, Leatherworker’s Tools, Mason’s Tools, two Musical Instruments, Painter’s Supplies, Potter’s Tools, Weaver’s Tools, or Woodcarver’s Tools.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<select type="Proficiency" name="Bonus Proficiencies, Arts Domain" supports="Musical Instrument||RDDT_Arts_Divine_Domain" number="2" />
+		</rules>
+	</element>
+	<element name="Divine Maker" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_DIVINE_MAKER">
+		<description>
+			<p>When you choose this domain at 1st level you gain the mending and minor illusion cantrips, which count as cleric cantrips for you.</p>
+		</description>
+		<sheet>
+			<description>You gain the mending and minor illusion cantrips, which count as cleric cantrips for you.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" level="1" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Divine Inspiration" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_CD_DIVINE_INSPIRATION">
+		<description>
+			<p>Starting at 2nd level you can use your Channel Divinity to call upon your god to inspire a creature. When a creature within 30 feet of you rolls an ability check, you can use your reaction to fill it with divine inspiration, moved to creation and resourcefulness. The target then gains a +5 bonus on their roll You can use this ability after the creature rolls, but before any effects of the roll occur.</p>
+		</description>
+		<sheet alt="Divine Inspiration" action="Reaction" usage="Channel Divinity">
+			<description>When a creature within 30 feet of you rolls an ability check, you can use your reaction to fill it with divine inspiration, moved to creation and resourcefulness. The target then gains a +5 bonus on their roll. You can use this ability after the creature rolls, but before any effects of the roll occur.</description>
+		</sheet>
+	</element>
+	<element name="Self-Reflection" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_SELF_REFLECTION">
+		<description>
+			<p>Starting at 6th level you can look within yourself and criticize objectively. While you are charmed, frightened, or stunned, you can use your bonus action to repeat your saving throw against the effect, even if you could not otherwise take an action.</p>
+			<p class="indent">You can use this ability a number of times equal to your Wisdom modifier (minimum of 1) and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{self-reflection:usage}}/Long Rest">
+			<description>While you are charmed, frightened, or stunned, you can use your bonus action to repeat your saving throw against the effect, even if you could not otherwise take an action.</description>
+		</sheet>
+		<rules>
+			<stat name="self-reflection:usage" value="1" bonus="base" />
+			<stat name="self-reflection:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_POTENT_SPELLCASTING">
+		<description>
+			<p>Starting at 8th level you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>You add your Wisdom modifier ({{wisdom:modifier}}) to the damage you deal with any cleric cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Life Imitates Art" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_LIFE_IMITATES_ART">
+		<description>
+			<p>Starting at 17th level your connection with your god allows you to design magnificent creations and breath life into them.</p>
+			<p class="indent">You learn the Demiplane spell and always have it prepared. It counts as a cleric spell for you. When you cast this spell you can cause your Demiplane to appear as a rocky field, a forest with a small spring or a grassland with a small stream.</p>
+			<p class="indent">Additionally, you can use your action to choose one nonmagical object worth no more that 7500 gp or one creature that is depicted in a work of art or that is part of an illusion spell of 1st level or higher that you cast and make that object or creature real permanently. If you choose a creature, the creature must have a challenge rating of 5 or lower. The creature or object springs at your feet. If the creature you create is a humanoid, it has a personality and abilities of up to 5th level that you designate and can give it some of your own memories and knowledge of the world The creature is charmed by you for 1 day or until you or your companions do anything harmful to it. While the creature is charmed, it takes your suggestions in the most favorable way possible, even helping you in battle if asked When the charmed condition ends, the creature chooses whether to remain friendly to you, based on how you treated it while it was charmed.</p>
+			<p class="indent">Once you make a creature or object real you cannot do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="Long Rest">
+			<description>When you cast Demiplane you can cause it to appear as a rocky field, a forest with a small spring or a grassland with a small stream.
+			Additionally, you can use your action to choose one nonmagical object worth no more that 7500 gp or one creature that is depicted in a work of art or that is part of an illusion spell of 1st level or higher that you cast and make that object or creature real permanently. If you choose a creature, the creature must have a challenge rating of 5 or lower. The creature or object springs at your feet. If the creature you create is a humanoid, it has a personality and abilities of up to 5th level that you designate and can give it some of your own memories and knowledge of the world The creature is charmed by you for 1 day or until you or your companions do anything harmful to it. While the creature is charmed, it takes your suggestions in the most favorable way possible, even helping you in battle if asked When the charmed condition ends, the creature chooses whether to remain friendly to you, based on how you treated it while it was charmed.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DEMIPLANE" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	
+	<!-- append proficiency selection supports -->
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES">
+		<supports>RDDT_Arts_Divine_Domain</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS">
+		<supports>RDDT_Arts_Divine_Domain</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS">
+		<supports>RDDT_Arts_Divine_Domain</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS">
+		<supports>RDDT_Arts_Divine_Domain</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES">
+		<supports>RDDT_Arts_Divine_Domain</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS">
+		<supports>RDDT_Arts_Divine_Domain</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS">
+		<supports>RDDT_Arts_Divine_Domain</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS">
+		<supports>RDDT_Arts_Divine_Domain</supports>
+	</append>
+</elements>
