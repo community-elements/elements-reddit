@@ -4,9 +4,37 @@
         <name>Lost Vaults: Alchemical Formulas</name>
         <description>Lost Vaults: Alchemical Formulas</description>
         <author url="https://www.reddit.com/user/MrBakudan/">u/MrBakudan</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="alchemical-formulas.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/lost-vaults/alchemical-formulas.xml" />
         </update>
     </info>
+
+    <element name="Alchemist Fire/Acid/Frost" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ALCHEMISTS_FIRE">
+        <description>
+            <p>These pots of mixed chemicals that have different reactions when introduced into the air. A useful item for those who wish to do elemental damage but lack access to spells.</p>
+            <p class="indent">Range: 20/60 feet</p>
+            <p class="indent">As an action, make an improvised ranged weapon attack. On a hit, the pot breaks on the creature and the contents spill out. This pot deals 1d10 damage of frost, acid, or fire damage, depending on the pot type.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Common</set>
+        </setters>
+    </element>
+
+    <element name="Alchemical Silver" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ALCHEMICAL_SILVER">
+        <description>
+            <p>This is a flask of specially treated quick silver that binds to items that touch it. As an action, you can coat 5 pieces of ammunition or one weapon to give that weapon the silvered property for means of bypassing resistances. The silver wears off after 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Common</set>
+        </setters>
+    </element>
 
 </elements>
