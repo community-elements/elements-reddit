@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Lost Vaults: Hand Items</name>
+        <description>Lost Vaults: Hand Items</description>
+        <author url="https://www.reddit.com/user/MrBakudan/">u/MrBakudan</author>
+        <update version="0.0.1">
+            <file name="hand-items.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/lost-vaults/hand-items.xml" />
+        </update>
+    </info>
+
+</elements>

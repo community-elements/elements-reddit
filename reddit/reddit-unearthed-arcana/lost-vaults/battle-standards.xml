@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Lost Vaults: Battle Standards</name>
+        <description>Lost Vaults: Battle Standards</description>
+        <author url="https://www.reddit.com/user/MrBakudan/">u/MrBakudan</author>
+        <update version="0.0.1">
+            <file name="battle-standards.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/lost-vaults/battle-standards.xml" />
+        </update>
+    </info>
+
+</elements>
