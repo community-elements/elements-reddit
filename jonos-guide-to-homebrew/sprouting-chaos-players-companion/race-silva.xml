@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Silva</name>
+        <author url="https://drive.google.com/file/d/0B-g9vLTX0eHKZmFkdFVPME9Lckk/view">Jonoman3000</author>
+        <update version="0.0.1">
+            <file name="race-silva.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/jonos-guide-to-homebrew/sprouting-chaos-players-companion/race-silva.xml" />
+        </update>
+    </info>
+    
+    <element name="Silva" type="Race" source="Sprouting Chaos Player’s Companion" id="ID_SCPC_RACE_SILVA">
+        <description>
+            <p>Living in grand cities atop the tallest forests, the Silva, often misnamed as “Green Elves,” are an ancient race that look like tall, humanoid half-plant, half-elves. In actuality, they are far more similar to the former than the latter. They hail from only the greatest forests and jungles - the only places that can support their Mother Trees.</p>
+            <h4>BORN FROM NATURE</h4>
+            <p>The Silva do not reproduce like the other races. Instead, they are born from the seed-pods of giant trees, called “Mother Trees.” These trees average around 400 to 500 feet in height, with the base of the trunk being about 20-25 feet in diameter. Each Silva city has one or two of these trees, which are always positioned near the center of the city. These trees grow a new Silva once a month, for an average of 12 a year. When a Silva is released from their seed pod, which they stay in for about a year, they are already fully grown.</p>
+            <h4>BARK AND LEAF</h4>
+            <p>The Silva do not merely look like plants - they are plants. They do not need to consume food to survive, and they wither when they are without water and sunlight for a long period of time. They can consume food, but they prefer to get their nourishment from photosynthesis.</p>
+            <p class="indent">Silva biology is very different from any other race. They do not have internal organs, but instead are formed from growing plant matter, with sap for blood, and leaves and bark for skin. A jaw, for example, can be formed by leaves, vines, or even shards of bark that grow and press together to form the silhouette of a jaw, but if you look closely you can still see the fibers and holes of the structure. Instead of bones, an arm is a mass of tightly-woven stems and leaves that work together to do the work of such a limb.</p>
+            <p class="indent">As the year goes on, the Silva change with the season. During the winter, their leaves go brown and their limbs become stiff. In the fall, they become a vibrant display of reds and yellows.</p>
+            <h4>CANOPY CITIES</h4>
+            <p>When they approach a Silva city, a ground-dweller might not even notice. Their cities exist high within the canopies of the forest, dominated by their Mother Tree. Under the shelter of their lush foliage, the Silva have made their homes in these verdant, multi-level cities composed entirely of plants.</p>
+            <h4>RULE OF THE NINE</h4>
+            <p>The Nine are the first Silva, initially born over 4000 years ago. Although they live to the normal age of Silva, about 150-250 years, their memories are passed on when they die. Whenever one of the Nine dies, they will be reborn exactly one year later. When they are reborn, they do not initially remember their past lives. If they are discovered early, they can be “trained” to remember their past lives within a month. For those that aren’t found early, they slowly regain memories over the course of 2-5 years.</p>
+            <p class="indent">The Nine are considered gods on earth, and they are given the divine right to rule, considering their millennia of experience. They rule from the largest Mother Tree, whose branches reach heights of 700 feet or more.</p>
+            <h4>Silva Names</h4>
+            <p>The Silva have short, concise names, merely used as identifiers more than anything. They do not have family or clan names, though some popular names are reused often.</p>
+            <p><span class="emphasis">Male Names.</span>Abur, Banua, Chonai, Dampunts, Gutai, Jara, Magny, Qachaa, Tachu, Targay</p>
+            <p><span class="emphasis">Female Names.</span>Choque, Chuaca, Coca, Cuilla, Cura, Ollssill, Pola, Rima, Sica, Sisuyo</p>
+            <h4>Silva Traits</h4>
+            <p>As a Silva, you have the following special traits:<br />
+                <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 2.<br />
+                <span class="feature">Age.</span>Silva emerge from their pods fully grown, and live an average of 150-250 years.<br />
+                <span class="feature">Alignment.</span>Most silva are good, and many lean towards lawfulness. Most city-folk are lawful, though a few adventurers may be chaotic.<br />
+                <span class="feature">Size.</span>Silva are about 6 feet tall. Their bodies are lightweight, weighing 100-130 pounds. Your size is Medium.<br />
+                <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />        
+                <span class="feature">Photosynthesis.</span>You do not need to sleep while in sunlight. Instead, you can choose to sunbathe for 4 hours a day. While sunbathing, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep, and you are considered fully nourished for the rest of the day.<br />If you do not get the opportunity to sunbathe, you can still sleep and eat normally. When you do so, you consume the same amount of food and sleep for the same length as a human.<br />
+                <span class="feature">Call of the Forest.</span>You know the <i>druidcraft</i> cantrip. Once you reach 3rd level, you can cast the <i>entangle</i> spell once. Once you reach 5th level, you can also cast the <i>plant growth</i> spell once. You regain the ability to cast them this way when you finish a long rest. Wisdom is your spellcasting ability for these spells.<br />
+                <span class="feature">Treewalker.</span>You have a climbing speed of 30 feet.<br />
+                <span class="feature">Languages.</span>You can speak, read, and write Common and Sylvan.<br />      
+                <span class="feature">Subrace.</span>As the silva spread across the realms, they settled in both jungles and forests. As time has gone on, these two sects of silva have gained their own sets of unique traits derived from the hardships of their terrain.<br />
+            </p>
+        </description>
+        <sheet display="false">
+            <description>description</description>
+        </sheet>
+        <setters>
+            <set name="names" type="male">Abur, Banua, Chonai, Dampunts, Gutai, Jara, Magny, Qachaa, Tachu, Targay</set>
+            <set name="names" type="female">Choque, Chuaca, Coca, Cuilla, Cura, Ollssill, Pola, Rima, Sica, Sisuyo</set>
+            <set name="names" type="clan">not used</set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="2d10">4’8"</set>
+            <set name="weight" modifier="2d4">110 lb.</set>
+        </setters>
+        <rules>
+            <stat name="wisdom" value="2" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_SCPC_RACIAL_TRAIT_SILVA_PHOTOSYNTHESIS" />
+            <grant type="Racial Trait" id="ID_SCPC_RACIAL_TRAIT_SILVA_CALL_OF_THE_FOREST" />
+            <stat name="innate speed:climb" value="30" bonus="base" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+            <select type="Sub Race" name="Silva Subrace" supports="Silva" />
+        </rules>
+    </element>
+    
+
+    <element name="Photosynthesis" type="Racial Trait" source="Sprouting Chaos Player’s Companion" id="ID_SCPC_RACIAL_TRAIT_SILVA_PHOTOSYNTHESIS">
+        <description>
+            <p>You do not need to sleep while in sunlight. Instead, you can choose to sunbathe for 4 hours a day. While sunbathing, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep, and you are considered fully nourished for the rest of the day.</p>
+            <p class="indent">If you do not get the opportunity to sunbathe, you can still sleep and eat normally. When you do so, you consume the same amount of food and sleep for the same length as a human.</p>
+        </description>
+        <sheet>
+            <description>You do not need to sleep while in sunlight. Instead, you can choose to sunbathe for 4 hours a day. While sunbathing, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep, and you are considered fully nourished for the rest of the day. If you do not get the opportunity to sunbathe, you can still sleep and eat normally. When you do so, you consume the same amount of food and sleep for the same length as a human.</description>
+        </sheet>
+    </element>
+
+    <element name="Call of the Forest" type="Racial Trait" source="Sprouting Chaos Player’s Companion" id="ID_SCPC_RACIAL_TRAIT_SILVA_CALL_OF_THE_FOREST">
+        <description>
+            <p>You know the <i>druidcraft</i> cantrip. Once you reach 3rd level, you can cast the <i>entangle</i> spell once. Once you reach 5th level, you can also cast the <i>plant growth</i> spell once. You regain the ability to cast them this way when you finish a long rest. Wisdom is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>Druidcraft. (Spellcasting: Wisdom)</description>
+            <description level="3">Druidcraft and 1/Long Rest: entangle (Spellcasting: Wisdom, DC={{spellcasting:dc:wis}})</description>
+            <description level="5">Druidcraft and 1/Long Rest: entangle and plant growth (Spellcasting: Wisdom, DC={{spellcasting:dc:wis}})</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+            <grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" />
+        </rules>
+    </element>
+
+    <element name="Forest Silva" type="Sub Race" source="Sprouting Chaos Player’s Companion" id="ID_SCPC_RACIAL_TRAIT_SILVA_SUBRACE_FOREST_SILVA">
+        <supports>Silva</supports>
+        <description>
+            <p>As a forest silva, you have inherent quickness and stealth, and you are able to blend into the background of forested environments. In the worlds of DnD, forest silva are found in only the largest sylvan forests, far from civilization. Their body is tall, thin, and covered in a thin bark.</p>
+            <p class="indent"><span class="emphasis">Ability Score Increase. </span>Your Dexterity score increases by 1.</p>
+            <p class="indent"><span class="emphasis">Plant Camouflage. </span>When standing still, you have advantage on Dexterity (Stealth) checks you make while obscured by plants.</p>
+        </description>
+        <sheet>
+            <description>When standing still, you have advantage on Dexterity (Stealth) checks you make while obscured by plants.</description>
+        </sheet>
+    </element>
+
+    <element name="Jungle Silva" type="Sub Race" source="Sprouting Chaos Player’s Companion" id="ID_SCPC_RACIAL_TRAIT_SILVA_SUBRACE_JUNGLE_SILVA">
+        <supports>Silva</supports>
+        <description>
+            <p>As a jungle silva, you are hardier than your forest cousins, tested by the ruthless monsters that roam the large jungles that dot the worlds of DnD. Your time in the dark undergrowth of the jungle has also improved your vision substantially.</p>
+            <p class="indent"><span class="emphasis">Ability Score Increase. </span>Your Constitution score increases by 1.</p>
+            <p class="indent"><span class="emphasis">Darkvision. </span>Accustomed to the dark canopies of the jungle, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="constitution" value="1" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+        </rules>
+    </element>
+
+</elements>
