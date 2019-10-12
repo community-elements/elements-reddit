@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>Dark Arts Player’s Companion</name>
+        <update version="0.0.2">
+            <file name="sprouting-chaos-players-companion.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/jonos-guide-to-homebrew/sprouting-chaos-players-companion.index" />
+        </update>
+    </info>
+    <files>
+      <!-- Subclasses -->
+
+      <!-- Races -->
+
+      <!-- Miscellaneous -->
+
+    </files>
+</index>
