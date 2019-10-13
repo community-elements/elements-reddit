@@ -39,7 +39,7 @@
 
     <element name="Beastbane" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_BEASTBANE">
         <description>
-            <p>This hollow tube is decorated with animals, and is filled with alchemical powders that wards off all but the most terrible of beasts in the world. As an action, you can snap the tube, and release the powders into the air, creating a 10 foot sphere of dust around you. Any beast type creature that enters or ends their turn in the sphere must make a DC 13 Wisdom saving throw or be Frightened of the area until the area ends . This cloud lasts 1 minute, or within the presence of moderate or strong winds, 1 round.</p>
+            <p>This hollow tube is decorated with animals, and is filled with alchemical powders that wards off all but the most terrible of beasts in the world. As an action, you can snap the tube, and release the powders into the air, creating a 10 foot sphere of dust around you. Any beast type creature that enters or ends their turn in the sphere must make a DC 13 Wisdom saving throw or be Frightened of the area until the effect ends. This cloud lasts 1 minute, or within the presence of moderate or strong winds, 1 round.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
