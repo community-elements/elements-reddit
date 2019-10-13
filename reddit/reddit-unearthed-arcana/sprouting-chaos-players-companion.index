@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
     <info>
-        <name>Dark Arts Player’s Companion</name>
+        <name>Sprouting Chaos Player’s Companion</name>
         <update version="0.0.2">
             <file name="sprouting-chaos-players-companion.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/sprouting-chaos-players-companion.index" />
         </update>
@@ -10,8 +10,10 @@
       <!-- Subclasses -->
 
       <!-- Races -->
+        <file name="race-silva.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/sprouting-chaos-players-companion/race-silva.xml" />
 
       <!-- Miscellaneous -->
+        <file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/sprouting-chaos-players-companion/source.xml" />
 
     </files>
 </index>

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <update version="0.0.2">
-            <file name="sources.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/jonos-guide-to-homebrew/sources.xml" />
+            <file name="sources.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/sources.xml" />
         </update>
     </info>
     
@@ -19,19 +19,6 @@
 		</setters>
 	</element>
     
-	<element name="Sprouting Chaos Player’s Companion" type="Source" source="Sprouting Chaos Player’s Companion" id="ID_JONOMAN3k_SCPC_SOURCE_SPROUTING_CHAOS_PLAYERS_COMPANION">
-		<description>
-			<![CDATA[<p>In the worlds of DnD, plant-themed creatures and classes are hard to come by. This supplement aims to change that, providing new plant-themed options for player characters, as well as new plant creatures for those players to face. If your Dungeon Master allows, these options may be used in any of your campaigns.</p>]]>
-		</description>
-		<setters>
-			<set name="abbreviation">SCPC</set>
-			<set name="url">https://drive.google.com/file/d/0B-g9vLTX0eHKZmFkdFVPME9Lckk/view</set>
-			<set name="author" url="http://guidetohomebrew.blogspot.com/">Jonoman3000</set>
-			<set name="third-party">false</set>
-            <set name="homebrew">true</set>
-		</setters>
-	</element>
-
     <element name="Jono’s Guide to Homebrew" type="Source" source="Jono’s Guide to Homebrew" id="ID_JONOMAN3k_JGTH_SOURCE_name">
         <description>
             <![CDATA[<p></p>]]>
