@@ -3,7 +3,7 @@
     <info>
         <name>Wight</name>
         <author url="https://drive.google.com/file/d/1Kr3ZKYy3Me0ZFOhOQAmKBZlB9JUauhW5/view?usp=sharing">Jonoman3000</author>
-        <update version="0.0.2">
+        <update version="0.0.1">
             <file name="race-wight.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/dark-arts-players-companion/race-wight.xml" />
         </update>
     </info>
@@ -49,7 +49,7 @@
             <stat name="constitution" value="2" />
             <stat name="charisma" value="1" />
             <stat name="innate speed" value="30" bonus="base" />
-            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type= id="ID_SIZE_MEDIUM" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
             <select type="Language" name="Language (Wight)" />
     		<grant type="Vision" id="ID_VISION_DARKVISION" />

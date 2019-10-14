@@ -3,7 +3,7 @@
     <info>
         <name>Mummy</name>
         <author url="https://drive.google.com/file/d/1Kr3ZKYy3Me0ZFOhOQAmKBZlB9JUauhW5/view?usp=sharing">Jonoman3000</author>
-        <update version="0.0.2">
+        <update version="0.0.1">
             <file name="race-mummy.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/dark-arts-players-companion/race-mummy.xml" />
         </update>
     </info>
@@ -49,7 +49,7 @@
         <rules>
             <stat name="strength" value="2" />
             <stat name="constitution" value="1" />
-            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type= id="ID_SIZE_MEDIUM" />
             <stat name="innate speed" value="25" bonus="base" />
             <grant type="Vision" id="ID_VISION_DARKVISION" />
             <grant type="Racial Trait" id="ID_DAPC_RACIAL_TRAIT_MUMMY_DREADFUL_GLARE" />
