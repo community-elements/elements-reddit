@@ -8,7 +8,7 @@
         </update>
     </info>
     
-    <element name="name" type="Archetype" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_DIVINE_DOMAIN_NIGHT_DOMAIN">
+    <element name="College of the Shadowfell" type="Archetype" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_DIVINE_DOMAIN_NIGHT_DOMAIN">
         <supports>Bard College</supports>
         <description>
             <p>Bards of the College of the Shadowfell specialize in the study of that realm, gleaming great knowledge of shadow magic in the process. These bards are few in number and their study is far harder than most, for knowledge of the Shadowfell is hard to come by. These bards occasionally gather in great libraries to share their knowledge, but most of their time is spent out in the world, looking for any glimpses of knowledge that might lead them to their goal.</p>
