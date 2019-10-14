@@ -60,7 +60,7 @@
             <stat name="dexterity" value="2" />
             <stat name="intelligence" value="1" />
             <stat name="innate speed" value="30" bonus="base" />
-            <grant type= id="ID_SIZE_MEDIUM" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
             <select type="Language" name="Language (Shadar-Kai)" />
     		<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />

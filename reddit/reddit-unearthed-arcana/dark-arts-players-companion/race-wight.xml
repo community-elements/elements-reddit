@@ -49,7 +49,7 @@
             <stat name="constitution" value="2" />
             <stat name="charisma" value="1" />
             <stat name="innate speed" value="30" bonus="base" />
-            <grant type= id="ID_SIZE_MEDIUM" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
             <select type="Language" name="Language (Wight)" />
     		<grant type="Vision" id="ID_VISION_DARKVISION" />

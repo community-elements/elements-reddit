@@ -49,7 +49,7 @@
         <rules>
             <stat name="strength" value="2" />
             <stat name="constitution" value="1" />
-            <grant type= id="ID_SIZE_MEDIUM" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
             <stat name="innate speed" value="25" bonus="base" />
             <grant type="Vision" id="ID_VISION_DARKVISION" />
             <grant type="Racial Trait" id="ID_DAPC_RACIAL_TRAIT_MUMMY_DREADFUL_GLARE" />
