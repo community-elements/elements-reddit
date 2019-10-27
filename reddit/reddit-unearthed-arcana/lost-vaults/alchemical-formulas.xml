@@ -9,11 +9,41 @@
         </update>
     </info>
 
-    <element name="Alchemist Fire/Acid/Frost" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ALCHEMISTS_POTS">
+    <element name="Alchemist Fire" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ALCHEMISTS_FIRE">
         <description>
             <p>These pots of mixed chemicals that have different reactions when introduced into the air. A useful item for those who wish to do elemental damage but lack access to spells.</p>
             <p class="indent">Range: 20/60 feet</p>
-            <p class="indent">As an action, make an improvised ranged weapon attack. On a hit, the pot breaks on the creature and the contents spill out. This pot deals 1d10 damage of frost, acid, or fire damage, depending on the pot type.</p>
+            <p class="indent">As an action, make an improvised ranged weapon attack. On a hit, the pot breaks on the creature and the contents spill out. This pot deals 1d10 fire damage.</p>
+        </description>
+        <setters>
+            <set name="category">Alchemical Formulas</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Common</set>
+        </setters>
+    </element>
+
+    <element name="Alchemist Acid" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ALCHEMISTS_ACID">
+        <description>
+            <p>These pots of mixed chemicals that have different reactions when introduced into the air. A useful item for those who wish to do elemental damage but lack access to spells.</p>
+            <p class="indent">Range: 20/60 feet</p>
+            <p class="indent">As an action, make an improvised ranged weapon attack. On a hit, the pot breaks on the creature and the contents spill out. This pot deals 1d10 acid damage.</p>
+        </description>
+        <setters>
+            <set name="category">Alchemical Formulas</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Common</set>
+        </setters>
+    </element>
+    
+    <element name="Alchemist Frost" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ALCHEMISTS_FROST">
+        <description>
+            <p>These pots of mixed chemicals that have different reactions when introduced into the air. A useful item for those who wish to do elemental damage but lack access to spells.</p>
+            <p class="indent">Range: 20/60 feet</p>
+            <p class="indent">As an action, make an improvised ranged weapon attack. On a hit, the pot breaks on the creature and the contents spill out. This pot deals 1d10 dfrost damage.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -26,7 +56,8 @@
 
     <element name="Alchemical Silver" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ALCHEMICAL_SILVER">
         <description>
-            <p>This is a flask of specially treated quick silver that binds to items that touch it. As an action, you can coat 5 pieces of ammunition or one weapon to give that weapon the silvered property for means of bypassing resistances. The silver wears off after 1 hour.</p>
+            <p>This is a flask of specially treated quick silver that binds to items that touch it.</p>
+            <p class="indent">As an action, you can coat 5 pieces of ammunition or one weapon to give that weapon the silvered property for means of bypassing resistances. The silver wears off after 1 hour.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -39,7 +70,8 @@
 
     <element name="Beastbane" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_BEASTBANE">
         <description>
-            <p>This hollow tube is decorated with animals, and is filled with alchemical powders that wards off all but the most terrible of beasts in the world. As an action, you can snap the tube, and release the powders into the air, creating a 10 foot sphere of dust around you. Any beast type creature that enters or ends their turn in the sphere must make a DC 13 Wisdom saving throw or be Frightened of the area until the effect ends. This cloud lasts 1 minute, or within the presence of moderate or strong winds, 1 round.</p>
+            <p>This hollow tube is decorated with animals, and is filled with alchemical powders that wards off all but the most terrible of beasts in the world.</p>
+            <p class="indent">As an action, you can snap the tube, and release the powders into the air, creating a 10 foot sphere of dust around you. Any beast type creature that enters or ends their turn in the sphere must make a DC 13 Wisdom saving throw or be Frightened of the area until the effect ends. This cloud lasts 1 minute, or within the presence of moderate or strong winds, 1 round.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -52,7 +84,8 @@
 
     <element name="Blastpatch" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_BLASTPATCH">
         <description>
-            <p>These crystals contain large amounts of force within them. As an action, you can place or hide a blastpatch to cover a 5 foot area on the ground. When a creature steps on the blastpatch, they must make a DC 13 Dexterity saving throw. On a failed save, they take 2d8 force damage, or half on a successful save.</p>
+            <p>These crystals contain large amounts of force within them.</p>
+            <p class="indent">As an action, you can place or hide a blastpatch to cover a 5 foot area on the ground. When a creature steps on the blastpatch, they must make a DC 13 Dexterity saving throw. On a failed save, they take 2d8 force damage, or half on a successful save.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -66,8 +99,8 @@
     <element name="Blinding Bomb" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_BLINDING_BOMB">
         <description>
             <p>This small hand-held bomb of flash powder creates blinding light upon a solid impact.</p>
-            <p class="indent">Range 20/60 feet</p>
-            <p class="indent">Using an action, throw the bomb , which creates a 5 foot sphere of blinding light centered at the point of impact. All creatures in the area must make a DC 13 Constitution saving throw or be Blinded until the end of their next turn.</p>
+            <p class="indent">Range: 20/60 feet</p>
+            <p class="indent">Using an action, throw the bomb, which creates a 5 foot sphere of blinding light centered at the point of impact. All creatures in the area must make a DC 13 Constitution saving throw or be Blinded until the end of their next turn.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -80,7 +113,8 @@
 
     <element name="Bloodstinger Poison" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_BLOODSTINGER_POISON">
         <description>
-            <p>An enhanced poison made from insects, this lingering poison is more powerful. Using an action, you can coat a single weapon or 5 pieces of ammunition, which lasts one minute. When a creature is hit with a poisoned weapon, they must make a DC 10 Constitution saving throw. On a failed save, they take 1d4 poison damage. At the end of their turns after the first failure, they must make repeat the saving throw or take another 1d4 poison damage. The poison lasts until they save or 1 minute passes.</p>
+            <p>An enhanced poison made from insects, this lingering poison is more powerful.</p>
+            <p class="indent">Using an action, you can coat a single weapon or 5 pieces of ammunition, which lasts one minute. When a creature is hit with a poisoned weapon, they must make a DC 10 Constitution saving throw. On a failed save, they take 1d4 poison damage. At the end of their turns after the first failure, they must make repeat the saving throw or take another 1d4 poison damage. The poison lasts until they save or 1 minute passes.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -93,7 +127,8 @@
 
     <element name="Clearsense Powder" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_CLEARSENSE_POWDER">
         <description>
-            <p>This extremely fine, silver powder has the medical properties, specifically having the effects of restoring your primary senses. Using an action, you can inhale a pinch of this dust, and make a saving throw to end being Blinded and Deafened with advantage. Each pouch contains 3 uses each.</p>
+            <p>This extremely fine, silver powder has the medical properties, specifically having the effects of restoring your primary senses.</p>
+            <p class="indent">Using an action, you can inhale a pinch of this dust, and make a saving throw to end being Blinded and Deafened with advantage. Each pouch contains 3 uses each.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -134,7 +169,8 @@
 
     <element name="Ghoststrike Oil" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_GHOSTSTRIKE_OIL">
         <description>
-            <p>This clear, sweet smelling oil when applied to a weapon leaves behind a ghostly yellow mist when swung. As an action, you can coat one weapon or 5 pieces of ammunition with this oil. For 1 minute, the weapon is considered to be magical for the purposes of bypassing damage resistance for undead type creatures.</p>
+            <p>This clear, sweet smelling oil when applied to a weapon leaves behind a ghostly yellow mist when swung.</p>
+            <p class="indent">As an action, you can coat one weapon or 5 pieces of ammunition with this oil. For 1 minute, the weapon is considered to be magical for the purposes of bypassing damage resistance for undead type creatures.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -160,7 +196,8 @@
 
     <element name="Herbal Poultice" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_HERBAL_POULTICE">
         <description>
-            <p>A mixed group of herbal plants that when bound to the body with cloth has natural healing properties. When applied to the body as an action, you gain 1d4 temporary hit points until the end of your next short or long rest.</p>
+            <p>A mixed group of herbal plants that when bound to the body with cloth has natural healing properties.</p>
+            <p class="indent">When applied to the body as an action, you gain 1d4 temporary hit points until the end of your next short or long rest.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -188,7 +225,8 @@
 
     <element name="Lockburst Chalk" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_LOCKBURST_CHALK">
         <description>
-            <p>A narrow and long piece of chalk that can expand rapidly when broken off at one end, and can be used to bypass locks. When inserted into a lock and broken, you may make a Dexterity check as if you were proficient with a set of lock picking tools. On success, the lock is opened and destroyed. On a failed save, you are unable to open the lock for one hour, due to the expansion of the chalk in the hole.</p>
+            <p>A narrow and long piece of chalk that can expand rapidly when broken off at one end, and can be used to bypass locks.</p>
+            <p class="indent">When inserted into a lock and broken, you may make a Dexterity check as if you were proficient with a set of lock picking tools. On success, the lock is opened and destroyed. On a failed save, you are unable to open the lock for one hour, due to the expansion of the chalk in the hole.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -201,7 +239,8 @@
 
     <element name="Salve of Slipperiness" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_SALVE_SLIPPERINESS">
         <description>
-            <p>This foul smelling green-black oil can be used in order to escape from restraints. When applied to your body as an action, for the next five minutes enemies have disadvantage on Strength (Athletics) checks when attempting to grapple you and you have advantage on Dexterity (Acrobatics) checks made to escape grapples.</p>
+            <p>This foul smelling green-black oil can be used in order to escape from restraints.</p>
+            <p class="indent">When applied to your body as an action, for the next five minutes enemies have disadvantage on Strength (Athletics) checks when attempting to grapple you and you have advantage on Dexterity (Acrobatics) checks made to escape grapples.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -214,7 +253,8 @@
 
     <element name="Slow Step Oil" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_SLOW_STEP_OIL">
         <description>
-            <p>A chalky white oil that has the ability to slow your foes down and prevent escapes. Using an action, you can coat 1 weapon or 5 pieces of ammunition, which lasts 1 minute or until you hit a creature. Creatures hit with a coated weapon must make a DC 13 Constitution saving throw. On a failed save, their movement is reduced by 10 feet. The save is repeated at the end of the creatures turn or until 1 minute passes.</p>
+            <p>A chalky white oil that has the ability to slow your foes down and prevent escapes.</p>
+            <p class="indent">Using an action, you can coat 1 weapon or 5 pieces of ammunition, which lasts 1 minute or until you hit a creature. Creatures hit with a coated weapon must make a DC 13 Constitution saving throw. On a failed save, their movement is reduced by 10 feet. The save is repeated at the end of the creatures turn or until 1 minute passes.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -227,7 +267,8 @@
 
     <element name="Smoke Stick" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_SMOKE_STICK">
         <description>
-            <p>A long stick of what seems to be charcoal, when this stick of alchemical clay is broken, it instantly creates black smoke. Using an action, you can break a Smoke Stick, which creates a 5 foot cloud of black smoke that lightly obscures all creatures in the area from sight. This smoke lasts 1 minute, or within the presence of moderate or strong winds, 1 round.</p>
+            <p>A long stick of what seems to be charcoal, when this stick of alchemical clay is broken, it instantly creates black smoke.</p>
+            <p class="indent">Using an action, you can break a Smoke Stick, which creates a 5 foot cloud of black smoke that lightly obscures all creatures in the area from sight. This smoke lasts 1 minute, or within the presence of moderate or strong winds, 1 round.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
@@ -270,7 +311,8 @@
 
     <element name="Tracking Dust" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_TRACKING_DUST">
         <description>
-            <p>A pouch of very fine silver dust that is highly valued by rangers and bounty hunters. By using an action, you can cover a 10 foot square with the powder. After doing so, you gain a +5 bonus to Wisdom (Survival) checks made to track footprints within the area, and for tracking footprints of creatures that have walked through the area. The powder and area lasts for 30 minutes.</p>
+            <p>A pouch of very fine silver dust that is highly valued by rangers and bounty hunters.</p>
+            <p class="indent">By using an action, you can cover a 10 foot square with the powder. After doing so, you gain a +5 bonus to Wisdom (Survival) checks made to track footprints within the area, and for tracking footprints of creatures that have walked through the area. The powder and area lasts for 30 minutes.</p>
         </description>
         <setters>
             <set name="category">Alchemical Formulas</set>
