@@ -9,4 +9,256 @@
         </update>
     </info>
 
+    <element name="Cryptspawn Potion" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_CRYPTSPAWN_POTION">
+        <description>
+            <p>Dispute the fact that this very viscous potions smells like a corpse, it is very good for you. When consumed, you regain 3d4 hit points, and gain resistance to necrotic and poison damage for 1 hour. You also make any saves against disease with advantage for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Very rare</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Deathspawn Potion" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_DEATHSPAWN_POTION">
+        <description>
+            <p>A dark gray potion that has no smell, this potion prevents even the worst of deaths on the drinker. When this potion is consumed, you heal 5d4 hit points. You also gain immunity to poison and necrotic damage, and cannot contract any disease for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Legendary</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Elixir of Accuracy" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ELIXIR_OF_ACCURACY">
+        <description>
+            <p>A very sour, blue colored potion that is found within elven settlements. When this potion is consumed, your attack rolls are increased by 1d6 for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Rare</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Elixir of Aptitude" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ELIXIR_OF_APTITUDE">
+        <description>
+            <p>An amber potion that swirls in color, and has a sweet smell and taste. When this potion is consumed, choose a skill. The next skill check made for that skill gains a 1d4 bonus to the roll. This effect lasts until the skill check is made, or until 1 hour passes.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Uncommon</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Elixir of Fortitude" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ELIXIR_OF_FORTITUDE">
+        <description>
+            <p>A thick, purple potion that is used to help your body be stronger. When this potion is consumed, you may treat a Constitution saving throw as if you had rolled a 25. You may use this effect once during the 1 hour duration. If this effect is not used after the 1 hour passes, the potion’s power dissipates.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Rare</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="name" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_name">
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Uncommon</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Elixir of Reflexes" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ELIXIR_OF_REFLEXES">
+        <description>
+            <p>A thin, pink colored potion that will give the body unbelievable dexterity. When this potion is consumed, you may treat a Dexterity saving throw as if you had rolled a 25. You may use this effect once during the 1 hour duration. If this effect is not used after the 1 hour passes, the potion’s power dissipates.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Rare</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Elixir of Will" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ELIXIR_OF_WILL">
+        <description>
+            <p>A white bubbling potion that enhances the willpower of the drinker. When this potion is consumed, you may treat a Wisdom saving throw as if you had rolled a 25. You may use this effect once during the 1 hour duration. If this effect is not used after the 1 hour passes, the potion’s power dissipates.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Rare</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Fire Beetle Potion" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_FIRE_BEETLE_POTION">
+        <description>
+            <p>A potion that is red and smoky in color, once consumed, your skin glows red and your skin takes on a rough texture. When this potion is consumed, you gain resistance to fire damage and 5 temporary hit points for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Uncommon</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Gravespawn Potion" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_GRAVESPAWN_POTION">
+        <description>
+            <p>A deep purple potion that helps with deadly effects. When this potion is consumed, you gain resistance to poison and necrotic damage. You can also add a 1d4 bonus to saving throws made against disease. These effects last for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Uncommon</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Kruthik Potion" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_KRUTHIK_POTION">
+        <description>
+            <p>A potion made of Kruthik parts, it is a foul smelling, red-purple liquid. When this potion is consumed, you gain 3d4 temporary hit points, and resistance to acid damage for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Rare</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Potion of Clarity" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_POTION_OF_CLARITY">
+        <description>
+            <p>A cold, cyan colored liquid fills this potion bottle. When this potion is consumed, for the next hour, you may reroll a single attack, skill check, or saving throw with a 1d4 bonus. You must take the result of this reroll.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Uncommon</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Potion of Mimicry" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_POTION_OF_MIMICRY">
+        <description>
+            <p>A very thick, orange, and sweet potion that allows you to become disguised. When this potion is consumed, you gain the effects of disguise self, gaining the appearance of a creature within sight. (Save DC 15). You also gain the mannerisms, voice, and speech patterns of the creature, granting advantage on Charisma (Deception) checks made to pass off as the chosen creature. These effects last for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Rare</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Potion of Regeneration" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_POTION_OF_REGENERATION">
+        <description>
+            <p>A reddish brown, metallic tasting potion. When this potion is consumed, you regain 5 hit points at the start of your turn for 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Rare</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Potion of Spirit" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_POTION_OF_SPIRIT">
+        <description>
+            <p>A lavender scented and colored potion that helps your spirit remain on the Material Plane. When this potion is consumed, you can add a +1 bonus to all death saving throws made for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Uncommon</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Potion of Stormshield" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_POTION_OF_STORMSHIELD">
+        <description>
+            <p>A potion with a gray color, ozone smell, and metallic sheen. When this potion is consumed, you gain resistance to lightning and thunder damage for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Rare</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Potion of Vigor" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_POTION_OF_VIGOR">
+        <description>
+            <p>A vermillion, normal smelling potion. When consumed, you gain 15 temporary hit points for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Rare</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Spider Potion" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_SPIDER_POTION">
+        <description>
+            <p>A strong smelling, sepia colored potion that grants a spider’s abilities and resistances. When consumed, you gain 20 temporary hit points, immunity to poison damage, and the effects of the spell spider climb for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+		    <set name="cost" currency="gp">0</set>
+		    <set name="weight" lb="0.5">1/2 lb.</set>
+		    <set name="type">Potion</set>
+		    <set name="rarity">Legendary</set>
+		    <set name="stackable">true</set>
+        </setters>
+    </element>
+
 </elements>
