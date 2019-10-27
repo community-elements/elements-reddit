@@ -79,20 +79,6 @@
         </setters>
     </element>
 
-    <element name="name" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_name">
-        <description>
-            <p></p>
-        </description>
-        <setters>
-            <set name="category">Potions</set>
-		    <set name="cost" currency="gp">0</set>
-		    <set name="weight" lb="0.5">1/2 lb.</set>
-		    <set name="type">Potion</set>
-		    <set name="rarity">Uncommon</set>
-		    <set name="stackable">true</set>
-        </setters>
-    </element>
-
     <element name="Elixir of Reflexes" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ELIXIR_OF_REFLEXES">
         <description>
             <p>A thin, pink colored potion that will give the body unbelievable dexterity. When this potion is consumed, you may treat a Dexterity saving throw as if you had rolled a 25. You may use this effect once during the 1 hour duration. If this effect is not used after the 1 hour passes, the potion’s power dissipates.</p>
