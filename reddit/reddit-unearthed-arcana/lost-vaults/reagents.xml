@@ -9,170 +9,146 @@
         </update>
     </info>
 
-    <element name="Creeping Gatevine" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_CREEPING_GATEVINE">
+    <element name="Creeping Gatevine" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_CREEPING_GATEVINE">
         <description>
             <p>This red flowering vine grows on teleportation gates and portals to other planes of existence. This reagent can be used as a spell component for any spell that meets the following requirements:</p>
             <p class="indent">A spell that has a teleportation effect. If you do, you can increase the teleportation range by 10 feet. This reagent is consumed on use.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
 
-    <element name="Dark Clover" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_DARK_CLOVER">
+    <element name="Dark Clover" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_DARK_CLOVER">
         <description>
             <p>A black colored clover that grows wildly in the Shadowfell, or locations with strong negative energy.</p>
             <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements: a spell that does necrotic damage. If you do, you can increase the damage by an additional 1d6. The reagent is consumed on use.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
 
-    <element name="Desert Rose" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_DESERT_ROSE">
+    <element name="Desert Rose" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_DESERT_ROSE">
         <description>
             <p>A yellow rose that only grows in very remote regions of deserts and arid areas, this Reagent is used for maintaining magic.</p>
             <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements: a spell that requires concentration. If you do, you can make Constitution saving throws for maintaining concentration with advantage. The reagent is consumed on use.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
 
-    <element name="Black Cave Pearl" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_BLACK_CAVE_PEARL">
+    <element name="Black Cave Pearl" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_BLACK_CAVE_PEARL">
         <description>
             <p>A pearl of swirling black colors, typically found in underground lakes.</p>
             <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements: a spell that has a charm effect. If you do, the creature makes the saving throw against the charm effect with disadvantage. This reagent is consumed when used.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Rare</set>
         </setters>
     </element>
 
-    <element name="Black Dragon Bile" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_BLACK_DRAGON_BILE">
+    <element name="Black Dragon Bile" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_BLACK_DRAGON_BILE">
         <description>
             <p>A Reagent that is created by distilling stomach acid of a Black Dragon.</p>
             <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements: a spell that does acid damage. If you do, you can add an additional 1d6 damage to the spell. This reagent is consumed when used.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
 
-    <element name="Brightleaf" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_BRIGHTLEAF">
+    <element name="Brightleaf" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_BRIGHTLEAF">
         <description>
             <p>These leaves typically bloom in the older forests of the world, and never seem to fall, even in winter.</p>
             <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements: a spell that deals radiant damage. If you do, you can increase the damage by 1d6. This reagent is consumed on use.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
 
-    <element name="Dread Nightshade" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_DREAD_NIGHTSHADE">
+    <element name="Dread Nightshade" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_DREAD_NIGHTSHADE">
         <description>
             <p>A plant that is related to eggplants in both look and taste, and is actually quite deadly.</p>
             <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements: a spell that does poison damage. If you do, you can increase the damage by 2d6. This reagent is consumed on use.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Rare</set>
         </setters>
     </element>
 
-    <element name="Flame Rose" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_FLAME_ROSE">
+    <element name="Flame Rose" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_FLAME_ROSE">
         <description>
             <p>A deep red and orange rose that is only found in the hottest areas of the world.</p>
             <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements: a spell that does fire damage. If you do, increase the damage by 1d6. This reagent is consumed when used.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
 
-    <element name="Fundamental Ice" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_FUNDAMENTAL_ICE">
+    <element name="Fundamental Ice" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_FUNDAMENTAL_ICE">
         <description>
             <p>Ice that is formed when water is exposed to the Elemental Chaos.</p>
             <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements: a spell that does cold damage. If you do, you can also have the targeted creatures make a Strength saving throw (if you don't have a spell save DC, the save is DC 14). On a failed save, the creatures who take cold damage are also retrained by ice until the end of their next turn. This reagent is consumed on use.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
 
-    <element name="Glassteel Shard" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_GLASSTEEL_SHARD">
+    <element name="Glassteel Shard" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_GLASSTEEL_SHARD">
         <description>
             <p>A special tempered glass that is forged from sand from the Elemental Chaos.</p>
             <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements: a spell that deals force damage. If you do, you can increase the damage by 1d6. This reagent is consumed when used.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
 
-    <element name="Mind Dust" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_MIND_DUST">
+    <element name="Mind Dust" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_MIND_DUST">
         <description>
             <p>A reagent made from the powdered brain of a mind flayer.</p>
             <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements: a spell that deals psychic damage. If you do, you can add 1d6 damage. This reagent is consumed when used.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
 
-    <element name="Terror Ichor" type="Magic Item" source="Lost Vaults" id="ID_RDDT_LV_REAGENT_TERROR_ICHOR">
+    <element name="Terror Ichor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_REAGENT_TERROR_ICHOR">
         <description>
             <p>A reagent that is made by distilling pixie blood.</p>
             <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements: a spell that causes a creature to become frightened. If you do, creatures make the saving throw against the fear effect with a -1d4 penalty to their rolls. This reagent is consumed when used.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type">Wondrous Item</set>
+            <set name="type">Reagent</set>
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
