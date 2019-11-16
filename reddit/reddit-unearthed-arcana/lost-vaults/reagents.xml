@@ -11,8 +11,8 @@
 
     <element name="Creeping Gatevine" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_REAGENT_CREEPING_GATEVINE">
         <description>
-            <p>This red flowering vine grows on teleportation gates and portals to other planes of existence. This reagent can be used as a spell component for any spell that meets the following requirements:</p>
-            <p class="indent">A spell that has a teleportation effect. If you do, you can increase the teleportation range by 10 feet. This reagent is consumed on use.</p>
+            <p>This red flowering vine grows on teleportation gates and portals to other planes of existence.</p>
+            <p class="indent">This reagent can be used as a spell component for any spell that meets the following requirements:A spell that has a teleportation effect. If you do, you can increase the teleportation range by 10 feet. This reagent is consumed on use.</p>
         </description>
         <setters>
             <set name="category">Reagents</set>
