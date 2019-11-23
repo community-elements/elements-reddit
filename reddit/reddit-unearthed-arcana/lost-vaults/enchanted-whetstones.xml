@@ -11,7 +11,8 @@
 
     <element name="Caustic Whetstone" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_WHETSTONE_CAUSTIC">
         <description>
-            <p>A whetstone made of rare green metal that is formed inside of Green Dragons. When this whetstone is applied to a melee or ranged weapon, the weapon deals an additional 1d6 acid damage for 5 minutes. The whetstone is consumed when used.</p>
+            <p>A whetstone made of rare green metal that is formed inside of Green Dragons.</p>
+            <p class="indent">When this whetstone is applied to a melee or ranged weapon, the weapon deals an additional 1d6 acid damage for 5 minutes. The whetstone is consumed when used.</p>
         </description>
         <setters>
             <set name="category">Whetstones</set>
@@ -22,7 +23,8 @@
 
     <element name="Frozen Whetstone" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_WHETSTONE_FROZEN">
         <description>
-            <p>A white-blue metal whetstone that is formed in very icy regions. When this whetstone is applied to a melee or ranged weapon, the weapon does an additional 1d6 cold damage for 5 minutes. The whetstone is consumed on use.</p>
+            <p>A white-blue metal whetstone that is formed in very icy regions.</p>
+            <p class="indent">When this whetstone is applied to a melee or ranged weapon, the weapon does an additional 1d6 cold damage for 5 minutes. The whetstone is consumed on use.</p>
         </description>
         <setters>
             <set name="category">Whetstones</set>
@@ -33,7 +35,8 @@
 
     <element name="Tempest Whetstone" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_WHETSTONE_TEMPEST">
         <description>
-            <p>A rare metal whetstone that formed from lightning struck iron. When this whetstone is applied to a weapon, that weapon does an additional 1d6 lightning damage for 5 minutes. The whetstone is consumed when used.</p>
+            <p>A rare metal whetstone that formed from lightning struck iron.</p>
+            <p class="indent">When this whetstone is applied to a weapon, that weapon does an additional 1d6 lightning damage for 5 minutes. The whetstone is consumed when used.</p>
         </description>
         <setters>
             <set name="category">Whetstones</set>
@@ -44,7 +47,8 @@
 
     <element name="Whetstone of Combustion" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_WHETSTONE_COMBUSTION">
         <description>
-            <p>A whetstone that formed from obsidian and produces a flammable oil. When this whetstone is applied to a weapon, the weapon does an additional 1d6 fire damage for 5 minutes. The whetstone is consumed when used.</p>
+            <p>A whetstone that formed from obsidian and produces a flammable oil.</p>
+            <p class="indent">When this whetstone is applied to a weapon, the weapon does an additional 1d6 fire damage for 5 minutes. The whetstone is consumed when used.</p>
         </description>
         <setters>
             <set name="category">Whetstones</set>
@@ -55,7 +59,8 @@
 
     <element name="Whetstone of Venom" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_WHETSTONE_VENOM">
         <description>
-            <p>A whetstone that is formed from iron exposed to poisonous pools for an extended period. When this whetstone is applied to a weapon, the weapon does an additional 1d6 poison damage for 5 minutes. The whetstone is consumed on use.</p>
+            <p>A whetstone that is formed from iron exposed to poisonous pools for an extended period.</p>
+            <p class="indent">When this whetstone is applied to a weapon, the weapon does an additional 1d6 poison damage for 5 minutes. The whetstone is consumed on use.</p>
         </description>
         <setters>
             <set name="category">Whetstones</set>
