@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magical Girl</name>
+		<description>The Magical Girl class from Reddit.</description>
+		<author url="https://www.reddit.com/r/UnearthedArcana/comments/6jyjj9/magical_girl/">u/Shywinds</author>
+		<update version="0.0.2">
+		<file name="class-magicalgirl.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/classes/class-magicalgirl.xml" />
+		</update>
+	</info>
+    <element name="Magical Girl" type="Class" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_MAGICALGIRL">
+        <supports />
+        <requirements />
+        <description>
+            <p class="flavor">A demon rages through the hallways of the Arcane College, tearing students in half as they flee. </p>
+            <p>One apprentice stands defiant, placing her fingertips on a jeweled bracelet. With a sudden flash, the girl transforms into a statuesque figure in magnificent white robes.</p>
+            <p class="indent">A young squire presents his signet ring to the blackguard. A swirling mist fills the area- and when it clears, a knight in shimmering golden armor stands where the squire was standing. He draws his oversized greatsword, and smirks beneath his armor.</p>
+            <p class="indent">Despite the name, Magical Girls are not necessarily female, but the most iconic characters of this class are. Magical Girls are mundane people with the extraordinary ability to transform into a powerful alternate form.</p>
+            <h4>KEEPING A PROMISE</h4>
+            <p>There are two sources of a Magical Girl's power: a magical promise, and a heirloom given to the character. The Magical Girl makes a promise, and is given the heirloom. The heirloom allows the magical girl to transform.</p>
+            <p class="indent">Transformation gives the Magical Girl the power to complete her promise. It is a cyclical relationship that constantly reminds the Magical Girl what she is fighting for.</p>
+            <p class="indent">Naturally, the new form provided by the transformation tends to embody the ideals of the promise. The new form may look and act more like the heirloom’s original owner than the Magical Girl using it.</p>
+            <h4>THE POWER OF FRIENDSHIP</h4>
+            <p>A Magical Girl feels empowered by the presence of her friends. These are the ones whom she truly cares about, and may be the reason for her promise.</p>
+            <p class="indent">When a Magical Girl is not giving their all in combat to protect their ideals, they are often found engaging in a multitude of light hobbies. From making friendship bracelets, to brewing tea, and napping to their heart's content.</p>
+            <p class="indent">Among most groups of friends, disputes are sure to take place over a conflict of priorities. Most Magical Girls strive to serve as an adequate seer to propose a middle ground or compromise to make everyone happy. Magical Girls most often don't have a strong opinion on the sides of these types of disputes and would be most accepting of whichever method their friends would be happiest with. They would rather have everyone get along as a tight-knit family, as opposed to a group of rascals who would be better off separating.</p>
+            <p class="indent">An act of true separation from a very close friend, would be heartrendingly painful to a Magical Girl, even to the point where they may lose their own way.</p>
+            <h4>CREATING A MAGICAL GIRL</h4>
+            <p>As you are creating a Magical Girl, the most important question is “what do you want to transform into?” Is your transformation some kind of beast-like form, a knight in shining armor, or an older, more regal version of your current self? Second, what does your transformation do? Do you rely on martial prowess or magical ability? This should tell you which Magical Promise to make.</p>
+            <p class="indent">The next step is to consider who your character made a promise to, as well as why. Is your Magical Promise with a ghost that lives in your Heirloom, an extra-planar being such as an angel, or an ideal? What can you do to fulfill that promise? Once your original goal is completed, how can you continue to uphold the terms of your Magical Promise?</p>
+            <h5>QUICK BUILD</h5>
+            <p>You can quickly make a Magical Girl by following these suggestions. Charisma should be your highest ability score, followed by Dexterity or Constitution. Second, choose the Folk Hero background.</p>
+            <h3>CLASS FEATURES</h3>
+            <p>As a magical girl, you gain the following class features.</p>
+            <h5>HIT POINTS</h5>
+            <p>
+            <span class="emphasis">Hit Dice:</span>1d8 per magical girl level
+            <br/>
+            <span class="emphasis">Hit Points at 1st Level:</span>8 + your Constitution modifier
+            <br/>
+            <span class="emphasis">Hit Points at Higher Levels:</span>1d8 (or 5) + your Constitution modifier per magical girl level after 1st
+            <br/>
+            </p>
+            <h5>PROFICIENCIES</h5>
+            <p>
+            <span class="emphasis">Armor:</span>Light armor
+            <br/>
+            <span class="emphasis">Weapons:</span>Simple weapons
+            <br/>
+            <span class="emphasis">Tools:</span>None
+            <br/>
+            </p>
+            <p>
+            <span class="emphasis">Saving Throws:</span>Charisma, Constitution
+            <br/>
+            <span class="emphasis">Skills:</span>Choose two skills from Acrobatics, Arcana, Insight, Perception, or Persuasion
+            <br/>
+            </p>
+            <h5>EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+            	<p> Your heirloom, which can be: </p>
+            <li>
+              <i>(a)</i> a signet ring 
+              <i>(b)</i> an amulet
+	            <i>(c)</i> a set of fine clothes, or
+	            <i>(d)</i> a martial weapon of your choice
+            </li>
+            <li>
+              <i>(a)</i> a quarterstaff or
+              <i>(b)</i> a dagger
+            </li>
+            <li>
+              <i>(a)</i> a diplomat’s pack or 
+              <i>(b)</i> a scholar’s pack
+            </li>
+            <li>And a bag with two tomes on lore of your choice</li>
+            </ul>
+            <div element="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MAGICAL_PROMISE" />
+            <div element="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_TRANSFORMATION" />
+            <div element="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_CHARM_CASTING" />
+            <div element="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_FIGHTING_STYLE" />
+            <div element="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MAGICAL_CHARMS" />
+            <div element="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_ASI" />
+            <div element="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_EXTRA_ATTACK" />
+            <div element="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_POWER_OF_FRIENDSHIP" />
+            <div element="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_STRENGTH_OF_SPIRIT" />
+            <div element="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_PROMISE_FULFILLED" />
+        </description>
+        <sheet display="false">
+            <description>A teenager who has a secret alternate magical identity that they transform into for the fight.</description>
+        </sheet>
+        <setters>
+            <set name="short">A teenager who has a secret alternate magical identity that they transform into for the fight.</set>
+            <set name="hd">d8</set>
+            <set name="spellcaster">true</set>
+            <set name="spellcastingAbility">Charisma</set>
+        </setters>
+        <rules>
+
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+            <select type="Proficiency" name="Skill Proficiency (Magical Girl)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION" number="2" />
+
+            <grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MAGICAL_PROMISE" level="1"/>
+            <grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_TRANSFORMATION" level="1"/>
+            <grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_CHARM_CASTING" level="2"/>
+            <grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_FIGHTING_STYLE" level="2"/>
+            <grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MAGICAL_CHARMS" level="3"/>
+            <grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_ASI" level="4"/>
+            <grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_EXTRA_ATTACK" level="5"/>
+            <grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_POWER_OF_FRIENDSHIP" level="7"/>
+            <grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_STRENGTH_OF_SPIRIT" level="15"/>
+            <grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_PROMISE_FULFILLED" level="20"/>
+	</rules>
+    </element>
+	<element name="Transformation" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_TRANSFORMATION">
+		<description>
+			<p>At 1st level, as a bonus action you may undergo a magical transformation into your alternate form. The transformation generally has a cosmetic change. This could be something minor, such as a difference in hair color, or it could be a major change, such as a new outfit suddenly appearing over your clothing. Transforming requires the magical girl's heirloom. In order to transform, you must be able to take actions, and your heirloom must be on your person. You have two uses of your Transformation at first level, which return after a short or long rest. While you are transformed, you gain the following traits:</p>
+			<p>
+				<span class="emphasis">Armor Class:</span> While you are transformed and not wearing armor, your armor class is equal to 10 + your Dexterity Modifier + your Charisma modifier. You can use a shield and still gain this benefit.
+				<br/>
+				<span class="emphasis">Duration:</span> You can maintain your Transformation for up to one hour. If you are knocked unconscious, your transformation ends early.
+				<br/>
+				<span class="emphasis">Size:</span> You become a medium humanoid creature, regardless of what your original form was.
+				<br/>
+				<span class="emphasis">Radiant Weapon:</span>   When you transform, you may choose to summon one or more weapons from the list below. These weapons are made of radiant energy, and shed bright light in a 5-foot radius. Since these weapons are made of light, they deal radiant damage, instead of their normal damage type. These radiant weapons cannot be wielded by anyone other than you, and dissipate as soon as they leave your hand.
+				<br/>
+			</p>
+			<ul>
+				<p>Your weapons can be: </p>
+				<li>
+					<i>(a)</i> Up to two thrown weapons which, if thrown, dissipate and reappear in your hands at the end of your turn;
+					<i>(b)</i> Any nonmagical weapon with the ammunition property, which has unlimited ammunition;
+					<i>(c)</i> Two light weapons;
+					<i>(d)</i> Up to two one-handed weapons, or one-handed weapon and a shield, or;
+					<i>(e)</i> A two-handed weapon.
+				</li>
+				<p>While you are wielding your radiant weapons, you may transform your current weapon (or weapons) into a different option on the list above, or dispel your radiant weapons completely, as a bonus action. If you do not have your radiant weapons in hand, you may use your action to conjure them.</p>
+			</ul>
+		</description>
+		<sheet usage="2/Rest" action="Bonus Action">
+			<description>Transforming requires the magical girl's heirloom. This typically brings a cosmetic change, from hair colour to clothing. In order to transform, you must be able to take actions, and your heirloom must be on your person. While you are transformed, you gain the following traits: if you're not wearing armor your Armor Class becomes {{magical girl transformation:armor class}}, you can add shield bonus to it. Your size changes to Medium. When you transform, you can summon weapons, from list below, they deal radiant damage and shed bright light in a 5-foot radius. You can dispel them as bonus action and summon them again as action. List of weapon options: Up to two thrown weapons which, if thrown, dissipate and reappear in your hands at the end of your turn; Any nonmagical weapon with the ammunition property, which has unlimited ammunition; Two light weapons; Up to two one-handed weapons, or one-handed weapon and a shield, or; A two-handed weapon.</description>
+		</sheet>
+            <rules>
+                <stat name="magical girl transformation:armor class" value="10" />
+                <stat name="magical girl transformation:armor class" value="charisma:modifier" />
+                <stat name="magical girl transformation:armor class" value="dexterity:modifier" />
+            </rules>
+	</element>
+	<element name="Charm Casting" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_CHARM_CASTING">
+            <description>
+                <p>At 2nd level, Magical Girls gain access to a unique form of Spellcasting called Charm Casting, which can only be accessed by their transformed selves.</p>
+                <h5>SPELL SLOTS</h5>
+                <p>Each time you Transform, you gain one spell slot; if you revert back to your normal form, the spell slot is wasted. The level of the spell slot is shown on the Magical Girl table. At 11th level, you gain a second spell slot whenever you Transform.</p>
+                <h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+                <p>You know two 1st level spells of your choice from the magical girl spell list.</p>
+                <p class="indent">The Spells Known column of the Magical Girl table shows when you learn more magical girl spells of your choice of 1st level or higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level.</p>
+                <h5>SPELLCASTING ABILITY</h5>
+                <p>Charisma is your spellcasting ability for your magical girl spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a magical girl spell you cast and when making an attack roll with one.</p>
+                <p class="indent">
+                      <b>Spell save DC</b> = 8 + your proficiency bonus + your Charisma modifier
+                </p>
+                <p class="indent">
+                      <b>Spell attack modifier</b> = your proficiency bonus + your Charisma modifier
+                </p>
+                <h5>SPELLCASTING Focus</h5>
+                <p>When you cast a spell that requires a material component, you must use your heirloom as a spellcasting focus.</p>
+            </description>
+            <sheet>
+                <description>When you cast a spell that requires a material component, ignore it and use you heirloom instead.</description>
+            </sheet>
+            <spellcasting name="Magical Girl" ability="Charisma" >
+            <list>Magical Girl</list>
+            </spellcasting>
+            <rules>
+                <stat name="magical girl:spellcasting:slots:1" value="1" level="2" requirements="![level:5]"/>
+                <stat name="magical girl:spellcasting:slots:2" value="1" level="5" requirements="![level:9]"/>
+                <stat name="magical girl:spellcasting:slots:3" value="1" level="9" requirements="![level:13]"/>
+                <stat name="magical girl:spellcasting:slots:3" value="1" level="11" requirements="![level:13]"/>
+                <stat name="magical girl:spellcasting:slots:4" value="2" level="13" requirements="![level:17]"/>
+                <stat name="magical girl:spellcasting:slots:5" value="2" level="17"/>
+
+                <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),1" level="2" number="2" spellcasting="Magical Girl"/>
+                <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),1" level="3" spellcasting="Magical Girl" />
+                <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),2" level="5" spellcasting="Magical Girl" />
+                <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),2" level="7" spellcasting="Magical Girl" />
+                <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),3" level="9" spellcasting="Magical Girl" />
+                <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),3" level="11" spellcasting="Magical Girl" />
+                <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),4" level="13" spellcasting="Magical Girl" />
+                <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),4" level="15" spellcasting="Magical Girl" />
+                <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),5" level="17" spellcasting="Magical Girl" />
+                <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),5" level="19" spellcasting="Magical Girl" />
+            </rules>
+        </element>
+	<element name="Fighting Style" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_FIGHTING_STYLE">
+		<description>
+			<p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5>ARCHERY</h5>
+            		<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+			<h5>DEFENSE</h5>
+            		<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5>GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on the damage die for an attack you make with a melee weapon you are wielding with two hands, you can re-roll the die and must use the new result even if it is a 1 or 2. The weapon must have the two-handed or versatile property to gain this benefit.</p>
+			<h5>TWO-WEAPON FIGHTING</h5>
+            		<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING" level="2"/>
+		</rules>
+	</element>
+	<element name="Magical Girl Charms" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MAGICAL_CHARMS">
+		<description>
+			<p>If a magical charm has prerequisites, you must meet them to learn it. You can learn the charm at the same time you meet its prerequisites. A level prerequisite refers to your level in this class.</p>
+		</description>
+        	<sheet>
+            	<description></description>
+        	</sheet>
+		<rules>
+			<select type="Class Feature" name="Magical Girl Charms" supports="Magical Girl Charms" level="3" number="2"/>
+			<select type="Class Feature" name="Magical Girl Charms" supports="Magical Girl Charms" level="9"/>
+			<select type="Class Feature" name="Magical Girl Charms" supports="Magical Girl Charms" level="13"/>
+			<select type="Class Feature" name="Magical Girl Charms" supports="Magical Girl Charms" level="17"/>
+		</rules>
+	</element>
+    	<element name="Magical Promise" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MAGICAL_PROMISE">
+        	<description>
+            		<p>Every magical girl makes a promise that is personal to themselves. The magical promise you choose reflects the reason you take up arms. Your magical promise grants you abilities at levels 1, 6, 10, and 14.</p>
+        	</description>
+        	<sheet>
+            	<description></description>
+        	</sheet>
+        	<rules>
+            		<select type="Archetype" name="Magical Promise" supports="Magical Promise" />
+        	</rules>
+	</element>
+	<element name="Ability Score Improvement (Magical Girl)" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_ASI">
+        	<description>
+            		<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th,16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+        	</description>
+        	<sheet display="false" />
+        	<rules>
+            		<select type="Class Feature" name="Improvement Option (Magical Girl 4)" supports="Improvement Option,Magical Girl,4" level="4" />
+            		<select type="Class Feature" name="Improvement Option (Magical Girl 6)" supports="Improvement Option,Magical Girl,6" level="6" />
+            		<select type="Class Feature" name="Improvement Option (Magical Girl 8)" supports="Improvement Option,Magical Girl,8" level="8" />
+            		<select type="Class Feature" name="Improvement Option (Magical Girl 12)" supports="Improvement Option,Magical Girl,12" level="12" />
+            		<select type="Class Feature" name="Improvement Option (Magical Girl 14)" supports="Improvement Option,Magical Girl,14" level="14" />
+            		<select type="Class Feature" name="Improvement Option (Magical Girl 16)" supports="Improvement Option,Magical Girl,16" level="16" />
+            		<select type="Class Feature" name="Improvement Option (Magical Girl 19)" supports="Improvement Option,Magical Girl,19" level="19" />
+        	</rules>
+    	</element>
+    	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_EXTRA_ATTACK">
+        	<description>
+            		<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        	</description>
+        	<sheet>
+            	<description>You get 2 attacks instead of 1 in your attack phase.</description>
+        	</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+    	</element>
+    	<element name="The Power of Friendship" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_POWER_OF_FRIENDSHIP">
+		<description>
+			<p>At 7th level, you become immune to being charmed or frightened, so long as there is an ally within 30 feet. Additionally, allies within 30 feet have Advantage on saving throws against being charmed or frightened. At 18th level, you are immune to being charmed or frightened so long as you can see an ally, and allies within 60 feet have advantage against being charmed or frightened.</p>
+		</description>
+		<sheet>
+			<description>You become immune to being charmed or frightened, so long as there is an ally {{friendship player immune:range}}. Additionally, allies within {{friendship ally advantage:range}} feet have Advantage on saving throws against being charmed or frightened.</description>
+		</sheet>
+		<rules>
+			<stat name="friendship player immune:range" value="within 30 feet" bonus="base" />
+			<stat name="friendship player immune:range" value="in sight" level="18" bonus="base" />
+			<stat name="friendship ally advantage:range" value="30" bonus="base" />
+			<stat name="friendship ally advantage:range" value="60" level="18" bonus="base" />
+		</rules>
+	</element>
+	<element name="Strength of Spirit" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_STRENGTH_OF_SPIRIT">
+		<description>
+			<p>At 15th level, your dedication to your promise is so strong, it manifests as a protective barrier. When you need to make a saving throw using an ability other than Charisma, you may choose to make a Charisma saving throw instead. You may do this a number of times per day equal to your Charisma modifier. You regain expended uses when you complete a long rest.</p>
+		</description>
+		<sheet usage="{{charisma:modifier}}/Long Rest">
+			<description>You can replace a non-Charisma saving throw with a Charisma saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Promise Fulfilled" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_PROMISE_FULFILLED">
+		<description>
+			<p>At 20th level, you can find strength in your abilities, even when it seems hopeless or futile. If you roll initiative and have no uses of Transformation left, you regain one use.</p>
+		</description>
+		<sheet>
+			<description>If you roll initiative and have no uses of Transformation left, you regain one use.</description>
+		</sheet>
+	</element>
+    <!-- Promise of Friendship -->
+    <element name="Promise of Friendship" type="Archetype" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_MAGICAL_GIRL_FRIENDSHIP">
+        <supports>Magical Promise</supports>
+        <description>
+            <p>The Magical Girl dedicates herself to her allies, their ambitions, and their goals. Your transformation is an idol of sorts, a beautiful and inspiring leader.</p>
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_IRRESISTIBLE" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_BEACON_OF_INSPIRATION" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_INSPIRING_STRIKE" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_IMPROVED_INSPIRATION" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_PASSIVE_INSPIRATION" />
+        </description>
+        <sheet>
+            <description>The Magical Girl dedicates herself to her allies, their ambitions, and their goals.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_IRRESISTIBLE" level="1" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_BEACON_OF_INSPIRATION" level="1" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_INSPIRING_STRIKE" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_IMPROVED_INSPIRATION" level="10" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_PASSIVE_INSPIRATION" level="14" />
+        </rules>
+    </element>
+    <element name="Irresistible" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_IRRESISTIBLE">
+        <description>
+            <p>At 1st level, you add 1/2 your proficiency bonus to Charisma checks you are not proficient in. While you are transformed, you have advantage on Performance and Persuasion checks.</p>
+        </description>
+        <sheet>
+            <description>While you are transformed, you have advantage on Performance and Persuasion checks.</description>
+        </sheet>
+        <rules>
+            <stat name="deception:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_DECEPTION"/>
+            <stat name="intimidation:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+            <stat name="performance:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_PERFORMANCE"/>
+            <stat name="persuasion:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_PERSUASION"/>
+        </rules>
+    </element>
+    <element name="Beacon of Inspiration" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_BEACON_OF_INSPIRATION">
+        <description>
+            <p>Starting at 1st level, your transformation is a beacon of inspiration to your allies. While you are transformed, you may use your reaction to add 1d4 to one ability check, attack roll, or saving throw made by a friendly creature within 30 feet of you who can see you.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>While you are transformed, you may add 1d4 to one ability check, attack roll, or saving throw made by a friendly creature within 30 feet of you who can see you.</description>
+            <description level="10">While you are transformed, you may add 1d8 to one ability check, attack roll, or saving throw made by a friendly creature within 30 feet of you who can see you. If you're not transformed, you instead can add 1d4.</description>
+        </sheet>
+    </element>
+    <element name="Inspiring Strike" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_INSPIRING_STRIKE">
+        <description>
+            <p>At 6th level, your fighting style shifts to aiding your allies more than fighting alone. When you take the attack action, you may forfeit your second attack in order to give an ally within 5 feet of your target advantage on their next attack roll against that creature.</p>
+        </description>
+        <sheet>
+            <description>When you take the attack action, you may forfeit your second attack in order to give an ally within 5 feet of your target advantage on their next attack roll against that creature.</description>
+        </sheet>
+    </element>
+    <element name="Improved Inspiration" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_IMPROVED_INSPIRATION">
+        <description>
+            <p>Beginning at 10th level, you may use your Beacon of Inspiration ability even if you are not transformed. If you are transformed, friendly creatures add 1d8 to their roll, instead of 1d4.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+	</element>
+    <element name="Passive Inspiration" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_PASSIVE_INSPIRATION">
+        <description>
+            <p>At 14th level, your presence becomes an intoxicating aura of confidence. While you are transformed, friendly creatures within 30 feet of you may roll 1d4 and add the result to one ability check, attack roll, or saving throw they make on each turn.</p>
+        </description>
+        <sheet>
+            <description>While you are transformed, friendly creatures within 30 feet of you may roll 1d4 and add the result to one ability check, attack roll, or saving throw they make on each turn.</description>
+        </sheet>
+    </element>
+        <!-- Promise of Safety -->
+    <element name="Promise of Safety" type="Archetype" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_MAGICAL_GIRL_SAFETY">
+        <supports>Magical Promise</supports>
+        <description>
+            <p>The Magical Girl swears to defend the innocent, and protect the weak. Your transformation is an avatar of battle, capable of taking on threats significantly more dangerous than you could hope to defeat alone.</p>
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_WEAPONS_TRAINING" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_SKILLED_CHARGER" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_ONE_BODY" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_PURGING_TRANSFORMATION" />
+        </description>
+        <sheet>
+            <description>The Magical Girl swears to defend the innocent, and protect the weak.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_WEAPONS_TRAINING" level="1" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_SKILLED_CHARGER" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_ONE_BODY" level="10" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_PURGING_TRANSFORMATION" level="14" />
+        </rules>
+    </element>
+    <element name="Weapons Training" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_WEAPONS_TRAINING">
+        <description>
+            <p>At 1st level, you gain proficiency with martial weapons, medium armor, and shields.</p>
+        </description>
+        <sheet>
+            <description>Gain proficiency with martial weapons, medium armor, and shields.</description>
+        </sheet>
+	<rules>
+		<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+		<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+		<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+	</rules>
+    </element>
+    <element name="Skilled Charger" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_SKILLED_CHARGER">
+        <description>
+            <p>At 6th level, you become especially adept at rushing your foes. If you move at least 20 feet in a straight line before making a melee weapon attack, you have advantage on your next attack roll.</p>
+        </description>
+        <sheet>
+            <description>If you move at least 20 feet in a straight line before making a melee weapon attack, you have advantage on your next attack roll.</description>
+        </sheet>
+    </element>
+    <element name="One Body, Two Souls" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_ONE_BODY">
+        <description>
+            <p>Beginning at 10th level, your transformation can protect you from mortal harm. If you would be reduced to 0 hit points, or killed outright while you are transformed, you may end your Transformation in order to go to 1 hit point instead.</p>
+        </description>
+        <sheet>
+            <description>If you would be reduced to 0 hit points, or killed outright while you are transformed, you may end your Transformation in order to go to 1 hit point instead.</description>
+        </sheet>
+    </element>
+	<element name="Purging Transformation" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_PURGING_TRANSFORMATION">
+        <description>
+            <p>At 14th level, your transformation reinvigorates your body. You can transform as long as you are conscious, even if you are not capable of taking actions. If you are incapacitated, paralyzed, petrified, poisoned, restrained, or stunned, transforming immediately ends any number of those conditions currently affecting you.</p>
+        </description>
+        <sheet>
+            <description>You can transform as long as you are conscious, even if you are not capable of taking actions. If you are incapacitated, paralyzed, petrified, poisoned, restrained, or stunned, transforming immediately ends any number of those conditions currently affecting you.</description>
+        </sheet>
+    </element>
+    <!-- Promise of Understanding -->
+    <element name="Promise of Understanding" type="Archetype" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_MAGICAL_GIRL_UNDERSTANDING">
+        <supports>Magical Promise</supports>
+        <description>
+            <p>The Magical Girl's promise is to solve a mystery that eluded the one the promise was made to. Your transformation is a beacon of light against the darkness of ignorance.</p>
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_RADIANT_BLAST" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_COMPREHENSION" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_RADIANT_SALVO" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_MAGICAL_UNDERSTANDING" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_INTENSE_RADIANCE" />
+        </description>
+        <sheet>
+            <description>The Magical Girl's promise is to solve a mystery that eluded the one the promise was made to.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_RADIANT_BLAST" level="1" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_COMPREHENSION" level="1" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_RADIANT_SALVO" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_MAGICAL_UNDERSTANDING" level="10" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_INTENSE_RADIANCE" level="14" />
+        </rules>
+    </element>
+    <element name="Radiant Blast" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_RADIANT_BLAST">
+        <description>
+            <p>Whenever you take the Attack action, you may substitute one or more of your attacks with a blast of brilliant energy. This blast has a 60ft range, and requires a ranged Spell attack to hit. On a successful hit, a blast deals 1d6 radiant damage, plus your Charisma modifier. While you are transformed, the damage increases to 1d8 radiant damage, plus your charisma modifier.</p>
+        </description>
+        <sheet>
+            <description>Whenever you take the Attack action, you may substitute one or more of your attacks with a blast of brilliant energy. This blast has a 60ft range, and requires a ranged Spell attack to hit. On a successful hit, a blast deals 1d6 radiant damage, plus your Charisma modifier. While you are transformed, the damage increases to 1d8 radiant damage, plus your charisma modifier.</description>
+        </sheet>
+    </element>
+    <element name="Comprehension" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_COMPREHENSION">
+        <description>
+		<p>You gain proficiency with one of the following:</p>
+		<p>
+			<span class="feature">2 languages of your choice</span>
+			<br/>
+			<span class="feature">2 tools of your choice, or</span>
+			<br/>
+			<span class="feature">1 language and 1 tool of your choice</span>
+			<br/>
+		</p>
+        </description>
+        <rules>
+		<select type="Archetype Feature" name="Proficiency (Comprehension)" supports="Magical Girl Comprehension" />
+	</rules>
+    </element>
+    <element name="Radiant Salvo" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_RADIANT_SALVO">
+        <description>
+            <p>At 6th level, if you use the Attack action to make two or more Radiant Blast attacks, you may make a third Radiant Blast attack as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>If you use the Attack action to make two or more Radiant Blast attacks, you may make a third Radiant Blast attack as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Magical Understanding" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_MAGICAL_UNDERSTANDING">
+        <description>
+            <p>By 10th level, your Promise has given you a level of clarity that other people do not possess. You gain proficiency in Wisdom Saving Throws. While you are transformed, you have advantage on all saving throws against spells.</p>
+        </description>
+        <sheet>
+            <description>Your Promise has given you a level of clarity that other people do not possess. You gain proficiency in Wisdom Saving Throws. While you are transformed, you have advantage on all saving throws against spells.</description>
+        </sheet>
+	<rules>
+		<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+	</rules>
+</element>
+    <element name="Intense Radiance" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_INTENSE_RADIANCE">
+        <description>
+            <p>At 14th level, any Radiant damage you deal ignores resistance to radiant damage.</p>
+        </description>
+        <sheet>
+            <description>Any Radiant damage you deal ignores resistance to radiant damage.</description>
+        </sheet>
+</element>
+<!-- Promise of Retribution -->
+    <element name="Promise of Retribution" type="Archetype" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_MAGICAL_GIRL_RETRIBUTION">
+        <supports>Magical Promise</supports>
+        <description>
+            <p>Sometimes, the Magical Girl’s promise is not a positive one. This corrupted promise results in a fearsome alternate form. The Magical Girl becomes vicious and violent, constantly teetering on the edge of becoming something monstrous.</p>
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_NEGATIVE_ENERGY" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_RETRIBUTION" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_FEROCITY" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_BATHE_IN_BLOOD" />
+            <div element="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_UNSTOPPABLE" />
+        </description>
+        <sheet>
+            <description>The Magical Girl becomes vicious and violent, constantly teetering on the edge of becoming something monstrous.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_NEGATIVE_ENERGY" level="1" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_RETRIBUTION" level="1" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_FEROCITY" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_BATHE_IN_BLOOD" level="10" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_UNSTOPPABLE" level="14" />
+        </rules>
+    </element>
+    <element name="Negative Energy" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_NEGATIVE_ENERGY">
+        <description>
+            <p>Your radiant weapons are vicious and cruel. They deal necrotic damage instead of radiant damage.</p>
+        </description>
+        <sheet>
+            <description>You deal necrotic damage instead of radiant damage.</description>
+        </sheet>
+    </element>
+    <element name="Retribution" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_RETRIBUTION">
+        <description>
+            <p>As a reaction to taking damage, you may target the creature that dealt damage to you with the fury of your Promise. For the next minute, you have advantage on all attack rolls against that creature. Once the effect ends, you can't use this feature again until you finish a short rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Rest">
+            <description>For the next minute, you have advantage on all attack rolls against that creature.</description>
+        </sheet>
+    </element>
+    <element name="Ferocity" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_FEROCITY">
+        <description>
+            <p>At 6th level, you ferociously assault your chosen foes. Once per turn, you may add your Charisma modifier to the damage roll of an attack you make.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description>You may add your Charisma modifier to the damage roll of an attack you make.</description>
+        </sheet>
+    </element>
+    <element name="Bathe in Blood" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_BATHE_IN_BLOOD">
+        <description>
+            <p>At 10th level, your need for retribution has descended into outright bloodlust. Whenever you kill an enemy targeted by your Retribution ability, you gain temporary hit points equal to your Charisma modifier plus your Magical Girl level.</p>
+        </description>
+        <sheet>
+            <description>Whenever you kill an enemy targeted by your Retribution ability, you gain temporary hit points equal to {{bathe in blood:hp}}.</description>
+        </sheet>
+        <rules>
+            <stat name="bathe in blood:hp" value="charisma:modifier" />
+            <stat name="bathe in blood:hp" value="level:magical girl" />
+        </rules>
+	</element>
+    <element name="Unstoppable!" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_UNSTOPPABLE">
+        <description>
+            <p>At 14th level, your perverted sense of justice has all but consumed you. While you are transformed, you stubbornly refuse to die. If you would be reduced to 0 hit points, or killed outright, you may attempt a Constitution saving throw with a DC equal to 5 + the damage taken. On a success, you drop to 1 hit point instead.</p>
+        </description>
+        <sheet>
+            <description>While you are transformed, you stubbornly refuse to die. If you would be reduced to 0 hit points, or killed outright, you may attempt a Constitution saving throw with a DC equal to 5 + the damage taken. On a success, you drop to 1 hit point instead.</description>
+        </sheet>
+    </element>
+<!-- Comprehension -->
+	<element name="2 Tools" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_2_TOOL_COMPREHENSION">
+        <supports>Magical Girl Comprehension</supports>
+        <description>
+            <p>Select proficiency with 2 tools</p>
+        </description>
+        <rules>
+		<select type="Proficiency" name="Comprehension" supports="Tool" number="2" />
+	</rules> 
+    </element>
+     <element name="2 Languages" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_2_LANG_COMPREHENSION">
+        <supports>Magical Girl Comprehension</supports>
+        <description>
+            <p>Learn 2 languages</p>
+        </description>
+        <rules>
+		<select type="Proficiency" name="Comprehension" supports="Language" number="2" />
+	</rules> 
+    </element>
+     <element name="Tool and Language" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPEFEATURE_MAGICAL_GIRL_TOOL_AND_LANG_COMPREHENSION">
+        <supports>Magical Girl Comprehension</supports>
+        <description>
+            <p>Select proficiency in tool and language</p>
+        </description>
+        <rules>
+		<select type="Proficiency" name="Comprehension" supports="Tool" />
+		<select type="Proficiency" name="Comprehension" supports="Language" />
+	</rules> 
+    </element>
+<!--Magical Charms-->
+	<element name="Awoken Familiar" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_AWOKEN_FAMILIAR">
+		<supports>Magical Girl Charms</supports>
+		<description>
+			<p>You can cast Find Familiar once per day, without a material component. Your familiar can speak any languages you know, and has an Intelligence and Wisdom score of 11+ your Charisma modifier. Your familiar can cast Augury once per short or long rest. When you reach 9th level, it can cast Divination once per long rest.</p>
+		</description>
+		<sheet>
+			<description>You can cast Find Familiar once per day, without a material component. Your familiar can speak any languages you know, and has an Intelligence and Wisdom score of 11+ your Charisma modifier. Your familiar can cast Augury once per short or long rest.</description>
+			<description level="9">You can cast Find Familiar once per day, without a material component. Your familiar can speak any languages you know, and has an Intelligence and Wisdom score of 11+ your Charisma modifier. Your familiar can cast Augury once per short or long rest. It can also cast Divination once per long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+		</rules>
+	</element>
+	<element name="Altered Ability" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_ALTERED_ABILITY">
+		<supports>Magical Girl Charms</supports>
+		<description>
+			<p>When you choose this charm, pick an ability score. That ability score has a +2 bonus while you are transformed, but cannot be increased above 20. At 17th level, this Charm can increase an ability score above 20, to a maximum of 22.</p>
+		</description>
+		<sheet>
+			<description>Pick an ability score, that ability score has a +2 bonus while you are transformed, but cannot be increased above 20.</description>
+			<description level="17">Pick an ability score, that ability score has a +2 bonus while you are transformed, and can now be increased above 20.</description>
+		</sheet>
+	</element>
+	<element name="Blinding Transformation" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_BLINDING_TRANSFORMATION">
+		<supports>Magical Girl Charms</supports>
+        <prerequisite>You may only have one Transformation effect</prerequisite>
+		<requirements>!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_ELEMENTAL_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_FEARSOME_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MISTY_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_EXPLOSIVE_TRANSFORMATION</requirements>
+		<description>
+            <p><i>Prerequisite: You may only use one Transformation effect.</i></p>
+			<p class="indent">Your transformation is especially bright. Creatures within 15 feet of you that can see you must make a Constitution saving throw against your Spell Save DC. On a failure, that creature is blinded for a number of rounds equal to your Charisma modifier. At the end of their turn, affected creatures may make a new saving throw, ending the blindness on a successful save.</p>
+		</description>
+		<sheet>
+			<description>Creatures within 15 feet of your transformation that can see you must make a DC{{spellcasting:dc:cha}} Constitution saving throw. On a failure, that creature is blinded for {{charisma:modifier}} rounds. At the end of their turn, affected creatures may make a new saving throw, ending the blindness on a successful save.</description>
+		</sheet>
+	</element>
+	<element name="Durable Form" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_DURABLE_FORM">
+		<supports>Magical Girl Charms</supports>
+		<description>
+			<p>When you transform, you gain a number of Temporary Hit points equal to 2d4 plus your Charisma modifier. The number of dice increases to 3d4 at 9th level, 4d4 at 13th level, and 5d4 at 17th level.</p>
+		</description>
+		<sheet>
+			<description>When you transform, you gain a number of Temporary Hit points equal to 2d4 plus {{charisma:modifier}}.</description>
+			<description level="9">When you transform, you gain a number of Temporary Hit points equal to 3d4 plus {{charisma:modifier}}.</description>
+			<description level="13">When you transform, you gain a number of Temporary Hit points equal to 4d4 plus {{charisma:modifier}}.</description>
+			<description level="17">When you transform, you gain a number of Temporary Hit points equal to 5d4 plus {{charisma:modifier}}.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Favour" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_ELEMENTAL_FAVOUR">
+		<supports>Magical Girl Charms</supports>
+		<description>
+			<p>Choose acid, cold, fire, lightning, or thunder. You are resistant to that kind of damage, even while you are not Transformed.</p>
+			<p class="indent">Additionally, while you are transformed, your radiant weapons may deal that kind of damage instead of radiant damage.</p>
+			<p class="indent">If you have the Promise of Understanding, your Radiant Blasts can also deal the chosen type of damage instead of radiant damage.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Elemental Favour (Magical Charm)" supports="Magical Charm Elemental Favour"/>
+		</rules>
+	</element>
+	<element name="Elemental Transformation" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_ELEMENTAL_TRANSFORMATION">
+		<supports>Magical Girl Charms</supports>
+        <prerequisite>You may only have one Transformation effect</prerequisite>
+		<requirements>!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_BLINDING_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_FEARSOME_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MISTY_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_EXPLOSIVE_TRANSFORMATION</requirements>
+		<description>
+            <p><i>Prerequisite: You may only use one Transformation effect.</i></p>
+			<p class="indent">When you pick this Charm, choose acid, cold, fire, or lightning. Creatures within 10 feet of you must make a Dexterity saving throw against your Spell Save DC. On a failure They take 4d6 damage of the chosen type, or half as much on a successful save. The damage increases to 6d6 at 9th level, 7d6 at 13th level, and 8d6 at 17th level.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Elemental Transformation (Magical Charm)" supports="Magical Charm Elemental Transformation"/>
+		</rules>
+	</element>
+	<element name="Explosive Transformation" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_EXPLOSIVE_TRANSFORMATION">
+		<supports>Magical Girl Charms</supports>
+        <prerequisite>You may only have one Transformation effect</prerequisite>
+		<requirements>!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_ELEMENTAL_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_FEARSOME_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MISTY_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_BLINDING_TRANSFORMATION</requirements>
+		<description>
+            <p><i>Prerequisite: You may only use one Transformation effect.</i></p>
+			<p class="indent">When you transform, there is a thunderous explosion. Creatures within 10 feet must make a Constitution saving throw. On a failure, they take 2d6 thunder damage and are pushed 10 feet away from you. On a successful save, they take half damage and are not pushed. The damage increases to 4d6 at 9th level, 5d6 at 13th level, and 6d6 at 17th level.</p>
+		</description>
+		<sheet>
+			<description>When you transform creatures within 10 feet must make a DC{{spellcasting:dc:cha}} Constitution saving throw. On a failure, they take 2d6 thunder damage and are pushed 10 feet away from you. On a successful save, they take half damage and are not pushed.</description>
+			<description level="9">When you transform creatures within 10 feet must make a DC{{spellcasting:dc:cha}} Constitution saving throw. On a failure, they take 4d6 thunder damage and are pushed 10 feet away from you. On a successful save, they take half damage and are not pushed.</description>
+			<description level="13">When you transform creatures within 10 feet must make a DC{{spellcasting:dc:cha}} Constitution saving throw. On a failure, they take 5d6 thunder damage and are pushed 10 feet away from you. On a successful save, they take half damage and are not pushed.</description>
+			<description level="17">When you transform creatures within 10 feet must make a DC{{spellcasting:dc:cha}} Constitution saving throw. On a failure, they take 6d6 thunder damage and are pushed 10 feet away from you. On a successful save, they take half damage and are not pushed.</description>
+		</sheet>
+	</element>
+	<element name="Extra Magic" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_EXTRA_MAGIC">
+		<supports>Magical Girl Charms</supports>
+		<requirements>ID_RDDT_ARCHETYPE_MAGICAL_GIRL_UNDERSTANDING</requirements>
+		<description>
+			<p>Prerequisite: Promise of Understanding </p>
+			<p class="indent">Choose two spells from any class's spell list. The spells must be a level you can cast with a casting time of one action, bonus action, or reaction. You add the chosen spells to your list of Spells Known. At 9th, 13th, and 17th level, you may choose to learn 1 additional spell.</p>
+		</description>
+		<sheet>
+			<description>Choose two spells from any class's spell list. The spells must be a level you can cast with a casting time of one action, bonus action, or reaction. You add the chosen spells to your list of Spells Known. At 9th, 13th, and 17th level, you may choose to learn 1 additional spell.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Spell (Extra Magic)" supports="$(spellcasting:slots)" number="2" spellcasting="Magic Girl"/>
+		</rules>
+	</element>
+	<element name="Fearsome Transformation" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_FEARSOME_TRANSFORMATION">
+		<supports>Magical Girl Charms</supports>
+        <prerequisite>You may only have one Transformation effect</prerequisite>
+		<requirements>!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_ELEMENTAL_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_BLINDING_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MISTY_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_EXPLOSIVE_TRANSFORMATION</requirements>
+		<description>
+            <p><i>Prerequisite: You may only use one Transformation effect.</i></p>
+			<p class="indent">Your transformation is terrible to behold. Creatures within 10 feet of you must make a Wisdom saving throw against your Spell Save DC or become frightened for a number of rounds equal to your Charisma modifier. At the end of their turn, affected creatures may make a new saving throw, ending the fear effect on a successful save.</p>
+		</description>
+		<sheet>
+			<description>Creatures within 10 feet of your transformation must make a DC{{spellcasting:dc:cha}} Wisdom saving throw. On a failure, that creature is frightened for {{charisma:modifier}} rounds. At the end of their turn, affected creatures may make a new saving throw, ending the blindness on a successful save.</description>
+		</sheet>
+	</element>
+	<element name="Finishing Move!" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_FINISHING_MOVE">
+		<supports>Magical Girl Charms</supports>
+        <prerequisite>Level 13</prerequisite>
+		<requirements>[level:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Level 13</i></p>
+			<p class="indent">When you hit a creature with a weapon or spell attack, you may declare a Finishing Move before you roll damage. Your target must immediately make a Constitution saving throw. If the enemy has more than 1/4 its hit points remaining, it automatically passes this saving throw. On a successful result, the creature takes normal damage from the attack. On a failed saving throw, the Finishing Move becomes a critical hit. If the amount of damage dealt is enough to kill the creature, you regain one use of this ability. Otherwise, you may not use this ability again until you complete a long rest.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with a weapon or spell attack, you may declare a Finishing Move before you roll damage. Your target must immediately make a DC{{spellcasting:dc:cha}} Constitution saving throw. If the enemy has more than 1/4 its hit points remaining, it automatically passes this saving throw. On a successful result, the creature takes normal damage from the attack. On a failed saving throw, the Finishing Move becomes a critical hit. If the amount of damage dealt is enough to kill the creature, you regain one use of this ability. Otherwise, you may not use this ability again until you complete a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Light Step" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_LIGHT_STEP">
+		<supports>Magical Girl Charms</supports>
+		<description>
+			<p>You can cast Feather Fall at-will without expending a spell slot. While you are transformed, your jump distance is tripled. At 13th level, you gain a fly speed equal to your walking speed while you are transformed.</p>
+		</description>
+		<sheet>
+			<description>While you are transformed, your jump distance is tripled.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:fly" value="speed" level="13" bonus="base" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
+		</rules>
+	</element>
+	<element name="Lingering Magic" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_LINGERING_MAGIC">
+		<supports>Magical Girl Charms</supports>
+		<description>
+			<p>When your Transformation ends, any un-used spell slots you have are not wasted. Instead, you may use those Spell Slots in your normal form. These spell slots last until you Transform again, or take a short rest.</p>
+		</description>
+		<sheet>
+			<description>When your Transformation ends, any un-used spell slots you have are not wasted. Instead, you may use those Spell Slots in your normal form, and last until you Transform again, or take a short rest. </description>
+		</sheet>
+	</element>
+	<element name="Mass Appeal" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MASS_APPEAL">
+		<supports>Magical Girl Charms</supports>
+        <prerequisite>Promise of Friendship, Level 9</prerequisite>
+		<requirements>[level:9],ID_RDDT_ARCHETYPE_MAGICAL_GIRL_FRIENDSHIP</requirements>
+		<description>
+			<p><i>Prerequisite: Promise of Friendship, Level 9</i></p>
+			<p class="indent">You may cast Dominate Person or Geas without expending a spell slot. Once you do, you may not cast either spell again until you complete a long rest. If you are at least 13th level, you may cast Mass Suggestion while you are transformed. Once you do, you may not do so again until you complete a long rest.</p>
+		</description>
+		<sheet>
+			<description>You may cast Dominate Person or Geas one time without expending a spell slot.</description>
+			<description level="13"> You may cast Dominate Person or Geas one time without expending a spell slot. While you're transformed you can also cast Mass Suggestion once.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_GEAS" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_SUGGESTION" level="13" />
+		</rules>
+	</element>
+	<element name="Enhanced Weapons" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_ENHANCED_WEAPONS">
+		<supports>Magical Girl Charms</supports>
+        <prerequisite>Promise of Safety</prerequisite>
+		<requirements>ID_RDDT_ARCHETYPE_MAGICAL_GIRL_SAFETY</requirements>
+		<description>
+			<p><i>Prerequisite: Promise of Safety</i></p>
+			<p class="indent">Choose one or two weapons you possess, or your radiant weapons. While you are wielding those weapons, they count as Magical. At 13th level, the weapons become oversized while you are transformed, dealing 1d8 additional damage.</p>
+		</description>
+		<sheet>
+			<description>Choose one or two weapons you possess, or your radiant weapons. While you are wielding those weapons, they count as Magical.</description>
+			<description level="13">Choose one or two weapons you possess, or your radiant weapons. While you are wielding those weapons, they count as Magical. The weapons become oversized while you are transformed, dealing 1d8 additional damage.</description>
+		</sheet>
+	</element>
+	<element name="Misty Transformation" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_MISTY_TRANSFORMATION">
+		<supports>Magical Girl Charms</supports>
+        <prerequisite>You may only have one Transformation effect</prerequisite>
+		<requirements>!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_ELEMENTAL_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_FEARSOME_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_BLINDING_TRANSFORMATION,!ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_EXPLOSIVE_TRANSFORMATION</requirements>
+		<description>
+            <p><i>Prerequisite: You may only use one Transformation effect.</i></p>
+			<p class="indent">Swirling fog or thick smoke exudes from you out to a 10foot radius when you transform. This fog provides 3/4 cover, and lasts for a number of rounds equal to your Charisma modifier, or until it is dispersed by a strong wind.</p>
+		</description>
+		<sheet>
+			<description>Swirling fog or thick smoke exudes from you out to a 10foot radius when you transform. This fog provides 3/4 cover, and lasts for a number of rounds equal to your Charisma modifier, or until it is dispersed by a strong wind.</description>
+		</sheet>
+	</element>
+	<element name="Sacrifice" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_SACRIFICE">
+		<supports>Magical Girl Charms</supports>
+        <prerequisite>Level 9</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p><i>Prerequisite: Level 9</i></p>
+			<p class="indent">Add Revivify to your list of spells known. You can cast Revivify without expending a spell slot, and without a material component, by ending your transformation. If you cast Revivify this way, you must also expend all of your hit dice, roll them, and take that much necrotic damage. Additionally, you may not transform again until you take a long rest.</p>
+		</description>
+		<sheet>
+			<description>Add Revivify to your list of spells known. You can cast Revivify without expending a spell slot, and without a material component, by ending your transformation. If you cast Revivify this way, you must also expend all of your hit dice, roll them, and take that much necrotic damage. Additionally, you may not transform again until you take a long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" />
+		</rules>
+	</element>
+	<element name="Summoned Armour" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_MAGICAL_GIRL_SUMMONED_ARMOUR">
+		<supports>Magical Girl Charms</supports>
+		<description>
+			<p>You may create a suit of radiant armor by attuning to a suit of armor you possess for 1 hour. In order to attune to the armor, you must be proficient in its use. If the suit of armor is on the same plane of existence, you may summon it as part of your transformation. The armor immediately teleports onto your body.</p>
+		</description>
+		<sheet>
+			<description>You may create a suit of radiant armor by attuning to a suit of armor you possess for 1 hour. In order to attune to the armor, you must be proficient in its use. If the suit of armor is on the same plane of existence, you may summon it as part of your transformation. The armor immediately teleports onto your body.</description>
+		</sheet>
+	</element>
+	<!--Elemental Favours and Transformations-->
+	<element name="Elemental Favour (Acid)" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELEMENTAL_FAVOUR_ACID">
+		<supports>Magical Charm Elemental Favour</supports>
+		<description>
+			<p>You gain a resistance to Acid damage, even when you are not transformed. At 13th level, you become immune instead. Additionally, while you are transformed, your radiant weapons may deal that kind of damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal the chosen type of damage instead of radiant damage.</p>
+		</description>
+		<sheet>
+			<description>While you are transformed, your radiant weapons may deal acid damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal acid damage instead of radiant damage.</description>
+			<description level="13">While you are transformed, your radiant weapons may deal acid damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal acid damage instead of radiant damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="![level:13]"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" level="13"/>
+		</rules>
+	</element>
+	<element name="Elemental Favour (Cold)" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELEMENTAL_FAVOUR_COLD">
+		<supports>Magical Charm Elemental Favour</supports>
+		<description>
+			<p>You gain a resistance to Cold damage, even when you are not transformed. At 13th level, you become immune instead. Additionally, while you are transformed, your radiant weapons may deal that kind of damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal the chosen type of damage instead of radiant damage.</p>
+		</description>
+		<sheet>
+			<description>While you are transformed, your radiant weapons may deal cold damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal cold damage instead of radiant damage.</description>
+			<description level="13">While you are transformed, your radiant weapons may deal cold damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal cold damage instead of radiant damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="![level:13]"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" level="13"/>
+		</rules>
+	</element>
+	<element name="Elemental Favour (Fire)" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELEMENTAL_FAVOUR_FIRE">
+		<supports>Magical Charm Elemental Favour</supports>
+		<description>
+			<p>You gain a resistance to Fire damage, even when you are not transformed. At 13th level, you become immune instead. Additionally, while you are transformed, your radiant weapons may deal that kind of damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal the chosen type of damage instead of radiant damage.</p>
+		</description>
+		<sheet>
+			<description>While you are transformed, your radiant weapons may deal fire damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal fire damage instead of radiant damage.</description>
+			<description level="13">While you are transformed, your radiant weapons may deal fire damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal fire damage instead of radiant damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="![level:13]"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" level="13"/>
+		</rules>
+	</element>
+	<element name="Elemental Favour (Lightning)" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELEMENTAL_FAVOUR_LIGHTNING">
+		<supports>Magical Charm Elemental Favour</supports>
+		<description>
+			<p>You gain a resistance to Lightning damage, even when you are not transformed. At 13th level, you become immune instead. Additionally, while you are transformed, your radiant weapons may deal that kind of damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal the chosen type of damage instead of radiant damage.</p>
+		</description>
+		<sheet>
+			<description>While you are transformed, your radiant weapons may deal lightning damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal lightning damage instead of radiant damage.</description>
+			<description level="13">While you are transformed, your radiant weapons may deal lightning damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal lightning damage instead of radiant damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="![level:13]"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" level="13"/>
+		</rules>
+	</element>
+	<element name="Elemental Favour (Thunder)" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELEMENTAL_FAVOUR_THUNDER">
+		<supports>Magical Charm Elemental Favour</supports>
+		<description>
+			<p>You gain a resistance to Thunder damage, even when you are not transformed. At 13th level, you become immune instead. Additionally, while you are transformed, your radiant weapons may deal that kind of damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal the chosen type of damage instead of radiant damage.</p>
+		</description>
+		<sheet>
+			<description>While you are transformed, your radiant weapons may deal thunder damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal thunder damage instead of radiant damage.</description>
+			<description level="13">While you are transformed, your radiant weapons may deal thunder damage instead of radiant damage. If you have the Promise of Understanding, your Radiant Blasts can also deal thunder damage instead of radiant damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" requirements="![level:13]"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_THUNDER" level="13"/>
+		</rules>
+	</element>
+	<element name="Elemental Transformation (Acid)" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELEMENTAL_TRANSFORMATION_ACID">
+		<supports>Magical Charm Elemental Transformation</supports>
+		<description>
+			<p>When you Transform, creatures within 10 feet of you must make a Dexterity saving throw against your Spell Save DC. On a failure, they take 4d6 Acid damage, or half as much on a successful save, rounding up.</p>
+			<p class="indent">The damage increases to 6d6 at 9th level, 7d6 at 13th level, and 8d6 at 17th level.</p>
+		</description>
+		<sheet>
+			<description>When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 4d6 Acid damage, or half as much on a successful save, rounding up.</description>
+			<description level="9">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 6d6 Acid damage, or half as much on a successful save, rounding up.</description>
+			<description level="13">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 7d6 Acid damage, or half as much on a successful save, rounding up.</description>
+			<description level="17">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 8d6 Acid damage, or half as much on a successful save, rounding up.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Transformation (Cold)" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELEMENTAL_TRANSFORMATION_COLD">
+		<supports>Magical Charm Elemental Transformation</supports>
+		<description>
+			<p>When you Transform, creatures within 10 feet of you must make a Dexterity saving throw against your Spell Save DC. On a failure, they take 4d6 Cold damage, or half as much on a successful save, rounding up.</p>
+			<p class="indent">The damage increases to 6d6 at 9th level, 7d6 at 13th level, and 8d6 at 17th level.</p>
+		</description>
+		<sheet>
+			<description>When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 4d6 Cold damage, or half as much on a successful save, rounding up.</description>
+			<description level="9">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 6d6 Cold damage, or half as much on a successful save, rounding up.</description>
+			<description level="13">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 7d6 Cold damage, or half as much on a successful save, rounding up.</description>
+			<description level="17">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 8d6 Cold damage, or half as much on a successful save, rounding up.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Transformation (Fire)" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELEMENTAL_TRANSFORMATION_FIRE">
+		<supports>Magical Charm Elemental Transformation</supports>
+		<description>
+			<p>When you Transform, creatures within 10 feet of you must make a Dexterity saving throw against your Spell Save DC. On a failure, they take 4d6 Fire damage, or half as much on a successful save, rounding up.</p>
+			<p class="indent">The damage increases to 6d6 at 9th level, 7d6 at 13th level, and 8d6 at 17th level.</p>
+		</description>
+		<sheet>
+			<description>When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 4d6 Fire damage, or half as much on a successful save, rounding up.</description>
+			<description level="9">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 6d6 Fire damage, or half as much on a successful save, rounding up.</description>
+			<description level="13">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 7d6 Fire damage, or half as much on a successful save, rounding up.</description>
+			<description level="17">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 8d6 Fire damage, or half as much on a successful save, rounding up.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Transformation (Lightning)" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELEMENTAL_TRANSFORMATION_LIGHTNING">
+		<supports>Magical Charm Elemental Transformation</supports>
+		<description>
+			<p>When you Transform, creatures within 10 feet of you must make a Dexterity saving throw against your Spell Save DC. On a failure, they take 4d6 Lightning damage, or half as much on a successful save, rounding up.</p>
+			<p class="indent">The damage increases to 6d6 at 9th level, 7d6 at 13th level, and 8d6 at 17th level.</p>
+		</description>
+		<sheet>
+			<description>When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 4d6 Lightning damage, or half as much on a successful save, rounding up.</description>
+			<description level="9">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 6d6 Lightning damage, or half as much on a successful save, rounding up.</description>
+			<description level="13">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 7d6 Lightning damage, or half as much on a successful save, rounding up.</description>
+			<description level="17">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 8d6 Lightning damage, or half as much on a successful save, rounding up.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Transformation (Thunder)" type="Class Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELEMENTAL_TRANSFORMATION_THUNDER">
+		<supports>Magical Charm Elemental Transformation</supports>
+		<description>
+			<p>When you Transform, creatures within 10 feet of you must make a Dexterity saving throw against your Spell Save DC. On a failure, they take 4d6 Thunder damage, or half as much on a successful save, rounding up.</p>
+			<p class="indent">The damage increases to 6d6 at 9th level, 7d6 at 13th level, and 8d6 at 17th level.</p>
+		</description>
+		<sheet>
+			<description>When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 4d6 Thunder damage, or half as much on a successful save, rounding up.</description>
+			<description level="9">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 6d6 Thunder damage, or half as much on a successful save, rounding up.</description>
+			<description level="13">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 7d6 Thunder damage, or half as much on a successful save, rounding up.</description>
+			<description level="17">When you transform, creatures within 10 feet of you must make a DC{{spellcasting:dc:cha}} Dexterity saving throw. On a failure, they take 8d6 Thunder damage, or half as much on a successful save, rounding up.</description>
+		</sheet>
+	</element>
+	<!--SPELLS-->
+	<append id="ID_PHB_SPELL_BLESS">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CHARM_PERSON">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COMPELLED_DUEL">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CURE_WOUNDS">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DIVINE_FAVOR">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FOG_CLOUD">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GUIDING_BOLT">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HEALING_WORD">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HEX">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGIC_MISSILE">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHIELD">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SLEEP">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SEARING_SMITE">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_THUNDEROUS_SMITE">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WRATHFUL_SMITE">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DARKVISION">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GUST_OF_WIND">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGIC_WEAPON">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MIRROR_IMAGE">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MISTY_STEP">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHATTER">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SUGGESTION">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WARDING_BOND">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLINDING_SMITE">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLINK">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COUNTERSPELL">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DAYLIGHT">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISPEL_MAGIC">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ELEMENTAL_WEAPON">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FEAR">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIREBALL">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LIGHTNING_BOLT">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REVIVIFY">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SENDING">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BANISHMENT">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DEATH_WARD">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DIMENSION_DOOR">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STAGGERING_SMITE">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WALL_OF_FIRE">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BANISHING_SMITE">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONE_OF_COLD">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DESTRUCTIVE_WAVE">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLAME_STRIKE">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RAISE_DEAD">
+		<supports>Magical Girl</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WALL_OF_FORCE">
+		<supports>Magical Girl</supports>
+	</append>
+</elements>
