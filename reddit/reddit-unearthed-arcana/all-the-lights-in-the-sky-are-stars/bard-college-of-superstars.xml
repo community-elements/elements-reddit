@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Bard College of Superstars</name>
+        <update version="0.0.1">
+            <file name="bard-college-of-superstars.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/bard-college-of-superstars.xml" />
+        </update>
+    </info>
+    
+    <element name="College of Superstars" type="Archetype" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_BARD_COLLEGE_OF_SUPERSTARS">
+        <supports>Bard College</supports>
+        <description>
+            <p>The College of Superstars is home to the most ambitious performers, artists, singers, and dancers. Bards of this college seek to dazzle audiences with their brilliance and talent, competing endlessly with one another to become the world’s brightest star.</p>
+            <p class="indent"></p>
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_STEAL_THE_SHOW" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_LIVE_SHOW" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_STAR_POWER" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_IDOLS_AURA" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_STEAL_THE_SHOW" level="3" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_LIVE_SHOW" level="3" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_STAR_POWER" level="6" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_IDOLS_AURA" level="14" />
+        </rules>
+    </element>
+    <element name="Steal the Show" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_STEAL_THE_SHOW">
+        <description>
+            <p>When you join the College of Superstars at 3rd level, you learn use your performance to cover for your allies. When a creature you can see within 30 feet of you makes an attack roll or ability check, you can use your reaction to steal the show. Make a Charisma (Performance) check and replace the original attack roll or ability check with the result, even if it is lower.</p>
+            <p class="indent">Once you use this feature, you must finish a long rest before you can use it again.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description>When a creature you can see within 30 feet of you makes an attack roll or ability check, you can steal the show. Make a Charisma (Performance) check and replace the original attack roll or ability check with the result, even if it is lower.</description>
+        </sheet>
+    </element>
+    <element name="Live Show" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_LIVE_SHOW">
+        <description>
+            <p>Starting at 3rd level, you hone your ability to shine as a performer.</p>
+            <p class="indent">If you perform for at least 10 minutes, you can attempt to inspire awe in your audience by singing, acting, dancing, or speaking. At the end of your performance, choose a number of creatures equal to your Charisma modifier (minimum of one). Each creature gains a d4 Bardic Inspiration die. This die lasts for a number of hours equal to your Charisma modifier (minimum of one), instead of 10 minutes. Using this feature does not expend any uses of your Bardic Inspiration.</p>
+            <p class="indent">Once you use this feature, you must finish a long rest before you can use it again.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>If you perform for at least 10 minutes, at the end of your performance, choose {{live-show:effect}} creatures to gain a d4 Bardic Inspiration die. This die lasts for {{live-show:effect}} hours, instead of 10 minutes. Using this feature does not expend any uses of your Bardic Inspiration.</description>
+        </sheet>
+        <rules>
+            <stat name="live-show:effect" value="1" bonus="base" />
+            <stat name="live-show:effect" value="charisma:modifier" bonus="base" />
+        </rules>
+    </element>
+    <element name="Star Power" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_STAR_POWER">
+        <description>
+            <p>At 6th level, you learn to use your renown as a performer to your advantage. When you make an ability check using Charisma, you can expend a use of your Bardic Inspiration as a reaction and add the die to the check.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When you make an ability check using Charisma, you can expend a use of your Bardic Inspiration and add the die to the check.</description>
+        </sheet>
+    </element>
+    <element name="Idol’s Aura" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_COLLEGE_OF_SUPERSTARS_IDOLS_AURA">
+        <description>
+            <p>At 14th level, your mere presence is enough to sweep most off their feet. As an action, you can expend one use of your Bardic Inspiration to exude an aura around you.</p>
+            <p class="indent">For 1 minute, whenever you or a friendly creature within 10 feet of you must make an attack roll, ability check, or saving throw, the creature gains a bonus to the roll equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.</p>
+        </description>
+        <sheet action="Action">
+            <description>You can expend one use of your Bardic Inspiration to exude an aura around you. For 1 minute, whenever you or a friendly creature within 10 feet of you must make an attack roll, ability check, or saving throw, the creature gains a +{{live-show:effect}} bonus. You must be conscious to grant this bonus.</description>
+        </sheet>
+    </element>
+    
+</elements>

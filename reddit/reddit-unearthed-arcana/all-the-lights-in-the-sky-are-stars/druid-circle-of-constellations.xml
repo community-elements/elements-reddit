@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Circle of Constellations Druid Circle</name>
+        <update version="0.0.1">
+            <file name="druid-circle-of-constellations.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/druid-circle-of-constellations.xml" />
+        </update>
+    </info>
+    
+    <element name="Circle of Constellations" type="Archetype" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_DRUID_CIRCLE_OF_CONSTELLATIONS">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>Druids who are members of the Circle of Constellations live nocturnally. On star-speckled nights, when the skies are clear, druids of the circle tell tales of shapes in the stars, of the beasts that dance across the velvety sky, and of the magic woven by the twinkling specks of light that hang above.</p>
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLIGHT_SHAPES" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLINE" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_CONSTELLATION_COMPANION" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLINE_RUNNER" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_CONSTELLATE_BODY" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLIGHT_SHAPES" level="2" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLINE" level="2" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_CONSTELLATION_COMPANION" level="6" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLINE_RUNNER" level="10" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_CONSTELLATE_BODY" level="14" />
+        </rules>
+    </element>
+    <element name="Starlight Shapes" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLIGHT_SHAPES">
+        <description>
+            <p>At 2nd level, your beast forms become infused with starlight when you use your Wild Shape. While you are transformed, you gain the following benefits:</p>
+            <ul>
+                <li>You can emit bright light in a 20-foot radius and dim light for an additional 20 feet. You can activate or suppress this light as a bonus action. While this light is suppressed, you can use an action to become invisible while in dim light and darkness, even to creatures with darkvision. This effect ends if you attack or cast a spell.</li>
+                <li>Your melee weapon attacks deal an additional 1d4 force damage. This damage increases to 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level.</li>
+                <li>As a bonus action, you can grant yourself resistance to slashing, piercing, and bludgeoning damage from nonmagical attacks until the start of your next turn.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>While you are transformed, you gain the following benefits:</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLIGHT_SHAPES_LIGHT" level="2" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLIGHT_SHAPES_WEAPON_ATTACKS" level="2" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLIGHT_SHAPES_RESISTANCE" level="2" />
+        </rules>
+    </element>
+        <element name="Starlight Shapes: Light" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLIGHT_SHAPES_LIGHT">
+            <description />
+            <sheet alt="Light" usage="Starlight Shapes">
+                <description>You can emit bright light in a 20-foot radius and dim light for an additional 20 feet. You can activate or suppress this light as a bonus action. While this light is suppressed, you can use an action to become invisible while in dim light and darkness, even to creatures with darkvision. This effect ends if you attack or cast a spell.</description>
+            </sheet>
+        </element>
+        <element name="Starlight Shapes: Weapon Attacks" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLIGHT_SHAPES_WEAPON_ATTACKS">
+            <description />
+            <sheet alt="Weapon Attacks" usage="Starlight Shapes">
+                <description>Your melee weapon attacks deal an additional 1d{{starlight-shapes:damage-dice}} force damage.</description>
+            </sheet>
+            <rules>
+                <stat name="starlight-shapes:damage-dice" value="4" bonus="base" level="2" />
+                <stat name="starlight-shapes:damage-dice" value="6" bonus="base" level="6" />
+                <stat name="starlight-shapes:damage-dice" value="8" bonus="base" level="10" />
+                <stat name="starlight-shapes:damage-dice" value="10" bonus="base" level="14" />
+            </rules>
+        </element>
+        <element name="Starlight Shapes: Resistance" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLIGHT_SHAPES_RESISTANCE">
+            <description />
+            <sheet alt="Resistance" action="Bonus Action" usage="Starlight Shapes">
+                <description>You can grant yourself resistance to slashing, piercing, and bludgeoning damage from nonmagical attacks until the start of your next turn.</description>
+            </sheet>
+        </element>
+    <element name="Starline" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLINE">
+        <description>
+            <p>At 2nd level, your stellar powers allow you to create your own constellations. As a bonus action, you can place a mote of starlight in an unoccupied space within 5 feet of you. This mote emits dim light in a 5-foot radius, and lasts for 1 minute. You can have a number of motes equal to 1 plus half your druid level.</p>
+            <p class="indent">As an action, you can form strands of starlight between all motes within 60 feet of you. If two motes are separated by a barrier or other solid object, the strand between them will not form. If a strand passes through a creature, that creature must make a Dexterity saving throw against your druid spell save DC, taking 1d10 radiant damage for each mote placed on a failed save. Once you use this action, all the motes disappear.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can place a mote of starlight in an unoccupied space within 5 feet of you. This mote emits dim light in a 5-foot radius, and lasts for 1 minute. You can have a up to {{starline:motes}} motes. As an action, you can form strands of starlight between all motes within 60 feet of you. If two motes are separated by a barrier or other solid object, the strand between them will not form. If a strand passes through a creature, that creature must make a Dexterity saving throw against your druid spell save DC, taking 1d10 radiant damage for each mote placed on a failed save. Once you use this action, all the motes disappear.</description>
+        </sheet>
+        <rules>
+            <stat name="starline:motes" value="1" />
+            <stat name="starline:motes" value="level:druid" />
+        </rules>
+    </element>
+    <element name="Constellation Companion" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_CONSTELLATION_COMPANION">
+        <description>
+            <p>At 6th level, you learn to form the starlight within yourself into more forms. When you use your Wild Shape, you can create a starlight beast in an unoccupied space within 10 feet of you, rather than transform. This creature can take the shape of any beast you are able to transform into using Wild Shape. The starlight beast acts on your initiative and has the stats of a normal creature, but gains the benefits of your Starlight Shapes as well.</p>
+            <p class="indent">This beast disappears after a number of hours equal to half your druid level (rounded down), or if it is reduced to 0 hit points.</p>
+        </description>
+        <sheet usage="Wild Shape">
+            <description>When you use your Wild Shape, you can create a starlight beast in an unoccupied space within 10 feet of you, rather than transform. This creature can take the shape of any beast you are able to transform into using Wild Shape. The starlight beast acts on your initiative and has the stats of a normal creature, but gains the benefits of your Starlight Shapes as well. This beast disappears after {{level:druid:half}} hours, or if it is reduced to 0 hit points.</description>
+        </sheet>
+    </element>
+    <element name="Starline Runner" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_STARLINE_RUNNER">
+        <description>
+            <p>At 10th level, you learn to walk on the connections between stars. While you are within 5 feet of a mote, you can use your bonus action to teleport to another mote within 30 feet of it that is not separated by a barrier or other solid object. When you do so, you create a strand of light between the two motes. Each creature that the strand passes through must make a Dexterity saving throw against your druid spell save DC, taking 1d10 radiant damage on a failed save.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>While you are within 5 feet of a mote, you can teleport to another mote within 30 feet of it that is not separated by a barrier or other solid object. When you do so, you create a strand of light between the two motes. Each creature that the strand passes through must make a Dexterity saving throw against your druid spell save DC, taking 1d10 radiant damage on a failed save.</description>
+        </sheet>
+    </element>
+    <element name="Constellate Body" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_CIRCLE_OF_CONSTELLATIONS_CONSTELLATE_BODY">
+        <description>
+            <p>At 14th level, the power of the stars has infused your very being. You gain the benefits of your Starlight Shapes even when not in your Wild Shape.</p>
+        </description>
+        <sheet>
+            <description>You gain the benefits of your Starlight Shapes even when not in your Wild Shape.</description>
+        </sheet>
+    </element>
+
+</elements>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Nightmare Roguish Archetype</name>
+        <update version="0.0.1">
+            <file name="rogue-nightmare.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/rogue-nightmare.xml" />
+        </update>
+    </info>
+    
+    <element name="Nightmare" type="Archetype" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_ROGUE_NIGHTMARE">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>Rogues of the Nightmare archetype excel at combat in the dark, inflicting terror into their foes. These combatants prefer to operate at night or in places that otherwise never see the light of day, and are feared by the common folk. Nightmare rogues often scout out their targets’ deepest fears, replicating them to great effect.</p>
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_COVER_OF_NIGHT" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_AFRAID_OF_THE_DARK" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_MASK_OF_DARKNESS" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_INSTILL_DREAD" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_STRIKE_FEAR" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_COVER_OF_NIGHT" level="3" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_AFRAID_OF_THE_DARK" level="3" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_MASK_OF_DARKNESS" level="9" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_INSTILL_DREAD" level="13" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_STRIKE_FEAR" level="17" />
+        </rules>
+    </element>
+    
+    <element name="Cover of Night" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_COVER_OF_NIGHT">
+        <description>
+            <p>Starting at 3rd level, you learn to mask your strikes with shadows. You don’t need advantage on your attack roll to use your Sneak Attack if you attack while in dim light or darkness. All the other rules for the Sneak Attack class feature still apply to you.</p>
+            <p class="indent">Additionally, being in dim light or darkness does not have a negative effect on your passive Perception or passive Investigation.</p>
+        </description>
+        <sheet>
+            <description>You don’t need advantage on your attack roll to use your Sneak Attack if you attack while in dim light or darkness. All the other rules for the Sneak Attack class feature still apply to you. Additionally, being in dim light or darkness does not have a negative effect on your passive Perception or passive Investigation.</description>
+        </sheet>
+    </element>
+    <element name="Afraid of the Dark" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_AFRAID_OF_THE_DARK">
+        <description>
+            <p>At 3rd level, your blade strikes fear in the hearts of your foes. Whenever you deal damage with your Sneak Attack to a creature while you are in dim light or darkness, you can force it to make a Wisdom saving throw or become frightened of you for 1 minute. The DC for this saving throw is equal to 8 + your proficiency bonus + your Charisma modifier. A creature is immune to this effect if it has darkvision.</p>
+            <p class="indent">If the creature loses sight of you, it instead becomes frightened of all areas that are in complete darkness until it can see you again.</p>
+            <p class="indent">If the creature ends its turn in bright light, it can repeat the saving throw, ending the effect on a success.</p>
+        </description>
+        <sheet>
+            <description>Whenever you deal damage with your Sneak Attack to a creature while you are in dim light or darkness, you can force it to make a Wisdom saving throw (save DC {{afraid-of-the-dark:save-dc}}) or become frightened of you for 1 minute. A creature is immune to this effect if it has darkvision. If the creature loses sight of you, it instead becomes frightened of all areas that are in complete darkness until it can see you again. If the creature ends its turn in bright light, it can repeat the saving throw, ending the effect on a success.</description>
+        </sheet>
+        <rules>
+            <stat name="afraid-of-the-dark:save-dc" value="8" />
+            <stat name="afraid-of-the-dark:save-dc" value="proficiency" />
+            <stat name="afraid-of-the-dark:save-dc" value="charisma:modifier" />
+        </rules>
+    </element>
+    <element name="Mask of Darkness" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_MASK_OF_DARKNESS">
+        <description>
+            <p>At 9th level, the cover of night lends aid to your ability to deceive. You have advantage on Charisma (Deception) and Charisma (Intimidation) checks made while in dim light or darkness.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Charisma (Deception) and Charisma (Intimidation) checks made while in dim light or darkness.</description>
+        </sheet>
+    </element>
+    <element name="Instill Dread" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_INSTILL_DREAD">
+        <description>
+            <p>At 13th level, you gain the ability to strike fear in your foes without lifting your blade. As a bonus action, you can speak words of terror and force a creature within 60 feet of you that can’t see you to make a Wisdom saving throw against your Afraid of the Dark save DC. The target must be able to hear and understand you. If you are hidden, doing this does not give away your position. On a failed save, the target becomes frightened of all areas that are heavily obscured from it for 1 minute, or until it sees you.</p>
+            <p class="indent">The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can speak words of terror and force a creature within 60 feet of you that can’t see you to make a Wisdom saving throw (save DC {{afraid-of-the-dark:save-dc}}). The target must be able to hear and understand you. If you are hidden, doing this does not give away your position. On a failed save, the target becomes frightened of all areas that are heavily obscured from it for 1 minute, or until it sees you. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</description>
+        </sheet>
+    </element>
+    <element name="Strike Fear" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_STRIKE_FEAR">
+        <description>
+            <p>At 17th level, your blade cuts into the mind of your terrified foes. Whenever you hit a creature that is frightened of you with an attack, the creature takes an extra 2d6 psychic damage.</p>
+        </description>
+        <sheet>
+            <description>Whenever you hit a creature that is frightened of you with an attack, the creature takes an extra 2d6 psychic damage.</description>
+        </sheet>
+    </element>
+</elements>

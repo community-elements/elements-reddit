@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>ATLAS Source</name>
+        <update version="0.0.1">
+            <file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/source.xml" />
+        </update>
+    </info>
+    
+    <element name="All the Lights in the Sky are Stars" type="Source" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_SOURCE_ALL_THE_LIGHTS_IN_THE_SKY_ARE_STARS">
+        <description>
+            <![CDATA[<p>All the Lights in the Sky are Stars, or ATLAS for short, is an astronomical compendium lovingly put together by the good people of the Haven Discord server. We homebrew for our own joy and to provide enjoyment to the readers.</p><p>The contents of this compendium are intended to be balanced for play in a regular Dungeons and Dragons Fifth Edition group.</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">ATLAS</set>
+            <set name="url">https://www.gmbinder.com/share/-LSNMh6eX2Cm0VdsuZTr</set>
+            <set name="image"></set>
+            <set name="author" url="https://www.gmbinder.com/profile/aeyana">Aeyana</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20191103</set>
+        </setters>
+    </element>
+    
+</elements>

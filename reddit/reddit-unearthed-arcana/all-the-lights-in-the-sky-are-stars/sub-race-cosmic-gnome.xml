@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Cosmic Gnome</name>
+        <update version="0.0.1">
+            <file name="sub-race-cosmic-gnome.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/sub-race-cosmic-gnome.xml" />
+        </update>
+    </info>
+    
+    <element name="Cosmic Gnome" type="Sub Race" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_SUB_RACE_COSMIC_GNOME">
+        <supports>Gnome</supports>
+        <description>
+            <p class="flavor">"The ongoings on the surface interest me not. Mine eyes need look only to the heavens."</p>
+            <p class="flavor indent">— Cecelia Winnows, Astrognomer</p>
+            <h4>NOT SO DIFFERENT</h4>
+            <p>Cosmic gnomes live quiet and reclusive lives. The few that do encounter them often mistake them for their rock or forest counterparts, due in part from the visual similarities they share with them.</p>
+            <p class="indent">Cosmic gnomes retain some of the tinkering prowess that their rock gnome counterparts are renowned for, directing these talents toward the development of astrolabes and telescopes to further their astronomical research.</p>
+            <h4>EYES TO THE SKY</h4>
+            <p>Cosmic gnomes are defined primarily by their intense focus toward the heavens. Utilizing their longevity, a single cosmic gnome can study and record the motion of planets and stars in the sky for hundreds of years. Their findings often spearhead developments in meteorology and astral magics.</p>
+            <h4>SEERS AND SCHOLARS</h4>
+            <p>The depth of a cosmic gnome’s knowledge grants it foresight that some find nearly magical. Many become seers or esteemed astrognomers, highly sought after as advisors by royal courts for their divinations</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 1.<br />
+                <span class="feature">Age.</span> Cosmic gnomes enjoy relatively long lifespans compared to their forest counterparts. They mature at the same rate humans do, and most are expected to settle down into an adult life by around age 60. They can live 500 to almost 800 years.<br />
+                <span class="feature">Alignment.</span> Cosmic gnomes study the laws that govern the astral bodies, and tend towards lawful alignments.<br />
+                <span class="feature">Astronomical Knowledge.</span> Whenever you make a check pertaining to the stars or other cosmic bodies, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.<br />
+                <span class="feature">Star Seer. </span>You know the <i>guidance</i> cantrip. Once you reach 5th level, you can also cast the <i>augury</i> spell as a ritual. Intelligence is your spellcasting ability for these spells. You can only cast these spells outside and at night, with a clear view of the sky.<br />
+            </p>
+        </description>
+        <sheet display="false">
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="wisdom" value="1" />
+            <grant type="Racial Traid" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_COSMIC_GNOME_ASTRONOMICAL_KNOWLEDGE" />
+            <grant type="Racial Traid" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_COSMIC_GNOME_STAR_SEER" />
+        </rules>
+    </element>
+    <element name="Astronomical Knowledge" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_COSMIC_GNOME_ASTRONOMICAL_KNOWLEDGE">
+        <description>
+            <p>Whenever you make a check pertaining to the stars or other cosmic bodies, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.</p>
+        </description>
+        <sheet>
+            <description>Whenever you make a check pertaining to the stars or other cosmic bodies, you can add twice your proficiency bonus ({{astronomical-knowledge:proficiency-bonus}}) instead of any proficiency bonus you normally apply.</description>
+        </sheet>
+        <rules>
+            <stat name="astronomical-knowledge:proficiency-bonus" value="proficiency" />
+            <stat name="astronomical-knowledge:proficiency-bonus" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Star Seer" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_COSMIC_GNOME_STAR_SEER">
+        <description>
+            <p>You know the <i>guidance</i> cantrip. Once you reach 5th level, you can also cast the <i>augury</i> spell as a ritual. Intelligence is your spellcasting ability for these spells. You can only cast these spells outside and at night, with a clear view of the sky.</p>
+        </description>
+        <sheet>
+            <description>You know the guidance cantrip. You can only cast this spell outside at night, with a clear view of the sky.</description>
+            <description level="5">You know the guidance cantrip and you can cast augury as a ritual. You can only cast these spells outside at night, with a clear view of the sky. Intelligence is your spellcasting ability for these spells.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="5" />
+        </rules>
+    </element>
+</elements>
