@@ -3,7 +3,7 @@
     <info>
         <name>Cosmic Gnome</name>
         <update version="0.0.1">
-            <file name="sub-race-cosmic-gnome.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/sub-race-cosmic-gnome.xml" />
+            <file name="subraces-cosmic-gnome.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/subraces-cosmic-gnome.xml" />
         </update>
     </info>
     
