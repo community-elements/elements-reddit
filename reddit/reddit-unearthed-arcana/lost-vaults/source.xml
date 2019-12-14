@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2">
+		<update version="0.2.1">
 			<file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/lost-vaults/source.xml" />
 		</update>
 	</info>
-	<element name="The Lost Vaults" type="Source" source="The Lost Vaults" id="ID_RDDT_LV_SOURCE_LOSTVAULTS">
+	<element name="The Lost Vaults" type="Source" source="Core" id="ID_RDDT_LV_SOURCE_LOSTVAULTS">
 		<description>
 			<p>The Lost Vaults: 800+ Magic Items Converted from 4e!</p>
 		</description>
@@ -14,6 +14,7 @@
 			<set name="url">https://www.reddit.com/r/UnearthedArcana/comments/d8fnvv/the_lost_vaults_800_magic_items_converted_from_4e/</set>
             <set name="author" url="https://www.reddit.com/user/MrBakudan/">u/MrBakudan</set>
 			<set name="homebrew">true</set>
+			<set name="incomplete">true</set>
 		</setters>
 	</element>
 </elements>

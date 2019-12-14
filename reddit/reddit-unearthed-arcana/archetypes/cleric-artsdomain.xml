@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Arts (Divine Domain)</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="cleric-artsdomain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/archetypes/cleric-artsdomain.xml" />
 		</update>
 	</info>
@@ -20,7 +20,7 @@
 			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_POTENT_SPELLCASTING" />
 			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_LIFE_IMITATES_ART" />
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>The fundamental goodness of art in all its forms from paintings and crafts to poetry and song.</description>
 		</sheet>
 		<rules>
@@ -78,7 +78,7 @@
 		<description>
 			<p>When you choose this domain at 1st level you gain the mending and minor illusion cantrips, which count as cleric cantrips for you.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>You gain the mending and minor illusion cantrips, which count as cleric cantrips for you.</description>
 		</sheet>
 		<rules>
@@ -99,8 +99,8 @@
 			<p>Starting at 6th level you can look within yourself and criticize objectively. While you are charmed, frightened, or stunned, you can use your bonus action to repeat your saving throw against the effect, even if you could not otherwise take an action.</p>
 			<p class="indent">You can use this ability a number of times equal to your Wisdom modifier (minimum of 1) and you regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet usage="{{self-reflection:usage}}/Long Rest">
-			<description>While you are charmed, frightened, or stunned, you can use your bonus action to repeat your saving throw against the effect, even if you could not otherwise take an action.</description>
+		<sheet action="Bonus Action" usage="{{self-reflection:usage}}/Long Rest">
+			<description>While you are charmed, frightened, or stunned, you can repeat your saving throw against the effect, even if you could not otherwise take an action.</description>
 		</sheet>
 		<rules>
 			<stat name="self-reflection:usage" value="1" bonus="base" />
@@ -112,7 +112,7 @@
 			<p>Starting at 8th level you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
 		</description>
 		<sheet>
-			<description>You add your Wisdom modifier ({{wisdom:modifier}}) to the damage you deal with any cleric cantrip.</description>
+			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
 		</sheet>
 	</element>
 	<element name="Life Imitates Art" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_ARTS_LIFE_IMITATES_ART">

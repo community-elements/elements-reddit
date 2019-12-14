@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Infrastructure</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="infra.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery/infra.xml" />
 		</update>
 	</info>
 
-	<element name="Arcane Artillery" type="Source" source="Arcane Artillery" id="ID_RDDT_AA_SOURCE_ARCANEARTILLERY">
+	<element name="Arcane Artillery" type="Source" source="Core" id="ID_RDDT_AA_SOURCE_ARCANEARTILLERY">
 		<description>
 			<p>The gun nut’s guide for 5th edition.</p>
 		</description>
@@ -17,6 +17,8 @@
 			<set name="image">https://i.redd.it/bbrm9s902ipz.png</set>
 			<set name="author" url="https://www.reddit.com/u/ZowJr">/u/ZowJr</set>
 			<set name="homebrew">true</set>
+			<set name="incomplete">true</set>
+			<set name="information" url="https://github.com/community-elements/elements-reddit/issues/22">Not everything from this source has been added.</set>
 		</setters>
 	</element>
 
