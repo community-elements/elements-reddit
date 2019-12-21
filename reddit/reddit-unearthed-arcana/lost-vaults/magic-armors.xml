@@ -4,9 +4,125 @@
         <name>Lost Vaults: Magic Armors</name>
         <description>Lost Vaults: Magic Armors</description>
         <author url="https://www.reddit.com/user/MrBakudan/">u/MrBakudan</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="magic-armors.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/lost-vaults/magic-armors.xml" />
         </update>
     </info>
+
+    <element name="Addergrease Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_ADDERGREASE">
+        <description>
+            <p>Forged from poisonous snake and lizard skins, this leather armor can spray venom like a cobra when its owner is attacked. While wearing this armor, you gain access to the following effects:</p>
+            <p class="indent">This armor has 4 charges, and regains 1 charge at dawn. When an attack misses you, you can use a reaction to expend a charge to have the armor use the spell poison spray (Save DC 15).</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">Leather</set>
+            <set name="name-format">Addergrease {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Agile Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_AGILE">
+        <description>
+            <p>Thanks to the materials and enchantment on this armor, this armor is considerably lighter than it normally would be as a result. While wearing this armor for purposes of AC, you can add your Dexterity modifier to your AC (Max of +4).</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="medium">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+            <set name="name-format">Agile {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Attraction" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_ATTRACTION">
+        <description>
+            <p>The enchantments and material choices of this armor makes the armor extremely shiny. Eyes tend to move towards the armor, almost irresistibly so...</p>
+            <p class="indent">While wearing this armor, when a creature within 5 feet of you is targeted by a single target attack, you can use a reaction to make the attacker make a DC 18 Charisma saving throw. On a failed save, they must target you instead. On success, they can't be affected by the Armor of Attraction for 24 hours. You also gain anadditional 1d4 bonus to Charisma (Persuasion) checks.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">very rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">Scale,Breastplate,Splint,Plate</set>
+            <set name="name-format">{{parent}} of Attraction</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Cleansing" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_CLEANSING">
+        <description>
+            <p>This armor is covered in healing symbols, while the inside of the armor has many hand like runes that give the impression of the touches of clerics. While wearing this armor, whenever you regain hit points, you regain an additional 2 (including short rests). You also gain a +1d4 bonus for saving throws against poisons and diseases.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">{{parent}} of Cleansing</set>
+        </setters>
+    </element>
+
+    <element name="Aqueous Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_AQUEOUS">
+        <description>
+            <p>Cold when it is touched, this armor also has the appearance of being wet, even when it is dry. The armor typically is dyed to match the colors of water, with blues and whites. This armor grants the wearer with Water breathing.</p>
+            <p class="indent">The armor also has 5 charges, and regains 1 charge at dawn. Using an action, you can expend a charge and polymorph into a water elemental for 5 minutes, following the rules of the polymorph spell. You can also end the polymorph early as a bonus action.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="attunement">true</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">very rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Aqueous {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Durability" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_DURABILITY">
+        <description>
+            <p>This armor shows no signs of wear at anytime, giving the impression that this armor can take a hit. While wearing this armor, you gain the following effects:</p><p class="indent">This armor has 3 charges, and regains 1 charge at dawn. As a bonus action you can expend a charge and gain 5 temporary hit points, and a 1d4 bonus to Constitution saving throws. These effects last 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">{{parent}} of Durability</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Exploits" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_EXPLOITS">
+        <description>
+            <p>Many arcane glyphs cover this armor, and they glow in the presence of a spell being cast, seeming to draw it energy.</p>
+            <p class="indent">Once per day while wearing this armor, this armor can store a cantrip spell that is put into the armor by any willing creature. The spells save DC, attack bonus, and level are those of the caster who puts the spell into the armor. Once the spell is used, another spell can't be stored until the next dawn. After a long rest, any stored spell is also lost.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">{{parent}} of Exploits</set>
+        </setters>
+    </element>
 
 </elements>
