@@ -47,7 +47,7 @@
             <p class="indent">Once you form a creature, you can’t do so again until you finish a long rest.</p>
         </description>
         <sheet usage="1/Long Rest">
-            <description>You gain a Soul Vial, which can be used to store the soul of a creature that has a CR less than or equal to 1/3rd your Wizard level. You can release it and it has the same statistics as the original creature, but is visibly magical. It lasts for up to 1 hour and requires concentration to maintain.</description>
+            <description>You gain a Soul Vial, which can be used to store the soul of a creature that has a CR of {{soul vial:cr}} or less. You can release it and it has the same statistics as the original creature, but is visibly magical. It lasts for up to 1 hour and requires concentration to maintain.</description>
         </sheet>
         <rules>
             <stat name="soul vial:cr" value="1" />
