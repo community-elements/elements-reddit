@@ -15,7 +15,7 @@
             <h5>NIGHT DOMAIN SPELLS</h5>
             <table>
                 <thead>
-                    <tr><td>column1</td><td>column2</td></tr>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
                 </thead>
                 <tr><td>1st</td><td><i>sleep, aura of shade</i></td></tr>
                 <tr><td>3rd</td><td><i>darkness, moonbeam</i></td></tr>
