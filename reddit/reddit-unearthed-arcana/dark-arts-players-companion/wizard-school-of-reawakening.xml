@@ -51,12 +51,12 @@
         </sheet>
         <rules>
             <stat name="soul vial:cr" value="1" />
-            <stat name="soul vial:cr" value="1" requirements="[wizard:level:5]" />
-            <stat name="soul vial:cr" value="1" requirements="[wizard:level:8]" />
-            <stat name="soul vial:cr" value="1" requirements="[wizard:level:11]" />
-            <stat name="soul vial:cr" value="1" requirements="[wizard:level:14]" />
-            <stat name="soul vial:cr" value="1" requirements="[wizard:level:17]" />
-            <stat name="soul vial:cr" value="1" requirements="[wizard:level:20]" />
+            <stat name="soul vial:cr" value="1" requirements="[level:wizard:5]" />
+            <stat name="soul vial:cr" value="1" requirements="[level:wizard:8]" />
+            <stat name="soul vial:cr" value="1" requirements="[level:wizard:11]" />
+            <stat name="soul vial:cr" value="1" requirements="[level:wizard:14]" />
+            <stat name="soul vial:cr" value="1" requirements="[level:wizard:17]" />
+            <stat name="soul vial:cr" value="1" requirements="[level:wizard:20]" />
         </rules>
     </element>
     
