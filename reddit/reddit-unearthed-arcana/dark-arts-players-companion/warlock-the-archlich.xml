@@ -37,7 +37,7 @@
             <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" spellcasting="Warlock" />
             <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Warlock" />
             <grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" spellcasting="Warlock" />
-            <grant type="Spell" id="ID_DPAC_SPELL_MAIM" spellcasting="Warlock" />
+            <grant type="Spell" id="ID_DAPC_SPELL_MAIM" spellcasting="Warlock" />
             <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" spellcasting="Warlock" />
             <grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" spellcasting="Warlock" />
             <grant type="Spell" id="ID_XGTE_SPELL_VITRIOLIC_SPHERE" spellcasting="Warlock" />
