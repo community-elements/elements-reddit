@@ -31,7 +31,7 @@
         </rules>
     </element>
     
-    <element name="Conjuration/Necromancy Savant" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_WIZARD_REAWAKENING_CONJURATION_NECROMANCY_SAVANT">
+    <element name="Conjuration&#47;Necromancy Savant" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_WIZARD_REAWAKENING_CONJURATION_NECROMANCY_SAVANT">
         <description>
             <p>Beginning when you select this school at 2nd level, the time you must spend to copy a necromancy or conjuration spell into your spellbook is halved.</p>
         </description>
@@ -51,12 +51,12 @@
         </sheet>
         <rules>
             <stat name="soul vial:cr" value="1" />
-            <stat name="soul vial:cr" value="1" requirements="wizard:level:5" />
-            <stat name="soul vial:cr" value="1" requirements="wizard:level:8" />
-            <stat name="soul vial:cr" value="1" requirements="wizard:level:11" />
-            <stat name="soul vial:cr" value="1" requirements="wizard:level:14" />
-            <stat name="soul vial:cr" value="1" requirements="wizard:level:17" />
-            <stat name="soul vial:cr" value="1" requirements="wizard:level:20" />
+            <stat name="soul vial:cr" value="1" requirements="[wizard:level:5]" />
+            <stat name="soul vial:cr" value="1" requirements="[wizard:level:8]" />
+            <stat name="soul vial:cr" value="1" requirements="[wizard:level:11]" />
+            <stat name="soul vial:cr" value="1" requirements="[wizard:level:14]" />
+            <stat name="soul vial:cr" value="1" requirements="[wizard:level:17]" />
+            <stat name="soul vial:cr" value="1" requirements="[wizard:level:20]" />
         </rules>
     </element>
     
