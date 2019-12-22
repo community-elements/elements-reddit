@@ -125,4 +125,84 @@
         </setters>
     </element>
 
+    <element name="Armor of Negation" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_NEGATION">
+        <description>
+            <p>The runes of this armor seems to cover vital areas of the wearer, and can seem to move in the presence of danger. Dirt and dust never seems to stick to this armor. While wearing this armor, you gain the following effects:</p>
+            <p class="indent"> Whenever you succeed on a saving throw and take half damage, you may choose to take no damage.</p>
+            <p class="indent">You can also cast dispel magic on yourself at 4th level once per day to end a magical effect. (Bonus of +3 for higher level spells)</p>  
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">very rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">{{parent}} of Negation</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Night" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_NIGHT">
+        <description>
+            <p>This black set of clothes shows no reflection, even when wet. Torches seem to dim when you walk past them wearing this. While wearing this robe, you gain resistance to radiant damage.</p>
+            <p class="indent">The robe has 5 charges total, and regains 1+1d4 charges at dawn. As an action, you can expend a charge to cast the spell darkness on yourself without concentration.</p>
+            <p class="indent">You can also expend additional charges to increase the radius of the sphere of darkness by 5 feet each charge as a free action.</p>
+        </description>
+        <setters>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="rarity">Very Rare</set>
+		    <set name="type">Wondrous Item</set>
+		    <set name="category">Wondrous Items</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Sacrifice" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SACRIFICE">
+        <description>
+            <p>The armor depicts scenes of heroes throwing themselves in front of others to protect their allies. While wearing this armor, as a reaction you can touch a willing creature within range who is undergoing a condition that requires a saving throw to end. You transfer the condition to yourself, and you may expend a hit die to give yourself advantage on the saving throw. The Condition must require a Constitution, Intelligence, Wisdom, or Charisma saving throw to transfer. You may only use this feature once per day.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">{{parent}} of Sacrifice</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Starlight" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_STARLIGHT">
+        <description>
+            <p>These cloth set of clothes is a deep blue, with small dots of white that seem to twinkle slightly.</p>
+            <p class="indent">While wearing these clothes, you gain resistance to radiant damage. The set also has 5 charges total, and regains 1 charge per night.</p>
+            <p class="indent">When you are hit with an attack, you can use your reaction to expend a charge, causing the stars on the clothes to explode with light. The attacker must make a DC 15 Wisdom saving throw or be blinded until the end of their next turn (Creature must rely on sight). You can also use a bonus action to shed dim light within 15 feet around you, and end it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="rarity">rare</set>
+            <set name="attunement">true</set>
+		    <set name="type">Wondrous Item</set>
+		    <set name="category">Wondrous Items</set>
+        </setters>
+    </element>
+
+    <element name="Assassinbane Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_ASSASINBANE">
+        <description>
+            <p>This armor depicts many circles on it, with a set of eyes moving from circle to circle.</p>
+            <p class="indent">While wearing this armor, you ignore any disadvantage on Wisdom (Perception) checks that rely on sight. You gain a +3 bonus to natural perception. Twice per day, you can also cancel a critical hit that is caused by a roll with advantage, and cause it to do normal damage.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">very rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Assassinbane {{parent}}</set>
+        </setters>
+    </element>
+
 </elements>
