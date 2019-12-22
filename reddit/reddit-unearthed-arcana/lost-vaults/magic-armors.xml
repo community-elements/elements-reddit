@@ -18,7 +18,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
-            <set name="type" addition="light">Armor</set>
+            <set name="type" addition="leather">Armor</set>
             <set name="rarity">rare</set>
             <set name="attunement">true</set>
             <set name="armor">Leather</set>
@@ -51,7 +51,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
-            <set name="type" addition="heavy">Armor</set>
+            <set name="type" addition="scale, breastplate, splint, or plate">Armor</set>
             <set name="rarity">very rare</set>
             <set name="attunement">true</set>
             <set name="armor">Scale,Breastplate,Splint,Plate</set>
@@ -202,6 +202,72 @@
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Assassinbane {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Beastlord Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BEASTLORD">
+        <description>
+            <p>Decorated with horns, teeth, and bones, this armor is made from the skins and parts of many different types of animals.</p>
+            <p class="indent">While wearing this armor, you can cast speak with animals once per day. You also gain a +1d6 bonus to Wisdom (Animal Handling) checks made. You also have advantage on Wisdom (Survival) checks made to carve or track creatures.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="leather or hide">Armor</set>
+            <set name="rarity">rare</set>
+            <set name="armor">leather,hide</set>
+            <set name="name-format">Beastlord {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Bestial Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BESTIAL">
+        <description>
+            <p>This armor is crafted from skin, fur, and claws of cave bears. The enchantments of this armor allows you to draw upon their power. While wearing this armor, you gain access to the following effects:</p>
+            <p class="indent">3 times per day, when you take a Dash action you can use a bonus action to make a single melee weapon attack. This melee attack gains a +1 bonus to attack and damage rolls.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="leather or hide">Armor</set>
+            <set name="rarity">unommon</set>
+            <set name="armor">leather,hide</set>
+            <set name="name-format">Bestial {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Bloodiron Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BLOODIRON">
+        <description>
+            <p>Armor that is treated and cooled in blood while forged, the armor has a reddish tinge to the color. While wearing this armor, you have access to the following effects:</p>
+            <p class="indent">This armor has 5 charges, and regains 1 charge at dawn. With a bonus action, you can expend a charge and blood mark a target you can see. You gain an additional +2 to attack and damage rolls against the target. The mark lasts 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Bloodiron {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Bloodtheft Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BLOODTHEFT">
+        <description>
+            <p>This armor has runes that constantly bleed, but drips no blood. The armor itself seems to always be slick with crimson.</p>
+            <p class="indent">While wearing this armor when you are hit with an attack, you can expend any number of hit die and regain temporary hit points equal to the amounts rolled. The creature that hit you also must make a DC 20 Dexterity saving throw. On a failed save, they take piercing damage equal to the amount of temporary hit points you regain, or half as much on a successful save, as blood spikes shoot out. When you bring a creature to zero hit points, you can use a bonus action to regain a single hit die.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="leather">Armor</set>
+            <set name="rarity">legendary</set>
+            <set name="attunement">true</set>
+            <set name="armor">leather</set>
+            <set name="name-format">Bloodtheft {{parent}}</set>
         </setters>
     </element>
 
