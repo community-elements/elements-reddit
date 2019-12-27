@@ -271,4 +271,90 @@
         </setters>
     </element>
 
+    <element name="Bolstering Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BOLSTERING">
+        <description>
+            <p>Tales of this armor tell it was worn only by the greatest of leaders in all the lands. Runes on the arms on hands tell of healing powers.</p>
+            <p class="armor">While wearing this armor, whenever you use hit dice during a short rest, all creatures you choose within 20 feet regain half of what you recover. You can also touch a willing creature, using an action to expend a hit dice and heal the creature by that much. Whenever you regain hit points from a spell or item, a creature of your choice within 20 feet of you regains half of what you heal.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">legendary</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Bolstering {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Bloodfire Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BLOODFIRE">
+        <description>
+            <p>Showing depictions of the Nine Hells, this armor is said to be made using Tieflings techniques.</p>
+            <p class="indent">While wearing this armor, you gain fire resistance. This armor has 5 charges, and regains 1+1d4 charges at dawn. As a reaction, you can expend a charge to cast the spell hellish rebuke at 2nd level (save DC 15)</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="leather, scale, or plate">Armor</set>
+            <set name="rarity">rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">leather, scale, plate</set>
+            <set name="name-format">Bloodfire {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Bonegrim Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BONEGRIM">
+        <description>
+            <p>This scary looking armor is composed of a skull helmet, a ribcage breast plate, and forelimb bones for the arms and legs.</p>
+            <p class="indent">While wearing this armor, you gain advantage on Charisma (Intimidation) checks, resistance to necrotic and poison damage, and no longer require food, water, and sleep.</p>
+            <p class="indent">Cursed- You are unable to remove this armor as it binds to the skeleton of the wearer. It can only be removed with a remove curse spell or similar spell. If you die with this armor on, you rise as a skeleton, and attack the nearest creature. While wearing this armor, you count as an undead for terms of turn undead, vulnerabilities, and arcane senses.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">plate</set>
+            <set name="name-format">Bonegrim {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Breaching Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BREACHING">
+        <description>
+            <p>This seemingly normal set of armor phases through walls slightly when touching them, seeming to give a hint to their power.</p>
+            <p class="indent">Once per day while wearing this armor when you are against a wall, you can teleport to the other side without requiring line of sight. You cannot teleport if the wall is more than 10 feet thick, or if there is an obstacle in the space you would appear at (Creature or object). If there is an obstacle, you do not teleport, and the power is wasted for the day.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Breaching {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Briarwine Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BRIARWINE">
+        <description>
+            <p>An armor of Eladrin make, this armor is meant to appear as normal clothes until provoked.</p>
+            <p class="indent">While wearing this armor, whenever you take melee damage the attacker takes 1d4 piercing damage. This armor appears to be a normal set of clothes until it is revealed with a bonus action or you are attacked. The armor returns to its other appearance after 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Briarwine {{parent}}</set>
+        </setters>
+    </element>
+
 </elements>
