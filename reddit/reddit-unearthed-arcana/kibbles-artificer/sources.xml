@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Kibbles’ Artificer</name>
+        <author url="https://www.gmbinder.com/profile/kibblestasty">u/KibblesTasty</author>
+        <update version="0.0.1">
+            <file name="sources.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibbles-artificer/sources.xml" />
+        </update>
+    </info>
+    
+    <element name="Kibbles’ Artificer" type="Source" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_SOURCE_KIBBLES_ARTIFICER">
+        <description>
+            <![CDATA[<p></p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation"></set>
+            <set name="url">https://www.gmbinder.com/share/-LAEn6ZdC6lYUKhQ67Qk</set>
+            <set name="image"></set>
+            <set name="author" url="https://www.gmbinder.com/profile/kibblestasty">u/KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20190521</set>
+        </setters>
+    </element>
+    <element name="Kibbles’ Artificer Extended Toolbox" type="Source" source="Artificer Extended Toolbox" id="ID_KIBBLESTASTY_GM_BINDER_SOURCE_Kibbles’ Artificer Extended Toolbox">
+        <description>
+            <![CDATA[<p></p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">KAET</set>
+            <set name="url">https://www.gmbinder.com/share/-LR85y6FKnWhRAWIJgSP</set>
+            <set name="image"></set>
+            <set name="author" url="https://www.gmbinder.com/profile/kibblestasty">u/KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">true</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20191205</set>
+        </setters>
+    </element>
+    
+</elements>

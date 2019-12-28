@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Potionsmith Specialization for Kibbles’ Artificer</name>
+        <update version="0.0.3">
+            <file name="artificer-potionsmith.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibbles-artificer/artificer-potionsmith.xml" />
+        </update>
+    </info>
+    
+    <element name="Potionsmith" type="Archetype" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_ARTIFICER_POTIONSMITH">
+        <supports>Kibbles Artificer Specialization</supports>
+        <description>
+            <p>A potionsmith is an artificer who has pursued the secrets of alchemy. While many a village has an apothecary grinding odd herbs and roots into potent (or not so potent) concoctions, the careful process of mixing and brewing is just one way to achieve results. Through the use of the intricate secrets of the craft and direct infusions using magical rituals, a potionsmith can come up with explosive results in the blink of an eye... sometimes literally.</p>
+            <p class="indent">An potionsmith can be a scholar who has delved into of the knowledge the world has to offer or an explorer that has unlocked the secrets of the wilderness. Their knowledge could come from being friends of the fey, or from unfettered access to the royal library. As such, potionsmith’s can be good or evil, lawful or chaotic.</p>
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_POTIONSMITHS_PROFICIENCY" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_ALCHEMICAL_REAGENTS_POUCH" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_INSTANT_REACTIONS" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_ALCHEMICAL_INFUSIONS" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_EMPOWERED_ALCHEMY" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_INFUSION_EXPERTISE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_POTIONSMITHS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_ALCHEMICAL_REAGENTS_POUCH" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_INSTANT_REACTIONS" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_ALCHEMICAL_INFUSIONS" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_EMPOWERED_ALCHEMY" level="5" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_INFUSION_EXPERTISE" level="14" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSMITH_POTIONSMITH_UPGRADES" level="3" />
+        </rules>
+    </element>
+    <element name="Potionsmith’s Proficiency" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_POTIONSMITHS_PROFICIENCY">
+        <description>
+            <p>When you choose this specialization at 1st level, you gain proficiency with Blowguns, Alchemist’s supplies and Herbalism kit.</p>
+            <p class="indent">Your knowledge of alchemy gives you a natural affinity for brewing potions. Creating a potion through normal crafting takes you only half the time and cost it would normally take.</p>
+            <div class="sidebar">
+                <h5>ALCHEMISTS AND POTIONS</h5>
+                <p>Immediately on making a Potionsmith, one may think of the magic potions that exist in most D&amp;D settings, from the simple Healing Potion to the legendary Potion of Storm Giant Strength. However, someone does not need to be a Potionsmith to make these, as crafting rules for them are open to all classes, and best outlined in <em>Xanathar’s Guide to Everything</em>.</p>
+                <p class="indent">An alchemist with their proficiency will certainly have the edge in potion crafting, but these potions are not fundamental to the class.</p>
+            </div>
+        </description>
+        <sheet>
+            <description>Creating a potion through normal crafting takes you only half the time and cost it would normally take.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" />
+        </rules>
+    </element>
+    <element name="Alchemical Reagents Pouch" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_ALCHEMICAL_REAGENTS_POUCH">
+        <description>
+            <p>At 1st level, you’ve acquired a pouch of useful basic reagents, much as a wizard might carry a component pouch. You’ve tucked away things that will come in handy, and can retrieve them as part of using an ability that might require them. As long as you have this pouch on, you use the potionsmith’s features. This pouch is considered as alchemy supplies for the purposes of crafting.</p>
+            <p class="indent">If you lose your reagent pouch, you can spend 50 gold pieces to reacquire the various stocks you need, or spend 1 full day gathering them from a natural environment without expense.</p>
+        </description>
+        <sheet>
+            <description>As long as you have this pouch on, you use the potionsmith’s features. This pouch is considered as alchemy supplies for the purposes of crafting.</description>
+        </sheet>
+    </element>
+    <element name="Instant Reactions" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_INSTANT_REACTIONS">
+        <description>
+            <p>At 1st level, you know how to get instant reactions to occur without the niceties of grinding, simmering and brewing required for more refined concoctions.</p>
+            <p class="indent">Moreover, you know enough ways to do these that with just a few standard supplies, you can get these results out of a wide range of things you can gather in almost any locale and a pinch from your reagent pouch.</p>
+            <p class="indent">You can pick three instant reactions from your Upgrade list; these include <b>Alchemical Fire</b>, <b>Alchemical Acid</b>, <b>Healing Draught</b>, <b>Poisonous Gas</b>, or <b>Fortifying Fumes</b>. The reactions you pick do not count against your maximum Upgrades known.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Instan Reaction (Artificer)" number="3" supports="Instant Reaction" level="1" />
+        </rules>
+    </element>
+    <element name="Alchemical Infusions" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_ALCHEMICAL_INFUSIONS">
+        <description>
+            <p>At 3rd level, you have found a way to skip most of the brewing process for alchemically creating potent magically effects by directly infusing the potion with your own magic. When you finish a short or long rest and have an empty vial on your person, you may choose one or more the following spells and use a spell slots to cast them.</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Infusion Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><i>cure wounds, fog cloud, grease, heroism</i></td></tr>
+                <tr><td>2nd</td><td><i>barkskin, shatter, lesser restoration, web</i></td></tr>
+                <tr><td>3rd</td><td><i>blink, water breathing, stinking cloud, haste</i></td></tr>
+                <tr><td>4th</td><td><i>stoneskin, confusion</i></td></tr>
+                <tr><td>5th</td><td><i>cloudkill, skill empowerment</i></td></tr>
+            </table>
+            <p>When you cast spells in this way, the spell does not take effect immediately, but is infused into the potion. If the spell grants an effect or restores health, the creature will gain the effect of the spell when the potion is consumed as an action.</p>
+            <p class="indent">If the spell has an area of effect, that area of effect takes place when the vial is broken, with the effect centered on where the vial breaks. You can consume the contents of a vial as a bonus action, or, as an action, administer its contents to another creature or throw it up to 30 feet where it shatters on impact.</p>
+            <p class="indent">If the spell has a persistent effect that requires concentration, it does not require concentration to maintain, but its duration is shortened to a number of rounds equal to your intelligence modifier.</p>
+            <p class="indent">A spell that does not require concentration lasts its normal duration. An infused potion loses its potency if it is not used by the end of your next long rest.</p>
+            <p class="indent">You can gain additional spells for your Alchemical Infusions through your Alchemist upgrades.</p>
+            <div class="sidebar">
+                <h5>ON CREATIVITY AND CATAPULTS</h5>
+                <p>While as per the feature, you can only accurately <em>throw</em> the vial containing an Infused Potion 30 feet, the trigger merely specifies that the effect takes place where it breaks.</p>
+                <p class="indent">If you can find another way to deliver the vial, such as the catapult spell on the artificer spell list... or, well, an actual catapult, you can apply these methods as well.</p>
+            </div>
+        </description>
+        <sheet>
+            <description>You can infuse one or more spells from the list into a potion you mix in an empty vial, by extending a spell slot. You can consume the contents of a vial as a bonus action, or, as an action, administer its contents to another creature or throw it up to 30 feet where it shatters on impact.</description>
+        </sheet>
+    </element>
+    <element name="Empowered Alchemy" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_EMPOWERED_ALCHEMY">
+        <description>
+            <p>Starting at 5th level, when you deal damage, grant temporary hit points, or restore health with an instant reaction or alchemical infusion, you can add your intelligence modifier to the damage dealt or health restored.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Infusion Expertise" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSSMITH_INFUSION_EXPERTISE">
+        <description>
+            <p>Starting at 14th level, when you create an Alchemical Infusion at end the end of a short or long rest, the first alchemical infusion you create does not require a spell slot to infuse, and you can select an alchemical infusion that you would otherwise not have a spell slot of high enough level for when making this infusion</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Potionsmith Upgrades" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_POTIONSMITH_POTIONSMITH_UPGRADES">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Potionsmith Upgrade (Artificer 3)" level="3" supports="Specialization Upgrade,Potionsmith,3" />
+            <select type="Archetype Feature" name="Potionsmith Upgrade (Artificer 5)" level="5" supports="Specialization Upgrade,Potionsmith,(3||5)" />
+            <select type="Archetype Feature" name="Potionsmith Upgrade (Artificer 7)" level="7" supports="Specialization Upgrade,Potionsmith,(3||5)" />
+            <select type="Archetype Feature" name="Potionsmith Upgrade (Artificer 9)" level="9" supports="Specialization Upgrade,Potionsmith,(3||5||9)" />
+            <select type="Archetype Feature" name="Potionsmith Upgrade (Artificer 11)" level="11" supports="Specialization Upgrade,Potionsmith,(3||5||9||11)" />
+            <select type="Archetype Feature" name="Potionsmith Upgrade (Artificer 13)" level="13" supports="Specialization Upgrade,Potionsmith,(3||5||9||11)" />
+            <select type="Archetype Feature" name="Potionsmith Upgrade (Artificer 15)" level="15" supports="Specialization Upgrade,Potionsmith" />
+            <select type="Archetype Feature" name="Potionsmith Upgrade (Artificer 17)" level="17" supports="Specialization Upgrade,Potionsmith" />
+            <select type="Archetype Feature" name="Potionsmith Upgrade (Artificer 19)" level="19" supports="Specialization Upgrade,Potionsmith" />
+        </rules>
+    </element>
+
+    <!-- Specialization Upgrades -->
+    <element name="Alchemical Fire" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_ALCHEMICAL_FIRE">
+        <supports>Specialization Upgrade,Potionsmith,3,Instant Reaction,Cross Discipline</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p class="flavor">Instant Reaction</p>
+            <p>As an action you can produce a reaction causing a searing flame. At a point within 15 feet, you can a toss quick combination of reagents that will cause searing fire to flare up in a 5 foot radius. Creatures in that area have to make a Dexterity saving throw against your Spell Save DC, or take 1d8 fire damage.</p>
+            <p class="indent">The damage damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <sheet action="Action">
+            <description>Searing flame to range of {{alchemical-fire:range}}ft flares up in 5ft radius. Dex save (DC {{spellcasting:dc}}) or {{alchemical-fire:damage-dice}}d{{alchemical-fire:die-type}} fire damage.</description>
+        </sheet>
+        <rules>
+            <stat name="alchemical-fire:damage-dice" value="1" level="1" />
+            <stat name="alchemical-fire:damage-dice" value="1" level="5" />
+            <stat name="alchemical-fire:damage-dice" value="1" level="11" />
+            <stat name="alchemical-fire:damage-dice" value="1" level="17" />
+            <stat name="alchemical-fire:range" value="15" bonus="base" />
+            <stat name="alchemical-fire:range" value="instant-reaction:range" />
+            <stat name="alchemical-fire:die-type" value="8" bonus="base" />
+            <stat name="alchemical-fire:die-type" value="10" bonus="base" requirements="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_POTENT_REACTIONS" />
+        </rules>
+    </element>
+    <element name="Alchemical Acid" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_ALCHEMICAL_ACID">
+        <supports>Specialization Upgrade,Potionsmith,3,Instant Reaction,Cross Discipline</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p class="flavor">Instant Reaction</p>
+            <p>As an action you can produce a reaction causing a caustic acid to form. At a point within 15 feet, you can a toss quick combination of reagents that will cause a splatter of acid in a 5 foot radius.</p>
+            <p class="indent">Creatures in that area have to make a Dexterity saving throw against your Spell Save DC, or take 2d4 acid damage. Damage from this acid deals double damage against structures and objects.</p>
+            <p class="indent">The damage damage increases by 2d4 when you reach 5th level (4d4), 11th level (6d4), and 17th level (8d4).</p>
+            <p class="indent">This Upgrade counts as a new Instant Reaction, and all rules for Instant Reactions apply to it.</p>
+        </description>
+        <sheet action="Action">
+            <description>Acid to range of {{alchemical-acid:range}}ft spreads in 5ft radius. Dex save (DC {{spellcasting:dc}}) or {{alchemical-acid:damage-dice}}d{{alchemical-acid:die-type}} acid damage.</description>
+        </sheet>
+        <rules>
+            <stat name="alchemical-acid:damage-dice" value="2" level="1" />
+            <stat name="alchemical-acid:damage-dice" value="2" level="5" />
+            <stat name="alchemical-acid:damage-dice" value="2" level="11" />
+            <stat name="alchemical-acid:damage-dice" value="2" level="17" />
+            <stat name="alchemical-acid:range" value="15" bonus="base" />
+            <stat name="alchemical-acid:range" value="instant-reaction:range" />
+            <stat name="alchemical-acid:die-type" value="4" bonus="base" />
+            <stat name="alchemical-acid:die-type" value="6" bonus="base" requirements="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_POTENT_REACTIONS" />
+        </rules>
+    </element>
+    <!-- removed in version 2.0.2 
+    <element name="Auto Injector" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_AUTO_INJECTOR">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You create an automatic potion injector that you can wear. As an action, you can load a potion (either an infused potion or a normal potion) into this injector at any time. Subsequently while a potion is loaded into the injector, you can consume the potion using your reaction. Only one potion can be held in the injector at a time.</p>
+        </description>
+        <sheet>
+            <description>Action: load potion into injector. Reaction: Consume loaded potion.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    -->
+    <element name="Delivery Mechanism" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_DELIVERY_MECHANISM">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You modify the stability of your reagents and develop a better delivery mechanism. You can target a point within 30 feet for your instant reactions (including ones gained from Upgrades, such as Explosive Reaction) that target a point. The additional precision allows you to better target the effects, allowing creatures of your choice within the target area to automatically pass a Dexterity saving throw against your effects.</p>
+        </description>
+        <sheet>
+            <description>You can select creatures in area of instant reaction to make their saving throw.</description>
+        </sheet>
+        <rules>
+            <stat name="instant-reaction:range" value="15" />
+        </rules>
+    </element>
+    <element name="Explosive Reaction" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_EXPLOSIVE_REACTION">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p class="flavor">Instant Reaction (upgrade only)</p>
+            <p>You formulate a new instant reaction, a devastating minor explosion. Targeting a point within 15 feet, as an action, you cause an explosion. Creatures within 10 feet of the target point must make a Constitution saving throw against your Spell Save DC, or take 1d10 thunder damage from the shockwave of the explosion.</p>
+            <p class="indent">The damage damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+            <p class="indent">This Upgrade counts as a new Instant Reaction, and all rules for Instant Reactions apply to it.</p>
+        </description>
+        <sheet action="Action">
+            <description>Create explosion within {{explosive-reaction:range}}ft, 10ft radius. Con save (DC {{spellcasting:dc}}) or {{explosive-reation:damage-dice}}d{{explosive-reaction:die-type}} thunder damage.</description>
+        </sheet>
+        <rules>
+            <stat name="explosive-reaction:damage-dice" value="1" level="1" />
+            <stat name="explosive-reaction:damage-dice" value="1" level="5" />
+            <stat name="explosive-reaction:damage-dice" value="1" level="11" />
+            <stat name="explosive-reaction:damage-dice" value="1" level="17" />
+            <stat name="explosive-reaction:range" value="15" bonus="base" />
+            <stat name="explosive-reaction:range" value="instant-reaction:range" />
+            <stat name="explosive-reaction:die-type" value="10" bonus="base" />
+            <stat name="explosive-reaction:die-type" value="12" bonus="base" requirements="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_POTENT_REACTIONS" />
+        </rules>
+    </element>
+    <element name="Fortifying Fumes Reaction" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_FORTIFYING_FUMES_REACTION">
+        <supports>Specialization Upgrade,Potionsmith,3,Instant Reaction</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p class="flavor">Instant Reaction</p>
+            <p>You formulate a new instant reaction, a powerful fortifying stimulant. Targeting a point within 15 feet, as an action, you cause fumes to erupt. Creatures within 10 feet of the target point can choose to hold their breath and not inhale, but creatures that inhale the fumes gain 1d4 temporary hit points, deal 1d4 additional damage on their next melee weapon attack, and have advantage on their next Constitution saving throw. Any remaining benefits fade at the end of your next turn.</p>
+            <p class="indent">The both the temporary hit points and damage bonus increase by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+            <p class="indent">This Upgrade counts as a new Instant Reaction, and all rules for Instant Reactions apply to it.</p>
+        </description>
+        <sheet action="Action">
+            <description>Stimulant to {{fortifying-fumes:range}}ft range in 10ft radius gain {{fortifying-fumes:damage-dice}}d{{fortifying-fumes:die-type}} temp HP, add {fortifying-fumes:damage-dice}}d4 on next melee attack, adv on next Con save.</description>
+        </sheet>
+        <rules>
+            <stat name="fortifying-fumes:damage-dice" value="1" level="1" />
+            <stat name="fortifying-fumes:damage-dice" value="1" level="5" />
+            <stat name="fortifying-fumes:damage-dice" value="1" level="11" />
+            <stat name="fortifying-fumes:damage-dice" value="1" level="17" />
+            <stat name="fortifying-fumes:range" value="15" bonus="base" />
+            <stat name="fortifying-fumes:range" value="instant-reaction:range" />
+            <stat name="fortifying-fumes:die-type" value="4" bonus="base" />
+            <stat name="fortifying-fumes:die-type" value="6" bonus="base" requirements="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_POTENT_REACTIONS" />
+        </rules>
+    </element>
+    <element name="Frostbloom Reaction" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_FROSTBLOOM_REACTION">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p class="flavor">Instant Reaction (upgrade only)</p>
+            <p>You develop an endothermic reaction, a devastating localized cold snap that creates an instant bloom of ice. Targeting a point within 15 feet, as an action, you cause an the area to erupt in frost.</p>
+            <p class="indent">The area within 5 feet of the target point becomes difficult terrain until the end of your next turn, and any creature in the area must make a Dexterity saving throw against your Spell Save DC, or be caught by the ice taking 1d6 cold damage; a creature entirely in the area of effect that fails also becomes restrained until the end of their next turn. They can use their action to make a Strength saving throw to break free of the ice early.</p>
+            <p class="indent">The damage damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+            <p class="indent">This Upgrade counts as a new Instant Reaction, and all rules for Instant Reactions apply to it.</p>
+        </description>
+        <sheet action="Action">
+            <description>Range {{frostbloom-reaction:range}}ft, 5ft radius, Dex save (DC {{spellcasting:dc}}) or take {{frontbloom-reaction:damage-dice}}d{{frostbloom-reaction:die-type}} cold damage. Creature completely in area that fails is restrained.</description>
+        </sheet>
+        <rules>
+            <stat name="frostbloom-reaction:damage-dice" value="1" level="1" />
+            <stat name="frostbloom-reaction:damage-dice" value="1" level="5" />
+            <stat name="frostbloom-reaction:damage-dice" value="1" level="11" />
+            <stat name="frostbloom-reaction:damage-dice" value="1" level="17" />
+            <stat name="frostbloom-reaction:range" value="15" bonus="base" />
+            <stat name="frostbloom-reaction:range" value="instant-reaction:range" />
+            <stat name="frostbloom-reaction:die-type" value="6" bonus="base" />
+            <stat name="frostbloom-reaction:die-type" value="8" bonus="base" requirements="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_POTENT_REACTIONS" />
+        </rules>
+    </element>
+    <element name="Healing Draught" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_HEALING_DRAUGHT">
+        <supports>Specialization Upgrade,Potionsmith,3,Instant Reaction</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p class="flavor">Instant Reaction</p>
+            <p>As a bonus action, you can produce a combination that will provide potent magical healing. Immediately after creating the draught, you or another creature can use their action to consume it or administer it to a creature within 5 feet. A creature who drinks this draught regains 1d8 health. A creature can benefit from a number of these healing draughts equal to their constitution modifier (minimum 1), after which they provide no additional benefit until they complete a long rest. A Healing Draught that is not consumed by start of your next turn loses its potency.</p>
+            <p class="indent">The healing increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Create healing draft that heals {{healing-draught:healing-dice}}d{{healing-draft:die-type}} HP. Can be used up to {{healing-draught:uses}} by a creature per long rest.</description>
+        </sheet>
+        <rules>
+            <stat name="healing-draught:healing-dice" value="1" level="1" />
+            <stat name="healing-draught:healing-dice" value="1" level="5" />
+            <stat name="healing-draught:healing-dice" value="1" level="11" />
+            <stat name="healing-draught:healing-dice" value="1" level="17" />
+            <stat name="healing-draught:uses" value="1" bonus="base" />
+            <stat name="healing-draught:uses" value="constitution:modifier" bonus="base" />
+            <stat name="healing-draught:die-type" value="8" bonus="base" />
+            <stat name="healing-draught:die-type" value="10" bonus="base" requirements="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_POTENT_REACTIONS" />
+        </rules>
+    </element>
+    <element name="Homunculus Familiar" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_HOMUNCULUS_FAMILIAR">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You learn the alchemical process for creating a homunculus minion. You can cast <i>find familiar</i> without expending a spell slot or requiring material components beyond your alchemical reagents and blood (as described in the spell). The familiar’s type becomes construct or monstrosity, and can appear in any tiny shape you want, but uses the statistics of any creature that can normally be summoned.</p>
+        </description>
+        <sheet>
+            <description>You can cast find familiar without expending a spell slot or components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+        </rules>
+    </element>
+    <element name="Inoculations" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_INOCULATIONS">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You gain resistance to poison damage.</p>
+            <p class="indent">Additionally, at the end of a long rest you, you can select up to five people (including yourself) that are inoculated against the poisonous effects you can produce that require a constitution saving throw (such as the Poisonous Gas instant reaction or the cloudkill infusion), allowing them to automatically pass the saving throw until the end of your next long rest.</p>
+        </description>
+        <sheet>
+            <description>Up to 5 others to inoculate: auto Con save against poison until next long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+    <!-- Added in version 2.0.2 -->
+    <element name="Long Acting" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_LONG_ACTING">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>Your consumed Alchemical Infusions for spells that require concentration have their duration increased by a number of rounds equal to your Proficiency modifier.</p>
+        </description>
+        <sheet>
+            <description>Your consumed Alchemical Infusions for spells that require concentration have their duration increased by {{proficiency}} rounds.</description>
+        </sheet>
+    </element>
+    <element name="Persistent Reactions" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_PERSISTENT_REACTIONS">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>Your reactions that effect a target area persist in that area until the start of your next turn. Creatures entering the effect or ending their turn there have to repeat the saving throw against the effect. You can choose to make a reaction not persist at the time of taking the action to cause it.</p>
+        </description>
+        <sheet>
+            <description>Your reactions that effect a target area persist in that area until the start of your next turn.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Poisonous Gas" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_POISONOUS_GAS">
+        <supports>Specialization Upgrade,Potionsmith,3,Instant Reaction</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p class="flavor">Instant Reaction</p>
+            <p>As an action you can produce a reaction causing noxious fumes. At a point within 15 feet, you can toss a quick combination of reagents that will cause a whiff of poisonous gas to erupt spreading to a radius of 10 feet. Creatures in that area have to make a Constitution saving throw against your Spell Save DC, or take 1d4 poison damage and become poisoned until the end of their next turn.</p>
+            <p class="indent">The damage damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+        </description>
+        <sheet action="Action">
+            <description>Range {{poisonous-gas:range}}ft, 10 ft radius. Con save (DC {{spellcasting:dc}}) or {{poisonous-gas:damage-dice}}d{{poisonous-gas:die-type}} damage and be poisoned until end of their next turn.</description>
+        </sheet>
+        <rules>
+            <stat name="poisonous-gas:damage-dice" value="1" level="1" />
+            <stat name="poisonous-gas:damage-dice" value="1" level="5" />
+            <stat name="poisonous-gas:damage-dice" value="1" level="11" />
+            <stat name="poisonous-gas:damage-dice" value="1" level="17" />
+            <stat name="poisonous-gas:range" value="15" bonus="base" />
+            <stat name="poisonous-gas:range" value="instant-reaction:range" />
+            <stat name="poisonous-gas:die-type" value="4" bonus="base" />
+            <stat name="poisonous-gas:die-type" value="6" bonus="base" requirements="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_POTENT_REACTIONS" />
+        </rules>
+    </element>
+    <element name="Poisoner’s Proficiency" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_POISONERS_PROFICIENCY">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You delve into the secrets of the darkest secrets of herb lore, learning the potent secrets of poison. During a long rest, you can create one of the three following poisons.</p>
+            <ul>
+                <li><strong>Contact poison.</strong> You can apply this to a melee weapon or up to ten pieces of ammunition, that weapon or ammunition deals an additional 1d4 an poison damage; weapon can deal poison damage 10 times before the poison wears off.</li>
+                <li><strong>Ingested poison.</strong> This a simple flavorless powder. If a creature consumes a full dose of this poison before the end of your next long rest, after one minute has passed they must make a Constitution saving throw with disadvantage against your spell save DC or take a number of d10 equal to your Artificer level in poison damage, and become poisoned until they complete a long rest.</li>
+                <li><strong>Inhaled poison.</strong> This poison can be used to modify your poisonous gas reaction. You can use this dose of poison to make your poisonous gas instant reaction have a radius of 20 feet and deal twice as much damage on a failed save.</li>
+            </ul>
+            <p>A poison that has not be used by the time you complete your next long rest loses its potency and has no effect if used.</p>
+        </description>
+        <sheet>
+            <description>During a long rest, you can create one of three poisons.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Secrets of Flight" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_SECRETS_OF_FLIGHT">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You learn the secrets of infusing the ability escape the shackles of gravity into your Alchemical Infusions. You can add the following spells to your list of available spells for alchemical infusions:</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Infusion Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><i>feather fall</i></td></tr>
+                <tr><td>2nd</td><td><i>levitate</i></td></tr>
+                <tr><td>3rd</td><td><i>fly</i></td></tr>
+            </table>
+        </description>
+        <spellcasting name="Artificer" extend="true">
+            <extend>ID_PHB_SPELL_FEATHER_FALL</extend>
+            <extend>ID_PHB_SPELL_LEVITATE</extend>
+            <extend>ID_PHB_SPELL_FLY</extend>
+        </spellcasting>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Secrets of Fire" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_SECRETS_OF_FIRE">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You learn the secrets of infusing fire into your Alchemical Infusions. You can add the following spells to your list of available spells for alchemical infusions:</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Infusion Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><i>faerie fire</i></td></tr>
+                <tr><td>2nd</td><td><i>dragon’s breath</i></td></tr>
+                <tr><td>3rd</td><td><i>fireball</i></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <spellcasting name="Artificer" extend="true">
+            <extend>ID_PHB_SPELL_FAERIE_FIRE</extend>
+            <extend>ID_XGTE_SPELL_DRAGONS_BREATH</extend>
+            <extend>ID_PHB_SPELL_FIREBALL</extend>
+        </spellcasting>
+        <rules>
+        </rules>
+    </element>
+    <element name="Secrets of Frost" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_SECRETS_OF_FROST">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You learn the secrets of infusing frost into your Alchemical Infusions. You can add the following spells to your list of available spells for alchemical infusions:</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Infusion Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><i>armor of Agathys</i></td></tr>
+                <tr><td>2nd</td><td><i>Snilloc’s snowball swarm</i></td></tr>
+                <tr><td>3rd</td><td><i>ice storm</i></td></tr>
+            </table>
+            <div class="sidebar">
+                <h5>Secrets of...</h5>
+                <p>Almost any set of three spells, a 1st level, 2nd level, and 3rd level spell of either short term buffs or area of effect damage spells can work, so long as there is a thematic connection between the spells.</p>
+                <p class="indent">Consult with your DM about additional options if you don’t see what you want present here.</p>
+            </div>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <spellcasting name="Artificer" extend="true">
+            <extend>ID_PHB_SPELL_ARMOR_OF_AGATHYS</extend>
+            <extend>ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM</extend>
+            <extend>ID_PHB_SPELL_ICE_STORM</extend>
+        </spellcasting>
+        <rules>
+        </rules>
+    </element>
+    <element name="Weapon Coating" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_WEAPON_COATING">
+        <supports>Specialization Upgrade,Potionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You learn to how to coat a weapon or piece of ammunition with one of your instant reactions to take effect on hit. As a bonus action, you can apply your instant reaction to a melee weapon or piece of ammunition. Until the end of your turn, the next hit with that weapon or with a coated piece of ammunition will cause the effect of the instant reaction to the target. The creature automatically takes the damage or healing associated with the reaction, but makes a saving throw as normal against any additional effects.</p>
+            <div>
+                <h5>THE IMPLICATIONS</h5>
+                <p>There is an Instant Reaction that restores health, rather than deals damage. This can be applied via weapon coating as well, though the weapon damage of the implement is not negated, perhaps your allies will forgive a blowgun dart coated in a healing draught... if you hit the attack.</p>
+            </div>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You coat a weapon or piece of ammunition with one instant reaction.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 5th level upgrades -->
+    <element name="Adrenaline Serum" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_ADRENALINE_SERUM">
+        <supports>Specialization Upgrade,Potionsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>You create a potent serum. As a bonus action on your turn, you can consume a dose of this serum. Consuming this concoction increases your Strength and Dexterity ability score modifier by your Intelligence modifier (up to a maximum of +6) for a number of rounds equal to your Constitution modifier, after which all effects of the serum fade at the start of your next turn. When the effect ends, your speed is reduced by half and you cannot benefit from Adrenaline Serum until the start of your next turn. While you are under the effect of Adrenaline Serum, you gain the benefits of <em>heroism</em>.</p>
+            <p class="indent">You can consume an Infused Potion as part of the same action you apply Adrenaline Serum.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Str and Dex +{{intelligence:modifier}} (max 22) for {{constitution:modifier}} rounds. While you are under the effect of Adrenaline Serum, you gain the benefits of heroism. When the effect ends, your speed is reduced by half and you cannot benefit from Adrenaline Serum until the start of your next turn.</description>
+        </sheet>
+        <rules>
+            <stat name="adrenaline-serum:uses" value="1" bonus="base" />
+            <stat name="adrenaline-serum:uses" value="constitution:modifier" bonus="base" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" />
+        </rules>
+    </element>
+    <element name="Explosive Powder" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_EXPLOSIVE_POWDER">
+        <supports>Specialization Upgrade,Potionsmith,5</supports>
+        <requirements>[level:artificer:5],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_EXPLOSIVE_REACTION</requirements>
+        <prerequisite>Artificer Level 5, Explosive Reaction</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5, Explosive Reaction</p>
+            <p>You manage to stabilize and refine your Explosive Reaction. You can prepare up to your Intelligence modifier in Explosive Reactions that do not detonate instantly. They will only detonate when exposed to fire. These Explosive Reactions last 1 minute before losing potency. The maximum damage a creature can take from the detonation of multiple Explosive Reactions is twice the damage of an Explosive Reaction, but structures take the full damage of multiple Explosive Reactions.</p>
+        </description>
+        <sheet>
+            <description>You can prepare up to {{intelligence:modifier}} explosive reactions that only detonate when exposed to fire.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 9th level upgrades -->
+    <element name="Aroma Therapies" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_AROMA_THERAPIES">
+        <supports>Specialization Upgrade,Potionsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>You expand your alchemical knowledge to be able to produce incense and simmering reagents that grant effects to those that inhale their fumes. If creatures spend a long rest inhaling fumes from a concoction you devise with this feature, creatures regain an extra 2d4 hit dice, recover from 1d4 levels of exhaustion and are cured of any non-magical diseases they are suffering from.</p>
+        </description>
+        <sheet>
+            <description>Creatures spend a long rest inhaling fumes regain extra 2d4 hit dice, recover from 1d4 levels of exhaustion and are cured of any non-magical disease.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <!-- remove in version 2.0.2 
+    <element name="Greater Adrenaline Serum" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_GREATER_ADRENALINE_SERUM">
+        <supports>Specialization Upgrade,Potionsmith,9</supports>
+        <requirements>[level:artificer:9],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_ADRENALINE_SERUM</requirements>
+        <prerequisite>Artificer Level 9, Adrenaline Serum</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9, Adrenaline Serum</p>
+            <p>You upgrade your adrenaline shot to produce even more extreme and magical effects in the creature it effects. Your Adrenaline Serum now additionally grants you temporary hit points equal to twice your Artificer level when you consume it, and advantage on Strength (Athletics) checks as well as the effects of <em>haste</em> and <em>heroism</em> for its duration. These effects do not require concentration, but end when the serum ends.</p>
+        </description>
+        <sheet usage="Adrenaline Serum">
+            <description>You serum now adds {{adrenaline-serum:temp-hp}} temporary hit points, grants advantage on Str checks, and adds effects of haste and heroism.</description>
+        </sheet>
+        <rules>
+            <stat name="adrenaline-serum:temp-hp" value="level:artificer" />
+            <stat name="adrenaline-serum:temp-hp" value="level:artificer" />
+
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" />
+        </rules>
+    </element>
+    -->
+    <element name="Infusion Stone" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_INFUSION_STONE">
+        <supports>Specialization Upgrade,Potionsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>You use the secrets of Alchemy to create an Infusion Stone. You can use this stone in the process of infusing potions in place of a spell slot level less than or equal to the highest level spell slot you can cast.</p>
+            <p class="indent">You can use this stone to replace a spell slot for an infusion once. It regains this charge after you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can use this stone to replace a spell slot for an infusion once.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Mana Potion" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_MANA_POTION">
+        <supports>Specialization Upgrade,Potionsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>During a short rest, you can create a mana potion. A mana potion loses its potency if it is not consumed within 1 hour. As an action, a creature can consume a mana potion to restore a spell slot of its choice, up to third level.</p>
+        </description>
+        <sheet>
+            <description>Created during short rest. Lasts 1 hour. Restores up to 1 3rd-level spell slot.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Potent Reactions" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_POTENT_REACTIONS">
+        <supports>Specialization Upgrade,Potionsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>You refine your reactions increasing their potency. The die you roll to determine the damage or healing effect of your reactions is increased by one. A d4 becomes a d6, a d6 becomes a d8, a d8 becomes a d10, and a d10 becomes a d12.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 11th level upgrade -->
+    <element name="True Homunculus" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_TRUE_HOMUNCULUS">
+        <supports>Specialization Upgrade,Potionsmith,11</supports>
+        <requirements>[level:artificer:11],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_HOMUNCULUS_FAMILIAR</requirements>
+        <prerequisite>Artificer Level 11, Homunculus Familiar</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11, Homunculus Familiar</p>
+            <p>As your expertise grows, you can create a true wonder of alchemy. Instead of casting <em>find familiar</em> you can cast <em>create homunculus</em>, but when casting in this way it requires material components as normal.</p>
+        </description>
+        <sheet>
+            <description>You can cast create homunculus.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_CREATE_HOMUNCULUS" />
+        </rules>
+    </element>
+    <element name="Panacea" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_PANACEA">
+        <supports>Specialization Upgrade,Potionsmith,11</supports>
+        <requirements>[level:artificer:11],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_HEALING_DRAUGHT</requirements>
+        <prerequisite>Artificer Level 11, Healing Draught</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11, Healing Draught</p>
+            <p>When you create a Healing Draught, you can add more a more potent concoction. That Healing Draught heals the maximum value of the dice rolled when restoring health and has the effect of greater restoration. Once you make an improved Healing Draught like this, you cannot make one again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Healing Draught heals maximum value of dice rolled and has effect of greater restoration.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 15th level upgrades -->
+    <element name="Elixir of Life" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_ELIXIR_OF_LIFE">
+        <supports>Specialization Upgrade,Potionsmith,15</supports>
+        <requirements>[level:artificer:15],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_PHILOSOPHERS_STONE</requirements>
+        <prerequisite>Artificer Level 15, Philosopher’s Stone</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15, Philosopher’s Stone</p>
+            <p>You can brew a special potion using your Philosopher stone. Brewing this potion takes 8 hours and requires crushing a diamond worth at least 2,000 gold pieces. An Elixir of Life causes a creature that drinks it ceases to age for 4d4 years. A creature drinks this Elixir gains a death ward effect that lasts until triggered.</p>
+            <p class="indent">A more potent elixir can be created, adding an additional 1d4 years for each diamond spent.</p>
+        </description>
+        <sheet>
+            <description>You can use your Philospher’s Stone to create an Elixer of Life.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Philosopher’s Stone" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_POTIONSMITH_PHILOSOPHERS_STONE">
+        <supports>Specialization Upgrade,Potionsmith,15</supports>
+        <requirements>[level:artificer:15]</requirements>
+        <prerequisite>Artificer Level 15</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15</p>
+            <p>You create a Philosopher’s Stone allowing you recreate wonders of alchemy. So long as you have a supply of non-gold metal, you can create up five pounds of gold a day (250 gold pieces worth). Additionally, the Philosopher’s Stone can be used in place of a Diamond costing 500gp or less as spell’s Material Component, and is not consumed when used in such a way, but loses its powers for 24 hours.</p>
+        </description>
+        <sheet>
+            <description>You can create a Philosopher’s Stone.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+</elements>

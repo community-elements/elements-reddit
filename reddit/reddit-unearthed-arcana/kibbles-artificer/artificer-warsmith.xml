@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Warsmith Specialization for Kibbles’ Artificer</name>
+        <update version="0.0.1">
+            <file name="artificer-warsmith.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibbles-artificer/artificer-warsmith.xml" />
+        </update>
+    </info>
+    
+    <element name="Warsmith" type="Archetype" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_ARTIFICER_WARSMITH">
+        <supports>Kibbles Artificer Specialization</supports>
+        <description>
+            <p>A Warsmith is an Artificer that has turned their wondrous talent of invention to a singular goal: making themselves a juggernaut of war. The reasons behind this could be benevolent or nefarious. Some Warsmiths seek to turn their invention into a machine of death and terror; others become the arbiter of justice and order, and others still perhaps merely seek to refine their craft in pursuit of pure innovation.</p>
+            <p class="indent">Because few individuals would pursue such a wondrous invention without a driven purpose to their endeavor, Warsmiths tend to be Lawful, usually driven to their actions by a greater purpose they seek the power to accomplish, be it righting the wrongs of the world, or bringing it to heel beneath their ironshod boot.</p>
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARSMITHS_PROFICIENCY" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARPLATE_GAUNTLET" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARSMITHS_ARMOR" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_EXTRA_ATTACK" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_FULLY_CUSTOMIZED_GEAR" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARSMITH_UPGRADES" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARSMITHS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARPLATE_GAUNTLET" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARSMITHS_ARMOR" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_FULLY_CUSTOMIZED_GEAR" level="14" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARSMITH_UPGRADES" level="3" />
+        </rules>
+    </element>
+    <element name="Warsmith’s Proficiency" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARSMITHS_PROFICIENCY">
+        <description>
+            <p>At 1st level, you gain proficiency with heavy armor, tinker’s tools and smith’s tools.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Warplate Gauntlet" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARPLATE_GAUNTLET">
+        <description>
+            <p>At 1st level, when you take this specialization, you construct a Warplate Gauntlet. This is a specialized Wondrous Item that only you can attune to. When you create a Warplate Gauntlet, you can add one of the following upgrades to it: Power Fist, Force Blast, or Martial Grip. This upgrade does not count against your upgrade total. You can make multiple gauntlets with different upgrades, but can only be attuned to one at a time.</p>
+            <p class="indent">If you lose your Warplate Gauntlet, you can remake it during a long rest with 25 gold worth of materials, or can scavenge for materials and forge it over two days of work (eight hours a day) without the material expense.</p>
+            <p class="indent">While wearing a Warplate Gauntlet, you can engage Artificial Strength.</p>
+            <h5>Artificial Strength</h5>
+            <p class="indent">When you don your Warplate Gauntlet or as an action while wearing it, you can dedicate some of your intelligence to fully controlling the power of the gauntlet. You can reduce your current and maximum Intelligence score to increase your current Strength ability score by the same amount, but you can only raise your Strength ability score up what your Intelligence ability score was before engaging Artificial Strength. You can stop using Artificial Strength at any time, and it automatically ends if your gauntlet is removed.</p>
+        </description>
+        <sheet>
+            <description>You construct a Warplate Gauntlet. You can create more than one, but can only attune one at a time.</description>
+        </sheet>
+    </element>
+    <element name="Warsmith’s Armor" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARSMITHS_ARMOR">
+        <description>
+            <p>At 3rd level, you’ve attained the knowledge of forging and arcane tinkering sufficient to create a set of armor that augments and expands your abilities from a standard, non-magical, set of heavy armor using resources you’ve gathered. This process takes 8 hours to complete, as well as a place to forge and incorporates a Warplate Gauntlet (they do not require separate attunement).</p>
+            <p class="indent">While wearing your armor, your Strength ability score increases by 2, and your maximum Strength ability score becomes 22.</p>
+            <p class="indent">You can create a new set of armor by forging it from a set of gathered and purchased materials in a process takes 2000 gold pieces and eight hours.</p>
+            <p class="indent">You can create multiple sets of armor, but you can only be attuned to one of them at a given time, and you can only change which one you are attuned to during a long rest. If you create a new set of Warplate, you can apply a number of Upgrades equal to the value on the class table, applying each at the level you get it on the class table.</p>
+            <p class="indent">When you create your armor, you can create a heavy plated Warplate, a magically enhanced set of gear, Warsuit, or you can integrate your changes directly into your body as a Integrated Armor.</p>
+            <p class="indent">If your armor is Warplate or Integrated Armor, you gain the Powerful Build trait. Powerful Build means you count as one size larger when determining your carrying capacity and the weight you can push, drag, or left.</p>
+            <p class="indent">Additionally, if you are small, you become medium while wearing Warplate.</p>
+            <div class="sidebar">
+                <h5>Design Note:</h5>
+                <p><b>Warsmiths &amp; Magical Armor</b></p>
+                <p class="indent">By the rules laid out here, using magical armor as a base for your Warsmith’s armor has no additional effect. This is intentionally the ruled-as-written rules, but there is certainly some flexibility here. Personally in my games, I allow it use magic armor as the base armor with the following considerations:</p>
+                <ul>
+                    <li>Using Adamantine or Mithral, the properties carry over to the Warsmith’s armor.</li>
+                    <li>Using +1/+2/+3 armor carries over, but counts as taking a free "Armor Class" upgrade for each +1 the armor has, meaning that upgrade cannot be taken to make the armor +4 or better.</li>
+                    <li>Armor of Resistance carries over, counting as taking "Resistance" upgrade for that damage type for free.</li>
+                </ul>
+                <p class="indent">Other cases can be handled on a case by case basis. Consult with your DM and work something out that would be reasonable to combine making receiving magic armor a cool bonus, but not something that breaks the game!</p>
+            </div>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Extra Attack" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+        <rules>
+    <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+        </rules>
+    </element>
+    <element name="Fully Customized Gear" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_FULLY_CUSTOMIZED_GEAR">
+        <description>
+            <p>Starting at 14th level, you’ve mastered the customization of your Warsmith’s armor. You can add one additional upgrade your armor that does not count against your Upgrade total.</p>
+            <p class="indent">Additionally, during a long rest, you can now swap out any one upgrade for any other upgrade of the same level, so long as you don’t have an upgrade that requires the upgrade you are removing as a prerequisite, or an incompatible upgrade.</p>
+            <div class="sidebar">
+                <h5>WHAT DOES YOUR ARMOR LOOK LIKE?</h5>
+                <p>Nothing in this document specifies that visual appearance of your armor beyond the type of armor, but it very likely does not look like a standard set of armor. Consider what the visual differences are - are you enhancements more mechanical in nature or more magical in nature? Does it have geared joints, glowing runes, or both?</p>
+                <p class="indent">Consider how your setting might react to someone standing around in such armor. In all but the highest magical settings, such a set of armor is likely to attract some curiosity or concern.</p>
+            </div>
+        </description>
+        <sheet display="false">
+            <description>During a long rest, you can now swap out any one upgrade for any other upgrade of the same level, so long as you don’t have an upgrade that requires the upgrade you are removing as a prerequisite, or an incompatible upgrade.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Warsmith Upgrade (Fully Customized Gear)" level="14" supports="Specialization Upgrade,Warsmith" />          
+        </rules>
+    </element>
+    <element name="Warsmith Upgrades" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_WARSMITH_WARSMITH_UPGRADES">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Warsmith Upgrade (Artificer 3)" level="3" supports="Specialization Upgrade,Warsmith,3" />
+            <select type="Archetype Feature" name="Warsmith Upgrade (Artificer 5)" level="5" supports="Specialization Upgrade,Warsmith,(3||5)" />
+            <select type="Archetype Feature" name="Warsmith Upgrade (Artificer 7)" level="7" supports="Specialization Upgrade,Warsmith,(3||5)" />
+            <select type="Archetype Feature" name="Warsmith Upgrade (Artificer 9)" level="9" supports="Specialization Upgrade,Warsmith,(3||5||9)" />
+            <select type="Archetype Feature" name="Warsmith Upgrade (Artificer 11)" level="11" supports="Specialization Upgrade,Warsmith,(3||5||9||11)" />
+            <select type="Archetype Feature" name="Warsmith Upgrade (Artificer 13)" level="13" supports="Specialization Upgrade,Warsmith,(3||5||9||11)" />
+            <select type="Archetype Feature" name="Warsmith Upgrade (Artificer 15)" level="15" supports="Specialization Upgrade,Warsmith" />
+            <select type="Archetype Feature" name="Warsmith Upgrade (Artificer 17)" level="17" supports="Specialization Upgrade,Warsmith" />
+            <select type="Archetype Feature" name="Warsmith Upgrade (Artificer 19)" level="19" supports="Specialization Upgrade,Warsmith" />
+        </rules>
+    </element>
+
+    <!-- Warsmith Upgrades -->
+    <element name="Accelerated Movement " type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ACCELERATED_MOVEMENT">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p class="flavor">You can apply this upgrade twice.</p>
+            <p>You reduce the weight of your armor by 15 lbs. While wearing your armor your speed increases by 10 feet. This applies to all movement speeds you have while wearing your armor.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Arcane Visor" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p class="flavor">You can take this upgrade multiple times selecting a different option each time.</p>
+            <p>You magical enchant your visor. You gain one of the following effects while wearing your armor; you pick the effect when selecting the upgrade.</p>
+            <ul>
+                <li>You gain darkvision to a range of 60 feet. If you already have darkvision, the range of that darkvision is increased by 60 feet.</li>
+                <li>You can ignore Sunlight Sensitivity.</li>
+                <li>Divination spells no longer require your Concentration to maintain. You can only use this effect one spell at a time.</li>
+            </ul>
+            <p class="indent">Regardless of the selection, you have advantage on saving throws against being blinded while wearing your armor.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <sheet>
+            <description>You have advantage on saving throws against being blinded while wearing your armor.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Arcane Visor Option" supports="Arcane Visor Option" />
+        </rules>
+    </element>
+        <element name="Darkvision" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR_">
+            <supports>Arcane Visor Option</supports>
+            <description>
+                <p>You gain darkvision to a range of 60 feet. If you already have darkvision, the range of that darkvision is increased by 60 feet.</p>
+            </description>
+            <sheet>
+                <description>You gain darkvision to a range of 60 feet. If you already have darkvision, the range of that darkvision is increased by 60 feet.</description>
+            </sheet>
+        </element>
+        <element name="Block Sunlight Sensitivity" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR_">
+            <supports>Arcane Visor Option</supports>
+            <description>
+                <p>You can ignore Sunlight Sensitivity.</p>
+            </description>
+            <sheet>
+                <description>You can ignore Sunlight Sensitivity.</description>
+            </sheet>
+        </element>
+        <element name="Diviniation Concentration" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR_">
+            <supports>Arcane Visor Option</supports>
+            <description>
+                <p>Divination spells no longer require your Concentration to maintain. You can only use this effect one spell at a time.</p>
+            </description>
+            <sheet>
+                <description>Divination spells no longer require your Concentration to maintain. You can only use this effect one spell at a time.</description>
+            </sheet>
+        </element>
+    <element name="Faraday Helmet" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_FARADAY_HELMET">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>After casting a spell of first level or higher, you have advantage on Saving Throws to save against being charmed, mind controlled, stunned, or confused by magical means until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>After casting a spell of first level or higher, you have advantage on Saving Throws to save against being charmed, mind controlled, stunned, or confused by magical means until the start of your next turn.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Flame Projector" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_FLAME_PROJECTOR">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You gain the ability to unleash fire energy. While wearing your Warplate Gauntlet, you can cast <em>fire bolt</em>, and gain access to the following spells at the following levels while wearing your Warplate Gauntlet:</p>
+            <table>
+                <thead>
+                    <tr><td>Artificer Level</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>3</td><td><i>burning hands</i></td></tr>
+                <tr><td>5</td><td><i>scorching ray</i></td></tr>
+                <tr><td>9</td><td><i>fireball</i></td></tr>
+                <tr><td>13</td><td><i>wall of fire</i></td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You can cast fire bolt while wearing your Warplate Gauntlet.</description>
+            <description level="3">You can cast fire bolt, and and have access to burning hands while wearing your Warplate Gauntlet.</description>
+            <description level="5">You can cast fire bolt, and have access to burning hands, and scorching ray while wearing your Warplate Gauntlet.</description>
+            <description level="9">You can cast fire bolt, and have access to burning hands, scorching ray, and fireball while wearing your Warplate Gauntlet.</description>
+            <description level="13">You can cast fire bolt, and have access to burning hands, scorching ray, fireball, and wall of fire while wearing your Warplate Gauntlet.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" spellcasting="Artificer" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" spellcasting="Artificer" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="5" spellcasting="Artificer" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9" spellcasting="Artificer" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13" spellcasting="Artificer" known="true" />
+        </rules>
+    </element>
+    <element name="Force Blast" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_FORCE_BLAST">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You upgrade your Warplate Gauntlet to deliver special ranged attacks. These attack are a ranged spell attack that deals 1d8 + your Intelligence modifier force damage, and has a range of 30 feet.</p>
+            <p class="indent">You are proficient in this weapon. When you take the attack action, you can use this ranged spell attack in place of any attack made. At level 5, this spell attack gains a +1 to attack and damage rolls; this increases to a +2 at level 14.</p>
+        </description>
+        <sheet>
+            <description>You can make a ranged attack with your Warplate Gauntlet: +{{force-blast:attack-mod}} to hit, 1d8 + {{force-blast:damage-mod}} force damage, range {{force-blast:range}} feet.</description>
+        </sheet>
+        <rules>
+            <stat name="force-blast:attack-mod" value="spellcasting:attack" />
+            <stat name="force-blast:attack-mod" value="1" requirements="[level:5]" />
+            <stat name="force-blast:attack-mod" value="1" requirements="[level:14]" />
+            <stat name="force-blast:damage-mod" value="intelligence:modifier" />
+            <stat name="force-blast:damage-mod" value="1" requirements="[level:5]" />
+            <stat name="force-blast:damage-mod" value="1" requirements="[level:14]" />
+            <stat name="force-blast:range" value="30" />
+        </rules>
+    </element>
+    <element name="Grappling Reel" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_GRAPPLING_REEL">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>Your Warsmith’s armor gains an integrated grappling reel set into your gauntlet. As 1 attack or 1 action, you may target a surface, object or creature within 30 feet. If the target is Large or Smaller, you can make a Grapple check to pull it to you and Grapple it on success. Alternatively, if the target is Large or larger, you can choose to be pulled to it, this does not grapple it.</p>
+        </description>
+        <sheet>
+            <description>Your Warsmith’s armor has an integrated grappling reel.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Lightning Channel" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_LIGHTNING_CHANNEL">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You are able to funnel your suits power into your attacks. You can use this upgrade to cast <em>lightning charged<sup>Artificer</sup></em> as a bonus action without expending a spell slot. Once used, this upgrade cannot be used until you complete a short or long rest.</p>
+            <p class="channel">Additionally, you can apply the damage from lightning charged on your Force Blast ranged spell attacks.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>You can cast lightning charged without expending a spell slot. Additionally, you can apply the damage from lightning charged on your Force Blast ranged spell attacks.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KIBBLESTASTY_GM_BINDER_SPELL_LIGHTNING_CHARGED" />
+        </rules>
+    </element>
+    <element name="Lightning Projector" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_LIGHTNING_PROJECTOR">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You gain the ability to unleash lightning energy. While wearing your Warplate Gauntlet, you can cast shocking grasp, and gain access to the following spells at the following levels while wearing your Warplate Gauntlet:</p>
+            <table>
+                <thead>
+                    <tr><td>Artificer Level</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>3</td><td><i>thunderwave</i></td></tr>
+                <tr><td>5</td><td><i>lightning charged</i></td></tr>
+                <tr><td>9</td><td><i>lightning bolt</i></td></tr>
+                <tr><td>13</td><td><i>storm sphere</i></td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You can cast shocking grasp while wearing your Warplate Gauntlet.</description>
+            <description level="3">You can cast shocking grasp, and and have access to thunderwave while wearing your Warplate Gauntlet.</description>
+            <description level="5">You can cast shocking grasp, and have access to thunderwave, and lightning charged while wearing your Warplate Gauntlet.</description>
+            <description level="9">You can cast shocking grasp, and have access to thunderwave, lightning charged, and lightning bolt while wearing your Warplate Gauntlet.</description>
+            <description level="13">You can cast shocking grasp, and have access to thunderwave, lightning charged, lightning bolt, and storm sphere while wearing your Warplate Gauntlet.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" spellcasting="Artificer" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" spellcasting="Artificer" known="true" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_GM_BINDER_SPELL_LIGHTNING_CHARGED" level="5" spellcasting="Artificer" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9" spellcasting="Artificer" known="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="13" spellcasting="Artificer" known="true" />
+        </rules>
+    </element>
+    <element name="Martial Grip" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_MARTIAL_GRIP">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>Your Warplate Gauntlet grants the ability to wield a wide variety of powerful weapons. You gain proficiency with martial weapons while wearing your Warplate Gauntlet.</p>
+        </description>
+        <sheet>
+            <description>You have proficiency with martial weapons while wearing your Warplate Gauntlet.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Power Fist" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_POWER_FIST">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p class="flavor">You can apply this upgrade twice.</p>
+            <p>You upgrade your Warplate Gauntlet to better punch things. Your Warplate Gauntlet is upgraded to a magical weapon you have proficiency with dealing 1d8 bludgeoning damage and gains the Light and Special properties. At level 5, this magic weapon gains a +1 to attack and damage rolls; this increases to a +2 at level 14.</p>
+            <p class="indent">Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll.</p>
+            <p class="indent">With Power Fist applied twice, you have a Power Fists for each hand that can be used for Two-Weapon Fighting.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <sheet>
+            <description>Your Warplate Gauntlet is upgraded to a magical weapon you have proficiency with dealing 1d8 bludgeoning damage and gains the Light and Special properties. Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll. When applied twice, you have a Power Fist for each hand.</description>
+            <description level="5">Your Warplate Gauntlet is upgraded to a +1 magical weapon you have proficiency with dealing 1d8 bludgeoning damage and gains the Light and Special properties. Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll. When applied twice, you have a Power Fist for each hand.</description>
+            <description level="14">Your Warplate Gauntlet is upgraded to a +2 magical weapon you have proficiency with dealing 1d8 bludgeoning damage and gains the Light and Special properties. Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll. When applied twice, you have a Power Fist for each hand.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Reinforced Armor" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_REINFORCED_ARMOR">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You reinforce the structure and materials that make up your Warsmith’s armor. Your Warsmith’s armor Armor Class (AC) increases by 1.</p>
+            <p class="indent">You can apply this upgrade up to 3 times.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" />
+        </rules>
+    </element>
+    <element name="Sentient Armor" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR">
+        <supports>Specialization Upgrade,Warsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You create an artificial personality integrated into your armor, giving it limited sentience. This sentience assists you in many ways. While wearing your armor, your Intelligence ability score and maximum Intelligence ability score are increased by 2.</p>
+        </description>
+        <sheet>
+            <description>While wearing your armor, your Intelligence ability score and maximum Intelligence ability score are increased by 2.</description>
+        </sheet>
+        <rules>
+            <stat name="intelligence" value="2" />
+            <stat name="intelligence:max" value="2" />
+        </rules>
+    </element>
+
+    <!-- 5th level upgrades -->
+    <element name="Arcaneware" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ARCANEWARE">
+        <supports>Specialization Upgrade,Warsmith,5</supports>
+        <requirements>[level:artificer:5],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
+        <prerequisite>Artificer Level 5, Sentient Armor</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5, Prerequisite: Sentient Armor</p>
+            <p>You upgrade the artificial personality integrated into your armor to assist with a new skill. While able to communicate with your armor, you can gain the effect of <em>guidance</em> when making an Intelligence ability check.</p>
+        </description>
+        <sheet>
+            <description>While able to communicate with your armor, you can gain the effect of guidance when making an Intelligence ability check.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+        </rules>
+    </element>
+    <element name="Active Camouflage" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_CAMOUFLAGE">
+        <supports>Specialization Upgrade,Warsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>As an action, you can activate active camouflage causing your suit to automatically blend into its surroundings. This lasts until deactivated. While this is active, you are considered lightly obscured, and can hide from a creature even when they have a clear line of sight to you. Wisdom (Perception) checks to find you that rely on vision are made with disadvantage.</p>
+        </description>
+        <sheet action="Action">
+            <description>You can activate/deactivate active camouflage. You are considered lightly obscured, can hide in plain sight and Perception checks to find you have disadvantage.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Collapsible" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_COLLAPSIBLE">
+        <supports>Specialization Upgrade,Warsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5, Incompatible with Integrated Armor or Piloted Golem</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p class="flavor">Incompatible with Integrated Armor or Piloted Golem</p>
+            <p>Your Warsmith’s armor can collapse into a case for easy storage. When transformed this way the armor is indistinguishable from a normal case and weighs 1/3 its normal weight. As an action you can don or doff the armor, allowing it to transform as needed.</p>
+        </description>
+        <sheet>
+            <description>Your armor can collapse into a case that weighs 1/3 its weight. You can use an action to don or doff the armor.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <!-- folded into Arcane Visor in version 2.0.2
+    <element name="Divination Visor" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_DIVINATION_VISOR">
+        <supports>Specialization Upgrade,Warsmith,5</supports>
+        <requirements>[level:artificer:5],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR</requirements>
+        <prerequisite>Artificer Level 5, Arcane Visor</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5, Prerequisite: Arcane Visor</p>
+            <p>You cast divination Artificer spells you know as a bonus action, and if they require concentration, they no longer require concentration maintain.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You cast divination Artificer spells you know, and if they require concentration, they no longer require concentration maintain.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    -->
+    <element name="Emergency Protocol" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_EMERGENCY_PROTOCOL">
+        <supports>Specialization Upgrade,Warsmith,5</supports>
+        <requirements>[level:artificer:5],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
+        <prerequisite>Artificer Level 5, </prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5, Prerequisite: Sentient Armor</p>
+            <p>The intelligence in your armor will attempt to preserve your life. If you are Incapacitated or Unconscious and cannot take your action, it will cast a spell or take the dodge action. It can only cast spells using your armor’s upgrades. It will act once, and cannot act again until you complete a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>If you are Incapacitated or Unconscious and cannot take your action, your Warsmith’s armor will cast a spell or take the dodge action. It can only cast spells using your armor’s upgrades.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Focal Reflectors" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_FOCAL_REFLECTORS">
+        <supports>Specialization Upgrade,Warsmith,5</supports>
+        <requirements>[level:artificer:5],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_FORCE_BLAST</requirements>
+        <prerequisite>Artificer Level 5, Force Blast</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5, Prerequisite: Force Blast</p>
+            <p>You upgrade your Force Blast to strike at greater distance and accuracy. The range of all your ranged spell attacks with your Force Blast is increased by 30 feet. Additionally, you gain a +2 to hit with ranged spell attacks.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="force-blast:attack-mod" value="2" />
+            <stat name="force-blast:damage-mod" value="2" />
+            <stat name="force-blast:range" value="30" />
+        </rules>
+    </element>
+    <element name="Mechanical Enhancement" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_MECHANICAL_ENHANCEMENT">
+        <supports>Specialization Upgrade,Warsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5, Integrated Armor</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5, Prerequisite: Integrated Armor</p>
+            <p>You improve every aspect of yourself ever so slightly. You gain +5 feet of movement, one additional hit point per Artificer level, and +1 to Strength, Dexterity, and Constitution saving throws.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="speed:misc" value="5" />
+            <stat name="hp" value="level:artificer" />
+            <stat name="strength:save:misc" value="1" />
+            <stat name="dexterity:save:misc" value="1" />
+            <stat name="constitution:save:misc" value="1" />
+        </rules>
+    </element>
+    <element name="Reactive Plating" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_REACTIVE_PLATING">
+        <supports>Specialization Upgrade,Warsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5, Warplate</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5, Prerequisite: Warplate</p>
+            <p>Your armor partially deflect incoming blows. You can use your reaction when hit by an attack to reduce the damage of that attack by an amount equal to your proficiency bonus.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When hit by an attack you can reduce the damage by {{proficiency}}.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Resistance" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE">
+        <supports>Specialization Upgrade,Warsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your Warplate you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Damage Resistance" supports="Warsmith Armor Resistance" />
+        </rules>
+    </element>
+        <element name="Acid" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_WARSMITH_ARMOR_RESISTANCE_ACID">
+            <supports>Warsmith Armor Resistance</supports>
+            <description>
+                <p></p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+            </rules>
+        </element>
+        <element name="Cold" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_WARSMITH_ARMOR_RESISTANCE_COLD">
+            <supports>Warsmith Armor Resistance</supports>
+            <description>
+                <p></p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+            </rules>
+        </element>
+        <element name="Fire" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_WARSMITH_ARMOR_RESISTANCE_FIRE">
+            <supports>Warsmith Armor Resistance</supports>
+            <description>
+                <p></p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            </rules>
+        </element>
+        <element name="Force" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_WARSMITH_ARMOR_RESISTANCE_FORCE">
+            <supports>Warsmith Armor Resistance</supports>
+            <description>
+                <p></p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+            </rules>
+        </element>
+        <element name="Lightning" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_WARSMITH_ARMOR_RESISTANCE_LIGHTNING">
+            <supports>Warsmith Armor Resistance</supports>
+            <description>
+                <p></p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+            </rules>
+        </element>
+        <element name="Thunder" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_WARSMITH_ARMOR_RESISTANCE_THUNDER">
+            <supports>Warsmith Armor Resistance</supports>
+            <description>
+                <p></p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+            </rules>
+        </element>
+        <element name="Necrotic" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_WARSMITH_ARMOR_RESISTANCE_NECROTIC">
+            <supports>Warsmith Armor Resistance</supports>
+            <description>
+                <p></p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+            </rules>
+        </element>
+        <element name="Radiant" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_WARSMITH_ARMOR_RESISTANCE_RADIANT">
+            <supports>Warsmith Armor Resistance</supports>
+            <description>
+                <p></p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+            </rules>
+        </element>
+    <element name="Sealed Suit" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_SEALED_SUIT">
+        <supports>Specialization Upgrade,Warsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5, Warplate</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5, Prerequisite: Warplate</p>
+            <p>As a bonus action on your turn you can environmentally seal your Warplate, giving you an air supply for up to 1 hour and making you immune to poison (but not curing you of existing poisoned conditions).</p>
+            <p class="indent">In addition to the above, you are also considered acclimated to cold and hot climates while wearing your armor, and you’re also acclimated to high altitude while wearing your armor.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can environmentally seal your Warplate, giving you an air supply for up to 1 hour and making you immune to poison (but not curing you of existing poisoned conditions). In addition to the above, you are also considered acclimated to cold and hot climates while wearing your armor, and you’re also acclimated to high altitude while wearing your armor.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 9th level upgrades -->
+    <element name="Ether Reactor" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ETHER_REACTOR">
+        <supports>Specialization Upgrade,Warsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>You construct an ether reactor that feeds your armor, powering its upgrades with arcane energy. The Ether Reactor has 6 charges, and can be used to power upgrades that cast spells, even upgrades that would normally only recharge after a rest can cast instead using charges, spending 1 charge per level of the spell you are casting. You can cast spells at a higher level by expending more charges. It regains all charges at the end of a long rest.</p>
+            <p class="indent">If your Ether Reactor has no charges left, you can overdraw your Ether Reactor for one last burst of power, but your armor is temporarily immobilized and your speed while wearing your armor becomes zero for a number of rounds equal to the level of the spell cast. Once you do this, you cannot do this against until you complete a long rest.</p>
+        </description>
+        <sheet usage="6/Long Rest">
+            <description>You can use the Reactor to cast additional spells, 1 charge per spell level. If your reactor runs out of charges, you can overdraw for one last spell, but become immobile for a number of rounds equal to the level of the spell cast. You cannot do this again until you complete a long rest.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <!-- added Heads Up Display in version 2.0.2 -->
+    <element name="Heads Up Display" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_HEADS_UP_DISPLAY">
+        <supports>Specialization Upgrade,Warsmith,9</supports>
+        <requirements>[level:artificer:9],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR,ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
+        <prerequisite>Artificer Level 9, Arcane Visor, Sentient Armor</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9, Arcane Visor, Sentient Armor</p>
+            <p>You can delegate displaying and tracking things in your sight to your Sentient armor, granting you the following benefits:</p>
+            <ul>
+                <li>When a creature attempts to take the Hide action against you, you can make an active Wisdom (Perception) check to contest its Dexterity (Stealth) check as a reaction.</li>
+                <li>When making an Dexterity saving throw against an attack you can see, you can make an Intelligence saving throw instead.</li>
+                <li>When a creature hits you with a ranged attack roll, you can cast true strike as a reaction targeting that creature.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your visor can display and track targets, granted specific benefits.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_TRUE_STRIKE" />
+        </rules>
+    </element>
+    <element name="Iron Muscle" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_IRON_MUSCLE">
+        <supports>Specialization Upgrade,Warsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>You reinforce the structure of your armor, giving it the strength of giants. While wearing your armor, your current Strength ability score is increased by 2, and your maximum Strength ability score becomes 24.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="2" />
+            <stat name="strength:max" value="24" bonus="base" />
+        </rules>
+    </element>
+    <element name="Phase Suit" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_PHASE_SUIT">
+        <supports>Specialization Upgrade,Warsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9, Warsuit</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9, Warsuit</p>
+            <p>You gain the ability to cast <em>misty step</em> and <em>blink</em> while wearing your Warsuit. Additionally, as an action, you can become intangible, and move through creatures or objects until the end of your turn. If you end your turn inside a creature or object, you are forced to the nearest unoccupied location, taking 10 force damage for each foot you are forced to move. Once you become intangible using this upgrade, you cannot do so again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You can cast misty step and blink while wearing your Warsuit. Additionally, as an action, you can phase and pass through creatures or objects until the end of your turn.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINK" />
+        </rules>
+    </element>
+    <element name="Piloted Golem" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM">
+        <supports>Specialization Upgrade,Warsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9, Warplate</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9, Warplate</p>
+            <p class="flavor">Incompatible with Collapsible</p>
+            <p>You enlarge your Warplate, turning it into a piloted mechanical golem. Your size category when wearing the armor increases by one.</p>
+            <p class="indent">You have advantage on Strength saving throws and Strength checks against creatures the same size as you or smaller than you.</p>
+            <div class="sidebar">
+                <h5>LARGE CREATURES &amp; LARGE WEAPONS</h5>
+                <p>Large weapons are not defined in the Player’s Handbook for 5e, so what a Large weapon will be (if anything) is up to your DM.</p>
+                <p class="indent">The <em>Dungeon Master’s Guide</em> provides guidance for doubling a Large weapon’s damage dice on page 278 when discussing monster’s weapons, but other DMs opt for a more modest increase akin to the spell enlarge of just having large weapons deal 1d4 additional damage.</p>
+            </div>
+        </description>
+        <sheet>
+            <description>You enlarge your Warplate, turning it into a piloted mechanical golem. Your size category when wearing the armor increases by one. You have advantage on Strength saving throws and Strength checks against creatures the same size as you or smaller than you.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 11th level upgrades -->
+    <element name="Ablative Armor" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ABLATIVE_ARMOR">
+        <supports>Specialization Upgrade,Warsmith,11</supports>
+        <requirements>[level:artificer:11],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM</requirements>
+        <prerequisite>Artificer Level 11, Piloted Golem</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11, Piloted Golem</p>
+            <p>You leverage your Warplate’s increased size to load it up with some redundant layers of armor to protect you. At the end of a short or long rest, you gain temporary hit points equal to your Intelligence modifier + Artificer level.</p>
+        </description>
+        <sheet>
+            <description>At the end of a short or long rest, you gain {{ablative-armor:temp-hp}} temporary hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="ablative-armor:temp-hp" value="intelligence:modifier" />
+            <stat name="ablative-armor:temp-hp" value="level:artificer" />
+        </rules>
+    </element>
+    <element name="Cloaking Device" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_CLOAKING_DEVICE">
+        <supports>Specialization Upgrade,Warsmith,11</supports>
+        <requirements>[level:artificer:11],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_CAMOUFLAGE</requirements>
+        <prerequisite>Artificer Level 11, Active Camouflage</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11, Active Camouflage</p>
+            <p>If you do not move during your turn with active camouflage engaged, you can use your reaction to take the Hide action using an Intelligence (Stealth) check. You make this check with disadvantage if you are within 5 feet of another creature or you attacked during your turn.</p>
+            <p class="indent">You can overload your camouflage to cast <em>greater invisibility</em> without expending a spell slot. Once you do this, you cannot do this again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>If you do not move during your turn with active camouflage engaged, you can use your reaction to take the Hide action using an Intelligence (Stealth) check. You make this check with disadvantage if you are within 5 feet of another creature or you attacked during your turn. You can overload your camouflage to cast greater invisibility without expending a spell slot. Once you do this, you cannot do this again until you complete a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" />
+        </rules>
+    </element>
+    <element name="Distributed Force" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_DISTRIBUTED_FORCE">
+        <supports>Specialization Upgrade,Warsmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p>You can empower attacks with both arms equally. You gain the Two-Weapon Fighting Style: When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+        </description>
+        <sheet>
+            <description>You gain the Two-Weapon Fighting Style: When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Lightning Rod" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_LIGHTNING_ROD">
+        <supports>Specialization Upgrade,Warsmith,11</supports>
+        <requirements>[level:artificer:11],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_LIGHTNING_CHANNEL</requirements>
+        <prerequisite>Artificer Level 11,  Lightning Channel</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11, Lightning Channel</p>
+            <p>Whenever you cast <em>lightning charged<sup>Artificer</sup></em>, you can treat the spell as if it was cast by a spell slot one level higher.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Flash Freeze Capacitor" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_FLASH_FREEZE_CAPACITOR">
+        <supports>Specialization Upgrade,Warsmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11, Incompatible with other Capacitors</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p class="flavor">Incompatible with other Capacitors</p>
+            <p>You can store arcane energy, releasing it in a torrent of freezing energy. As an action, you can cast <em>cone of cold</em> without expending a spell slot or charges. The effected area becomes difficult terrain until the end of your next turn.</p>
+            <p class="indent">Once you use this upgrade, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Action">
+            <description>You can cast cone of cold without expending a spell slot or charges.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" />
+        </rules>
+    </element>
+    <element name="Flight" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_FLIGHT">
+        <supports>Specialization Upgrade,Warsmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11, Incompatible with Piloted Golem</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p class="flavor">Incompatible with Piloted Golem</p>
+            <p>You integrate a magical propulsion system into your Warsmith’s armor. While wearing your Warsmith’s armor you have a magical flying speed of 30 feet.</p>
+        </description>
+        <sheet>
+            <description>While wearing your Warsmith’s armor you have a magical flying speed of 30 feet.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:fly" value="30" />
+        </rules>
+    </element>
+    <element name="Integrated Attack" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK">
+        <supports>Specialization Upgrade,Warsmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11, Integrated Armor or Warplate</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p class="flavor">Integrated Armor or Warplate</p>
+            <p>You integrate a melee weapon into your Warsmith’s Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon cannot have the Heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
+            <p class="indent">You must treat it as though you are wielding it with one hand, but you cannot be disarmed of it. Once activated, you can use this weapon when you take the attack action, and it does not require the use of a hand or your Warplate Gauntlet. You can apply this upgrade multiple times, selecting a new weapon and new location on your armor to install it.</p>
+            <p class="indent">When you activate your integrated weapon, you can immediately make one attack with it. While it is active, you can make an attack with it using your bonus action.</p>
+        </description>
+        <sheet>
+            <description>You integrate a melee weapon into your armor. You can activate is a bonus action and use it for an attack on your action or bonus action. You can apply this upgrade multiple times, selecting a new weapon and location each time.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Power Slam Capacitor" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_POWER_SLAM_CAPACITOR">
+        <supports>Specialization Upgrade,Warsmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11, Incompatible with other Capacitors</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p class="flavor">Incompatible with other Capacitors</p>
+            <p>You store up kinetic energy, and unleash it in a mighty bound. As an action, you can jump up to your entire movement speed and cast <em>destructive wave</em> without expending a spell slot or charges upon landing.</p>
+            <p class="indent">Once you use this upgrade, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>As an action, you can jump up to your entire movement speed and cast destructive wave without expending a spell slot or charges upon landing.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" />
+        </rules>
+    </element>
+    <element name="Self-Repair Matrix" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_SELFREPAIR_MATRIX">
+        <supports>Specialization Upgrade,Warsmith,11</supports>
+        <requirements>[level:artificer:11],</requirements>
+        <prerequisite>Artificer Level 11, </prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11, Ablative Armor</p>
+            <p>At the start of each turn, if you have no temporary hit points, you gain temporary hit points equal your proficiency modifier.</p>
+        </description>
+        <sheet>
+            <description>At the start of each turn, if you have no temporary hit points, you gain {{proficiency}} temporary hit points.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Titan Grip" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_TITAN_GRIP">
+        <supports>Specialization Upgrade,Warsmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p class="flavor">You can take this upgrade twice</p>
+            <p>You improve your grip strength and control of one of your gauntlets beyond the limits of flesh. You can wield a two-handed weapon in one-hand for the gauntlet this upgrade is applied to, and do not need two hands to wield a lance in a hand this upgrade is applied to, even if you are not mounted.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <sheet>
+            <description>You can wield a two-handed weapon in one-hand for the gauntlet this upgrade is applied to, and do not need two hands to wield a lance in a hand this upgrade is applied to, even if you are not mounted.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 15th level upgrades -->
+    <element name="Phase Engine" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_PHASE_ENGINE">
+        <supports>Specialization Upgrade,Warsmith,15</supports>
+        <requirements>[level:artificer:15]</requirements>
+        <prerequisite>Artificer Level 15, Warsuit</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15, Warsuit</p>
+            <p>When you are attacked, you can use your reaction to become intangible, causing that attack to miss if it is a nonmagical attack, or to have disadvantage if it is a magical attack. Once you do so, you cannot do so again until you complete a short or long rest. This upgrade is refreshed every time you teleport or enter the ethereal plane.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short Rest">
+            <description>When you are attacked, you can become intangible, causing non-magical attacks to miss or magical attacks to have disadvantage. This upgrade is refreshed every time you teleport or enter the ethereal plane.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Heavy Plating" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_HEAVY_PLATING">
+        <supports>Specialization Upgrade,Warsmith,15</supports>
+        <requirements>[level:artificer:15]</requirements>
+        <prerequisite>Artificer Level 15, Warplate</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15, Warplate</p>
+            <p>You install special heavy plating, giving you resistance to bludgeoning, piercing, and slashing damage from non-magical sources while wearing your Warplate.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to bludgeoning, piercing, and slashing damage from non-magical sources while wearing your Warplate.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+        </rules>
+    </element>
+    <element name="Recall" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_RECALL">
+        <supports>Specialization Upgrade,Warsmith,15</supports>
+        <requirements>[level:artificer:15]</requirements>
+        <prerequisite>Artificer Level 15</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15</p>
+            <p>When not being worn you can hide your Warsmith’s armor in a pocket dimension. As an action you can magically summon the armor and don it. You can use a bonus action to return the armor to the pocket dimension.</p>
+            <p class="indent">While in the pocket dimension the armor cannot be affected by other abilities and cannot be interacted with in any way.</p>
+        </description>
+        <sheet>
+            <description>When not being worn you can hide your Warsmith’s armor in a pocket dimension. As an action you can magically summon the armor and don it. You can use a bonus action to return the armor to the pocket dimension.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Shield Arm" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_SHIELD_ARM">
+        <supports>Specialization Upgrade,Warsmith,15</supports>
+        <requirements>[level:artificer:15],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM</requirements>
+        <prerequisite>Artificer Level 15, Piloted Golem</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15, Piloted Golem</p>
+            <p>You integrate a shield into one of your armor’s arms. You have proficiency with that shield, and can deploy it as a bonus action. It requires the use of that arm while deployed.</p>
+        </description>
+        <sheet>
+            <description>You integrate a shield into one of your armor’s arms. You have proficiency with that shield, and can deploy it as a bonus action. It requires the use of that arm while deployed.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Sun Cannon" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_SUN_CANNON">
+        <supports>Specialization Upgrade,Warsmith,15</supports>
+        <requirements>[level:artificer:15]</requirements>
+        <prerequisite>Artificer Level 15</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15</p>
+            <p>You install a sun cannon into your Warsmith’s armor, allowing you to unleash devastating solar laser blasts. As an action, you can cast sunbeam without expending a spell slot.</p>
+            <p class="indent">Once you use this ability, you can not use it again until you complete a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>You can cast sunbeam without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SUNBEAM" />
+        </rules>
+    </element>
+    <element name="Virtual Interface" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_VIRTUAL_INTERFACE">
+        <supports>Specialization Upgrade,Warsmith,15</supports>
+        <requirements>[level:artificer:15],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
+        <prerequisite>Artificer Level 15, Sentient Armor</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15, Sentient Armor</p>
+            <p>When you use Artificial Strength to raise your Strength ability score, you no longer lower your Intelligence ability score below your natural maximum (not counting Sentient Armor).</p>
+        </description>
+        <sheet>
+            <description>When you use Artificial Strength to raise your Strength ability score, you no longer lower your Intelligence ability score below your natural maximum (not counting Sentient Armor).</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+
+    <!-- Warsmith items -->
+    <element name="Warplate Gauntlet - Power Fist" type="Magic Item" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_MAGIC_ITEM_WARSMITH_WARPLATE_GAUNTLET_POWER_FIST">
+		<description>
+            <p class="flavor"></p>
+			<p></p>
+            <p class="indent"><em></em></p>
+            <p class="indent"></p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" additional="by a Warsmith">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+    <element name="Warplate Gauntlet - Force Blast" type="Magic Item" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_MAGIC_ITEM_WARSMITH_WARPLATE_GAUNTLET_FORCE_BLAST">
+		<description>
+			<p></p>
+            <p class="indent"></p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" additional="by a Warsmith">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+    <element name="Warplate Gauntlet - Martial Grip" type="Magic Item" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_MAGIC_ITEM_WARSMITH_WARPLATE_GAUNTLET_MARTIAL_GRIP">
+		<description>
+			<p>Your Warplate Gauntlet grants the ability to wield a wide variety of powerful weapons. You gain proficiency with martial weapons while wearing your Warplate Gauntlet.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" additional="by a Warsmith">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
+	</element>
+
+	<element name="Warsmith’s Warplate Armor" type="Magic Item" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_MAGIC_ITEM_WARSMITH_WARSMITHS_ARMOR_WARPLATE">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="75">75 lb.</set>
+			<set name="slot">body</set>
+			<set name="type" addition="heavy">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">Heavy</set>
+			<set name="attunement" additional="by a Warsmith">true</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">18</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="18" />
+            <stat name="strength:max" value="2" />
+            <stat name="strength" value="2" />
+		</rules>
+	</element>
+	<element name="Warsmith’s Warsuit" type="Magic Item" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_MAGIC_ITEM_WARSMITH_WARSMITHS_ARMOR_WARSUIT">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="45">45 lb.</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">Medium</set>
+			<set name="attunement" additional="by a Warsmith">true</set>
+			<set name="armorClass">14 + Dex modifier (max 2)</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="14" />
+            <stat name="strength:max" value="2" />		</rules>
+	</element>
+	<element name="Warsmith’s Integrated Armor" type="Magic Item" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_MAGIC_ITEM_WARSMITH_WARSMITHS_ARMOR_INTEGRATED_ARMOR">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="30">30 lb.</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">Medium</set>
+			<set name="attunement" additional="by a Warsmith">true</set>
+			<set name="armorClass">14 + Dex modifier (max 2)</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="14" />
+            <stat name="strength" value="2" />		</rules>
+	</element>
+
+</elements>

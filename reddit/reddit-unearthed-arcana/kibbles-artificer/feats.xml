@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Feats from Kibbles’ Artificer Extended Toolbox</name>
+        <update version="0.0.1">
+            <file name="feats.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibbles-artificer/feats.xml" />
+        </update>
+    </info>
+    
+    <element name="Artificial Companion" type="Feat" source="Artificer Extended Toolbox" id="ID_KIBBLESTASTY_GM_BINDER_FEAT_ARTIFICIAL_COMPANION">
+        <requirements>ID_KIBBLESTASTY_GM_BINDER_CLASS_ARTIFICER</requirements>
+        <prerequisite>Artificer</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer</p>
+            <p>You do the most responsible thing a gifted Artificer can do - create a new sentient mind to serve you. This mind is bound to an tiny item, and while this mind is inhabiting that item, it is considered magical and all but indestructible.</p>
+            <p class="indent">It has a Strength, Dexterity and Constitution of 0, and has no hit points and cannot take actions. It has an Intelligence of 12 + your proficiency modifier, a Wisdom of 10 + your proficiency modifier, and a Charisma of 10 + your proficiency modifier. Its proficiency is equal to yours. This mental assistance can assist with many tasks:</p>
+            <ul>
+                <li>It has proficiency in two Intelligence or Wisdom skills of your choice, and can take the Help action to help with ability checks of those skills.</li>
+                <li>It has a blindsight of 10 feet. This increases by 10 feet at 5th level (20 feet), 11th level (30 feet), and 17th level (40 feet).</li>
+                <li>It can communicate verbally and telepathically with you while you are within range of its blindsight.</li>
+                <li>At 5th level, it gains the ability to cast <em>clairvoyance</em> and communicate the results of what it sees. Once it does this it cannot do this again until you complete a long rest.</li>
+            </ul>
+            <p class="indent">At your DMs discretion, this intelligence can be bound to an item created by Artificer class features if appropriate.</p>
+            <div class="sidebar">
+                <h5>SENTIENT ARMOR, GOLEMS, AND ARTIFICIAL COMPANIONS</h5>
+                <p>This is intended to be a seperate entity from your other class features, but there is no reason that these features cannot be rolled into an existing companion intelligence you already have; in that case the granted features are just added to the features it normal has.</p>
+            </div>
+        </description>
+        <sheet>
+            <description>You create an artificial mind that is bound to a tiny object. It has Int: {{artificial-companion:intelligence}}, Wis {{artificial-companion:wisdom}}, Cha {{artificial-companion:charisma}}. Blindsight: {{artificial-companion:blindsight-range}} ft. It can communicate with you verbally and telepathically while within blindsight range. It has proficiency in two Intelligence or Wisdom skills of your choice, and can take the Help action to help with ability checks of those skills.</description>
+            <description level="5">You create an artificial mind that is bound to a tiny object. It has Int: {{artificial-companion:intelligence}}, Wis {{artificial-companion:wisdom}}, Cha {{artificial-companion:charisma}}. Blindsight: {{artificial-companion:blindsight-range}} ft. It can communicate with you verbally and telepathically while within blindsight range. It has proficiency in two Intelligence or Wisdom skills of your choice, and can take the Help action to help with ability checks of those skills. 1/Long Rest: It can cast clairvoyance and communicate the results of what it sees.</description>
+        </sheet>
+        <rules>
+            <stat name="artificial-companion:intelligence" value="12" />
+            <stat name="artificial-companion:intelligence" value="proficiency" />
+            <stat name="artificial-companion:wisdom" value="10" />
+            <stat name="artificial-companion:wisdom" value="proficiency" />
+            <stat name="artificial-companion:charisma" value="10" />
+            <stat name="artificial-companion:charisma" value="proficiency" />
+            <stat name="artificial-companion:blindsight-range" value="10" level="1" />
+            <stat name="artificial-companion:blindsight-range" value="10" level="5" />
+            <stat name="artificial-companion:blindsight-range" value="10" level="11" />
+            <stat name="artificial-companion:blindsight-range" value="10" level="17" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" />
+        </rules>
+    </element>
+    <element name="Magic Mutater" type="Feat" source="Artificer Extended Toolbox" id="ID_KIBBLESTASTY_GM_BINDER_FEAT_MAGIC_MUTATER">
+        <requirements>ID_KIBBLESTASTY_GM_BINDER_CLASS_ARTIFICER</requirements>
+        <prerequisite>Artificer</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer</p>
+            <p>Magic is great and all, but what if it was... better? You modify an arcane focus in your possession. Select a Metamagic Option from the Sorcerer’s list of Metamagic options.</p>
+            <p class="indent">When you cast a spell using this arcane focus, you can apply the metamagic option to the spell cast without expending Sorcerer points (if the effect would cost more than 3 sorcery points, it fails).</p>
+            <p class="indent">Once you do this, you cannot mutate another spell until you finish a short or long rest. As an action, you can expend a first level spell to recharge the Arcane Focus to use it again before completing a rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You modify an arcane focus in your possession. When you cast a spell using this arcane focus, you can apply the metamagic option to the spell cast without expending Sorcerer points (if the effect would cost more than 3 sorcery points, it fails). As an action, you can expend a first level spell to recharge the Arcane Focus to use it again before completing a rest.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Metamagic (Magic Mutator)" supports="Metamagic" />
+        </rules>
+    </element>
+    <element name="Warforged Customization" type="Feat" source="Artificer Extended Toolbox" id="ID_KIBBLESTASTY_GM_BINDER_FEAT_WARFORGED_CUSTOMIZATION">
+        <requirements>ID_WOTC_ERLW_RACE_WARFORGED||ID_WOTC_WGTE_RACE_WARFORGED||ID_WOTC_UA_RACE_WARFORGED</requirements>
+        <prerequisite>Artificer</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Warforged</p>
+            <p>Other people have to exercise to improve their bodies. You’ve fond that yours is just upgradeable.</p>
+            <ul>
+                <li>You can select an upgrade from the Golemsmith or Warsmith upgrade lists, and apply it to yourself as if you were the golem or warplate. This upgrade cannot be a level restricted upgrade.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Upgrade (Warforged Customization)" supports="Specialization Upgrade,(Golemsmith||Warsmith),3" />
+        </rules>
+    </element>
+    
+</elements>
