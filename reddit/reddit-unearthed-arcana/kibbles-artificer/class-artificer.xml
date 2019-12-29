@@ -53,6 +53,52 @@
                 <li>(a) scale mail, (b) leather armor, or (c) chain mail</li>
                 <li>thieves’ tools and a dungeoneer’s pack</li>
             </ul>
+            <table class="class-features">
+                <thead>
+                    <tr><th>Level</th><th>Proficiency Bonus</th><th class="left">Features</th><th>Spells Known</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>Upgrades</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1st</td><td>+2</td><td class="left">Artificer Specialization, Magic Item Analysis</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                    <tr><td>2nd</td><td>+2</td>
+                    <td class="left">Spellcasting, Tool Expertise</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                    <tr><td>3rd</td><td>+2</td>
+                    <td class="left">Artificer Specialist Feature, Specialization Upgrade</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>1</td></tr>
+                    <tr><td>4th</td><td>+2</td>
+                    <td class="left">Ability Score Improvement</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>1</td></tr>
+                    <tr><td>5th</td><td>+3</td>
+                    <td class="left">Artificer Specialist Feature</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>2</td></tr>
+                    <tr><td>6th</td><td>+3</td>
+                    <td class="left">Arcane Reconstruction, Cross Disciplinary Knowledge</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>2</td></tr>
+                    <tr><td>7th</td><td>+3</td>
+                    <td class="left">Wondrous Item Proficiency</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>3</td></tr>
+                    <tr><td>8th</td><td>+3</td>
+                    <td class="left">Ability Score Improvement</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>3</td></tr>
+                    <tr><td>9th</td><td>+4</td>
+                    <td class="left">─</td><td>7</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>4</td></tr>
+                    <tr><td>10th</td><td>+4</td>
+                    <td class="left">Improved Magical Crafting, Wondrous Item Recharge</td><td>7</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>4</td></tr>
+                    <tr><td>11th</td><td>+4</td>
+                    <td class="left">Study of Magic</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>5</td></tr>
+                    <tr><td>12th</td><td>+4</td>
+                    <td class="left">Ability Score Improvement</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>5</td></tr>
+                    <tr><td>13th</td><td>+5</td>
+                    <td class="left">─</td><td>9</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>6</td></tr>
+                    <tr><td>14th</td><td>+5</td>
+                    <td class="left">Artificer Specialist Feature</td><td>9</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>6</td></tr>
+                    <tr><td>15th</td><td>+5</td>
+                    <td class="left">─</td><td>10</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>7</td></tr>
+                    <tr><td>16th</td><td>+5</td>
+                    <td class="left">Ability Score Improvement</td><td>10</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>7</td></tr>
+                    <tr><td>17th</td><td>+6</td>
+                    <td class="left">─</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>8</td></tr>
+                    <tr><td>18th</td><td>+6</td>
+                    <td class="left">Wondrous Items Mastery</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>8</td></tr>
+                    <tr><td>19th</td><td>+6</td>
+                    <td class="left">Ability Score Improvement</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>9</td></tr>
+                    <tr><td>20th</td><td>+6</td>
+                    <td class="left">Peerless Inventor</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>9</td></tr>
+                </tbody>
+            </table>
             <div element="ID_KIBBLESTASTY_GM_BINDER_CLASS_FEATURE_ARTIFICER_ARTIFICER_SPECIALIZATION" />
             <div element="ID_KIBBLESTASTY_GM_BINDER_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_ANALYSIS" />
             <div element="ID_KIBBLESTASTY_GM_BINDER_CLASS_FEATURE_ARTIFICER_TOOL_EXPERTISE" />
