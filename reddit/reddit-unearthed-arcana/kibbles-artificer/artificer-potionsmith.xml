@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Potionsmith Specialization for Kibbles’ Artificer</name>
-        <update version="0.0.3">
+        <update version="0.0.1">
             <file name="artificer-potionsmith.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibbles-artificer/artificer-potionsmith.xml" />
         </update>
     </info>

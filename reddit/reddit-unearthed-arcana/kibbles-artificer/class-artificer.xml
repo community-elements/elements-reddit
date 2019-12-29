@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Kibbles’ Artificer</name>
-        <update version="0.0.5">
+        <update version="0.0.1">
             <file name="class-artificer.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibbles-artificer/class-artificer.xml" />
         </update>
         <!-- https://www.gmbinder.com/share/-LAEn6ZdC6lYUKhQ67Qk -->

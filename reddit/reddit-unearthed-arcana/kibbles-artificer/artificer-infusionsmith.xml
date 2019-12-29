@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Infusionsmith Specialization for Kibbles’ Artificer</name>
-        <update version="0.0.3">
+        <update version="0.0.1">
             <file name="artificer-infusionsmith.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibbles-artificer/artificer-infusionsmith.xml" />
         </update>
     </info>
