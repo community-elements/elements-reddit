@@ -7,7 +7,7 @@
         </update>
     </info>
     
-    <element name="Starforged" type="Race" source="source" id="ID_source_type_Starforged">
+    <element name="Starforged" type="Race" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACE_STARFORGED">
         <description>
             <p class="flavor">"I remember it so clearly, it was fleeting, but it was there, it came as soon as it arrived. My first thought, the first thing my core every thought of, a simple phrase: Why am I here?"</p>
             <p class="flavor indent">— Hem Haywire, Starforged</p>
