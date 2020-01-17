@@ -8,31 +8,31 @@
         </update>
     </info>
     
-    <element name="Blood Knight" type="Archetype" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_MARTIAL_ARCHETYPE_BLOOD_KNIGHT">
+    <element name="Blood Knight" type="Archetype" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_MARTIAL_ARCHETYPE_BLOOD_KNIGHT">
         <supports>Martial Archetype</supports>
         <description>
             <p>The archetypal Blood Knight employs their own flesh and blood in the slaughter of their enemies. To a Blood Knight, battle is everything. It isn’t winning or losing that drives them so much as it is the opportunity for a good fight. And when they find that fight, they use everything they have to contest their opponent. They utilize blood sacrifices to cast spells and grant themselves additional offensive and defensive capabilities, though at a steep cost.</p>
-            <div element="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_HEMOMANCY" />
-            <div element="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_WELL" />
-            <div element="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_DEATHSEEKER" />
-            <div element="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_IMPROVED_BLOOD_WELL" />
-            <div element="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_RUSH" />
-            <div element="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_STRENGTH_OF_THE_WOUNDED" />
+            <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_HEMOMANCY" />
+            <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_WELL" />
+            <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_DEATHSEEKER" />
+            <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_IMPROVED_BLOOD_WELL" />
+            <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_RUSH" />
+            <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_STRENGTH_OF_THE_WOUNDED" />
         </description>
         <sheet>
             <description>The archetypal Blood Knight employs their own flesh and blood in the slaughter of their enemies. To a Blood Knight, battle is everything.</description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_HEMOMANCY" level="3" />
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_WELL" level="3" />
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_DEATHSEEKER" level="7" />
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_IMPROVED_BLOOD_WELL" level="10" />
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_RUSH" level="15" />
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_STRENGTH_OF_THE_WOUNDED" level="18" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_HEMOMANCY" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_WELL" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_DEATHSEEKER" level="7" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_IMPROVED_BLOOD_WELL" level="10" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_RUSH" level="15" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_STRENGTH_OF_THE_WOUNDED" level="18" />
         </rules>
     </element>
     
-    <element name="Hemomancy" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_HEMOMANCY">
+    <element name="Hemomancy" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_HEMOMANCY">
         <description>
             <p>Beginning when you choose this archetype at 3rd level, you gain the ability to cast hemomancy spells, detailed in chapter 3 of the <i>Dark Arts Player’s Companion</i>.</p>
             <p class="indent"><span class="feature">Spell Slots. </span>The Blood Knight Spellcasting table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.</p>
@@ -43,13 +43,8 @@
             <p class="indent"><b>Spell save DC</b> = 8 + your proficiency bonus + your Constitution modifier</p>
             <p class="indent"><b>Spell attack modifier</b> = your proficiency bonus + your Constitution modifier</p>
         </description>
-        <setters>
-            <set name="spellcaster">true</set>
-            <set name="spellcastingAbility">Constitution</set>
-            <set name="spellcastingClass">Blood Knight</set>
-        </setters>
         <spellcasting name="Blood Knight" ability="Constitution" allowReplace="true">
-            <list>Hemomancy</list>
+            <list>DAPC_Hemomancy</list>
         </spellcasting>
         <sheet display="false">
             <description></description>
@@ -72,7 +67,7 @@
         </rules>
     </element>
     
-    <element name="Blood Well" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_WELL">
+    <element name="Blood Well" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_WELL">
         <description>
             <p>Also at 3rd level, you gain a well of blood magic that is fueled through special dice called blood dice.</p>
             <p class="indent"><span class="feature">Blood Dice. </span>You have three blood dice, which are d6s. A blood die is expended when you use it. You regain all of your expended blood dice when you finish a short or long rest.</p>
@@ -91,7 +86,7 @@
         </rules>
     </element>
     
-    <element name="Deathseeker" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_DEATHSEEKER">
+    <element name="Deathseeker" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_DEATHSEEKER">
         <description>
             <p>Starting at 7th level, you gain advantage on any Wisdom (Perception) or Wisdom (Survival) check used to find a wounded creature.</p>
             <p class="indent">Additionally, as a bonus action on your turn you can sacrifice 1 hit point to learn the general direction of every creature within 100 feet of you that has blood.</p>
@@ -101,7 +96,7 @@
         </sheet>
     </element>
     
-    <element name="Improved Blood Well" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_IMPROVED_BLOOD_WELL">
+    <element name="Improved Blood Well" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_IMPROVED_BLOOD_WELL">
         <description>
             <p>At 10th level, your blood dice turn into d8s.</p>
         </description>
@@ -113,7 +108,7 @@
         </rules>
     </element>
     
-    <element name="Blood Rush" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_RUSH">
+    <element name="Blood Rush" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_RUSH">
         <description>
             <p>Starting at 15th level, whenever you cast a hemomancy spell of 1st level or higher, you enter a blood rush. The blood rush lasts until the end of your next turn, and for the duration your speed is doubled, you have advantage on Dexterity saving throws, and you can Disengage as a bonus action.</p>
         </description>
@@ -122,7 +117,7 @@
         </sheet>
     </element>
     
-    <element name="Strength of the Wounded" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_STRENGTH_OF_THE_WOUNDED">
+    <element name="Strength of the Wounded" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_STRENGTH_OF_THE_WOUNDED">
         <description>
             <p>At 18th level, you gain increased power when wounded. Whenever you expend a blood die while below half your hit point maximum, you can add your Constitution modifier to the result.</p>
         </description>
