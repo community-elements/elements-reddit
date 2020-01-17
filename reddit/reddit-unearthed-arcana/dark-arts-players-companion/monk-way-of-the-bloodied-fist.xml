@@ -36,9 +36,6 @@
         <sheet action="Action">
             <description>You can spend 2 ki points to cast bloodburn, blood seal, or sanguine rope without providing material components. You also know the bloodletting cantrip. You must still pay the hemomancy costs associated with each spell.</description>
         </sheet>
-        <spellcasting name="Shadow" ability="Wisdom" allowReplace="false">
-            <list></list>
-        </spellcasting>
         <rules>
             <grant type="Spell" id="ID_JONOMAN3000_DAPC_SPELL_BLOODBURN" />
             <grant type="Spell" id="ID_JONOMAN3000_DAPC_SPELL_BLOOD_SEAL" />
