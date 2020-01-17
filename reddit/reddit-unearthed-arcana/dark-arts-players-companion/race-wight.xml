@@ -77,6 +77,9 @@
         <sheet>
             <description>You are considered undead for effects such as <i>turn undead</i> and many healing spells. You are immune to disease and the poisoned condition, and you have resistance to poison damage. You do not need to eat or breathe, but you can ingest food or drink if you wish. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state, but resting in this way is otherwise identical to sleeping. Magically induced sleep can cause you to enter this inactive state.</description>
         </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
     </element>
     
     <element name="Life Drain" type="Racial Trait" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_LIFE_DRAIN">
