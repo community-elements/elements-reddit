@@ -8,7 +8,7 @@
     
 	<element name="Dark Arts Player’s Companion" type="Source" source="Dark Arts Player’s Companion" id="ID_SOURCE_DARK_ARTS_PLAYERS_COMPANION">
 		<description>
-			<![CDATA[<p></p>]]>
+			<![CDATA[<p>Version 3.0 - 53 pages of Races, Subclasses, Spells, and Monsters themed around Black Magic!</p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">DAPC</set>
