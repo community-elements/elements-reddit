@@ -8,7 +8,7 @@
         </update>
     </info>
     
-    <element name="Wight" type="Race" source="Dark Arts Player’s Companion" id="ID_DAPC_RACE_WIGHT">
+    <element name="Wight" type="Race" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_RACE_WIGHT">
         <description>
             <p>The word "wight" meant "person" in days of yore, but the name now refers to evil undead who were once mortals driven by dark desire and great vanity. When death stills such a creature’s heart and snuffs its living breath, its spirit cries out to the demon lord Orcus or some vile god of the underworld for a reprieve: undeath in return for eternal war on the living. If a dark power answers the call, the spirit is granted undeath so that it can pursue its own malevolent agenda.</p>
             <p class="indent">Wights possess the memories and drives of their formerly living selves. They will heed the call of whatever dark entity transformed them into undead, swearing oaths to appease their new lord while retaining their autonomy. Never tiring, a wight can pursue its goals relentlessly and without distraction.</p>
@@ -55,13 +55,13 @@
     		<grant type="Vision" id="ID_VISION_DARKVISION" />
 
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
-            <grant type="Racial Trait" id="ID_DAPC_RACIAL_TRAIT_WIGHT_SUNLIGHT_SENSITIVITY" />
-            <grant type="Racial Trait" id="ID_DAPC_RACIAL_TRAIT_WIGHT_UNDEAD" />
-            <grant type="Racial Trait" id="ID_DAPC_RACIAL_TRAIT_WIGHT_LIFE_DRAIN" />
+            <grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_SUNLIGHT_SENSITIVITY" />
+            <grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_UNDEAD" />
+            <grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_LIFE_DRAIN" />
         </rules>
     </element>
 
-    <element name="Sunlight Sensitivity" type="Racial Trait" source="Dark Arts Player’s Companion" id="ID_DAPC_RACIAL_TRAIT_WIGHT_SUNLIGHT_SENSITIVITY">
+    <element name="Sunlight Sensitivity" type="Racial Trait" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_SUNLIGHT_SENSITIVITY">
         <description>
             <p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
         </description>
@@ -70,7 +70,7 @@
         </sheet>
     </element>
     
-    <element name="Undead" type="Racial Trait" source="Dark Arts Player’s Companion" id="ID_DAPC_RACIAL_TRAIT_WIGHT_UNDEAD">
+    <element name="Undead" type="Racial Trait" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_UNDEAD">
         <description>
             <p>You are considered undead for effects such as <i>turn undead</i> and many healing spells. You are immune to disease and the poisoned condition, and you have resistance to poison damage. You do not need to eat or breathe, but you can ingest food or drink if you wish. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state, but resting in this way is otherwise identical to sleeping. Magically induced sleep can cause you to enter this inactive state.</p>
         </description>
@@ -79,7 +79,7 @@
         </sheet>
     </element>
     
-    <element name="Life Drain" type="Racial Trait" source="Dark Arts Player’s Companion" id="ID_DAPC_RACIAL_TRAIT_WIGHT_LIFE_DRAIN">
+    <element name="Life Drain" type="Racial Trait" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_LIFE_DRAIN">
         <description>
             <p>When you kill a humanoid, you can choose to have it rise 24 hours later as a zombie under your control, unless it is restored to life or its body is destroyed. Only one zombie may be created through this ability at any one time; if another is created then the first becomes inanimate.</p>
             <p class="indent">The zombie has the statistics of the Zombie (<i>Monster Manual</i> pg. 316), except its hit point value is instead equal to three times your level.</p>

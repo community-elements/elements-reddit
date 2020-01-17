@@ -8,7 +8,7 @@
         </update>
     </info>
     
-    <element name="Shadar-Kai" type="Race" source="Dark Arts Player’s Companion" id="ID_DAPC_RACE_SHADARKAI">
+    <element name="Shadar-Kai" type="Race" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_RACE_SHADARKAI">
         <description>
             <p>Shadar-kai were once humans, native to the world. They were all members of an extended tribe who called themselves Shadar-Kai. These early humans had seen the abuses Nerull, once god of death, perpetrated on the souls who passed into his power. They also feared the unknowable reaches of death into which most souls pass even now. When the Raven Queen slew Nerull and ascended to godhood, in an age now largely forgotten, the Shadar-Kai struck a deal with her. They promised to serve as her mortal agents, and in exchange, she gave them incredibly long life and freedom from frailty. The shadar-kai believe that, through their pact, they became the chosen people of death and winter.</p>
             <p class="indent">The Shadar-Kai moved to the Shadowfell, setting up their communities on the borders of Letherna, the Raven Queen’s domain. Life in shadow changed the humans, reshaping them and altering their appearance. Eventually, they were so different from humans that they became a distinct species. As they expanded their territory in the Shadowfell and began interacting again with the mortal world, the tribal name became the name for their race.</p>
@@ -66,11 +66,11 @@
     		<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
 
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
-            <grant type="Racial Trait" id="ID_DAPC_RACIAL_TRAIT_SHADAR_KAI_SHADOW_JAUNT" />
+            <grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_SHADOW_JAUNT" />
         </rules>
     </element>
     
-    <element name="Shadow Jaunt" type="Racial Trait" source="Dark Arts Player’s Companion" id="ID_DAPC_RACIAL_TRAIT_SHADAR_KAI_SHADOW_JAUNT">
+    <element name="Shadow Jaunt" type="Racial Trait" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_SHADOW_JAUNT">
         <description>
             <p>On your turn, when you reduce a creature to 0 hit points, you can use your bonus action to teleport up to 15 feet.</p>
         </description>

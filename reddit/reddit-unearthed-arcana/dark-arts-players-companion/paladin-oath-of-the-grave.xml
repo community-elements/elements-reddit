@@ -8,29 +8,29 @@
         </update>
     </info>
     
-    <element name="Oath of the Grave" type="Archetype" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_SACRED_OATH_OATH_OF_THE_GRAVE">
+    <element name="Oath of the Grave" type="Archetype" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_SACRED_OATH_OATH_OF_THE_GRAVE">
         <supports>Sacred Oath</supports>
         <description>
             <p>The Oath of the Grave is a seldom practised tradition, most commonly reserved for the followers of the Raven Queen. Sometimes called winter knights, black knights, or grave knights, these paladins serve as protectors of the sacred passings into the afterlife. They constantly struggle against the forces of undeath, as they see them as the most unholy abominations that blight this land. They adorn themselves with images of death and winter - skulls, ravens, or similar symbols of their patron gods.</p>
             <p class="indent"></p>
-            <div element="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_TENETS_OF_THE_GRAVE" />
-            <div element="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY" />
-            <div element="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_AURA_OF_PRESERVATION" />
-            <div element="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_SOUL_OF_DEMISE" />
-            <div element="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_REAPER_OF_WINTER" />
+            <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_TENETS_OF_THE_GRAVE" />
+            <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY" />
+            <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_AURA_OF_PRESERVATION" />
+            <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_SOUL_OF_DEMISE" />
+            <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_REAPER_OF_WINTER" />
         </description>
         <sheet>
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_TENETS_OF_THE_GRAVE" level="3" />
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY" level="3" />
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_AURA_OF_PRESERVATION" level="7" />
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_SOUL_OF_DEMISE" level="15" />
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_REAPER_OF_WINTER" level="20" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_TENETS_OF_THE_GRAVE" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_AURA_OF_PRESERVATION" level="7" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_SOUL_OF_DEMISE" level="15" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_REAPER_OF_WINTER" level="20" />
         </rules>
     </element>
-    <element name="Tenets of the Grave" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_TENETS_OF_THE_GRAVE">
+    <element name="Tenets of the Grave" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_TENETS_OF_THE_GRAVE">
         <description>
             <p>The tenets of the Oath of the grave have been passed down for generations. This oath emphasizes the passing between the warmth of life to the everlasting cold of death, and punishes those that defile this passing with the unholy raising of undead.</p>
             <p class="indent"><span class="feature">Annihilate the Unholy.</span> The undead and those who foster them are unholy and wicked. Destroy them before they defile more than they have already.</p>
@@ -67,7 +67,7 @@
         </rules>
     </element>
     
-    <element name="Channel Divinity" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY">
+    <element name="Channel Divinity" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY">
         <description>
             <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
             <p class="indent"><span class="feature">Icy Repose. </span>As an action, you present your holy symbol and speak a prayer against undeath, using your Channel Divinity. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is frozen for 1 minute or until it takes damage.</p>
@@ -79,12 +79,12 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY_ICY_REPOSE" />
-            <grant type="Archetype Feature" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY_VOW_OF_DEATH" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY_ICY_REPOSE" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY_VOW_OF_DEATH" />
         </rules>
     </element>
 
-    <element name="Channel Divinity: Icy Repose" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY_ICY_REPOSE">
+    <element name="Channel Divinity: Icy Repose" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY_ICY_REPOSE">
         <description>
             <p>As an action, you present your holy symbol and speak a prayer against undeath, using your Channel Divinity. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is frozen for 1 minute or until it takes damage.</p>
             <p class="indent">A frozen creature is affected by the petrified condition until the frozen effect ends, at which point the creature is freed and able to act normally.</p>
@@ -94,7 +94,7 @@
         </sheet>
     </element>  
     
-    <element name="Channel Divinity: Vow of Death" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY_VOW_OF_DEATH">
+    <element name="Channel Divinity: Vow of Death" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_CHANNEL_DIVINITY_VOW_OF_DEATH">
         <description>
             <p>As a bonus action, you can utter a vow of death against a creature you can see within 10 feet of you, using your Channel Divinity. You add 1 + your Charisma modifier necrotic damage to your damage rolls against the creature for 1 minute or until they drop to 0 hit points or fall unconscious.</p>
             <p class="indent">If a creature under this effect dies, it can’t become undead.</p>
@@ -110,7 +110,7 @@
     </element>
     
     
-    <element name="Aura of Preservation" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_AURA_OF_PRESERVATION">
+    <element name="Aura of Preservation" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_AURA_OF_PRESERVATION">
         <description>
             <p>Starting at 7th level, you and friendly creatures within 10 feet of you have resistance to necrotic damage, and cannot be charmed, frightened, or possessed by undead creatures.</p>
             <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
@@ -122,7 +122,7 @@
         <rules><grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" /></rules>
     </element>
     
-    <element name="Soul of Demise" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_SOUL_OF_DEMISE">
+    <element name="Soul of Demise" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_SOUL_OF_DEMISE">
         <description>
             <p>By 15th level, your vow of death has become far more persistent. When a creature under the effect of your vow of death dies, that creature cannot be raised from the dead for the next 30 days, outside of using a <i>wish</i> spell. Additionally, you can use a bonus action on your next turn to mark a new creature with the vow.</p>
         </description>
@@ -131,7 +131,7 @@
         </sheet>
     </element>
     
-    <element name="Reaper of Winter" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_REAPER_OF_WINTER">
+    <element name="Reaper of Winter" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_REAPER_OF_WINTER">
         <description>
             <p>At 20th level, as an action, you can surround yourself with a deathly chill. For 1 minute, swirls of chilling wind surround you in a 30 foot radius.</p>
             <p class="indent">Whenever an enemy creature starts its turn in the area, the creature takes 10 cold damage and their movement speed is reduced by 10 feet until the start of their next turn.</p>
