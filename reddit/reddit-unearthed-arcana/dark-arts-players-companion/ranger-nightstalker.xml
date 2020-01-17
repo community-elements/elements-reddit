@@ -41,7 +41,7 @@
             <description>You conjure or dismiss your shadow familiar, which takes the form of a spectral, untargetable creature. It appears in an unoccupied space within 30 feet of you. As long as it is conjured, you can forgo one or more of your attacks when you use the Attack action to have your shadow familiar move and make attacks of its own, which use your Ranger spell attack modifier for their attack rolls and have a reach of 5 feet. Your shadow familiar cannot move farther than 120 feet away from you.</description>
         </sheet>
         <rules>
-            <select type="Archetype Feature" id="Shadow Familiar" supports="Shadow Familiar" />
+            <select type="Archetype Feature" name="Nightstalker Shadow Familiar" supports="Nightstalker Shadow Familiar" />
         </rules>
     </element>
     
@@ -74,7 +74,7 @@
     </element>
     
     <element name="Cat" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_RANGER_NIGHTSTALKER_SHADOW_FAMILIAR_CAT">
-        <supports>Shadow Familiar</supports>
+        <supports>Nightstalker Shadow Familiar</supports>
         <description>
             <p>Whenever you forgo an attack, you can have the cat move up to 30 feet and attack a creature. On a hit, the attack deals 1d4 + your Wisdom modifier slashing damage, and the next attack made against that creature has advantage on the attack roll.</p>
             <p class="indent">As an action, you can expend a ranger spell slot to infuse the cat’s claws with poison and have it leap onto a target within 30 feet of it. That creature must succeed on a Constitution saving throw against your Ranger spell save DC or be poisoned until the end of your next turn and take 2d8 poison damage for a 1st level spell slot, plus 1d8 for each spell level higher than 1st.</p>
@@ -85,7 +85,7 @@
     </element>
     
     <element name="Raven" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_RANGER_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN">
-        <supports>Shadow Familiar</supports>
+        <supports>Nightstalker Shadow Familiar</supports>
         <description>
             <p>Whenever you forgo an attack, you can have the raven fly up to 45 feet and attack a creature. On a hit, the attack deals 1d10 + your Wisdom modifier piercing damage.</p>
             <p class="indent">As an action, you can expend a ranger spell slot to infuse the raven with lightning and have it travel along a line 5 feet wide and 30 feet long. Each creature in that line must succeed on a Dexterity saving throw or take 2d6 lightning damage for a 1st level spell slot, plus 1d6 for each spell level higher than 1st.</p>
@@ -96,7 +96,7 @@
     </element>
     
     <element name="Wolf" type="Archetype Feature" source="Dark Arts Player’s Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_RANGER_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF">
-        <supports>Shadow Familiar</supports>
+        <supports>Nightstalker Shadow Familiar</supports>
         <description>
             <p>Whenever you forgo an attack, you can have the wolf move up to 30 feet and attack a creature. On a hit, the attack deals 1d6 + your Wisdom modifier piercing damage, and the target has disadvantage on its next attack roll.</p>
             <p class="indent">As an action, you can expend a ranger spell slot to infuse the wolf with primal ferocity and have it release a piercing howl. Each creature of your choice within 30 feet of the wolf gains 1d6 temporary hit points for a 1st level spell slot, plus 1d6 for each spell level higher than 1st. These temporary hit points last for 1 minute.</p>
