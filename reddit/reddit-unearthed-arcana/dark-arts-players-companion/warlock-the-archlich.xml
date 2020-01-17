@@ -32,18 +32,19 @@
         <sheet display="false">
             <description>You have made a pact with an archlich, a creature that has existed since the dawn of the last age and holds secrets of arcane magic that have been forgotten for thousands of years.</description>
         </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_INFLICT_WOUNDS</extend>
+            <extend>ID_PHB_SPELL_RAY_OF_SICKNESS</extend>
+            <extend>ID_PHB_SPELL_DETECT_THOUGHTS</extend>
+            <extend>ID_PHB_SPELL_MELFS_ACID_ARROW</extend>
+            <extend>ID_JONOMAN3000_DAPC_SPELL_MAIM</extend>
+            <extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+            <extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend>
+            <extend>ID_XGTE_SPELL_VITRIOLIC_SPHERE</extend>
+            <extend>ID_PHB_SPELL_CLOUDKILL</extend>
+            <extend>ID_PHB_SPELL_CONTAGION</extend>
+        </spellcasting>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" spellcasting="Warlock" />
-            <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" spellcasting="Warlock" />
-            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Warlock" />
-            <grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" spellcasting="Warlock" />
-            <grant type="Spell" id="ID_JONOMAN3000_DAPC_SPELL_MAIM" spellcasting="Warlock" />
-            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" spellcasting="Warlock" />
-            <grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" spellcasting="Warlock" />
-            <grant type="Spell" id="ID_XGTE_SPELL_VITRIOLIC_SPHERE" spellcasting="Warlock" />
-            <grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" spellcasting="Warlock" />
-            <grant type="Spell" id="ID_PHB_SPELL_CONTAGION" spellcasting="Warlock" />
-            
             <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WARLOCK_ARCHLICH_BOND_OF_UNLIFE" level="1" />
             <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WARLOCK_ARCHLICH_UNDEAD_RESILIENCE" level="6" />
             <grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WARLOCK_ARCHLICH_UNDYING_FLESH" level="10" />
