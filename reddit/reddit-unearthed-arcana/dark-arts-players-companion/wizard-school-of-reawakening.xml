@@ -12,7 +12,6 @@
         <supports>Arcane Tradition</supports>
         <description>
             <p>As a member of the school of reawakening, you combine the forces of necromancy with the power of conjuration. By transforming the necromantic energies of the creatures you kill into completely new conjurations, you bridge the gap between these two school of magic, creating a hybrid school that combines elements of both Conjuration and Necromancy. As you progress, you learn to shape together ever more powerful conjurations.</p>
-            <p class="indent"></p>
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WIZARD_REAWAKENING_CONJURATION_NECROMANCY_SAVANT" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WIZARD_REAWAKENING_REAWAKEN_SOUL" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WIZARD_REAWAKENING_VOLATILE_SOUL" />
