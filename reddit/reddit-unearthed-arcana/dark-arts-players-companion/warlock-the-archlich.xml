@@ -171,7 +171,7 @@
             <description>You can cast animate dead using a warlock spell slot.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" spellclasting="Warlock" />
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" spellcasting="Warlock" />
         </rules>
     </element>
     
