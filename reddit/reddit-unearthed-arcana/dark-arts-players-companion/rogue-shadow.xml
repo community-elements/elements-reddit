@@ -37,11 +37,6 @@
         <sheet display="false">
             <description></description>
         </sheet>
-        <setters>
-            <set name="spellcaster">true</set>
-            <set name="spellcastingAbility">Charisma</set>
-            <set name="spellcastingClass">Shadow</set>
-        </setters>
         <spellcasting name="Shadow" ability="Charisma" allowReplace="false">
             <list></list>
         </spellcasting>
