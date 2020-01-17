@@ -19,7 +19,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_SOUL_OF_DEMISE" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PALADIN_OOTG_REAPER_OF_WINTER" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
         <rules>

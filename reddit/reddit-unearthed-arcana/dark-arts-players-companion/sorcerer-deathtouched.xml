@@ -19,7 +19,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SORCERER_INCORPOREAL_BODY" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SORCERER_POSSESSION" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
         <rules>

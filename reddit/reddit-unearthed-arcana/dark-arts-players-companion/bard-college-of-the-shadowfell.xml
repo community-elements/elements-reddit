@@ -18,7 +18,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_COLLEGE_OF_THE_SHADOWFELL_SHROUD_OF_DARKNESS" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_COLLEGE_OF_THE_SHADOWFELL_UMBRAL_BODY" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
         <rules>

@@ -19,7 +19,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WIZARD_REAWAKENING_CONSUME" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WIZARD_REAWAKENING_LASTING_CREATION" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description>Members of the school of reawakening combine the forces of necromancy with the power of conjuration.</description>
         </sheet>
         <rules>

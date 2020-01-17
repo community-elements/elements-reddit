@@ -18,7 +18,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ROGUE_SHADOW_SHADOW_SIMULACRUM" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ROGUE_SHADOW_MASTER_OF_SHADOWS" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
         <rules>

@@ -17,7 +17,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_RANGER_NIGHTSTALKER_DARK_SENTINEL" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_RANGER_NIGHTSTALKER_LORD_OF_THE_NIGHT" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description>The Nightstalker archetype emulates a unique form of shadow magic, used to create shadowy familiars to accompany you in battle.</description>
         </sheet>
         <rules>

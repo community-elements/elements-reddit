@@ -18,7 +18,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WIZARD_HEMOMANCY_IMPROVED_ENDURANCE" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WIZARD_HEMOMANCY_MASTER_OF_BLOOD" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description>The School of Hemomancy studies the ancient arcane art of blood magic.</description>
         </sheet>
         <rules>

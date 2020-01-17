@@ -30,7 +30,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_DIVINE_STRIKE" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_NIGHTSTALKER" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description>These clerics excel in both melee combat and spellcasting, always using the cover of darkness to their advantage in both their battles and their attempts at subterfuge.</description>
         </sheet>
         <rules>

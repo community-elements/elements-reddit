@@ -19,7 +19,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_RUSH" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_STRENGTH_OF_THE_WOUNDED" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description>The archetypal Blood Knight employs their own flesh and blood in the slaughter of their enemies. To a Blood Knight, battle is everything.</description>
         </sheet>
         <rules>

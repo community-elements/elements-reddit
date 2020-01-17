@@ -18,7 +18,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_OF_TWILIGHT_SOULSEEING" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_OF_TWILIGHT_RITUALIST" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description>The Circle of Twilight is an ancient sect of druids, long estranged from other druidic circles due to their differing outlooks on the natural world. The Circle of Twilight believes that the spirits of nature need regular sacrifices of beasts, natural and unnatural, and even the occasional human sacrifice.</description>
         </sheet>
         <rules>

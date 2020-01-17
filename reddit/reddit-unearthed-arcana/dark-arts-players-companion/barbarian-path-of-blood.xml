@@ -18,7 +18,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_BLOOD_SCENT" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_BLOOD_RECKONING" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
         <rules>

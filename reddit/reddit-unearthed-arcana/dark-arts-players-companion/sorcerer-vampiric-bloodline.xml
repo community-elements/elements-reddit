@@ -20,7 +20,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_SHAPECHANGER" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_MISTY_ESCAPE" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description>Your innate magic stems from the mingling of your bloodline with the blood of a vampire.</description>
         </sheet>
         <rules>

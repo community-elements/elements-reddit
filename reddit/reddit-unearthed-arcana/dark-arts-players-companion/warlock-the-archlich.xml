@@ -29,7 +29,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WARLOCK_ARCHLICH_UNDYING_FLESH" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_WARLOCK_ARCHLICH_SHARED_FATE" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description>You have made a pact with an archlich, a creature that has existed since the dawn of the last age and holds secrets of arcane magic that have been forgotten for thousands of years.</description>
         </sheet>
         <rules>

@@ -18,7 +18,7 @@
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_MONK_WOTBF_TRANSFUSION" />
             <div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_MONK_WOTBF_DOMINION_OF_BLOOD" />
         </description>
-        <sheet>
+        <sheet display="false">
             <description>Monks of the Way of the Bloodied Fist follow a tradition that teaches them to control their own life force, as well as the life force of their foes. By focusing their ki, they exert control over blood - a powerful tool that is not to be underestimated.</description>
         </sheet>
         <rules>
