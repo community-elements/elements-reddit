@@ -41,8 +41,7 @@
         <setters>
             <set name="names" type="male"></set>
             <set name="names" type="female"></set>
-            <set name="names" type="clan"></set>
-            <set name="names-format">{{name}} {{clan}}</set>
+            <set name="names-format">{{name}}</set>
             <set name="height" modifier="2d10">4’8"</set>
             <set name="weight" modifier="2d4">110 lb.</set>
         </setters>
