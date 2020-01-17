@@ -20,7 +20,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">3</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 action</set>
             <set name="duration">Concentration, up to 10 minutes</set>
             <set name="range">10 feet</set>
@@ -106,7 +106,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Transmutation</set>
+            <set name="school" addition="Hemomancy">Transmutation</set>
             <set name="time">1 action</set>
             <set name="duration">1 hour</set>
             <set name="range">Self</set>
@@ -151,7 +151,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 action</set>
             <set name="duration">Instantaneous</set>
             <set name="range">120 feet</set>
@@ -176,7 +176,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">5</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 minute</set>
             <set name="duration">Varies (see below)</set>
             <set name="range">Touch</set>
@@ -199,7 +199,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">0</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 action</set>
             <set name="duration">Instantaneous</set>
             <set name="range">Touch</set>
@@ -222,7 +222,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">2</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 action</set>
             <set name="duration">1 hour</set>
             <set name="range">30 feet</set>
@@ -245,7 +245,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">3</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 action</set>
             <set name="duration">Concentration, up to 10 minutes</set>
             <set name="range">Self</set>
@@ -292,7 +292,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 bonus action</set>
             <set name="duration">1 minute</set>
             <set name="range">Self</set>
@@ -317,7 +317,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">8</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 action</set>
             <set name="duration">Concentration, up to 1 minute</set>
             <set name="range">90 feet</set>
@@ -362,7 +362,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">4</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 action</set>
             <set name="duration">Instantaneous</set>
             <set name="range">60 feet</set>
@@ -384,7 +384,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">9</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 action</set>
             <set name="duration">Instantaneous</set>
             <set name="range">30 feet</set>
@@ -472,7 +472,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">7</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 action</set>
             <set name="duration">Concentration, up to 1 minute</set>
             <set name="range">60 feet</set>
@@ -495,7 +495,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">2</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 bonus action</set>
             <set name="duration">Concentration, up to 1 minute</set>
             <set name="range">Self</set>
@@ -653,7 +653,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">6</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 action</set>
             <set name="duration">Concentration, up to 1 minute</set>
             <set name="range">150 feet</set>
@@ -789,7 +789,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">2</set>
-            <set name="school">Transmutation</set>
+            <set name="school" addition="Hemomancy">Transmutation</set>
             <set name="time">1 action</set>
             <set name="duration">Instantaneous</set>
             <set name="range">Varies (see below)</set>
@@ -813,7 +813,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">4</set>
-            <set name="school">Abjuration</set>
+            <set name="school" addition="Hemomancy">Abjuration</set>
             <set name="time">1 action</set>
             <set name="duration">1 hour</set>
             <set name="range">Self (10-foot tadius hemisphere)</set>
@@ -837,7 +837,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">3</set>
-            <set name="school">Necromancy</set>
+            <set name="school" addition="Hemomancy">Necromancy</set>
             <set name="time">1 action</set>
             <set name="duration">1 round</set>
             <set name="range">Self (20-foot radius)</set>
@@ -930,7 +930,7 @@
         <setters>
             <set name="keywords">hemomancy</set>
             <set name="level">2</set>
-            <set name="school">Enchantment</set>
+            <set name="school" addition="Hemomancy">Enchantment</set>
             <set name="time">1 action</set>
             <set name="duration">Varies (see below)</set>
             <set name="range">Touch</set>
