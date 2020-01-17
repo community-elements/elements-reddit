@@ -75,7 +75,7 @@
             <p class="indent"><span class="feature">Vow of Death. </span>As a bonus action, you can utter a vow of death against a creature you can see within 10 feet of you, using your Channel Divinity. You add 1 + your Charisma modifier necrotic damage to your damage rolls against the creature for 1 minute or until they drop to 0 hit points or fall unconscious.</p>
             <p class="indent">If a creature under this effect dies, it can’t become undead.</p>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
         <rules>
