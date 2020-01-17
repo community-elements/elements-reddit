@@ -68,7 +68,7 @@
             <p>Starting at 9th level, you have advantage on Dexterity (Stealth) checks if you are in dim light or darkness.</p>
         </description>
         <sheet>
-            <description>You have advantage on Dexterity (Stealth) checks if you are in dim light or darkness.</description>
+            <description>You have advantage on Stealth checks if you are in dim light or darkness.</description>
         </sheet>
     </element>
     

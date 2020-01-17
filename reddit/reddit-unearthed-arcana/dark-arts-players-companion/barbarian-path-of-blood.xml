@@ -53,7 +53,7 @@
             <p>Starting at 10th level, you can smell the scent of blood from up to 5 miles away, and accurately pinpoint the direction it’s coming from. Once you get within 1 mile of the source, you can make a DC 15 Wisdom (Perception) check to determine its exact identity. On a success, you know the exact identity of the creature if you have encountered it before; otherwise you only determine its type and the severity of its injury. Either way on a success, you know the exact distance and direction to the injured enemy. On a failed check, you know that you failed the check and can’t make another one for 1 hour.</p>
         </description>
         <sheet>
-            <description>You can smell the scent of blood from up to 5 miles away, and accurately pinpoint the direction it’s coming from. Once you get within 1 mile of the source, you can make a DC 15 Wisdom (Perception) check to determine its exact identity.</description>
+            <description>You can smell the scent of blood from up to 5 miles away, and accurately pinpoint the direction it’s coming from. Once you get within 1 mile of the source, you can make a DC 15 Perception check to determine its exact identity.</description>
         </sheet>
     </element>
 

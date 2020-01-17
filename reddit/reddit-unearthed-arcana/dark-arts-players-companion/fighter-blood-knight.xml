@@ -92,7 +92,7 @@
             <p class="indent">Additionally, as a bonus action on your turn you can sacrifice 1 hit point to learn the general direction of every creature within 100 feet of you that has blood.</p>
         </description>
         <sheet>
-            <description>You gain advantage on any Wisdom (Perception) or Wisdom (Survival) check used to find a wounded creature. As a bonus action you can sacrifice 1 hit point to learn the general direction of every creature within 100 feet of you that has blood.</description>
+            <description>You gain advantage on any Perception or Survival check used to find a wounded creature. As a bonus action you can sacrifice 1 hit point to learn the general direction of every creature within 100 feet of you that has blood.</description>
         </sheet>
     </element>
     
