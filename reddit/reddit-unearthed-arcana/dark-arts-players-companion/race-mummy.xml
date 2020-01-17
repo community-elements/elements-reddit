@@ -70,8 +70,8 @@
         </sheet>
         <rules>
             <stat name="dreadful-glare:dc" value="8" />
-            <stat name="dreadful_glare:dc" value="proficiency" />
-            <stat name="dreadful_glare:dc" value="constitution:modifier" />
+            <stat name="dreadful-glare:dc" value="proficiency" />
+            <stat name="dreadful-glare:dc" value="constitution:modifier" />
         </rules>
     </element>
 
