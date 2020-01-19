@@ -601,8 +601,184 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="rarity">very rare</set>
-		    <set name="type">Wondrous Item</set>
+            <set name="type">Wondrous Item</set>
             <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Immunizing Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_IMMUNIZING">
+        <description>
+            <p>This armor is sleek and white, giving a sense of purity. The runes on the armor glow in the presence of poison and disease.</p>
+            <p class="indent">While wearing this armor, you gain resistance to poison damage. You also make saving throws against poisons and diseases with advantage.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scale or plate">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="armor">scale, plate</set>
+            <set name="name-format">Immunizing {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Imposters Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_IMPOSTERS">
+        <description>
+            <p>A plain looking set of metal armor, with a quick command word you can transform this armor into a robe or set of clothes.</p>
+            <p class="indent">While wearing this armor, you can use a bonus action to transform your armor from its current state into a set of common clothes or back. You lose the AC armor bonus while in common clothes form. You also gain advantage on Charisma (Deception) checks to convince others of yours clothes being normal.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Imposters {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Irrefutable Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_IRREFUTABLE">
+        <description>
+            <p>A simple but imposing set of armor, useful for making creatures bow before you.</p>
+            <p class="indent">Once per day while wearing this armor, you can force a creature you can see to roll with disadvantage against a single Wisdom check or saving throw. The creature must rely on sight to be affected. You also gain a +1d4 bonus to Charisma (Intimidation) checks.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Irrefutable {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Laughing Death Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_LAUGHING_DEATH">
+        <description>
+            <p>This armor has many sinister looking ornaments on it. A faint cackling can be heard when the armor is stuck.</p>
+            <p class="indent">While wearing this armor, you gain resistance to necrotic damage. This armor has 3 charges, and regains 1 charge at dawn. When you are hit with a melee attack, use your reaction to expend a charge to cast inflict wounds, using your Dexterity modifier for the attack roll.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Laughing Death {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Lifegiving Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_LIFEGIVING">
+        <description>
+            <p>This armor is covered in runes and glyphs of protection and healing.</p>
+            <p class="indent">While wearing this armor, you gain resistance to necrotic damage. Once per day while wearing this armor you can expend a bonus action to roll a hit die and regain health.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="armor">plate</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Lifegiving {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Loom Weave Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_LOOM_WEAVE">
+        <description>
+            <p>Made with an unusual technique of weaving soil into the cloth, it gives the clothes the abilities to wield earthen powers. While wearing these clothes, you gain access to the following effects:</p>
+            <p class="indent">These clothes have 2 charges, and regains 1 charge at dawn. You can use an action to expend a charge to cast Maximilian’s earthen grasp (Save DC 15).</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Martyr's Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_MARTYRS">
+        <description>
+            <p>A crimson tinted armor with transmutation glyphs that can help protect allies.</p>
+            <p class="indent">While wearing this armor, as a bonus action you can touch a willing creature, and suffer a -1 penalty to AC to increase the creature’s AC by +1 until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scale or plate">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">scale, plate</set>
+            <set name="name-format">Martyr's {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Meliorating Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_MELIORATING">
+        <description>
+            <p>A dull steel armor that displays a simple, but well made design. While wearing this armor, when you take damage you can use a reaction to increase your AC by +1 until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Meliorating {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Mirrorsheen Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_MIRRORSHEEN">
+        <description>
+            <p>Made with magically enchanted metallic threads, the metallic sheen of this armor is highly reflective.</p>
+            <p class="indent">While wearing this armor, you gain resistance to radiant damage. Once per day when you are the target of a ranged single target attack you can change the target of that attack to another creature within 5 feet of you as a reaction. If you are hit with a radiant damage attack, all creatures within 5 feet of you must make a DC 15 Wisdom saving throw. On a failed save, they are blinded until the end of their next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Mirrorsheen {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Pelaurum Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_PELAURUM">
+        <description>
+            <p>A golden sheen on this set of armor reminds the wearer of the might of the sun god. You gain resistance to fire and radiant damage while wearing this armor.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Pelaurum {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Prismatic Robe" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_PRISMATIC_ROBE">
+        <description>
+            <p>A rainbow colored robe that appears in dull colors at first before springing to life when used.</p>
+            <p class="indent">While wearing this robe, when you are hit with an attack of the following elemental types, you gain resistance to the elemental type at the end of your turn. The elemental types are fire, cold, poison, lightning, or acid. This armor has 6 charges, and regains 1 charge at dawn. You can an action to expend a number of charges to cast the following spells:</p>
+            <table>
+                <thead>
+                    <tr><td>Charge Cost</td><td>Spell</td><td>Save</td></tr>
+                </thead>
+                <tr><td>2</td><td>prismatic spray</td><td>DC 20</td></tr>
+                <tr><td>6</td><td>prismatic wall</td><td>DC 20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Common</set>
         </setters>
     </element>
 
