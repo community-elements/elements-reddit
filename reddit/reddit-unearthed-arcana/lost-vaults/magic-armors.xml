@@ -19,7 +19,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="leather">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
             <set name="armor">Leather</set>
             <set name="name-format">Addergrease {{parent}}</set>
@@ -35,7 +35,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="medium">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
             <set name="name-format">Agile {{parent}}</set>
@@ -52,9 +52,9 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="scale, breastplate, splint, or plate">Armor</set>
-            <set name="rarity">very rare</set>
+            <set name="rarity">Very Rare</set>
             <set name="attunement">true</set>
-            <set name="armor">Scale,Breastplate,Splint,Plate</set>
+            <set name="armor">Scale mail|Breastplate|Splint|Plate</set>
             <set name="name-format">{{parent}} of Attraction</set>
         </setters>
     </element>
@@ -68,7 +68,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="light, medium, or heavy">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">{{parent}} of Cleansing</set>
@@ -86,7 +86,7 @@
             <set name="weight" lb="0">0 lb.</set>
             <set name="attunement">true</set>
             <set name="type" addition="light">Armor</set>
-            <set name="rarity">very rare</set>
+            <set name="rarity">Very Rare</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
             <set name="name-format">Aqueous {{parent}}</set>
         </setters>
@@ -101,7 +101,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">{{parent}} of Durability</set>
@@ -118,7 +118,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="light, medium, or heavy">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">{{parent}} of Exploits</set>
@@ -136,7 +136,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="light, medium, or heavy">Armor</set>
-            <set name="rarity">very rare</set>
+            <set name="rarity">Very Rare</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">{{parent}} of Negation</set>
         </setters>
@@ -166,7 +166,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">{{parent}} of Sacrifice</set>
         </setters>
@@ -181,7 +181,7 @@
         <setters>
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
 		    <set name="type">Wondrous Item</set>
 		    <set name="category">Wondrous Items</set>
@@ -198,7 +198,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="light, medium, or heavy">Armor</set>
-            <set name="rarity">very rare</set>
+            <set name="rarity">Very Rare</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Assassinbane {{parent}}</set>
@@ -215,8 +215,8 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="leather or hide">Armor</set>
-            <set name="rarity">rare</set>
-            <set name="armor">leather,hide</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">leather|hide</set>
             <set name="name-format">Beastlord {{parent}}</set>
         </setters>
     </element>
@@ -232,7 +232,7 @@
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="leather or hide">Armor</set>
             <set name="rarity">unommon</set>
-            <set name="armor">leather,hide</set>
+            <set name="armor">leather|hide</set>
             <set name="name-format">Bestial {{parent}}</set>
         </setters>
     </element>
@@ -247,7 +247,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Bloodiron {{parent}}</set>
@@ -264,7 +264,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="leather">Armor</set>
-            <set name="rarity">legendary</set>
+            <set name="rarity">Legendary</set>
             <set name="attunement">true</set>
             <set name="armor">leather</set>
             <set name="name-format">Bloodtheft {{parent}}</set>
@@ -281,7 +281,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">legendary</set>
+            <set name="rarity">Legendary</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Bolstering {{parent}}</set>
@@ -298,9 +298,9 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="leather, scale, or plate">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
-            <set name="armor">leather, scale, plate</set>
+            <set name="armor">leather|scale mail|plate</set>
             <set name="name-format">Bloodfire {{parent}}</set>
         </setters>
     </element>
@@ -316,7 +316,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="plate">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
             <set name="armor">plate</set>
             <set name="name-format">Bonegrim {{parent}}</set>
@@ -333,7 +333,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="light, medium, or heavy">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Breaching {{parent}}</set>
@@ -350,7 +350,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Briarwine {{parent}}</set>
@@ -367,9 +367,9 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="plate or scale">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
-            <set name="armor">plate,scale</set>
+            <set name="armor">plate|scale mail</set>
             <set name="name-format">Champions {{parent}}</set>
         </setters>
     </element>
@@ -385,7 +385,7 @@
             <set name="weight" lb="0">0 lb.</set>
             <set name="attunement">true</set>
             <set name="type" addition="light, medium, or heavy">Armor</set>
-            <set name="rarity">very rare</set>
+            <set name="rarity">Very Rare</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Chaos Weave {{parent}}</set>
         </setters>
@@ -401,7 +401,7 @@
             <set name="weight" lb="0">0 lb.</set>
             <set name="attunement">true</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">very rare</set>
+            <set name="rarity">Very Rare</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Coral {{parent}}</set>
         </setters>
@@ -416,7 +416,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Crystal {{parent}}</set>
@@ -432,10 +432,10 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
-            <set name="type" very rare="chain shirt, chain mail, scale, or plate">Armor</set>
-            <set name="rarity">Common</set>
+            <set name="type" addition="chain shirt, chain mail, scale, or plate">Armor</set>
+            <set name="rarity">Very Rare</set>
             <set name="attunement">true</set>
-            <set name="armor">chain shirt, chain mail, scale, plate</set>
+            <set name="armor">chain shirt|chain mail|scale mail|plate</set>
             <set name="name-format">Darkforged {{parent}}</set>
         </setters>
     </element>
@@ -451,7 +451,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">legendary</set>
+            <set name="rarity">Legendary</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Defection {{parent}}</set>
@@ -468,8 +468,8 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="scale or plate">Armor</set>
-            <set name="rarity">rare</set>
-            <set name="armor">scale, plate</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">scale mail|plate</set>
             <set name="name-format">Elukian Clay {{parent}}</set>
         </setters>
     </element>
@@ -484,7 +484,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="light">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
             <set name="name-format">Faymind {{parent}}</set>
@@ -500,7 +500,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="light">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
             <set name="name-format">Flickersight {{parent}}</set>
@@ -516,9 +516,9 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="scale or plate">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
-            <set name="armor">scale, plate</set>
+            <set name="armor">scale mail|plate</set>
             <set name="name-format">Fortification {{parent}}</set>
         </setters>
     </element>
@@ -533,7 +533,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="plate">Armor</set>
-            <set name="rarity">very rare</set>
+            <set name="rarity">Very Rare</set>
             <set name="attunement">true</set>
             <set name="armor">plate</set>
             <set name="name-format">Frostburn {{parent}}</set>
@@ -550,9 +550,9 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="scale or plate">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
-            <set name="armor">scale, plate</set>
+            <set name="armor">scale mail|plate</set>
             <set name="name-format">Frozen {{parent}}</set>
         </setters>
     </element>
@@ -567,7 +567,7 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="leather">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="armor">leather</set>
             <set name="attunement">true</set>
             <set name="name-format">Giantdodger {{parent}}</set>
@@ -584,9 +584,9 @@
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type" addition="scale or plate">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
-            <set name="armor">scale, plate</set>
+            <set name="armor">scale mail|plate</set>
             <set name="name-format">Heartening {{parent}}</set>
         </setters>
     </element>
@@ -600,7 +600,7 @@
             <set name="category">Wondrous Items</set>
             <set name="cost" currency="gp" override="false">0</set>
             <set name="weight" lb="0">0 lb.</set>
-            <set name="rarity">very rare</set>
+            <set name="rarity">Very Rare</set>
             <set name="type">Wondrous Item</set>
             <set name="attunement">true</set>
         </setters>
@@ -615,8 +615,8 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="scale or plate">Armor</set>
-            <set name="rarity">uncommon</set>
-            <set name="armor">scale, plate</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">scale mail|plate</set>
             <set name="name-format">Immunizing {{parent}}</set>
         </setters>
     </element>
@@ -630,7 +630,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Imposters {{parent}}</set>
         </setters>
@@ -645,7 +645,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="light, medium, or heavy">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Irrefutable {{parent}}</set>
             <set name="attunement">true</set>
@@ -661,7 +661,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="light">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
             <set name="name-format">Laughing Death {{parent}}</set>
@@ -677,7 +677,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="plate">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="armor">plate</set>
             <set name="attunement">true</set>
             <set name="name-format">Lifegiving {{parent}}</set>
@@ -694,7 +694,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
         </setters>
     </element>
@@ -708,9 +708,9 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="scale or plate">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
-            <set name="armor">scale, plate</set>
+            <set name="armor">scale mail|plate</set>
             <set name="name-format">Martyr's {{parent}}</set>
         </setters>
     </element>
@@ -723,7 +723,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Meliorating {{parent}}</set>
@@ -739,7 +739,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="light">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
             <set name="name-format">Mirrorsheen {{parent}}</set>
@@ -754,7 +754,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Pelaurum {{parent}}</set>
@@ -778,7 +778,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">legendary</set>
+            <set name="rarity">Legendary</set>
         </setters>
     </element>
 
@@ -791,7 +791,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="leather">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="armor">leather</set>
             <set name="name-format">Rat Form {{parent}}</set>
             <set name="attunement">true</set>
@@ -807,7 +807,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Reflexive {{parent}}</set>
             <set name="attunement">true</set>
@@ -823,8 +823,8 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="scale or plate">Armor</set>
-            <set name="rarity">uncommon</set>
-            <set name="armor">scale, plate</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">scale mail|plate</set>
             <set name="name-format">Reinforcing {{parent}}</set>
             <set name="attunement">true</set>
         </setters>
@@ -839,8 +839,8 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="padded or leather">Armor</set>
-            <set name="rarity">uncommon</set>
-            <set name="armor">padded, leather</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">padded|leather</set>
             <set name="name-format">Repulsion {{parent}}</set>
             <set name="attunement">true</set>
         </setters>
@@ -855,7 +855,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="plate">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="armor">plate</set>
             <set name="name-format">Righteous {{parent}}</set>
             <set name="attunement">true</set>
@@ -872,7 +872,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">very rare</set>
+            <set name="rarity">Very Rare</set>
             <set name="attunement">true</set>
         </setters>
     </element>
@@ -887,7 +887,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
         </setters>
     </element>
@@ -902,7 +902,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">very rare</set>
+            <set name="rarity">Very Rare</set>
             <set name="attunement">true</set>
         </setters>
     </element>
@@ -917,7 +917,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">legendary</set>
+            <set name="rarity">Legendary</set>
             <set name="attunement">true</set>
         </setters>
     </element>
@@ -932,7 +932,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
         </setters>
     </element>
@@ -950,7 +950,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">very rare</set>
+            <set name="rarity">Very Rare</set>
             <set name="attunement">true</set>
         </setters>
     </element>
@@ -966,7 +966,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
         </setters>
     </element>
@@ -989,7 +989,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">legendary</set>
+            <set name="rarity">Legendary</set>
             <set name="attunement">true</set>
         </setters>
     </element>
@@ -1003,8 +1003,8 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="scale or plate">Armor</set>
-            <set name="rarity">uncommon</set>
-            <set name="armor">scale, plate</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">scale mail|plate</set>
             <set name="name-format">Salubrious {{parent}}</set>
             <set name="attunement">true</set>
         </setters>
@@ -1019,8 +1019,8 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="hide, scale, or plate">Armor</set>
-            <set name="rarity">uncommon</set>
-            <set name="armor">hide, scale, plate</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Hide|scale mail|plate</set>
             <set name="name-format">Screaming {{parent}}</set>
             <set name="attunement">true</set>
         </setters>
@@ -1035,7 +1035,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="light">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
             <set name="name-format">Serpentskin {{parent}}</set>
             <set name="attunement">true</set>
@@ -1051,7 +1051,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="light, medium, or heavy">Armor</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Shared Suffering {{parent}}</set>
             <set name="attunement">true</set>
@@ -1068,7 +1068,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">uncommon</set>
+            <set name="rarity">Uncommon</set>
             <set name="attunement">true</set>
         </setters>
     </element>
@@ -1082,7 +1082,7 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">legendary</set>
+            <set name="rarity">Legendary</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Shocking {{parent}}</set>
             <set name="attunement">true</set>
@@ -1103,8 +1103,8 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="chainmail, scale, or plate">Armor</set>
-            <set name="rarity">legendary</set>
-            <set name="armor">chainmail,scale,plate</set>
+            <set name="rarity">Legendary</set>
+            <set name="armor">Chain Mail|Scale Mail|Plate</set>
             <set name="name-format">Skeletal {{parent}}</set>
             <set name="attunement">true</set>
         </setters>
@@ -1119,8 +1119,8 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="padded or leather">Armor</set>
-            <set name="rarity">uncommon</set>
-            <set name="armor">padded, leather</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Padded|Leather</set>
             <set name="name-format">Skybound {{parent}}</set>
         </setters>
     </element>
@@ -1134,8 +1134,8 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="any light armor or hide">Armor</set>
-            <set name="rarity">uncommon</set>
-            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|hide</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|Hide</set>
             <set name="name-format">Slick {{parent}}</set>
         </setters>
     </element>
@@ -1149,9 +1149,9 @@
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="light">Armor</set>
-            <set name="rarity">rare</set>
+            <set name="rarity">Rare</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
-            <set name="name-format">name {{parent}}</set>
+            <set name="name-format">Snakefang {{parent}}</set>
             <set name="attunement">true</set>
         </setters>
     </element>
@@ -1170,15 +1170,15 @@ towards gaining charges)</td></tr>
                 <tr><td>1</td><td>create a 10 feet sphere of blinding light centered
 on yourself with an action. All creatures in range, excluding
 yourself, must make a DC 16 Wisdom saving throw. On
-failure they are blinded until the end of your next turn.</td</tr>
+failure they are blinded until the end of your next turn.</td></tr>
             </table>
         </description>
         <setters>
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="scale, or plate">Armor</set>
-            <set name="rarity">rare</set>
-            <set name="armor">scale,plate</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Scale Mail|Plate</set>
             <set name="name-format">Solar {{parent}}</set>
             <set name="attunement">true</set>
         </setters>
@@ -1193,7 +1193,7 @@ failure they are blinded until the end of your next turn.</td</tr>
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="heavy">Armor</set>
-            <set name="rarity">legendary</set>
+            <set name="rarity">Legendary</set>
             <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
             <set name="name-format">Soulwarding {{parent}}</set>
             <set name="attunement">true</set>
@@ -1208,9 +1208,9 @@ failure they are blinded until the end of your next turn.</td</tr>
         <setters>
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
-            <set name="type" addition="chainmail">Armor</set>
-            <set name="rarity">very rare</set>
-            <set name="armor">chainmail</set>
+            <set name="type" addition="Chain Mail">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Chain Mail</set>
             <set name="name-format">Spirit Link {{parent}}</set>
             <set name="attunement">true</set>
         </setters>
