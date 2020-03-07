@@ -778,7 +778,180 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">Common</set>
+            <set name="rarity">legendary</set>
+        </setters>
+    </element>
+
+    <element name="Rat Form Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_RAT_FORM">
+        <description>
+            <p>Made of many, many tiny hides of rats, with tassels that are made of rat tails.</p>
+            <p class="indent">While wearing this armor, you gain proficiency in Dexterity (Stealth) if you don’t have it already. You can also cast polymorph on yourself to turn into a rat once per day as an action. The polymorph can be ended early with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="leather">Armor</set>
+            <set name="rarity">rare</set>
+            <set name="armor">leather</set>
+            <set name="name-format">Rat Form {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Reflexive Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_REFLEXIVE">
+        <description>
+            <p>An armor with specific runes that react when the wearer is in danger and helps avoid it.</p>
+            <p class="indent">Twice per day while wearing this armor, when forced to make a Dexterity saving throw for an attack you may use your AC score as your Dexterity save, as the armor forms a protective layer to save the wearer</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Reflexive {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Reinforcing Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_REINFORCING">
+        <description>
+            <p>An armor meant for providing additional strength when your own reserves run out.</p>
+            <p class="indent">While wearing this armor, you gain an additional +1d4 on Constitution and Strength saving throws.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scale or plate">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="armor">scale, plate</set>
+            <set name="name-format">Reinforcing {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Repulsion Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_REPULSION">
+        <description>
+            <p>The amount of runes on this armor is a bit excessive. They activate when a foe gets too close.</p>
+            <p class="indent">3 times per day while wearing this armor, when a creature moves within 5 feet of you, you can use your reaction to force the creature to make a DC 13 Strength saving throw. On a failed save, they are pushed 10 feet away by a force emanated from the armor.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="padded or leather">Armor</set>
+            <set name="rarity">uncommon</set>
+            <set name="armor">padded, leather</set>
+            <set name="name-format">Repulsion {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Righteous Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_RIGHTEOUS">
+        <description>
+            <p>The armor is inscribed with stories of a zealot on their way to smite their foes.</p>
+            <p class="indent">While wearing this armor, when you are hit with an attack that has advantage against you, you can use a reaction to for the attacker to make a DC 16 Wisdom saving throw. On a failed save, they take 2d6 radiant damage as a holy daggers shoot towards them.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">rare</set>
+            <set name="armor">plate</set>
+            <set name="name-format">Righteous {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Bloodwalking" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_BLOODWALKING_ROBE">
+        <description>
+            <p>A robe that is said to be made using vampiric methods, this robe will reward you for slaying your foes.</p>
+            <p class="indent">While wearing this robe when you kill a creature within 25 feet, you can use your movement to teleport through the blood left by the creature to be within 5 feet of it. You can also teleport to any pool of blood at least 5 feet in size within 25 feet with your movement.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">very rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    
+    <element name="Robe of Contingency" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_CONTINGENCY_ROBE">
+        <description>
+            <p>Stitched with wool made from the Feywild, this robe is popular due to its ability to protect its user in a pinch.</p>
+            <p class="indent">Once per day while wearing this robe, you can use a reaction to cast shield, or teleport 15 feet away to a spot you can see.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Defiance" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_DEFIANCE_ROBE">
+        <description>
+            <p>Robes that are enchanted with magic of the elemental planes, these robes come in 3 different types; fire, cold, and lightning.</p>
+            <p class="indent">While wearing this robe, whenever you take damage of the type of robe you are wearing (fire, cold, or lightning), your walking speed increases by 10 feet, you regain 2d6 hit points, and your next attack deals an additional 1d8 of the elemental type of the robe.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">very rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Forbearance" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_FORBEARANCE_ROBE">
+        <description>
+            <p>A robe designed to appear ordinary, the inside of these robes are actually covered with many different types of protection magic.</p>
+            <p class="indent">While wearing this robe, whenever you are the target of a single attack, add 1d6 to your AC. Whenever you are the target of an effect that requires a saving throw, add 1d6 to your saving throw.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Quills" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_QUILLS_ROBE">
+        <description>
+            <p>Spines cover the outside of this robe, which seem to spike up whenever you are struck by an attack.</p>
+            <p class="indent">While wearing this robe, when a melee attack is done against you the attacker must make a DC 12 Dexterity saving throw. On a failed save, they take 1d4 piercing damage, as well 1 piercing damage per turn until they take an action to remove the quills. Any creature that grapples you automatically fails the save DC.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Sapping" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_SAPPING_ROBE">
+        <description>
+            <p>Popular robe amongst wizards, these robes help bring down armored foes while also protecting themselves.</p>
+            <p class="indent">While wearing this robe, you gain access to the following features: This armor has 5 charges, and regains 1 charge at dawn. You can use a reaction to expend a charge and target a creature that is attacking you. The attacker must make a DC 17 Constitution saving throw.</p>
+            <p>On a failed save, their AC is reduced by 1d4, and you gain the same amount of AC.</p>
+            <p>This effect can only affect one creature, and when used again, ends for the previous creature. This effect does not stack if multiple charges are used.</p>
+            <p>The effect for you and the affected creature ends after 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">very rare</set>
+            <set name="attunement">true</set>
         </setters>
     </element>
 
