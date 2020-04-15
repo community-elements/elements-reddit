@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Courage Divine Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-courage-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/cleric-courage-domain.xml" />
+        </update>
+    </info>
+    
+    <element name="Courage Domain" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_CLERIC_COURAGE_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>The Courage domain focuses on personal heroics, and acts of valor and self-sacrifice. While the Courage domain bears many similarities to the War domain, it is more individualistic and isn’t directly connected to war. Clerics of this domain often take part in smaller conflicts, and focus on personal battles over grandois wars. Many war-like deities can claim influence over this domain, however, including Torm, Heironeous, Kiri-Jolith, Dol Arrah. Gods of endurance and loss, such as Ilmater and Shar, can claim some influence over this domain as well, as they promote courage in the face of hardship. Regardless of their patron deity, clerics of this domain make for heroic warriors, eager to face their fears and fight against the odds to achieve their goals.</p>
+            <h5>Courage Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><i>compelled duel, heroism</i></td></tr>
+                <tr><td>3rd</td><td><i>find steed, spiritual weapon</i></td></tr>
+                <tr><td>5th</td><td><i>beacon of hope, crusader’s mantle</i></td></tr>
+                <tr><td>7th</td><td><i>aura of purity, staggering smite</i></td></tr>
+                <tr><td>9th</td><td><i>circle of power, holy weapon</i></td></tr>
+            </table>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_BONUS_PROFICIENCIES" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_FORCE_OF_WILL" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_CD_RALLY_SPIRITS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_PARAGON_OF_VALOR" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_DIVINE_STRIKE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_UNDAUNTED" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_BONUS_PROFICIENCIES" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_FORCE_OF_WILL" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_CD_RALLY_SPIRITS" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_PARAGON_OF_VALOR" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_UNDAUNTED" level="17" />
+            <grant type="Spell" id="ID_PHB_SPELL_COMPELLED_DUEL" spellcasting="Cleric" prepared="true" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" spellcasting="Cleric" prepared="true" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" spellcasting="Cleric" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" spellcasting="Cleric" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" spellcasting="Cleric" prepared="true" level="57" />
+            <grant type="Spell" id="ID_PHB_SPELL_CRUSADERS_MANTLE" spellcasting="Cleric" prepared="true" level="57" />
+            <grant type="Spell" id="ID_PHB_SPELL_AURA_OF_PURITY" spellcasting="Cleric" prepared="true" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_STAGGERING_SMITE" spellcasting="Cleric" prepared="true" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_CIRCLE_OF_POWER" spellcasting="Cleric" prepared="true" level="9" />
+            <grant type="Spell" id="ID_XGTE_SPELL_HOLY_WEAPON" spellcasting="Cleric" prepared="true" level="9" />
+        </rules>
+    </element>
+        <element name="Bonus Proficiencies" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_BONUS_PROFICIENCIES">
+            <description>
+                <p>When you choose this domain at 1st level, you gain proficiency with martial weapons and heavy armor.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            </rules>
+        </element>
+        <element name="Force of Will" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_FORCE_OF_WILL">
+            <description>
+                <p>Also at 1st level, you can unleash your divine will in a burst of radiant energy. Once per turn when you hit a creature with a melee weapon attack, you can cause the attack to deal 1d6 bonus radiant damage. When you do so, you also force each creature of your choice within 5 feet of the target (not including the target) to make a Constitution saving throw. A creature takes 1d4 radiant damage on a failed save.</p>
+                <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+            </description>
+            <sheet usage="{{force-of-will:uses}}/Long Rest">
+                <description>Once per turn when you hit a creature with a melee weapon attack, you can cause the attack to deal 1d6 bonus radiant damage. When you do so, you also force each creature of your choice within 5 feet of the target (not including the target) to make a Constitution saving throw (save DC {{spellcasting:dc}}). A creature takes 1d4 radiant damage on a failed save.</description>
+            </sheet>
+            <rules>
+                <stat name="force-of-will:uses" value="1" bonus="base" />
+                <stat name="force-of-will:uses" value="wisdom:modifier" bonus="base" />
+            </rules>
+        </element>
+        <element name="Channel Divinity: Rally Spirits" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_CD_RALLY_SPIRITS">
+            <description>
+                <p>Starting at 2nd level, you can use your Channel Divinity to rally your allies, imbuing them with courage and valor.</p>
+                <p class="indent">As a action, you present your holy symbol, and select up to two allied creatures that you can see within 60 feet of you. For each creature selected, you can choose to either grant it temporary hit points equal to your Wisdom modifier + your cleric level, or, if it is afflicted by the charmed or frightened condition, end one of those conditions for it.</p>
+            </description>
+            <sheet usage="Channel Divinity" action="Action" alt="Rally Spirits">
+                <description>You present your holy symbol, and select up to two allied creatures that you can see within 60 feet of you. For each creature selected, you can choose to either grant it {{rally-spirits:temp-hp}} temporary hit points, or, if it is afflicted by the charmed or frightened condition, end one of those conditions for it.</description>
+            </sheet>
+            <rules>
+                <stat name="rally-spirits:temp-hp" value="wisdom:modifier" />
+                <stat name="rally-spirits:temp-hp" value="level:cleric" />
+            </rules>
+        </element>
+        <element name="Paragon of Valor" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_PARAGON_OF_VALOR">
+            <description>
+                <p>At 6th level, you become immune to the frightened condition.</p>
+                <p class="indent">Additionally, if you aren’t incapacitated and start your turn with two or more hostile creatures within 5 feet of you, you gain temporary hit points equal to half your cleric level. A swarm counts as a single creature.</p>
+            </description>
+            <sheet>
+                <description>You are immune to the frightened condition. Additionally, if you aren’t incapacitated and start your turn with two or more hostile creatures within 5 feet of you, you gain {{level:cleric:half}} temporary hit points. A swarm counts as a single creature.</description>
+            </sheet>
+        </element>
+        <element name="Divine Strike" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_DIVINE_STRIKE">
+            <description>
+                <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            </description>
+            <sheet>
+                <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {{divine-strike:damage-dice}}d8 radiant damage to the target.</description>
+            </sheet>
+            <rules>
+                <stat name="divine-strike:damage-dice" value="1" level="8" />
+                <stat name="divine-strike:damage-dice" value="1" level="14" />
+            </rules>
+        </element>
+        <element name="Undaunted" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COURAGE_DOMAIN_UNDAUNTED">
+            <description>
+                <p>Beginning at 17th level, your courage doubles down when you’re fighting against the odds. If you start your turn below half your hit point maximum or with two or more hostile creatures within 5 feet of you, you become undaunted until the start of your next turn. While undaunted, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, and you can use Force of Will without expending a use, even if you have already expended all of your uses of that feature.</p>
+            </description>
+            <sheet>
+                <description>If you start your turn below half your hit point maximum or with two or more hostile creatures within 5 feet of you, you become undaunted until the start of your next turn. While undaunted, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, and you can use Force of Will without expending a use, even if you have already expended all of your uses of that feature.</description>
+            </sheet>
+        </element>
+   
+</elements>

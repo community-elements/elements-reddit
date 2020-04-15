@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Heroic Ancestry Sorcerous Origin</name>
+        <update version="0.0.1">
+            <file name="sorcerer-heroic-ancestry.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/sorcerer-heroic-ancestry.xml" />
+        </update>
+    </info>
+    
+    <element name="Heroic Ancestry" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_SORCERER_HEROIC_ANCESTRY">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p>Your innate magic comes from your connection to an ancient hero—an ancestor of yours that defeated mighty foes and reached the peak of physical ability. In the years beyond their death, your ancestor’s deeds have been immortalized by history, and their bloodline has been blessed by the gods. Through your blessed blood, you can channel the abilities of your ancestor, mimicking their unmatched strength and prowess. Most of these bloodlines are well-established, and deeply connected to royal or noble blood. Some of these bloodlines have been obscured by time, however, and many sorcerers of this origin have no knowledge of their history. Not all members of a heroic bloodline awaken this magic, so it can remain hidden for generations and slowly forgotten before suddenly re-emerging.</p>
+            <p class="indent">Oftentimes, these bloodlines are plagued with conflict. The enemies of your ancestor might become your enemies, as they seek revenge for the deeds of the past or recognize you as a threat to their continued existence.However, you might also find friends due to your lineage. Creatures or societies that knew your ancestor might be willing to offer you assistance as repayment for the great deeds your ancestor did for them.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_HEIR_TO_HEROICS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_ANCESTRAL_AVATAR" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_EXTRA_ATTACK" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_ANCESTRAL_CHAMPION" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_INSPIRING_PRESENCE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_HERO_OF_LEGEND" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_HEIR_TO_HEROICS" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_ANCESTRAL_AVATAR" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_EXTRA_ATTACK" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_ANCESTRAL_CHAMPION" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_INSPIRING_PRESENCE" level="14" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_HERO_OF_LEGEND" level="18" />
+        </rules>
+    </element>
+        <element name="Heir to Heroics" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_HEIR_TO_HEROICS">
+            <description>
+                <p>You have inherited your ancestor’s skills with weaponry. At 1st level, you gain proficiency with shields, simple weapons, and melee martial weapons.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS" />
+            </rules>
+        </element>
+        <element name="Ancestral Avatar" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_ANCESTRAL_AVATAR">
+            <description>
+                <p>Also at 1st level, you can call upon the strength of your ancestor to aid you. As a bonus action, you can temporarily augment your musculature and harden your body against attack. You gain temporary hit points equal to your sorcerer level, and for 1 minute, you gain the following additional benefits:</p>
+                <ul>
+                    <li>You can use your Charisma for anything that would normally require Strength. This includes, but is not limited to: Strength-based attacks, carrying capacity, Strength (Athletics) checks, and other Strength-based checks or saves.</li>
+                    <li>Your AC equals 12 + your Charisma modifier if it isn’t already higher. You can use a shield and still gain this benefit.</li>
+                    <li>As a bonus action, you can attempt to shove or grapple a creature within 5 feet of you.</li>
+                </ul>
+                <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+            </description>
+            <sheet action="Bonus Action" usage="1/Short Rest">
+                <description>You gain {{level:sorcerer}} temporary hit points and for 1 minute gain the following: You can use your Charisma instead of Strength for anything normally Strength-based; Your AC is {{ancestral-avatar:ac-base}} if it isn’t already higher (you can use a shield and still gain this); As a bonus action, you can attempt to shove or grapple a creature within 5 feet of you.</description>
+            </sheet>
+            <rules>
+                <stat name="ancestral-avatar:ac-base" value="12" />
+                <stat name="ancestral-avatar:ac-base" value="charisma:modifier" />
+            </rules>
+        </element>
+        <element name="Extra Attack" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_EXTRA_ATTACK">
+            <description>
+                <p>Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            </description>
+            <sheet>
+                <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+            </sheet>
+            <rules>
+    			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+            </rules>
+        </element>
+        <element name="Ancestral Champion" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_ANCESTRAL_CHAMPION">
+            <description>
+                <p>By 6th level, your connection with your ancestor has improved. The AC granted by your Ancestral Avatar feature is improved to 13 + your Charisma modifier. Also, if you don’t have a use of Ancestral Avatar remaining, you can spend 3 sorcery points as an alternative requirement for activating the feature.</p>
+            </description>
+            <sheet>
+                <description>If you don’t have a use of Ancestral Avatar remaining, you can spend 3 sorcery points as an alternative requirement for activating the feature.</description>
+            </sheet>
+            <rules>
+                <stat name="ancestral-avatar:ac-base" value="1" level="6" />
+            </rules>
+        </element>
+        <element name="Inspiring Presence" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_INSPIRING_PRESENCE">
+            <description>
+                <p>At 14th level, you become an inspiring beacon like your ancestor before you. Friendly creatures within 30 feet of you are immune to the frightened condition. Additionally, whenever a friendly creature other than you within 30 feet of you misses an attack, you can use your reaction to roll a d4 and add the result to their attack roll, potentially causing the attack to hit. When you use this reaction, you can spend up to 2 sorcery points to empower it. For every sorcery point you spend, you roll an additional d4.</p>
+            </description>
+            <sheet action="Reaction">
+                <description>Friendly creatures within 30 feet of you are immune to the frightened condition. Additionally, whenever a friendly creature other than you within 30 feet of you misses an attack, you can use your reaction to roll a d4 and add the result to their attack roll, potentially causing the attack to hit. When you use this reaction, you can spend up to 2 sorcery points to empower it. For every sorcery point you spend, you roll an additional d4.</description>
+            </sheet>
+        </element>
+        <element name="Hero of Legend" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HEROIC_ANCESTRY_HERO_OF_LEGEND">
+            <description>
+                <p>By 18th level, you have reached your full potential, and can become just as much of a heroic figure as your ancestor. When you activate your Ancestral Avatar feature, you can spend additional sorcery points to further improve the feature. For every 2 sorcery points you spend, you can gain one of the following benefits for the duration of the feature:</p>
+                <ul>
+                    <li>You can attack three times, instead of twice, whenever you take the Attack action on your turn.</li>
+                    <li>You gain resistance resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.</li>
+                    <li>You gain a flying speed equal to your current walking speed.</li>
+                </ul>
+            </description>
+            <sheet>
+                <description>When you activate your Ancestral Avatar feature, you can spend additional sorcery points to further improve the feature. For every 2 sorcery points you spend, you can gain one of the following benefits for the duration of the feature: You can attack 3 times instead of 2; you gain resistance to bludgeoning, piercing and slashing damage; or you gain a flying speed of {{speed}} feet.</description>
+            </sheet>
+        </element>
+    
+</elements>

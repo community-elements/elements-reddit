@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Hunt Divine Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-hunt-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/cleric-hunt-domain.xml" />
+        </update>
+    </info>
+    
+    <element name="Hunt Domain" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_CLERIC_HUNT_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>The gods of the hunt value skill above all else—whether it be skill as a tracker of cunning prey, a slayer of mighty beasts, or a marksman of unparalleled accuracy—it does not matter. Deities of this domain include Malar, Balinor, Sekolah, Artemis, and Uller. While rangers are often the most common servants of these deities, most of gods of the hunt employ clerics as well. The clerics of a hunting god often take a more active role in advancing their god’s interests, compared to rangers. Followers of this domain might defend sacred groves and shrines to their god from the assault of evil monstrosities or hunt down the enemies of whatever deity they follow.</p>
+            <h5>Hunt Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><i>hunter’s mark, snare</i></td></tr>
+                <tr><td>3rd</td><td><i>cordon of arrows, locate animals or plants</i></td></tr>
+                <tr><td>5th</td><td><i>conjure barrage, lightning arrow</i></td></tr>
+                <tr><td>7th</td><td><i>freedom of movement, locate creature</i></td></tr>
+                <tr><td>9th</td><td><i>conjure volley, scrying</i></td></tr>
+            </table>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_BONUS_PROFICIENCIES" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_HUNTERS_GUIDANCE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_CD_PRIZED_QUARRY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_PRECISE_ATTACKER" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_DIVINE_STRIKE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_MASTER_OF_THE_HUNT" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_BONUS_PROFICIENCIES" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_HUNTERS_GUIDANCE" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_CD_PRIZED_QUARRY" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_PRECISE_ATTACKER" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_MASTER_OF_THE_HUNT" level="17" />
+            <grant type="Spell" id="ID_PHB_SPELL_HUNTERS_MARK" spellcasting="Cleric" prepared="true" level="1" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SNARE" spellcasting="Cleric" prepared="true" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_CORDON_OF_ARROWS" spellcasting="Cleric" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" spellcasting="Cleric" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_BARRAGE" spellcasting="Cleric" prepared="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_ARROW" spellcasting="Cleric" prepared="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Cleric" prepared="true" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" spellcasting="Cleric" prepared="true" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_VOLLEY" spellcasting="Cleric" prepared="true" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCRYING" spellcasting="Cleric" prepared="true" level="9" />
+        </rules>
+    </element>
+        <element name="Bonus Proficiencies" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_BONUS_PROFICIENCIES">
+            <description>
+                <p>When you choose this domain at 1st level, you gain proficiency with martial weapons and either the Survival skill or the Stealth skill (your choice).</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+                <select type="Proficiency" name="Skill Proficiency (Hunt Domain)" supports="ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_STEALTH" />
+            </rules>
+        </element>
+        <element name="Hunter’s Guidance" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_HUNTERS_GUIDANCE">
+            <description>
+                <p>Also at 1st level, you can channel the divine power of the hunt into your weapon attacks. Once per turn when you hit a creature with a weapon attack, you can use this feature to apply a secondary effect to your attack. The secondary effect depends on whether the triggering attack was a melee or ranged attack.</p>
+                <p class="indent"><em><strong>Ranged Weapon Attack.</strong></em> The target of your attack has their speed halved until the start of your next turn.</p>
+                <p class="indent"><em><strong>Melee Weapon Attack.</strong></em> Your speed is increased by 15 feet until the end of your turn, and for that duration your movement doesn’t provoke opportunity attacks from the target of your attack.</p>
+                <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+            </description>
+            <sheet usage="{{hunters-guidance:uses}}/Long Rest">
+                <description>Once per turn when you hit a creature with a weapon attack, you can use this feature to apply a secondary effect to your attack. Ranged: The target of your attack has their speed halved until the start of your next turn. Melee: Your speed is increased by 15 feet until the end of your turn, and for that duration your movement doesn’t provoke opportunity attacks from the target of your attack.</description>
+            </sheet>
+            <rules>
+                <stat name="hunters-guidance:uses" value="1" bonus="base" />
+                <stat name="hunters-guidance:uses" value="wisdom:modifier" bonus="base" />
+            </rules>
+        </element>
+        <element name="Channel Divinity: Prized Quarry" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_CD_PRIZED_QUARRY">
+            <description>
+                <p>Beginning at 2nd level, you can magically reward a creature for their successful kill. When a creature within 120 feet of you is reduced to 0 hit points, you can use your reaction and expend a use of your Channel Divinity to reward the creature that reduced it to 0 hit points. That creature regains a number of hit points equal to your Wisdom modifier + your Cleric level, and can immediately use its reaction to move up to its speed without provoking opportunity attacks. An undead or construct cannot be healed by this feature.</p>
+            </description>
+            <sheet usage="Channel Divinity" alt="Prized Quarry" action="Reaction">
+                <description>When a creature within 120 feet of you is reduced to 0 hit points, you can expend a use of your Channel Divinity to reward the creature that reduced it to 0 hit points. That creature regains {{prized-quarry:hp}} hit points, and can immediately use its reaction to move up to its speed without provoking opportunity attacks. An undead or construct cannot be healed by this feature.</description>
+            </sheet>
+            <rules>
+                <stat name="prized-quarry:hp" value="wisdom:modifier" />
+                <stat name="prized-quarry:hp" value="level:cleric" />
+            </rules>
+        </element>
+        <element name="Precise Attacker" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_PRECISE_ATTACKER">
+            <description>
+                <p>Starting at 6th level, your weapon attacks begin to hit unerringly, aided by the divine magic flowing through you. If you miss with a weapon attack roll on your turn, you can use your bonus action to reroll the attack and take the new roll. Alternatively, if you hit with a weapon attack on your turn, you can use your bonus action to deal additional damage to the target. This damage equals 2 + half your Cleric level, and it shares its damage type with the attack that triggered it.</p>
+            </description>
+            <sheet action="Bonus Action">
+                <description>If you miss with a weapon attack roll on your turn, you can use your bonus action to reroll the attack and take the new roll. Alternatively, if you hit with a weapon attack on your turn, you can use your bonus action to deal {{precise-attacker:damage}} additional damage to the target. This damage shares its damage type with the attack that triggered it.</description>
+            </sheet>
+            <rules>
+                <stat name="precise-attacker:damage" value="2" />
+                <stat name="precise-attacker:damage" value="level:cleric:half" />
+            </rules>
+        </element>
+        <element name="Divine Strike" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_DIVINE_STRIKE">
+            <description>
+                <p>At 8th level, you gain the ability to infuse your weapon strikes with the divine energy of the hunt. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            </description>
+            <sheet>
+                <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {{divine-strike:damage-dice}}d8 damage of the same type dealt by the weapon to the target.</description>
+            </sheet>
+            <rules>
+                <stat name="divine-strike:damage-dice" value="1" level="8" />
+                <stat name="divine-strike:damage-dice" value="1" level="14" />
+            </rules>
+        </element>
+        <element name="Master of the Hunt" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HUNT_MASTER_OF_THE_HUNT">
+            <description>
+                <p>At 17th level, your divine skill with weaponry has reached its peak. You gain advantage on the first weapon attack roll you make each turn. Additionally, whenever you make a weapon attack with advantage and hit, if the lower of the two rolls would also hit then the attack deals an additional 1d8 damage and pushes its target up to 10 feet away from you.</p>
+            </description>
+            <sheet>
+                <description>You gain advantage on the first weapon attack roll you make each turn. Additionally, whenever you make a weapon attack with advantage and hit, if the lower of the two rolls would also hit then the attack deals an additional 1d8 damage and pushes its target up to 10 feet away from you.</description>
+            </sheet>
+        </element>
+</elements>

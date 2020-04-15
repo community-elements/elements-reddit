@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>School of Pyromancy Arcane Tradition</name>
+        <update version="0.0.1">
+            <file name="wizard-school-of-pyromancy.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/wizard-school-of-pyromancy.xml" />
+        </update>
+    </info>
+    
+    <element name="School of Pyromancy" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_WIZARD_SCHOOL_OF_PYROMANCY">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p>As a member of the School of Pyromancy, you have honed your ability to harness the destructive power of elemental fire. Though this school is often considered a sub-branch of the School of Evocation, it also employs the use of transmutation magic that controls fire, and is overall more specialized than an evoker.</p>
+            <p class="indent">Called pyromancers, members of this school are often in high demand in times of war, where their offensive power can be used to redefine the battlefield and turn the tides of war. While many of the most famous pyromancers are those employed in a state’s military, many others are self-employed, working as adventurers, mercenaries, or even simple bandits.</p>
+            <p class="indent">While pyromancers are most well-known for their offensive capabilities, they are also capable of defending themselves. The flames they conjure can also come to their defense, rebuking attackers and thereby dissuading enemies from approaching them. Pyromancers are highly versatile, and not to be underestimated.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_PYROMANCY_SAVANT" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_FLICKERING_FLAMES" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_CONTROLLED_WISPS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_SCORCHING_FIRE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_MASTER_OF_THE_INFERNO" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_PYROMANCY_SAVANT" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_FLICKERING_FLAMES" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_CONTROLLED_WISPS" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_SCORCHING_FIRE" level="10" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_MASTER_OF_THE_INFERNO" level="14" />
+        </rules>
+    </element>
+        <element name="Pyromancy Savant" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_PYROMANCY_SAVANT">
+            <description>
+                <p>Beginning when you select this school at 2nd level, the gold and time you must spend to copy a spell that deals fire damage into your spellbook is halved.</p>
+            </description>
+            <sheet>
+                <description>The gold and time you must spend to copy a spell that deals fire damage into your spellbook is halved.</description>
+            </sheet>
+        </element>
+        <element name="Flickering Flames" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_FLICKERING_FLAMES">
+            <description>
+                <p>At 2nd level, you can weave a wreath of flames around yourself to punish attackers. When you cast a spell of 1st level or higher that deals fire damage, you can simultaneously conjure wisps of flame that flit around you until they’re expended or until you finish a long rest. The number of wisps you conjure is equal to your Intelligence modifier + half your Wizard level.</p>
+                <p class="indent">Whenever a creature makes an attack against you while you have these wisps, one of the wisps hurdles at your attacker, dealing it 1d4 fire damage and expending the wisp. The attacker is dealt this damage after the attack completes.</p>
+                <p class="indent">Until you finish a long rest, subsequent spell casts conjure fewer wisps. When you cast a spell of 1st level or higher that deals fire damage, you conjure a number of wisps equal to half the spell’s level (rounded up). The total number of wisps you can have at once can never exceed your Intelligence modifier + half your Wizard level.</p>
+            </description>
+            <sheet>
+                <description>When you cast a spell of 1st level or higher that deals fire damage, you can simultaneously conjure up to {{flicker-flames:wisps}} wisps of flame that flit around you until they’re expended or until you finish a long rest. Whenever a creature makes an attack against you while you have these wisps, one of the wisps hurdles at your attacker, dealing it 1d{{flicker-flames:damage-die}} fire damage and expending the wisp. The attacker is dealt this damage after the attack completes. Until you finish a long rest, subsequent spell casts conjure fewer wisps. When you cast a spell of 1st level or higher that deals fire damage, you conjure a number of wisps equal to half the spell’s level (rounded up).</description>
+            </sheet>
+            <rules>
+                <stat name="flicker-flames:wisps" value="intelligence:modifier" />
+                <stat name="flicker-flames:wisps" value="level:wizard:half" />
+                <stat name="flicker-flames:damage-die" value="4" bonus="base" level="2" />
+                <stat name="flicker-flames:damage-die" value="6" bonus="base" level="14" />
+            </rules>
+        </element>
+        <element name="Controlled Wisps" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_CONTROLLED_WISPS">
+            <description>
+                <p>Starting at 6th level, you can use your bonus action to send some of the wisps conjured by your Flickering Flames feature to flit around another creature you can see within 30 feet of you, or return back to you. The maximum number of wisps you can send or return equals your Intelligence modifier (minimum 1). While the wisps flit around another creature, they hurdle at that creature’s attackers just as they would for you.</p>
+                <p class="indent">Also, whenever you hurdle a wisp at a creature attacking you (not another creature), you can use your reaction to hurdle more wisps at your attacker. The maximum number of additional wisps you can hurdle equals your Intelligence modifier (minimum 1), and those wisps deal damage and are expended as normal.</p>
+            </description>
+            <sheet action="Bonus Action">
+                <description>you can use your bonus action to send up to {{controlled-wisps:wisps}} of the wisps conjured by your Flickering Flames feature to flit around another creature you can see within 30 feet of you, or return back to you. Also, whenever you hurdle a wisp at a creature attacking you (not another creature), you can use your reaction to hurdle up to up to {{controlled-wisps:wisps}} wisps at your attacker.</description>
+            </sheet>
+            <rules>
+                <stat name="controlled-wisps:wisps" value="1" bonus="base" />
+                <stat name="controlled-wisps:wisps" value="intelligence:modifier" bonus="base" />
+            </rules>
+        </element>
+        <element name="Scorching Fire" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_SCORCHING_FIRE">
+            <description>
+                <p>Beginning at 10th level, fire damage you deal ignores resistance. Also, whenever you deal fire damage, you add 1 to the result of any damage die that rolls half of that die’s maximum or lower. For example, if you roll a d6 a 1 would become a 2, a 2 would become a 3, and a 3 would become a 4.</p>
+            </description>
+            <sheet>
+                <description>Fire damage you deal ignores resistance. Also, whenever you deal fire damage, you add 1 to the result of any damage die that rolls half of that die’s maximum or lower.</description>
+            </sheet>
+        </element>
+        <element name="Master of the Inferno" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_SCHOOL_OF_PYROMANCY_MASTER_OF_THE_INFERNO">
+            <description>
+                <p>Starting at 14th level, the damage die of your Flickering Flames feature becomes a d6, rather than a d4.</p>
+                <p class="indent">Also, whenever creatures within 30 feet of you would take fire damage from a single source, you use your reaction to grant up to 3 of those creatures resistance to that instance of damage. If you were the source of that damage, you instead grant those creatures immunity to that instance of damage.</p>
+            </description>
+            <sheet>
+                <description>Whenever creatures within 30 feet of you would take fire damage from a single source, you use your reaction to grant up to 3 of those creatures resistance to that instance of damage. If you were the source of that damage, you instead grant those creatures immunity to that instance of damage.</description>
+            </sheet>
+        </element>
+
+</elements>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Lightcaller Ranger Archetype</name>
+        <update version="0.0.1">
+            <file name="ranger-lightcaller.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/ranger-lightcaller.xml" />
+        </update>
+    </info>
+    
+    <element name="Lightcaller" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_RANGER_LIGHTCALLER">
+        <supports>Ranger Archetype</supports>
+        <description>
+            <p>Rangers that walk the path of the Lightcaller draw their power from the positive plane, and use that power to defend the wildlands and hunt down the evils that dwell there. These rangers wield their radiant weapons like extensions of their body, and learn combat techniques that make them highly varied in their combat styles. To them, every weapon holds a distinct purpose when hunting down prey. Fiends and undead are often these ranger’s favored enemies, and many of them ally with celestials.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_RADIANT_ARMAMENTS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_SUNLIT_SHIELD" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_BINDING_LIGHT" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_ARMOR_OF_DAWN" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_RADIANT_ARMAMENTS" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_SUNLIT_SHIELD" level="7" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_BINDING_LIGHT" level="11" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_ARMOR_OF_DAWN" level="15" />
+        </rules>
+    </element>
+        <element name="Radiant Armaments" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_RADIANT_ARMAMENTS">
+            <description>
+                <p>Starting at 3rd level, you learn to draw from the radiant energy of the positive plane, and craft that energy into weapons.</p>
+                <p class="indent">Immediately before you would make a weapon attack, you can choose to conjure a radiant weapon to attack with. The weapon appears in your free hand, lasts until you attack with it, and takes the form of any weapon that you’re proficient with. It is identical to a normal weapon, except its damage type is radiant.</p>
+                <p class="indent">Also, once per round you can grant a conjured weapon an additional property based on its existing properties. If a weapon has multiple possible properties, you choose one of them when you conjure the weapon. The properties are listed below:</p>
+                <p class="indent"><strong><em>Dawntouched Blade.</em></strong> If the weapon you conjure is melee, you can cause it to deal 1d4 additional radiant damage on a hit.</p>
+                <p class="indent"><strong><em>Seeking Lightshot.</em></strong> If the weapon you conjure is ranged and requires ammunition, you can conjure magical radiant ammunition along with the weapon itself. When you miss with this ammunition, you can curve the attack to target another creature within 10 feet of the previous target. Reroll the attack against the new target, dealing half as much damage as normal on a hit. On a miss, the ammunition does not continue further.</p>
+                <p class="indent"><strong><em>Piercing Sunstrike.</em></strong> If the weapon you conjure has the finesse property, you can cause your attacks with the weapon to score a critical hit on a roll of 19 or 20.</p>
+                <p class="indent"><strong><em>Blasting Radiance.</em></strong> If the weapon you conjure has the heavy property, you can cause your attacks with the weapon to push their target up to 10 feet away from you on a hit.</p>
+                <p class="indent"><strong><em>Sunlit Spear.</em></strong> If the weapon you conjure has the reach property, you can further increase your reach with the weapon by 10 feet.</p>
+                <p class="indent"><strong><em>Radiant Harpoon.</em></strong> If the weapon you conjure has the thrown property, you can cause your attacks with the weapon to pull their target up to 10 feet closer to you on a hit.</p>
+            </description>
+            <sheet>
+                <description>Immediately before you would make a weapon attack, you can choose to conjure a radiant weapon to attack with. The weapon appears in your free hand, lasts until you attack with it, and takes the form of any weapon that you’re proficient with. It is identical to a normal weapon, except its damage type is radiant. Once per round you can grant a conjured weapon an additional property based on its existing properties.</description>
+                <description level="11">Immediately before you would make a weapon attack, you can choose to conjure a radiant weapon to attack with. The weapon appears in your free hand, lasts until you attack with it, and takes the form of any weapon that you’re proficient with. It is identical to a normal weapon, except its damage type is radiant. Twice per round you can grant a conjured weapon an additional property based on its existing properties.</description>
+            </sheet>
+        </element>
+        <element name="Sunlit Shield" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_SUNLIT_SHIELD">
+            <description>
+                <p>At 7th level, you can use your action to conjure a radiant shield that floats around you, waiting for the right moment to grant you its protection. If the shield is conjured and you are hit by an attack, you can use your reaction to grant yourself a +3 bonus to your AC that lasts until the start of your next turn, including against the triggering attack. After you use this reaction, the shield will disappear at the start of your next turn.</p>
+            </description>
+            <sheet action="Action">
+                <description>You conjure a radiant shield. If the shield is conjured and you are hit by an attack, you can use your reaction to grant yourself a +3 bonus to your AC that lasts until the start of your next turn, including against the triggering attack. After you use this reaction, the shield will disappear at the start of your next turn.</description>
+            </sheet>
+        </element>
+        <element name="Binding Light" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_BINDING_LIGHT">
+            <description>
+                <p>Starting at 11th level, you can grant an additional property to a weapon conjured with your Radiant Armaments feature twice per round, rather than only once.</p>
+                <p class="indent">Additionally, if you take the Attack action and hit two different creatures, a bond of light momentarily appears between them. Each creature takes 1d6 radiant damage and is pulled up to 10 feet directly towards the other creature.</p>
+            </description>
+            <sheet>
+                <description>If you take the Attack action and hit two different creatures, a bond of light momentarily appears between them. Each creature takes 1d6 radiant damage and is pulled up to 10 feet directly towards the other creature.</description>
+            </sheet>
+        </element>
+        <element name="Armor of Dawn" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTCALLER_ARMOR_OF_DAWN">
+            <description>
+                <p>At 15th level, whenever you finish a short or long rest, a shimmering aura begins to surround you, granting you temporary hit points equal to your Ranger level. When you lose all these temporary hit points, the aura dissipates in a final burst of light. Each creature of your choice within 10 feet of you must succeed on a Constitution saving throw against your ranger spell save DC or be blinded until the end of your next turn.</p>
+            </description>
+            <sheet>
+                <description>Whenever you finish a short or long rest, a shimmering aura begins to surround you, granting you {{level:ranger}} temporary hit points. When you lose all these temporary hit points, the aura dissipates in a final burst of light. Each creature of your choice within 10 feet of you must succeed on a Constitution saving throw against your ranger spell save DC or be blinded until the end of your next turn.</description>
+            </sheet>
+        </element>
+
+</elements>
