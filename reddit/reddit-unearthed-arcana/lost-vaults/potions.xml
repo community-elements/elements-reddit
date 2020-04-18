@@ -9,7 +9,7 @@
         </update>
     </info>
 
-    <element name="Cryptspawn Potion" type="Magic Item" source="The Lost Vaults"id="ID_RDDT_LV_MAGIC_ITEM_CRYPTSPAWN_POTION">
+    <element name="Cryptspawn Potion" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_CRYPTSPAWN_POTION">
         <description>
             <p>Dispute the fact that this very viscous potion smells like a corpse, it is very good for you.</p>
             <p class="indent">When consumed, you regain 3d4 hit points, and gain resistance to necrotic and poison damage for 1 hour. You also make any saves against disease with advantage for 1 hour.</p>
