@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <update version="0.0.1">
+            <file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/dark-arts-players-companion/source.xml" />
+        </update>
+    </info>
+    
+	<element name="Dark Arts Player’s Companion" type="Source" source="Dark Arts Player’s Companion" id="ID_SOURCE_DARK_ARTS_PLAYERS_COMPANION">
+		<description>
+			<![CDATA[<p>Version 3.0 - 53 pages of Races, Subclasses, Spells, and Monsters themed around Black Magic!</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">DAPC</set>
+			<set name="image">https://i1.wp.com/nerdarchy.com/wp-content/uploads/2017/08/DarkArts-page-0.jpg</set>
+			<set name="url">https://drive.google.com/file/d/1Kr3ZKYy3Me0ZFOhOQAmKBZlB9JUauhW5/view</set>
+			<set name="author" url="http://guidetohomebrew.blogspot.com/">Jonoman3000</set>
+			<set name="official">false</set>
+			<set name="supplement">false</set>
+			<set name="playtest">false</set>
+			<set name="third-party">false</set>
+			<set name="homebrew">true</set>
+			<set name="league">false</set>
+			<set name="release">20190924</set>
+		</setters>
+	</element>
+    
+
+
+</elements>
