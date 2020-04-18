@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Gunslinger</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="gunslinger.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery/gunslinger.xml" />
 		</update>
 	</info>
@@ -194,7 +194,6 @@
 	</element>	
 	<element name="Akimbo Shooting" type="Class Feature" source="Arcane Artillery" id="ID_RDDT_AA_CLASS_FEATURE_FIGHTINGSTYLE_AKIMBO_SHOOTING">
 		<supports>Fighting Style, Gunslinger, Ranger</supports>
-		<requirements>ID_RDDT_AA_CLASS_GUNSLINGER</requirements>
 		<description>
 			<p>When you take the attack action with a light weapon, you can use a bonus action to make an attack with a light ranged weapon you are holding. You do not add your ability score modifier to the damage of this attack, unless that modifier is negative.</p>
 		</description>
@@ -204,7 +203,6 @@
 	</element>	
 	<element name="Breacher" type="Class Feature" source="Arcane Artillery" id="ID_RDDT_AA_CLASS_FEATURE_FIGHTINGSTYLE_BREACHER">
 		<supports>Fighting Style, Gunslinger, Fighter</supports>
-		<requirements>ID_RDDT_AA_CLASS_GUNSLINGER</requirements>
 		<description>
 			<p>When you hit with a ranged attack roll, you roll a 1 or 2 on the damage die, you can reroll the damage die and must take the new roll, even if the number is a 1 or a 2. The weapon must have the scatter property in order to gain this benefit.</p>
 		</description>
@@ -214,7 +212,6 @@
 	</element>	
 	<element name="Deadeye" type="Class Feature" source="Arcane Artillery" id="ID_RDDT_AA_CLASS_FEATURE_FIGHTINGSTYLE_DEADEYE">
 		<supports>Fighting Style, Gunslinger, Fighter, Ranger</supports>
-		<requirements>ID_RDDT_AA_CLASS_GUNSLINGER</requirements>
 		<description>
 			<p>You get a +2 bonus to attack rolls you make with martial and simple ranged weapons, as well as longarms which do not have the bulky or scatter property.</p>
 		</description>
@@ -224,7 +221,6 @@
 	</element>	
 	<element name="Dueling" type="Class Feature" source="Arcane Artillery" id="ID_RDDT_AA_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
 		<supports>Fighting Style, Gunslinger, Fighter, Ranger</supports>
-		<requirements>ID_RDDT_AA_CLASS_GUNSLINGER</requirements>
 		<description>
 			<p>When wielding a one-handed weapon in one hand and no other weapons, you get a +2 bonus to your damage rolls with these weapons. This additional damage only applies for ranged attacks made at creatures within 30 feet of you.</p>
 		</description>
@@ -234,7 +230,6 @@
 	</element>	
 	<element name="Sniper" type="Class Feature" source="Arcane Artillery" id="ID_RDDT_AA_CLASS_FEATURE_FIGHTINGSTYLE_SNIPER">
 		<supports>Fighting Style, Gunslinger, Ranger</supports>
-		<requirements>ID_RDDT_AA_CLASS_GUNSLINGER</requirements>
 		<description>
 			<p>You gain a +2 bonus to damage rolls if you attack a creature further than 30 feet away from you with a ranged weapon or a firearm that does not have the scatter property.</p>
 		</description>
@@ -244,7 +239,6 @@
 	</element>	
 	<element name="Phalanx" type="Class Feature" source="Arcane Artillery" id="ID_RDDT_AA_CLASS_FEATURE_FIGHTINGSTYLE_PHALANX">
 		<supports>Fighting Style, Gunslinger, Fighter</supports>
-		<requirements>ID_RDDT_AA_CLASS_GUNSLINGER</requirements>
 		<description>
 			<p>You can now wield a two-handed melee weapon, heavy crossbow, light crossbow, or a longarm with a shield, but you must use an action to brace the weapon against the shield in order to attack with it.</p>
 			<p>The weapon stays braced in this way as long as you move no more than 10 feet during your turn. The weapon loses any benefits you gain from using it with two hands while braced.</p>

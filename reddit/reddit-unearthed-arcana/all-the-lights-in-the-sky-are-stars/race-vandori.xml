@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Vandori</name>
+        <update version="0.0.1">
+            <file name="race-vandori.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/race-vandori.xml" />
+        </update>
+    </info>
+    
+    <element name="Vandori" type="Race" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACE_VANDORI">
+        <description>
+            <p class="flavor">"Sure I’ve been asked if I actually believe any of it, more’n I can count. I tread a fine line between history and storytellin’ I’ll admit, but the good histories don’t need no polishin’. I reckon that if you take a hard look around at the world we’re livin’ in and still wag your eyebrows at what I’ve got to say you’re probably better at foolin’ yourself than I’ll ever be."</p>
+            <p class="flavor indent">— Godseye Rax the Dim, Vandori Bard</p>
+            <h4>NOMADIC FOLK</h4>
+            <p>The Vandori are itinerant laborers, treasure seekers, scavengers, and nomads that claim to have been driven out of their ancestral homes, cast aside and forgotten by history. Forever spinning tales of dazzling adventures and battles fought among the stars, the boisterous children of the stars share the trackless wandering of those same celestial bodies as their nomadic bands drift across the countries of the world.</p>
+            <h4>SEEKERS OF STARS</h4>
+            <p>As the stars inexorably move across the sky they drag the vandori bands behind them. Although a vandor does not usually follow organized religions or believe in the gods, each band is tied together by a mutual spirituality. Each band believes in the divine power of their own star, which they follow as they wander. While some vandori believe their star is their ancestral homeland, others believe it is a benevolent being that watches over the good fortunes of the band.</p>
+            <h4>OLD SOULS</h4>
+            <p>The vandori appear weather-beaten and wrinkled, even the young among them. Their skin runs from a dark-blue to a ruddy purple, their hair white or gray. For all that, the eyes of a vandor seem to hold a mischievous glint that belies their true nature. While they are not naturally predisposed to large, bulky frames the vandor have a certain hardiness to them that sees them through rough times.</p>
+            <h4>VANDORI NAMES</h4>
+            <p>Vandori take the name of their guiding star, accompanied by a familiar name. At a young age they are granted an epithet, which can evolve and change through the course of ones life. In conversations, a vandor is usually addressed by his or her familiar name.</p>
+            <p class="indent"><b>Male Familiar Names: </b>Rax, Horvath, Pal, Miska, Bodnar, Vazol, Somogi, Borbel</p>
+            <p class="indent"><b>Female Familiar Names: </b>Sandora, Illes, Nemeth, Bella, Surana, Kelema</p>
+            <p class="indent"><b>Epithets: </b>the Bold, the Slow, the Ashen, the Younger, the Boisterous, the Crow, the Fleet, the Steadfast</p>
+            <h5>NAMES OF THE STARS</h5>
+            <p>The stars can vary depending on where your adventure is taking place. For instance the vandori of the Sword Coast take the names of stars and constellations like the Centaur, the Harp, or the Caltrop. In Zakhara they may follow Haku, Kor, or Zann. It is up to the DM to establish what stars and constellations make sense for the setting.</p>
+            <h4>VANDORI TRAITS</h4>
+            <p>Your vandori character has certain traits obtained from a nomadic lifestyle.</p>
+            <p class="ident">
+                <span class="feature">Ability Score Increase. </span>Your Charisma score increases by 2, and one other score of your choice increases by 1.<br />
+                <span class="feature">Age. </span>Vandori achieve maturity at the same rate as humans and reach adulthood around the age of twenty. Disparate lifestyles and living conditions means the life expectancy of any given vandor vary wildly, with the oldest living often exceeding 120 years of age.<br />
+                <span class="feature">Alignment. </span>Other than an aversion to organized law, it is difficult to pin down a consensus among the vandor. Although they often trend chaotic, many attempt to remain detached from either extreme and resolve to live a moderate and neutral lifestyle.<br />
+                <span class="feature">Size. </span>A vandor stands between 5½ and 6½ feet in height. Your size is Medium.<br />
+                <span class="feature">Speed. </span>Your base walking speed is 30 feet.<br />        
+                <span class="feature">Languages. </span>You can speak, read, and write Common and one other language of your choice.<br />      
+                <span class="feature">Environmentally Adaptive. </span>As a nomadic race, the vandori have become skilled in quickly adapting to harsh environments. Once you succeed a saving throw against an extreme climate, you become adapted to the climate. This adaptation lasts until you spend more than 1 day in a different climate.<br />
+                <span class="feature">Natural Flair. </span>The vandori share a flair for the dramatic and can always spin a far-fetched tale to support their arguments. When you make a Charisma check, you can choose to add 1d10 to the roll. Once you use this trait, you can’t use it again until you finish a short or long rest.<br />
+                <span class="feature">Storied Past. </span>You gain proficiency in one of the following skills: Arcana, History, or Nature.<br />
+            </p>
+        </description>
+        <setters>
+            <set name="names" type="male">Rax, Horvath, Pal, Miska, Bodnar, Vazol, Somogi, Borbel</set>
+            <set name="names" type="female">Sandora, Illes, Nemeth, Bella, Surana, Kelema</set>
+            <set name="names" type="epithet">the Bold, the Slow, the Ashen, the Younger, the Boisterous, the Crow, the Fleet, the Steadfast</set>
+            <set name="names-format">{{name}} {{epithet}}</set>
+            <set name="height" modifier="2d8">5’3"</set>
+            <set name="weight" modifier="2d4">130 lb.</set>
+        </setters>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="charisma" value="2" />
+            <select type="Racial Trait" name="Ability Score Increase (Vandori)" supports="Vandori" number="1" />
+            <stat name="innate speed" value="30" bonus="base"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language (Vandori)" />
+            <grant type="Racial Trait" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_VANDORI_ENVIRONMENTALLY_ADAPTIVE" />
+            <grant type="Racial Trait" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_VANDORI_NATURAL_FLAIR" />
+            <grant type="Racial Trait" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_VANDORI_STORIED_PAST" />
+        </rules>
+    </element>
+    <element name="Environmentally Adaptive" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_VANDORI_ENVIRONMENTALLY_ADAPTIVE">
+        <description>
+            <p>As a nomadic race, the vandori have become skilled in quickly adapting to harsh environments. Once you succeed a saving throw against an extreme climate, you become adapted to the climate. This adaptation lasts until you spend more than 1 day in a different climate.</p>
+        </description>
+        <sheet>
+            <description>Once you succeed a saving throw against an extreme climate, you become adapted to the climate. This adaptation lasts until you spend more than 1 day in a different climate.</description>
+        </sheet>
+    </element>
+    <element name="Natural Flair" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_VANDORI_NATURAL_FLAIR">
+        <description>
+            <p>The vandori share a flair for the dramatic and can always spin a far-fetched tale to support their arguments. When you make a Charisma check, you can choose to add 1d10 to the roll. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you make a Charisma check, you can choose to add 1d10 to the roll.</description>
+        </sheet>
+    </element>
+    <element name="Storied Past" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_VANDORI_STORIED_PAST">
+        <description>
+            <p>You gain proficiency in one of the following skills: Arcana, History, or Nature.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency (Storied Past)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_NATURE" />
+        </rules>
+    </element>
+
+    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_VANDORI_STRENGTH">
+        <supports>Vandori</supports>
+        <requirements />
+        <description>
+            <p>Your Strength increases by 1.</p>
+        </description>
+        <rules>
+            <stat name="strength" value="1"/>
+        </rules>
+    </element>
+
+    <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_VANDORI_DEXTERITY">
+        <supports>Vandori</supports>
+        <requirements />
+        <description>
+            <p>Your Dexterity increases by 1.</p>
+        </description>
+        <rules>
+            <stat name="dexterity" value="1"/>
+        </rules>
+    </element>
+
+    <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_VANDORI_CONSTITUTION">
+        <supports>Vandori</supports>
+        <requirements />
+        <description>
+            <p>Your Constitution increases by 1.</p>
+        </description>
+        <rules>
+            <stat name="constitution" value="1"/>
+        </rules>
+    </element>
+
+    <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_VANDORI_INTELLIGENCE">
+        <supports>Vandori</supports>
+        <requirements />
+        <description>
+            <p>Your Intelligence increases by 1.</p>
+        </description>
+        <rules>
+            <stat name="intelligence" value="1"/>
+        </rules>
+    </element>
+
+    <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_VANDORI_WISDOM">
+        <supports>Vandori</supports>
+        <requirements />
+        <description>
+            <p>Your Wisdom increases by 1.</p>
+        </description>
+        <rules>
+            <stat name="wisdom" value="1"/>
+        </rules>
+    </element>
+
+
+</elements>
