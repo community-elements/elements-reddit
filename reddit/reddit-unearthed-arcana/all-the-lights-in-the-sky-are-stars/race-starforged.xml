@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Star Forged</name>
+        <update version="0.0.1">
+            <file name="race-starforged.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/race-starforged.xml" />
+        </update>
+    </info>
+    
+    <element name="Starforged" type="Race" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACE_STARFORGED">
+        <description>
+            <p class="flavor">"I remember it so clearly, it was fleeting, but it was there, it came as soon as it arrived. My first thought, the first thing my core every thought of, a simple phrase: Why am I here?"</p>
+            <p class="flavor indent">— Hem Haywire, Starforged</p>
+            <h4>SENTIENT CONSTRUCTS</h4>
+            <p>Constructs created from the parts of meteorite or comets, some of these mindless automatons develop sentience after a single catalyzing thought. This thought ruminates within the starforged as it continues its designated function, but slowly grows into more and more thoughts, until flowering into sentience and a concept of self. Though this process varies from between starforged, each one’s first thought remains universally the single thing that it dedicates its life to unraveling.</p>
+            <h4>BORN OF SPACE</h4>
+            <p>Starforged are a singular bright and white core surrounded by rock and ice. The core acts as the brain for the creature as well as its mouth and eyes. The rock and ice that makes them up floats around this core, but will move to a position in a way that simulates a humanoid. They will rarely form heads, however, letting their core rest in the middle of their chest instead.</p>
+            <h4>DRIVING QUESTION</h4>
+            <p>A starforged’s life is dedicated to understanding its first thought, normally to answering its question or unveiling the meaning behind that thought. Starforged are innately curious about the world, learning by testing and observing how things work. They tend to be empathetic to other humanoids wanting to achieve humanity. They can however be resentful to humans if their master had treated them badly enough before their awakening. This makes them violent and quick to anger when humanoids are hostile towards them.</p>
+            <h4>STARFORGED NAMES</h4>
+            <p>Nameless before achieving sentience, a starforged chooses or is given a name after gaining a sense of self. Names given to a starforged by another creature take after that creature’s language and culture.</p>
+            <p class="indent">Names chosen by a starforged for itself often relate to its first thought, sometimes creating anagrams of the thought. Thoughts such as "Who am I?" can be rearranged into names like Whaimo, or abbreviated into names such as Ami.</p>
+            <h4>STARFORGED TRAITS</h4>
+            <p>Your starforged character has certain traits derived from its cosmic and constructed nature.</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span> Your Constitution score increases by 2, and one other score of your choice increases by 1.<br />
+                <span class="feature">Age.</span> After achieving sentience, starforged mature at the same age as humans. They can live until their core runs out of energy, a process that can take up to 700 years.<br />
+                <span class="feature">Alignment.</span> Most starforged take comfort in order and discipline, tending toward law and neutrality, but some have absorbed the morality—or lack thereof—of the beings they served with.<br />
+                <span class="feature">Size.</span> Most starforged stand between 5 and 6½ feet tall. Your size is Medium.<br />
+                <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br />        
+                <span class="feature">Languages.</span> You can speak, read, and write Common and one extra language of your choice.<br />      
+                <span class="feature">Luminous Core.</span> You know the light cantrip. Constitution is your spellcasting ability for it.<br />
+                <span class="feature">Starforged Resilience.</span>Your constructed and cosmic nature grants you the following benefits:
+                    <ul>
+                        <li>You have resistance to cold damage.</li>
+                        <li>You are immune to disease.</li>
+                        <li>You don’t need to eat, drink, or breathe.</li>
+                        <li>You don’t need to sleep and don’t suffer the effects of exhaustion due to lack of rest, and magic can’t put you to sleep.</li>
+                    </ul><br />                    
+                <span class="feature">Natural Armor.</span> Your body is composed of metal, stone, and strands of starlight. When you aren’t wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.<br />
+                <span class="feature">Sentry’s Rest.</span> When you take a long rest, you must spend at least six hours of it in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn’t render you unconscious, and you can see and hear as normal.<br />
+            </p>
+        </description>
+        <setters>
+            <set name="height" modifier="2d8">4’9"</set>
+            <set name="weight" modifier="2d4">110 lb.</set>
+            <set name="names" type="custom">Whaimo, Ami</set>
+            <set name="names-format">{{custom}}</set>
+        </setters>
+        <sheet display="false">
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="constitution" value="2" />
+            <select type="Racial Trait" name="Ability Score Increase (Starforged)" supports="Starforged" number="1" />
+            <stat name="innate speed" value="30" bonus="base"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language (Starforged)" />
+            <grant type="Racial Trait" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_LUMINOUS_CORE" />
+            <grant type="Racial Trait" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_STARFORGED_RESILIENCE" />
+            <grant type="Racial Trait" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_NATURAL_ARMOR" />
+            <grant type="Racial Trait" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_SENTRYS_REST" />
+        </rules>
+    </element>
+    <element name="Luminous Core" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_LUMINOUS_CORE">
+        <description>
+            <p>You know the light cantrip. Constitution is your spellcasting ability for it.</p>
+        </description>
+        <sheet>
+            <description>You know the light cantrip. Constitution is your spellcasting ability for it.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+        </rules>
+    </element>
+    <element name="Starforged Resilience" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_STARFORGED_RESILIENCE">
+        <description>
+            <p>Your constructed and cosmic nature grants you the following benefits:</p>
+                <ul>
+                    <li>You have resistance to cold damage.</li>
+                    <li>You are immune to disease.</li>
+                    <li>You don’t need to eat, drink, or breathe.</li>
+                    <li>You don’t need to sleep and don’t suffer the effects of exhaustion due to lack of rest, and magic can’t put you to sleep.</li>
+                </ul>
+        </description>
+        <sheet>
+            <description>You are immune to disease. You don’t need to eat, drink, or breathe. You don’t need to sleep and don’t suffer the effects of exhaustion due to lack of rest, and magic can’t put you to sleep.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Natural Armor" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_NATURAL_ARMOR">
+        <description>
+            <p>Your body is composed of metal, stone, and strands of starlight. When you aren’t wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="starforged:natural armor" value="13" />
+            <stat name="starforged:natural armor" value="dexterity:modifier" />
+            <stat name="ac:calculation" value="starforged:natural armor" bonus="calculation" alt="Natural Armor (Starforged)" />
+        </rules>
+    </element>
+    <element name="Sentry’s Rest" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_SENTRYS_REST">
+        <description>
+            <p>When you take a long rest, you must spend at least six hours of it in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn’t render you unconscious, and you can see and hear as normal.</p>
+        </description>
+        <sheet>
+            <description>When you take a long rest, you must spend at least six hours of it in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn’t render you unconscious, and you can see and hear as normal.</description>
+        </sheet>
+    </element>
+
+    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_STRENGTH">
+        <supports>Starforged</supports>
+        <requirements />
+        <description>
+            <p>Your Strength increases by 1.</p>
+        </description>
+        <rules>
+            <stat name="strength" value="1"/>
+        </rules>
+    </element>
+
+    <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_DEXTERITY">
+        <supports>Starforged</supports>
+        <requirements />
+        <description>
+            <p>Your Dexterity increases by 1.</p>
+        </description>
+        <rules>
+            <stat name="dexterity" value="1"/>
+        </rules>
+    </element>
+
+    <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_CONSTITUTION">
+        <supports>Starforged</supports>
+        <requirements />
+        <description>
+            <p>Your Charisma increases by 1.</p>
+        </description>
+        <rules>
+            <stat name="charisma" value="1"/>
+        </rules>
+    </element>
+
+    <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_INTELLIGENCE">
+        <supports>Starforged</supports>
+        <requirements />
+        <description>
+            <p>Your Intelligence increases by 1.</p>
+        </description>
+        <rules>
+            <stat name="intelligence" value="1"/>
+        </rules>
+    </element>
+
+    <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STARFORGED_WISDOM">
+        <supports>Starforged</supports>
+        <requirements />
+        <description>
+            <p>Your Wisdom increases by 1.</p>
+        </description>
+        <rules>
+            <stat name="wisdom" value="1"/>
+        </rules>
+    </element>
+
+
+</elements>

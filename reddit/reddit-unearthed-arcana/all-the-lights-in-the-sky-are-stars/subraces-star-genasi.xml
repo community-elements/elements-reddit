@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Star Genasi</name>
+        <update version="0.0.1">
+            <file name="subraces-star-genasi.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/subraces-star-genasi.xml" />
+        </update>
+    </info>
+    
+    <element name="Star Genasi" type="Sub Race" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_SUB_RACE_STAR_GENASI">
+        <supports>Genasi</supports>
+        <description>
+            <p class="flavor">"My mother once told me a story about the stars, heavenly entities that guide us from above, constantly watching over us from the night sky. She told me she’d met one once. I had thought she was joking."</p>
+            <p class="flavor indent">— Cecelia Winnows, Astrognomer</p>
+            <h4>NEBULOUS ORIGINS</h4>
+            <p>The star genasi are born from the wishes of a mortal upon a star. They are the might and mind of heavenly bodies, and draw their power from the glowing core they carry in place of a heart, a shard of their parent star. This core grants them the power to illuminate the dark.</p>
+            <h4>OTHERWORLDLY APPEARANCE</h4>
+            <p>Star genasi are strange creatures, with dark-blue skin that blends with the night sky and eyes containing the light of thousands of galaxies. They have silvery hair that shimmers with starlight in the light of day, the specks of light that infuse their skin and hair becoming less pronounced during the daytime. However, their eyes still bear the light of countless stars.</p>
+            <h4>STAR GENASI NAMES</h4>
+            <p>Star genasi use the naming conventions of the people among whom they were raised. They might later assume the names of constellations or stars, such as Orion, Polaris, or Vega. Some take on more vague names to reflect their origins, such as Nebula, Nova, or Starlight.</p>
+            <h4>STAR GENASI TRAITS</h4>
+            <p>When you create a genasi character, you may choose the star genasi as an alternative to the subraces in the <i>Elemental Evil Player’s Companion</i>.</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span> Your Constitution score increases by 2, and your Charisma score increases by 1.<br />
+                <span class="feature">Darkvision.</span> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br />
+                <span class="feature">Radiant Resistnace.</span> You have resistance to radiant damage.<br />
+                <span class="feature">Reach for the Stars.</span> You know the <i>twinkle<sup>ATLAS</sup></i> cantrip. When you reach 3rd level, you can cast the <i>starlight shroud<sup>ATLAS</sup></i> spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the <i>dazzling gleam<sup>ATLAS</sup></i> spell; you must finish a long rest in order to cast the spell again using this trait. Constitution is your spellcasting ability for these spells.<br />
+            </p>
+            <h5>STAR GENASI VARIANT</h5>
+            <p>Though most star genasi are born from living stars, sometimes the situations of their birth can result in the collapse of a star into a black hole.</p>
+            <p class="indent">If your DM allows it, your star genasi character can forgo Reach for the Stars and instead gain the following feature:</p>
+            <p class="indent"><b><i>Black Hole Magic. </i></b>You know the <i>twinkle<sup>ATLAS</sup></i> cantrip. When you reach 3rd level, you can cast the <i>gravity pulse<sup>ATLAS</sup></i> spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the <i>darkness</i> spell; you must finish a long rest in order to cast the spell again using this trait. Constitution is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet display="false">
+            <description>description</description>
+        </sheet>
+        <setters>
+            <set name="names" type="male">Aries, Orion, Nebulon</set>
+            <set name="names" type="female">Nebula, Nova, Solara, Starlight, Vega</set>
+            <set name="names-format">{{name}}</set>
+        </setters>
+        <rules>
+            <stat name="charisma" value="1" />
+    		<grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+            <grant type="Racial Trait" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STAR_GENASI_REACH_FOR_THE_STARS" requirements="!ID_RACE_VARIANT_STAR_GENASI_BLACK_HOLE_MAGIC" />
+            <select type="Race Variant" name="Star Genasi Variant" supports="Star Genasi" optional="true" />
+        </rules>
+    </element>
+    <element name="Reach for the Stars" type="Racial Trait" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_RACIAL_TRAIT_STAR_GENASI_REACH_FOR_THE_STARS">
+        <description>
+            <p>You know the <i>twinkle<sup>ATLAS</sup></i> cantrip. When you reach 3rd level, you can cast the <i>starlight shroud<sup>ATLAS</sup></i> spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the <i>dazzling gleam<sup>ATLAS</sup></i> spell; you must finish a long rest in order to cast the spell again using this trait. Constitution is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>You know the twinkle cantrip.</description>
+            <description level="3">You know the twinkle cantrip. You can cast starlight shroud at 2nd level once per long rest. Constitution is your spellcasting ability.</description>
+            <description level="5">You know the twinkle cantrip. You can cast starlight shroud at 2nd level and dazzling gleam once each per long rest. Constitution is your spellcasting ability.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_AEYANA_ATLAS_SPELL_TWINKLE" />
+            <grant type="Spell" id="ID_AEYANA_ATLAS_SPELL_STARLIGHT_SHROUD" level="3" />
+            <grant type="Spell" id="ID_AEYANA_ATLAS_SPELL_DAZZLING_GLEAM" level="5" />
+        </rules>
+    </element>
+
+    <element name="Black Hole Magic" type="Race Variant" source="All the Lights in the Sky are Stars" id="ID_RACE_VARIANT_STAR_GENASI_BLACK_HOLE_MAGIC">
+        <supports>Star Genasi</supports>
+        <requirements />
+        <description>
+            <p>You know the <i>twinkle<sup>ATLAS</sup></i> cantrip. When you reach 3rd level, you can cast the <i>gravity pulse<sup>ATLAS</sup></i> spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the <i>darkness</i> spell; you must finish a long rest in order to cast the spell again using this trait. Constitution is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>You know the twinkle cantrip.</description>
+            <description level="3">You know the twinkle cantrip. You can cast gravity pulse at 2nd level once per long rest. Constitution is your spellcasting ability.</description>
+            <description level="5">You know the twinkle cantrip. You can cast gravity pulse at 2nd level and darkness once each per long rest. Constitution is your spellcasting ability.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_AEYANA_ATLAS_SPELL_TWINKLE" />
+            <grant type="Spell" id="ID_AEYANA_ATLAS_SPELL_GRAVITY_PULSE" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" />
+        </rules>
+    </element>
+
+</elements>

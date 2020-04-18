@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>All the Lights in the Sky are Stars</name>
+        <update version="0.0.1">
+            <file name="all-the-lights-in-the-sky-are-stars.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars.index" />
+        </update>
+    </info>
+    <files>
+      <!-- Subclasses -->
+        <file name="barbarian-path-of-the-comet.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/barbarian-path-of-the-comet.xml" />
+        <file name="bard-college-of-superstars.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/bard-college-of-superstars.xml" />
+        <file name="cleric-sky-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/cleric-sky-domain.xml" />
+        <file name="druid-circle-of-constellations.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/druid-circle-of-constellations.xml" />
+        <file name="fighter-meteor-knight.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/fighter-meteor-knight.xml" />
+        <file name="monk-way-of-the-void.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/monk-way-of-the-void.xml" />
+        <file name="paladin-oath-of-the-north-star.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/paladin-oath-of-the-north-star.xml" />
+        <file name="ranger-shooting-star.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/ranger-shooting-star.xml" />
+        <file name="rogue-nightmare.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/rogue-nightmare.xml" />
+        <file name="sorcerer-star-spawn.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/sorcerer-star-spawn.xml" />
+        <file name="warlock-the-nebula.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/warlock-the-nebula.xml" />
+        <file name="wizard-school-of-astronomy.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/wizard-school-of-astronomy.xml" />
+
+      <!-- Races -->
+        <file name="subraces-cosmic-gnome.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/sub-race-cosmic-gnome.xml" />
+        <file name="race-starforged.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/race-starforged.xml" />
+        <file name="subraces-star-genasi.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/sub-race-star-genasi.xml" />
+        <file name="race-vandori.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/race-vandori.xml" />
+
+      <!-- Miscellaneous -->
+        <file name="magic-items.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/magic-items.xml" />
+        <file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/source.xml" />
+        <file name="spells.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/spells.xml" />
+
+    </files>
+</index>

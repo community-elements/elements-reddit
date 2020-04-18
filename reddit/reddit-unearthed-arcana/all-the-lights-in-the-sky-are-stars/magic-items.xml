@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>All the Lights in the Sky are Stars Magic Items</name>
+        <update version="0.0.1">
+            <file name="magic-items.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/magic-items.xml" />
+        </update>
+    </info>
+    
+    <element name="Antimatter Ammunition" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_ANTIMATTER_AMMUNITION">
+        <description>
+            <p>Dangerous ammunition crafted from antimatter, an attack made using this piece of ammunition deals 6d8 necrotic damage instead of a weapon’s normal damage. Once the antimatter ammunition deals damage to a creature, it becomes a piece of nonmagical ammunition.</p>
+        </description>
+        <setters>
+			<set name="keywords">ammunition</set>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any ammunition">Weapon</set>
+			<set name="rarity">Rare</set>
+        </setters>
+    </element>
+    
+    <element name="Asteroid Belt" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_ASTEROID_BELT">
+        <description>
+            <p>Constructed from a string of seemingly unattached stones, this belt is held together by magical force. It has 7 charges, and it regains 1d6+1 expended charges daily at dawn. While wearing the belt, you can use an action to expend any number of charges to attack one creature you can see within 60 feet of you. The belt launches a flaming stone bead and makes its attack roll with a +7 bonus. On a hit, for each charge you spend, the target takes 1d6 bludgeoning damage and is pushed 5 feet away from you.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Cloak of the Starwalker" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_CLOAK_OF_THE_STARWALKER">
+        <description>
+            <p>Belonging to a mythological thief who was said to have stolen the stars themselves, this cloak offers a window into the void of space. Adorned with a pattern of faintly glowing star-like motes of light, the pattern of the cloak shifts when attuned to reveal a picture of the heavens.</p>
+            <p class="indent">This cloak has 7 charges, and it regains 1d6+1 expended charges daily at dusk. While wearing the cloak, you can use a bonus action to expend one charge to cast misty step.</p>
+            <p class="indent">While attuned to this cloak, you gain resistance to radiant and force damage, you are immune to any ill effects from being in a vacuum, and your movement speed is doubled in dim light or darkness.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Cruciform Nebula" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_CRUCIFORM_NEBULA">
+        <description>
+            <p>Within the blade of this weapon shimmers the image of a brilliant nebula. As it moves, the misty appearance of the night sky trails behind it.</p>
+            <p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+            <p class="indent">This weapon has 5 charges, regaining 1d4+1 charges daily at midnight. When you hit a creature with an attack using this sword, you can spend 1 charge to fill a 15-foot cube with swirling nebula for 1 minute, originating from you and encompassing the creature. When a creature enters the area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a DC 17 Constitution saving throw. It takes 2d6 radiant damage on a failed save, or half as much damage on a successful one.</p>
+        </description>
+        <setters>
+            <set name="keywords">sword</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="greatsword, longsword, or shortsword">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="enhancement">2</set>
+            <set name="weapon">Greatsword||Longsword||Shortsword</set>
+        </setters>
+    </element>
+    <element name="Glimmering Weapon" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_GLIMMERING_WEAPON">
+        <description>
+            <p>This weapon shines with cosmic light, dispelling illusions and revealing truth. When this weapon comes in contact with illusion magic, it dispels the illusion if it is a spell of 3rd level or lower.</p>
+            <p class="indent">A cleric of the Light or Sky domains of 10th level or higher can apply the <i>glimmering</i> property to a weapon by performing a 50 hour ritual. This ritual must be conducted within a hallowed temple, on an altar to the god of the cleric’s faith, and involves 500 gp of materials. The ritual must be completed within 10 days of its initiation, otherwise the ritual fails and must be started over.</p>
+        </description>
+        <setters>
+            <set name="keywords">glimmering,illusion,dispel</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Weapon</set>
+            <set name="rarity">Common</set>
+            <set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Glimmering {{parent}}</set>
+        </setters>
+    </element>
+    <element name="Gravity Rod" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_GRAVITY_ROD">
+        <description>
+            <p>Bearing a black stone on one end and white stone on the other, this bronze rod boasts the ability to manipulate gravity.</p>
+            <p class="indent">This rod has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the levitate (save DC 15) or <i>spider climb</i> spells from it.</p>
+            <p class="indent">The rod regains 1d6+1 expended charges daily at dawn. If you expend the rod’s last charge, roll a d20. On a 1, the wand crumbles into dust and is destroyed.</p>
+        </description>
+        <setters>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Rod</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Heaven-Piercing Giga Drill" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_HEAVENPIERCING_GIGA_DRILL">
+        <description>
+            <p>This weapon has an unnaturally long tip lined with spiraling flutes. When attuned, the tip of the weapon spins at the wielder’s command. You have a burrow speed equal to your walking speed and tremorsense for 30 feet while you hold this weapon.</p>
+            <p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon.</p>
+            <p class="indent">Additionally, if you make an attack at a creature after bursting out from underground, you deal an additional 2d12 radiant damage to the creature on a hit.</p>
+            <p class="indent">This weapon has 5 charges, regaining 1d4+1 charges daily at dawn. As a bonus action while you are holding this weapon, you can spend 1 charge and choose a creature that can see and hear you within 30 feet of you. That creature gains temporary hit points equal to your Charisma score. While the creature has these temporary hit points, it has advantage on attack rolls and saving throws.</p>
+            <p class="indent">As a reaction when you are reduced to 0 hit points or killed, you can choose a creature that can see or hear you within 30 feet of you. If that creature has a free attunement slot, it immediately becomes attuned to this weapon.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="javelin, lance, pike, or spear">Weapon</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+			<set name="enhancement">3</set>
+            <set name="weapon">Javelin||Lance||Pike||Spear</set>
+        </setters>
+    </element>
+    <element name="Jar of Stars" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_JAR_OF_STARS">
+        <description>
+            <p>This magical glass jar is filled with a 1d6+1 gleaming motes of starlight, and provides bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+            <p class="indent">As an action, you can open the jar to release the gleaming motes. Each mote acts as a dart per the <i>magic missile</i> spell. The jar ceases to be magical once opened.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Common</set>
+        </setters>
+    </element>
+    <element name="Locket of the Night" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_LOCKET_OF_THE_NIGHT">
+        <description>
+            <p>An innocuous circular silver locket hung from a fine silver chain, this locket boasts the power to sap light from its surroundings. When opened, the inside of this locket seems to absorb all light around it, and is cold to the touch. As an action, you can open the locket to cast darkness centered on the locket, and you can see normally in darkness. Once you use this property, you can’t use it again until the next dusk.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Moonlit Censer" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_MOONLIT_CENSER">
+        <description>
+            <p>Created by an ancient order of holy knights, this ornate silver censer sheds moonlight, creating bright light in a 20-foot radius and dim light for an additional 20 feet. A silver lid on the censer can be used to shroud the light, snuffing it until the lid is removed.</p>
+            <p class="indent">Each creature lit by this light is subject to the following effects:</p>
+            <ul>
+                <li>It can’t be charmed, frightened, or possessed by celestials, fey, fiends, or undead.</li>
+                <li>It has advantage on Wisdom and Charisma saving throws against spells and magical effects.</li>
+                <li>It is under the effects of a <i>zone of truth</i> spell (save DC 16).</li>
+            </ul>
+            <p class="indent">Additionally, shapechangers lit by this light can’t transform or voluntarily end their transformations.</p>
+            <p class="indent">Creatures completely shadowed from the censer’s light aren’t subject to its effects.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+    </element>
+    <element name="Quasar Blade" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_QUASAR_BLADE">
+        <description>
+            <p>This blade has an unusual guard, circular and shining with tiny specks of light. When attuned, the guard spins slowly, and the blade emits a faint light. When unsheathed, this sword casts dim light in a 15-foot radius around it.</p>
+            <p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon</p>
+            <p class="indent">This weapon has 5 charges, and it regains 1d4+1 expended charges daily at dawn.</p>
+            <p class="indent">As an action, you can expend charges to release a beam of radiance. Each creature within a 5 ft. wide and 200 ft long line must make a DC 15 Constitution saving throw. On a failed save, a creature takes 2d8 radiant damage for each charge expended and is blinded until the end of its next turn. On a successful save, it takes half as much damage and is not blinded.</p>
+            <p class="indent">The weapon gains the following ability if attuned by a paladin: As an action, you can expend a spell slot to release a beam of radiance. Each creature within a 5 ft. wide and 200 ft long line must make a Constitution saving throw against your paladin spell save DC. On a failed save, a creature takes 4d8 radiant damage for a 1st-level spell slot, plus 2d8 for each spell level higher than 1st, and is blinded until the end of its next turn. On a successful save, it takes half as much damage and is not blinded.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="greatsword, longsword, rapier, or shortsword">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Greatsword||Longsword||Shortsword||Rapier</set>
+			<set name="name-format">Quasar {{parent}}</set>
+        </setters>
+    </element>
+    <element name="Riftcutter" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_RIFTCUTTER">
+        <description>
+            <p>Scrawled on a tattered scrap of parchment is the knowledge of the <i>Riftcutter</i>, a conceptual weapon of no physical presence. Once you attune to this parchment, you can’t unattune from it unless you are targeted by the remove curse spell or similar magic.</p>
+            <p class="indent">This parchment has 10 charges, and it regains 1d8+2 expended charges daily at dawn.</p>
+            <p class="indent">While attuned to this parchment, you can spend one charge as a bonus action to create a weapon of your choice made from dark matter in your hand. You can choose the form that this melee weapon takes each time you create it. You gain a +2 bonus to attack and damage rolls made with this weapon, which deals psychic damage instead of the weapon’s normal damage. If you drop the weapon or throw it, it dissipates at the end of the turn.</p>
+            <p class="indent">When you make a melee weapon attack with this weapon, you can spend one charge to cut through space, increasing the reach for the attack to 30 feet. If you hit a creature with this attack, you can spend 3 charges as a bonus action to magically teleport to an unoccupied space within 5 feet of it. Each creature within 10 feet of the space you teleport to must make a DC 18 Wisdom saving throw. A creature takes 5d10 psychic damage on a failed save, or half as much on a successful one.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Ring of Constellation" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_RING_OF_CONSTELLATION">
+        <description>
+            <p>This magical ring is part of a set of 3 to 6 (1d4+2) similar rings, and glows with dim light in a 10-foot radius. While wearing this ring, you are linked to each other creature wearing a ring from the same set within 120 feet of you. You know the relative location of and can communicate telepathically with each other linked creature.</p>
+            <p class="indent">Additionally, each ring in a set has one of the following additional properties:</p>
+            <p class="indent"><b><i>The Actor. </i></b>As an action, you can choose another linked creature. You and that creature teleport to each other’s space, swapping places.</p>
+            <p class="indent"><b><i>The Advisor. </i></b>As an action, you can choose two other linked creatures. Those creatures teleport to each other’s space, swapping places.</p>
+            <p class="indent"><b><i>The Guard. </i></b>When another linked creature within 5 feet of you is hit by an attack, you can use your reaction to reduce the damage they take from the attack by 1d6.</p>
+            <p class="indent"><b><i>The Guide. </i></b>When another linked creature within 5 feet of you hits a target with a weapon attack, you can use your reaction to have the attack deal an additional 1d6 damage of the weapon’s type.</p>
+            <p class="indent"><b><i>The Handmaiden. </i></b>When another linked creature is hit by an attack, you can use your reaction to make a melee weapon attack against the attacker if it is within reach.</p>
+            <p class="indent"><b><i>The Hunter. </i></b>When another linked creature hits a target with an attack, you can use your reaction to make a ranged weapon attack against that target if it is within range.</p>
+            <p class="indent"><b><i>The Jester. </i></b>When you take the Dodge action, attack rolls by other linked creatures against targets within 5 feet of you have advantage until the start of your next turn.</p>
+            <p class="indent"><b><i>The Judge. </i></b>You have advantage on melee attack rolls against targets within 5 feet of other linked creatures.</p>
+            <p class="indent"><b><i>The Pariah. </i></b>When another linked creature takes damage, you can use your reaction to take that damage instead of them. When you do so, the damage type changes to force. This feature doesn’t transfer any other effects that might accompany the damage.</p>
+            <p class="indent"><b><i>The Princess. </i></b>When you take damage, any other linked creature can use their reaction to take that damage instead of you. When they do so, the damage type changes to force. This feature doesn’t transfer any other effects that might accompany the damage.</p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Sentinel Star" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_SENTINEL_STAR">
+        <description>
+            <p>This two-inch blue sphere softly glows, creating dim light in a 5-foot radius. Once attuned, it hovers in the air, unaffected by gravity.</p>
+            <p class="indent">As a bonus action on your turn, you can move the sphere up to 30 feet to an unoccupied space you can see within 30 feet of you.</p>
+            <p class="indent">Creatures near the sphere provoke opportunity attacks from you as if you were in the sphere’s space. When you take this opportunity attack, a phantom image of your weapon lashes out from the sphere, mimicking your movements. This attack deal radiant damage instead of your weapon’s normal damage type.</p>
+            <p class="indent">The sphere has AC 24, 50 hit points, and resistance to all damage. If shattered, it can be repaired through a 1 hour ritual. You can perform this ritual only at night, under a clear night sky.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Staff of Stars" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_STAFF_OF_STARS">
+        <description>
+            <p>A smooth blackwood staff studded with gleaming star-like gems, this staff boasts powerful astral magics.</p>
+            <p class="indent">You have resistance to radiant damage while you hold this staff.</p>
+            <p class="indent">The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell attack bonus and save DC: <i>magic missile</i> (1 charge), <i>sickening radiance<sup>XGtE</sup></i> (3 charges), or <i>crown of stars<sup>XGtE</sup></i> (7 charges).</p>
+            <p class="indent">The staff regains 1d6+4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff glows intensely, vaporizes, and is destroyed.</p>
+        </description>
+        <setters>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="attunement" addition="by a spellcaster">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="enhancement">0</set>
+        </setters>
+    </element>
+    <element name="Starfall Hammer" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_STARFALL_HAMMER">
+        <description>
+            <p>Forged from a fallen star in the fires of its violent impact, this hammer is always accompanied by the faint smell of burning ozone.</p>
+            <p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+            <p class="indent">This weapon has 5 charges, and it regains 1d4+1 expended charges daily at dusk. When you hit a creature with this weapon, you can expend 1 charge to intensify the weapon’s weight, driving it downwards with tremendous force. Each creature within 10 feet of you must make a DC 18 Strength saving throw or be knocked prone.</p>
+            <p class="indent">Additionally, you can expend 3 charges to cast <i>reverse gravity</i> (save DC 18), centered on yourself. When you cast the spell in this way, you are immune to the spell’s effect, and the spell ends at the start of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light hammer, maul, or warhammer">Weapon</set>
+            <set name="rarity">Legendary</set>
+            <set name="enhancement">2</set>
+            <set name="weapon">Light Hammer||Maul||Warhammer</set>
+			<set name="name-format">Starfall {{parent}}</set>
+        </setters>
+    </element>
+    <element name="Starlight Pendant" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_STARLIGHT_PENDANT">
+        <description>
+            <p>A glittering golden star-shaped pendant on a silver chain, this necklace grants its wearer the power to manipulate small lights. While attuned to the necklace, you can cast the <i>dancing lights</i> cantrip. The lights appear as tiny diamonds, no matter what angle they’re viewed from. Once per day, you can cast the <i>daylight</i> spell, targeting the necklace. Once you use the necklace this way, you can’t do so again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Skyfish Apparatus" type="Magic Item" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_MAGIC_ITEM_SKYFISH_APPARATUS">
+        <description>
+            <p>A Gargantuan metallic whale weighing 5000 pounds, this apparatus has a hidden catch on the top of the whale’s head, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch into an airlock, through which the apparatus’ main compartment can be accessed. The apparatus fits two Large creatures or eight Medium or smaller creatures to crawl inside. Ten levers are set in a row inside the main compartment, each in a neutral position, able to move either up or down.</p>
+            <ul class="unstyled">
+                <li><strong>Armor Class: </strong>20</li>
+                <li><strong>Hit Points: </strong>500</li>
+                <li><strong>Speed: </strong>swim 60 ft., fly 60 ft.</li>
+                <li><strong>Damage Immunities: </strong>poison, psychic</li>
+            </ul>
+            <p class="indent">To be used as a vehicle, the apparatus requires one pilot. While the apparatus’ hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 100 hours of breathing, divided by the number of breathing creatures inside.</p>
+            <p class="indent">The apparatus is built to survive the perils of space, and can travel through a complete vacuum with no ill effect.</p>
+            <p class="indent">A creature in the compartment can use an action to move as many as two of the apparatus’s levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Skyfish Apparatus Levers table.</p>
+            <table>
+                <thead>
+                    <tr><td>Lever</td><td>Up</td><td>Down</td></tr>
+                </thead>
+                <tr><td>1</td><td>Two fin-like wings extend, allowing the apparatus to fly and swim.</td><td>Wings retract, reducing the apparatus’s speed to 0. While in this state, the apparatus gains a +2 bonus to its AC, and can still hover in place.</td></tr>
+                <tr><td>2</td><td>Forward window shutter opens.</td><td>Forward window shutter closes.</td></tr>
+                <tr><td>3</td><td>Side window shutters open (two per side).</td><td>Side window shutters close (two per side).</td></tr>
+                <tr><td>4</td><td>The mouth opens. Each creature in a 30-foot cone in front of the apparatus must make a DC 18 Strength saving throw or be pulled 10 feet toward the apparatus.</td><td>The mouth closes. Make the following melee weapon attack: +10 to hit, reach 5 ft., one target. Hit: 26 (4d12) piercing damage and the target is grappled (escape DC 18)</td></tr>
+                <tr><td>5</td><td>The apparatus begins charging its beam. While it is charging, the apparatus emits dim light in a 10-foot radius around its mouth if the mouth is closed, or a 60-foot cone of bright light and 60 feet of dim light beyond that if the mouth is open. The beam can remain charged for 1 minute, afterwards it must be recharged if not fired.</td><td>The apparatus fires a beam. If the mouth is closed, the beam fizzles, and the apparatus takes 72 (16d8) radiant damage. If the mouth is open, each creature in a 100 foot line, 5 feet wide, in front of the apparatus must make a DC 18 Dexterity saving throw. A creature takes 72 (16d8) radiant damage on a failed save, or half as much damage on a successful one.</td></tr>
+                <tr><td>6</td><td>The apparatus swims or flies forward.</td><td>The apparatus swims or flies backward.</td></tr>
+                <tr><td>7</td><td>The apparatus turns 90 degrees left.</td><td>The apparatus turns 90 degrees right.</td></tr>
+                <tr><td>8</td><td>The apparatus turns 90 degrees upward.</td><td>The apparatus turns 90 degrees downward.</td></tr>
+                <tr><td>9</td><td>Gravity within the apparatus is suppressed. All creatures and objects within the apparatus levitate.</td><td>Artificial gravity within the apparatus is enabled, oriented with the apparatus, affecting all creatures and objects inside the apparatus.</td></tr>
+                <tr><td>10</td><td>The door between the airlock and main compartment closes and the rear hatch unseals and opens.</td><td>The rear hatch closes and seals, and the airlock drains and opens to the main compartment.</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+        </setters>
+    </element>
+</elements>
