@@ -4,7 +4,7 @@
         <name>Lost Vaults: Potions</name>
         <description>Lost Vaults: Potions</description>
         <author url="https://www.reddit.com/user/MrBakudan/">u/MrBakudan</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="potions.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/lost-vaults/potions.xml" />
         </update>
     </info>
