@@ -2,7 +2,7 @@
 <index>
     <info>
         <name>All the Lights in the Sky are Stars</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="all-the-lights-in-the-sky-are-stars.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars.index" />
         </update>
     </info>
@@ -22,9 +22,9 @@
         <file name="wizard-school-of-astronomy.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/wizard-school-of-astronomy.xml" />
 
       <!-- Races -->
-        <file name="subraces-cosmic-gnome.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/sub-race-cosmic-gnome.xml" />
+        <file name="subraces-cosmic-gnome.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/subraces-cosmic-gnome.xml" />
         <file name="race-starforged.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/race-starforged.xml" />
-        <file name="subraces-star-genasi.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/sub-race-star-genasi.xml" />
+        <file name="subraces-star-genasi.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/subraces-star-genasi.xml" />
         <file name="race-vandori.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/race-vandori.xml" />
 
       <!-- Miscellaneous -->
