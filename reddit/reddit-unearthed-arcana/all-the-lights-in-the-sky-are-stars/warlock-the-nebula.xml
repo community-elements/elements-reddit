@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>The Nebula Otherworldly Patron</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="warlock-the-nebula.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/warlock-the-nebula.xml" />
         </update>
     </info>
@@ -96,7 +96,7 @@
             <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
         </description>
         <sheet usage="1/Short Rest">
-            <description>Choose a point within 60 feet you can see. A miniature star bursts into existence at the chosen point. Each creature within 30 feet of the star when it first appears must make a Constitution saving throw (save DC {{spellcasting:dc}}). On a failed save, a creature takes 6d10 radiant damage and is blinded for 1 minute. On a successful save, the creature takes half as much damage and isn’t blinded. At the end of each of its turns, the target can repeat the saving throw, ending the effect on a success. The star shines for one minute, and provides bright light in a 30-foot radius and dim light for an additional 30 feet. Creatures within 30 feet of the star have disadvantage on saving throws against your warlock spells.</description>
+            <description>Choose a point within 60 feet you can see. A miniature star bursts into existence at the chosen point. Each creature within 30 feet of the star when it first appears must make a Constitution saving throw (save DC {{spellcasting:dc:cha}}). On a failed save, a creature takes 6d10 radiant damage and is blinded for 1 minute. On a successful save, the creature takes half as much damage and isn’t blinded. At the end of each of its turns, the target can repeat the saving throw, ending the effect on a success. The star shines for one minute, and provides bright light in a 30-foot radius and dim light for an additional 30 feet. Creatures within 30 feet of the star have disadvantage on saving throws against your warlock spells.</description>
         </sheet>
     </element>
 

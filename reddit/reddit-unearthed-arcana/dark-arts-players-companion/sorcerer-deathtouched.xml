@@ -3,7 +3,7 @@
     <info>
         <name>Deathtouched Sorcerous Origin</name>
 		<author url="https://drive.google.com/file/d/1Kr3ZKYy3Me0ZFOhOQAmKBZlB9JUauhW5/view">Jonoman3000</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="sorcerer-deathtouched.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/dark-arts-players-companion/sorcerer-deathtouched.xml" />
         </update>
     </info>
@@ -87,7 +87,7 @@
             <p class="indent">At the start of each of your turns, if the possessed creature has been damaged at least once since the end of your last turn it can repeat the saving throw, ending the effect on a success. You may also end the effect using your bonus action. A target is immune to Possession for 24 hours after succeeding on the saving throw.</p>
         </description>
         <sheet action="Action">
-            <description>you can spend 5 sorcery points to attempt to possess a creature of size large or smaller within 5 ft. of you. That creature must succeed on a Charisma saving throw (save DC {{spellcasting:dc}}) or be possessed for up to 1 hour.</description>
+            <description>you can spend 5 sorcery points to attempt to possess a creature of size large or smaller within 5 ft. of you. That creature must succeed on a Charisma saving throw (save DC {{spellcasting:dc:cha}}) or be possessed for up to 1 hour.</description>
         </sheet>
     </element>
     
