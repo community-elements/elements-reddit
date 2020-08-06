@@ -3,7 +3,7 @@
     <info>
         <name>Night Domain Divine Domain</name>
 		<author url="https://drive.google.com/file/d/1Kr3ZKYy3Me0ZFOhOQAmKBZlB9JUauhW5/view">Jonoman3000</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="cleric-night-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/dark-arts-players-companion/cleric-night-domain.xml" />
         </update>
     </info>
@@ -87,7 +87,7 @@
             <p class="indent">As an action, you present your holy symbol and all lights within 30 feet of you, magical or non-magical, are instantly put out. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes necrotic damage equal to 2d6 + your cleric level on a failed saving throw, and loses any darkvision they have for 1 minute. On a successful save, they take half as much damage and suffer no other effects. A creature can repeat this saving throw at the start of each of its turns, regaining their darkvision on a success.</p>
         </description>
         <sheet action="Action" usage="Channel Divinity" alt="Midnight Gloom">
-            <description>You present your holy symbol and all lights within 30 feet of you, magical or non-magical, are instantly put out. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw (save DC {{spellcasting:dc}}). A creature takes necrotic damage equal to 2d6 + {{level:cleric}} on a failed saving throw, and loses any darkvision they have for 1 minute. On a successful save, they take half as much damage and suffer no other effects. A creature can repeat this saving throw at the start of each of its turns, regaining their darkvision on a success.</description>
+            <description>You present your holy symbol and all lights within 30 feet of you, magical or non-magical, are instantly put out. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw (save DC {{spellcasting:dc:wis}}). A creature takes necrotic damage equal to 2d6 + {{level:cleric}} on a failed saving throw, and loses any darkvision they have for 1 minute. On a successful save, they take half as much damage and suffer no other effects. A creature can repeat this saving throw at the start of each of its turns, regaining their darkvision on a success.</description>
         </sheet>
     </element>
     

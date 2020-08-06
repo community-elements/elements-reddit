@@ -3,7 +3,7 @@
     <info>
         <name>Nightstalker Ranger Archteype</name>
 		<author url="https://drive.google.com/file/d/1Kr3ZKYy3Me0ZFOhOQAmKBZlB9JUauhW5/view">Jonoman3000</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="ranger-nightstalker.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/dark-arts-players-companion/ranger-nightstalker.xml" />
         </update>
     </info>
@@ -80,7 +80,7 @@
             <p class="indent">As an action, you can expend a ranger spell slot to infuse the cat’s claws with poison and have it leap onto a target within 30 feet of it. That creature must succeed on a Constitution saving throw against your Ranger spell save DC or be poisoned until the end of your next turn and take 2d8 poison damage for a 1st level spell slot, plus 1d8 for each spell level higher than 1st.</p>
         </description>
         <sheet action="Action">
-            <description>Your cat can attack in place of one of your attacks to have it move up to 30 feet and attack a creature. Hits do 1d4 + {{wisdom:modifier}} slashing damage, and the next attack against the creature has advantage. You can expend a ranger spell slot to infuse the attack with poison. It can travel 30 feet to attack. Target must make a Constitution saving throw (save DC {{spellcasting:dc}}) or be poisoned and take 2d8 poison damage, plus 1d8 for each spell slot higher than 1st.</description>
+            <description>Your cat can attack in place of one of your attacks to have it move up to 30 feet and attack a creature. Hits do 1d4 + {{wisdom:modifier}} slashing damage, and the next attack against the creature has advantage. You can expend a ranger spell slot to infuse the attack with poison. It can travel 30 feet to attack. Target must make a Constitution saving throw (save DC {{spellcasting:dc:wis}}) or be poisoned and take 2d8 poison damage, plus 1d8 for each spell slot higher than 1st.</description>
         </sheet>
     </element>
     
@@ -91,7 +91,7 @@
             <p class="indent">As an action, you can expend a ranger spell slot to infuse the raven with lightning and have it travel along a line 5 feet wide and 30 feet long. Each creature in that line must succeed on a Dexterity saving throw or take 2d6 lightning damage for a 1st level spell slot, plus 1d6 for each spell level higher than 1st.</p>
         </description>
         <sheet action="Action">
-            <description>Your raven can attack in place of one of your attacks to have it move up to 30 feet and attack a creature. Hits do 1d10 + {{wisdom:modifier}} piercing damage. You can expend a ranger spell slot to infuse the raven with lightning. It can travel 30 feet to attack. Target must make a Constitution saving throw (save DC {{spellcasting:dc}}) or take 2d6 lightning damage, plus 1d6 for each spell slot higher than 1st.</description>
+            <description>Your raven can attack in place of one of your attacks to have it move up to 30 feet and attack a creature. Hits do 1d10 + {{wisdom:modifier}} piercing damage. You can expend a ranger spell slot to infuse the raven with lightning. It can travel 30 feet to attack. Target must make a Constitution saving throw (save DC {{spellcasting:dc:wis}}) or take 2d6 lightning damage, plus 1d6 for each spell slot higher than 1st.</description>
         </sheet>
     </element>
     

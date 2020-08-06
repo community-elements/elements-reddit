@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Star Spawn Sorcerous Origin</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="sorcerer-star-spawn.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/sorcerer-star-spawn.xml" />
         </update>
     </info>
@@ -47,7 +47,7 @@
             <p class="indent">Additionally, as a reaction to being hit by an attack, you can spend one sorcery point to negate the damage and magically teleport yourself to an unoccupied space within 30 feet of you.</p>
         </description>
         <sheet action="Action">
-            <description>You can spend one sorcery point to force a creature you can see within 30 feet of you to be forcefully warped. The target must make a Wisdom saving throw (save DC {{spellcasting:dc}}). On a failed save, the target, along with any equipment it is wearing or carrying, is magically teleported up to 30 feet to an unoccupied space you can see. A willing creature can choose to fail this save. </description>
+            <description>You can spend one sorcery point to force a creature you can see within 30 feet of you to be forcefully warped. The target must make a Wisdom saving throw (save DC {{spellcasting:dc:cha}}). On a failed save, the target, along with any equipment it is wearing or carrying, is magically teleported up to 30 feet to an unoccupied space you can see. A willing creature can choose to fail this save. </description>
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_STAR_SPAWN_BEND_SPACE_REACTION" level="6" />
@@ -76,7 +76,7 @@
             <p class="indent">If the creature ends its turn in a location where it doesn’t have line of sight to you, it can repeat the saving throw, ending the effect on a success.</p>
         </description>
         <sheet action="Action">
-            <description>You can spend 5 sorcery points to exude an aura of madness to a distance of 60 feet. Each creature within this area must make a Wisdom saving throw (save DC {{spellcasting:dc}}) or go insane. While insane, it can’t take actions, can’t understand what other creatures say, can’t read, and speak only in gibberish. You can choose up to {{charisma:modifier}} creatures to automatically succeed the saving throw. If the creature ends its turn in a location where it doesn’t have line of sight to you, it can repeat the saving throw, ending the effect on a success.</description>
+            <description>You can spend 5 sorcery points to exude an aura of madness to a distance of 60 feet. Each creature within this area must make a Wisdom saving throw (save DC {{spellcasting:dc:cha}}) or go insane. While insane, it can’t take actions, can’t understand what other creatures say, can’t read, and speak only in gibberish. You can choose up to {{charisma:modifier}} creatures to automatically succeed the saving throw. If the creature ends its turn in a location where it doesn’t have line of sight to you, it can repeat the saving throw, ending the effect on a success.</description>
         </sheet>
     </element>
     <element name="Origin Spells" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_STAR_SPAWN_ORIGIN_SPELLS">

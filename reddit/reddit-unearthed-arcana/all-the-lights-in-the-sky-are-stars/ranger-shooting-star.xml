@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Shooting Star Ranger Archetype</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="ranger-shooting-star.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/ranger-shooting-star.xml" />
         </update>
     </info>
@@ -68,7 +68,7 @@
                 <p>As an action, you can expend a mote and launch it at a point within 120 feet of you. Each creature within 10 feet of that point must make a Dexterity saving throw against your ranger spell save DC. A creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one. This damage increases to 3d6 at 7th level, 4d6 at 11th level, and 5d6 at 15th level.</p>
             </description>
             <sheet alt="Scattered Sparks" action="Action">
-                <description>You can expend a mote and launch it at a point within 120 feet of you. Each creature within 10 feet of that point must make a Dexterity saving throw (save DC {{spellcasting:dc}}). A creature takes {{scattered-sparks:damage-dice}}d6 fire damage on a failed save, or half as much damage on a successful one.</description>
+                <description>You can expend a mote and launch it at a point within 120 feet of you. Each creature within 10 feet of that point must make a Dexterity saving throw (save DC {{spellcasting:dc:wis}}). A creature takes {{scattered-sparks:damage-dice}}d6 fire damage on a failed save, or half as much damage on a successful one.</description>
             </sheet>
             <rules>
                 <stat name="scattered-sparks:damage-dice" value="2" level="3" />

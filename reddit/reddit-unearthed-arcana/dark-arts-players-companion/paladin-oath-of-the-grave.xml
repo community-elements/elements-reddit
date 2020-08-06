@@ -3,7 +3,7 @@
     <info>
         <name>Oath of the Grave Sacred Oath</name>
 		<author url="https://drive.google.com/file/d/1Kr3ZKYy3Me0ZFOhOQAmKBZlB9JUauhW5/view">Jonoman3000</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="paladin-oath-of-the-grave.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/dark-arts-players-companion/paladin-oath-of-the-grave.xml" />
         </update>
     </info>
@@ -90,7 +90,7 @@
             <p class="indent">A frozen creature is affected by the petrified condition until the frozen effect ends, at which point the creature is freed and able to act normally.</p>
         </description>
         <sheet alt="Icy Repose" usage="Channel Divinity" action="Action">
-            <description>You present your holy symbol and speak a prayer against undeath. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw (save DC {{spellcasting:dc}}). If the creature fails its saving throw, it is frozen for 1 minute or until it takes damage. A frozen creature is affected by the petrified condition until the frozen effect ends.</description>
+            <description>You present your holy symbol and speak a prayer against undeath. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw (save DC {{spellcasting:dc:cha}}). If the creature fails its saving throw, it is frozen for 1 minute or until it takes damage. A frozen creature is affected by the petrified condition until the frozen effect ends.</description>
         </sheet>
     </element>  
     
