@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Circle of the Sun Druid Circle</name>
+        <update version="0.0.1">
+            <file name="druid-circle-of-the-sun.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/druid-circle-of-the-sun.xml" />
+        </update>
+    </info>
+    
+    <element name="Circle of the Sun" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_DRUID_CIRCLE_OF_THE_SUN">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>Druids connected with the Circle of the Sun hail from regions that have strong ties to the celestial planes, like Mount Celestia or Elysium. These druids form connections with celestial spirits and the radiant energy of the upper planes, granting them exceptional magical capabilities, and the ability to summon celestial spirits to aid them. Their order gathers yearly, when the sun reaches its highest point in the sky on the summer solstice. Their meetings often take place upon the highest mountains, where they can feel closer to the heavens, and they are usually attended by a number of low-ranking celestials in addition to their ranks of druids. In their meetings these druids share news about the forces of evil, and coordinate with their celestial comrades in their plans to root out and destroy these evils.</p>
+            <p class="indent">Members of this circle often consider themselves the opposite of the circle of the moon. Rather than secluding themselves in darkness and secrecy, sun druids do their work in the open, and often come in direct contact with other humanoids—whether to hunt them down or protect them from the forces of evil. Aided by their celestial spirits, these druids watch over the lands and protect the good in the world from encroaching darkness.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_SPIRITCALLER" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_SUNLIT_PASSING" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_TWINNED_SPIRITS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_SOLAR_FLARES" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_RADIANT_BODY" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_SPIRITCALLER" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_SUNLIT_PASSING" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_TWINNED_SPIRITS" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_SOLAR_FLARES" level="10" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_RADIANT_BODY" level="14" />
+        </rules>
+    </element>
+        <element name="Spiritcaller" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_SPIRITCALLER">
+            <description>
+                <p>When you choose this circle at 2nd level, you gain the ability to channel radiant energy to form tiny creatures that follow your commands. As a bonus action on your turn, you can expend a use of your Wild Shape feature to awaken the radiant energy within you, rather than transforming into a beast form, and you gain 3 temporary hit points for each level you have in this class.</p>
+                <p class="indent">This feature lasts for 10 minutes, until you lose all these temporary hit points, or until you use your Wild Shape again. As part of the bonus action used to enter this form, and as a bonus action on each turn thereafter for as long as this feature lasts, you can summon a spirit. The spirit appears in an unoccupied location that you can see within 10 feet of you, and takes the form of a Tiny CR 0 beast without a flying or swimming speed. The spirit lasts for the duration of this feature and has the same statistics as the beast it resembles, but its type is celestial, it cannot take actions other than the Dodge, Dash, Disengage, and Hide actions, it’s visibly magical, and it gives off dim light to a range of 5 feet. If you summon a spirit when you already have three spirits under your control, you must first choose a spirit to dismiss.</p>
+                <p class="indent">The spirits act on your turn, and move and take actions as you telepathically command them (no action required). This telepathy has a maximum range of 120 feet. Additionally, as an action, you can see through a spirit’s eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the spirit has. During this time, you are deaf and blind with regard to your own senses. Lastly, whenever you cast a spell, you can cause a spirit that you can see within 120 feet of you to deliver the spell in your place. The spell’s effects are the same as if you had cast the spell, but its point of origin is at the location of the spirit you chose, and you are considered to be at that location for any spells that refer to “you” in their text.</p>
+                <p class="indent">Beginning at 4th level, your spirits can take forms with swimming speeds, and at 8th level, they can take forms with flying speeds.</p>
+            </description>
+            <sheet action="Bonus Action" usage="Wild Shape">
+                <description>You can expend a use of your Wild Shape feature to summon one spirit, rather than transforming into a beast form, and you gain {{spiritcaller:temp-hp}} temporary hit points and lasts 10 minutes. The spirit is a Tiny CR 0 beast without flying or swimming speed. You can have up to {{spiritcaller:spirit-limit}} spirits.</description>
+                <description level="4">You can expend a use of your Wild Shape feature to summon one spirit, rather than transforming into a beast form, and you gain {{spiritcaller:temp-hp}} temporary hit points and lasts 10 minutes. The spirit is a Tiny CR 0 beast without flying speed. You can have up to {{spiritcaller:spirit-limit}} spirits.</description>
+                <description level="8">You can expend a use of your Wild Shape feature to summon one spirit, rather than transforming into a beast form, and you gain {{spiritcaller:temp-hp}} temporary hit points and lasts 10 minutes. The spirit is a Tiny CR 0 beast. You can have up to {{spiritcaller:spirit-limit}} spirits.</description>
+            </sheet>
+            <rules>
+                <stat name="spiritcaller:temp-hp" value="level:druid" />
+                <stat name="spiritcaller:temp-hp" value="level:druid" />
+                <stat name="spiritcaller:temp-hp" value="level:druid" />
+                <stat name="spiritcaller:spirits" inline="true" value="one spirit" level="2" />
+                <stat name="spiritcaller:spirit-limit" value="3" level="2" />
+            </rules>
+        </element>
+        <element name="Sunlit Passing" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_SUNLIT_PASSING">
+            <description>
+                <p>Also at 2nd level, you can harness the light of a creature’s soul as it falls. When a creature within 120 feet of you is reduced to 0 hit points, you can use your reaction to send this light streaking towards a target within 10 feet of the fallen creature. If the target is hostile to you, it must make a Constitution saving throw against your spell save DC, taking 1d8 radiant damage on a failed save or half as much damage on a successful one. If the target is friendly to you, it regains 1d4 hit points.</p>
+                <p class="indent">The damage and healing increase to 2d8/2d4 at 6th level, 3d8/3d4 at 10th level, and 4d8/4d4 at 14th level.</p>
+                <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+            </description>
+            <sheet action="Reaction" usage="{{sunlit-passing:uses}}/Long Rest">
+                <description>When a creature within 120 feet of you is reduced to 0 hit points, you can send this light streaking towards a target within 10 feet of the fallen creature. If the target is hostile to you, it must make a Constitution saving throw (save DC {{spellcasting:dc}}), taking {{sunlit-passing:damage-dice}}d8 radiant damage on a failed save or half as much damage on a successful one. If the target is friendly to you, it regains {{sunlit-passing:damage-dice}}d4 hit points.</description>
+            </sheet>
+            <rules>
+                <stat name="sunlit-passing:damage-dice" value="1" level="2" />
+                <stat name="sunlit-passing:damage-dice" value="1" level="6" />
+                <stat name="sunlit-passing:damage-dice" value="1" level="10" />
+                <stat name="sunlit-passing:damage-dice" value="1" level="14" />
+                <stat name="sunlit-passing:uses" value="1" bonus="base" />
+                <stat name="sunlit-passing:uses" value="wisdom:modifier" bonus="base" />
+            </rules>
+        </element>
+        <element name="Twinned Spirits" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_TWINNED_SPIRITS">
+            <description>
+                <p>Starting at 6th level, whenever you would summon a spirit with your Spiritcaller feature, you instead summon two spirits at two different unoccupied locations you can see within 10 feet of you. Also, the maximum number of spirits you can summon at once before you need to dismiss them increases from three to six.</p>
+                <p class="indent">Additionally, you can use a bonus action on each of your turns to allow one of your spirits to take the Help action.</p>
+            </description>
+            <sheet>
+                <description>You can use a bonus action on each of your turns to allow one of your spirits to take the Help action.</description>
+            </sheet>
+            <rules>
+                <stat name="spiritcaller:spirits" inline="true" value="two spirits" level="6" />
+                <stat name="spiritcaller:spirit-limit" value="3" level="6" />
+            </rules>
+        </element>
+        <element name="Solar Flares" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_SOLAR_FLARES">
+            <description>
+                <p>At 10th level, you gain the ability to dismiss a spirit in a burst of blinding light. While your Spiritcaller feature is active, you can use your bonus action to dismiss one of the spirits summoned by that feature. When you do so, each creature within 5 feet of that spirit must succeed on a Constitution saving throw against your spell save DC or become blinded until the start of your next turn.</p>
+                <p class="indent">Once you use this feature, you can’t use it again until you cast a druid spell of 1st level or higher or finish a short or long rest.</p>
+            </description>
+            <sheet action="Bonus Action">
+                <description>While your Spiritcaller feature is active, you can dismiss one of the spirits summoned by that feature. When you do so, each creature within 5 feet of that spirit must succeed on a Constitution saving throw (save DC {{spellcasting:dc}}) or become blinded until the start of your next turn. You can’t use it again until you cast a druid spell of 1st level or higher or finish a short or long rest.</description>
+            </sheet>
+        </element>
+        <element name="Radiant Body" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SUN_RADIANT_BODY">
+            <description>
+                <p>At 14th level, your body becomes imbued with radiant magic. You become immune to radiant damage, and you can use your action to transform your body further, becoming a mote of sunlight until the end of the turn. While you’re in this form, you gain a flying speed equal to twice your walking speed, and your movement doesn’t provoke opportunity attacks.</p>
+            </description>
+            <sheet>
+                <description>You become immune to radiant damage, and you can use your action to transform your body further, becoming a mote of sunlight until the end of the turn. While you’re in this form, you gain a flying speed of {{radiant-body:speed}}, and your movement doesn’t provoke opportunity attacks.</description>
+            </sheet>
+            <rules>
+                <stat name="radiant-body:speed" value="speed" />
+                <stat name="radiant-body:speed" value="speed" />
+            </rules>
+        </element>
+</elements>

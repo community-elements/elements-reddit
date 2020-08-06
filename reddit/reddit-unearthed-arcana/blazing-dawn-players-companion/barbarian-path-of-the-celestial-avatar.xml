@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Path of the Celestial Avatar Primal Path</name>
+        <update version="0.0.1">
+            <file name="barbarian-path-of-the-celestial-avatar.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/barbarian-path-of-the-celestial-avatar.xml" />
+        </update>
+    </info>
+    
+    <element name="Path of the Celestial Avatar" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_BARBARIAN_PATH_OF_THE_CELESTIAL_AVATAR">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Some barbarians revere the celestial spirits that roam the lands and skies, and seek them out to be their guides and personal connection to the divine. A few barbarian clans have pre-established connections to celestial spirits, and for those clans taking this path is merely proving yourself worthy of that creature’s power. For many barbarians, however, taking this path requires them to search far and wide for a celestial willing to let them become an avatar.</p>
+            <p class="indent">Most any celestial creature is capable of granting a barbarian this path. The most common among these are unicorns, couatls, and low-ranking angels, who accept righteous barbarians as their avatars—extensions of their power that help them carry out their divine will. For some barbarians that take this path, their rage becomes reminiscent of divine possession—In rage, their personality can take on some of the attributes of their celestial guide’s personality.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_AVATAR_OF_MIGHT" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_CELESTIAL_BLESSING" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_DIVINE_GUIDANCE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_AVATAR_OF_LIGHT" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_AVATAR_OF_MIGHT" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_CELESTIAL_BLESSING" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_DIVINE_GUIDANCE" level="10" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_AVATAR_OF_LIGHT" level="14" />
+        </rules>
+    </element>
+        <element name="Avatar of Might" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_AVATAR_OF_MIGHT">
+            <description>
+                <p>When you adopt this path at 3rd level, you gain a celestial guide that you will serve as an avatar of its power. In return for your service, the guide bestows upon you the ability to channel divine magic through your rage. You gain access to the following spells: <em>detect evil and good</em>, <em>heroism</em>, and <em>protection from evil and good</em>. Wisdom is your spellcasting ability for all the spells granted by this feature.</p>
+                <p class="indent">On the turn you start your rage, you can use your action to cast one of the spells you gained with this feature at 1st level without expending a spell slot or using material components. For you, this spell doesn’t require concentration if it normally does, and it lasts for the duration of your rage rather than the duration the spell specifies. Also, as you cast this spell you release a burst of radiant energy, causing each creature of your choice within 5 feet of you to take radiant damage equal to your Wisdom modifier + the spell’s level (minimum 1). If this burst deals damage to at least one creature, your rage won’t end when this turn ends.</p>
+                <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest. You can use this feature twice per long rest starting at 6th level, and three times per long rest at 14th level.</p>
+                <p class="indent">At 10th level, you cast all the spells you gain with this feature at 2nd level, and you gain access to the following additional spells: <em>protection from poison</em>, <em>silence</em>, and <em>warding bond</em>.</p>
+                <p class="indent">At 14th level, you cast all the spells you gain with this feature at 3rd level, and you gain access to the following additional spells: <em>beacon of hope</em>, <em>daylight</em>, and <em>protection from energy</em>.</p>
+            </description>
+            <sheet usage="{{avatar-of-might:uses}}/Long Rest" action="Action">
+                <description>On the turn you start your rage, you can cast one of the spells you gain from this feature at {{avatar-of-might:casting-level}} level without expending a spell slot or material components. Wisdom is your spellcasting ability. For you, this spell doesn’t require concentration if it normally does, and it lasts for the duration of your rage rather than the duration the spell specifies. Also, as you cast this spell you release a burst of radiant energy, causing each creature of your choice within 5 feet of you to take {{wisdom:modifier}} + the spell’s level radiant damage (minimum 1). If this burst deals damage to at least one creature, your rage won’t end when this turn ends.</description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" />
+                <grant type="Spell" id="ID_PHB_SPELL_HEROISM" />
+                <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+                <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_POISON" level="10" />
+                <grant type="Spell" id="ID_PHB_SPELL_SILENCE" level="10" />
+                <grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="10" />
+                <grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="14" />
+                <grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" level="14" />
+                <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="14" />
+                <stat name="avatar-of-might:uses" value="1" level="3" />
+                <stat name="avatar-of-might:uses" value="1" level="6" />
+                <stat name="avatar-of-might:uses" value="1" level="14" />
+                <stat name="avatar-of-might:casting-level" value="1st" inline="true" level="3" />
+                <stat name="avatar-of-might:casting-level" value="2nd" inline="true" level="10" />
+                <stat name="avatar-of-might:casting-level" value="3rd" inline="true" level="14" />
+            </rules>
+        </element>
+        <element name="Celestial Blessing" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_CELESTIAL_BLESSING">
+            <description>
+                <p>At 6th level, you gain resistance to radiant and necrotic damage.</p>
+                <p class="indent">Additionally, once per rage you can use your bonus action to become momentarily incorporeal, as your body and all of your equipment appears to transform into brilliant starlight. For the next 10 feet of movement you make on your turn, you can move through other creatures and objects as if they weren’t there, and your movement doesn’t provoke opportunity attacks. If this movement ends and you’re still inside an object or creature, you are transported to the nearest unoccupied space outside of it, and take 2d6 force damage.</p>
+            </description>
+            <sheet action="Bonus Action" usage="1/Rage">
+                <description>You can become momentarily incorporeal, as your body and all of your equipment appears to transform into brilliant starlight. For the next 10 feet of movement you make on your turn, you can move through other creatures and objects as if they weren’t there, and your movement doesn’t provoke opportunity attacks. If this movement ends and you’re still inside an object or creature, you are transported to the nearest unoccupied space outside of it, and take 2d6 force damage.</description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+            </rules>
+        </element>
+        <element name="Divine Guidance" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_DIVINE_GUIDANCE">
+            <description>
+                <p>At 10th level, you can cast the <em>divination</em> spell, but only as a ritual. The entity you are put in contact with for this spell is the celestial guide you chose when you selected this subclass.</p>
+            </description>
+            <sheet>
+                <description>You can cast the divination spell, but only as a ritual. The entity you are put in contact with for this spell is the celestial guide you chose when you selected this subclass.</description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_DIVINATION" />
+            </rules>
+        </element>
+        <element name="Avatar of Light" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CELESTIAL_AVATAR_AVATAR_OF_LIGHT">
+            <description>
+                <p>Starting at 14th level, your rage gives off divine light. For the duration of your rage, bright light extends 15 feet from you in every direction, and dim light extends 15 feet beyond that. Creatures of your choice within the bright light gain resistance to radiant damage, necrotic damage, and one other damage type of your choice that isn’t bludgeoning, piercing, or slashing damage. You choose the damage type whenever you activate your rage.</p>
+            </description>
+            <sheet>
+                <description>For the duration of your rage, bright light extends 15 feet from you in every direction, and dim light extends 15 feet beyond that. Creatures of your choice within the bright light gain resistance to radiant damage, necrotic damage, and one other damage type of your choice that isn’t bludgeoning, piercing, or slashing damage. You choose the damage type whenever you activate your rage.</description>
+            </sheet>
+        </element>
+    
+</elements>

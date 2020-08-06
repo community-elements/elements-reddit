@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Circle of Flames Druid Circle</name>
+        <update version="0.0.1">
+            <file name="druid-circle-of-flames.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/druid-circle-of-flames.xml" />
+        </update>
+    </info>
+    
+    <element name="Circle of Flames" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_DRUID_CIRCLE_OF_FLAMES">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>Druids of the Circle of Flames recognize fire’s integral role in the natural world—they see it not only as a force of destruction, but as a force of rebirth, and ultimately of life. Throughout many environments, wildfires are merely a tool of nature that allow plants and animals to thrive. These druids seek to control and manipulate wildfires, allowing them to run their course without encroaching on civilization. Their order gathers in the burnt out remnants of forest fires, where they discuss their dealings and sow the first seeds of new growth within the charred soils.</p>
+            <p class="indent">These druids also devout much of their time to studying the most ancient forms of fire magic, created by creatures of primordial fire and those connected to the Elemental Plane of Fire. Through their study, they learn an array of fire-based magics, and gain the ability to infuse their wild shapes with the destructive power of fire.</p>
+            <p class="indent">Members of this circle become adventurers in their search knowledge, as they travel far and wide in search of ancient tomes and primordial beings, so that they might gain a deeper understanding of fire magic and the beings that created it. They also might seek to punish those that abuse and misuse fire—pyromaniacs are not welcome among their kin, and cannot be allowed to bring unbalance to the natural world.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_BONUS_CANTRIP" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_PRIMORDIAL_SHIFT" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_CIRCLE_SPELLS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_WILDFIRE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_LIFE_FROM_ASH" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_MASTER_OF_PRIMORDIAL_FLAME" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_BONUS_CANTRIP" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_PRIMORDIAL_SHIFT" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_CIRCLE_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_WILDFIRE" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_LIFE_FROM_ASH" level="10" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_MASTER_OF_PRIMORDIAL_FLAME" level="14" />
+        </rules>
+    </element>
+        <element name="Bonus Cantrip" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_BONUS_CANTRIP">
+            <description>
+                <p>When you choose this circle at 2nd level, you learn either the <em>create bonfire</em> cantrip or the <em>fire bolt</em> cantrip (your choice). The spell you choose is a druid spell for you.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <select type="Spell" name="Bonus Cantrip (Circle of Flames)" spellcastin="Druid" know="true" supports="ID_XGTE_SPELL_CREATE_BONFIRE|ID_PHB_SPELL_FIRE_BOLT" />
+            </rules>
+        </element>
+        <element name="Primordial Shift" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_PRIMORDIAL_SHIFT">
+            <description>
+                <p>Also at 2nd level, you learn how to speak, read, and write Ignan and Primordial.</p>
+                <p class="indent">Additionally, you learn to infuse your wild shape with primordial fire. When you use your Wild Shape, you can choose to expend two uses of the feature, rather than one. When you do so, your Wild Shape becomes empowered in the following ways:</p>
+                <ul>
+                    <li>You gain resistance to fire damage.</li>
+                    <li>You can speak Ignan and Primordial, regardless of your form’s speaking limitations.</li>
+                    <li>You gain temporary hit points equal to the hit point maximum of your Wild Shape form. These temporary hit points last for the duration of your Wild Shape.</li>
+                    <li>You can cast certain spells during this Wild Shape: the bonus cantrip you gained from this subclass, and the circle spells you gain from subsequent levels in this class.</li>
+                </ul>
+            </description>
+            <sheet usage="2 Wild Shape">
+                <description>You can choose to expend two uses of the feature, rather than one. When you do so, your Wild Shape becomes empowered in the following ways: You gain resistance to fire damage; you can speak Ignan and Primordial regardless of form; you gain maximum temporary hit points for your Wild Shape; you can cast the bonus cantrip and circle spells from this subclass.</description>
+            </sheet>
+            <rules>
+                <grant type="Language" id="ID_MM_LANGUAGE_IGNAN" />
+                <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+            </rules>
+        </element>
+        <element name="Circle Spells" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_CIRCLE_SPELLS">
+            <description>
+                <p>Your connection to fire infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to your circle spells.</p>
+                <p class="indent">Once you gain access to a circle spell, you’ll always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+                <h5>Circle of Flames Spells</h5>
+                <table>
+                    <thead>
+                        <tr><td>Druid Level</td><td>Spells</td></tr>
+                    </thead>
+                    <tr><td>3rd</td><td><i>aganazzar’s scorcher, flaming sphere</i></td></tr>
+                    <tr><td>5th</td><td><i>melf’s minute meteors, protection from energy</i></td></tr>
+                    <tr><td>7th</td><td><i>fire shield, wall of fire</i></td></tr>
+                    <tr><td>9th</td><td><i>flame strike, immolation</i></td></tr>
+                </table>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" spellcasting="Druid" prepared="true" level="3" />
+                <grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" spellcasting="Druid" prepared="true" level="3" />
+                <grant type="Spell" id="ID_XGTE_SPELL_MELFS_MINUTE_METEORS" spellcasting="Druid" prepared="true" level="5" />
+                <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Druid" prepared="true" level="5" />
+                <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Druid" prepared="true" level="7" />
+                <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" spellcasting="Druid" prepared="true" level="7" />
+                <grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" spellcasting="Druid" prepared="true" level="9" />
+                <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" spellcasting="Druid" prepared="true" level="9" />
+            </rules>
+        </element>
+        <element name="Wildfire" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_WILDFIRE">
+            <description>
+                <p>At 6th level, you can quickly cast your circle spells as you shift into a bestial form. When you use your action to transform into your Wild Shape and use your Primordial Shift feature, you can use your bonus action to cast one of your circle spells that normally has a casting time of 1 action.</p>
+            </description>
+            <sheet>
+                <description>When you use your action to transform into your Wild Shape and use your Primordial Shift feature, you can use your bonus action to cast one of your circle spells that normally has a casting time of 1 action.</description>
+            </sheet>
+        </element>
+        <element name="Life from Ash" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_LIFE_FROM_ASH">
+            <description>
+                <p>At 10th level, after you cast a spell of 1st level or higher that deals fire damage, magical ashes swirl around you in a 10-foot radius area centered on you for the next minute. The area travels with you, and it is difficult terrain for hostile creatures. As a bonus action, you can expend a spell slot to have the ashes dissipate into healing energy, causing the area to return to normal. One creature within the area regains hit points equal to your Wisdom modifier plus 1d10 hit points per level of the spell slot expended.</p>
+            </description>
+            <sheet>
+                <description>After you cast a spell of 1st level or higher that deals fire damage, magical ashes swirl around you in a 10-foot radius area centered on you for the next minute. The area travels with you, and it is difficult terrain for hostile creatures. As a bonus action, you can expend a spell slot to have the ashes dissipate into healing energy, causing the area to return to normal. One creature within the area regains {{wisdom:modifier}} + 1d10 hit points per level of the spell slot expended.</description>
+            </sheet>
+        </element>
+        <element name="Master of Primordial Flame" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_CIRCLE_OF_FLAMES_MASTER_OF_PRIMORDIAL_FLAME">
+            <description>
+                <p>At 14th level, you gain the benefits of your Primordial Shift whenever you use your Wild Shape, meaning you no longer need to expend two uses of your Wild Shape to use that feature.</p>
+                <p class="indent">Also, you gain the following additional bonuses while you are using your Wild Shape:</p>
+                <ul>
+                    <li>The number of temporary hit points you gain is increased to double the hit point maximum of your Wild Shape form.</li>
+                    <li>When you roll damage for the circle spells or bonus cantrips gained from this subclass, you can reroll up to four of the damage dice. You must use the new rolls.</li>
+                </ul>
+            </description>
+            <sheet>
+                <description>You gain the benefits of your Primordial Shift whenever you use your Wild Shape, meaning you no longer need to expend two uses of your Wild Shape to use that feature. The number of temporary hit points you gain is increased to double the hit point maximum of your Wild Shape form. When you roll damage for the circle spells or bonus cantrips gained from this subclass, you can reroll up to four of the damage dice. You must use the new rolls.</description>
+            </sheet>
+        </element>
+</elements>

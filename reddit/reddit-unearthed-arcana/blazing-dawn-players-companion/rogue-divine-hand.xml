@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Divine Hand Roguish Archetype</name>
+        <update version="0.0.1">
+            <file name="rogue-divine-hand.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/rogue-divine-hand.xml" />
+        </update>
+    </info>
+    
+    <element name="Divine Hand" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_ROGUE_DIVINE_HAND">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>As a Divine Hand, you focus your training on the arts of death and execution. However, unlike an assassin you do not employ yourself in the service of mortals. You have a higher calling, and have devoted yourself into the service of a deity. With this deity you have formed a personal connection—they speak with you directly, ordering you to dispose of their enemies and giving you other such tasks. To assist you in your endeavors, your deity has granted you divine powers. These powers can help you slay any foe, but are especially effective against the enemies of your deity.</p>
+            <p class="indent">Divine Hands are often members of a clergy, working directly for the church of their deity. But others work outside of any organization, and perform their duties independently—working only for themselves and their deity.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_RIGHT_HAND_OF_GOD" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_JUDGEMENT" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_DIVINE_GIFT" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_HUNTER_OF_THE_UNHOLY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_HOLY_EXECUTIONER" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_RIGHT_HAND_OF_GOD" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_JUDGEMENT" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_DIVINE_GIFT" level="9" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_HUNTER_OF_THE_UNHOLY" level="13" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_HOLY_EXECUTIONER" level="17" />
+        </rules>
+    </element>
+        <element name="Right Hand of God" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_RIGHT_HAND_OF_GOD">
+            <description>
+                <p>When you choose this archetype at 3rd level, you develop a closer relationship with your deity. You gain proficiency in the Religion skill. If you already have this proficiency, you instead gain proficiency in another skill of your choice.</p>
+                <p class="indent">Also, you gain the duty to hunt down the enemies of your deity. When you gain this archetype, determine with your DM what the enemies of your deity might be. They could be creature types (such as fiends and undead), specific types of humanoids, or even members of specific organizations. These enemies are considered your divine quarries. If your deity has many enemies, then only their most important ones might be considered your divine quarries, at the DMs discretion.</p>
+                <p class="indent">You have advantage on Wisdom (Survival) checks to track your divine quarries.</p>
+            </description>
+            <sheet>
+                <description>You select the enemies of your deity and those creatures become your divine quarry. You have advantage on Survival checks to track your divine quarries.</description>
+            </sheet>
+            <rules>
+                <select type="Proficiency" name="Skill Proficiency, Right Hand of God" option="true" supports="Skill" default="ID_PROFICIENCY_SKILL_RELIGION" />
+            </rules>
+        </element>
+        <element name="Judgement" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_JUDGEMENT">
+            <description>
+                <p>Also at 3rd level, you can mark a foe as the target of your divine ire. As a bonus action, you can choose one creature you can see within 120 feet of you. Until the end of the turn, you can use your Sneak Attack against that target even if you don’t have advantage on the attack roll, but not if you have disadvantage on it.</p>
+                <p class="indent">If you use your Sneak Attack against the marked target during the duration, you can expend a use of this feature to empower your strike. The attack’s damage type becomes radiant, and it gains one of the following bonus effects:</p>
+                <ul>
+                    <li>The target’s speed is reduced by 10 feet.</li>
+                    <li>The target can’t take reactions.</li>
+                    <li>The target can’t regain hit points.</li>
+                </ul>
+                <p class="indent">Each effect lasts until the start of your next turn. You can empower your attack a number of times equal to your Wisdom modifier (a minimum of once), and you regain all expended uses when you finish a long rest. If the target is one of your divine quarries, you can empower your strike against it without expending a use of this feature, even if this feature has no uses remaining.</p>
+            </description>
+            <sheet action="Bonus Action" usage="Empower: {{judgement:uses}}/Long Rest">
+                <description>You can choose one creature you can see within 120 feet of you that is the target of your divine ire. Until the end of the turn, you can use your Sneak Attack against that target even if you don’t have advantage on the attack roll, but not if you have disadvantage on it. If you use your Sneak Attack against the marked target during the duration, you can expend a use of this feature to empower your strike. The attack’s damage type becomes radiant, and it gains one of the following bonus effects: the target’s speed is reduced by 10 feet; the target can’t take reactions; or the target can’t regain hit points. If the target is one of your divine quarries, you can empower your strike against it without expending a use of this feature, even if this feature has no uses remaining.</description>
+            </sheet>
+            <rules>
+                <stat name="judgement:uses" value="1" bonus="base" />
+                <stat name="judgement:uses" value="wisdom:modifier" bonus="base" />
+            </rules>
+        </element>
+        <element name="Divine Gift" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_DIVINE_GIFT">
+            <description>
+                <p>At 9th level, your deity bestows divine magic upon you. You learn the <em>guidance</em> and <em>thaumaturgy</em> cantrips. Also, you can cast <em>detect magic</em>, <em>detect poison and disease</em>, and <em>augury</em>, but only as rituals. Your spellcasting ability for these spells is Wisdom.</p>
+            </description>
+            <sheet>
+                <description>You can cast detect magic, detect poison and disease, and augury, as rituals.</description>
+            </sheet>
+            <spellcasting name="Divine Hand" ability="Wisdom" prepare="true">
+                <list known="true">Divine Hand</list>
+            </spellcasting>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+                <grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_HOLY_SYMBOL" />
+                <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" spellcasting="Divine Hand"  known="true" prepared="true" />
+                <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" spellcasting="Divine Hand"  known="true" prepared="true" />
+                <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" spellcasting="Divine Hand" known="true" prepared="false" />
+                <grant type="Spell" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" spellcasting="Divine Hand" known="true" prepared="false" />
+                <grant type="Spell" id="ID_PHB_SPELL_AUGURY" spellcasting="Divine Hand" known="true" prepared="false" />                
+            </rules>
+        </element>
+        <element name="Hunter of the Unholy" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_HUNTER_OF_THE_UNHOLY">
+            <description>
+                <p>Starting at 13th level, your deity grants you knowledge to assist you in tracking and slaying your foes. When you mark a creature with your Judgement feature, you learn of any damage resistances and/or immunities that the creature possesses.</p>
+                <p class="indent">Also, you can call upon your deity as a bonus action, and have them reveal their enemies to you. Until the end of your next turn, you know the location of any of your divine quarries within 120 feet of you that are not behind total cover. You know the creature type of any being you sense, but not its specific identity. You can take this bonus action a number of times equal to 1 + your Wisdom modifier. When you finish a long rest, you regain all expended uses.</p>
+            </description>
+            <sheet usage="{{hunter-of-the-unholy:uses}}/Long Rest">
+                <description action="Bonus Action">You can call upon your deity and until the end of your next turn, you know the location of any of your divine quarries within 120 feet of you that are not behind total cover. You know the creature type of any being you sense, but not its specific identity. Also, when you mark a creature with your Judgement feature, you learn of any damage resistances and/or immunities that the creature possesses.</description>
+            </sheet>
+            <rules>
+                <stat name="hunter-of-the-unholy:uses" value="1" />
+                <stat name="hunter-of-the-unholy:uses" value="wisdom:modifier" />
+            </rules>
+        </element>
+        <element name="Holy Executioner" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DIVINE_HAND_HOLY_EXECUTIONER">
+            <description>
+                <p>Beginning at 17th level, your divine judgement becomes especially harsh. Whenever you use your Judgement feature against a creature and choose to empower your strike, your attack deals an additional 4d6 radiant damage to your target.</p>
+            </description>
+            <sheet>
+                <description>Whenever you use your Judgement feature against a creature and choose to empower your strike, your attack deals an additional 4d6 radiant damage to your target.</description>
+            </sheet>
+        </element>
+    
+</elements>

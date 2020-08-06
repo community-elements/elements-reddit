@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Bard College of Benevolence</name>
+        <update version="0.0.1">
+            <file name="bard-college-of-benevolence.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/bard-college-of-benevolence.xml" />
+        </update>
+    </info>
+    
+    <element name="College of Benevolence" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_BARD_COLLEGE_OF_BENEVOLENCE">
+        <supports>Bard College</supports>
+        <description>
+            <p>Bards of the College of Benevolence honed their craft in the upper planes, or at least through the tutelage of a creature native to the upper planes. These bards often learn their magic from celestial creatures, such as lesser angels, couatls, ki-rin, and unicorns. Others might be tutored by humanoids that have visited or taken residence in the upper planes, and gained enough knowledge of the celestial workings of the world to pass on that knowledge to others.</p>
+            <p class="indent">Regardless of their tutor, these bards learn to be master physicians and therapists, adept at healing both magically and nonmagically, and capable of putting others at ease with just a few choice words or a calming melody. Their teachers also emphasize the importance of redemption, mercy, and forgiveness, and teach that no life should be snuffed out needlessly. While bards of this college aren’t usually true pacifists, they typically seek out non-violent solutions whenever they can. They often attempt to persuade or reason with their foes, and can also use a variety of powerful magics to end conflicts before they start.</p>
+            <p class="indent">Bards of this college often travel through the lands and planes of the world, acting as both traveling doctors and traveling musicians. They heal the sick and injured, resolve conflicts, and bring joy and merriment to all settlements they pass through.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_BONUS_PROFICIENCY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_MERCIFUL_INSPIRATION" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_TRAINED_PHYSICIAN" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_PACT_OF_FORGIVENESS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_CALMING_PRESENCE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_BONUS_PROFICIENCY" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_MERCIFUL_INSPIRATION" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_TRAINED_PHYSICIAN" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_PACT_OF_FORGIVENESS" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_CALMING_PRESENCE" level="14" />
+        </rules>
+    </element>
+        <element name="Bonus Proficiency" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_BONUS_PROFICIENCY">
+            <description>
+                <p>When you join the College of Benevolence at 3rd level, you gain proficiency with the Medicine skill. </p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+            </rules>
+        </element>
+        <element name="Merciful Inspiration" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_MERCIFUL_INSPIRATION">
+            <description>
+                <p>At 3rd level, the magic laced into your voice can bring your comrades back from the brink of death.</p>
+                <p class="indent">When a creature within 60 feet of you is reduced to 0 hit points but not killed outright, you can use your reaction to expend one use of Bardic Inspiration, rolling the Bardic Inspiration die and causing the creature’s hit point value to equal the number rolled, rather than 0.</p>
+                <p class="indent">Once you use this feature on a creature, that creature can’t benefit from this feature again until it finishes a short or long rest.</p>
+            </description>
+            <sheet action="Reaction">
+                <description>When a creature within 60 feet of you is reduced to 0 hit points but not killed outright, you can expend one use of Bardic Inspiration, rolling the Bardic Inspiration die and causing the creature’s hit point value to equal the number rolled, rather than 0. Once you use this feature on a creature, that creature can’t benefit from this feature again until it finishes a short or long rest.</description>
+            </sheet>
+        </element>
+        <element name="Trained Physician" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_TRAINED_PHYSICIAN">
+            <description>
+                <p>Also at 3rd level, your extensive training in medicine has made you especially well-versed in the use of healer’s kits.</p>
+                <p class="indent">When you spend a use of a healer’s kit, you can choose to make a DC 10 Wisdom (Medicine) check. On a successful check, the use isn’t expended, as you are able to make do with limited aid from the kit. If the target is at 0 hit points and you roll a 20 on the d20 used for this check, the target regains 1 hit point.</p>
+                <p class="indent">Additionally, you can use a healer’s kit to treat disease. By spending a use of a healer’s kit and taking 10 minutes carefully treating a creature’s illness, you can grant that creature a bonus to their next Constitution saving throw made to recover from that disease. This bonus equals the bonus that you apply to your Wisdom (Medicine) checks.</p>
+            </description>
+            <sheet>
+                <description>When you spend a use of a healer’s kit, you can choose to make a DC 10 Wisdom (Medicine) check. On a successful check, the use isn’t expended, as you are able to make do with limited aid from the kit. If the target is at 0 hit points and you roll a 20 on the d20 used for this check, the target regains 1 hit point. Additionally, you can use a healer’s kit to treat disease. By spending a use of a healer’s kit and taking 10 minutes carefully treating a creature’s illness, you can grant that creature a bonus to their next Constitution saving throw made to recover from that disease. This bonus equals the bonus that you apply to your Wisdom (Medicine) checks.</description>
+            </sheet>
+        </element>
+        <element name="Pact of Forgiveness" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_PACT_OF_FORGIVENESS">
+            <description>
+                <p>Beginning at 6th level, you can cut a deal with a hostile creature as they fall—sparing their life, in return for their cooperation. When a hostile creature within 60 feet of you that is capable of speaking a language is reduced to 0 hit points, you can use your reaction to speak with them telepathically in the moments before they pass on. The message you give them must be 25 words or less, and it must include some kind of deal that they can agree or disagree with, in exchange for their life. For example, if you were to use this feature on a mysterious assassin, you could state “Tell me who hired you, and I will spare your life.” If they disagree with your terms or are unable to fulfill them, their death completes as normal. If they agree with them, however, they are left unconscious at 0 hit points, yet stable. When they awake, they are forced to comply with whatever they agreed to. This forced compliance ends after 30 days, when you choose to end it, or if wish is cast on the target.</p>
+                <p class="indent">For the next 45 days, you are also expected to hold up your end of the deal. If during this duration you or your companions damage or cast a harmful spell upon the creature without first being attacked by them, you become unable to use this feature again for the next 30 days, and the forced compliance ends.</p>
+                <p class="indent">As soon as the creature receives the message, they are granted all the information on this feature they would need to make an informed decision. Most importantly, they know that they will be forced to comply if they accept, and they know that you will be negatively impacted if you don’t hold up your end of the deal.</p>
+                <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest. You also can’t use the feature if you already have another creature under forced compliance.</p>
+            </description>
+            <sheet action="Reaction" usage="1/Short Rest">
+                <description>When a hostile creature within 60 feet of you that is capable of speaking a language is reduced to 0 hit points, you can use your reaction to speak with them telepathically in the moments before they pass on. The message you give them must be 25 words or less, and it must include some kind of deal that they can agree or disagree with, in exchange for their life. You can’t use the feature if you already have another creature under forced compliance.</description>
+            </sheet>
+        </element>
+        <element name="Calming Presence" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_COLLEGE_OF_BENEVOLENCE_CALMING_PRESENCE">
+            <description>
+                <p>Starting at 14th level, your magical presence can cause hostilities to cease before they even begin.</p>
+                <p class="indent">When you roll initiative, you can use your reaction to immediately cast calm emotions, without expending a spell slot. When you cast calm emotions in this way, you can choose to target any number of creatures that you can see within 120 feet of you, rather than a just targeting a 20-foot sphere, and the creatures you target don’t need to be humanoid. Additionally, creatures make their save against this spell with disadvantage.</p>
+                <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+            </description>
+            <sheet action="Reaction" usage="1/Long Rest">
+                <description>hen you roll initiative, you can use your reaction to immediately cast <em>calm emotions</em>, without expending a spell slot. When you cast calm emotions in this way, you can choose to target any number of creatures that you can see within 120 feet of you, rather than a just targeting a 20-foot sphere, and the creatures you target don’t need to be humanoid. Creatures make their save against this spell with disadvantage.</description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" />
+            </rules>
+        </element>
+    
+</elements>

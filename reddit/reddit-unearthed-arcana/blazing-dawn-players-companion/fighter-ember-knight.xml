@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Ember Knight Martial Archetype</name>
+        <update version="0.0.1">
+            <file name="fighter-ember-knight.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/fighter-ember-knight.xml" />
+        </update>
+    </info>
+    
+    <element name="Ember Knight" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FIGHTER_EMBER_KNIGHT">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p>An ember knight employs martial techniques combined with potent fire magic. While ember knights are often mistaken for the more common eldritch knights at first glance, the source of an ember knight’s magic comes from within, rather than from the study of magic. In this way they bare some resemblance to sorcerers. While the potential to become an ember knight might be within someone from birth, this potential typically doesn’t manifest until that person has a few battles under their belt. This event is generally referred to as an ember knight’s “awakening,” where they first begin to wield their fiery powers.</p>
+            <p class="indent">Ember knights make for impressive combatants, capable of clearing out groups of enemies with the explosive blades they conjure, or merely cutting down their foes with weapons wreathed in flame. Their presence can inspire fear in their opponents, and awe in their onlookers.</p>
+            <p class="indent">These warriors can easily find employment in times of war, where their magical capabilities can be used to wade through the tides of battle. Many become mercenaries, or even leaders of mercenary groups, and their services are often highly sought after. Anyone that employs an ember knight finds them to be worth their price.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_GIFTED_PYROMANCER" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FLAME_WIELDER" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_EXPLOSIVE_IMPACTS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FLAMEBORN" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FIERY_SURGE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_MASTER_PYROMANCER" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_GIFTED_PYROMANCER" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FLAME_WIELDER" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_EXPLOSIVE_IMPACTS" level="7" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FLAMEBORN" level="10" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FIERY_SURGE" level="15" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_MASTER_PYROMANCER" level="18" />
+        </rules>
+    </element>
+        <element name="Gifted Pyromancer" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_GIFTED_PYROMANCER">
+            <description>
+                <p>At 3rd level, you learn the <em>control flames</em> cantrip. Your spellcasting ability for this cantrip is Constitution, and you can choose to cast it as a bonus action, rather than an action.</p>
+            </description>
+            <sheet action="Bonus Action">
+                <description>You can cast control flames, using Constitution for your spellcasting ability.</description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" />
+            </rules>
+        </element>
+        <element name="Flame Wielder" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FLAME_WIELDER">
+            <description>
+                <p>Also at 3rd level, the pyromantic magic within you lets you imbue flames into your weaponry. This feature has 3 uses when you gain it, and the number of uses increases as you gain levels in this class. The feature has 4 uses at 7th level, 5 at 10th level, 6 at 15th level, and 7 at 18th level. You regain all expended uses when you finish a short or long rest. You can spend these uses in the following ways:</p>
+                <p class="indent"><em><strong>Burning Blade.</strong></em> As a bonus action, you can spend a use of this feature to ignite a weapon you’re holding for 10 minutes. While the weapon is ignited, it deals an additional 1d4 fire damage on a hit, and emits bright light in a 10-foot radius and dim light 10 feet beyond that.</p>
+                <p class="indent"><em><strong>Bursting Blade.</strong></em> When you take the Attack action, you can choose to forgo one or more of your attacks. For each attack you forgo, you must spend a use of this feature to summon a fiery blade and send it streaking towards a point that you can see within 60 feet of you. The blade explodes upon reaching its destination, destroying the blade, igniting unattended flammable objects within the area, and forcing each creature within 5 feet of the blade to make a Dexterity saving throw with a DC of 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice). On a failed save, a creature takes 2d8 fire damage. If a creature is in the area of multiple explosions, that creature makes separate saving throws for each explosion.</p>
+            </description>
+            <sheet usage="{{flame-wielder:uses}}/Short Rest">
+                <description></description>
+            </sheet>
+            <rules>
+                <stat name="flame-wielder:uses" value="3" level="3" />
+                <stat name="flame-wielder:uses" value="1" level="7" />
+                <stat name="flame-wielder:uses" value="1" level="10" />
+                <stat name="flame-wielder:uses" value="1" level="15" />
+                <stat name="flame-wielder:uses" value="1" level="18" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FLAME_WIELDER_BURNING_BLADE" level="3" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FLAME_WIELDER_BURSTING_BLADE" level="3" />
+            </rules>
+        </element>
+            <element name="Burning Blade" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FLAME_WIELDER_BURNING_BLADE">
+                <description>
+                    <p>As a bonus action, you can spend a use of this feature to ignite a weapon you’re holding for 10 minutes. While the weapon is ignited, it deals an additional 1d4 fire damage on a hit, and emits bright light in a 10-foot radius and dim light 10 feet beyond that.</p>
+                </description>
+                <sheet usage="Flame Wielder" action="Bonus Action">
+                    <description>You can ignite the weapon you are holding for 10 minutes. It deals an additional 1d4 fire damage on a hit, and emits bright light in a 10-foot radius and dim light 10 feet beyond that.</description>
+                </sheet>
+            </element>
+            <element name="Bursting Blade" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FLAME_WIELDER_BURSTING_BLADE">
+                <description>
+                    <p>When you take the Attack action, you can choose to forgo one or more of your attacks. For each attack you forgo, you must spend a use of this feature to summon a fiery blade and send it streaking towards a point that you can see within 60 feet of you. The blade explodes upon reaching its destination, destroying the blade, igniting unattended flammable objects within the area, and forcing each creature within 5 feet of the blade to make a Dexterity saving throw with a DC of 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice). On a failed save, a creature takes 2d8 fire damage. If a creature is in the area of multiple explosions, that creature makes separate saving throws for each explosion.</p>
+                </description>
+                <sheet usage="Flame Wielder">
+                    <description>When you take the Attack action, you can choose to forgo one or more of your attacks. For each attack you forgo, you must spend a use of this feature to summon a fiery blade and send it streaking towards a point that you can see within 60 feet of you. The blade explodes upon reaching its destination, destroying the blade, igniting unattended flammable objects within the area, and forcing each creature within {{bursting-blade:range}} feet of the blade to make a Dexterity saving throw (save DC {{bursting-blade:save-dc}}). On a failed save, a creature takes 2d8 fire damage. If a creature is in the area of multiple explosions, that creature makes separate saving throws for each explosion.</description>
+                    <description level="7">When you take the Attack action, you can choose to forgo one or more of your attacks. For each attack you forgo, you must spend a use of this feature to summon a fiery blade and send it streaking towards a point that you can see within 60 feet of you. The blade explodes upon reaching its destination, destroying the blade, igniting unattended flammable objects within the area, and forcing each creature within {{bursting-blade:range}} feet of the blade to make a Dexterity saving throw (save DC {{bursting-blade:save-dc}}). On a failed save, a creature takes 2d8 fire damage; half on a success. If a creature is in the area of multiple explosions, that creature makes separate saving throws for each explosion.</description>
+                </sheet>
+                <rules>
+                    <stat name="bursting-blade:save-dc" value="8" />
+                    <stat name="bursting-blade:save-dc" value="proficiency" />
+                    <stat name="bursting-blade:save-dc:modifier" value="strength:modifier" bonus="base" />
+                    <stat name="bursting-blade:save-dc:modifier" value="dexterity:modifier" bonus="base" />
+                    <stat name="bursting-blade:save-dc" value="bursting-blade:save-dc:modifier" />
+                    <stat name="bursting-blade:range" value="5" level="3" />
+                    <stat name="bursting-blade:range" value="5" level="7" />
+                    <stat name="bursting-blade:range" value="5" level="15" />
+                </rules>
+            </element>
+        <element name="Explosive Impacts" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_EXPLOSIVE_IMPACTS">
+            <description>
+                <p>Starting at 7th level, the blades you summon with your Flame Wielder feature become more powerful. The radius of a blade’s explosion increases from 5 feet to 10 feet, and a creature that succeeds on their save takes half damage, rather than none.</p>
+                <p class="indent">Beginning at 15th level, the explosion radius is further increased to 15 feet.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+        </element>
+        <element name="Flameborn" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FLAMEBORN">
+            <description>
+                <p>By 10th level, your body has become used to working with and wielding fire. You gain resistance to fire damage, and any fire damage you deal ignores fire resistance.</p>
+                <p class="indent">Also, you can use your bonus action to regain all expended uses of your Flame Wielder feature. Once you do so, you can’t do so again until you finish a long rest.</p>
+            </description>
+            <sheet>
+                <description>Any fire damage you deal ignores fire resistance. Also, you can use your bonus action to regain all expended uses of your Flame Wielder feature. Once you do so, you can’t do so again until you finish a long rest.</description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            </rules>
+        </element>
+        <element name="Fiery Surge" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_FIERY_SURGE">
+            <description>
+                <p>Beginning at 15th level, your Action Surge becomes imbued with fire magic. When you use your Action Surge, your speed increases by 10 feet until the end of the turn. While this speed increase lasts, your movement doesn’t provoke opportunity attacks, and you can choose to leave behind a trail of fire where you step. The trail is 5 feet wide, follows your movement, and lasts until the start of your next turn. A creature other than you that enters the trail for the first time on a turn or ends its turn there takes fire damage equal to your fighter level.</p>
+            </description>
+            <sheet usage="Action Surge">
+                <description>Your speed increases by 10 feet until the end of the turn and doesn’t provoke opportunity attacks. You can choose to leave a 5-foot wide trail of fire. A creature other than you that enters the trail for the first time on a turn or ends its turn there takes {{level:fighter}} points fire damage.</description>
+            </sheet>
+        </element>
+        <element name="Master Pyromancer" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_EMBER_KNIGHT_MASTER_PYROMANCER">
+            <description>
+                <p>Starting at 18th level, you have become one with the fiery powers you control, allowing you to harness some of them at-will. You gain the following benefits while you are conscious.</p>
+                <ul>
+                    <li>You gain immunity to fire damage.</li>
+                    <li>At the end of each of your turns, you can choose to release a wave of fire that deals 1d8 fire damage to each creature of your choice within 5 feet of you.</li>
+                    <li>The Burning Blade feature of Flame Wielder can be activated without expending a use, and its damage die is 1d6.</li>
+                </ul>
+            </description>
+            <sheet>
+                <description>You gain the following benefits while you are conscious: you are immune to fire damage; At the end of each of your turns, you can choose to release a wave of fire that deals 1d8 fire damage to each creature of your choice within 5 feet of you; and the Burning Blade feature of Flame Wielder can be activated without expending a use, and its damage die is 1d6.</description>
+            </sheet>
+        </element>
+</elements>

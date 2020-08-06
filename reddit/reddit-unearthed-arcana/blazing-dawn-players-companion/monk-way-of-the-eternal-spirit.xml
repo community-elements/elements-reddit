@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Way of the Eternal Spirit Monastic Tradition</name>
+        <update version="0.0.1">
+            <file name="monk-way-of-the-eternal-spirit.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/monk-way-of-the-eternal-spirit.xml" />
+        </update>
+    </info>
+    
+    <element name="Way of the Eternal Spirit" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_MONK_WAY_OF_THE_ETERNAL_SPIRIT">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>Monks of the Way of the Eternal Spirit learn to channel the energy of the positive plane, using the powers that it grants to defend their allies and come to the aid of those that need it most. Unlike the monks of most monastic traditions, monks of the way of the eternal spirit don’t typically live in monasteries or cloisters. Monks that follow this tradition are wanderers that travel through the lands, and sometimes even across planes, as they train and lend their aid to those they encounter. It is common for these monks to travel in small groups, where a single master leads and teaches one to three students.</p>
+            <p class="indent">Monks of this tradition are often easily identifiable by the intricate, magical tattoos that they adorn their bodies with. These tattoos are thought to improve their connection to the positive plane, so that they can more easily channel its energy. When a monk of this tradition harnesses their ki, their tattoos can change color or even begin to glow.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_BONUS_PROFICIENCIES" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_RADIANT_GUARDIAN" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_RESTORING_SPIRIT" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_ENDURING_BODY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_SPIRITUAL_DEFENDER" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_BONUS_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_RADIANT_GUARDIAN" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_RESTORING_SPIRIT" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_ENDURING_BODY" level="11" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_SPIRITUAL_DEFENDER" level="17" />
+        </rules>
+    </element>
+        <element name="Bonus Proficiencies" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_BONUS_PROFICIENCIES">
+            <description>
+                <p>When you choose this tradition at 3rd level, you gain proficiency in the Medicine skill if you don’t already have it. You also gain proficiency in the herbalism kit if you don’t already have it.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+            </rules>
+        </element>
+        <element name="Radiant Guardian" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_RADIANT_GUARDIAN">
+            <description>
+                <p>Also at 3rd level, you can manipulate your ki to come to the defense of your allies. You gain the following options:</p>
+                <ul>
+                    <li>As a bonus action, you can cause a creature you can see within 30 feet of you to gain temporary hit points equal to your Martial Arts die. When you use this option, you can choose to spend up to 3 ki to increase the number of temporary hit points gained by one Martial Arts die per ki point spent. These temporary hit points last until the end of your next turn.</li>
+                    <li>
+                        <p>When another creature within 30 feet of you takes damage, you can use your reaction and spend 1 ki point to disappear in a flash of light. You teleport to an unoccupied location within 5 feet of that creature, and grant it resistance to the triggering instance of damage. When you do so, you take damage equal to the damage that creature takes.</p>
+                        <p class="indent">When you use this option, you can choose to spend 2 ki points, rather than 1. If you do so, you don’t take damage equal to the damage the creature takes.</p>
+                        <p class="indent">If you are within 5 feet of your target when you use this option, you can choose to not teleport. In that case, the total ki cost for this option decreases by 1.</p>
+                    </li>
+                </ul>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_RADIANT_GUARDIAN_SPIRIT_OF_HEALTH" level="3" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_RADIANT_GUARDIAN_SPIRIT_OF_PROTECTION" level="3" />
+            </rules>
+        </element>
+            <element name="Radiant Guardian Spirit of Health" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_RADIANT_GUARDIAN_SPIRIT_OF_HEALTH">
+                <description>
+                    <p>As a bonus action, you can cause a creature you can see within 30 feet of you to gain temporary hit points equal to your Martial Arts die. When you use this option, you can choose to spend up to 3 ki to increase the number of temporary hit points gained by one Martial Arts die per ki point spent. These temporary hit points last until the end of your next turn.</p>
+                </description>
+                <sheet action="Bonus Action" usage="Up to 3 ki points">
+                    <description>You can spend up to 3 ki points to grant temporary hit points to an ally within 30 feet of you. For each point you spend, your ally gains 1d{{martial arts:dice}} per ki point spent.</description>
+                </sheet>
+            </element>
+            <element name="Radiant Guardian Spirt of Protection" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_RADIANT_GUARDIAN_SPIRIT_OF_PROTECTION">
+                <description>
+                    <p>When another creature within 30 feet of you takes damage, you can use your reaction and spend 1 ki point to disappear in a flash of light. You teleport to an unoccupied location within 5 feet of that creature, and grant it resistance to the triggering instance of damage. When you do so, you take damage equal to the damage that creature takes.</p>
+                    <p class="indent">When you use this option, you can choose to spend 2 ki points, rather than 1. If you do so, you don’t take damage equal to the damage the creature takes.</p>
+                    <p class="indent">If you are within 5 feet of your target when you use this option, you can choose to not teleport. In that case, the total ki cost for this option decreases by 1.</p>
+                </description>
+                <sheet action="Reaction" usage="1 or 2 ki points">
+                    <description>When another creature takes damage, you can spend 1 ki point to teleport within 5 feet of the creature and grant them resistance to the damage type. You take the same amount of damage as the creature unless you spend an additional ki point. If you are already within 5 feet of the target, you can choose not to teleport and reduce the ki cost by 1 point.</description>
+                </sheet>
+            </element>
+        <element name="Restoring Spirit" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_RESTORING_SPIRIT">
+            <description>
+                <p>Beginning at 6th level, tapping into the magic of ki mends your wounds. Whenever you spend ki, you regain hit points equal to the number of ki points you spend.</p>
+                <p class="indent">When you regain hit points in this way, you can choose to regain additional hit points equal to half your monk level. Once you do so, you can’t do so again until you finish a long rest.</p>
+            </description>
+            <sheet>
+                <description>Whenever you spend ki, you regain hit points equal to the number of ki points you spend. When you regain hit points in this way, you can choose to regain and additional {{level:monk:half}} hit points. Once you do so, you can’t do so again until you finish a long rest.</description>
+            </sheet>
+        </element>
+        <element name="Enduring Body" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_ENDURING_BODY">
+            <description>
+                <p>At 11th level, the positive energy that runs through your body causes you to age more slowly. For every 10 years that pass, your body only ages 1 year.</p>
+                <p class="indent">You can also harness this energy to help your body brush off attacks. As a bonus action, you can spend up to 3 ki points to increase the effectiveness of your unarmored defense. For the next minute, your AC equals 10 + your Dexterity modifier + your Wisdom modifier + the number of ki points spent, as long as you are wearing no armor and not wielding a shield.</p>
+            </description>
+            <sheet>
+                <description>For every 10 years that pass, your body only ages 1 year. As a bonus action, you can spend up to 3 ki points to increase the effectiveness of your unarmored defense. For the next minute, your AC equals {{ac}} + the number of ki points spent, as long as you are wearing no armor and not wielding a shield.</description>
+            </sheet>
+        </element>
+        <element name="Spiritual Defender" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ETERNAL_SPIRIT_SPIRITUAL_DEFENDER">
+            <description>
+                <p>At 17th level, you gain the ability to commune with those you meet, and come to their defense in their time of need. You can, for 1 minute, touch your palm to the chest of a willing creature that speaks at least one language to grant them your protection. As long as that creature is under your protection, you know the distance and direction to their location, and you can sense their current emotional state and whenever they take any damage. You can have up to six creatures under your protection at any one time, and a creature remains under your protection until you choose to end it (no action required), or if they are ever on a different plane of existence as you.</p>
+                <p class="indent">As an action, you can spend 10 ki points to teleport yourself and up to eight willing creatures of your choice within 10 feet of you to the location of one of the creatures under your protection. You and the creatures you transport with you appear in unoccupied locations within 60 feet of the targeted creature.</p>
+                <p class="indent">Once you teleport in this way, you can’t teleport to a target more than 5 miles away from you until you finish a long rest.</p>
+            </description>
+            <sheet action="Action" usage="1/Long Rest">
+                <description>You can spend 10 ki points to teleport yourself and up to 8 willing creatures to within 10 feet of the location of a creature under your protection. You put creatures under your protection via a 1-minute ritual, by touching their chest. You know the distance and direction to them, and can sense their emotional state and when they take damage. You can have up to 6 creatures under your protection.</description>
+            </sheet>
+        </element>
+</elements>

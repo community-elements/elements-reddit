@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Volcanus Race</name>
+        <update version="0.0.1">
+            <file name="race-volcanus.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/race-volcanus.xml" />
+        </update>
+    </info>
+    
+    <element name="Volcanus" type="Race" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACE_VOLCANUS">
+        <description>
+            <p>Volcani are a rare, ancient people, first born of primordial fire in an age long past. They live in places seldom traveled to by other races—volcanic mountain ranges and island chains, too hot for most other creatures to stand. But within these lands volcanus society thrives, as they build impressive structures and fortresses from igneous rock, with streams of lava flowing between and around their settlements like rivers. Volcani are highly driven, and many can accomplish great feats during their short lives that many of the longer lived races wouldn’t even consider.</p>
+            <h4>MOLDED FROM FLAME</h4>
+            <p>The primordial god of fire, Kossuth, forged the first volcani from the white-hot magma that flows within the outer edges of the Plane of Fire, which he molded and cooled into a humanoid shape that resembled his own divine image. Over many generations, the physical appearance of volcani has mellowed somewhat, and they have become less elemental and more humanoid. They typically stand between 5 and 6 feet tall, though they are heavier than humans of equivalent height. Their skin color ranges from a deep black to a lighter red, but the most common shades are lighter browns and greys, occasionally accented by streaks of red. Their eyes are often brown or grey, though shades of red, orange, and yellow are also common. Their hair, usually kept of medium length, tends to be of a similar shade to their skin color.</p>
+            <p class="indent">A volcanus has a more elemental form that they can temporarily manifest, however. For short periods of time, a volcanus can unleash their inner elemental power, causing their eyes to become motes of elemental fire, as their skin darkens and takes on a metallic sheen. According to legend, this form was the natural form of the first volcani, and it only became temporary after many generations.</p>
+            <h4>UNBOUNDED DETERMINATION</h4>
+            <p>Kossuth made the volcani for a purpose. They were designed as his servants, driven to build to his specifications, fight for his causes, and exist as an extension of his will. And to this end they served him well, for a time. Kossuth’s dealings on the material plane were short lived, however, and he eventually found himself without need of his volcani servants. So he left them to their own devices, abandoned upon the material plane while he returned to the Plane of Fire.</p>
+            <p class="indent">Though their god had left them, the volcani lived on without him, transforming their drive to work for his purposes into a desire to better themselves. While their physical appearance has mellowed over the centuries, the same cannot be said about their determination. All volcani believe they were born for a reason, and they are always searching for the purpose they believe they must fulfill. When a volcanus finds their purpose, they either complete it or die trying. For a volcanus, there is no such thing as procrastination or giving up.</p>
+            <h4>VANISHING EMBERS</h4>
+            <p>A volcanus’ soul is like a flickering flame—bright and full of life, up until the moment it’s snuffed out. Moreso than any other race, a volcanus’ lifespan is uncertain. After reaching adulthood, a volcanus shows no more signs of aging, and can die a natural death at any point thereafter. Some might die as early as 20 years old, while others might live to the age of 80. The volcani believe that their lifespan is tied to their innate purpose—when they complete that purpose, death is surely just around the corner.</p>
+            <p class="indent">But for a volcanus, death isn’t truly the end. Death merely signals the beginning of the next generation. When a volcanus dies, their body burns to ash—colored a deep black for males and a vibrant red for females. It is from this ash that a volcanus’ children are born. By taking some of the ash of an adult male volcanus, combining it with some of the ash of an adult female volcanus, and using fresh lava to set that mixture ablaze, a new volcanus is born after the flames subside. A pair of two volcani has enough ash to sire four children, but most couples only sire two or three. The memories of a volcanus are in part passed down to their children, who often see the memories of their parents in vivid dreams. These memories can also give a volcanus a natural aptitude in the skills their parents knew.</p>
+            <p class="indent">The unique reproductive system of volcani, combined with their uncertain lifespans, makes it common for a volcanus to plan for their death early in life. It is almost considered a coming of age ceremony for a young adult volcanus to write their first will. A volcanus’ will generally specifies what is to be done with their material possessions, like the wills of other races, but more importantly it specifies what should be done with their ashes. Married volcani will typically create joint wills, stating potential names for their future children, and how many children they wish to have. Unmarried volcani are expected to donate their ashes their community, so that they might be used for adoption purposes. Another oddity of volcanus culture is the creation of a personal urn, which a volcanus either commissions or forges themself. These urns are heavily decorated with symbols telling the life story the volcanus they were made for, and are used to hold and transport a volcanus’ ashes upon their death.</p>
+            <h4>TIGHT-KNIT SOCIETIES</h4>
+            <p>Volcani live in small communities on the outskirts of active volcanoes, where they construct impressive stone buildings and complex roadways. The members of a volcanus community are expected to help the other members of their community, particularly in fulfilling their wills. Many volcani have jobs as caretakers, where they are tasked with raising the children of past community members. Some volcani are “seekers,” a job where they are tasked with finding and recovering the ashes of those that died in the field, so that those ashes can be brought back to the community and used as that volcanus’ will specified. There are also many adventurers among the volcani, as the desire to find their purpose leads many volcani to travel and perform great deeds, such as hunting down a deadly monster, fighting against oppressive regimes, or otherwise helping those in need.</p>
+            <h4>VOLCANUS NAMES</h4>
+            <p>As volcani couples are forced to choose their child’s names before they can know their gender, volcani names are typically gender-neutral. They also lack true family names—a volcanus’ last name is traditionally their father’s first name, followed by their mother’s first name, separated by a dash.</p>
+            <p><b>Volcanus Names:</b> Aldebrand, Azar, Cinaed, Fiamett, Fintan, Flann, Hurik, Ignati, Phoenix, Pyrrhus, Shula, Uriah, Uriel.</p>
+            <h4>VOLCANUS TRAITS</h4>
+            <p>Your volcanus character has a number of traits in common with all other volcani.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2, and another ability score of your choice increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Volcani mature quickly, often reaching adulthood by the age of 10. After reaching adulthood, their remaining lifespan is highly variable, and completely unpredictable, as they show no more signs of aging. A volcanus can die a natural death at the age of 20, though some can live to the age of 80. On average, they live less than 50 years.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> Volcani are most often good, though many are of neutral alignment. They seek to do good deeds, and generally work well together. Their somewhat regimented society and adherence to tradition gives them a lawful bent. They are reliable allies, and ease into both leader and follower roles.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Volcani have similar builds to humans, and are generally between 5½ and 6½ feet tall. Their dense, stone-like bodies cause them to weigh more than a human of similar height. A volcanus typically weighs over 200 pounds. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Ancestral Aptitude.</em></strong> When you rest, your dreams of the past can imbue you with skills inherited from your parents. Choose two skills, one that your mother was proficient in and one that your father was proficient in.</p>
+            <p class="indent">When you complete a long rest, you can choose one of these skills, and gain proficiency in it until you use this trait again.</p>
+            <p class="indent"><strong><em>Ashen Resistance.</em></strong> You have resistance to fire damage.</p>
+            <p class="indent"><strong><em>Eruption of Power.</em></strong> You can use your action to unleash the true power imbued to you by Kossuth, the Lord of Flames. When you do so, you gain temporary hit points equal to 1d4 + your level. These temporary hit points last for up to 10 minutes, and as long as they last, you have immunity to fire damage.</p>
+            <p class="indent">Once you unleash this power, you can’t do so again until you complete a long rest.</p>
+            <p class="indent"><strong><em>Lineal Visions.</em></strong> You can call upon your ancestral visions to help you recall lore that your parents might have known about. After you fail an Intelligence check made to recall lore, you can choose to immediately spend 1 minute searching for a vision, allowing you to remake the Intelligence check. At the the DM’s discretion, you might be able to discover lore that you had no chance of knowing, but your parents could have known.</p>
+            <p class="indent">Once you call upon a vision, you can’t do so again until you complete a long rest.</p>
+            <p class="indent"><strong><em>Primordial Flames.</em></strong> You know the produce flame cantrip. Charisma is your spellcasting ability for it.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Ignan, and Primordial.</p>
+            <div class="sidebar">
+                <h5>OPTIONAL FEAT</h5>
+                <p>If your DM allows the use of feats from chapter 6 of the <em>Player’s Handbook</em>, your volcanus character has access to the following special feat. Adventuring volcani often use familiars to notify their community of their death. When a volcanus dies in the field, their familiar is tasked with returning to their community and notifying their companions, so that the volcanus’ will can be upheld.</p>
+                <h5>Fiery Familiar</h5>
+                <p class="flavor">Prerequisite: Volcanus</p>
+                <p>You have trained to better harness your innate magical capabilities, gaining the following benefits:</p>
+                <ul>
+                    <li>Increase your Charisma score by 1, to a maximum of 20.</li>
+                    <li>
+                        <p>You learn the find familiar spell and can cast it only as a ritual. When you cast this spell to create a beast familiar, you can can choose for that creature to be an elemental rather than a celestial, fey, or fiend. When you do so, the familiar gains the following additional traits:</p>
+                        <p class="indent"><b><i>Fire Immunity</i></b> Your familiar is immune to fire damage.</p>
+                        <p class="indent"><b><i>Fiery Body</i></b> When a creature within 5 feet of your familiar hits it with a melee attack, the attacking creature takes 1d4 fire damage.</p>
+                        <p class="indent">Also, the familiar gains the following additional action:</p>
+                        <p class="indent"><b><i>Ignite</i></b> The familiar touches an object that isn’t being worn or carried, and ignites it.</p>
+                    </li>
+                </ul>
+            </div>
+        </description>
+        <setters>
+            <set name="names" type="male">Aldebrand, Azar, Cinaed, Fiamett, Fintan, Flann, Hurik, Ignati, Phoenix, Pyrrhus, Shula, Uriah, Uriel.</set>
+            <set name="names" type="female">Aldebrand, Azar, Cinaed, Fiamett, Fintan, Flann, Hurik, Ignati, Phoenix, Pyrrhus, Shula, Uriah, Uriel.</set>
+            <set name="names" type="clan"></set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="2d8">5’4"</set>
+            <set name="weight" modifier="2d4">200 lb.</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_VOLCANUS_ANCESTRAL_APTITUDE" />
+            <grant type="Racial Trait" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_VOLCANUS_ASHEN_RESISTANCE" />
+            <grant type="Racial Trait" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_VOLCANUS_ERUPTION_OF_POWER" />
+            <grant type="Racial Trait" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_VOLCANUS_LINEAL_VISIONS" />
+            <grant type="Racial Trait" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_VOLCANUS_PRIMORDIAL_FLAMES" />
+            <stat name="charisma" value="2" />
+            <select type="Racial Trait" name="Ability Score Increase (Volcanus)" supports="Volcanus Ability Score Increase" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_MM_LANGUAGE_IGNAN" />
+            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+        </rules>
+    </element>
+        <element name="Ancestral Aptitude" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_VOLCANUS_ANCESTRAL_APTITUDE">
+            <description>
+                <p>When you rest, your dreams of the past can imbue you with skills inherited from your parents. Choose two skills, one that your mother was proficient in and one that your father was proficient in.</p>
+                <p class="indent">When you complete a long rest, you can choose one of these skills, and gain proficiency in it until you use this trait again.</p>
+            </description>
+            <sheet>
+                <description>When you rest, your dreams of the past can imbue you with skills inherited from your parents. Choose two skills, one that your mother was proficient in and one that your father was proficient in. When you complete a long rest, you can choose one of these skills, and gain proficiency in it until you use this trait again.</description>
+            </sheet>
+        </element>
+        <element name="Ashen Resistance" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_VOLCANUS_ASHEN_RESISTANCE">
+            <description>
+                <p>You have resistance to fire damage.</p>
+            </description>
+            <sheet>
+                <description>You have resistance to fire damage.</description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            </rules>
+        </element>
+        <element name="Eruption of Power" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_VOLCANUS_ERUPTION_OF_POWER">
+            <description>
+                <p>You can use your action to unleash the true power imbued to you by Kossuth, the Lord of Flames. When you do so, you gain temporary hit points equal to 1d4 + your level. These temporary hit points last for up to 10 minutes, and as long as they last, you have immunity to fire damage.</p>
+                <p class="indent">Once you unleash this power, you can’t do so again until you complete a long rest.</p>
+            </description>
+            <sheet usage="1/Long Rest" action="Action">
+                <description>You can unleash the true power imbued to you by Kossuth. When you do so, you gain temporary hit points equal to 1d4 + {{level}}. These temporary hit points last for up to 10 minutes, and as long as they last, you have immunity to fire damage.</description>
+            </sheet>
+        </element>
+        <element name="Lineal Visions" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_VOLCANUS_LINEAL_VISIONS">
+            <description>
+                <p>You can call upon your ancestral visions to help you recall lore that your parents might have known about. After you fail an Intelligence check made to recall lore, you can choose to immediately spend 1 minute searching for a vision, allowing you to remake the Intelligence check. At the the DM’s discretion, you might be able to discover lore that you had no chance of knowing, but your parents could have known.</p>
+                <p class="indent">Once you call upon a vision, you can’t do so again until you complete a long rest.</p>
+            </description>
+            <sheet usage="1/Long Rest">
+                <description>After you fail an Intelligence check made to recall lore, you can choose to immediately spend 1 minute searching for a vision, allowing you to remake the Intelligence check. At the the DM’s discretion, you might be able to discover lore that you had no chance of knowing, but your parents could have known.</description>
+            </sheet>
+        </element>
+        <element name="Primordial Flames" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_VOLCANUS_PRIMORDIAL_FLAMES">
+            <description>
+                <p>You know the <em>produce flame</em> cantrip. Charisma is your spellcasting ability for it.</p>
+            </description>
+            <sheet>
+                <description>You know the produce flame cantrip. Charisma is your spellcasting ability for it.</description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+            </rules>
+        </element>
+
+  <!--Volcanus Ability Score Increase Ability Score Increase-->
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_ASI_STRENGTH">
+    <supports>Volcanus Ability Score Increase</supports>
+    <requirements />
+    <description>
+      <p>Your Strength score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="strength" value="1" alt="Volcanus Ability Score Increase" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_ASI_DEXTERITY">
+    <supports>Volcanus Ability Score Increase</supports>
+    <requirements />
+    <description>
+      <p>Your Dexterity score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="dexterity" value="1" alt="Volcanus Ability Score Increase" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_ASI_CONSTITUTION">
+    <supports>Volcanus Ability Score Increase</supports>
+    <requirements />
+    <description>
+      <p>Your Constitution score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="constitution" value="1" alt="Volcanus Ability Score Increase" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_ASI_INTELLIGENCE">
+    <supports>Volcanus Ability Score Increase</supports>
+    <requirements />
+    <description>
+      <p>Your Intelligence score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="intelligence" value="1" alt="Volcanus Ability Score Increase" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACIAL_TRAIT_ASI_WISDOM">
+    <supports>Volcanus Ability Score Increase</supports>
+    <requirements />
+    <description>
+      <p>Your Wisdom score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="wisdom" value="1" alt="Volcanus Ability Score Increase" />
+    </rules>
+  </element>
+
+    <element name="Fiery Familiar" type="Feat" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_FEAT_FIERY_FAMILIAR">
+        <requirements>ID_JONOMAN3000_BDPC_RACE_VOLCANUS</requirements>
+        <prerequisite>Volcanus</prerequisite>
+        <description>
+            <p class="flavor">Prequisite: Volcanus</p>
+            <p>You have trained to better harness your innate magical capabilities, gaining the following benefits:</p>
+            <ul>
+                <li>Increase your Charisma score by 1, to a maximum of 20.</li>
+                <li>
+                    <p>You learn the find familiar spell and can cast it only as a ritual. When you cast this spell to create a beast familiar, you can can choose for that creature to be an elemental rather than a celestial, fey, or fiend. When you do so, the familiar gains the following additional traits:</p>
+                    <p class="indent"><b><i>Fire Immunity</i></b> Your familiar is immune to fire damage.</p>
+                    <p class="indent"><b><i>Fiery Body</i></b> When a creature within 5 feet of your familiar hits it with a melee attack, the attacking creature takes 1d4 fire damage.</p>
+                    <p class="indent">Also, the familiar gains the following additional action:</p>
+                    <p class="indent"><b><i>Ignite</i></b> The familiar touches an object that isn’t being worn or carried, and ignites it.</p>
+                </li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="charisma" value="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+        </rules>
+    </element>
+</elements>

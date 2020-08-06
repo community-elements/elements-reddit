@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Devout Martial Archetype</name>
+        <update version="0.0.1">
+            <file name="fighter-devout.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/fighter-devout.xml" />
+        </update>
+    </info>
+    
+    <element name="Devout" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FIGHTER_DEVOUT">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p>An archetypical Devout bears a distinct resemblance to paladins and clerics, particularly in the way they present themselves. While they lack the divine magic offered by these classes, their divine fervor and unshakeable devotion to their gods are far from lacking. A Devout fights for their deity, commonly acting as crusaders or, less commonly, inquisitors of the faith. These fighters come from all walks of life, united by their zealotry and unbreakable faith. In their training, they become capable combatants, devoted friends, and learned scholars of their faith. A Devout’s way of life is arduous—they are always fighting for something, whether for their god, their companions, or a moral cause. They fully devote their mind and body to defending their allies and slaying their foes, as they can take on an almost trance-like demeanor during battle.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_BONUS_PROFICIENCY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_ZEALOTS_DEVOTION" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_SCHOLAR_OF_EVIL_AND_GOOD" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_IMPROVED_ZEALOTRY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_ENDLESS_FERVOR" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_DEUS_EX_MACHINA" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_BONUS_PROFICIENCY" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_ZEALOTS_DEVOTION" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_SCHOLAR_OF_EVIL_AND_GOOD" level="7" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_IMPROVED_ZEALOTRY" level="10" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_ENDLESS_FERVOR" level="15" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_DEUS_EX_MACHINA" level="18" />
+        </rules>
+    </element>
+        <element name="Bonus Proficiency" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_BONUS_PROFICIENCY">
+            <description>
+                <p>At 3rd level, you gain proficiency in the Religion skill. If you already have this proficiency, you instead gain proficiency in another skill of your choice.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <select type="Proficiency" name="Skill Proficiency (Devout)" supports="Skill" default="ID_PROFICIENCY_SKILL_RELIGION" />
+            </rules>
+        </element>
+        <element name="Zealot’s Devotion" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_ZEALOTS_DEVOTION">
+            <description>
+                <p>Also at 3rd level, you can devote yourself to a cause. As a bonus action, you can devote yourself towards either defender of kin or slayer of foes. Both choices use your zealotry die, a d6, as part of their effects, and your choice lasts until you choose a different one or are incapacitated:</p>
+                <p class="indent"><em><strong>Defender of Kin.</strong></em> You devote yourself towards defending your allies. While this feature lasts, you can use your bonus action to rally a creature other than you that is within 5 feet of you. You roll your zealotry die, and the targeted creature gains temporary hit points equal to the number rolled. These temporary hit points last until the start of your next turn.</p>
+                <p class="indent"><em><strong>Slayer of Foes.</strong></em> You devote yourself towards slaying your enemies. If you hit a creature with an attack while this feature lasts, you can use your bonus action to empower that attack. You roll your zealotry die, and add it to the attack’s damage roll.</p>
+            </description>
+            <sheet action="Bonus Action">
+                <description>You can devote yourself towards either defender of kin or slayer of foes. Both choices use your zealotry die, a d{{zealots-devotion:die}}, as part of their effects, and your choice lasts until you choose a different one or are incapacitated:</description>
+            </sheet>
+            <rules>
+                <stat name="zealots-devotion:die" value="6" bonus="base" level="3" />
+                <grant type="Archetype Feature" id="" level="3" />
+                <grant type="Archetype Feature" id="" level="3" />
+            </rules>
+        </element>
+            <element name="Defender of Kin" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_ARCHETYPE_FEATURE_DEVOUT_ZEALOTS_DEVOTION_">
+                <description>
+                    <p>You devote yourself towards defending your allies. While this feature lasts, you can use your bonus action to rally a creature other than you that is within 5 feet of you. You roll your zealotry die, and the targeted creature gains temporary hit points equal to the number rolled. These temporary hit points last until the start of your next turn.</p>
+                </description>
+                <sheet usage="Zealot’s Devotion" action="Bonus Action">
+                    <description>You can rally a creature other than you that is within 5 feet of you. You roll your zealotry die, and the targeted creature gains temporary hit points equal to the number rolled. These temporary hit points last until the start of your next turn.</description>
+                </sheet>
+            </element>
+            <element name="Slayer of Foes" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_ARCHETYPE_FEATURE_DEVOUT_ZEALOTS_DEVOTION_">
+                <description>
+                    <p>You devote yourself towards slaying your enemies. If you hit a creature with an attack while this feature lasts, you can use your bonus action to empower that attack. You roll your zealotry die, and add it to the attack’s damage roll.</p>
+                </description>
+                <sheet usage="Zealot’s Devotion" action="Bonus Action">
+                    <description>If you hit a creature with an attack while this feature lasts, you can empower that attack. You roll your zealotry die, and add it to the attack’s damage roll.</description>
+                </sheet>
+            </element>
+        <element name="Scholar of Evil and Good" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_SCHOLAR_OF_EVIL_AND_GOOD">
+            <description>
+                <p>The creatures of evil and good—aberrations, celestials, elementals, fey, fiends, and undead—are intricately connected with the dealings of the gods. By 7th level, you have learned much about these creatures, granting you advantage on any Charisma checks you make while interacting with them, and allowing you to add your proficiency bonus to any Wisdom, Charisma, or Intelligence save imposed by one of these creatures if you don’t add your proficiency to that save already.</p>
+            </description>
+            <sheet>
+                <description>You advantage on any Charisma checks you make while interacting with aberrations, celestials, elementals, fey, fiends, and undead, and allowing you to add your proficiency bonus to any Wisdom, Charisma, or Intelligence save imposed by one of these creatures if you don’t add your proficiency to that save already.</description>
+            </sheet>
+        </element>
+        <element name="Improved Zealotry" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_IMPROVED_ZEALOTRY">
+            <description>
+                <p>At 10th level, your zealotry die becomes a d8, and you can reroll it if you roll a 1 or 2. At 18th level, it becomes a d12, and you can reroll on a 1, 2, or 3. You must take the new rolls.</p>
+            </description>
+            <sheet>
+                <description>You can reroll any 1 or 2 on your zealotry die rolls. You must take the new rolls.</description>
+                <description level="18">You can reroll any 1,2 or 3 on your zealotry die rolls. You must take the new rolls.</description>
+            </sheet>
+            <rules>
+                <stat name="zealots-devotion:die" value="8" bonus="base" level="10" />
+            </rules>
+        </element>
+        <element name="Endless Fervor" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_ENDLESS_FERVOR">
+            <description>
+                <p>Starting at 15th level, your Action Surge gives you an additional bonus action on top of its normal effects.</p>
+                <p class="indent">Also, your Zealot’s Devotion feature is improved. You gain a +1 bonus to your AC while defender of kin is active, and a 15-foot bonus to your speed while slayer of foes is active.</p>
+            </description>
+            <sheet>
+                <description>Your Action Surge gives you an additional bonus action on top of its normal effects. Also, your Zealot’s Devotion feature is improved. You gain a +1 bonus to your AC while defender of kin is active, and a 15-foot bonus to your speed while slayer of foes is active.</description>
+            </sheet>
+        </element>
+        <element name="Deus Ex Machina" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_DEVOUT_DEUS_EX_MACHINA">
+            <description>
+                <p>By 18th level, the gods have noticed your ceaseless devotion, and have taken interest in your fate. You have advantage on death saving throws, and you roll a d6 every time you finish a long rest. A roll of 6 means that your deity visited you in your dreams and truthfully answered one yes or no question of your choice.</p>
+            </description>
+            <sheet>
+                <description>You have advantage on death saving throws, and you roll a d6 every time you finish a long rest. A roll of 6 means that your deity visited you in your dreams and truthfully answered one yes or no question of your choice.</description>
+            </sheet>
+            <rules>
+                <stat name="zealots-devotion:die" value="12" bonus="base" level="18" />
+            </rules>
+        </element>
+</elements>

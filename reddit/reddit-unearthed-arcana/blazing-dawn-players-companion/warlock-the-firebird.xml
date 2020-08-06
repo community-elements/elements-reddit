@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>The Firebird Otherworldly Patron</name>
+        <update version="0.0.1">
+            <file name="warlock-the-firebird.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/warlock-the-firebird.xml" />
+        </update>
+    </info>
+    
+    <element name="The Firebird" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_WARLOCK_THE_FIREBIRD">
+        <supports>Otherworldly Patron</supports>
+        <description>
+            <p>Your patron is a mighty phoenix, a creature of the elemental plane of fire. While ordinary phoenixes do not have the intelligence to make such a pact, particularly powerful ones, known as firebirds, can bestow great elemental power to a warlock. The aims of a firebird are far from complex—they seek destruction, and use their warlocks to further that goal. They pay no great heed to how a warlock uses the powers they grant them, however, instead tending to assume that those fiery powers would naturally be used to incite chaos and destruction. While warlocks of this pact are often driven to burn and destroy as their patrons do, some manage to use their abilities for good, utilizing their magic in their fight against evil.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_EXPANDED_SPELLS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_BLESSING_OF_THE_PHOENIX" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_INFUSED_FLAMES" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_WINGS_OF_THE_FIREBIRD" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_ASHEN_REBIRTH" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_SEARING_INFERNO" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_EXPANDED_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_BLESSING_OF_THE_PHOENIX" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_INFUSED_FLAMES" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_WINGS_OF_THE_FIREBIRD" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_ASHEN_REBIRTH" level="10" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_SEARING_INFERNO" level="14" />
+        </rules>
+    </element>
+        <element name="Expanded Spells" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_EXPANDED_SPELLS">
+            <description>
+                <p>The Firebird lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+                <h5 class="caption">FIREBIRD EXPANDED SPELLS</h5>
+                <table>
+                    <thead>
+                        <tr><td>Spell Level</td><td>Spells</td></tr>
+                    </thead>
+                    <tr><td>1st</td><td><em></em>burning hands, searing smite</td></tr>
+                    <tr><td>2nd</td><td><em></em>lesser restoration, pyrotechnics</td></tr>
+                    <tr><td>3rd</td><td><em></em>fireball, melf’s minute meteors</td></tr>
+                    <tr><td>4th</td><td><em></em>fire shield, wall of fire</td></tr>
+                    <tr><td>5th</td><td><em></em>greater restoration, immolation</td></tr>
+                </table>
+            </description>
+            <spellcasting name="Warlock" extend="true">
+                <extend>ID_PHB_SPELL_BURNING_HANDS</extend>
+                <extend>ID_PHB_SPELL_SEARING_SMITE</extend>
+                <extend>ID_PHB_SPELL_LESSER_RESTORATION</extend>
+                <extend>ID_XGTE_SPELL_PYROTECHNICS</extend>
+                <extend>ID_PHB_SPELL_FIREBALL</extend>
+                <extend>ID_XGTE_SPELL_MELFS_MINUTE_METEORS</extend>
+                <extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+                <extend>ID_PHB_SPELL_WALL_OF_FIRE</extend>
+                <extend>ID_PHB_SPELL_GREATER_RESTORATION</extend>
+                <extend>ID_XGTE_SPELL_IMMOLATION</extend>
+            </spellcasting>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+        </element>
+        <element name="Blessing of the Phoenix" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_BLESSING_OF_THE_PHOENIX">
+            <description>
+                <p>At 1st level, your patron grants you the ability to channel flames into certain spells you cast. Whenever you deal damage with a warlock cantrip, you can choose to change the cantrip’s damage type to fire damage.</p>
+                <p class="indent">Once you gain the Pact Boon feature at 3rd level, this benefit also extends to your pact. Whenever you deal damage with a pact weapon from the Pact of the Blade, attack with a familiar from the Pact of the Chain, or deal damage with a cantrip from the Pact of the Tome, you can change that damage to fire damage as well.</p>
+                <p class="indent">Starting at 6th level, your patron further blesses your magic. Fire damage you deal begins to ignore fire resistance.</p>
+            </description>
+            <sheet>
+                <description>Whenever you deal damage with a warlock cantrip, you can choose to change the cantrip’s damage type to fire damage.</description>
+                <description level="3">Whenever you deal damage with a warlock cantrip or your Pact Boon, you can choose to change the cantrip’s damage type to fire damage.</description>
+                <description level="6">Whenever you deal damage with a warlock cantrip or your Pact Boon, you can choose to change the cantrip’s damage type to fire damage. This damage ignores fire resistance.</description>
+            </sheet>
+        </element>
+        <element name="Infused Flames" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_INFUSED_FLAMES">
+            <description>
+                <p>Also at 1st level, fire damage you inflict begins to have lasting effects. Whenever you deal fire damage to a creature, that creature becomes charred until the end of your next turn. A charred creature receives half as many hit points from any healing, and if a charred creature within 60 feet of you dies, you can use your reaction to form the burning embers rising from its body into the fiery image of a phoenix. This phoenix rushes towards another creature of your choice that you can see within 60 feet of you. Make a melee spell attack roll against the target using your warlock spell attack modifier. On a hit, the target takes fire damage equal to 1d4 + half your warlock level. On a critical hit, you add your full warlock level rather than half.</p>
+            </description>
+            <sheet>
+                <description>Whenever you deal fire damage to a creature, that creature becomes charred until the end of your next turn. A charred creature receives half as many hit points from any healing, and if a charred creature within 60 feet of you dies, you can use your reaction to form the burning embers rising from its body into the fiery image of a phoenix. This phoenix rushes towards another creature of your choice that you can see within 60 feet of you. Make a melee spell attack roll against the target using your warlock spell attack modifier. On a hit, the target takes fire damage equal to 1d4 + {{level:warlock:half}}. On a critical hit, you add {{level:warlock}} rather than {{level:warlock:half}}.</description>
+            </sheet>
+        </element>
+        <element name="Wings of the Firebird" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_WINGS_OF_THE_FIREBIRD">
+            <description>
+                <p>Starting at 6th level, you can momentarily don fiery wings in response to harm, allowing you to quickly escape your assailant while returning a blast of fire at them. When you take damage, you can use your reaction to gain these wings and then fly up to 60 feet without provoking opportunity attacks. The wings vanish at the end of the turn, causing you to fall if you end the turn in the air. Also, if the creature that damaged you was within 10 feet of you, it takes fire damage equal to half your warlock level.</p>
+                <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+            </description>
+            <sheet usage="1/Short Rest" action="Reaction">
+                <description>When you take damage, you can use your reaction to gain these wings and then fly up to 60 feet without provoking opportunity attacks. The wings vanish at the end of the turn, causing you to fall if you end the turn in the air. Also, if the creature that damaged you was within 10 feet of you, it takes fire damage equal to half your warlock level.</description>
+            </sheet>
+        </element>
+        <element name="Ashen Rebirth" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_ASHEN_REBIRTH">
+            <description>
+                <p>Starting at 10th level, you can resist death using the ashes of your enemies. If you are unconscious at 0 hit points and a hostile creature within 60 feet of you is reduced to 0 hit points, its body instantly lights on fire. Embers from this flame then travel back to you, causing you to regain hit points equal to your warlock level.</p>
+                <p class="indent">Once this feature triggers, subsequent triggers will stabilize you instead of restoring hit points until you finish a short or long rest.</p>
+            </description>
+            <sheet>
+                <description>If you are unconscious at 0 hit points and a hostile creature within 60 feet of you is reduced to 0 hit points, its body instantly lights on fire. Embers from this flame then travel back to you, causing you to regain {{level:warlock}} hit points. Once this feature triggers, subsequent triggers will stabilize you instead of restoring hit points until you finish a short or long rest.</description>
+            </sheet>
+        </element>
+        <element name="Searing Inferno" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIREBIRD_SEARING_INFERNO">
+            <description>
+                <p>Beginning at 14th level, when you deal fire damage to a creature, you can use this feature to further increase the potency of your flame and then transform it into healing energy. The creature takes 5d10 fire damage, and you regain 5d10 hit points as the embers of this flame magically return to you.</p>
+                <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+            </description>
+            <sheet usage="1/Long Rest">
+                <description>When you deal fire damage to a creature, you can use this feature to further increase the potency of your flame and then transform it into healing energy. The creature takes 5d10 fire damage, and you regain 5d10 hit points as the embers of this flame magically return to you.</description>
+            </sheet>
+        </element>
+
+
+</elements>

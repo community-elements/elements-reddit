@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Justice Divine Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-justice-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/cleric-justice-domain.xml" />
+        </update>
+    </info>
+    
+    <element name="Justice Domain" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_CLERIC_JUSTICE_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>Gods of justice and law—including Tyr, Pholtus, Trithereon, Aureon, Anubis, and Forseti—exemplify order and lawfulness, and the pursuit of just reparations and retributions. Some of these gods are ruthless in their pursuit of justice, and are quick to enact retribution when crimes are committed, while others are more forgiving and open to punishments other than death. Clerics of this domain often act as judges, lawyers, and investigators, and are well respected by their compatriots and hated by their opponents and detractors. They use their divine powers to find truth, root out evil, and bring justice to criminals.</p>
+            <h5>Justice Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><i>detect evil and good, detect poison and disease.</i></td></tr>
+                <tr><td>3rd</td><td><i>branding smite, zone of truth</i></td></tr>
+                <tr><td>5th</td><td><i>clairvoyance, speak with dead</i></td></tr>
+                <tr><td>7th</td><td><i>arcane eye, locate creature</i></td></tr>
+                <tr><td>9th</td><td><i>commune, dispel evil and good</i></td></tr>
+            </table>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_BONUS_PROFICIENCIES" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_DIVINE_RETRIBUTION" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_CD_REVEAL_INJUSTICE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_CD_CHAINS_OF_RECKONING" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_DIVINE_STRIKE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_DIVINE_TRUTH" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_BONUS_PROFICIENCIES" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_DIVINE_RETRIBUTION" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_CD_REVEAL_INJUSTICE" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_CD_CHAINS_OF_RECKONING" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_DIVINE_TRUTH" level="17" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" spellcasting="Cleric" prepared="true" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" spellcasting="Cleric" prepared="true" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" spellcasting="Cleric" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" spellcasting="Cleric" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" spellcasting="Cleric" prepared="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" spellcasting="Cleric" prepared="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" spellcasting="Cleric" prepared="true" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" spellcasting="Cleric" prepared="true" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_COMMUNE" spellcasting="Cleric" prepared="true" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" spellcasting="Cleric" prepared="true" level="9" />
+        </rules>
+    </element>
+        <element name="Bonus Proficiencies" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_BONUS_PROFICIENCIES">
+            <description>
+                <p>When you choose this domain at 1st level, you gain proficiency with martial weapons, heavy armor, and the Investigation skill.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+            </rules>
+        </element>
+        <element name="Divine Retribution" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_DIVINE_RETRIBUTION">
+            <description>
+                <p>Also at 1st level, you can use your divine power to defend your allies and rebuke your enemies. When a creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by 1d6, and force the creature that damaged the initial target to make a Dexterity saving throw. That creature takes damage equal to 2 + the damage mitigated on a failed save, or half as much damage on a successful one. This damage shares a type with the damage dealt to the initial target.</p>
+                <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+            </description>
+            <sheet action="Reaction" usage="{{divine-retribution:uses}}/Long Rest">
+                <description>When a creature you can see within 30 feet of you takes damage, you can reduce that damage by 1d6, and force the creature that damaged the initial target to make a Dexterity saving throw. That creature takes damage equal to 2 + the damage mitigated on a failed save, or half as much damage on a successful one. This damage shares a type with the damage dealt to the initial target.</description>
+            </sheet>
+            <rules>
+                <stat name="divine-retribution:uses" value="1" bonus="base" />
+                <stat name="divine-retribution:uses" value="wisdom:modifier" bonus="base" />
+            </rules>
+        </element>
+        <element name="Channel Divinity: Reveal Injustice" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_CD_REVEAL_INJUSTICE">
+            <description>
+                <p>Starting at 2nd level, you can use your Channel Divinity to assist you in investigating deaths.</p>
+                <p class="indent">By performing a minute-long ritual on the remains of a creature that has been dead for no more than 7 days and hasn’t been targeted by this feature before, you can learn its cause of death. If the creature was killed by another creature, you can also learn details about the creature’s killer by making a Wisdom (Insight) check with a DC equal to the killer’s passive Charisma (Deception) score. You automatically fail this check if the killer is protected from divination magic, such as through the nondetection spell. On a success, you learn the killer’s creature type, and the distance and direction to their location as of the completion of the ritual. On a failed check, the killer knows that divination magic was attempted on it, but it doesn’t know its source.</p>
+                <p class="indent">The DM might allow you to use this feature to investigate events other than deaths. For example, scenes of a recent robbery or evidence of an assault might be viable targets for this Channel Divinity, at your DM’s discretion. In these cases, you would discover information about the main perpetrator of that event, rather than a “killer.”</p>
+            </description>
+            <sheet usage="Channel Divinity" action="1 minute ritual" alt="Reveal Injustice">
+                <description>By performing a minute-long ritual on the remains of a creature that has been dead for no more than 7 days and hasn’t been targeted by this feature before, you can learn its cause of death.</description>
+            </sheet>
+        </element>
+        <element name="Channel Divinity: Chains of Reckoning" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_CD_CHAINS_OF_RECKONING">
+            <description>
+                <p>At 6th level, you can use your Channel Divinity to restrain a creature with divine chains.</p>
+                <p class="indent">As an action, you present your holy symbol, causing chains of light to emerge from the ground and attempt to restrain a creature you can see within 60 feet of you. That creature must make a Strength saving throw. On a failed save, they take radiant damage equal to 2d6 + your cleric level, and are restrained until the end of your next turn. On a successful save, they take half as much damage and their speed is halved until the end of your next turn.</p>
+                <p class="indent">If you target a creature that has failed the check imposed by your Reveal Injustice feature, that creature makes this save at disadvantage, and they are paralysed until the end of your next turn on a failed save, rather than restrained. Once you use this bonus effect on a creature, you can’t use it on that creature again until you succeed on another check imposed by your Reveal Injustice feature against that creature.</p>
+            </description>
+            <sheet usage="Channel Divinity" action="Action" alt="Chains of Reckoning">
+                <description>You present your holy symbol, causing chains of light to emerge from the ground and attempt to restrain a creature you can see within 60 feet of you. That creature must make a Strength saving throw. On a failed save, they take 2d6 + {{level:cleric}} radiant damage, and are restrained until the end of your next turn. On a successful save, they take half as much damage and their speed is halved until the end of your next turn.</description>
+            </sheet>
+        </element>
+        <element name="Divine Strike" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_DIVINE_STRIKE">
+            <description>
+                <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            </description>
+            <sheet>
+                <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {{divine-strike:damage-dice}}d8 radiant damage to the target.</description>
+            </sheet>
+            <rules>
+                <stat name="divine-strike:damage-dice" value="1" level="8" />
+                <stat name="divine-strike:damage-dice" value="1" level="14" />
+            </rules>
+        </element>
+        <element name="Divine Truth" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_JUSTICE_DIVINE_TRUTH">
+            <description>
+                <p>At 17th level, your senses can see through lies. You know when you hear a lie, and you gain truesight with a range of 60 feet. Your ability to detect lies allows you to know when something explicitly untruthful is said; it does not detect misleading yet literally true statements.</p>
+            </description>
+            <sheet>
+                <description>You know when you hear a lie, and you gain truesight with a range of 60 feet.</description>
+            </sheet>
+            <rules>
+                <grant type="Vision" id="ID_VISION_TRUESIGHT" />
+            </rules>
+        </element>
+</elements>
