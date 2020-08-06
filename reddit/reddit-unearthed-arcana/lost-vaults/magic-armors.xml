@@ -1216,4 +1216,140 @@ failure they are blinded until the end of your next turn.</td></tr>
         </setters>
     </element>
 
+    <element name="Stalkers Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_STALKERS">
+        <description>
+            <p>A rare mix of both Faewild and Shadowfell magic are combined into a single armor set, making this armor a hunter’s best friend.</p>
+            <p class="indent">Once per day while wearing this armor, you can choose a creature you can see and give them a Stalker’s mark. The marked creature has disadvantage on Wisdom (Perception) checks to spot you, you know the cardinal direction of the creature relative to you so long as you are on the same plane of existence, and you deal an additional 1d6 damage against the marked creature. These effects last 6 hours.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Leather|Hide</set>
+            <set name="name-format">Stalkers {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Stoneborn Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_STONEBORN">
+        <description>
+            <p>Armor that is pulled from the earth, then enchanted to give the wearer endurance of stone. While wearing this armor, you gain a +1d4 bonus to all Constitution saving throws.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Plate</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Stoneskin Robes" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_STONESKIN">
+        <description>
+            <p>These gray robes are slightly heavier than normal, thanks to the enchanted stone dust that laces the threads. Once per day while wearing this robe, you can gain the effects of the stoneskin spell until the end of your next turn as a free action.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Stormlord Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_STORMLORD">
+        <description>
+            <p>Armor depicting stories of the gods of storms, this armor helps to protect yourself from the wrath of nature.</p>
+            <p class="indent">While wearing this armor, you gain resistance to lightning and thunder damage. Whenever a friendly creature within 15 feet of you is targeted by a lightning or thunder type attack, you can use a reaction to have the attack target you instead. If you do so, you also gain an additional 1d6 lightning damage to all attacks until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Plate|Chain Mail|Scale</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Summoned Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SUMMONED">
+        <description>
+            <p>Using a modified spell, this enchanted armor can instantly be donned or doffed at will. While wearing this armor, as a bonus action you can send the armor to an extradimensional location. You can also use a bonus action to instantly equip the armor.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Summoned {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Surge Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SURGE">
+        <description>
+            <p>A well known set armor, thanks to its ability to keep its wearer alive.</p>
+            <p class="indent">While wearing this armor, whenever you reach zero hit points you automatically succeed one death saving throw. Once per day, you can also add 1d4 to a death saving throw.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Surge {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Survivor's Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SURVIVORS">
+        <description>
+            <p>A well known set armor, thanks to its ability to keep its wearer alive.</p>
+            <p class="indent">While wearing this armor, whenever you reach zero hit points you automatically succeed one death saving throw. Once per day, you can also add 1d4 to a death saving throw.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Survivor's {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Tactician's Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_TACTICIANS">
+        <description>
+            <p>This armor set shows colorations of purple and gray that seem to roll over the metal.</p>
+            <p class="indent">While wearing this armor when you are hit with a lightning or thunder type attack, you can use a reaction to make DC 16 Constitution saving throw to gain immunity to lightning and thunder damage until the end of your next turn. If you are successful for 3 saves, every save after the third grants one point of exhaustion.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Tactician's {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Thunderhead Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_THUNDERHEAD">
+        <description>
+            <p>This armor set shows colorations of purple and gray that seem to roll over the metal.</p>
+            <p class="indent">While wearing this armor when you are hit with a lightning or thunder type attack, you can use a reaction to make DC 16 Constitution saving throw to gain immunity to lightning and thunder damage until the end of your next turn. If you are successful for 3 saves, every save after the third grants one point of exhaustion.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Thunderhead {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
 </elements>
