@@ -1352,4 +1352,152 @@ failure they are blinded until the end of your next turn.</td></tr>
         </setters>
     </element>
 
+    <element name="Vaporform Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_VAPORFORM">
+        <description>
+            <p>This armor is weightless and has the colors of white and blue shifting constantly. While wearing this armor, you have access to the following effects:</p>
+            <p class="indent">This armor has 6 charges, and regains 1+1d4 charges at dawn. You can expend a number of charges to use the following spells:</p>
+            <ul>
+                <li>1 charge - misty step</li>
+                <li>4 charges - windwalk</li>
+                <li>6 charges - investiture of wind (save DC 19)</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Vaporform {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Versatile Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_VERSATILE">
+        <description>
+            <p>This armor has the ability to shift in weight and size, while also boosting the wearer speed.</p>
+            <p class="indent">While wearing this armor, as a bonus action you can suffer a -2 penalty to AC to increase your movement speed by 10 feet. You can remove this effect with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Versatile {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Verve Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_VERVE">
+        <description>
+            <p>A lesser and more common version of the Surge armor, it is no less useful for keeping its owner alive. Once per day while wearing this armor, when you fail a death saving throw, you can choose to succeed instead.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Verve {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Veteran's Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_VETERANS">
+        <description>
+            <p>A worn and used set of armor that is extremely popular amongst the fighters who swear by this armor.</p>
+            <p class="indent">While wearing this armor, when you use an action surge, add a +1d4 bonus to all attack and damage rolls made until the end of your turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Veteran's {{parent}}</set>
+            <set name="attunement" addition="by a fighter">true</set>
+        </setters>
+    </element>
+
+    <element name="Voidcrystal Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_VOIDCRYSTAL">
+        <description>
+            <p>An armor set made of, or enhanced with black crystals, this armor set can help protect you against future attacks.</p>
+            <p class="indent">While wearing this armor, when a melee attack misses you, you can use a reaction to have the void crystals in the armor react to the weapon. The attacker must make a DC 17 Wisdom saving throw.</p>
+            <p class="indent">On a failed save, you gain resistance to that melee attack damage type until the attacker rolls a successful DC 17 Wisdom save at the end of their turns. If the attack was an unarmed attack, or made with natural weapons such as claws or horns, on a failed save the attacker also takes 2d6 force damage.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Voidcrystal {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Warsheath Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_WARSHEATH">
+        <description>
+            <p>An armor made of layers of enchanted steel, the layers of this armor grow stronger the more foes you have around you.</p>
+            <p class="indent">While wearing this armor, for every 2 creatures you have within 5 feet of you, your AC increases by 2.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Plate</set>
+            <set name="name-format">Warsheath {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Whiteflame Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_WHITEFLAME">
+        <description>
+            <p>The enchantments of this armor absorbs elemental energies to help protect the user.</p>
+            <p class="indent">Once per day while wearing this armor, you can use a free action to gain resistance to one of the following elemental types until the end of your next turn; fire, radiant, lightning, or thunder.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Whiteflame {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Wildleaf Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_WILDLEAF">
+        <description>
+            <p>Made from Feywild leaves, this armor is used by rangers to help them move through nature with ease and stealth.</p>
+            <p class="indent">While wearing this armor, you ignore difficult terrain of any type. You can also cast pass without a trace once per day.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="padded, leather, or hide">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Padded|Leather|Hide</set>
+            <set name="name-format">Wildleaf {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Zealots Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_ZEALOTS">
+        <description>
+            <p>Cloth vestments adorned with prayers of a cleric who devoted their life to the destruction of the undead.</p>
+            <p class="indent">While wearing this robe, you gain +1d6 to attack and damage rolls made against undead creatures. Whenever you are hit by an undead creature, you can use a reaction to cause the armor to react with a holy smite, causing 3d6 radiant damage to the attacker. Once per day, you can also cast daylight on the armor.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
 </elements>
