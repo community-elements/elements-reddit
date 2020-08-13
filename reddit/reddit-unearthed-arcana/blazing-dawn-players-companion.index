@@ -2,7 +2,7 @@
 <index>
     <info>
         <name>Blazing Dawn Player’s Companion</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="blazing-dawn-players-companion.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion.index" />
         </update>
     </info>
@@ -43,6 +43,7 @@
         <file name="warlock-invocations.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/warlock-invocations.xml" />
         <file name="artificer-infusions.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/artificer-infusions.xml" />
         <file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/source.xml" />
+        <file name="spells.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/spells.xml" />
 
     </files>
 </index>
