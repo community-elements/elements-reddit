@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Infrastructure</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="infra.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery/infra.xml" />
 		</update>
 	</info>
@@ -18,6 +18,18 @@
 			<set name="author" url="https://www.reddit.com/u/ZowJr">/u/ZowJr</set>
 			<set name="homebrew">true</set>
 		</setters>
+	</element>
+
+	<element name="Arcane Artillery Proficency Override" type="Option" source="Arcane Artillery" id="ID_RDDT_AA_GRANTS_PROFICIENCY_OVERRIDE">
+		<description>
+			<p>Grant all Arcane Artillery specific weapon proficiencies for classes that don't gain them.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Grants" id="ID_RDDT_AA_GRANTS_ARCANEARTILLERY_REQUIREMENT"/>
+			<grant type="Proficiency" id="ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SIDEARMS"/>
+			<grant type="Proficiency" id="ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_LONGARMS"/>
+		</rules>
 	</element>
 
 	<!-- grant this in the class, for use in requirements for rules -->
