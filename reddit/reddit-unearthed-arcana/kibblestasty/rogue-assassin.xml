@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Revised Assassin Roguish Archetype</name>
+        <update version="0.0.1">
+            <file name="rogue-assassin.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/rogue-assassin.xml" />
+        </update>
+    </info>
+    
+    <element name="Assassin (Revised)" type="Source" source="Core" id="ID_KIBBLESTASTY_GMBINDER_SOURCE_ASSASSIN_REVISED">
+        <description>
+            <![CDATA[<p></p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">ARRT</set>
+            <set name="url">https://www.gmbinder.com/share/-MDTE2pn1JQGTxJAN_qN</set>
+            <set name="image"></set>
+            <set name="author" abbreviation="KT" url="https://www.gmbinder.com/profile/kibblestasty">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200816</set>
+        </setters>
+    </element>
+
+        <element name="Assassin (Revised)" type="Archetype" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_ROGUE_ASSASSIN_REVISED">
+            <supports>Roguish Archetype</supports>
+            <description>
+                <p>You focus your training on the grim art of death. Those who adhere to this archetype are diverse: hired killers, spies, bounty hunters and more. Stealth, poison, and disguise help you eliminate your foes with deadly efficiency.</p>
+                <div element="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_BONUS_PROFICIENCIES" />
+                <div element="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_BACKSTAB" />
+                <div element="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_DEADLY_IMPLEMENTS" />
+                <div element="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_KILLERS_METHOD" />
+                <div element="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_FAVORED_APPROACH" />
+                <div element="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_DREAD" />
+                <h4>ASSASSIN QUIRKS</h4>
+                <p>The following are some optional quirks for an Assassin</p>
+                <table>
+                    <thead>
+                        <tr><td>d6</td><td>Quirk</td></tr>
+                    </thead>
+                    <tr><td>1</td><td>Life is cheap, death is expensive. You kill what you are paid to kill. Only.</td></tr>
+                    <tr><td>2</td><td>You have perfected the art of standing motionless. It doesn’t make you invisible, but some people find it creepy.</td></tr>
+                    <tr><td>3</td><td>You are always fiddling with something sharp.</td></tr>
+                    <tr><td>4</td><td>Life is suffering. You are an angel of mercy.</td></tr>
+                    <tr><td>5</td><td>Job satisfaction is important. You enjoy your work.</td></tr>
+                    <tr><td>6</td><td>You have a code you follow zealously that dictates who you can kill.</td></tr>
+                </table>
+                <h4>ADDITIONAL WEAPONS</h4>
+                <h5 class="caption">MARTIAL WEAPON</h5>
+                <table>
+                    <thead>
+                        <tr><td>Weapon</td><td>Price</td><td>Damage</td><td>Weight</td><td>Properties</td></tr>
+                    </thead>
+                    <tr><td>Garrote</td><td>1 sp</td><td>-</td><td>1/4 lb.</td><td>Two-handed, Finesse, Special</td></tr>
+                </table>
+                <h5 class="caption">GARROTE</h5>
+                <p>A garrote has disadvantage when making attacks, unless the target is surprised. A large or smaller creature hit by a garrote is grappled. While a creature is grappled in this way, it is muted, and has its current and maximum hit points reduced by 2d6 at the start of its turn. A creature that does not need to breath doesn’t have their hit points reduced, but is still grappled.</p>
+                <p class="indent">A creature can attempt to escape the grapple as normal, but the grappling character can use Dexterity (Sleight of Hand) when attempting to maintain the grapple. If a creature breaks free of the grapple before being reduced to zero hit points, their maximum hit points return to normal, and they regain half the hit points lost.</p>
+                <p class="indent">The grapple automatically ends at the start of the grappling creature’s next turn unless they use their action to maintain the grapple. You cannot make attacks while maintaining this grapple.</p>
+            </description>
+            <sheet display="false" />
+            <rules>
+                <grant type="Archetype Feature" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_BONUS_PROFICIENCIES" level="3" />
+                <grant type="Archetype Feature" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_BACKSTAB" level="3" />
+                <grant type="Archetype Feature" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_DEADLY_IMPLEMENTS" level="3" />
+                <grant type="Archetype Feature" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_KILLERS_METHOD" level="9" />
+                <grant type="Archetype Feature" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_FAVORED_APPROACH" level="13" />
+                <grant type="Archetype Feature" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_DREAD" level="17" />
+            </rules>
+        </element>
+        <element name="Bonus Proficiencies" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_BONUS_PROFICIENCIES">
+            <description>
+                <p>When you choose this archetype at 3rd level, you gain proficiency with garrotes, the disguise kit and the poisoner’s kit.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+                <grant type="Proficiency" id="ID_KT_AART_PROFICIENCY_WEAPON_PROFICIENCY_GARROTE" />
+            </rules>
+        </element>
+        <element name="Backstab" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_BACKSTAB">
+            <description>
+                <p>Starting at 3rd level, you are pragmatic and deadly in eliminating your foes. You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet, or when an allied creature within 5 feet of the target is directly on the other side of a creature.</p>
+            </description>
+            <sheet>
+                <description>You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet, or when an allied creature within 5 feet of the target is directly on the other side of a creature.</description>
+            </sheet>
+            <rules>
+            </rules>
+        </element>
+        <element name="Deadly Implements" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_DEADLY_IMPLEMENTS">
+            <description>
+                <p>Additionally at 3rd level, you’re mastery of the implements of assassination grows more lethal:</p>
+                <ul>
+                    <li>When creature has their hit points reduced due to being grappled by a garrote you wield, you can add dice equal to your Sneak Attack dice to the roll.</li>
+                    <li>When you deal damage with a dagger, it’s damage die is a d6 for you.</li>
+                </ul>
+            </description>
+            <sheet>
+                <description>When creature has their hit points reduced due to being grappled by a garrote you wield, you can add {{sneak-attack:count}}d{{sneak-attack:die}} to the roll. When you deal damage with a dagger, it’s damage die is a d6 for you.</description>
+            </sheet>
+            <rules>
+            </rules>
+        </element>
+        <element name="Killer’s Method" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_KILLERS_METHOD">
+            <description>
+                <p>Starting at 9th level, you have mastered one technique of your choice for approaching a target. Select one of the following benefits:</p>
+                <ul>
+                    <li><b>False Face:</b> You gain expertise with the disguise kit, and can assume a prepared disguise with the bonus action granted by Cunning Action.</li>
+                    <li><b>Blade in the Dark:</b> You gain expertise with the Stealth skill. You can attempt hide even when you are only lightly obscured by dim light.</li>
+                    <li><b>Poisoner’s Path:</b> You gain expertise with the poisoner’s kit. During a long rest, you can create one a single use Injury, Touch, Ingested, or Inhaled poison. On effect, the target must make a Constitution saving throw (DC 10 + your proficiency bonus) or take 2d6 + your proficiency bonus damage.</li>
+                </ul>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <select type="Archetype Feature" name="Killer’s Method" supports="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_KILLERS_METHOD_FALSE_FACE|ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_KILLERS_METHOD_BLADE_IN_THE_DARK|ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_KILLERS_METHOD_POISONERS_PATH" level="9" />
+            </rules>
+        </element>
+            <element name="False Face" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_KILLERS_METHOD_FALSE_FACE">
+                <compendium display="false" />
+                <description>
+                    <p>You gain expertise with the disguise kit, and can assume a prepared disguise with the bonus action granted by Cunning Action.</p>
+                </description>
+                <sheet>
+                    <description>You can assume a prepared disguise with the bonus action granted by Cunning Action.</description>
+                </sheet>
+                <rules>
+                    <grant type="Archetype Feature" id="ID_KT_AART_ARCHETYPE_FEATURE_DISGUISE_KIT_DOUBLE_PROFICIENCY" />
+                </rules>
+            </element>
+            <element name="Blade in the Dark" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_KILLERS_METHOD_BLADE_IN_THE_DARK">
+                <compendium display="false" />
+                <description>
+                    <p>You gain expertise with the Stealth skill. You can attempt hide even when you are only lightly obscured by dim light.</p>
+                </description>
+                <sheet>
+                    <description>You can attempt hide even when you are only lightly obscured by dim light.</description>
+                </sheet>
+                <rules>
+                    <grant type="Class Feature" id="ID_EXPERTISE_SKILL_STEALTH" />
+                </rules>
+            </element>
+            <element name="Poisoner’s Path" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_KILLERS_METHOD_POISONERS_PATH">
+                <compendium display="false" />
+                <description>
+                    <p>You gain expertise with the poisoner’s kit. During a long rest, you can create one a single use Injury, Touch, Ingested, or Inhaled poison. On effect, the target must make a Constitution saving throw (DC 10 + your proficiency bonus) or take 2d6 + your proficiency bonus damage.</p>
+                </description>
+                <sheet>
+                    <description>During a long rest, you can create one a single use Injury, Touch, Ingested, or Inhaled poison. On effect, the target must make a Constitution saving throw (DC {{poisoners-path:save-dc}}) or take 2d6 + {{proficiency}} damage.</description>
+                </sheet>
+                <rules>
+                    <grant type="Archetype Feature" id="ID_KT_AART_ARCHETYPE_FEATURE_POISONERS_KIT_DOUBLE_PROFICIENCY" />
+                    <stat name="poisoners-path:save-dc" value="10" />
+                    <stat name="poisoners-path:save-dc" value="proficiency" />
+                </rules>
+            </element>
+        <element name="Favored Approach" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_FAVORED_APPROACH">
+            <description>
+                <p>Starting at 13th level, you hone your skills gaining a favored approach to dealing death. Select one of the following benefits:</p>
+                <ul>
+                    <li><b>Trusted Face:</b> If you spend seven days establishing a fake identity for yourself or three hours studying another person to impersonate, you have advantage on any Charisma (Deception) check involving maintaining your disguise and identity.</li>
+                    <li><b>Swift Blade:</b> When you roll initiative while hidden, you gain advantage on the roll.</li>
+                    <li><b>Specialized Poisons:</b> When you create a poison, you can designate one creature type (for example, Fiends). The damage of that poison ignores resistance or immunity that creature type may have to poison.</li>
+                </ul>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <select type="Archetype Feature" name="Favored Approach" supports="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_FAVORED_APPROACH_TRUSTED_FACE|ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_FAVORED_APPROACH_SWIFT_BLADE|ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_FAVORED_APPROACH_SPECIALIZED_POISONS" level="13" />
+            </rules>
+        </element>
+            <element name="Trusted Face" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_FAVORED_APPROACH_TRUSTED_FACE">
+                <compendium display="false" />
+                <description>
+                    <p>If you spend seven days establishing a fake identity for yourself or three hours studying another person to impersonate, you have advantage on any Charisma (Deception) check involving maintaining your disguise and identity.</p>
+                </description>
+                <sheet>
+                    <description>If you spend seven days establishing a fake identity for yourself or three hours studying another person to impersonate, you have advantage on any Deception check involving maintaining your disguise and identity.</description>
+                </sheet>
+            </element>
+            <element name="Swift Blade" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_FAVORED_APPROACH_SWIFT_BLADE">
+                <compendium display="false" />
+                <description>
+                    <p>When you roll initiative while hidden, you gain advantage on the roll.</p>
+                </description>
+                <sheet>
+                    <description>When you roll initiative while hidden, you gain advantage on the roll.</description>
+                </sheet>
+            </element>
+            <element name="Specialized Poisons" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_FAVORED_APPROACH_SPECIALIZED_POISONS">
+                <compendium display="false" />
+                <description>
+                    <p>When you create a poison, you can designate one creature type (for example, Fiends). The damage of that poison ignores resistance or immunity that creature type may have to poison.</p>
+                </description>
+                <sheet>
+                    <description>When you create a poison, you can designate one creature type (for example, Fiends). The damage of that poison ignores resistance or immunity that creature type may have to poison.</description>
+                </sheet>
+            </element>
+        <element name="Dread" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_ASSASSIN_DREAD">
+            <description>
+                <p>Starting at 17th level, as an action, you cause target creatures of your choice within 120 feet of you that are unaware of your presence to feel a sense of dread. Target creatures make a Wisdom saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, they become frightened of you for 1 minute or until they become aware of your presence. On a successful save, they are immune to this effect for 24 hours.</p>
+                <p class="indent">While the are frightened of you, they have disadvantage on Wisdom (Perception) checks, and if you deal damage to them while they are frightened, they must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On failure, a creature CR 4 or lower dies, and a creature CR 5 or higher is stunned until the end of their turn.</p>
+            </description>
+            <sheet action="Action">
+                <description>You cause target creatures of your choice within 120 feet of you that are unaware of your presence to make a Wisdom saving throw (DC {{dread:save-dc}}). On a failed save, they become frightened of you for 1 minute or until they become aware of your presence. On a successful save, they are immune to this effect for 24 hours. While the are frightened of you, they have disadvantage on Perception checks, and if you deal damage to them while they are frightened, they must make a Constitution saving throw (DC {{dread:save-dc}}). On failure, a creature CR 4 or lower dies, and a creature CR 5 or higher is stunned until the end of their turn.</description>
+            </sheet>
+            <rules>
+                <stat name="dread:save-dc" value="8" />
+                <stat name="dread:save-dc" value="proficiency" />
+                <stat name="dread:save-dc" value="dexterity:modifier" />
+            </rules>
+        </element>
+
+	<element name="Garrote" type="Weapon" source="Assassin (Revised)" id="ID_KT_AART_WEAPON_GARROTE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+            <p>A garrote has disadvantage when making attacks, unless the target is surprised. A large or smaller creature hit by a garrote is grappled. While a creature is grappled in this way, it is muted, and has its current and maximum hit points reduced by 2d6 at the start of its turn. A creature that does not need to breath doesn’t have their hit points reduced, but is still grappled.</p>
+            <p class="indent">A creature can attempt to escape the grapple as normal, but the grappling character can use Dexterity (Sleight of Hand) when attempting to maintain the grapple. If a creature breaks free of the grapple before being reduced to zero hit points, their maximum hit points return to normal, and they regain half the hit points lost.</p>
+            <p class="indent">The grapple automatically ends at the start of the grappling creature’s next turn unless they use their action to maintain the grapple. You cannot make attacks while maintaining this grapple.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.25">1/4 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage">-</set>
+			<set name="proficiency">ID_KT_AART_PROFICIENCY_WEAPON_PROFICIENCY_GARROTE</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Garrote)" type="Proficiency" source="Assassin (Revised)" id="ID_KT_AART_PROFICIENCY_WEAPON_PROFICIENCY_GARROTE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<sheet alt="Garrote" />
+	</element>
+
+        <element name="Tool Expertise (Disguise Kit)" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_DISGUISE_KIT_DOUBLE_PROFICIENCY">
+            <description>
+                <p>Your proficiency bonus is doubled for any check you make with Disguise Kit.</p>
+            </description>
+            <sheet>
+                <description>Your proficiency bonus is doubled for any check you make with your Disguise Kit.</description>
+            </sheet>
+            <rules>
+                <stat name="disguise kit:proficiency" value="proficiency" bonus="double" />
+            </rules>
+        </element>
+        <element name="Tool Expertise (Poisoner’s Kit)" type="Archetype Feature" source="Assassin (Revised)" id="ID_KT_AART_ARCHETYPE_FEATURE_POISONERS_KIT_DOUBLE_PROFICIENCY">
+            <description>
+                <p>Your proficiency bonus is doubled for any check you make with Poisoner’s Kit.</p>
+            </description>
+            <sheet>
+                <description>Your proficiency bonus is doubled for any check you make with your Poisoner’s Kit.</description>
+            </sheet>
+            <rules>
+                <stat name="poisoners kit:proficiency" value="proficiency" bonus="double" />
+            </rules>
+        </element>
+
+</elements>

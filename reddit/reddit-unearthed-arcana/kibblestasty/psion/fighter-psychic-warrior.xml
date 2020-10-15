@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Psychic Warrior Martial Archetype</name>
+        <update version="0.0.1">
+            <file name="fighter-psychic-warrior.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/fighter-psychic-warrior.xml" />
+        </update>
+    </info>
+    
+    <element name="Psychic Warrior" type="Archetype" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FIGHTER_PSYCHIC_WARRIOR">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p>A Psionic Warrior is a Fighter who is deadly in both mind and body, lethal in both thought and action. Gifted, blessed, cursed, burdened, or born with Psionic powers, when these powers manifest upon taking this archetype, the Fighter transitions into a terrifying foe, unbounded by any natural laws.</p>
+            <h5>PSYCHIC WARRIOR QUICKS</h5>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>Quirk</td></tr>
+                </thead>
+                <tr><td>1</td><td>You have a habit of juggling dangerous objects with a little help from your powers..</td></tr>
+                <tr><td>2</td><td>You tend to stand on things should be impossible to balance on.</td></tr>
+                <tr><td>3</td><td>You spout endless quotes about the mind being the most deadly weapon of all.</td></tr>
+                <tr><td>4</td><td>Your eyes flash with psionic power whenever you use your psionic features.</td></tr>
+                <tr><td>5</td><td>You stare at people too long.</td></tr>
+                <tr><td>6</td><td>You follow odd taboos that no one else can understand.</td></tr>
+            </table>
+            <div element="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWERS" />
+            <div element="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_TELEKINETIC_MANIFESTATION" />
+            <div element="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_MENTAL_AWARENESS" />
+            <div element="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_GATHER_MIND" />
+            <div element="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_SPATIAL_DISTORTION" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWERS" level="3" />
+            <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_TELEKINETIC_MANIFESTATION" level="3" />
+            <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_MENTAL_AWARENESS" level="7" />
+            <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_GATHER_MIND" level="10" />
+            <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_SPATIAL_DISTORTION" level="18" />
+        </rules>
+    </element>
+        <element name="Psionic Powers" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWERS">
+            <description>
+                <p>When you choose this archetype at 3rd level, your psionic powers manifest, allowing you warp and bend reality with your mind. These powers are fueled by psi points.</p>
+                <p class="indent"><strong>Powers:</strong> You learn three powers of your choice, which are detailed under "Powers" below. Some powers enhance an attack in some way. You can only use one power per attack.</p>
+                <p class="indent">You learn two additional powers of your choice at 7th, 10th, and 15th level. Each time you learn powers, you can also replace one power you know with a different one.</p>
+                <p class="indent"><strong>Psi Points:</strong> You have three psi points. A psi point is expanded when you use it. You regain all your expended psi points when you finish a short or long rest.</p>
+                <p class="indent">You gain another psi point at 7th level, and one more at 15th level.</p>
+                <p class="indent"><strong>Saving Throws:</strong> Some of your powers require your target to make a saving throw to resist the power’s effects. The saving throw DC is calculated as follows:</p>
+                <center>
+                    <p><strong>Psionic Power save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+                </center>
+                <div class="sidebar">
+                    <h5 class="caption">Psion Integration</h5>
+                    <p>The Psionic Warrior has a grab-bag Psionic Features appropriate to a Fighter that dabbles in Psionics. Some of its features resemble counter parts in the Psion, and its Psi Points are compatible with the Psionic Powers of the Psion, sharing a pool should a character have both.</p>
+                    <p class="indent">For the purposes of the Psionic Mind Feat, the Psionic Warrior is considered to have a Psionic discipline, though does not meet the prerequisite of any talent that requires one.</p>
+                </div>
+            </description>
+            <sheet usage="{{psi:points}} Psi Points/Short Rest">
+                <description>You can use Psi Points to empower your Psionic Powers. Your Psionic Power Save DC is {{psi:save-dc}}.</description>
+            </sheet>
+            <rules>
+                <stat name="psi:points" value="3" level="3" />
+                <stat name="psi:points" value="1" level="7" />
+                <stat name="psi:points" value="1" level="15" />
+                <stat name="psi:save-dc" value="8" />
+                <stat name="psi:save-dc" value="proficiency" />
+                <stat name="psi:save-dc" value="intelligence:modifier" />
+                <select type="Archetype Feature" name="Psionic Power" supports="Kibbles Psychic Warrior Power" number="3" level="3" />
+                <select type="Archetype Feature" name="Psionic Power" supports="Kibbles Psychic Warrior Power" number="2" level="7" />
+                <select type="Archetype Feature" name="Psionic Power" supports="Kibbles Psychic Warrior Power" number="2" level="10" />
+                <select type="Archetype Feature" name="Psionic Power" supports="Kibbles Psychic Warrior Power" number="2" level="15" />
+            </rules>
+        </element>
+        <element name="Telekinetic Manifestation" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_TELEKINETIC_MANIFESTATION">
+            <description>
+                <p>At 3rd level, you can manipulate small objects within 30 feet with your mind as if using your hand to interact with it. You can use this power to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You cannot Attack, activate magical items, or carry more than 10 pounds in this manner. You can move an item you are controlling in this way up to 30 feet during your turn.</p>
+            </description>
+            <sheet>
+                <description>You can manipulate small objects within 30 feet with your mind as if using your hand to interact with it. You can use this power to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You cannot Attack, activate magical items, or carry more than 10 pounds in this manner. You can move an item you are controlling in this way up to 30 feet during your turn.</description>
+            </sheet>
+        </element>
+        <element name="Mental Awareness" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_MENTAL_AWARENESS">
+            <description>
+                <p>Starting at 7th level, you can feel the presence of other minds, giving you edge on detecting them. You can add your Intelligence modifier to your Wisdom (Perception) check when looking for a creature.</p>
+            </description>
+            <sheet>
+                <description>You can add your Intelligence modifier to your Perception check when looking for a creature.</description>
+            </sheet>
+        </element>
+        <element name="Gather Mind" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_GATHER_MIND">
+            <description>
+                <p>Starting at 10th level, when you use your Second Wind feature you regain an expended psi point.</p>
+            </description>
+            <sheet>
+                <description>When you use your Second Wind feature you regain an expended psi point.</description>
+            </sheet>
+        </element>
+        <element name="Spatial Distortion" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_SPATIAL_DISTORTION">
+            <description>
+                <p>Starting at 18th level, when you move you can distort space, stepping through it. You can teleport up to your movement distance, and become wreathed in psionic energy. Your next weapon attack before the end of your turn deals an additional 3d8 psychic damage. Once you do this, you cannot do this again until you complete a short or long rest.</p>
+            </description>
+            <sheet usage="1/Short Rest">
+                <description>You can teleport up to your movement distance, and become wreathed in psionic energy. Your next weapon attack before the end of your turn deals an additional 3d8 psychic damage.</description>
+            </sheet>
+        </element>
+    
+    <element name="Adapt" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_ADAPT">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>As an action, you can expend a psi point adapting your system to acid, cold, fire, lightning, or thunder energy. For a number of rounds equal to your Constitution modifier, you can cast <em>absorb elements</em> when you would take damage from that element without expending a spell slot.</p>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_ABSORB_ELEMENTS" />
+            </div>
+        </description>
+        <sheet usage="1 Psi Point" action="Action">
+            <description>You can adapt your system to acid, cold, fire, lightning, or thunder energy. For a number of rounds equal to your Constitution modifier, you can cast absorb elements when you would take damage from that element without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" />
+        </rules>
+    </element>
+    <element name="Befuddle Foe" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_BEFUDDLE_FOE">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>As a reaction to being attacked by a creature you can see, you can expend a psi point and attempt to redirect it. It must succeed on a Wisdom saving throw or be befuddled. Choose 4 targets, including yourself, and assign them numbers 1-4. Empty space can be a target. Roll a d4, the attack is redirected to a target corresponding to the number rolled.</p>
+        </description>
+        <sheet action="Reaction" usage="1 Psi Point">
+            <description>As a reaction to being attacked by a creature you can see, you can expend a psi point and attempt to redirect it. It must succeed on a Wisdom saving throw or be befuddled. Choose 4 targets, including yourself, and assign them numbers 1-4. Empty space can be a target. Roll a d4, the attack is redirected to a target corresponding to the number rolled.</description>
+        </sheet>
+    </element>
+    <element name="Border Walk" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_BORDER_WALK">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>When you move, you can expend one psi point to walk the border of the ethereal plane, partially phasing from existence. You can pass through creatures without expending additional movement until the end of your turn, and attacks of opportunity made against you with non magical weapons have disadvantage.</p>
+        </description>
+        <sheet usage="1 Psi Point">
+            <description>When you move, you can walk the border of the ethereal plane, partially phasing from existence. You can pass through creatures without expending additional movement until the end of your turn, and attacks of opportunity made against you with non magical weapons have disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Enhancing Surge" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_ENHANCING_SURGE">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>As a bonus action, you can expend a psi point to gain 1d4 + your intelligence modifier temporary hit points, and cause your next weapon damage roll before the end of your turn to deal 1d4 additional damage.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1 Psi Point">
+            <description>You can add 1d4 + {{intelligence:modifier}} temporary hit points, and cause your next weapon damage roll before the end of your turn to deal 1d4 additional damage.</description>
+        </sheet>
+    </element>
+    <element name="Erase Presence" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_ERASE_PRESENCE">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>As bonus action, you can expend a psi point and attempt to remove knowledge of yourself from the minds of nearby creatures. Creatures of your choice within 30 feet must make an Intelligence saving throw. On failure, you are hidden from the creatures that failed until the start of your next turn, you make an attack against them or interact with them, or they make a Search check against your Psionic Power DC to find you.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1 Psi Point">
+            <description>You can attempt to remove knowledge of yourself from the minds of nearby creatures. Creatures of your choice within 30 feet must make an Intelligence saving throw. On failure, you are hidden from the creatures that failed until the start of your next turn, you make an attack against them or interact with them, or they make a Search check against your Psionic Power DC to find you.</description>
+        </sheet>
+    </element>
+    <element name="Kinetic Barrier" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_KINETIC_BARRIER">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>As a reaction against a ranged attack roll, you can expend a psi point and attempt to deflect incoming ranged attacks. Until the start of your next turn, you can add your Intelligence modifier to your Armor Class against ranged attack rolls.</p>
+        </description>
+        <sheet usage="1 Psi Point" action="Reaction">
+            <description>As a reaction against a ranged attack roll, you can attempt to deflect incoming ranged attacks. Until the start of your next turn, you can add {{intelligence:modifier}} to your Armor Class against ranged attack rolls.</description>
+        </sheet>
+    </element>
+    <element name="Mental Read" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_MENTAL_READ">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>As a bonus action, you expend a psi point to reach out to probe the mind of a creature you can see within 60 feet. The target must make an Intelligence saving throw. On a failed save, you can see through its defenses and have advantage on attacks against that target until the end of your turn.</p>
+        </description>
+        <sheet usage="1 Psi Point" action="Bonus Action">
+            <description>You reach out to probe the mind of a creature you can see within 60 feet. The target must make an Intelligence saving throw. On a failed save, you can see through its defenses and have advantage on attacks against that target until the end of your turn.</description>
+        </sheet>
+    </element>
+    <element name="Mind Slam" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_MIND_SLAM">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>As a bonus action, you can expend a psi point to reach out and slam a Large or smaller creature you can see within 30 feet with your psionic powers. The target must make a Strength saving throw. On a failed save, you push the target 10 feet away from you or knock it prone.</p>
+        </description>
+        <sheet usage="1 Psi Point" action="Bonus Action">
+            <description>You can reach out and slam a Large or smaller creature you can see within 30 feet with your psionic powers. The target must make a Strength saving throw. On a failed save, you push the target 10 feet away from you or knock it prone.</description>
+        </sheet>
+    </element>
+    <element name="Mind Blank" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_MIND_BLANK">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>As a reaction to making an Wisdom, Intelligence, or Charisma saving throw, you can expend a psi point to gain advantage on that roll.</p>
+        </description>
+        <sheet usage="1 Psi Point" action="Reaction">
+            <description>As a reaction to making an Wisdom, Intelligence, or Charisma saving throw, you can gain advantage on that roll.</description>
+        </sheet>
+    </element>
+    <element name="Remote Strike" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_REMOTE_STRIKE">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>When you take the Attack action, you can expend one psi point to give the rest of your attacks that turn a range of 30 feet; you fling your weapons out, controlling them with your telekinetic powers to attack at range, and return them to your hands.</p>
+        </description>
+        <sheet usage="1 Psi Point">
+            <description>When you take the Attack action, you can give the rest of your attacks that turn a range of 30 feet; you fling your weapons out, controlling them with your telekinetic powers to attack at range, and return them to your hands.</description>
+        </sheet>
+    </element>
+    <element name="Telekinetic Leap" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_TELEKINETIC_LEAP">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>When you move, you can expend one psi point to leap up to your movement speed in a single bound touching the ground only at the starting and ending location.</p>
+        </description>
+        <sheet usage="1 Psi Point">
+            <description>When you move, you can leap up to your movement speed in a single bound touching the ground only at the starting and ending location.</description>
+        </sheet>
+    </element>
+    <element name="Translocation Swap" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_PSYCHIC_WARRIOR_PSIONIC_POWER_TRANSLOCATION_SWAP">
+        <supports>Kibbles Psychic Warrior Power</supports>
+        <description>
+            <p>As an action, you can expend a psi point to swap places with another willing target within 30 feet.</p>
+        </description>
+        <sheet usage="1 Psi Point" action="Action">
+            <description>You can swap places with another willing target within 30 feet.</description>
+        </sheet>
+    </element>
+
+</elements>

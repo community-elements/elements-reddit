@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Ancient Arcana</name>
+        <author>KibblesTasty</author>
+        <update version="0.0.1">
+            <file name="ancient-arcana-gravity-spells.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/ancient-arcana-gravity-spells.xml" />
+        </update>
+    </info>
+
+    <element name="Ancient Arcana: Gravity Spells" type="Source" source="Core" id="ID_KIBBLESTASTY_GMBINDER_SOURCE_ANCIENT_ARCANA_GRAVITY_SPELLS">
+        <description>
+            <![CDATA[<p></p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">AAGS</set>
+            <set name="url">https://www.gmbinder.com/share/-LZ1kem629QWQT_ArFmZ</set>
+            <set name="image"></set>
+            <set name="author" abbreviation="KT" url="https://www.gmbinder.com/profile/kibblestasty">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200118</set>
+        </setters>
+    </element>    
+
+    <element name="Fall" type="Spell" source="Ancient Arcana: Gravity Spells" id="ID_KT_AAGS_SPELL_FALL">
+        <supports>Artificer, Sorcerer, Wizard</supports>
+        <description>
+            <p>You alter gravity for yourself, causing you to reorient which way is down for you until the end of your turn. You can pick any direction to fall as if under the effect of gravity, falling up to 500 feet before the spell ends. If you collide with something during this time, you take falling damage as normal, but you can control your fall as you could under normal conditions by holding onto objects or move along a surface according to your new orientation as normal until your turn ends and gravity returns to normal.</p>
+            <div class="sidebar">
+                <h5>PUBLIC SERVICE WARNING</h5>
+                <p>This spell has killed more young Wizards than goblins, blood magic, and polymorph pranks combined. It is recommended to only be used with extreme caution by trained professionals.</p>
+            </div>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Fling" type="Spell" source="Ancient Arcana: Gravity Spells" id="ID_KT_AAGS_SPELL_FLING">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>You manipulate gravity around one large or smaller creature. The target creature makes a Strength saving throw. On failure, you can fling them 40 feet straight up or 20 feet in any direction. If you fling them straight up they immediately fall, taking 4d6 damage falling damage, and fall prone. If you fling them any other direction, they take 2d6 damage and fall prone. If their movement would be stopped early by a creature or object, both the target and creature or object takes 3d6 bludgeoning damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">30 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Gravity Surge" type="Spell" source="Ancient Arcana: Gravity Spells" id="ID_KT_AAGS_SPELL_GRAVITY_SURGE">
+        <supports>Wizard</supports>
+        <description>
+            <p>You create a crushing field of gravity in a 15 radius sphere. Any creature within the area of effect must make a Strength saving throw. On failure, creatures take 2d6 bludgeoning damage and falls prone. On success, creatures take half as much damage are not knocked prone. Creatures that are not on the ground make this save with disadvantage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Crushing Singularity" type="Spell" source="Ancient Arcana: Gravity Spells" id="ID_KT_AAGS_SPELL_CRUSHING_SINGULARITY">
+        <supports>Wizard</supports>
+        <description>
+            <p>You create an overwhelming gravitational singularity at a point within range. When you cast this spell, any creature within 15 feet of the point must make a Strength saving throw. Creatures that fail their saving throw are moved to the closest available space adjacent to the singularity and take 2d6 bludgeoning damage, and an additional 1d6 bludgeoning damage for each other creature that failed the saving throw, up to a maximum of 6d6 bludgeoning damage. Creatures make their saving throw with disadvantage if they are between the center of the area another creature that fails their saving throw.</p>
+            <p class="indent">Until the spell ends, moving away from the singularity while within 15 feet of it requires twice as much movement. Any creature that ends their turn within 15 feet of the singularity must repeat the Strength saving throw, being pulled back to center and taking 1d6 bludgeoning damage on failure.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="range">60</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+</elements>

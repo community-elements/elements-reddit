@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>KibbleTasty’s Psionic Spells</name>
+        <update version="0.0.1">
+            <file name="psionic-spells.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/psionic-spells.xml" />
+        </update>
+    </info>
+    
+    <element name="Compelled Query" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_SPELL_COMPELLED_QUERY">
+        <supports>Kibbles Psion</supports>
+        <description>
+            <p>You focus your telepathic powers on a creature and ask it a question. It must make an Intelligence saving throw, or it conjures a short mental thought or image that answers your question to the best of its ability that you can perceive telepathically. If a character passes a saving throw against this ability, they have advantage on saving throws against it for next 24 hours.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Delve Mind" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_SPELL_DELVE_MIND">
+        <supports>Kibbles Psion</supports>
+        <description>
+            <p>You delve into a creature’s mind forcing it to make an Intelligence saving throw. On failure, for the duration or until you end the spell you gain access to its memories from the past 12 hours, able to recall things it remembers as if they are you own memories, but these memories contain only things the target creature remembers.</p>
+            <p class="indent"><b><em>At Higher Levels.</em></b> When you cast this spell using a spell slot of 4th level or higher, you can delve an additional 12 hours further back in the creatures memories each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 minute.</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Divide Self" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_SPELL_DIVIDE_SELF">
+        <supports>Kibbles Psion</supports>
+        <description>
+            <p>You you create an exact duplicate of yourself within 30 feet of you. It has all of your stats, abilities, and equipment, but you can only choose one to any of your magical items. It acts on your initiative, and has its own actions. It has its own hit points equal to your current hit points when you cast it, but shares your Psi Points, spell slots, and Innate Psionics feature.</p>
+            <p class="indent">At the start of your next turn, pick which is the real you between the two versions. The other one disappears and its essence returns to you, and you gain all memories it gained as your own. If one version dies before the spell ends, you are the version that did not die. Whichever version is you at the end of the spell has all of your magical items.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">psionic</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">1 round</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Flicker" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_SPELL_FLICKER">
+        <supports>Kibbles Psion</supports>
+        <description>
+            <p>You flicker between the material and ethereal plane. Until the start of your next turn, each time you would take damage, including the triggering attack, roll a d4. On a 2, you gain to resistance to that instance of damage. On a 4, you don’t take any damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">psionic</set>
+            <set name="time">1 reaction, when you would take damage</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">1 round</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Mind Blast" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_SPELL_MIND_BLAST">
+        <supports>Kibbles Psion</supports>
+        <description>
+            <p>You emit a blast of psychic energy. Each creature in a 60-foot cone must make an Intelligence saving throw. A creature takes 6d8 Psychic damage and is stunned until the end of their next turn on a failed save. A creature takes half as much damage is not stunned on a successful save.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">Self(60-foot cone)</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Psychic Drain" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_SPELL_PSYCHIC_DRAIN">
+        <supports>Kibbles Psion</supports>
+        <description>
+            <p>You draw on the psychic energy of another creature to sustain yourself. The target must make a Charisma saving throw. On failure it takes 3d8 psychic damage and you gain temporary hit points equal to half the amount of psychic damage dealt and regain one expended psi point.</p>
+            <p class="indent"><b><em>At Higher Levels.</em></b> When you cast this spell using a spell slot of 3rd level or higher, the spell deals an additional 1d8 psychic damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Unlocked Potential" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_SPELL_UNLOCKED_POTENTIAL">
+        <supports>Kibbles Psion</supports>
+        <description>
+            <p>You unlock the potential of a creature’s mind, allowing it to fully reach its limits. For the duration, once per turn the creature can add 1d4 to any attack roll, damage roll, or saving throw it makes. Each time it adds the additional 1d4, it takes 1 psychic damage as it pushes beyond its natural limitations.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 minute.</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+  <!-- 6th level spells -->
+    <append id="ID_PHB_SPELL_ARCANE_GATE">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLADE_BARRIER">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CHAIN_LIGHTNING">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISINTEGRATE">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIND_THE_PATH">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EYEBITE">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HARM">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MASS_SUGGESTION">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MENTAL_PRISON">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SCATTER">
+        <supports>Kibbles Psion</supports>
+    </append>
+  <!-- 7th level spells -->
+    <append id="ID_PHB_SPELL_CROWN_OF_STARS">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ETHEREALNESS">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GEAS*">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PLANESHIFT">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POWER_WORD_PAIN">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_REGENERATE">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_REVERSE_GRAVITY">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TELEPORT">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WHIRLWIND">
+        <supports>Kibbles Psion</supports>
+    </append>
+  <!-- 8th level spells -->
+    <append id="ID_PHB_SPELL_ANTIMAGIC_FIELD">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DEMIPLANE">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DOMINATE_MONSTER">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EARTHQUAKE">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEEBLEMIND">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MADDENING_DARKNESS">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POWER_WORD_STUN">
+        <supports>Kibbles Psion</supports>
+    </append>
+  <!-- 9th level spells -->
+    <append id="ID_PHB_SPELL_ASTRAL_PROJECTION">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FORESIGHT">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GATE">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POWER_WORD_KILL">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PSYCHIC_SCREAM">
+        <supports>Kibbles Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TIME_STOP">
+        <supports>Kibbles Psion</supports>
+    </append>
+
+  <!-- Psionic Powers -->
+    <element name="Enhancing Surge" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_PSIONIC_POWER_ENHANCING_SURGE">
+        <supports>Kibbles Psionic Power</supports>
+        <description>
+            <p>You empower the body of a target creature you can see with your Psionics. The target gains 1d4 temporary hit points and the next time the target deals damage, it deals 1d4 additional damage to one application of that damage roll. Any remaining effects of this spell end at the start of your next turn.</p>
+            <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Enhancing Surge (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p class="indent"><b>Savage (1+ psi point):</b> The target’s next weapon attack deals an +1d6 additional damage for each point spent.</p>
+            <p class="indent"><b>Fortifying (1+ psi point):</b> The target gains an additional +1d6 temporary hit points for each point spent.</p>
+            <p class="indent"><b>Swift (2 psi points):</b> The target gains +30 feet of movement speed.</p>
+            <p class="indent"><b>Resilient (3 psi points):</b> the target gains resistance to all damage until the start of your next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 Action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">1 Round</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>    
+    <element name="Astral Construct" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_PSIONIC_POWER_ASTRAL_CONSTRUCT">
+        <supports>Kibbles Psionic Power</supports>
+        <description>
+            <p>You project an ethereal creation from your mind taking the shape of a medium or smaller creature, weapon, or other object. This creation is clearly ethereal in nature. When you create it, and on subsequent turns using your action to mentally control it, you can move it up to 30 feet in any direction and attack; so long as it does not move beyond the range of the power. To attack with it, make a melee spell attack, on a hit, the target takes 1d8 force damage.</p>
+            <p class="indent">While the Astral Construct is active, you can spend Psi Points up to your per use limit to issue commands that effect and empower your construct. Commands require no action, but you cannot exceed your psi point limit in total commands issued, and each command can only be issued once per turn.</p>
+            <p class="indent"><b>Strike (2 psi point):</b> The construct makes an attack (even if it has already attacked).</p>
+            <p class="indent"><b>Relocate (1 psi point):</b> The construct disappears and reappears anywhere within 60 feet of you.</p>
+            <p class="indent"><b>Solidify (1 psi point):</b> You construct becomes solid, blocking its space until the start of your next turn. You can only use this command if it is not in another creatures space. It has an armor class of 16, and hit points of your Intelligence modifier + your Psion level. The construct etheral again if it drops to zero hit points.</p>
+            <p class="indent"><b>Grab (1 psi point):</b> Can only be used while your construct is Solidified. A target creature within 5 feet of your construct must make a Strength saving throw or be restrained. At the end of the creatures turns it can repeat the saving throw. The condition ends of the construct becomes ethereal again.</p>
+            <p class="indent"><b>Grow (1 psi points):</b> Your construct by a size, and its damage increased by one die. It returns to its normal size at the start of your next turn unless you use Sustain. It can only gain one additional die (for example, up to 2d8).</p>
+            <p class="indent"><b>Replicate (3 psi points):</b> You use Relocate, but the original does not disappear. Until the end of your turn, you have another constructs and control both with the same action (commands only effect one of your choice). Pick one construct to fade at the start of your next turn or use Sustain.</p>
+            <p class="indent"><b>Sustain (1+ psi point):</b> At the start of your turn, you can sustain the effect of a Solidify, Grow or Replicate command an additional round. This costs 1 psi point for each effect sustained. Sustaining solidify refreshes the constructs hit points to its maximum.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 Action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, Up to 1 minute</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>    
+    <element name="Telekinetic Force" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_PSIONIC_POWER_TELEKINETIC_FORCE">
+        <supports>Kibbles Psionic Power</supports>
+        <description>
+            <p>You smash a target creature you can see or object with your mental power. The target must succeed on a Strength saving throw, or take 1d10 bludgeoning damage and be knocked 5 feet in a direction of your choosing or knocked prone.</p>
+            <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Telekinetic Force (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p class="indent"><b>Hammering (1+ psi points):</b> The target takes +1d10 bludgeoning damage for each point spent.</p>
+            <p class="indent"><b>Hurling (1-3 psi points):</b> The target is knocked +10 feet in a direction of your chosing for each point spent.</p>
+            <p class="indent"><b>Crushing (2 psi points):</b> The target is restrained until the end of its next turn.</p>
+            <p class="indent"><b>Sweeping (3 psi points):</b> You can target all creatures in a 10 foot radius of a point within range.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 Action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>    
+    <element name="Telepathic Intrusion" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_PSIONIC_POWER_TELEPATHIC_INTRUSION">
+        <supports>Kibbles Psionic Power</supports>
+        <description>
+            <p>You assault the mind of a creature you can see directly. The target must succeed on a Wisdom saving throw, or take 1d8 psychic damage. If the target fails the saving throw, it has disadvantage on attacks made against you until the start of your next turn. You can choose to deal no damage to the creature when it fails its saving throw.</p>
+            <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Telepathic Intrusion (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p class="indent"><b>Rending (1+ psi points):</b> The target takes +1d8 psychic damage for each additional point spent.</p>
+            <p class="indent"><b>Terrifying (1 psi point):</b> The target is frightened of you until the end of its next turn if it fails its saving throw.</p>
+            <p class="indent"><b>Meddling (2 psi points):</b> You make one creature invisible to target creature or cause the creature to see something that is not there with the effect of <i>minor illusion</i> until the start of your next turn if it fails its saving throw.</p>
+            <p class="indent"><b>Overwhelming (3 psi points):</b> The target is <i>stunned</i> until the end of its next turn if it fails its saving throw.</p>
+            <!--<p class="indent"><b>Double (3 psi points):</b> You can target a second creature.</p>-->
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 Action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>    
+    <element name="Phase Rift" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_PSIONIC_POWER_PHASE_RIFT">
+        <supports>Kibbles Psionic Power</supports>
+        <description>
+            <p>You step through space traveling up to 10 feet in a straight line leaving a spatial tear behind. You can pass through creatures but cannot pass through solid objects more than a foot thick. Any creature in the path of this tear must make Dexterity saving throw or take 1d8 force damage.</p>
+            <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Phase Rift (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p class="indent"><b>Disruptive (1+ psi point):</b> Each target that fails their saving throw takes an additional 1d8 force damage for each point spent.</p>
+            <p class="indent"><b>Blurring (1 psi point):</b> You are indistinct and considered heavily obscured until the start of your next turn.</p>
+            <p class="indent"><b>Long (1-3 psi points):</b> You can travel an additional 5 feet for each point spent.</p>
+            <p class="indent"><b>Echoing (2 psi points):</b> You immediately Phase Rift again with the same action.</p>
+            <p class="indent"><b>Ethereal (2 psi points):</b> You can pass through solid objects so long as you don’t end your Phase Rift inside of one.</p>
+            <!--<p class="indent"><b>Exploding (3 psi points):</b> You send out a volatile rift of energy where you arrive. Any creature within 20 feet of where you arrive must also save against the ability.</p>-->
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 Action</set>
+            <set name="range">10 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">1 Round</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>    
+    <element name="Elemental Blast" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_PSIONIC_POWER_ELEMENTAL_BLAST">
+        <supports>Kibbles Psionic Power</supports>
+        <description>
+            <p>You can use your mind to create a burst of elemental power, blasting a target you can see within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 cold, fire, force or lightning damage.</p>
+            <p class="indent">For each die of cold damage dealt, the creature’s movement speed is reduced by 5 feet until the end of their next turn, for each die of fire damage dealt by the original attack, the creature takes 1d4 fire damage at the start of its next turn, and for each die of lightning damage dealt, an arc of lightning strikes another creature of your choice within 20 feet, dealing 1d4 lightning damage.</p>
+            <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p class="indent"><b>Amplifed (1+ psi points):</b> The target takes an additional 1d8 cold, fire, force or lightning damage.</p>
+            <p class="indent"><b>Lasting (1 psi point):</b> Your Elemental Blast leaves a 5 foot radius sphere of devestating behind where it strikes until the start of your next turn. Creatures that enter this zone for the first time or end their turn in it must make a Constitution saving throw or suffer the secondary effects (slow, burn, arc) of the blast as if they haed been hit by it.</p>
+            <p class="indent"><b>Massive (1-3 psi points):</b> You unleash a massive blast; rather than making an attack roll, all creatures within a 15 foot cone must make a Dexterity Saving throw. On failure, they take the effect as if hit by the Elemental Blast. The size of the cone is doubled for each point up to 3 spent (2 points for 30 feet, 3 points for 60 feet).</p>
+            <p class="indent"><b>Overcharged (0 psi point):</b> You take 1 force damage and do not add your Proficiency modifier from the attack or Spell Save DC for your Elemental Blast, but increase the damage it deals by twice your Proficiency modifier.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 Action</set>
+            <set name="range">30 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">1 Round</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>  
+    <element name="Telekinetic Weapons" type="Spell" source="Kibbles’ Psion" id="ID_KT_PSION_PSIONIC_POWER_TELEKINETIC_WEAPONS">
+        <supports>Kibbles Psionic Power</supports>
+        <description>
+            <p>You telekinetically fling a weapon at a creature or object. Choose a weapon within 15 feet that isn’t been worn or carried, or choose a weapon under your control. Make a ranged spell attack. On hit the target takes damage equal to the weapon’s damage dice. The range of the attack decreases to 15 feet if the weapon has the heavy or special property, and increases to 60 feet if the weapon has the light property.</p>
+            <p class="indent">You can use Psionic Mastery points on this power, and this power counts as a Discipline Power of the Telekinetics Discpline (for example, for the purpose of Empowered Psionics).</p>
+            <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Telekinetic Force (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p class="indent"><b>Multiple (1+ psi points):</b> For each additional psi point spent, you can fling an additional weapon.</p>
+            <p class="indent"><b>Spinning (2 psi points):</b> You can replace an attack with casting <em>cloud of daggers</em>.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 Action</set>
+            <set name="range">30 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+</elements>
