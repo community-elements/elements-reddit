@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Infusionsmith Specialization for Kibbles’ Artificer</name>
+        <update version="0.0.1">
+            <file name="artificer-infusionsmith.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibbles-artificer/artificer-infusionsmith.xml" />
+        </update>
+    </info>
+    
+    <element name="Infusionsmith" type="Archetype" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_ARTIFICER_INFUSIONSMITH">
+        <supports>Kibbles Artificer Specialization</supports>
+        <description>
+            <p>An Infusionsmith is, in some ways, perhaps the most quintessential type of Artificer. While other Artificers may delve into mechanics and tinkering, an Infusionsmith is an artificer that tinkers with magic itself.</p>
+            <p class="indent">These are cutting edge of magical engineering, understanding the principle applications of magic. An Infusionsmith would have ground to stand on in calling a wizard an impulsive spell slinger, for these are the artificers that work their magic through careful and meticulous method, laying down magic they may not use for hours, or painstakingly crafting a long lasting enchantment.</p>
+            <p class="indent">An Infusionsmith can be magical swordsman, a wandslinger, or bookish supporting character with a bag full of tricks that never quite runs dry. Some will stand within a maelstrom of animated blades while others will plink away with a crossbow that seems unerringly accurate, but their common theme is using their prowess of infusion to make themselves formidable.</p>
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSIONSMITHS_PROFICIENCY" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_ARMAMENT" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_SPELL_MANUAL" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSE_MAGIC" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_IMPROVED_ARMAMENTS" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_FOCUS" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSIONSMITHS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_ARMAMENT" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_SPELL_MANUAL" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSE_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_IMPROVED_ARMAMENTS" level="5" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_FOCUS" level="14" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSIONSMITH_UPGRADES" level="3" />
+        </rules>
+    </element>
+    <element name="Infusionsmith’s Proficiency" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSIONSMITHS_PROFICIENCY">
+        <description>
+            <p>When you choose this specialization at 1st level, you gain proficiency with jeweler’s tools and calligrapher’s supplies.</p>
+            <p class="indent">Your knowledge of infusion magic gives you a natural affinity for scribing spell scrolls. Creating a magic spell scroll only takes you half the time and material cost it would normally take.</p>
+        </description>
+        <sheet>
+            <description>Creating a magic spell scroll only takes you half the time and material cost it would normally take.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+        </rules>
+    </element>
+    <element name="Infused Armament" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_ARMAMENT">
+        <description>
+            <p>Starting at 1st level, you can infuse a powerful armament to take into battle. At the end of a long rest, select one of the Infusions below. The infusion lasts until the end of your next long rest.</p>
+            <h5>ANIMATED WEAPON</h5>
+            <p>You touch a melee weapon, causing it to spring to life. An animated weapon can be carried or stowed, but while readied, it floats beside you. While an animated weapon is readied, as an action you can make a melee spell attack with it.</p>
+            <p class="indent">If this attack hits, it deals the weapon’s damage dice + your Intelligence modifier. The range of this attack is 30 feet, with that range reduced to 15 feet if the weapon has the Heavy property and increased to 60 feet if the weapon has the Light property.</p>
+            <h5>BLASTING ROD</h5>
+            <p>You touch a nonmagical wand-blank, stick, staff, or rod, infusing with the ability to cast a cantrip. Select one Evocation Cantrip from the Wizard spell list that does not require concentration. Thereafter, as an action, you can use the Blasting rod to cast that cantrip.</p>
+            <p class="indent">Once per turn, when you deal damage to a creature or object with your Blasting Rod, you can add your Intelligence modifier to damage dealt to that target.</p>
+            <h5>INFUSED WEAPON</h5>
+            <p>You touch a weapon, enchanting its effectiveness. While this weapon is enchanted, you - and only you - have proficiency with it.</p>
+            <p class="indent">An Infused Weapon can be wielded like a normal weapon, but gains the following property: you can apply your Intelligence modifier to the to attack and damage roll of the weapon where you usually apply your Strength or Dexterity modifier.</p>
+            <p class="indent">If an Infused Weapon has a single damage die, and that damage die is less than a d12, the damage die of the Infused Weapon is increased (for example, a dagger’s damage die would go from a d4 to a d6).</p>
+        </description>
+        <sheet>
+            <description>At the end of a long rest, you select either the Animated Weapon, Blasting Rod or Infused Weapon infusion. The infusion lasts until the end of your next long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_ARMAMENT_ANIMATED_WEAPON" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_ARMAMENT_BLASTING_ROD" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_ARMAMENT_INFUSED_WEAPON" level="1" />
+
+        </rules>
+    </element>
+        <element name="Animated Weapon" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_ARMAMENT_ANIMATED_WEAPON">
+            <supports>Cross Discipline</supports>
+            <description>
+                <p>You touch a melee weapon, causing it to spring to life. An animated weapon can be carried or stowed, but while readied, it floats beside you. While an animated weapon is readied, as an action you can make a melee spell attack with it.</p>
+                <p class="indent">If this attack hits, it deals the weapon’s damage dice + your Intelligence modifier. The range of this attack is 30 feet, with that range reduced to 15 feet if the weapon has the Heavy property and increased to 60 feet if the weapon has the Light property.</p>
+            </description>
+            <sheet action="Action">
+                <description>You can make a melee spell attack with your Animated Weapon. The weapon does the weapon’s damage dice + {{intelligence:modifier}}. Range: 60/30/15 feet for Light/Medium/Heavy.</description>
+            </sheet>
+        </element>
+        <element name="Blasting Rod" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_ARMAMENT_BLASTING_ROD">
+            <supports>Cross Discipline</supports>
+            <description>
+                <p>You touch a nonmagical wand-blank, stick, staff, or rod, infusing with the ability to cast a cantrip. Select one Evocation Cantrip from the Wizard spell list that does not require concentration. Thereafter, as an action, you can use the Blasting rod to cast that cantrip.</p>
+                <p class="indent">Once per turn, when you deal damage to a creature or object with your Blasting Rod, you can add your Intelligence modifier to damage dealt to that target.</p>
+            </description>
+            <sheet action="Action">
+                <description>You can cast an Evocation cantrip that does not require concentration that you have infused into a wand-blank, stick , staff, or rod. Once per turn, when you deal damage, you add your Intelligence modifier to the damage (+{{intelligence:modifier}}.</description>
+            </sheet>
+        </element>
+        <element name="Infused Weapon" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_ARMAMENT_INFUSED_WEAPON">
+            <supports>Cross Discipline</supports>
+            <description>
+                <p>You touch a weapon, enchanting its effectiveness. While this weapon is enchanted, you - and only you - have proficiency with it.</p>
+                <p class="indent">An Infused Weapon can be wielded like a normal weapon, but gains the following property: you can apply your Intelligence modifier to the to attack and damage roll of the weapon where you usually apply your Strength or Dexterity modifier.</p>
+                <p class="indent">If an Infused Weapon has a single damage die, and that damage die is less than a d12, the damage die of the Infused Weapon is increased (for example, a dagger’s damage die would go from a d4 to a d6).</p>
+            </description>
+            <sheet>
+                <description>You infuse a weapon, and only you have proficiency with it. You can apply your Intelligence modifier instead Str/Dex to attack and damage rolls. If the weapon has a single damage die, the die is increased by one category up to a d12.</description>
+            </sheet>
+        </element>
+    <element name="Spell Manual" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_SPELL_MANUAL">
+        <description>
+            <p>At 3rd level, you have a Spell Manual containing two 1st-level wizard spells of your choice. Your Spell Manual is the repository of any non-Artificer spell you know.</p>
+            <p class="indent">You cannot cast these spells and they do not count against your spells known, but when you would learn a new Artificer spell, you can select that spell from a spell in Spell Manual instead of the Artificer spell list, at which point you can cast it as normal. You can choose to scribe any Artificer spell you can cast into the Spell Manual, as if copying from a written spell.</p>
+            <h5>LEARNING SPELLS OF 1ST LEVEL AND HIGHER</h5>
+            <p>Each time you gain a artificer level, you can add one wizard Spell of your choice to your Spell Manual for free. Each of these spells must be of a level for which you have Spell Slots, as shown on the Artificer table.</p>
+            <p class="indent">On your adventures, you might find other Spells that you can add to your Spell Manual. For each level of the spell, the process takes 2 hours and costs 50 gold pieces.</p>
+        </description>
+        <sheet>
+            <description>You can cast spells from your Spell Manual if you have learned them as an Artificer spell. You can add additional spells to your Spell Manual for 2 hours and 50 gp for each level of the spell.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Spell Manual (Artificer)" number="2" supports="Wizard,1" level="3" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="4" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="5" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="6" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="7" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="8" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="9" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="10" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="11" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="12" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="13" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="14" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="15" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="16" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="17" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="18" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="19" spellcasting="Artificer" />
+            <select type="Spell" name="Spell Manual (Artificer)" number="1" supports="Wizard,$(spellcasting:slots)" level="20" spellcasting="Artificer" />
+        </rules>
+    </element>
+    <element name="Infuse Magic" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSE_MAGIC">
+        <description>
+            <p>Additionally at 3rd level, you can use your Spell Manual to infuse magic items, such as wands, storing the power for later use. In a special ritual taking 1 minute, you can expend a spell slot to cast a spell as normal, but the spell does not take effect, and is stored in the item for later use.</p>
+            <p class="indent">Subsequently, any creature holding the item with an Intelligence of 6 or higher that is aware there is magic infused in it can expend the stored magic to cast the spell.</p>
+            <p class="indent">The spell uses your spellcasting modifiers, but is in all other ways treated as if the creature holding it cast the spell. The magic infused in the item fades if you complete a long rest without expending the stored spell.</p>
+        </description>
+        <sheet>
+            <description>In a special ritual taking 1 minute, you can expend a spell slot to cast a spell as normal, but the spell is stored in the item for later use.</description>
+        </sheet>
+    </element>
+    <element name="Improved Armaments" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_IMPROVED_ARMAMENTS">
+        <description>
+            <p>Starting at 5th level, you have mastered the use of your Infused Armaments, allowing you grow more effective with them.</p>
+            <p class="indent">Your <b>Animated Weapon</b> infusion can now animate two Animated Weapons, and you can attack with both them as part of the same action.</p>
+            <p class="indent">Your <b>Blasting Rod</b> infusion can now be used more easily. If you cast a spell using an item from Infuse Magic or from a wand (from the Magical Wand upgrade or a normal wand), you can cast the cantrip with your Blasting Rod as a bonus action.</p>
+            <p class="indent">Your <b>Infused Weapon</b> empowers you, allowing you to attack twice instead of once when you take the attack action.</p>
+        </description>
+        <sheet>
+            <description>Your Animated Weapon infusion can now animate two Animated Weapons, and you can attack with both them as part of the same action. If you cast a spell using an item from Infuse Magic or from a wand (from the Magical Wand upgrade or a normal wand), you can cast the cantrip with your Blasting Rod as a bonus action. You can attack twice instead of once with your Infused Weapon when you take the attack action.</description>
+        </sheet>
+    </element>
+    <element name="Infused Focus" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_FOCUS">
+        <description>
+            <p>Starting at 14th level, you can anchor a powerful spell into an item. When you cast a concentration spell, you can anchor it to an item (such as a staff, wand or weapon), and do not need to maintain concentration. The spell lasts a number of rounds equal to your intelligence modifier, after which the spell ends.</p>
+            <p class="indent">Once you use this ability, you must complete a short or long rest before using it again.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you cast a concentration spell, you can anchor it to an item (such as a staff, wand or weapon), and do not need to maintain concentration. The spell lasts for {{intelligence:modifier}} rounds.</description>
+        </sheet>
+    </element>
+    <element name="Infusionsmith Upgrades" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSIONSMITH_UPGRADES">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Infusionsmith Upgrade (Artificer 3)" level="3" supports="Specialization Upgrade,Infusionsmith,3" />
+            <select type="Archetype Feature" name="Infusionsmith Upgrade (Artificer 5)" level="5" supports="Specialization Upgrade,Infusionsmith,(3||5)" />
+            <select type="Archetype Feature" name="Infusionsmith Upgrade (Artificer 7)" level="7" supports="Specialization Upgrade,Infusionsmith,(3||5)" />
+            <select type="Archetype Feature" name="Infusionsmith Upgrade (Artificer 9)" level="9" supports="Specialization Upgrade,Infusionsmith,(3||5||9)" />
+            <select type="Archetype Feature" name="Infusionsmith Upgrade (Artificer 11)" level="11" supports="Specialization Upgrade,Infusionsmith,(3||5||9||11)" />
+            <select type="Archetype Feature" name="Infusionsmith Upgrade (Artificer 13)" level="13" supports="Specialization Upgrade,Infusionsmith,(3||5||9||11)" />
+            <select type="Archetype Feature" name="Infusionsmith Upgrade (Artificer 15)" level="15" supports="Specialization Upgrade,Infusionsmith" />
+            <select type="Archetype Feature" name="Infusionsmith Upgrade (Artificer 17)" level="17" supports="Specialization Upgrade,Infusionsmith" />
+            <select type="Archetype Feature" name="Infusionsmith Upgrade (Artificer 19)" level="19" supports="Specialization Upgrade,Infusionsmith" />
+
+        </rules>
+    </element>
+
+    <!-- Specialization Upgrades -->
+    <element name="Animated Archer" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_ANIMATED_ARCHER">
+        <supports>Specialization Upgrade,Infusionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You master animation enchantments allowing you to use your Animate Weapon feature on a ranged weapon and a quiver of ammunition. An animated ranged weapon hovers near you, and can target anything inside the weapon’s normal range with a ranged spell attack, dealing weapon damage + your intelligence modifier on hit. The weapon requires ammunition, and can carry up 30 pieces of ammunition at a time, after which it needs to be reloaded as an action.</p>
+        </description>
+        <sheet usage="Animated Weapon">
+            <description>You can create a ranged Animated Weapon.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Animated Shield" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_ANIMATED_SHIELD">
+        <supports>Specialization Upgrade,Infusionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You apply your animating magic to a shield. At the end of a long rest, you can touch a shield, causing it to spring to life and protect you until you complete your next long rest. While it is protecting you, you gain the benefit if you had the shield equipped. You cannot benefit from both an animated shield and an equipped shield.</p>
+            <p class="indent">While you have an animated shield, you can use your reaction to send it to defend an ally who is being attacked. You can impose disadvantage on that attack, but do not gain the benefits of having an animated shield until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>At the end of a long rest, you create an animated shield.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Arcane Armament" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_ARCANE_ARMAMENT">
+        <supports>Specialization Upgrade,Infusionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You master armoring yourself with magical enchantments. You learn the <em>mage armor</em> spell. While under the effect of mage armor, you can add your Intelligence modifier to your AC instead of your Dexterity modifier. You can only do this if you are not adding your Intelligence modifier to your AC from another source. Additionally you gain resistance to force damage.</p>
+        </description>
+        <sheet>
+            <description>Resistance to force damage. Use Int instead of Dex for AC while under effects of mage armor.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" spellcasting="Artificer" known="true" />
+        </rules>
+    </element>
+    <element name="Deflecting Weapon" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_DEFLECTING_WEAPON">
+        <supports>Specialization Upgrade,Infusionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>While you have an animated melee weapon, if you are attacked you can use your reaction to defend yourself with them, granting you +2 AC against an single attack. If the attack misses you and the attacker is within 5 feet of you, you can immediately attack the creature that attacked you, making a melee spell attack with one animated weapon against the attacker if they are in range.</p>
+        </description>
+        <sheet action="Reaction" usage="Animated Weapon">
+            <description>You use an animated melee weapon when attacked to gain +2 AC against the attack.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Magical Wand" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND">
+        <supports>Specialization Upgrade,Infusionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast. This wand has three charges.</p>
+            <p class="indent">You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <sheet>
+            <description>You can create a Wand with a 1st level or higher spell from your manual. The Wand has 3 charges. </description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Infuse Elements" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_INFUSE_ELEMENTS">
+        <supports>Specialization Upgrade,Infusionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You can infuse elements with your magic temporarily, granting you limited control of them. You learn the cantrips <em>control flames</em>, <em>mold earth</em>, and <em>shape water</em>.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" spellcasting="Artificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" spellcasting="Artificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" spellcasting="Artificer" />
+        </rules>
+    </element>
+    <element name="Skilled Animation" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_SKILLED_ANIMATION">
+        <supports>Specialization Upgrade,Infusionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You manage to make the magic of your Animated Weapons so potent that attacks made with them are made with a fighting style. Attacks made with one handed weapons gain Dueling, attacks made with two-handed weapons gain Great Weapon Fighting, and attacks made with ranged weapons gain Archery.</p>
+        </description>
+        <sheet usage="Animated Weapon">
+            <description>One-handed weapons gain Dueling, two-handed weapons gain Great Weapon Fighting.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Soul Saving Bond" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_SOUL_SAVING_BOND">
+        <supports>Specialization Upgrade,Infusionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You set up a special magical bond between you and another creature. When either creature bound by this abilities fails a Wisdom, Intelligence, Charisma, or Death saving throw, the other character can make their own saving throw, replacing the failed saved with their own roll. If this ability is used on a death saving throw, the replacement roll is a 20. Once a roll is replaced by this feature, it cannot be used again until both creatures in the bond have completed a short or long rest.</p>
+            <p class="indent">This bond can be set up with a different creature at the end of a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Warding Stone" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_WARDING_STONE">
+        <supports>Specialization Upgrade,Infusionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You learn how to weave a protective enchantment on an item. That item gains a pool of temporary hit points equal to your Artificer level. Whoever is carrying this item gains any temporary hit points remaining in this pool, but these are lost when that creature is no longer carrying this item.</p>
+            <p class="indent">This pool of temporary hit points refreshes when the Artificer that created it completes a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can create an item that grants {{level:artificer}} temporary hit points</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Worn Enchantment" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_WORN_ENCHANTMENT">
+        <supports>Specialization Upgrade,Infusionsmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You can enchant an item you a wearing, such as as scarf or cloak to animate and assist you with a task, be it climbing a wall, grappling an enemy, or picking a lock. You can expend a 1st level spell slot to gain proficiency in a Strength or Dexterity skill until you complete a long rest. You can use up all the magic in the item to gain advantage on one check of that skill, immediately ending the effect.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 5th level upgrades -->
+    <element name="Arcane Ammunition" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_ARCANE_AMMUNITION">
+        <supports>Specialization Upgrade,Infusionsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>You infuse a ranged weapon with special magic granting it magical ammunition. The weapons damage becomes force damage and it no longer requires ammunition to fire. If the weapon had the Loading property, it no longer has the Loading Property.</p>
+        </description>
+        <sheet>
+            <description>You can create a ranged weapon that uses magical ammunition.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Infuse Shadows" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_INFUSE_SHADOWS">
+        <supports>Specialization Upgrade,Infusionsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>You learn the spell <em>shadow blade</em>. When you are wielding the blade conjured by shadow blade you can treat it as an Infused Weapon.</p>
+        </description>
+        <sheet usage="Infused Weapon">
+            <description>You can use shadow blade as an Infused Weapon.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_SHADOW_BLADE" spellcasting="Artificer" known="true" />
+        </rules>
+    </element>
+    <element name="Lesser Ring of Protection" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_LESSER_RING_OF_PROTECTION">
+        <supports>Specialization Upgrade,Infusionsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>You make a prototype Ring of Protection. Any creature wearing it can add +1 to their armor class.</p>
+        </description>
+        <sheet>
+            <description>You can make a +1 Ring of Protection</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Malicious Infusion" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_MALICIOUS_INFUSION">
+        <supports>Specialization Upgrade,Infusionsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>As a reaction to being hit with a metal weapon, you can cast <em>heat metal</em> targeting the weapon that struck you. Additionally, you learn the spell <em>heat metal</em>.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When hit with a metal weapon, you can use heat metal on it</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" spellcasting="Artificer" known="true" />
+        </rules>
+    </element>
+    <element name="Ring of Reaction" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_RING_OF_REACTION">
+        <supports>Specialization Upgrade,Infusionsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>You make a minor magic ring. Any creature wearing it can add your Intelligence modifier to their Dexterity saving throws and initiative rolls.</p>
+        </description>
+        <sheet>
+            <description>You can make a Ring of Reaction</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Translocation Binding" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_TRANSLOCATION_BINDING">
+        <supports>Specialization Upgrade,Infusionsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>As a bonus action while attacking with an Infused or Animated melee weapon, you can expend a first level spell slot and teleport to an unoccupied location within 5 feet of it before it returns to you. You can invoke this even if the attack misses the target.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Expend 1st level slot to teleport to within 5 feet of your Infused or Animated weapon.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Weapon Enchantment Resonance" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_WEAPON_ENCHANTMENT_RESONANCE">
+        <supports>Specialization Upgrade,Infusionsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>When you cast <em>arcane weapon</em>, <em>magical weapon</em>, <em>elemental weapon</em>, <em>holy weapon</em>, or <em>vorpal weapon</em> it also effects any weapon Animated or Infused by you. Additionally, you can target a weapon with any <em>arcane weapon</em>, <em>magical weapon</em>, or <em>elemental weapon</em> even if the weapon is already magically.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Weapon Enchantment Expertise" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_WEAPON_ENCHANTMENT_EXPERTISE">
+        <supports>Specialization Upgrade,Infusionsmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>When you cast <em>arcane weapon</em>, <em>magical weapon</em> or <em>vorpal weapon</em> on a weapon, that weapon deals an additional 1d4 force damage. The damage of elemental weapon is increased by 1d4 of the elemental type chosen.age.</p>
+            <p class="indent">Additionally, when you make a Constitution save to maintain concentration on <em>arcane weapon</em>, <em>magical weapon</em>, <em>elemental weapon</em>, or <em>vorpal weapon</em>, you have advantage on that saving throw.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 9th level upgrades -->
+    <element name="Detonate Armament" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_DETONATE_ARMAMENT">
+        <supports>Specialization Upgrade,Infusionsmith,9</supports>
+        <requirements>[level:artificer:9],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_ARCANE_ARMAMENT</requirements>
+        <prerequisite>Artificer Level 9, Arcane Armament</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Arcane Armament, Artificer Level 9</p>
+            <p>As a reaction to taking damage, you can end the effect of <em>mage armor</em> to cast <em>thunder step</em> without expending a spell slot. When you cast thunder step in this manner, it deals force damage instead of thunder damage.</p>
+            <p class="indent">Once you do this, you cannot use this ability again until the end of your next short or long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short Rest">
+            <description>When you take damage, sacrifice mage armor to cast thunder step</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Dimensional Pockets" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_DIMENSIONAL_POCKETS">
+        <supports>Specialization Upgrade,Infusionsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>You enchant a pocket on your gear to contain far more than it would appear. That pocket can hold any object that can fit through a 6 inch diameter opening, and up to 50 pounds. The pocket otherwise behaves in the same manner as a <em>bag of holding</em>.</p>
+        </description>
+        <sheet>
+            <description>You create a pocket that can hold more than it would appear</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Invisibility Cloak" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_INVISIBILITY_CLOAK">
+        <supports>Specialization Upgrade,Infusionsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>You make a cloak of invisibility. While wearing this a creature can cast invisibility once without expending a spell slot. When cast in this method it does not require concentration. It cannot be used again in that way until you complete a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>Spell effect: invisibility (no concentration)</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" />
+        </rules>
+    </element>
+    <element name="Prepared Enchantment" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_PREPARED_ENCHANTMENT">
+        <supports>Specialization Upgrade,Infusionsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>You bestow magical enchantments onto your gear, casting a limited version of <em>contingency</em> without expending a material component or spell slot. When cast in this way, the spell triggered by contingency must must a 2nd level or lower spell, and ends if you complete a long rest before the contingency is triggered.</p>
+            <p class="indent">Once you cast <em>contingency</em> in this way, you cannot cast it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>Spell effect: contingency (limited version)</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CONTINGENCY" />
+        </rules>
+    </element>
+    <element name="Spell Trapping Ring" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_SPELL_TRAPPING_RING">
+        <supports>Specialization Upgrade,Infusionsmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>You set a powerful magic into a non-magical ring. You can use this ring to cast <em>counterspell</em> without expending a spell slot. When you cast counterspell in this way and it succeeds, the spell countered is stored in the ring. You can then cast the stored spell without expending a spell slot, but the spell fades if it is not used before you complete a long rest.</p>
+            <p class="indent">Once you use this ring, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Spell effect: counterspell (special)</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" />
+        </rules>
+    </element>
+
+    <!-- 11th level upgrades -->
+    <element name="Enchanted Broom" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_ENCHANTED_BROOM">
+        <supports>Specialization Upgrade,Infusionsmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p>You can enchant a broom (or broom like object) into a Broom of Flying. You set the command word for the broom, and the Broom only obeys you.</p>
+        </description>
+        <sheet>
+            <description>You create a Broom of Flying</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Empower Weapon" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_EMPOWER_WEAPON">
+        <supports>Specialization Upgrade,Infusionsmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p>When you hit a creature with a weapon, you can infuse the weapon with arcane energy as a bonus action to deal 3d4 additional force damage. When infusing the weapon in this way you can expend a 1st level spell slot to increase the damage further. The extra damage is 3d4 for a 1st-level spell slot, plus 2d4 for each spell level higher than 1st.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>When you hit, infuse for additional damage</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Mixed Technique" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_MIXED_TECHNIQUE">
+        <supports>Specialization Upgrade,Infusionsmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p>When you create an Arcane Armament at the end of a long rest, you can create two different Infused Armaments (you cannot select the same option twice); if you use your action to use one to attack or cast a cantrip, you can make a single attack with the other as a bonus action (a single Animated Weapon attack, or a single attack with your Infused Weapon).</p>
+            <p class="indent">For example, if you use your action to cast a cantrip with your Blasting Rod, you can use your bonus action to make a single animated weapon attack, or if you use your action to attack with your Animated Weapons, you can make a single Infused Weapon attack.</p>
+            <h5>SPELLSWORD’S TECHNIQUE</h5>
+            <p>You can make a Blasting Rod that allows you to cast booming blade, and consequently use Mixed Technique to cast booming blade, attacking with your Infused Weapon in your other hand, and then attack with your bonus action.</p>
+        </description>
+        <sheet>
+            <description>You can create two different Infused Armaments at the end of a long rest</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Life Infusion" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_LIFE_INFUSION">
+        <supports>Specialization Upgrade,Infusionsmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p>You learn a potent magical infusion that suffuses a creature with life energy. You can cast <em>regenerate</em> without expending a spell slot. Once you cast this spell in this manner, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Spell effect: regenerate</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_REGENERATE" />
+        </rules>
+    </element>
+    <element name="Magical Rod" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD">
+        <supports>Specialization Upgrade,Infusionsmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p>You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+            <h5>HOW TO GET HIGH LEVEL SPELLS?</h5>
+            <p>Astute players will note that you can only add spells of a level you can cast through leveling to your Spell Manual, but you cannot cast a 5th level spell until higher level than Magical Rod upgrade becomes available. Spells for Magical Rods will primarily have to be found in the wild, in the form of scrolls, and copied into your Spell Manual that way.</p>
+        </description>
+        <sheet>
+            <description>You can infuse a Rod with a 5th or higher level spell you have in your Spell Manual</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 15th level upgrades -->
+    <element name="Advanced Object Animation" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_ADVANCED_OBJECT_ANIMATION">
+        <supports>Specialization Upgrade,Infusionsmith,15</supports>
+        <requirements>[level:artificer:15]</requirements>
+        <prerequisite>Artificer Level 15</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15</p>
+            <p>When you cast the <em>animate objects</em> spell, your animated objects add +1 to their attack and damage rolls per object it counts as (tiny objects gain +1, huge objects gain +8).</p>
+        </description>
+        <sheet>
+            <description>When you cast animate objects, they have +1 attack and damage per object it counts as</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Third Animated Weapon" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_INFUSIONSMITH_THIRD_ANIMATED_WEAPON">
+        <supports>Specialization Upgrade,Infusionsmith,15</supports>
+        <requirements>[level:artificer:15]</requirements>
+        <prerequisite>Artificer Level 15, Second Animated Weapon</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15, Second Animated Weapon</p>
+            <p>Your mastery of weapon animation expands to greater breadth of control. You can animate a third weapon with your Animate Weapon feature. When you make a spell attack with your animated weapons, you can attack with this weapon as well.</p>
+        </description>
+        <sheet>
+            <description>You can animate up to three weapons</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+</elements>

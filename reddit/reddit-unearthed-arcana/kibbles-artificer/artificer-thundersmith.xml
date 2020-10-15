@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Thundersmith Specialization for Kibbles’ Artificer</name>
+        <update version="0.0.1">
+            <file name="artificer-thundersmith.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibbles-artificer/artificer-thundersmith.xml" />
+        </update>
+    </info>
+    
+    <element name="Thundersmith" type="Archetype" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_ARTIFICER_THUNDERSMITH">
+        <supports>Kibbles Artificer Specialization</supports>
+        <description>
+            <p>A Thundersmith is an Artificer has harnesses the primal force of elemental power, channeling its power into their great creation: a weapon of unmatched devastation. Spectacular and terrible, these weapons bring fear to their foes and awe to their allies.</p>
+            <p class="indent">Why an Thundersmith bends their mind to the task of making such a thing - some are coldly analytical about the destruction it causes, seeking to continually improve it, tweaking it for ever more optimized destruction, while others view it merely as a tool, a means to an end, while others still reveal in the crash of thunder that heralds the terrifying force of their weapon.</p>
+            <p class="indent">While some may look at these weapons as the dawn of a new age, in truth wielding them is a tricky and arcane art no simpler than making them, something only the one who forged the device will every truly master, each weapon a unique piece of devastating art.</p>
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERSMITHS_PROFICIENCY" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_STORMFORGED_WEAPON" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERMONGER" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_DEVASTATING_BLASTS" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_UNLEASHED_POWER" />
+            <div element="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERSMITH_UPGRADES" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERSMITHS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_STORMFORGED_WEAPON" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERMONGER" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_DEVASTATING_BLASTS" level="5" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_UNLEASHED_POWER" level="14" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERSMITH_UPGRADES" level="3" />
+        </rules>
+    </element>
+    <element name="Thundersmith’s Proficiency" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERSMITHS_PROFICIENCY">
+        <description>
+            <p>When you choose this specialization at 1st level, you gain Proficiency with tinker’s tools and smith’s tools.</p>
+            <p class="indent">If your weapon requires ammunition, you gain the knowledge of how to forge them, and create them with smithing tools during a long rest. You can create up 50 rounds of ammunition during a long rest, with materials costing 1 gold piece per 10 rounds.</p>
+        </description>
+        <sheet>
+            <description>You can create up to 50 rounds of ammunition for your weapon during a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Stormforged Weapon" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_STORMFORGED_WEAPON">
+        <supports>Cross Discipline</supports>
+        <description>
+            <p>Starting at 1st level, you harness the power of elemental power of thundering storms to create a powerful weapon. This weapon requires attunement and you proficient with it while attuned. and you can only be attuned to one Stormforged Weapon at a time. If you have multiple Stormforged Weapons, you can change which one you are attuned to during a long rest.</p>
+            <p class="indent">If you lose your Stormforged Weapon or wish to create additional ones, you can do so over the course of three days (eight hours each day) by expending 200 gold pieces worth of metal and other raw materials. When you make a new Stormforged Weapon, you can make the same or different type, and select the same or different upgrades.</p>
+            <p class="indent">Select one of the following and consult the Thunder Powered Weapon table for its statistics.</p>
+            <h5>THUNDER CANNON</h5>
+            <p>You use the power of Thunder to launch a projectile with terrible power, if limited accuracy, over long distances. Ringing out with a booming crash, it brings fear to the battlefield.</p>
+            <h5>HAND CANNON</h5>
+            <p>Forgoing the guiding barrel, this packs uses the thundering power to launch a projectile with all the force of a Cannon, though its effective range is far more limited.</p>
+            <div class="sidebar">
+                <h5>FIREARMS IN A CAMPAIGN SETTING</h5>
+                <p>A lot of campaign settings do not feature firearms, and in some of these the Thundersmith variant of Artificer might not be the right choice, but consider that the Artificer is fundamentally someone that tinkers with and explores boundaries of magic as much as or more so than technology.</p>
+                <p class="indent">A Thunder Cannon need not be a gunpowder powered device, even in a setting where gun powder exists, but can be powered by harnessing elemental powers, bound through various carefully researched magical techniques. In most cases, the wonders of an Artificer are more an engineering marvel of magic than technology, but that balance can shift depending on what is best for your setting.</p>
+            </div>
+            <h5>KINETIC HAMMER</h5>
+            <p>Rather than launching a projectile with the thundering force, you keep that force imbued in the weapon, allowing for devastating force to be applied to the attack.</p>
+            <h5>CHARGED BLADE</h5>
+            <p>You create a bladed weapon that channels the harnessed power of the elemental storm power directly into the blade, causing it to lay waste to all it strikes. This weapon deals Lightning damage when applying Thundermonger.</p>
+        </description>
+        <sheet>
+            <description>You can create a Stormforged weapon in three days for 200gp in materials. You can change which Stormforged weapon you have attuned during a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON" />
+        </rules>
+    </element>
+    <element name="Thundermonger" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERMONGER">
+        <description>
+            <p>At 3rd level, the elemental power of your weapon is so powerful its strikes deal bonus thunder damage.</p>
+            <p class="indent">When you hit a target with your Stormforged Weapon, you can deal an extra 1d6 thunder damage. After discharging this bonus damage, you cannot deal this bonus damage again until the start of your next turn.</p>
+            <p class="indent">This extra damage increases by 1d6 when you reach certain levels in this class: 5th level (2d6), 7th level (3d6), 9th level (4d6), 11th level (5d6), 13th level (6d6), 15th level (7d6), 17th level (8d6), and 19th level (9d6).</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description>Your Stormforged weapon deals an extra {{thundermonger:damage-dice}}d6 thunder damage.</description>
+        </sheet>
+        <rules>
+            <stat name="thundermonger:damage-dice" value="1" level="3" />
+            <stat name="thundermonger:damage-dice" value="1" level="5" />
+            <stat name="thundermonger:damage-dice" value="1" level="7" />
+            <stat name="thundermonger:damage-dice" value="1" level="9" />
+            <stat name="thundermonger:damage-dice" value="1" level="11" />
+            <stat name="thundermonger:damage-dice" value="1" level="13" />
+            <stat name="thundermonger:damage-dice" value="1" level="15" />
+            <stat name="thundermonger:damage-dice" value="1" level="17" />
+            <stat name="thundermonger:damage-dice" value="1" level="19" />
+        </rules>
+    </element>
+    <element name="Devastating Blasts" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_DEVASTATING_BLASTS">
+        <description>
+            <p>Beginning at 5th level, when you miss an attack with your Stormforged Weapon, you can apply Thundermonger damage to the target creature you missed, but it deals only half the bonus damage. Dealing damage this way counts as applying Thundermonger damage.</p>
+        </description>
+        <sheet usage="Thundermonger">
+            <description>When you miss with your Stormforged weapon, you can still deal half the bonus thunder damage.</description>
+        </sheet>
+    </element>
+    <element name="Unleashed Power" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_UNLEASHED_POWER">
+        <description>
+            <p>Starting at 14th level, when rolling damage for Thundermonger or your Stormforged Weapon, you can expend a spell slot to reroll a number of the damage dice up to your Intelligence modifier (minimum of one) and maximize a number of dice equal to the level of the spell slot expended. You must use the new rolls.</p>
+        </description>
+        <sheet>
+            <description>When you roll damage for Thundermonger or Stormforged, you can expend a spell slot to reroll up to {{intelligence:modifier}} dice and maximize a number of dice equal to the level of the spell slot expended. You must use the new rolls.</description>
+        </sheet>
+    </element>
+    <element name="Thundersmith Upgrades" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERSMITH_UPGRADES">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Thundersmith Upgrade (Artificer 3)" level="3" supports="Specialization Upgrade,Thundersmith,3" />
+            <select type="Archetype Feature" name="Thundersmith Upgrade (Artificer 5)" level="5" supports="Specialization Upgrade,Thundersmith,(3||5)" />
+            <select type="Archetype Feature" name="Thundersmith Upgrade (Artificer 7)" level="7" supports="Specialization Upgrade,Thundersmith,(3||5)" />
+            <select type="Archetype Feature" name="Thundersmith Upgrade (Artificer 9)" level="9" supports="Specialization Upgrade,Thundersmith,(3||5||9)" />
+            <select type="Archetype Feature" name="Thundersmith Upgrade (Artificer 11)" level="11" supports="Specialization Upgrade,Thundersmith,(3||5||9||11)" />
+            <select type="Archetype Feature" name="Thundersmith Upgrade (Artificer 13)" level="13" supports="Specialization Upgrade,Thundersmith,(3||5||9||11)" />
+            <select type="Archetype Feature" name="Thundersmith Upgrade (Artificer 15)" level="15" supports="Specialization Upgrade,Thundersmith" />
+            <select type="Archetype Feature" name="Thundersmith Upgrade (Artificer 17)" level="17" supports="Specialization Upgrade,Thundersmith" />
+            <select type="Archetype Feature" name="Thundersmith Upgrade (Artificer 19)" level="19" supports="Specialization Upgrade,Thundersmith" />
+        </rules>
+    </element>
+
+    <!-- Specialization Upgrades -->
+    <element name="Adaptable Weapon" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_ADAPTABLE_WEAPON">
+        <supports>Specialization Upgrade,Thundersmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You can adapt a weapon without the Ammunition property a secondary attack type giving it the functionality of a Hand Cannon, or give a weapon with the Ammunition Property a secondary attack with functioning as a Charged Blade.</p>
+            <div class="sidebar">
+                <h5>HOW TO MERGE YOUR WEAPONS</h5>
+                <p>If you want to call it a gunblade, I’m not here to stop you, but it can be any range of configuration, from a bayonet to something more exotic.</p>
+            </div>
+        </description>
+        <sheet>
+            <description>You can adapt a weapon without the Ammunition property a secondary attack type giving it the functionality of a Hand Cannon, or give a weapon with the Ammunition Property a secondary attack with functioning as a Charged Blade.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Arcane Lightning" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_ARCANE_LIGHTNING">
+        <supports>Specialization Upgrade,Thundersmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>After long study of internal workings of your Stormforged Weapon, your mastery of lightning and Thunder Magic is such that learn the following spells at the following levels and can cast them as Artificer Spells.</p>
+            <table>
+                <thead>
+                    <tr><td>Artificer Level</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>3</td><td><i>thunderwave</i></td></tr>
+                <tr><td>5</td><td><i>shatter</i></td></tr>
+                <tr><td>9</td><td><i>lightning bolt</i></td></tr>
+                <tr><td>13</td><td><i>storm sphere</i></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" spellcasting="Artificer" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="5" spellcasting="Artificer" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9" spellcasting="Artificer" known="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="13" spellcasting="Artificer" known="true" />
+        </rules>
+    </element>
+    <element name="Extended Reach" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_EXTENDED_REACH">
+        <supports>Specialization Upgrade,Thundersmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You extent the reach of your weapon. If your weapon has the Ammunition property, its range is extended normal range by 30 feet, and maximum range by 90 feet. If you weapon has the the Two-Handed property, it gains the Reach property.</p>
+        </description>
+        <sheet>
+            <description>If your weapon has the Ammunition property, its range is extended normal range by 30 feet, and maximum range by 90 feet. If you weapon has the the Two-Handed property, it gains the Reach property.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Lightning Burst" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_LIGHTNING_BURST">
+        <supports>Specialization Upgrade,Thundersmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You upgrade your Stormforged Weapon to discharge its power in within a 5-feet wide and 60-feet long line. If you have not dealt Thundermonger damage since the start of your turn, as an action, you can make a special attack. Each creature must make a Dexterity saving throw against your Spell Save DC or take damage equal to the bonus damage of Thundermonger as lightning damage on a failed save, half as much on a successful save.</p>
+            <p class="indent">This counts as discharging your Thundermonger damage. Firing in this way does not consume ammo.</p>
+        </description>
+        <sheet action="Action" usage="Thundermonger">
+            <description>You can discharge your Stormforged Weapon in a 5 ft. wide and 60 ft. long line. Dex save (DC {{spellcasting:dc}}) or take {{thundermonger:damage:dice}}d6 thunder damage. This does not consume ammo.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Point Blank" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_POINT_BLANK">
+        <supports>Specialization Upgrade,Thundersmith,3</supports>
+        <requirements></requirements>
+        <prerequisite>Hand Cannon</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Hand Cannon</p>
+            <p>Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls. Additionally, can use your Hand Cannon when making opportunity attacks.</p>
+        </description>
+        <sheet>
+            <description>Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls. Additionally, can use your Hand Cannon when making opportunity attacks.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Silencer" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_SILENCER">
+        <supports>Specialization Upgrade,Thundersmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p class="flavor">Incompatible with Echoing Booms.</p>
+            <p>You upgrade your Stormforged Weapon with a sound dampening module. Your Stormforged Weapon loses the Loud property. Additionally, you can expend a 2nd level spell slot to overcharge the Silencer, casting the spell silence.</p>
+            <div class="sidebar">
+                <p><b>Note:</b> Sound - and consequently Thunder Damage - cannot pass through silence or effect a creature inside its area of effect.</p>
+            </div>
+        </description>
+        <sheet>
+            <description>Your Stormforged Weapon loses the Loud property. Additionally, you can expend a 2nd level spell slot to overcharge the Silencer, casting the spell silence.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SILENCE" />
+        </rules>
+    </element>
+    <element name="Shock Absorber" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_SHOCK_ABSORBER">
+        <supports>Specialization Upgrade,Thundersmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You add a reclamation device to your Stormforged Weapon to gather energy from the surroundings when it is present. As a reaction to taking Lightning or Thunder damage, you can cast absorb elements without consuming a spell slot. When absorbed in this method, you can apply the bonus damage granted by absorb elements to your next weapon attack even if you make a ranged weapon attack.</p>
+        </description>
+        <sheet usage="Reaction">
+            <description>When you take thunder or lighting damage, you can cast absorb elements without using a spell slot. You can apply the bonus damage to your next attack.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_ABSORB_ELEMENTS" />
+        </rules>
+    </element>
+    <element name="Sonic Movement" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_SONIC_MOVEMENT">
+        <supports>Specialization Upgrade,Thundersmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You reclaim and rebalance your weapon to leverage the backdraft of the force it exerts. When you deal Thunder damage on your turn with your Stormforged weapon, you can move 5 feet away from the target that was damaged.</p>
+        </description>
+        <sheet>
+            <description>When you deal Thunder damage on your turn with your Stormforged weapon, you can move 5 feet away from the target that was damaged.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Twin Thunder" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_TWIN_THUNDER">
+        <supports>Specialization Upgrade,Thundersmith,3</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You can attune to two one-handed Stormforged Weapons at the same time, so long as they either share the same Upgrades, or have total Upgrades equal to your maximum Upgrade count between them. If you make an attack with one of them while holding the other, you can attack with the other as a bonus action, however, both share the same use of Thundermonger. You don’t add your ability modifier to the damage of the bonus attack, unless that modifier is negative or you have the Two Weapon Fighting Fighting Style.</p>
+            <p class="indent">While dual wielding Stormforged Weapon, you can load a Stormforged Weapon without a free hand.</p>
+        </description>
+        <sheet>
+            <description>You can use two one-handed Stormforged Weapons at the same time. You can attack with the second weapon as a bonus action.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 5th level upgrades -->
+    <element name="Weapon Improvement" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_WEAPON_IMPROVEMENT">
+        <supports>Specialization Upgrade,Thundersmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>You fine tune your Stormforged Weapon for increased devastation. The weapon gains a +1 bonus to Attack and Damage Rolls made with it and the damage dealt by your Stormforged weapon is considered magical. At 14th level, the bonus increases to +2.</p>
+        </description>
+        <sheet>
+            <description>Your Stormforged Weapon has +{{weapon-improvements:bonus}} attack and damage and is considered magical.</description>
+        </sheet>
+        <rules>
+            <stat name="weapon-improvement:bonus" value="1" level="5" />
+            <stat name="weapon-improvement:bonus" value="1" level="14" />
+        </rules>
+    </element>
+    <element name="Echoing Boom" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_ECHOING_BOOM">
+        <supports>Specialization Upgrade,Thundersmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5, Incompatible with Silencer</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5, Incompatible with Silencer.</p>
+            <p>You pack extra power into your Thundermonger, increasing the damage it deals by 1d6.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="thundermonger:damage-dice" value="1" />
+        </rules>
+    </element>
+    <element name="Harpoon Reel" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_HARPOON_REEL">
+        <supports>Specialization Upgrade,Thundersmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>You devise a secondary attack method that launches a harpoon attached to a tightly coiled cord. This attack has a normal range of 30 feet and a maximum range of 60 feet, and it deals 1d6 piercing damage. This attack does not apply Thundermonger damage. This attack can target a surface, object, or creature.</p>
+            <p class="indent">A creature struck by this attack is impaled by the Harpoon unless it removes the Harpoon as an action, which causes it to take an additional 1d6 damage. While the Harpoon is stuck in the target, you are connected to the target by a 60 foot cord. Dragging the connected party via the attached cord causes the creature moving to move at half speed unless they are a size category larger.</p>
+            <p class="indent">While connected in this manner, you can use your bonus action to activate the Reel action, pulling yourself to the location if the target is Medium or larger. A Small or smaller creature is pulled back to you, and ending the connection.</p>
+            <p class="indent">Alternatively, you can opt to disconnect the cord.</p>
+            <p class="indent">This attack cannot be used again until the Reel action is taken.</p>
+            <div class="sidebar">
+                <h5>CONNECTED... BY A ROPE</h5>
+                <p>Note that Harpooning a creature means means that there is a rope connecting you to them. While you can use this to move them as per the ability, they can also use this to move you, particularly if they are substantially larger. Many Thundersmiths were last seen saying "I got this" and then Harpooning a dragon. User discretion is advised.</p>
+            </div>
+        </description>
+        <sheet>
+            <description>You devise a secondary attack method that launches a harpoon (range: 30/60) that deals 1d6 piercing damage. On a hit, you are connected to the target by the cord. You can use your bonus action to activate the Reel action.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Terrifying Thunder" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_TERRIFYING_THUNDER">
+        <supports>Specialization Upgrade,Thundersmith,5</supports>
+        <requirements>[level:artificer:5], ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_ECHOING_BOOM</requirements>
+        <prerequisite>Artificer Level 5, Echoing Booms</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5, Prerequisite: Echoing Booms.</p>
+            <p>You add an additional amplifier to maximize the shock and awe value your cannon blasts. The first time a target takes damage from Thundermonger, they are deafened until the end of their next turn.</p>
+            <p class="indent">Additionally, they must make a Wisdom saving throw against your Spell Save DC or become frightened of you for one minute. They can repeat this saving throw at the end of each of their turns.</p>
+            <p class="indent">If a creature’s saving throw is successful or the effect ends for it, the creature is immune to Terrifying Thunder for the next 24 hours.</p>
+        </description>
+        <sheet>
+            <description>The first time a target takes damage from Thundermonger, they are deafened until the end of their next turn. Additionally, they must make a Wisdom saving throw (save DC {{spellcasting:dc}}) or become frightened of you for one minute. They can repeat this saving throw at the end of each of their turns.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Storm Blast" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_STORM_BLAST">
+        <supports>Specialization Upgrade,Thundersmith,5</supports>
+        <requirements>[level:artificer:5]</requirements>
+        <prerequisite>Artificer Level 5</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 5</p>
+            <p>You upgrade your Stormforged Weapon to discharge its power in 30-foot cone from the gun. If you have not dealt Thundermonger damage since the start of your turn, as an action, you can make a special attack. Each creature must make a Strength saving throw, or take 1d6 + half the bonus damage of Thundermonger and be knocked prone.</p>
+            <p class="indent">This counts as discharging your Thundermonger damage. Firing in this way does not consume ammo.</p>
+        </description>
+        <sheet>
+            <description>You can discharge your Stormforged Weapon in a 30 ft. cone. Str save (DC {{spellcasting:dc}}) or take 1d6 + half the bonus Thundermonger damage ({{thundermonger:damage:dice}}d6) thunder damage and be knocked prone. This does not consume ammo.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 9th level upgrades -->
+    <element name="Ride the Lightning" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_RIDE_THE_LIGHTNING">
+        <supports>Specialization Upgrade,Thundersmith,9</supports>
+        <requirements>[level:artificer:9],ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_LIGHTNING_BURST</requirements>
+        <prerequisite>Artificer Level 9, Lightning Burst</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9, Lightning Burst</p>
+            <p>When you use the Lightning Burst ability, you can opt expend a spell slot of the first level or higher to infuse yourself into the burst of power. When you do so you are teleported up to 60 feet in the direction of the Lightning Burst (ending early if the Lighting Burst is blocked by an obstacle). You can stop anywhere along the path of the Lighting Burst, but the Lightning Burst will stop where you do.</p>
+        </description>
+        <sheet usage="Lightning Burst">
+            <description>When you use Lightning Burst, you can expend a spell slot to teleport up to 60 feet along the path. You can stop anywhere along the path.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Shock Harpoon" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_SHOCK_HARPOON">
+        <supports>Specialization Upgrade,Thundersmith,9</supports>
+        <requirements>[level:artificer:9], ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_HARPOON_REEL</requirements>
+        <prerequisite>Artificer Level 9, Harpoon Reel</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9, Harpoon Reel</p>
+            <p>After hitting a creature with the Harpoon fire mode, you can use a bonus action to deliver a shock. If you have not dealt Thundermogner damage since the start of your turn, you can deal damage equal to your Thundermonger bonus damage as lightning damage. This counts as discharging your Thundermonger damage. Additionally, the target must make a Constitution saving throw against your spell save DC or be stunned until the end of its next turn.</p>
+            <p class="indent">Once used, the Harpoon must be reeled in before this can be used again.</p>
+        </description>
+        <sheet action="Bonus Action" usage="Thundermonger">
+            <description>After hitting a creature with the Harpoon fire mode, you can deliver a shock dealing {{thundermonger:damage-dice}}d6 thunder damage.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Synaptic Feedback" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_SYNAPTIC_FEEDBACK">
+        <supports>Specialization Upgrade,Thundersmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>You install feedback loop into your cannon, allowing you to siphon some energy from your Stormforged Weapon to empower your reflexes.</p>
+            <p class="indent">Whenever you deal Lightning damage with your Stormforged Weapon your walking speed increases by 10ft and you can take the Dash or Disengage actions as a bonus action. This effect lasts until the end of your turn.</p>
+        </description>
+        <sheet>
+            <description>Whenever you deal Lightning damage with your Stormforged Weapon your walking speed increases by 10ft and you can take the Dash or Disengage actions as a bonus action. This effect lasts until the end of your turn.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Thunder Jump" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_THUNDER_JUMP">
+        <supports>Specialization Upgrade,Thundersmith,9</supports>
+        <requirements>[level:artificer:9]</requirements>
+        <prerequisite>Artificer Level 9</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 9</p>
+            <p>You build a quick release for the arcane thundering energy that fills your Stormforged Weapon. As an action you can channel it to cast <em>thunder step</em>. This counts as discharging your Thundermonger damage.</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>You can discharge your Stormforged weapon to cast thunder step.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" />
+        </rules>
+    </element>
+
+    <!-- 11th level upgrades -->
+    <element name="Backblast" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_BACKBLAST">
+        <supports>Specialization Upgrade,Thundersmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p>After dealing Thunder damage on your turn, you can cast <em>thunderclap</em> as a bonus action. You can do this a number of times equal to your Intelligence modifier, regaining all uses after a long rest.</p>
+        </description>
+        <sheet usage="{{intelligence:modifier}}/Long Rest" action="Bonus Action">
+            <description>After dealing Thunder damage on your turn, you can cast thunderclap.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_THUNDERCLAP" />
+        </rules>
+    </element>
+    <element name="Blast Radius" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_BLAST_RADIUS">
+        <supports>Specialization Upgrade,Thundersmith,11</supports>
+        <requirements>[level:artificer:11], ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_THUNDERSMITH_DEVASTATING_BLASTS</requirements>
+        <prerequisite>Artificer Level 11, Devastating Blasts</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11, Devastating Blasts</p>
+            <p>Your Devastating Blasts now deals half your weapon damage (including your modifier) in addition to half your Thundermonger damage when you apply it to a missed target that is within 30 feet of you.</p>
+        </description>
+        <sheet>
+            <description>Your Devastating Blasts now deals half your weapon damage (including your modifier) in addition to half your Thundermonger damage when you apply it to a missed target that is within 30 feet of you.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Stabilization" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_STABILIZATION">
+        <supports>Specialization Upgrade,Thundersmith,11</supports>
+        <requirements>[level:artificer:11]</requirements>
+        <prerequisite>Artificer Level 11</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 11</p>
+            <p>Being prone no longer causes you to have disadvantage when making a ranged weapon attack with your Stormforged Weapon. If neither you nor a target creature has moved since you last made a ranged weapon attack against them, you have advantage on ranged weapon attacks against them.</p>
+        </description>
+        <sheet>
+            <description>Being prone no longer causes you to have disadvantage when making a ranged weapon attack with your Stormforged Weapon. If neither you nor a target creature has moved since you last made a ranged weapon attack against them, you have advantage on ranged weapon attacks against them.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- 15th level upgrades -->
+    <element name="Elemental Swapping" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_ELEMENTAL_SWAPPING">
+        <supports>Specialization Upgrade,Thundersmith,15</supports>
+        <requirements>[level:artificer:15]</requirements>
+        <prerequisite>Artificer Level 15</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15</p>
+            <p>You upgrade the firing chamber for more adaptable damage. When you take the attack action with your Stormforged Weapon you can adjust the firing chamber, causing any bonus damage granted by Thundermonger to deal fire, cold, acid, or lightning damage instead of thunder damage. Alternatively, you can use a Vial of Holy Water to cause your next Thundermonger bonus damage to deal radiant damage.</p>
+        </description>
+        <sheet>
+            <description>When you take the attack action with your Stormforged Weapon you can adjust the firing chamber, causing any bonus damage granted by Thundermonger to deal fire, cold, acid, or lightning damage instead of thunder damage. Alternatively, you can use a Vial of Holy Water to cause your next Thundermonger bonus damage to deal radiant damage.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Massive Overload" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_MASSIVE_OVERLOAD">
+        <supports>Specialization Upgrade,Thundersmith,15</supports>
+        <requirements>[level:artificer:15],(ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_LIGHTNING_BURST||ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_STORM_BLAST)</requirements>
+        <prerequisite>Artificer Level 15, Storm Blast or Lightning Burst</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15, Storm Blast or Lightning Burst</p>
+            <p>Before taking a shot, you can expend a 3rd level or higher spell slot to use Storm Blast or Lightning Burst at the same time as making an attack; in this case the Storm Blast or Lightning Burst is powered by the spell slot and does not count as apply Thundermonger for that turn. The direction of this secondary ability is the same as your attack.</p>
+            <p class="indent">Doing this damages your Stormforged Weapon and you must spend an action to repair it before you can fire again. You must have the secondary ability unlocked as an upgrade to use it.</p>
+        </description>
+        <sheet>
+            <description>Before taking a shot, you can expend a 3rd level or higher spell slot to use Storm Blast or Lightning Burst at the same time as making an attack; in this case the Storm Blast or Lightning Burst is powered by the spell slot and does not count as apply Thundermonger for that turn. The direction of this secondary ability is the same as your attack. Doing this damages your Stormforged Weapon and you must spend an action to repair it before you can fire again.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Masterwork Weapon" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_MASTERWORK_WEAPON">
+        <supports>Specialization Upgrade,Thundersmith,15</supports>
+        <requirements>[level:artificer:15], ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_WEAPON_IMPROVEMENT</requirements>
+        <prerequisite>Artificer Level 15, Weapon Improvement</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15, Weapon Improvement</p>
+            <p>The bonus to attack and damage rolls for your Stormforged Weapon becomes +3. This bonus increases to +4 at 20th level.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="weapon-improvement:bonus" value="1" level="15" />
+            <stat name="weapon-improvement:bonus" value="1" level="20" />
+        </rules>
+    </element>
+    <element name="Mortar Shells" type="Archetype Feature" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_ARCHETYPE_FEATURE_ARTIFICER_UPGRADE_THUNDERSMITH_MORTAR_SHELLS">
+        <supports>Specialization Upgrade,Thundersmith,15</supports>
+        <requirements>[level:artificer:15]</requirements>
+        <prerequisite>Artificer Level 15, Stormforged weapon with the Ammunition property</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Artificer Level 15, Stormforged weapon with the Ammunition property.</p>
+            <p>You build a secondary fire mode allowing you to fire your cannon like a mortar. Pick a target point within range, and make an attack roll. Apply the attack roll to all creatures within a 5 foot radius of the target point. Creatures hit take weapon damage plus half of Thunder monger bonus damage. Dealing damage this way counts as applying Thundermonger damage for the turn.</p>
+            <p class="indent">Creatures do not benefit from cover against this fire mode unless they have overhead cover as well.</p>
+        </description>
+        <sheet>
+            <description>You build a secondary fire mode allowing you to fire your cannon like a mortar.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+
+
+    <!-- Stormforged Weapons -->
+	<element name="Thunder Cannon" type="Weapon" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_WEAPON_STORMFORGED_WEAPON_THUNDER_CANNON">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_LOUD</supports>
+		<description>
+            <p>You use the power of Thunder to launch a projectile with terrible power, if limited accuracy, over long distances. Ringing out with a booming crash, it brings fear to the battlefield.</p>
+        </description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">60/180</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="proficiency">ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_THUNDER_CANNON</set>
+            <set name="attunement" addition="by Thundersmith">true</set>
+		</setters>
+		<rules />
+	</element>
+	<element name="Hand Cannon" type="Weapon" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_WEAPON_STORMFORGED_WEAPON_HAND_CANNON">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_LOUD</supports>
+		<description>
+            <p>Forgoing the guiding barrel, this packs uses the thundering power to launch a projectile with all the force of a Cannon, though its effective range is far more limited.</p>
+        </description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="8">5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/90</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_HAND_CANNON</set>
+            <set name="attunement" addition="by Thundersmith">true</set>
+		</setters>
+		<rules />
+	</element>
+	<element name="Kinetic Hammer" type="Weapon" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_WEAPON_STORMFORGED_WEAPON_KINETIC_HAMMER">
+        <supports>ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_LOUD</supports>
+		<description>
+            <p>Rather than launching a projectile with the thundering force, you keep that force imbued in the weapon, allowing for devastating force to be applied to the attack.</p>
+        </description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">1d10 + 1d4 thunder</set>
+			<set name="proficiency">ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_KINETIC_HAMMER</set>
+            <set name="attunement" addition="by Thundersmith">true</set>
+		</setters>
+		<rules />
+	</element>
+ 	<element name="Charged Blade" type="Weapon" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_WEAPON_STORMFORGED_WEAPON_CHARGED_BLADE">
+        <supports>ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_LOUD</supports>
+		<description>
+            <p>You create a bladed weapon that channels the harnessed power of the elemental storm power directly into the blade, causing it to lay waste to all it strikes. This weapon deals Lightning damage when applying Thundermonger.</p>
+        </description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d6 + 1d4 lightning</set>
+			<set name="proficiency">ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_CHARGED_BLADE</set>
+            <set name="attunement" addition="by Thundersmith">true</set>
+		</setters>
+		<rules />
+	</element>
+ 	<element name="Lightning Pike" type="Weapon" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_WEAPON_STORMFORGED_WEAPON_LIGHTNING_PIKE">
+        <supports>ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_LOUD</supports>
+		<description>
+            <p>You create a bladed weapon that channels the harnessed power of the elemental storm power directly into the blade, causing it to lay waste to all it strikes. This weapon deals Lightning damage when applying Thundermonger.</p>
+        </description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="piercing">1d8 + 1d4 lightning</set>
+			<set name="proficiency">ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_LIGHTNING_PIKE</set>
+            <set name="attunement" addition="by Thundersmith">true</set>
+		</setters>
+		<rules />
+	</element>
+  
+
+    <element name="Weapon Proficiency (Stormforged Weapons)" type="type" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON">
+        <sheet alt="Stormforged Weapons" />
+        <rules>
+            <grant type="Proficiency" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_THUNDER_CANNON" />
+            <grant type="Proficiency" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_HAND_CANNON" />
+            <grant type="Proficiency" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_KINETIC_HAMMER" />
+            <grant type="Proficiency" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_CHARGED_BLADE" />
+            <grant type="Proficiency" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_LIGHTNING_PIKE" />
+        </rules>
+    </element>
+    <element name="Weapon Proficiency (Stormforged Thunder Cannon)" type="type" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_THUNDER_CANNON">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_LOUD</supports>
+        <sheet alt="Thunder Cannon" />
+    </element>
+    <element name="Weapon Proficiency (Stormforged Hand Cannon)" type="type" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_HAND_CANNON">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_LOUD</supports>
+        <sheet alt="Hand Cannon" />
+    </element>
+    <element name="Weapon Proficiency (Stormforged Kinetic Hammer)" type="type" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_KINETIC_HAMMER">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_LOUD</supports>
+        <sheet alt="Kinetic Hammer" />
+    </element>
+    <element name="Weapon Proficiency (Stormforged Charged Blade)" type="type" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_CHARGED_BLADE">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_LOUD</supports>
+        <sheet alt="Charged Blade" />
+    </element>
+    <element name="Weapon Proficiency (Stormforged Lightning Pike)" type="type" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_PROFICIENCY_WEAPON_STORMFORGED_WEAPON_LIGHTNING_PIKE">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_LOUD</supports>
+        <sheet alt="Charged Blade" />
+    </element>
+
+	<!-- properties -->
+	<element name="Loud" type="Weapon Property" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_LOUD">
+		<description>
+			<p>Your weapon rings with thunder that is audible within 300 feet of you whenever it makes an attack.</p>
+		</description>
+	</element>
+    <!-- removed in version 2.0.2 
+	<element name="Charged" type="Weapon Property" source="Kibbles’ Artificer" id="ID_KIBBLESTASTY_GM_BINDER_WEAPON_PROPERTY_STORMFORGED_WEAPON_CHARGED">
+		<description>
+			<p>Your weapon is powered by elemental energies; the first time per turn you make a damage roll with it, you can add 1d4 to the damage roll.</p>
+		</description>
+	</element>
+    -->
+	<element name="Reload" type="Weapon Property" source="Internal" id="ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character’s choice).</p>
+		</description>
+	</element>
+</elements>

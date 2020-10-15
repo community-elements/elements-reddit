@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Spells from Kibbles’ Artificer Extended Toolbox</name>
+        <update version="0.0.1">
+            <file name="spells.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibbles-artificer/spells.xml" />
+        </update>
+        <!-- https://www.gmbinder.com/share/-LR85y6FKnWhRAWIJgSP -->
+    </info>
+    
+    <element name="Dampen Magic" type="Spell" source="Artificer Extended Toolbox" id="ID_KIBBLESTASTY_GM_BINDER_SPELL_DAMPEN_MAGIC">
+        <supports>Artificer, Wizard</supports>
+        <description>
+            <p>You touch a magical item or creature, and dampen its magic.</p>
+            <p class="indent">If you touched a magical item, make a Spellcasting ability check with a DC equal to 8 + 2 for an common item, +4 for an uncommon item, +6 for a rare item, +8 for a very rare item, +10 for a legendary item, and +12 for an artifact. On a successful check, the item becomes nonmagical for the duration. All divination spells targeting it return that it is a mundane time. At the end of the duration, it becomes a magical item once more.</p>
+            <p class="indent">If you touched a creature, it makes a Charisma saving throw, which it may chose to fail. On failure, it has disadvantage on any spell attack rolls and any creature making a save against its spells has advantage, but it has advantage on any saving throws against magic. It can repeat its saving throw at the end of its turns if it wishes to end the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Repelling Field" type="Spell" source="Artificer Extended Toolbox" id="ID_KIBBLESTASTY_GM_BINDER_SPELL_REPELLING_FIELD">
+        <supports>Artificer, Wizard</supports>
+        <description>
+            <p>You target a creature or object within range, creating a 20 foot radius sphere of repelling force. This force is not strong enough to effect creatures moving, but deflects projectiles. All creatures in within this sphere are considered to have half cover against ranged weapon attacks, or three quarters cover if they already have half cover.</p>
+            <p class="indent">Alternatively when you cast it, you can target a creature reversing this effect. The target creature must make a Charisma saving throw. On failure, all projectiles attacks against that target are made with advantage for the duration of the spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Weapon of Throwing" type="Spell" source="Artificer Extended Toolbox" id="ID_KIBBLESTASTY_GM_BINDER_SPELL_Weapon of Throwing">
+        <supports>Artificer</supports>
+        <description>
+            <p>You touch a weapon granting it the throwing 20/60 property. If it already has the thrown property, it’s range increases by 10/30. It also gains the "returning" property. After being thrown it automatically reappears in the throwers hand.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a magic item that casts a spell</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Runic Bindings" type="Spell" source="Artificer Extended Toolbox" id="ID_KIBBLESTASTY_GM_BINDER_SPELL_Runic Bindings">
+        <supports>Artificer, Wizard</supports>
+        <description>
+            <p>You trace a magical rune on a target creature. Choose one the following runic marks:</p>
+            <ul>
+                <li>Sealing Rune: For the duration of the rune, the target must make a Charisma saving throw with disadvantage any time they try to cast a spell. On failure, the spell slot is used, but does not cast.</li>
+                <li>Tracking Rune: You know the exact location of the creature for the duration. If they are on another plane, you know what plane they are on.</li>
+                <li>Restraining Rune: For the duration of the rune, the target must make a Charisma saving throw at the start of each of its turns or be restrained when attempting to do anything besides things you directly ordered the creature to do (no action required).</li>
+            </ul>
+            <p class="indent">You can end the spell early by erasing the rune with an action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 minute</set>
+            <set name="range">Touch</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Orbital Stones" type="Spell" source="Artificer Extended Toolbox" id="ID_KIBBLESTASTY_GM_BINDER_SPELL_ORBITAL_STONES">
+        <supports>Druid, Sorcerer, Warlock</supports>
+        <description>
+            <p>You lift three small to medium rocks or similar objects from within 10 feet of you, causing them defy gravity and slowly circle you. While all three are in orbit around you, you have total cover against ranged attacks. While two are in orbit, you have three quarters cover, and while only one remains, you have half cover. The spell ends when none of them are orbiting you.</p>
+            <p class="indent">As a bonus action while at least one object remains in orbit, you can magically fling it at target within 60 feet. Make a ranged spell attack roll. On hit, the target takes 2d12 bludgeoning damage and is knocked backward 5 feet.</p>
+            <p class="flavor">Earth Projector Spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>
