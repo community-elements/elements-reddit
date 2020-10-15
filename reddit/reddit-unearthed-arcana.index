@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>r/UnearthedArcana</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="reddit-unearthed-arcana.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana.index" />
 		</update>
 	</info>
@@ -23,6 +23,7 @@
 		<file name="arcane-artillery.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery.index" />
 		<file name="lost-vaults.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/lost-vaults.index" />
 		<file name="dark-arts-players-companion.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/dark-arts-players-companion.index" />
+		<file name="kibblestasty.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty.index" />
 
 	</files>
 </index>
