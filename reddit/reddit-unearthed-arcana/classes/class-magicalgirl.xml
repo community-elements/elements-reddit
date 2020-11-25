@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
 		<name>Magical Girl</name>
@@ -141,7 +141,7 @@
 				<p>While you are wielding your radiant weapons, you may transform your current weapon (or weapons) into a different option on the list above, or dispel your radiant weapons completely, as a bonus action. If you do not have your radiant weapons in hand, you may use your action to conjure them.</p>
 			</ul>
 		</description>
-		<sheet usage="2/Rest" action="Bonus Action">
+		<sheet usage="2/Short Rest" action="Bonus Action">
 			<description>Transforming requires the magical girl's heirloom. This typically brings a cosmetic change, from hair colour to clothing. In order to transform, you must be able to take actions, and your heirloom must be on your person. While you are transformed, you gain the following traits: if you're not wearing armor your Armor Class becomes {{magical girl transformation:armor class}}, you can add shield bonus to it. Your size changes to Medium. When you transform, you can summon weapons, from list below, they deal radiant damage and shed bright light in a 5-foot radius. You can dispel them as bonus action and summon them again as action. List of weapon options: Up to two thrown weapons which, if thrown, dissipate and reappear in your hands at the end of your turn; Any nonmagical weapon with the ammunition property, which has unlimited ammunition; Two light weapons; Up to two one-handed weapons, or one-handed weapon and a shield, or; A two-handed weapon.</description>
 		</sheet>
             <rules>
@@ -170,18 +170,21 @@
                 <p>When you cast a spell that requires a material component, you must use your heirloom as a spellcasting focus.</p>
             </description>
             <sheet>
-                <description>When you cast a spell that requires a material component, ignore it and use you heirloom instead.</description>
+                <description>When you transform, you gain {{magical girl:spellcasting:slots}}. These slots are level {{magical girl:spellcasting:size}}. When you cast a spell that requires a material component, ignore it and use you heirloom instead.</description>
             </sheet>
             <spellcasting name="Magical Girl" ability="Charisma" >
             <list>Magical Girl</list>
             </spellcasting>
             <rules>
-                <stat name="magical girl:spellcasting:slots:1" value="1" level="2" requirements="![level:5]"/>
-                <stat name="magical girl:spellcasting:slots:2" value="1" level="5" requirements="![level:9]"/>
-                <stat name="magical girl:spellcasting:slots:3" value="1" level="9" requirements="![level:13]"/>
-                <stat name="magical girl:spellcasting:slots:3" value="1" level="11" requirements="![level:13]"/>
-                <stat name="magical girl:spellcasting:slots:4" value="2" level="13" requirements="![level:17]"/>
-                <stat name="magical girl:spellcasting:slots:5" value="2" level="17"/>
+			
+                <stat name="magical girl:spellcasting:size" value="1" level="2"/>
+                <stat name="magical girl:spellcasting:size" value="1" level="5"/>
+                <stat name="magical girl:spellcasting:size" value="1" level="9"/>
+                <stat name="magical girl:spellcasting:size" value="1" level="13"/>
+                <stat name="magical girl:spellcasting:size" value="1" level="17"/>
+
+				<stat inline="true" name="magical girl:spellcasting:slots" value="1 spell slot" level="2"/>
+				<stat inline="true" name="magical girl:spellcasting:slots" value="2 spell slots" level="11"/>
 
                 <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),1" level="2" number="2" spellcasting="Magical Girl"/>
                 <select type="Spell" name="Spell (Magical Girl)" supports="$(spellcasting:list),1" level="3" spellcasting="Magical Girl" />
@@ -273,8 +276,8 @@
 			<description>You become immune to being charmed or frightened, so long as there is an ally {{friendship player immune:range}}. Additionally, allies within {{friendship ally advantage:range}} feet have Advantage on saving throws against being charmed or frightened.</description>
 		</sheet>
 		<rules>
-			<stat name="friendship player immune:range" value="within 30 feet" bonus="base" />
-			<stat name="friendship player immune:range" value="in sight" level="18" bonus="base" />
+			<stat inline="true" name="friendship player immune:range" value="within 30 feet" bonus="base" />
+			<stat inline="true" name="friendship player immune:range" value="in sight" level="18" bonus="base" />
 			<stat name="friendship ally advantage:range" value="30" bonus="base" />
 			<stat name="friendship ally advantage:range" value="60" level="18" bonus="base" />
 		</rules>
