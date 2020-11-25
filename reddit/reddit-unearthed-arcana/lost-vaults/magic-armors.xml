@@ -4,9 +4,1500 @@
         <name>Lost Vaults: Magic Armors</name>
         <description>Lost Vaults: Magic Armors</description>
         <author url="https://www.reddit.com/user/MrBakudan/">u/MrBakudan</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="magic-armors.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/lost-vaults/magic-armors.xml" />
         </update>
     </info>
+
+    <element name="Addergrease Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_ADDERGREASE">
+        <description>
+            <p>Forged from poisonous snake and lizard skins, this leather armor can spray venom like a cobra when its owner is attacked. While wearing this armor, you gain access to the following effects:</p>
+            <p class="indent">This armor has 4 charges, and regains 1 charge at dawn. When an attack misses you, you can use a reaction to expend a charge to have the armor use the spell poison spray (Save DC 15).</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="leather">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">Leather</set>
+            <set name="name-format">Addergrease {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Agile Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_AGILE">
+        <description>
+            <p>Thanks to the materials and enchantment on this armor, this armor is considerably lighter than it normally would be as a result. While wearing this armor for purposes of AC, you can add your Dexterity modifier to your AC (Max of +4).</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="medium">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+            <set name="name-format">Agile {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Attraction" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_ATTRACTION">
+        <description>
+            <p>The enchantments and material choices of this armor makes the armor extremely shiny. Eyes tend to move towards the armor, almost irresistibly so...</p>
+            <p class="indent">While wearing this armor, when a creature within 5 feet of you is targeted by a single target attack, you can use a reaction to make the attacker make a DC 18 Charisma saving throw. On a failed save, they must target you instead. On success, they can't be affected by the Armor of Attraction for 24 hours. You also gain anadditional 1d4 bonus to Charisma (Persuasion) checks.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="scale, breastplate, splint, or plate">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">Scale mail|Breastplate|Splint|Plate</set>
+            <set name="name-format">{{parent}} of Attraction</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Cleansing" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_CLEANSING">
+        <description>
+            <p>This armor is covered in healing symbols, while the inside of the armor has many hand like runes that give the impression of the touches of clerics. While wearing this armor, whenever you regain hit points, you regain an additional 2 (including short rests). You also gain a +1d4 bonus for saving throws against poisons and diseases.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">{{parent}} of Cleansing</set>
+        </setters>
+    </element>
+
+    <element name="Aqueous Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_AQUEOUS">
+        <description>
+            <p>Cold when it is touched, this armor also has the appearance of being wet, even when it is dry. The armor typically is dyed to match the colors of water, with blues and whites. This armor grants the wearer with Water breathing.</p>
+            <p class="indent">The armor also has 5 charges, and regains 1 charge at dawn. Using an action, you can expend a charge and polymorph into a water elemental for 5 minutes, following the rules of the polymorph spell. You can also end the polymorph early as a bonus action.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="attunement">true</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Aqueous {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Durability" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_DURABILITY">
+        <description>
+            <p>This armor shows no signs of wear at anytime, giving the impression that this armor can take a hit. While wearing this armor, you gain the following effects:</p><p class="indent">This armor has 3 charges, and regains 1 charge at dawn. As a bonus action you can expend a charge and gain 5 temporary hit points, and a 1d4 bonus to Constitution saving throws. These effects last 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">{{parent}} of Durability</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Exploits" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_EXPLOITS">
+        <description>
+            <p>Many arcane glyphs cover this armor, and they glow in the presence of a spell being cast, seeming to draw it energy.</p>
+            <p class="indent">Once per day while wearing this armor, this armor can store a cantrip spell that is put into the armor by any willing creature. The spells save DC, attack bonus, and level are those of the caster who puts the spell into the armor. Once the spell is used, another spell can't be stored until the next dawn. After a long rest, any stored spell is also lost.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">{{parent}} of Exploits</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Negation" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_NEGATION">
+        <description>
+            <p>The runes of this armor seems to cover vital areas of the wearer, and can seem to move in the presence of danger. Dirt and dust never seems to stick to this armor. While wearing this armor, you gain the following effects:</p>
+            <p class="indent"> Whenever you succeed on a saving throw and take half damage, you may choose to take no damage.</p>
+            <p class="indent">You can also cast dispel magic on yourself at 4th level once per day to end a magical effect. (Bonus of +3 for higher level spells)</p>  
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">{{parent}} of Negation</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Night" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_NIGHT">
+        <description>
+            <p>This black set of clothes shows no reflection, even when wet. Torches seem to dim when you walk past them wearing this. While wearing this robe, you gain resistance to radiant damage.</p>
+            <p class="indent">The robe has 5 charges total, and regains 1+1d4 charges at dawn. As an action, you can expend a charge to cast the spell darkness on yourself without concentration.</p>
+            <p class="indent">You can also expend additional charges to increase the radius of the sphere of darkness by 5 feet each charge as a free action.</p>
+        </description>
+        <setters>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="rarity">Very Rare</set>
+		    <set name="type">Wondrous Item</set>
+		    <set name="category">Wondrous Items</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Sacrifice" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SACRIFICE">
+        <description>
+            <p>The armor depicts scenes of heroes throwing themselves in front of others to protect their allies. While wearing this armor, as a reaction you can touch a willing creature within range who is undergoing a condition that requires a saving throw to end. You transfer the condition to yourself, and you may expend a hit die to give yourself advantage on the saving throw. The Condition must require a Constitution, Intelligence, Wisdom, or Charisma saving throw to transfer. You may only use this feature once per day.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">{{parent}} of Sacrifice</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Starlight" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_STARLIGHT">
+        <description>
+            <p>These cloth set of clothes is a deep blue, with small dots of white that seem to twinkle slightly.</p>
+            <p class="indent">While wearing these clothes, you gain resistance to radiant damage. The set also has 5 charges total, and regains 1 charge per night.</p>
+            <p class="indent">When you are hit with an attack, you can use your reaction to expend a charge, causing the stars on the clothes to explode with light. The attacker must make a DC 15 Wisdom saving throw or be blinded until the end of their next turn (Creature must rely on sight). You can also use a bonus action to shed dim light within 15 feet around you, and end it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+		    <set name="type">Wondrous Item</set>
+		    <set name="category">Wondrous Items</set>
+        </setters>
+    </element>
+
+    <element name="Assassinbane Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_ASSASINBANE">
+        <description>
+            <p>This armor depicts many circles on it, with a set of eyes moving from circle to circle.</p>
+            <p class="indent">While wearing this armor, you ignore any disadvantage on Wisdom (Perception) checks that rely on sight. You gain a +3 bonus to natural perception. Twice per day, you can also cancel a critical hit that is caused by a roll with advantage, and cause it to do normal damage.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Assassinbane {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Beastlord Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BEASTLORD">
+        <description>
+            <p>Decorated with horns, teeth, and bones, this armor is made from the skins and parts of many different types of animals.</p>
+            <p class="indent">While wearing this armor, you can cast speak with animals once per day. You also gain a +1d6 bonus to Wisdom (Animal Handling) checks made. You also have advantage on Wisdom (Survival) checks made to carve or track creatures.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="leather or hide">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">leather|hide</set>
+            <set name="name-format">Beastlord {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Bestial Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BESTIAL">
+        <description>
+            <p>This armor is crafted from skin, fur, and claws of cave bears. The enchantments of this armor allows you to draw upon their power. While wearing this armor, you gain access to the following effects:</p>
+            <p class="indent">3 times per day, when you take a Dash action you can use a bonus action to make a single melee weapon attack. This melee attack gains a +1 bonus to attack and damage rolls.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="leather or hide">Armor</set>
+            <set name="rarity">unommon</set>
+            <set name="armor">leather|hide</set>
+            <set name="name-format">Bestial {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Bloodiron Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BLOODIRON">
+        <description>
+            <p>Armor that is treated and cooled in blood while forged, the armor has a reddish tinge to the color. While wearing this armor, you have access to the following effects:</p>
+            <p class="indent">This armor has 5 charges, and regains 1 charge at dawn. With a bonus action, you can expend a charge and blood mark a target you can see. You gain an additional +2 to attack and damage rolls against the target. The mark lasts 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Bloodiron {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Bloodtheft Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BLOODTHEFT">
+        <description>
+            <p>This armor has runes that constantly bleed, but drips no blood. The armor itself seems to always be slick with crimson.</p>
+            <p class="indent">While wearing this armor when you are hit with an attack, you can expend any number of hit die and regain temporary hit points equal to the amounts rolled. The creature that hit you also must make a DC 20 Dexterity saving throw. On a failed save, they take piercing damage equal to the amount of temporary hit points you regain, or half as much on a successful save, as blood spikes shoot out. When you bring a creature to zero hit points, you can use a bonus action to regain a single hit die.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="leather">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+            <set name="armor">leather</set>
+            <set name="name-format">Bloodtheft {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Bolstering Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BOLSTERING">
+        <description>
+            <p>Tales of this armor tell it was worn only by the greatest of leaders in all the lands. Runes on the arms on hands tell of healing powers.</p>
+            <p class="armor">While wearing this armor, whenever you use hit dice during a short rest, all creatures you choose within 20 feet regain half of what you recover. You can also touch a willing creature, using an action to expend a hit dice and heal the creature by that much. Whenever you regain hit points from a spell or item, a creature of your choice within 20 feet of you regains half of what you heal.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Bolstering {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Bloodfire Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BLOODFIRE">
+        <description>
+            <p>Showing depictions of the Nine Hells, this armor is said to be made using Tieflings techniques.</p>
+            <p class="indent">While wearing this armor, you gain fire resistance. This armor has 5 charges, and regains 1+1d4 charges at dawn. As a reaction, you can expend a charge to cast the spell hellish rebuke at 2nd level (save DC 15)</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="leather, scale, or plate">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">leather|scale mail|plate</set>
+            <set name="name-format">Bloodfire {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Bonegrim Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BONEGRIM">
+        <description>
+            <p>This scary looking armor is composed of a skull helmet, a ribcage breast plate, and forelimb bones for the arms and legs.</p>
+            <p class="indent">While wearing this armor, you gain advantage on Charisma (Intimidation) checks, resistance to necrotic and poison damage, and no longer require food, water, and sleep.</p>
+            <p class="indent">Cursed- You are unable to remove this armor as it binds to the skeleton of the wearer. It can only be removed with a remove curse spell or similar spell. If you die with this armor on, you rise as a skeleton, and attack the nearest creature. While wearing this armor, you count as an undead for terms of turn undead, vulnerabilities, and arcane senses.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">plate</set>
+            <set name="name-format">Bonegrim {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Breaching Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BREACHING">
+        <description>
+            <p>This seemingly normal set of armor phases through walls slightly when touching them, seeming to give a hint to their power.</p>
+            <p class="indent">Once per day while wearing this armor when you are against a wall, you can teleport to the other side without requiring line of sight. You cannot teleport if the wall is more than 10 feet thick, or if there is an obstacle in the space you would appear at (Creature or object). If there is an obstacle, you do not teleport, and the power is wasted for the day.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Breaching {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Briarwine Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_BRIARWINE">
+        <description>
+            <p>An armor of Eladrin make, this armor is meant to appear as normal clothes until provoked.</p>
+            <p class="indent">While wearing this armor, whenever you take melee damage the attacker takes 1d4 piercing damage. This armor appears to be a normal set of clothes until it is revealed with a bonus action or you are attacked. The armor returns to its other appearance after 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Briarwine {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Champions Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_CHAMPIONS">
+        <description>
+            <p>This armor appears to be slightly worn. Legends tell that the spirit of a previous hero from a forgotten era dwells inside the armor. While wearing this armor, you gain access to the following effects:</p>
+            <p class="indent">This armor has 3 charges, and regains 1 charge at dawn. Whenever you are hit with an attack, as a reaction you can expend a charge and gain half the damage you have taken as temporary hit points that lasts 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="plate or scale">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">plate|scale mail</set>
+            <set name="name-format">Champions {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Chaos Weave Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_CHAOS_WEAVE">
+        <description>
+            <p>This armor has multicolor runes that seem to swirl and spin slowly all over.</p>
+            <p class="indent">While wearing this armor, whenever you are hit with an acid, cold, fire, lightning, or thunder attack, as a reaction you can choose to gain resistance to that damage type until your next long rest. The elemental resistance type can only be changed up to 3 times per day.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="attunement">true</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Chaos Weave {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Coral Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_CORAL">
+        <description>
+            <p>While this armor seems heavy, when you enter water it becomes light as air. While wearing this armor, you gain a swimming speed equal to your walking speed and water breathing.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="attunement">true</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Coral {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Crystal Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_CRYSTAL">
+        <description>
+            <p>This armor is typically made from a clear or milky quartz and prevents negative influences on your senses and mind. While wearing this armor, you gain a 1d4 bonus to all Wisdom and Intelligence saving throws.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Crystal {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Darkforged Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_DARKFORGED">
+        <description>
+            <p>Made using Duergar techniques, this dark metal armor is known for its extremely powerful resistance to force. While wearing this armor, you gain access to the following effects:</p>
+            <p class="indent">This armor has 3 charges, and regains 1 at dawn. You can use a reaction to expend a charge and increase your AC by 2 for 5 rounds. (30 seconds). This effect can be stacked multiple times, however all stacked AC is lost when the first used stack expires.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="chain shirt, chain mail, scale, or plate">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">chain shirt|chain mail|scale mail|plate</set>
+            <set name="name-format">Darkforged {{parent}}</set>
+        </setters>
+    </element>
+
+    <!-- Left the name as it is in the pdf, but should it be Deflection? -->
+    <element name="Defection Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_DEFECTION">
+        <description>
+            <p>Dispute shows some signs of wear and tear, this deceptive looking armor is in fact extremely strong. So much so that it bounces attacks towards others. While wearing this armor, you gain access to the following effects:</p>
+            <p class="indent">This armor has 5 charges, and you regain 1d4 charges at dawn. When a single target attack misses you, you can use a reaction to expend a charge, and redirect the attack within half the range of the original attack. The original attacker must reroll for a new attack against the new target, and you can expend an additional charge to give that attack advantage.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Defection {{parent}}</set>
+        </setters>
+    </element>   
+
+    <element name="Elukian Clay Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_ELUKIAN_CLAY">
+        <description>
+            <p>Typically deep red or pale yellow in color, this clay armor is made from enchanted clay from the elemental plane of Earth.</p>
+            <p class="indent">While wearing this armor, you gain resistance to acid damage, and a +1d6 bonus to all Constitution saving throws. Once per day, you can also gain immunity to acid damage for 1 round (6 seconds) as a free action.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="scale or plate">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">scale mail|plate</set>
+            <set name="name-format">Elukian Clay {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Faymind Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_FAYMIND">
+        <description>
+            <p>Using enchanted silver from the Faewild, this armor set has dancing lights around it that can be used defensively. While wearing this armor, 5 motes of light surround you. You can have the lights around you provide torch light with a bonus action. You can also send one out to hover within 30 feet of you. If you leave further than 60 feet of a mote, the mote of light returns to you.</p>
+            <p class="indent">Once per day, you can use a reaction to burn the motes of light against a creature that targets you for an attack. The creature must make a DC 16 Charisma saving throw. On a failed save, they are stunned until the end of their next turn. The motes are destroyed when this is done, and return by the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Faymind {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Flickersight Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_FLICKERSIGHT">
+        <description>
+            <p>Enchanted with Shadowfell magic, this armor is a darker color with pitch black runes. While wearing this armor, you gain minor dark vision, which makes dim light appear as bright light within 15 feet, and darkness appear as dim light. Once per day you can cause your body to become semitransparent, gaining advantage on Dexterity (Stealth) checks. This effect lasts 5 rounds (30 seconds)</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Flickersight {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Fortification Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_FORTIFICATION">
+        <description>
+            <p>This armor is forged using typical Dragonborn methods, and as such is well suited for combat. While wearing this armor, whenever you are hit with a critical hit, roll a d20. If you roll a 16-20, the critical attack becomes a normal hit.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="scale or plate">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">scale mail|plate</set>
+            <set name="name-format">Fortification {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Frostburn Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_FROSTBURN">
+        <description>
+            <p>On the outside, this set of plate mail gathers a fine layer of frost. However, those who wear it will attest to the warmth that it provides.</p>
+            <p class="indent">While wearing this armor, you gain resistance to extreme heat and cold environments. You also gain resistance to cold and fire damage. This armor has 5 charges, and regains 1d4 charges at dawn. When a friendly creature within 10 feet is attacked, you can use your reaction to expend a charge and grant that creature resistance to either fire or cold damage until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">plate</set>
+            <set name="name-format">Frostburn {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Frozen Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_FROZEN">
+        <description>
+            <p>Motes of ice float around this armor made of ice, enchanted never to melt. Despite its appearance, it keeps the wearer warm.</p>
+            <p class="indent">While wearing this armor, you gain resistance to extreme cold environments. You also gain resistance to cold damage. Once per day, you can add 1d6 cold damage to a melee or ranged attack.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="scale or plate">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">scale mail|plate</set>
+            <set name="name-format">Frozen {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Giantdodger Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_GIANTDODGER">
+        <description>
+            <p>This very simple looking set of leather armor is very common among the halfling heroes of the world, mostly in part due to the stories and legends that surround it.</p>
+            <p class="indent">While wearing this armor, when a creature with a size category larger than yours misses with an attack, you can use a reaction to move 1/2 your walking speed without opportunity attacks. You also gain advantage on Dexterity (Stealth) checks against that creature until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="leather">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">leather</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Giantdodger {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Heartening Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_HEARTENING">
+        <description>
+            <p>The glyphs on this armor not only give you courage to face your fears, but to come back at them as well.</p>
+            <p class="indent">While wearing this armor, you gain a +1d4 on Wisdom saving throws against fear effects. When you are successful on a save against a fear effect, you also gain temporary hit points equal to your level.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="scale or plate">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">scale mail|plate</set>
+            <set name="name-format">Heartening {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Illithid Robes" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_ILLITHID_ROBES">
+        <description>
+            <p>A very tight and slick set of robes, these robes are common amongst the mind flayer race. The enchantments upon them show the willingness to use thralls as shields.</p>
+            <p class="indent">While wearing this robe, you gain resistance to psychic damage. 3 times per day when you take damage from an attack, you can choose a willing creature in sight, and split the damage in half with that creature as a reaction.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp" override="false">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="rarity">Very Rare</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Immunizing Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_IMMUNIZING">
+        <description>
+            <p>This armor is sleek and white, giving a sense of purity. The runes on the armor glow in the presence of poison and disease.</p>
+            <p class="indent">While wearing this armor, you gain resistance to poison damage. You also make saving throws against poisons and diseases with advantage.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scale or plate">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">scale mail|plate</set>
+            <set name="name-format">Immunizing {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Imposters Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_IMPOSTERS">
+        <description>
+            <p>A plain looking set of metal armor, with a quick command word you can transform this armor into a robe or set of clothes.</p>
+            <p class="indent">While wearing this armor, you can use a bonus action to transform your armor from its current state into a set of common clothes or back. You lose the AC armor bonus while in common clothes form. You also gain advantage on Charisma (Deception) checks to convince others of yours clothes being normal.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Imposters {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Irrefutable Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_IRREFUTABLE">
+        <description>
+            <p>A simple but imposing set of armor, useful for making creatures bow before you.</p>
+            <p class="indent">Once per day while wearing this armor, you can force a creature you can see to roll with disadvantage against a single Wisdom check or saving throw. The creature must rely on sight to be affected. You also gain a +1d4 bonus to Charisma (Intimidation) checks.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Irrefutable {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Laughing Death Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_LAUGHING_DEATH">
+        <description>
+            <p>This armor has many sinister looking ornaments on it. A faint cackling can be heard when the armor is stuck.</p>
+            <p class="indent">While wearing this armor, you gain resistance to necrotic damage. This armor has 3 charges, and regains 1 charge at dawn. When you are hit with a melee attack, use your reaction to expend a charge to cast inflict wounds, using your Dexterity modifier for the attack roll.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Laughing Death {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Lifegiving Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_LIFEGIVING">
+        <description>
+            <p>This armor is covered in runes and glyphs of protection and healing.</p>
+            <p class="indent">While wearing this armor, you gain resistance to necrotic damage. Once per day while wearing this armor you can expend a bonus action to roll a hit die and regain health.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">plate</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Lifegiving {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Loom Weave Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_LOOM_WEAVE">
+        <description>
+            <p>Made with an unusual technique of weaving soil into the cloth, it gives the clothes the abilities to wield earthen powers. While wearing these clothes, you gain access to the following effects:</p>
+            <p class="indent">These clothes have 2 charges, and regains 1 charge at dawn. You can use an action to expend a charge to cast Maximilian’s earthen grasp (Save DC 15).</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Martyr's Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_MARTYRS">
+        <description>
+            <p>A crimson tinted armor with transmutation glyphs that can help protect allies.</p>
+            <p class="indent">While wearing this armor, as a bonus action you can touch a willing creature, and suffer a -1 penalty to AC to increase the creature’s AC by +1 until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scale or plate">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">scale mail|plate</set>
+            <set name="name-format">Martyr's {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Meliorating Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_MELIORATING">
+        <description>
+            <p>A dull steel armor that displays a simple, but well made design. While wearing this armor, when you take damage you can use a reaction to increase your AC by +1 until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Meliorating {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Mirrorsheen Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_MIRRORSHEEN">
+        <description>
+            <p>Made with magically enchanted metallic threads, the metallic sheen of this armor is highly reflective.</p>
+            <p class="indent">While wearing this armor, you gain resistance to radiant damage. Once per day when you are the target of a ranged single target attack you can change the target of that attack to another creature within 5 feet of you as a reaction. If you are hit with a radiant damage attack, all creatures within 5 feet of you must make a DC 15 Wisdom saving throw. On a failed save, they are blinded until the end of their next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Mirrorsheen {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Pelaurum Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_PELAURUM">
+        <description>
+            <p>A golden sheen on this set of armor reminds the wearer of the might of the sun god. You gain resistance to fire and radiant damage while wearing this armor.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Pelaurum {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Prismatic Robe" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_PRISMATIC_ROBE">
+        <description>
+            <p>A rainbow colored robe that appears in dull colors at first before springing to life when used.</p>
+            <p class="indent">While wearing this robe, when you are hit with an attack of the following elemental types, you gain resistance to the elemental type at the end of your turn. The elemental types are fire, cold, poison, lightning, or acid. This armor has 6 charges, and regains 1 charge at dawn. You can an action to expend a number of charges to cast the following spells:</p>
+            <table>
+                <thead>
+                    <tr><td>Charge Cost</td><td>Spell</td><td>Save</td></tr>
+                </thead>
+                <tr><td>2</td><td>prismatic spray</td><td>DC 20</td></tr>
+                <tr><td>6</td><td>prismatic wall</td><td>DC 20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+        </setters>
+    </element>
+
+    <element name="Rat Form Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_RAT_FORM">
+        <description>
+            <p>Made of many, many tiny hides of rats, with tassels that are made of rat tails.</p>
+            <p class="indent">While wearing this armor, you gain proficiency in Dexterity (Stealth) if you don’t have it already. You can also cast polymorph on yourself to turn into a rat once per day as an action. The polymorph can be ended early with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="leather">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">leather</set>
+            <set name="name-format">Rat Form {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Reflexive Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_REFLEXIVE">
+        <description>
+            <p>An armor with specific runes that react when the wearer is in danger and helps avoid it.</p>
+            <p class="indent">Twice per day while wearing this armor, when forced to make a Dexterity saving throw for an attack you may use your AC score as your Dexterity save, as the armor forms a protective layer to save the wearer</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Reflexive {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Reinforcing Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_REINFORCING">
+        <description>
+            <p>An armor meant for providing additional strength when your own reserves run out.</p>
+            <p class="indent">While wearing this armor, you gain an additional +1d4 on Constitution and Strength saving throws.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scale or plate">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">scale mail|plate</set>
+            <set name="name-format">Reinforcing {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Repulsion Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_REPULSION">
+        <description>
+            <p>The amount of runes on this armor is a bit excessive. They activate when a foe gets too close.</p>
+            <p class="indent">3 times per day while wearing this armor, when a creature moves within 5 feet of you, you can use your reaction to force the creature to make a DC 13 Strength saving throw. On a failed save, they are pushed 10 feet away by a force emanated from the armor.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="padded or leather">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">padded|leather</set>
+            <set name="name-format">Repulsion {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Righteous Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_RIGHTEOUS">
+        <description>
+            <p>The armor is inscribed with stories of a zealot on their way to smite their foes.</p>
+            <p class="indent">While wearing this armor, when you are hit with an attack that has advantage against you, you can use a reaction to for the attacker to make a DC 16 Wisdom saving throw. On a failed save, they take 2d6 radiant damage as a holy daggers shoot towards them.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">plate</set>
+            <set name="name-format">Righteous {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Bloodwalking" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_BLOODWALKING_ROBE">
+        <description>
+            <p>A robe that is said to be made using vampiric methods, this robe will reward you for slaying your foes.</p>
+            <p class="indent">While wearing this robe when you kill a creature within 25 feet, you can use your movement to teleport through the blood left by the creature to be within 5 feet of it. You can also teleport to any pool of blood at least 5 feet in size within 25 feet with your movement.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    
+    <element name="Robe of Contingency" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_CONTINGENCY_ROBE">
+        <description>
+            <p>Stitched with wool made from the Feywild, this robe is popular due to its ability to protect its user in a pinch.</p>
+            <p class="indent">Once per day while wearing this robe, you can use a reaction to cast shield, or teleport 15 feet away to a spot you can see.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Defiance" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_DEFIANCE_ROBE">
+        <description>
+            <p>Robes that are enchanted with magic of the elemental planes, these robes come in 3 different types; fire, cold, and lightning.</p>
+            <p class="indent">While wearing this robe, whenever you take damage of the type of robe you are wearing (fire, cold, or lightning), your walking speed increases by 10 feet, you regain 2d6 hit points, and your next attack deals an additional 1d8 of the elemental type of the robe.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Forbearance" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_FORBEARANCE_ROBE">
+        <description>
+            <p>A robe designed to appear ordinary, the inside of these robes are actually covered with many different types of protection magic.</p>
+            <p class="indent">While wearing this robe, whenever you are the target of a single attack, add 1d6 to your AC. Whenever you are the target of an effect that requires a saving throw, add 1d6 to your saving throw.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Quills" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_QUILLS_ROBE">
+        <description>
+            <p>Spines cover the outside of this robe, which seem to spike up whenever you are struck by an attack.</p>
+            <p class="indent">While wearing this robe, when a melee attack is done against you the attacker must make a DC 12 Dexterity saving throw. On a failed save, they take 1d4 piercing damage, as well 1 piercing damage per turn until they take an action to remove the quills. Any creature that grapples you automatically fails the save DC.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Sapping" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_SAPPING_ROBE">
+        <description>
+            <p>Popular robe amongst wizards, these robes help bring down armored foes while also protecting themselves.</p>
+            <p class="indent">While wearing this robe, you gain access to the following features: This armor has 5 charges, and regains 1 charge at dawn. You can use a reaction to expend a charge and target a creature that is attacking you. The attacker must make a DC 17 Constitution saving throw.</p>
+            <p>On a failed save, their AC is reduced by 1d4, and you gain the same amount of AC.</p>
+            <p>This effect can only affect one creature, and when used again, ends for the previous creature. This effect does not stack if multiple charges are used.</p>
+            <p>The effect for you and the affected creature ends after 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Scintillation" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_SCINTILLATION_ROBE">
+        <description>
+            <p>A robe made of fine silk, this robe can be made to shine brightly and even blind foes.</p>
+            <p class="indent">While wearing this robe, as a bonus action you can have the robe grow with white light, similar to a torch. This can be ended as a free action.</p>
+            <p class="indent">Once per day as a reaction, you can create a 10 foot burst of light emanating from the robe. All creatures in range must make a DC 13 Wisdom saving throw. On a failed save, they are blinded until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Robe of Archfiend" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARCHFIEND_ROBE">
+        <description>
+            <p>These demonic looking robes seem to be crafted from skins of humans, devils, and demons. They give off an aura of dominance.</p>
+            <p class="indent">While wearing this armor, you have access to the following effects: This armor has 6 charges, and regains 1+1d4 at dawn. You can expend a number of charge to do the following actions:</p>
+            <table>
+                <thead>
+                    <tr><td>Charge Cost</td><td>Action</td><td>Save DC</td></tr>
+                </thead>
+                <tr><td>1</td><td>Cast hellish rebuke</td><td>21</td></tr>
+                <tr><td>2</td><td>Cast dominate person</td><td>21</td></tr>
+                <tr><td>4</td><td>Cast dominate monster</td><td>21</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Salubrious Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SALUBRIOUS">
+        <description>
+            <p>The runes on this armor turn red whenever the wearer is exposed to healing magic.</p>
+            <p class="indent">While wearing this armor, whenever you regain hit points while wearing this armor, your AC increases by 2 until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scale or plate">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">scale mail|plate</set>
+            <set name="name-format">Salubrious {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Screaming Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SCREAMING">
+        <description>
+            <p>This armor is decorated with symbols resembling screaming humanoids.</p>
+            <p class="indent">While wearing this armor, whenever you make Charisma (Intimation) checks, increase your roll by 1d4. Once per day, you can have the armor release a bloodcurdling scream. All creatures within 5 feet of you, excluding yourself, must make a DC 13 Wisdom saving throw. On a failed save, they are frightened of you until the end of your next turn. They must be able to hear to be affected.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="hide, scale, or plate">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Hide|scale mail|plate</set>
+            <set name="name-format">Screaming {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Serpentskin Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SERPENTSKIN">
+        <description>
+            <p>This armor is made from, or using, the discarded skin of a giant snake and is enchanted to bring out the properties of that creature.</p>
+            <p class="indent">While wearing this armor, you can gain resistance to poison damage once per day for a single attack against you. Also once per day, you can disengage as a free action and increase your speed by 10 feet until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Serpentskin {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Shared Suffering Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SHARED_SUFFERING">
+        <description>
+            <p>The enchantments of this armor make it so that those who inflict suffering on you will also suffer.</p>
+            <p class="indent">While wearing this armor, whenever you are undergoing a condition of any type, increase all damage you deal by 1d4.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Shared Suffering {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Shimmering Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SHIMMERING">
+        <description>
+            <p>The magical nature and material of these clothes act as a distraction to those who are too close to you.</p>
+            <p class="indent">While wearing these clothes, you do not have disadvantage when using a ranged attack against a target within 5 feet.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Shocking Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SHOCKING">
+        <description>
+            <p>Created by forges that have been struck by lightning, this armor crackles with electrical energy.</p>
+            <p class="indent">While wearing this armor, you gain immunity to lightning damage. You can cast elemental weapon for lightning damage at 5th level 3 times per day. Whenever you are grappled or restrained by a creature, the creature takes 2d6 lightning damage at the start of their turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Shocking {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Skeletal Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SKELETAL">
+        <description>
+            <p>Made with bones and enchanted to bring out the necromantic energies, this reinforced armor brings forth images of the undead and makes them flee.</p>
+            <p class="indent">While wearing this armor, you gain resistance to necrotic damage. You can also choose to add 1d6 necrotic damage to weapon attacks made. Once per day, you can cast one of the following features or spells.</p>
+            <ul>
+                <li>turn undead (save DC 20)</li>
+                <li>speak with dead</li>
+                <li>vampiric touch (save DC 20)</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="chainmail, scale, or plate">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="armor">Chain Mail|Scale Mail|Plate</set>
+            <set name="name-format">Skeletal {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Skybound Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SKYBOUND">
+        <description>
+            <p>The loose parts of this armor seem to be constantly flowing in the wind, and seems to feel light as air.</p>
+            <p class="indent">Once per day while wearing this armor, you can cast jump on yourself.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="padded or leather">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Padded|Leather</set>
+            <set name="name-format">Skybound {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Slick Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SLICK">
+        <description>
+            <p>This armor seems to glisten with some sort of oil that seems to come from the glyphs in the armor.</p>
+            <p class="indent">While wearing this armor, you can add 1d4 to Strength (Athletics) and Dexterity (Acrobatics) checks made to resist being against being grappled.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="any light armor or hide">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|Hide</set>
+            <set name="name-format">Slick {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Snakefang Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SNAKEFANG">
+        <description>
+            <p>Decorated with snake skins and fangs, the enchantments of this armor can protect against snakes and strike like them.</p>
+            <p class="indent">While wearing this armor you gain resistance to poison damage. Once per day when an attack hits or misses you, you can use a reaction to have the fangs of your armor strike out at the attacker. They must make a DC 15 Dexterity saving throw. On a failed save, they are poisoned until they make a successful DC 15 Constitution save at the end of their turns.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Snakefang {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Solar Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SOLAR">
+        <description>
+            <p>Typically made with an enchanted copper plating, this armor seems to soak up sunlight and store it. While wearing this armor, you gain access to the following features:</p>
+            <p class="indent">This armor has 3 charges, and regains 1 charge at dawn so long as it is exposed to sunlight for 1 hour. You can expend a number of charges in order to use the following abilities and spells.</p>
+            <table>
+                <thead>
+                    <tr><td>Charge Cost</td><td>Action</td></tr>
+                </thead>
+                <tr><td>1</td><td>use an action to expend a hit die to heal</td></tr>
+                <tr><td>1</td><td>cast daylight on the armor. (doesn't count
+towards gaining charges)</td></tr>
+                <tr><td>1</td><td>create a 10 feet sphere of blinding light centered
+on yourself with an action. All creatures in range, excluding
+yourself, must make a DC 16 Wisdom saving throw. On
+failure they are blinded until the end of your next turn.</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scale, or plate">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Scale Mail|Plate</set>
+            <set name="name-format">Solar {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Soulwarding Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SOULWARDING">
+        <description>
+            <p>Highly valued by paladins, this armor is used to protect both soul and mind.</p>
+            <p class="indent">While wearing this armor, you gain resistance to necrotic and psychic damage. Your max hit points cannot be reduced by effects. Your soul is unable to be taken against your will, so long as you are wearing this armor. 3 times per day, you can also cast spirit guardians at 5th level (Save DC 22). Lastly, your mind cannot be read against your will.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Soulwarding {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Spirit Link Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SPIRIT_LINK">
+        <description>
+            <p>This chainmail armor is comprised of both negatively and positively enchanted metals and can even help to protect nearby allies.</p>
+            <p class="indent">While wearing this armor, you gain resistance to radiant and necrotic damage. Once per day whenever a friendly creature within 15 feet is hit with a necrotic or radiant type damage attack, you can have that attack heal the ally rather than deal damage as a reaction.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="Chain Mail">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Chain Mail</set>
+            <set name="name-format">Spirit Link {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Stalkers Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_STALKERS">
+        <description>
+            <p>A rare mix of both Faewild and Shadowfell magic are combined into a single armor set, making this armor a hunter’s best friend.</p>
+            <p class="indent">Once per day while wearing this armor, you can choose a creature you can see and give them a Stalker’s mark. The marked creature has disadvantage on Wisdom (Perception) checks to spot you, you know the cardinal direction of the creature relative to you so long as you are on the same plane of existence, and you deal an additional 1d6 damage against the marked creature. These effects last 6 hours.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Leather|Hide</set>
+            <set name="name-format">Stalkers {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Stoneborn Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_STONEBORN">
+        <description>
+            <p>Armor that is pulled from the earth, then enchanted to give the wearer endurance of stone. While wearing this armor, you gain a +1d4 bonus to all Constitution saving throws.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Plate</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Stoneskin Robes" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_STONESKIN">
+        <description>
+            <p>These gray robes are slightly heavier than normal, thanks to the enchanted stone dust that laces the threads. Once per day while wearing this robe, you can gain the effects of the stoneskin spell until the end of your next turn as a free action.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Stormlord Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_STORMLORD">
+        <description>
+            <p>Armor depicting stories of the gods of storms, this armor helps to protect yourself from the wrath of nature.</p>
+            <p class="indent">While wearing this armor, you gain resistance to lightning and thunder damage. Whenever a friendly creature within 15 feet of you is targeted by a lightning or thunder type attack, you can use a reaction to have the attack target you instead. If you do so, you also gain an additional 1d6 lightning damage to all attacks until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Plate|Chain Mail|Scale</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Summoned Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SUMMONED">
+        <description>
+            <p>Using a modified spell, this enchanted armor can instantly be donned or doffed at will. While wearing this armor, as a bonus action you can send the armor to an extradimensional location. You can also use a bonus action to instantly equip the armor.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Summoned {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Surge Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SURGE">
+        <description>
+            <p>A well known set armor, thanks to its ability to keep its wearer alive.</p>
+            <p class="indent">While wearing this armor, whenever you reach zero hit points you automatically succeed one death saving throw. Once per day, you can also add 1d4 to a death saving throw.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Surge {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Survivor's Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_SURVIVORS">
+        <description>
+            <p>A well known set armor, thanks to its ability to keep its wearer alive.</p>
+            <p class="indent">While wearing this armor, whenever you reach zero hit points you automatically succeed one death saving throw. Once per day, you can also add 1d4 to a death saving throw.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Survivor's {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Tactician's Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_TACTICIANS">
+        <description>
+            <p>This armor set shows colorations of purple and gray that seem to roll over the metal.</p>
+            <p class="indent">While wearing this armor when you are hit with a lightning or thunder type attack, you can use a reaction to make DC 16 Constitution saving throw to gain immunity to lightning and thunder damage until the end of your next turn. If you are successful for 3 saves, every save after the third grants one point of exhaustion.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Tactician's {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Thunderhead Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_THUNDERHEAD">
+        <description>
+            <p>This armor set shows colorations of purple and gray that seem to roll over the metal.</p>
+            <p class="indent">While wearing this armor when you are hit with a lightning or thunder type attack, you can use a reaction to make DC 16 Constitution saving throw to gain immunity to lightning and thunder damage until the end of your next turn. If you are successful for 3 saves, every save after the third grants one point of exhaustion.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Thunderhead {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Vaporform Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_VAPORFORM">
+        <description>
+            <p>This armor is weightless and has the colors of white and blue shifting constantly. While wearing this armor, you have access to the following effects:</p>
+            <p class="indent">This armor has 6 charges, and regains 1+1d4 charges at dawn. You can expend a number of charges to use the following spells:</p>
+            <ul>
+                <li>1 charge - misty step</li>
+                <li>4 charges - windwalk</li>
+                <li>6 charges - investiture of wind (save DC 19)</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="name-format">Vaporform {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Versatile Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_VERSATILE">
+        <description>
+            <p>This armor has the ability to shift in weight and size, while also boosting the wearer speed.</p>
+            <p class="indent">While wearing this armor, as a bonus action you can suffer a -2 penalty to AC to increase your movement speed by 10 feet. You can remove this effect with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Versatile {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Verve Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_VERVE">
+        <description>
+            <p>A lesser and more common version of the Surge armor, it is no less useful for keeping its owner alive. Once per day while wearing this armor, when you fail a death saving throw, you can choose to succeed instead.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Verve {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Veteran's Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_VETERANS">
+        <description>
+            <p>A worn and used set of armor that is extremely popular amongst the fighters who swear by this armor.</p>
+            <p class="indent">While wearing this armor, when you use an action surge, add a +1d4 bonus to all attack and damage rolls made until the end of your turn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Veteran's {{parent}}</set>
+            <set name="attunement" addition="by a fighter">true</set>
+        </setters>
+    </element>
+
+    <element name="Voidcrystal Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_VOIDCRYSTAL">
+        <description>
+            <p>An armor set made of, or enhanced with black crystals, this armor set can help protect you against future attacks.</p>
+            <p class="indent">While wearing this armor, when a melee attack misses you, you can use a reaction to have the void crystals in the armor react to the weapon. The attacker must make a DC 17 Wisdom saving throw.</p>
+            <p class="indent">On a failed save, you gain resistance to that melee attack damage type until the attacker rolls a successful DC 17 Wisdom save at the end of their turns. If the attack was an unarmed attack, or made with natural weapons such as claws or horns, on a failed save the attacker also takes 2d6 force damage.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Voidcrystal {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Warsheath Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_WARSHEATH">
+        <description>
+            <p>An armor made of layers of enchanted steel, the layers of this armor grow stronger the more foes you have around you.</p>
+            <p class="indent">While wearing this armor, for every 2 creatures you have within 5 feet of you, your AC increases by 2.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Plate</set>
+            <set name="name-format">Warsheath {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Whiteflame Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_WHITEFLAME">
+        <description>
+            <p>The enchantments of this armor absorbs elemental energies to help protect the user.</p>
+            <p class="indent">Once per day while wearing this armor, you can use a free action to gain resistance to one of the following elemental types until the end of your next turn; fire, radiant, lightning, or thunder.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Whiteflame {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Wildleaf Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_WILDLEAF">
+        <description>
+            <p>Made from Feywild leaves, this armor is used by rangers to help them move through nature with ease and stealth.</p>
+            <p class="indent">While wearing this armor, you ignore difficult terrain of any type. You can also cast pass without a trace once per day.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="padded, leather, or hide">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Padded|Leather|Hide</set>
+            <set name="name-format">Wildleaf {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Zealots Armor" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_MAGIC_ITEM_ARMOR_ZEALOTS">
+        <description>
+            <p>Cloth vestments adorned with prayers of a cleric who devoted their life to the destruction of the undead.</p>
+            <p class="indent">While wearing this robe, you gain +1d6 to attack and damage rolls made against undead creatures. Whenever you are hit by an undead creature, you can use a reaction to cause the armor to react with a holy smite, causing 3d6 radiant damage to the attacker. Once per day, you can also cast daylight on the armor.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
 
 </elements>
