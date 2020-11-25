@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Shooting Star Ranger Archetype</name>
+        <update version="0.0.2">
+            <file name="ranger-shooting-star.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/ranger-shooting-star.xml" />
+        </update>
+    </info>
+    
+    <element name="Shooting Star" type="Archetype" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_RANGER_SHOOTING_STAR">
+        <supports>Ranger Archetype</supports>
+        <description>
+            <p>Rangers of the Shooting Star conclave emulate the brilliant displays of astral bodies streaking across the sky. Their arrows strike with the intensity and variety of these extraterrestrial phenomenon.</p>
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_STAR_MOTES" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_SHOOTING_STAR_TECHNIQUE" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_LUMINOUS_DEFENSE" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_STARLIGHT_STRIKE" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_CONJURE_MOTE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_STAR_MOTES" level="3" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_SHOOTING_STAR_TECHNIQUE" level="3" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_LUMINOUS_DEFENSE" level="7" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_STARLIGHT_STRIKE" level="11" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_CONJURE_MOTE" level="15" />
+        </rules>
+    </element>
+    
+    <element name="Star Motes" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_STAR_MOTES">
+        <description>
+            <p>Starting at 3rd level, you learn to conjure motes of starlight. As a bonus action, you can expend a spell slot to conjure motes of starlight that encircle you. You conjure three motes with a 1st-level spell slot, creating one additional mote for each spell level higher than 1st. You can have a number of motes equal to your ranger level. Any additional motes you create disappear. These motes last until they are used or until you finish a long rest.</p>
+            <p class="indent">If you have four or more motes remaining, they shed bright light in a 20-foot radius and dim light for an additional 20 feet. If you have one to three motes remaining, they shed dim light in a 20-foot radius.</p>
+            <p class="indent">You can expend a mote to make a ranged spell attack that you can use with the Attack action. The attack has a range of 120 feet, and on a hit the target takes 2d6 radiant damage and is pushed 10 feet away from you.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can expend a spell slot to conjure motes of starlight that encircle you. You conjure three motes with a 1st-level spell slot, creating one additional mote for each spell level higher than 1st. You can have up to {{level:ranger}} motes. These motes last until they are used or until you finish a long rest. If you have four or more motes remaining, they shed bright light in a 20-foot radius and dim light for an additional 20 feet. If you have one to three motes remaining, they shed dim light in a 20-foot radius. You can expend a mote to make a ranged spell attack that you can use with the Attack action. The attack has a range of 120 feet, and on a hit the target takes 2d6 radiant damage and is pushed 10 feet away from you.</description>
+        </sheet>
+    </element>
+    <element name="Shooting Star Technique" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_SHOOTING_STAR_TECHNIQUE">
+        <description>
+            <p>At 3rd level, you learn the three Shooting Star techniques.</p>
+            <p class="indent"><b><i>Illuminate.</i></b> As a bonus action, you can expend a mote to imbue a piece of ammunition with starlight. The ammunition sheds dim light in a 5-foot radius until the end of your next turn, after which it returns to normal. When you hit a creature with this piece of ammunition, it takes an additional 1d6 radiant damage, sheds dim light in a 5-foot radius until the end of your next turn, and the next attack roll made against it before the end of your next turn has advantage.</p>
+            <p class="indent"><b><i>Scattered Sparks.</i></b> As an action, you can expend a mote and launch it at a point within 120 feet of you. Each creature within 10 feet of that point must make a Dexterity saving throw against your ranger spell save DC. A creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one. This damage increases to 3d6 at 7th level, 4d6 at 11th level, and 5d6 at 15th level.</p>
+            <p class="indent"><b><i>Comet Shot.</i></b> When you miss a ranged weapon attack or ranged spell attack, you can expend a mote to use a bonus action to reroll the attack roll against a different target within 60 feet of the original target. On a hit, the attack deals an additional 1d6 radiant damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_TECHNIQUE_ILLUMINATE" level="3" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_TECHNIQUE_SCATTERED_SPARKS" level="3" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_TECHNIQUE_COMET_SHOT" level="3" />
+        </rules>
+    </element>
+        <element name="Shooting Star Technique: Illuminate" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_TECHNIQUE_ILLUMINATE">
+            <description>
+                <p>As a bonus action, you can expend a mote to imbue a piece of ammunition with starlight. The ammunition sheds dim light in a 5-foot radius until the end of your next turn, after which it returns to normal. When you hit a creature with this piece of ammunition, it takes an additional 1d6 radiant damage, sheds dim light in a 5-foot radius until the end of your next turn, and the next attack roll made against it before the end of your next turn has advantage.</p>
+            </description>
+            <sheet alt="Illuminate" action="Bonus Action">
+                <description>You can expend a mote to imbue a piece of ammunition with starlight. When you hit a creature with this piece of ammunition, it takes an additional 1d6 radiant damage, sheds dim light in a 5-foot radius until the end of your next turn, and the next attack roll made against it before the end of your next turn has advantage.</description>
+            </sheet>
+        </element>
+        <element name="Shooting Star Technique: Scattered Sparks" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_TECHNIQUE_SCATTERED_SPARKS">
+            <description>
+                <p>As an action, you can expend a mote and launch it at a point within 120 feet of you. Each creature within 10 feet of that point must make a Dexterity saving throw against your ranger spell save DC. A creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one. This damage increases to 3d6 at 7th level, 4d6 at 11th level, and 5d6 at 15th level.</p>
+            </description>
+            <sheet alt="Scattered Sparks" action="Action">
+                <description>You can expend a mote and launch it at a point within 120 feet of you. Each creature within 10 feet of that point must make a Dexterity saving throw (save DC {{spellcasting:dc:wis}}). A creature takes {{scattered-sparks:damage-dice}}d6 fire damage on a failed save, or half as much damage on a successful one.</description>
+            </sheet>
+            <rules>
+                <stat name="scattered-sparks:damage-dice" value="2" level="3" />
+                <stat name="scattered-sparks:damage-dice" value="1" level="7" />
+                <stat name="scattered-sparks:damage-dice" value="1" level="11" />
+                <stat name="scattered-sparks:damage-dice" value="1" level="15" />
+            </rules>
+        </element>
+        <element name="Shooting Star Technique: Comet Shot" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_TECHNIQUE_COMET_SHOT">
+            <description>
+                <p>When you miss a ranged weapon attack or ranged spell attack, you can expend a mote to use a bonus action to reroll the attack roll against a different target within 60 feet of the original target. On a hit, the attack deals an additional 1d6 radiant damage.</p>
+            </description>
+            <sheet alt="Comet Shot">
+                <description>When you miss a ranged weapon attack or ranged spell attack, you can expend a mote to use a bonus action to reroll the attack roll against a different target within 60 feet of the original target. On a hit, the attack deals an additional 1d6 radiant damage.</description>
+            </sheet>
+        </element>
+    <element name="Luminous Defense" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_LUMINOUS_DEFENSE">
+        <description>
+            <p>At 7th level, the power of the stars comes to your aid in times of need. When a creature moves within 30 feet of you, you can use your reaction to make a star mote attack against the creature.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When a creature moves within 30 feet of you, you can make a star mote attack against the creature.</description>
+        </sheet>
+    </element>
+    <element name="Starlight Strike" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_STARLIGHT_STRIKE">
+        <description>
+            <p>At 11th level, your attacks become infused with starlight. Whenever you hit a creature with a weapon attack, it takes an additional 1d6 radiant damage.</p>
+        </description>
+        <sheet>
+            <description>Whenever you hit a creature with a weapon attack, it takes an additional 1d6 radiant damage.</description>
+        </sheet>
+    </element>
+    <element name="Conjure Mote" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SHOOTING_STAR_CONJURE_MOTE">
+        <description>
+            <p>At 15th level, you learn to create starlight motes with your own powers. You can use an action while you have no motes to create one mote.</p>
+        </description>
+        <sheet action="Action">
+            <description>While you have no motes you can create one mote without expending a spell slot.</description>
+        </sheet>
+    </element>
+
+</elements>

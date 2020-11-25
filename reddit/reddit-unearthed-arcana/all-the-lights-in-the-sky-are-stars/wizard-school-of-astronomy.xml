@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>School of Astronomy Arcane Tradition</name>
+        <update version="0.0.2">
+            <file name="wizard-school-of-astronomy.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/wizard-school-of-astronomy.xml" />
+        </update>
+    </info>
+    
+    <element name="School of Astronomy" type="Archetype" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_WIZARD_SCHOOL_OF_ASTRONOMY">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p>The observation of the stars and celestial bodies of the greater universe is known as astronomy, with wizards who practice this tradition being known as astronomers. They study the different properties of the stars, and learn to create their own miniature celestial bodies.</p>
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_ASTROLOGICAL_AUGURY" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_SPELL_STARS" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_REALIGN" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_ARCANE_CONSTELLATION" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_CONSTELLATE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_ASTROLOGICAL_AUGURY" level="2" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_SPELL_STARS" level="2" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_REALIGN" level="6" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_ARCANE_CONSTELLATION" level="10" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_CONSTELLATE" level="14" />
+        </rules>
+    </element>
+    <element name="Astrological Augury" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_ASTROLOGICAL_AUGURY">
+        <description>
+            <p>When you choose this tradition, at 2nd level, you can study the stars to gain knowledge on a variety of subjects.</p>
+            <p class="indent">When you finish a long rest, you choose one skill of your choice from any of the following: Arcana, History, Religion, or Nature. You gain proficiency with that skill, or if you already have proficiency in the skill, your proficiency bonus is doubled for any ability check you make with that skill, until the end of your next long rest.</p>
+        </description>
+        <sheet>
+            <description>When you finish a long rest, you choose one skill of your choice from any of the following: Arcana, History, Religion, or Nature. You gain proficiency with that skill, or if you already have proficiency in the skill, your proficiency bonus is doubled for any ability check you make with that skill, until the end of your next long rest.</description>
+        </sheet>
+    </element>
+    <element name="Spell Stars" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_SPELL_STARS">
+        <description>
+            <p>Also, at 2nd level, you can conjure forth stars when you cast a spell of 1st level or higher. When you do so, you choose an unoccupied space within range of the spell, and a spell star appears at the point for 1 minute. The spell star provides bright light in a 10-foot radius and dim light for an additional 10 feet. You can have a number of spell stars at once equal to half your wizard level. While you are within 60 feet of a spell star, you can cast spells as though you were in the spell star’s space.</p>
+            <p class="indent">Additionally, you can use your bonus action to cause any number of spell stars within 60 feet of yourself explode. Each creature within 5 feet of a spell star must make on a Dexterity saving throw against your wizard spell save DC or take 2d6 radiant damage. A creature in the area of more than one spell star burst is affected only once.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher. When you do so, you choose an unoccupied space within range of the spell, and a spell star appears at the point for 1 minute. The spell star provides bright light in a 10-foot radius and dim light for an additional 10 feet. You can have a number of spell stars at once equal to half your wizard level. While you are within 60 feet of a spell star, you can cast spells as though you were in the spell star’s space. Additionally, you can use your bonus action to cause any number of spell stars within 60 feet of yourself explode. Each creature within 5 feet of a spell star must make on a Dexterity saving (save DC {{spellcasting:dc:int}}) or take 2d6 radiant damage. A creature in the area of more than one spell star burst is affected only once.</description>
+        </sheet>
+    </element>
+    <element name="Realign" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_REALIGN">
+        <description>
+            <p>At 6th level, you learn to shift your stars as you desire. As a bonus action on your turn, you can move a spell star within 60 feet of you up to 30 feet in any direction. If you ram the spell star into a creature, that creature must make a Dexterity saving throw against your wizard spell save DC. On a failed save, the creature takes 2d6 radiant damage and the spell star disappears.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can move a spell star within 60 feet of you up to 30 feet in any direction. If you ram the spell star into a creature, that creature must make a Dexterity (save DC {{spellcasting:dc:int}}). On a failed save, the creature takes 2d6 radiant damage and the spell star disappears.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Constellation" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_ARCANE_CONSTELLATION">
+        <description>
+            <p>Starting at 10th level, you can channel magic between your stars as if they were portals. When you cast a spell with an area of effect that includes one of your spell stars, you can choose another spell star within 60 feet of you to carry the effect. Each creature within 10 feet of the chosen spell star is also affected by your spell.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell with an area of effect that includes one of your spell stars, you can choose another spell star within 60 feet of you to carry the effect. Each creature within 10 feet of the chosen spell star is also affected by your spell.</description>
+        </sheet>
+    </element>
+    <element name="Constellate" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SCHOOL_OF_ASTRONOMY_CONSTELLATE">
+        <description>
+            <p>At 14th level, you can channel your arcane energy to create a constellation in an instant. As an action, you can expend a spell slot of 1st level or higher to create a number of spell stars equal to the slot level, placing each star at a point you can see within 60 feet of you.</p>
+        </description>
+        <sheet action="Action">
+            <description>You can expend a spell slot of 1st level or higher to create a number of spell stars equal to the slot level, placing each star at a point you can see within 60 feet of you.</description>
+        </sheet>
+    </element>
+</elements>

@@ -4,9 +4,69 @@
         <name>Lost Vaults: Enchanted Whetstones</name>
         <description>Lost Vaults: Enchanted Whetstones</description>
         <author url="https://www.reddit.com/user/MrBakudan/">u/MrBakudan</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="enchanted-whetstones.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/lost-vaults/enchanted-whetstones.xml" />
         </update>
     </info>
 
+    <element name="Caustic Whetstone" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_WHETSTONE_CAUSTIC">
+        <description>
+            <p>A whetstone made of rare green metal that is formed inside of Green Dragons.</p>
+            <p class="indent">When this whetstone is applied to a melee or ranged weapon, the weapon deals an additional 1d6 acid damage for 5 minutes. The whetstone is consumed when used.</p>
+        </description>
+        <setters>
+            <set name="category">Whetstones</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+
+    <element name="Frozen Whetstone" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_WHETSTONE_FROZEN">
+        <description>
+            <p>A white-blue metal whetstone that is formed in very icy regions.</p>
+            <p class="indent">When this whetstone is applied to a melee or ranged weapon, the weapon does an additional 1d6 cold damage for 5 minutes. The whetstone is consumed on use.</p>
+        </description>
+        <setters>
+            <set name="category">Whetstones</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+
+    <element name="Tempest Whetstone" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_WHETSTONE_TEMPEST">
+        <description>
+            <p>A rare metal whetstone that formed from lightning struck iron.</p>
+            <p class="indent">When this whetstone is applied to a weapon, that weapon does an additional 1d6 lightning damage for 5 minutes. The whetstone is consumed when used.</p>
+        </description>
+        <setters>
+            <set name="category">Whetstones</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+
+    <element name="Whetstone of Combustion" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_WHETSTONE_COMBUSTION">
+        <description>
+            <p>A whetstone that formed from obsidian and produces a flammable oil.</p>
+            <p class="indent">When this whetstone is applied to a weapon, the weapon does an additional 1d6 fire damage for 5 minutes. The whetstone is consumed when used.</p>
+        </description>
+        <setters>
+            <set name="category">Whetstones</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+
+    <element name="Whetstone of Venom" type="Magic Item" source="The Lost Vaults" id="ID_RDDT_LV_WHETSTONE_VENOM">
+        <description>
+            <p>A whetstone that is formed from iron exposed to poisonous pools for an extended period.</p>
+            <p class="indent">When this whetstone is applied to a weapon, the weapon does an additional 1d6 poison damage for 5 minutes. The whetstone is consumed on use.</p>
+        </description>
+        <setters>
+            <set name="category">Whetstones</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    
 </elements>

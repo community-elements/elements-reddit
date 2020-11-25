@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Sky Domain Divine Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-sky-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/cleric-sky-domain.xml" />
+        </update>
+    </info>
+    
+    <element name="Sky Domain" type="Archetype" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_CLERIC_SKY_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>The gods that govern the sky are held in high regard by many religions. Deities of the sky include Zeus and Tyr, among various others. Followers of these deities often travel far to sate their wanderlust and feel the beauty of the open sky</p>
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_DOMAIN_SPELLS" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_FORCEFUL_GALE" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_TAILWIND" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_CD_UPDRAFT" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_CD_PROTECTION_OF_WIND" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_DIVINE_STRIKE" />
+            <div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_BLESSED_WINGS" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_DOMAIN_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_FORCEFUL_GALE" level="1" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_TAILWIND" level="1" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_CD_UPDRAFT" level="2" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_CD_PROTECTION_OF_WIND" level="6" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_BLESSED_WINGS" level="17" />
+        </rules>
+    </element>
+    <element name="Domain Spells" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_DOMAIN_SPELLS">
+        <description>
+            <p>You gain domain spells at the cleric levels listed in the Sky Domain Spells table. See the Divine Domain class features for how domain spells work.</p>
+            <h5>Sky Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><i>faerie fire, feather fall</i></td></tr>
+                <tr><td>3rd</td><td><i>moonbeam, skywrite<sup>XGtE</sup></i></td></tr>
+                <tr><td>5th</td><td><i>fly, wind wall</i></td></tr>
+                <tr><td>7th</td><td><i>freedom of movement, storm sphere<sup>XGtE</sup></i></td></tr>
+                <tr><td>9th</td><td><i>control winds<sup>XGtE</sup>, maelstrom<sup>XGtE</sup></i></td></tr>
+            </table>
+            <h5>Variant: Alternative Spells</h5>
+            <p>For players who do not have access to Xanathar’s Guide to Everything, the domain spells <i>skywrite</i>, <i>storm sphere</i>, <i>control winds</i>, and <i>maelstrom</i> can be replaced with <i>gust of wind</i>, <i>ice storm</i>, <i>cone of cold</i>, and <i>telekinesis</i> respectively.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SKYWRITE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_WIND_WALL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_MAELSTROM" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+    <element name="Forceful Gale" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_FORCEFUL_GALE">
+        <description>
+            <p>At 1st level, you gain the ability to manipulate the winds. You learn the <i>gust</i> cantrip, which doesn’t count against the number of cleric cantrips you know. For you, it gains the following changes:</p>
+            <ul>
+                <li>One Large or smaller creature that you choose must succeed on a Strength saving throw or be flung up 20 feet away from you and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 1d6 bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a Dexterity saving throw or take the same damage and be knocked prone.</li>
+                <li>You create a blast of air capable of moving one object that weighs no more than 100 pounds. If the object is being held or carried, the holder must make a Strength saving throw or lose hold of it. The object is pushed up to 60 feet away from you.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You know the gust cantrip with the following changes: -One Large or smaller creature that you choose must succeed on a Strength saving throw or be flung up 20 feet away from you and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 1d6 bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a Dexterity saving throw or take the same damage and be knocked prone. -You create a blast of air capable of moving one object that weighs no more than 100 pounds. If the object is being held or carried, the holder must make a Strength saving throw or lose hold of it. The object is pushed up to 60 feet away from you.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_GUST" spellcasting="Cleric" known="true" />
+        </rules>
+    </element>
+    <element name="Tailwind" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_TAILWIND">
+        <description>
+            <p>Also at 1st level, the blessing of your god grants you unmatched grace and mobility. Your movement speed increases by 10 feet if you are not wearing medium or heavy armor.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="speed:misc" value="10" requirements="[armor:none]||[armor:light]" />
+        </rules>
+    </element>
+    <element name="Channel Divinity: Updraft" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_CD_UPDRAFT">
+        <description>
+            <p>Starting at 2nd level, you can use your Channel Divinity to create a powerful blast of wind. As an action, you present your holy symbol and invoke the name of your deity. Choose a Large or smaller creature within 60 feet of you. The target must make a Strength saving throw or be blown upwards 30 feet. A target can choose to automatically fail this saving throw. If the target doesn’t have a hover or fly speed, it immediately falls afterwards, taking fall damage and landing prone.</p>
+        </description>
+        <sheet usage="Channel Divinity" alt="Updraft" action="Action">
+            <description>Choose a Large or smaller creature within 60 feet of you. The target must make a Strength saving throw or be blown upwards 30 feet. A target can choose to automatically fail this saving throw. If the target doesn’t have a hover or fly speed, it immediately falls afterwards, taking fall damage and landing prone.</description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Protection of Wind" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_CD_PROTECTION_OF_WIND">
+        <description>
+            <p>At 6th level, the gusts and breezes protect you from harm. As a reaction when you are hit by a ranged weapon attack you can see, you can use your Channel Divinity to create a gust of wind around you, causing the attack to miss.</p>
+        </description>
+        <sheet usage="Channel Divinity" alt="Protection of Wind" action="Reaction">
+            <description>When you are hit by a ranged weapon attack you can see, you can use your Channel Divinity to create a gust of wind around you, causing the attack to miss.</description>
+        </sheet>
+    </element>
+    <element name="Divine Strike" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target.</description>
+            <description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 thunder damage to the target.</description>
+        </sheet>
+    </element>
+    <element name="Blessed Wings" type="Archetype Feature" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_SKY_DOMAIN_BLESSED_WINGS">
+        <description>
+            <p>At 17th level, your god places upon you the blessing of true flight. You grow a pair of wings, which grant you a flying speed of 60 feet. If you already have a flying speed, it increases to 90 feet, unless it is already higher. You can’t use these wings while wearing armor unless the armor is made to accommodate them.</p>
+        </description>
+        <sheet>
+            <description>You grow a pair of wings, which grant you a flying speed of 60 feet. If you already have a flying speed, it increases to 90 feet, unless it is already higher. You can’t use these wings while wearing armor unless the armor is made to accommodate them.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:fly:misc" value="60" />
+        </rules>
+    </element>
+</elements>
