@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Oath of Radiance Sacred Oath</name>
+        <update version="0.0.1">
+            <file name="paladin-oath-of-radiance.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/paladin-oath-of-radiance.xml" />
+        </update>
+    </info>
+    
+    <element name="Oath of Radiance" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_PALADIN_OATH_OF_RADIANCE">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p>The Oath of Radiance is almost as old as the sun that it follows, and has remained a steady force of good over the ages. Often called sun warriors or shining knights, paladins that take this oath seek to bring light and knowledge to even the darkest areas of the world. Some of them adorn their armor with dazzling inlaid glass and brilliantly bright metals, so that they can reflect the sun’s glory and become physical beacons on the battlefield. They also might wear images of the sun or stars—the holy lights that bring life and knowledge to this world, and reveal all that is hidden by shadows and darkness. Like a star in the night, a paladin of the Oath of Radiance seeks to be a light of truth in the dark.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_TENETS_OF_RADIANCE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_OATH_SPELLS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_CHANNEL_DIVINITY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_AURA_OF_LIGHT" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_ALL_SEEING" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_RADIANT_CHAMPION" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_TENETS_OF_RADIANCE" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_OATH_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_CHANNEL_DIVINITY" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_AURA_OF_LIGHT" level="7" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_ALL_SEEING" level="15" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_RADIANT_CHAMPION" level="20" />
+        </rules>
+    </element>
+        <element name="Tenets of Radiance" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_TENETS_OF_RADIANCE">
+            <description>
+                <p>Though those that take this oath do so for an array of reasons, they generally all follow these core tenets:</p>
+                <p class="indent">Truth. Like a light in the dark, you must reveal the truth when it is shrouded in mystery.</p>
+                <p class="indent">Leadership. You must become a beacon of light that everyone else follows, and lead others along the right path.</p>
+                <p class="indent">Preservation. Where the light glows strongest, you must be ready to stand in its defense.</p>
+                <p class="indent">Knowledge. Those that are ignorant to the truth must be shown the light. Spread your knowledge to all those that would accept it.</p>
+            </description>
+            <sheet>
+                <description></description>
+            </sheet>
+        </element>
+        <element name="Oath Spells" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_OATH_SPELLS">
+            <description>
+                <p>You gain oath spells at the paladin levels listed.</p>
+                <h5 class="caption">OATH OF RADIANCE SPELLS</h5>
+                <table>
+                    <thead>
+                        <tr><td>Paladin Level</td><td>Spells</td></tr>
+                    </thead>
+                    <tr><td>3rd</td><td><em>color spray, faerie fire</em></td></tr>
+                    <tr><td>5th</td><td><em>moonbeam, see invisibility</em></td></tr>
+                    <tr><td>9th</td><td><em>daylight, spirit guardians</em></td></tr>
+                    <tr><td>13th</td><td><em>arcane eye, guardian of faith</em></td></tr>
+                    <tr><td>17th</td><td><em>dawn, holy weapon</em></td></tr>
+                </table>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_COLOR_SPRAY" spellcasting="Paladin" prepared="true" level="3" />
+                <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" spellcasting="Paladin" prepared="true" level="3" />
+                <grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" spellcasting="Paladin" prepared="true" level="5" />
+                <grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" spellcasting="Paladin" prepared="true" level="5" />
+                <grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" spellcasting="Paladin" prepared="true" level="9" />
+                <grant type="Spell" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" spellcasting="Paladin" prepared="true" level="9" />
+                <grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" spellcasting="Paladin" prepared="true" level="13" />
+                <grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" spellcasting="Paladin" prepared="true" level="13" />
+                <grant type="Spell" id="ID_XGTE_SPELL_DAWN" spellcasting="Paladin" prepared="true" level="17" />
+                <grant type="Spell" id="ID_XGTE_SPELL_HOLY_WEAPON" spellcasting="Paladin" prepared="true" level="17" />
+            </rules>
+        </element>
+        <element name="Channel Divinity" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_CHANNEL_DIVINITY">
+            <description>
+                <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+                <p class="indent"><strong><em>Blinding Intervention.</em></strong> As an action, you can use your Channel Divinity to teleport to an unoccupied location within 5 feet of a creature you can see within 30 feet of you. That creature must succeed on a Constitution saving throw or become blinded for up to 1 minute. The creature can repeat this save at the end of each of its turns, ending the effect on a success.</p>
+                <p class="indent">Also, other creatures of your choice within 5 feet of you after you teleport must also make Constitution saving throws. On a failed save, a creature has disadvantage on attack rolls until the start of your next turn.</p>
+                <p class="indent"><strong><em>Divine Sunlight.</em></strong> You can use your Channel Divinity to exude an aura of light. As an action, you can cause your body to emit bright light in a 10-foot radius and dim light 10 feet beyond that for 1 minute. This light is sunlight, and it reveals the true form of shapechangers and creatures altered through magic. Additionally, magical darkness does not function within the area of bright light.</p>
+                <p class="indent">Also, fey, fiends, and undead within the bright light have disadvantage on attack rolls against creatures other than you.</p>
+                <p class="indent">Once you reach 7th level, the radius of the bright light increases to 20 feet, with dim light extending 20 feet beyond that.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_CD_BLINDING_INTERVENTION" level="3" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_CD_DIVINE_SUNLIGHT" level="3" />
+            </rules>
+        </element>
+            <element name="Channel Divinity: Blinding Intervention" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_CD_BLINDING_INTERVENTION">
+                <description>
+                    <p>As an action, you can use your Channel Divinity to teleport to an unoccupied location within 5 feet of a creature you can see within 30 feet of you. That creature must succeed on a Constitution saving throw or become blinded for up to 1 minute. The creature can repeat this save at the end of each of its turns, ending the effect on a success.</p>
+                    <p class="indent">Also, other creatures of your choice within 5 feet of you after you teleport must also make Constitution saving throws. On a failed save, a creature has disadvantage on attack rolls until the start of your next turn.</p>
+                </description>
+                <sheet alt="Blinding Intervention" usage="Channel Divinity" action="Action">
+                    <description>You can teleport to an unoccupied location within 5 feet of a creature you can see within 30 feet of you. That creature must succeed on a Constitution saving throw or become blinded for up to 1 minute. The creature can repeat this save at the end of each of its turns, ending the effect on a success. Also, other creatures of your choice within 5 feet of you after you teleport must also make Constitution saving throws. On a failed save, a creature has disadvantage on attack rolls until the start of your next turn.</description>
+                </sheet>
+            </element>
+            <element name="Channel Divinity: Divine Sunlight" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_CD_DIVINE_SUNLIGHT">
+                <description>
+                    <p>You can use your Channel Divinity to exude an aura of light. As an action, you can cause your body to emit bright light in a 10-foot radius and dim light 10 feet beyond that for 1 minute. This light is sunlight, and it reveals the true form of shapechangers and creatures altered through magic. Additionally, magical darkness does not function within the area of bright light.</p>
+                    <p class="indent">Also, fey, fiends, and undead within the bright light have disadvantage on attack rolls against creatures other than you.</p>
+                    <p class="indent">Once you reach 7th level, the radius of the bright light increases to 20 feet, with dim light extending 20 feet beyond that.</p>
+                </description>
+                <sheet alt="Divine Sunlight" usage="Channel Divinity" action="Action">
+                    <description>You can cause your body to emit bright light in a {{divine-sunlight:range}}-foot radius and dim light {{divine-sunlight:range}} feet beyond that for 1 minute. This light is sunlight, and it reveals the true form of shapechangers and creatures altered through magic. Additionally, magical darkness does not function within the area of bright light. Also, fey, fiends, and undead within the bright light have disadvantage on attack rolls against creatures other than you.</description>
+                </sheet>
+                <rules>
+                    <stat name="divine-sunlight:range" value="10" level="3" />
+                    <stat name="divine-sunlight:range" value="10" level="7" />
+                </rules>
+            </element>
+        <element name="Aura of Light" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_AURA_OF_LIGHT">
+            <description>
+                <p>Starting at 7th level, you can choose to emit an aura of light while you’re not incapacitated. The aura extrends 10 feet from you in every direction, but not through total cover, and its area is bright light. Dim light extends 10 feet beyond this, but the dim light is not considered part of the aura. You and friendly creatures within the aura have resistance to radiant and necrotic damage, and advantage on death saving throws.</p>
+                <p class="indent">You can activate and deactivate this aura as a bonus action. Starting at 18th level, you can also use your bonus action to increase this aura’s range to 30 feet, or reduce it back to 10 feet. The dim light also changes by the same amount.</p>
+            </description>
+            <sheet action="Bonus Action">
+                <description>You can activate/deactivate an aura of light while you’re not incapacitated. The aura extrends 10 feet from you in every direction, but not through total cover, and its area is bright light. Dim light extends 10 feet beyond this, but the dim light is not considered part of the aura. You and friendly creatures within the aura have resistance to radiant and necrotic damage, and advantage on death saving throws.</description>
+                <description level="18">You can activate/deactivate an aura of light while you’re not incapacitated. The aura extrends 10 feet from you in every direction, but not through total cover, and its area is bright light. Dim light extends 10 feet beyond this, but the dim light is not considered part of the aura. You and friendly creatures within the aura have resistance to radiant and necrotic damage, and advantage on death saving throws. You can also use your bonus action to increase this aura’s range to 30 feet, or reduce it back to 10 feet. The dim light also changes by the same amount.</description>
+            </sheet>
+        </element>
+        <element name="All-Seeing" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_ALL_SEEING">
+            <description>
+                <p>Beginning at 15th level, you are always under the effects of a <em>see invisibility</em> spell. Also, for you <em>see invisibility</em> now has a range of 30 feet, rather than self, allowing you to grant its effects to another creature within range when you cast it.</p>
+                <div class="reference">
+                    <div element="ID_PHB_SPELL_SEE_INVISIBILITY" />
+                </div>
+            </description>
+            <sheet>
+                <description>You are always under the effects of a see invisibility spell. Also, for you see invisibility now has a range of 30 feet, rather than self, allowing you to grant its effects to another creature within range when you cast it.</description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" />
+            </rules>
+        </element>
+        <element name="Radiant Champion" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_RADIANCE_RADIANT_CHAMPION">
+            <description>
+                <p>At 20th level, you gain the ability to harness radiant energy and become a paragon of light. Using your action, you undergo a transformation. For 1 minute, you gain the following benefits:</p>
+                <ul>
+                    <li>On your turn, you can spend your movement to teleport a distance equal to twice the movement you spend. You teleport to an unoccupied location that you can see.</li>
+                    <li>When you hit a creature with an attack, it takes an additional 1d8 radiant damage and is basked in radiant energy until the start of your next turn. For the duration, the creature can’t benefit from being invisible, attacks made against it are made with advantage, and it emits dim light out to a range of 10 feet.</li>
+                </ul>
+                <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+            </description>
+            <sheet action="Action" usage="1/Long Rest">
+                <description>You undergo a transformation. For 1 minute, you gain the following benefits: On your turn, you can spend your movement to teleport a distance equal to twice the movement you spend. You teleport to an unoccupied location that you can see. When you hit a creature with an attack, it takes an additional 1d8 radiant damage and is basked in radiant energy until the start of your next turn. For the duration, the creature can’t benefit from being invisible, attacks made against it are made with advantage, and it emits dim light out to a range of 10 feet.</description>
+            </sheet>
+        </element>
+    
+</elements>

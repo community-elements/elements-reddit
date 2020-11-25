@@ -3,7 +3,7 @@
     <info>
         <name>School of Awakening</name>
 		<author url="https://drive.google.com/file/d/1Kr3ZKYy3Me0ZFOhOQAmKBZlB9JUauhW5/view">Jonoman3000</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="wizard-school-of-reawakening.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/dark-arts-players-companion/wizard-school-of-reawakening.xml" />
         </update>
     </info>
@@ -65,7 +65,7 @@
             <p class="indent">Each creature of your choice within a 10 ft radius of the exploding creature must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes 2d6 necrotic damage for every point of that creature’s CR. Creatures below CR 1 deal 1d6 necrotic damage. On a successful save, a creature takes half damage.</p>
         </description>
         <sheet>
-            <description>When you reawakened creature is reduced to 0 hit points, it explodes. Each creature of your choice within a 10 ft radius must make a Dexterity saving throw (save DC {{spellcasting:dc}}). On a failed save, a creature takes 2d6 necrotic damage for each CR. Creatures below CR 1 deal 1d6 damage. Half damage on a successful save.</description>
+            <description>When you reawakened creature is reduced to 0 hit points, it explodes. Each creature of your choice within a 10 ft radius must make a Dexterity saving throw (save DC {{spellcasting:dc:int}}). On a failed save, a creature takes 2d6 necrotic damage for each CR. Creatures below CR 1 deal 1d6 damage. Half damage on a successful save.</description>
         </sheet>
     </element>
     

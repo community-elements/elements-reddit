@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Artistry Divine Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-artistry-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/cleric-artistry-domain.xml" />
+        </update>
+    </info>
+    
+    <element name="Artistry Domain" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_CLERIC_ARTISTRY_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>Gods of artistry—such as Denier, Milil, Branchala, and Apollo—promote creativity and imagination above all. These gods value all of the arts, including music, painting, sculpting, and other skilled crafts, though they often specialize in one craft above the others. Clerics of a god of artistry are creative souls infused with the desire to create and share their emotions with others, whether through song, artwork, or other means. Many of their compositions are created or improved through magic, and are often a glorious sight to behold or listen to.</p>
+            <h5>Artistry Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><i>color spray, silent image</i></td></tr>
+                <tr><td>3rd</td><td><i>magic mouth, skywrite</i></td></tr>
+                <tr><td>5th</td><td><i>major image, tongues</i></td></tr>
+                <tr><td>7th</td><td><i>fabricate, stone shape</i></td></tr>
+                <tr><td>9th</td><td><i>creation, dream</i></td></tr>
+            </table>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_BONUS_PROFICIENCIES" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_ARTISTIC_COMPOSITIONS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_CD_BRING_TO_LIFE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_CD_ILLUSORY_THEATRE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_POTENT_SPELLCASTING" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_IMPROVED_ARTISANSHIP" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_BONUS_PROFICIENCIES" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_ARTISTIC_COMPOSITIONS" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_CD_BRING_TO_LIFE" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_CD_ILLUSORY_THEATRE" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_POTENT_SPELLCASTING" level="8" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_IMPROVED_ARTISANSHIP" level="17" />
+            <grant type="Spell" id="ID_PHB_SPELL_COLOR_SPRAY" spellcasting="Cleric" prepared="true" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" spellcasting="Cleric" prepared="true" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAGIC_MOUTH" spellcasting="Cleric" prepared="true" level="3" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SKYWRITE" spellcasting="Cleric" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" spellcasting="Cleric" prepared="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_TONGUES" spellcasting="Cleric" prepared="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_FABRICATE" spellcasting="Cleric" prepared="true" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_STONE_SHAPE" spellcasting="Cleric" prepared="true" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_DREAM" spellcasting="Cleric" prepared="true" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_CREATION" spellcasting="Cleric" prepared="true" level="9" />
+        </rules>
+    </element>
+        <element name="Bonus Proficiencies" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_BONUS_PROFICIENCIES">
+            <description>
+                <p>When you choose this domain at 1st level, you gain proficiency in the Performance skill, and one of the following artisan’s tools: calligrapher’s supplies, glassblower’s tools, jeweler’s tools, painter’s supplies, potter’s tools, or woodcarver’s tools. Also, you gain proficiency in a musical instrument of your choice.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+                <rules>
+                    <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+                    <select type="Proficiency" name="Tool Proficiency (Artistry Domain)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_ARTISANS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+        			<select type="Proficiency" name="Musical Intrument (Artistry Domain)" supports="Musical Instrument" />
+                </rules>
+        </element>
+        <element name="Artistic Compositions" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_ARTISTIC_COMPOSITIONS">
+            <description>
+                <p>Also at 1st level, you can conjure magical pieces of artwork that you design in your mind. Over a long rest, you can create musical compositions, paintings, and sculptures. You can create a number of these objects equal to your Wisdom modifier (a minimum of 1), and they can last until you complete your next long rest. You can create a single option multiple times, or create a variety of different options. The options are described below:</p>
+                <p class="indent">Musical Composition. You write a musical composition upon a few conjured pages. As an action, you can cause the music to magically play within the mind of a creature you can see within 15 feet of you. That creature must succeed on a Wisdom saving throw or be charmed by you until the start of your next turn. A creature charmed this way can’t willingly move away from you.</p>
+                <p class="indent">As you use this action, the pages disintegrate into nothingness.</p>
+                <p class="indent">Painting. You conjure a painting of your design that fits within a rectangular area no larger than 3 feet on a side, and no smaller than half a foot on a side. As an action, you can enter into the painting if you are within 5 feet of it. You, along with anything you’re wearing or carrying, disappears before appearing at a location of your choice within the painting. You can remain within the painting for up to 10 minutes, though you are also forced out if the painting takes any damage. While within the painting, you can see, hear, and smell as normal.</p>
+                <p class="indent">Once you leave the painting, it disintegrates into nothingness.</p>
+                <p class="indent">Sculpture. You conjure a tiny sculpture of yourself. While you are within 30 feet of the sculpture, you can use your bonus action to teleport to its location. If there is insufficient room at the sculpture’s location, you teleport to the location nearest to the sculpture that has sufficient room for you.</p>
+                <p class="indent">Once you teleport, the sculpture disintegrates into nothingness.</p>
+            </description>
+            <sheet usage="{{artistic-compositions:count}} Compositions/Long Rest">
+                <description>You can create magical musical compositions, paintings or sculptures during a long rest.</description>
+            </sheet>
+            <rules>
+                <stat name="artistic-compositions:count" value="1" bonus="base" />
+                <stat name="artistic-compositions:count" value="wisdom:modifier" bonus="base" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_COMPOSITION_MUSIC" level="1" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_COMPOSITION_PAINTING" level="1" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_COMPOSITION_SCULPTURE" level="1" />
+            </rules>
+        </element>
+            <element name="Musical Composition" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_COMPOSITION_MUSIC">
+                <description>
+                    <p>You write a musical composition upon a few conjured pages. As an action, you can cause the music to magically play within the mind of a creature you can see within 15 feet of you. That creature must succeed on a Wisdom saving throw or be charmed by you until the start of your next turn. A creature charmed this way can’t willingly move away from you.</p>
+                    <p class="indent">As you use this action, the pages disintegrate into nothingness.</p>
+                </description>
+                <sheet action="Action" usage="Artistic Composition">
+                    <description>You can cause the music to magically play within the mind of a creature you can see within 15 feet of you. That creature must succeed on a Wisdom saving throw (save DC {{spellcasting:dc}})or be charmed by you until the start of your next turn. A creature charmed this way can’t willingly move away from you. As you use this action, the pages disintegrate into nothingness.</description>
+                </sheet>
+            </element>
+            <element name="Painting" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_COMPOSITION_PAINTING">
+                <description>
+                    <p>You conjure a painting of your design that fits within a rectangular area no larger than 3 feet on a side, and no smaller than half a foot on a side. As an action, you can enter into the painting if you are within 5 feet of it. You, along with anything you’re wearing or carrying, disappears before appearing at a location of your choice within the painting. You can remain within the painting for up to 10 minutes, though you are also forced out if the painting takes any damage. While within the painting, you can see, hear, and smell as normal.</p>
+                    <p class="indent">Once you leave the painting, it disintegrates into nothingness.</p>
+                </description>
+                <sheet action="Action" usage="Artistic Composition">
+                    <description>You can enter into the painting if you are within 5 feet of it. You, along with anything you’re wearing or carrying, disappears before appearing at a location of your choice within the painting. You can remain within the painting for up to 10 minutes, though you are also forced out if the painting takes any damage. While within the painting, you can see, hear, and smell as normal. Once you leave the painting, it disintegrates into nothingness.</description>
+                </sheet>
+            </element>
+            <element name="Sculpture" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_COMPOSITION_SCULPTURE">
+                <description>
+                    <p>You conjure a tiny sculpture of yourself. While you are within 30 feet of the sculpture, you can use your bonus action to teleport to its location. If there is insufficient room at the sculpture’s location, you teleport to the location nearest to the sculpture that has sufficient room for you.</p>
+                <p class="indent">Once you teleport, the sculpture disintegrates into nothingness.</p>
+                </description>
+                <sheet action="Bonus Action" usage="Artistic Composition">
+                    <description>You conjure a tiny sculpture of yourself. While you are within 30 feet of the sculpture, you can use your bonus action to teleport to its location. If there is insufficient room at the sculpture’s location, you teleport to the location nearest to the sculpture that has sufficient room for you. Once you teleport, the sculpture disintegrates into nothingness.</description>
+                </sheet>
+            </element>
+        <element name="Channel Divinity: Bring to Life" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_CD_BRING_TO_LIFE">
+            <description>
+                <p>Beginning at 2nd level, you can use your Channel Divinity to create real creatures and objects from artwork.</p>
+                <p class="indent">During a minute-long ritual, you touch a piece of artwork and cause a single object or creature depicted within that piece to be conjured at an unoccupied location within 30 feet of you, in a perfectly realistic form. To be an eligible target, the real version of a selected creature or object must fit within a 10-foot cube, and, if its a creature, must be of CR 0. A conjured creature can be of any creature type, is friendly to you, and obeys your commands. Anything conjured with this Channel Divinity lasts for up to 1 hour. You can dismiss the conjured creature or object by using a bonus action on your turn.</p>
+            </description>
+            <sheet usage="Channel Divinity" alt="Bring to Life" action="{{bring-to-life:action}}">
+                <description>You touch a piece of artwork and cause a single object or creature depicted within that piece to be conjured at an unoccupied location within 30 feet of you, in a perfectly realistic form. The real version of the object or creature must fit within a 10-foot cube. A creature must be {{bring-to-life:cr}}.</description>
+            </sheet>
+            <rules>
+                <stat name="bring-to-life:action" inline="true" value="1 minute ritual" level="2" />
+                <stat name="bring-to-life:action" inline="true" value="Action" level="17" />
+                <stat name="bring-to-life:cr" inline="true" value="of CR 0" level="2" />
+                <stat name="bring-to-life:cr" inline="true" value="up to CR 2" level="17" />
+            </rules>
+        </element>
+        <element name="Channel Divinity: Illusory Theatre" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_CD_ILLUSORY_THEATRE">
+            <description>
+                <p>At 6th level, you can use your Channel Divinity to make complex illusions that include a variety of images, sounds, and music.</p>
+                <p class="indent">As an action, you can create this illusory production, which must fit entirely within a 20-foot cube centered on a point you can see within 60 feet of you. For up to an hour, or until you lose your concentration (as if you were concentrating on a spell), any number of images, sounds, smells, and even non-harmful temperature changes can originate within the area, and move around in it. There are no limitations on what can appear, and there can be scene changes, speaking characters, sound effects, background music, and other such things. The entirety of the production must be planned out before you use this Channel Divinity, however, and no changes can be made during its duration. A production made on the spot might last for a very short duration or have few moving parts, as you would lack the time to create anything more elaborate.</p>
+                <p class="indent">Physical interaction with any of the images reveal them to be illusions, as things can pass through them. A creature that uses its action to examine the production can determine that it is an illusion with a successful Intelligence (Investigation) check against your cleric spell save DC. lf a creature discerns the illusion for what it is, the creature can see through it, and its other sensory qualities become faint to the creature.</p>
+            </description>
+            <sheet usage="Channel Divinity" alt="Illusory Theatre" action="Action">
+                <description>You can create this illusory production, which must fit entirely within a 20-foot cube centered on a point you can see within 60 feet of you. For up to an hour, or until you lose your concentration, any number of images, sounds, smells, and even non-harmful temperature changes can originate within the area, and move around in it.</description>
+                <description level="17">You can create this illusory production, which must fit entirely within a 50-foot cube centered on a point you can see within 60 feet of you. For up to an hour, any number of images, sounds, smells, and even non-harmful temperature changes can originate within the area, and move around in it.</description>
+            </sheet>
+        </element>
+        <element name="Potent Spellcasting" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_POTENT_SPELLCASTING">
+            <description>
+                <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+            </description>
+            <sheet>
+                <description>You add {{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
+            </sheet>
+        </element>
+        <element name="Improved Artisanship" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ARTISTRY_DOMAIN_IMPROVED_ARTISANSHIP">
+            <description>
+                <p>At 17th level, both of the Channel Divinities granted by this domain are improved. You can use Bring to Life as an action, rather than a minute-long ritual, and you can use it to create beasts of up to CR 2. Also, the maximum area of Illusory Theatre is increased to a 50-foot cube, and concentration is no longer required to maintain it.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+        </element>
+    
+</elements>

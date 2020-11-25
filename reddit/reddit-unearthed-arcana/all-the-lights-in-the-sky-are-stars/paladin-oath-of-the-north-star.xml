@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Oath of the North Star Sacred Oath</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="paladin-oath-of-the-north-star.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/paladin-oath-of-the-north-star.xml" />
         </update>
     </info>
@@ -112,7 +112,7 @@
             <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
         </description>
         <sheet action="Bonus Action">
-            <description>You emit an aura of starlight (dim light) in a {{aura-of-stardust:radius}}-foot radius. You can activate or supress this as a bonus action. When an invisible creature moves within {{aura-of-stardust:radius}} feet of you for the first time on a turn or starts its turn there, it must succeed a Dexterity saving throw (save DC {{spellcasting:dc}}) or become coated in tiny motes of stardust. While coated in this way, the affected creature can’t benefit from being invisible. These motes of stardust disappear once the affected creature moves out of the range of your aura.</description>
+            <description>You emit an aura of starlight (dim light) in a {{aura-of-stardust:radius}}-foot radius. You can activate or supress this as a bonus action. When an invisible creature moves within {{aura-of-stardust:radius}} feet of you for the first time on a turn or starts its turn there, it must succeed a Dexterity saving throw (save DC {{spellcasting:dc:cha}}) or become coated in tiny motes of stardust. While coated in this way, the affected creature can’t benefit from being invisible. These motes of stardust disappear once the affected creature moves out of the range of your aura.</description>
         </sheet>
         <rules>
             <stat name="aura-of-stardust:radius" value="10" bonus="base" level="7" />

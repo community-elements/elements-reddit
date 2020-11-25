@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>The Elder Sphinx Otherworldly Patron</name>
+        <update version="0.0.1">
+            <file name="warlock-the-elder-sphinx.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/warlock-the-elder-sphinx.xml" />
+        </update>
+    </info>
+    
+    <element name="The Elder Sphinx" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_WARLOCK_THE_ELDER_SPHINX">
+        <supports>Otherworldly Patron</supports>
+        <description>
+            <p>You have made a pact with an ancient sphinx born in a bygone age, a being made manifest through the power of devout prayer or the direct intervention of the gods. Such beings are tasked with guarding the secrets and treasures of the gods, and revealing those secrets to those that pass their trials and show their worth. One such treasure that a sphinx can impart is the power of magic. Through your completion of a Sphinx’s trial, you have gained access to powerful magic that augments your mind and body.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_EXPANDED_SPELLS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_ALTERNATE_SPELLCASTING_ABILITY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_LOREMASTER" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_SPHINXS_DISPLACEMENT" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_INSCRUTABLE_MIND" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_ROAR_OF_THE_SPHINX" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_EXPANDED_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_ALTERNATE_SPELLCASTING_ABILITY" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_LOREMASTER" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_SPHINXS_DISPLACEMENT" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_INSCRUTABLE_MIND" level="10" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_ROAR_OF_THE_SPHINX" level="14" />
+        </rules>
+    </element>
+        <element name="Expanded Spells" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_EXPANDED_SPELLS">
+            <description>
+                <p>The Elder Sphinx lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+                <h5 class="caption">ELDER SPHINX EXPANDED SPELLS</h5>
+                <table>
+                    <thead>
+                        <tr><td>Spell Level</td><td>Spells</td></tr>
+                    </thead>
+                    <tr><td>1st</td><td><em>detect evil and good, detect magic</em></td></tr>
+                    <tr><td>2nd</td><td><em>lesser restoration, zone of truth</em></td></tr>
+                    <tr><td>3rd</td><td><em>clairvoyance, create food and water</em></td></tr>
+                    <tr><td>4th</td><td><em>divination, freedom of movement</em></td></tr>
+                    <tr><td>5th</td><td><em>greater restoration, legend lore</em></td></tr>
+                </table>
+            </description>
+            <spellcasting name="Warlock" extend="true">
+                <extend>ID_PHB_SPELL_DETECT_EVIL_AND_GOOD</extend>
+                <extend>ID_PHB_SPELL_DETECT_MAGIC</extend>
+                <extend>ID_PHB_SPELL_LESSER_RESTORATION</extend>
+                <extend>ID_PHB_SPELL_ZONE_OF_TRUTH</extend>
+                <extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+                <extend>ID_PHB_SPELL_CREATE_FOOD_AND_WATER</extend>
+                <extend>ID_PHB_SPELL_DIVINATION</extend>
+                <extend>ID_PHB_SPELL_FREEDOM_OF_MOVEMENT</extend>
+                <extend>ID_PHB_SPELL_GREATER_RESTORATION</extend>
+                <extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+            </spellcasting>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+        </element>
+        <element name="Alternate Spellcasting Ability" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_ALTERNATE_SPELLCASTING_ABILITY">
+            <description>
+                <p>When you choose this patron at 1st level, you can choose to use Intelligence rather than Charisma as your warlock spellcasting ability. If you choose to do so, Eldritch Invocations you take also use Intelligence rather than Charisma when applicable. This choice is permanent.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <select type="Archetype Feature" name="Alternate Spellcasting Ability" optional="true" supports="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_ALTERNATE_SPELLCASTING_ABILITY_INTELLIGENCE" />
+            </rules>
+        </element>
+            <element name="Intelligence" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_ALTERNATE_SPELLCASTING_ABILITY_INTELLIGENCE">
+                <description>
+                    <p>You use Intelligence rather than Charisma for your Warlock spellcasting ability and Eldritch Invocations.</p>
+                </description>
+                <sheet>
+                    <description>You use Intelligence rather than Charisma for your Warlock spellcasting ability and Eldritch Invocations.</description>
+                </sheet>
+            </element>
+        <element name="Loremaster" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_LOREMASTER">
+            <description>
+                <p>At 1st level, you gain proficiency in one of the following skills of your choice: Arcana, History, or Religion.</p>
+                <p class="indent">Also, you can call upon your patron to grant you knowledge about a creature you designate. As a bonus action, choose one creature you can see within 30 feet of you. For 1 minute, you are granted foreknowledge about that creature’s intentions, allowing you to better engage it both socially and in combat. This effect ends early if the target dies, you die, or if you are incapacitated. Until the effect ends, you gain the following benefits:</p>
+                <ul>
+                    <li>When the target hits you with an attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.</li>
+                    <li>When you fail a saving throw inflicted by the target, you can use your reaction to add your proficiency bonus to that saving throw, potentially causing the saving throw to succeed.</li>
+                    <li>You can add your Intelligence modifier to the result of any Charisma check or Wisdom (Insight) check you make when interacting with the target.</li>
+                    <li>When you use this feature on a target, you can specify some small tidbit of knowledge you wish to gain from the creature. If the target dies and is capable of providing this knowledge, you are granted it in the form of a few cryptic sentences or a riddle. This knowledge is based on what that creature knew in life, and could therefore be false if that creature was misinformed or left unanswered if the creature didn’t have that knowledge.</li>
+                </ul>
+                <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest. Beginning at 10th level, you can use this feature twice between rests, and regain all expended uses when you finish a short or long rest.</p>
+            </description>
+            <sheet action="Bonus Action" usage="{{loremaster:uses}}/Short Rest">
+                <description>Choose one creature you can see within 30 feet of you. For 1 minute, you are granted foreknowledge about that creature’s intentions, allowing you to better engage it both socially and in combat. This effect ends early if the target dies, you die, or if you are incapacitated. Until the effect ends, you gain multiple benefits (see feature card).</description>
+            </sheet>
+            <rules>
+                <select type="Proficiency" name="Skill Proficiency, Loremaster" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_RELIGION" />
+                <stat name="loremaster:uses" value="1" level="1" />
+                <stat name="loremaster:uses" value="1" level="10" />
+            </rules>
+        </element>
+        <element name="Sphinx’s Displacement" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_SPHINXS_DISPLACEMENT">
+            <description>
+                <p>Starting at 6th level, you can channel the abilities of your patron to allow you to teleport, as you briefly make mental contact with your patron. As a bonus action, you can teleport up to 60 feet to an unoccupied space you can see. Your patron then grants you some of its divine foreknowledge, giving you advantage on attack rolls until the end of the turn.</p>
+                <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+            </description>
+            <sheet action="Bonus Action" usage="1/Short Rest">
+                <description>You can teleport up to 60 feet to an unoccupied space you can see. Your patron then grants you some of its divine foreknowledge, giving you advantage on attack rolls until the end of the turn.</description>
+            </sheet>
+        </element>
+        <element name="Inscrutable Mind" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_INSCRUTABLE_MIND">
+            <description>
+                <p>At 10th level, your mind becomes as inscrutable as a sphinx’s. You are immune to any effect that would sense your emotions or read your thoughts, and any Wisdom (Insight) checks made to ascertain your intentions or sincerity have disadvantage.</p>
+            </description>
+            <sheet>
+                <description>You are immune to any effect that would sense your emotions or read your thoughts, and any Insight checks made to ascertain your intentions or sincerity have disadvantage.</description>
+            </sheet>
+        </element>
+        <element name="Roar of the Sphinx" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELDER_SPHINX_ROAR_OF_THE_SPHINX">
+            <description>
+                <p>Starting at 14th level, you can unleash a terrifying roar that echoes around you. As an action, you can force each creature of your choice within 60 feet of you that can hear you to make Constitution saving throws against your warlock spell save DC. On a failed save, a creature takes 6d10 thunder damage, falls prone, and is frightened of you until the end of your next turn. On a successful save, a creature takes half as much damage and suffers no other effects.</p>
+                <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+            </description>
+            <sheet action="Action" usage="1/Long Rest">
+                <description>You can force each creature of your choice within 60 feet of you that can hear you to make Constitution saving throws against your warlock spell save DC. On a failed save, a creature takes 6d10 thunder damage, falls prone, and is frightened of you until the end of your next turn. On a successful save, a creature takes half as much damage and suffers no other effects.</description>
+            </sheet>
+        </element>
+    
+</elements>

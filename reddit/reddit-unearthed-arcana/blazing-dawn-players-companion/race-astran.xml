@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Astran Race</name>
+        <update version="0.0.1">
+            <file name="race-astran.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/race-astran.xml" />
+        </update>
+    </info>
+    
+    <element name="Astran" type="Race" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_RACE_ASTRAN">
+        <description>
+            <p>Hailing from the stars, as their name suggests, astrans are reclusive beings seldom seen by other races. They live on remote mountaintops or deserted islands, eking out a meager existence far from civilization. Few folk can claim to have met an astran, but those that do seldom forget the encounter. Their strange, mystifying appearance causes most other races to initially fear them, but their peaceful nature and penchant for wisdom makes them good friends of those that can get past the first impression.</p>
+            <h4>Mystical Outsiders</h4>
+            <p>Those that look upon an astran’s peculiar features can tell that these creatures are not of this world. Although humanoid in form, an astran’s appearance is off-putting. Their bodies are long and wiry, and their skin is the color of ash, accented by deep crimson hues. But their most unique feature is the shape of their head, which is characterized by a set of three tentacle-like protrusions from the back of their skull, as well as pairs of smaller protrusions set into their slender face.</p>
+            <p class="indent">They are approximately 7 feet tall on average, though some can stand up to 8 and half feet tall. Despite their staggering height, astrans usually only weigh between 130 and 170 pounds. They have no hair on any part of their bodies. To the other races all astrans look quite similar. While other astrans can easily tell their kind apart, most others need to study their features for at least a few moments before coming to a conclusion. If in doubt, all astrans can be set apart by their uniquely colored eyes, which can take on nearly any color and often contain complex patterns that are as unique as fingerprints.</p>
+            <p class="indent">Astrans are also completely genderless, and therefore have no concept of ‘male’ or ‘female.’ Their bodies look male to most other races, however, and they are usually fine with being referred to as ‘he.’</p>
+            <h4>Life from Fallen Stars</h4>
+            <p>Astrans are not born like other races. The rare, tiny embryos that eventually grow up into astrans can be found encased within meteorites. The origins of these meteorites is unknown—some believe that they are created by some celestial deity that casts down shooting stars from the heavens. Others believe that these meteorites are the destroyed remains of an ancient planet, still harboring sparks of life within its countless fragments.</p>
+            <p class="indent">After an astran meteorite lands, it behaves much like an egg. The astran embryo grows inside the meteorite, until it emerges a few weeks later as a tiny creature, only 1-2 feet tall. Astrans are capable of fending for themselves as soon as they emerge. They can protect themselves with their innate magical capabilities, and they know the astran language and basic survival skills from their inception. They grow quickly, reaching their full size in approximately 1-2 years.</p>
+            <p class="indent">Even if young astrans are better equipped to survive alone than most humanoid young, the world is still an exceptionally dangerous place for a young astran. Some older astrans watch the night sky for shooting stars, and trek great distances to find where meteorites have landed. Through these treks they seek to find a meteorite that holds an astran embryo, so that the young astran might have a better chance of surviving to adulthood, and so that they might have a companion to ease their loneliness.</p>
+            <h4>Alone Through the Ages</h4>
+            <p>Astrans often live for close to a millenia, and during their long lives little changes about them from a physical standpoint. The changes made by aging are subtle—typically their skin changes color, becoming darker and losing some of its luster, and the light of their eyes becomes slightly dimmer. These changes happen so slowly that they are nearly unnoticeable, however, and only similarly long lived races, like elves, would have a chance of noticing an astran’s aging.</p>
+            <p class="indent">The vast majority of astrans spend their long lives carefully avoiding long-lasting friendships, fearing the sadness that comes with watching their friends grow old as they, in turn, remain unchanged by the years. This fear often fades over time, and they might make friends with other long-lived races, particularly elves, once they have a few centuries behind them.</p>
+            <p class="indent">While they tend to make their homes in places untraveled by other folk, they don’t actively avoid other races when those folk happen upon their humble abodes, and in fact they often welcome their visitors inside and are eager to share their wisdom with individuals that would appreciate it. Born with innate knowledge, an astran’s wisdom can sometimes be prophetic. Those that know of this trait may search far and wide for an astran that could act as an oracle.</p>
+            <p class="indent">One of the few relationships that an astran is willing to take on with another race is that of a mentor-student relationship, where the astran imparts its knowledge and skill upon a worthy student. Even these associations are often short-lived, however, as they seek to not become too attached to their pupils.</p>
+            <h4>Exploring the World</h4>
+            <p>While most astrans tend to stay put when they can help it, there are many points in their lives where they might take up adventuring. Some astrans are compelled to adventure when they take up students, as they seek to train them in real-life situations. Others might become unintentionally involved in worldly conflicts, if those conflicts reach their homesteads. Their typical kindness might make them protectors of refugees or escorts of travelers, where their involvement can easily rope them into greater adventures. Adventuring astrans tend to be the exception, rather than the rule, and may learn to make lasting friendships with their comrades.</p>
+            <h4>Astran Names</h4>
+            <p>An astran chooses their own name shortly after they emerge from their meteorite. Since astrans are genderless, there are no ‘male’ or ‘female’ names for them. Their lack of true parents also means they lack a family name. An astran’s real name, taken from the astran language, is often difficult for other races to pronounce. Therefore, astrans tend to translate these names into common when dealing with other races. A few of the common translations are listed below.</p>
+            <p class="indent"><b>Astran Names:</b> Antlia, Aquila, Aries, Caelum, Cepheus, Circinus, Crux, Dorado, Equuleus, Fornax, Horologium, Hydrus, Leo, Libra, Monoceros, Orion, Pavo, Sculptor, Serpens, Tucana, Virgo, Volans.</p>
+            <h4>Astran Traits</h4>
+            <p>Your otherworldly heritage manifests as a variety of traits that you have in common with all other astrans.</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span> Your Wisdom score increases by 2, and your Dexterity score increases by 1.<br />
+                <span class="feature">Age.</span> Astrans emerge from their meteoritic egg with intellectual capabilities similar to that of a 12-year-old human child, and they grow to full size in less than 2 years. From this point on their aging virtually stops, and they can live on, unchanging, for nearly a thousand years.<br />
+                <span class="feature">Alignment.</span> Most astrans are kind hearted, though occasionally distant. Though they often live in solitude, they are welcoming of visitors and eager to lend their aid to others. The typical astran tends towards neither law nor chaos, instead opting for a more neutral path. While this is their most common disposition, it isn’t uncommon for an astran to be of any good or neutral alignment, and even evil alignments aren’t completely out of the question.<br />
+                <span class="feature">Size.</span> Astrans average about 7-8 feet tall, though they have exceptionally wiry builds, and often weigh only about 150 pounds. Your size is Medium.<br />
+                <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br />        
+                <span class="feature">Astral Resistance.</span> You have resistance to radiant damage.<br />
+                <span class="feature">Mystical Mentor.</span> With your touch, you can temporarily transfer some of your skill and knowledge to another creature. As an action, you can touch a willing creature, and select a skill that you are proficient in. If the target isn’t already proficient in that skill, it becomes proficient in it for the next 8 hours.<br />
+                Once you use this trait, you can’t use it again until you finish a long rest.<br />
+                <span class="feature">Natural Survivor.</span> You have proficiency in the Survival skill.<br />
+                <span class="feature">Starlight Navigator.</span> Your memory is exceptionally good when it comes to the locations of all the stars that dot the night sky. As long as you can see the night sky, you know which way is north, and you have advantage on Wisdom (Survival) checks made to avoid becoming lost.<br />
+                <span class="feature">Wielder of Light and Flame.</span> As a child of the stars, you can call upon innate magic granted to you by your astral heritage. You know the light and control flames cantrips. When you reach 3rd level, you can cast faerie fire with this trait, and starting at 5th level, you can also cast flaming sphere with it as a 2nd level spell. Once you cast a spell with this trait, you can’t cast it again until you finish a long rest. Wisdom is your spellcasting ability for these spells.<br />
+                <span class="feature">Languages.</span> You can speak, read, and write Common and Astran. Astran is a language different from all other worldly languages, and many of its words and common sounds are difficult for other races to pronounce. The different intonations used by this language often spill into the other languages an astran knows, causing them to often emphasize the wrong part of a word, or even order their sentences in a non-standard manner.<br />      
+                <span class="feature">Subrace.</span><br />
+            </p>
+        </description>
+        <setters>
+            <set name="names" type="male">Antlia, Aquila, Aries, Caelum, Cepheus, Circinus, Crux, Dorado, Equuleus, Fornax, Horologium, Hydrus, Leo, Libra, Monoceros, Orion, Pavo, Sculptor, Serpens, Tucana, Virgo, Volans.</set>
+            <set name="names" type="female">Antlia, Aquila, Aries, Caelum, Cepheus, Circinus, Crux, Dorado, Equuleus, Fornax, Horologium, Hydrus, Leo, Libra, Monoceros, Orion, Pavo, Sculptor, Serpens, Tucana, Virgo, Volans.</set>
+            <set name="names" type="clan"></set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="2d10">6’8"</set>
+            <set name="weight" modifier="2d4">120 lb.</set>
+        </setters>
+        <sheet display="false">
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="wisdom" value="2" />
+            <stat name="dexterity" value="1" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Racial Trait" id="ID_BDPC_RACIAL_TRAIT_MYSTICAL_MENTOR" />
+            <grant type="Racial Trait" id="ID_BDPC_RACIAL_TRAIT_STARLIGHT_NAVIGATOR" />
+            <grant type="Racial Trait" id="ID_BDPC_RACIAL_TRAIT_WIELDER_OF_LIGHT_AND_FLAME" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_BDPC_LANGUAGE_ASTRAN" />
+        </rules>
+    </element>
+    <element name="Mystical Mentor" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_BDPC_RACIAL_TRAIT_MYSTICAL_MENTOR">
+        <description>
+            <p>With your touch, you can temporarily transfer some of your skill and knowledge to another creature. As an action, you can touch a willing creature, and select a skill that you are proficient in. If the target isn’t already proficient in that skill, it becomes proficient in it for the next 8 hours.</p>
+            <p>Once you use this trait, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Action">
+            <description>You can touch a willing creature, and select a skill that you are proficient in. If the target isn’t already proficient in that skill, it becomes proficient in it for the next 8 hours.</description>
+        </sheet>
+    </element>
+    <element name="Starlight Navigator" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_BDPC_RACIAL_TRAIT_STARLIGHT_NAVIGATOR">
+        <description>
+            <p>Your memory is exceptionally good when it comes to the locations of all the stars that dot the night sky. As long as you can see the night sky, you know which way is north, and you have advantage on Wisdom (Survival) checks made to avoid becoming lost.</p>
+        </description>
+        <sheet>
+            <description>As long as you can see the night sky, you know which way is north, and you have advantage on Wisdom (Survival) checks made to avoid becoming lost.</description>
+        </sheet>
+    </element>
+    <element name="Wielder of Light and Flame" type="Racial Trait" source="Blazing Dawn Player’s Companion" id="ID_BDPC_RACIAL_TRAIT_WIELDER_OF_LIGHT_AND_FLAME">
+        <description>
+            <p>As a child of the stars, you can call upon innate magic granted to you by your astral heritage. You know the light and control flames cantrips. When you reach 3rd level, you can cast faerie fire with this trait, and starting at 5th level, you can also cast flaming sphere with it as a 2nd level spell. Once you cast a spell with this trait, you can’t cast it again until you finish a long rest. Wisdom is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>You can cast light and control flames at will.</description>
+            <description level="3">You can cast light and control flames at will. You can cast faerie fire once per long rest. Wisdom is your spellcasting ability for these spells (save DC {{astran-spell:dc}}).</description>
+            <description level="5">You can cast light and control flames at will. You can cast faerie fire and flaming sphere (as a 2nd level spell) once per long rest. Wisdom is your spellcasting ability for these spells (save DC {{astran-spell:dc}}).</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" />
+            <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" level="5" />
+            <stat name="astran-spell:dc" value="8" />
+            <stat name="astran-spell:dc" value="proficiency" />
+            <stat name="astran-spell:dc" value="wisdom:modifier" />
+        </rules>
+    </element>
+
+    <element name="Astran" type="Language" source="Blazing Dawn Player’s Companion" id="ID_BDPC_LANGUAGE_ASTRAN">
+        <description>
+            <p>Typically spoken by Astrans.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Astran</set>
+            <set name="script">Alien Script</set>
+        </setters>
+    </element>
+</elements>

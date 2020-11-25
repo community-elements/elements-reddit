@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Elemental Divine Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-elemental-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/cleric-elemental-domain.xml" />
+        </update>
+    </info>
+    
+    <element name="Elemental Domain" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_CLERIC_ELEMENTAL_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>Clerics of the Elemental domain are unique among their peers, as they often worship a group of deities, rather than focusing their prayers in the worship of only one god. This domain includes gods of fire, such as Kossuth or Sirrion, gods of water and oceans, such as Umberlee or Poseidon, gods of the earth, including Ulaa and Skadi, gods of air and storms, including Talos and Zeus, and other such deities. These clerics might devote themselves to any number of these gods, but they typically focus their worship on one or two of these deities, and specialize their magic accordingly. While some might train themselves in all them elemental magics equally, most clerics of this domain tend to value some elements above others. They might become masters of fire, devote themselves to learning the ins-and-outs of earth magic, or otherwise specialize Themselves. Gods of this domain tend to be less involved with their clerics than those of other domains, but when they give out a decree their followers are usually quick to respond.</p>
+            <h5>Elemental Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><i>absorb elements, chromatic orb</i></td></tr>
+                <tr><td>3rd</td><td><i>dragon’s breath, maximilian’s earthen grasp</i></td></tr>
+                <tr><td>5th</td><td><i>elemental weapon, protection from energy</i></td></tr>
+                <tr><td>7th</td><td><i>conjure minor elementals, elemental bane</i></td></tr>
+                <tr><td>9th</td><td><i>conjure elemental, control winds</i></td></tr>
+            </table>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_BONUS_CANTRIPS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_DISCIPLE_OF_THE_ELEMENTS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_CD_ELEMENTAL_AVATAR" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_NATURES_ENERGIES" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_POTENT_SPELLCASTING" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_IMPROVED_AVATAR" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+           <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_BONUS_CANTRIPS" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_DISCIPLE_OF_THE_ELEMENTS" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_CD_ELEMENTAL_AVATAR" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_NATURES_ENERGIES" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_POTENT_SPELLCASTING" level="8" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_IMPROVED_AVATAR" level="14" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" spellcasting="Cleric" prepared="true" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_CHROMATIC_ORB" spellcasting="Cleric" prepared="true" level="1" />
+            <grant type="Spell" id="ID_XGTE_SPELL_DRAGONS_BREATH" spellcasting="Cleric" prepared="true" level="3" />
+            <grant type="Spell" id="ID_XGTE_SPELL_MAXIMILIANS_EARTHEN_GRASP" spellcasting="Cleric" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_ELEMENTAL_WEAPON" spellcasting="Cleric" prepared="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Cleric" prepared="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS" spellcasting="Cleric" prepared="true" level="7" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ELEMENTAL_BANE" spellcasting="Cleric" prepared="true" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" spellcasting="Cleric" prepared="true" level="9" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" spellcasting="Cleric" prepared="true" level="9" />
+        </rules>
+    </element>
+        <element name="Bonus Cantrips" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_BONUS_CANTRIPS">
+            <description>
+                <p>When you choose this domain at 1st level, you gain two cantrips of your choice from the following list: control flames, gust, mold earth, and shape water.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <select type="Spell" name="Bonus Cantrip (Elemental Domain)" number="2" spellcasting="Cleric" known="true" supports="ID_XGTE_SPELL_CONTROL_FLAMES|ID_XGTE_SPELL_GUST|ID_XGTE_SPELL_MOLD_EARTH|ID_XGTE_SPELL_SHAPE_WATER" />
+            </rules>
+        </element>
+        <element name="Disciple of the Elements" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_DISCIPLE_OF_THE_ELEMENTS">
+            <description>
+                <p>Also at 1st level, you can imbue elemental power into your spells. When you cast a spell of 1st level or higher that affects one or more creatures, you can choose one of the creatures affected and select one of the following effects: air, fire, earth, or water. A creature that succeeds on their save or is missed by the triggering spell cannot be targeted, even if they would still suffer an effect.</p>
+                <p class="indent"><em><strong>Air.</strong></em> A gust pushes the target 5 feet in a direction of your choice. If the target is willing, they can be pushed up to 10 feet.</p>
+                <p class="indent"><em><strong>Fire.</strong></em> The target takes fire damage equal to 1 + the spell’s level.</p>
+                <p class="indent"><em><strong>Earth.</strong></em> The target is covered in rocky armor, granting them temporary hit points equal to 1 + the spell’s level.</p>
+                <p class="indent"><em><strong>Water.</strong></em> Ice envelopes the target, reducing their speed by 10 feet until the start of your next turn.</p>
+            </description>
+            <sheet>
+                <description>When you cast a spell of 1st level or higher that affects one or more creatures, you can choose one of the creatures affected and select one of the following effects: air, fire, earth, or water. A creature that succeeds on their save or is missed by the triggering spell cannot be targeted, even if they would still suffer an effect.</description>
+            </sheet>
+            <rules>
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLE_OF_THE_ELEMENTS_AIR" level="1" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLE_OF_THE_ELEMENTS_FIRE" level="1" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLE_OF_THE_ELEMENTS_EARTH" level="1" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLE_OF_THE_ELEMENTS_WATER" level="1" />
+            </rules>
+        </element>
+            <element name="Air" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLE_OF_THE_ELEMENTS_AIR">
+                <description>
+                    <p>A gust pushes the target 5 feet in a direction of your choice. If the target is willing, they can be pushed up to 10 feet.</p>
+                </description>
+                <sheet usage="Disciple of the Elements">
+                    <description>A gust pushes the target 5 feet in a direction of your choice. If the target is willing, they can be pushed up to 10 feet.</description>
+                </sheet>
+            </element>
+            <element name="Fire" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLE_OF_THE_ELEMENTS_FIRE">
+                <description>
+                    <p>The target takes fire damage equal to 1 + the spell’s level.</p>
+                </description>
+                <sheet usage="Disciple of the Elements">
+                    <description>The target takes fire damage equal to 1 + the spell’s level.</description>
+                </sheet>
+            </element>
+            <element name="Earth" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLE_OF_THE_ELEMENTS_EARTH">
+                <description>
+                    <p>The target is covered in rocky armor, granting them temporary hit points equal to 1 + the spell’s level.</p>
+                </description>
+                <sheet usage="Disciple of the Elements">
+                    <description>The target is covered in rocky armor, granting them temporary hit points equal to 1 + the spell’s level.</description>
+                </sheet>
+            </element>
+            <element name="Water" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLE_OF_THE_ELEMENTS_WATER">
+                <description>
+                    <p>Ice envelopes the target, reducing their speed by 10 feet until the start of your next turn.</p>
+                </description>
+                <sheet usage="Disciple of the Elements">
+                    <description>Ice envelopes the target, reducing their speed by 10 feet until the start of your next turn.</description>
+                </sheet>
+            </element>
+        <element name="Channel Divinity: Elemental Avatar" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_CD_ELEMENTAL_AVATAR">
+            <description>
+                <p>Starting at 2nd level, you can use your Channel Divinity to summon the four elements to your command.</p>
+                <p class="indent">As an action, you present your holy symbol, causing elemental energies to begin swirling around you. For the next minute, you can use a bonus action on each of your turns to make a ranged spell attack against a creature you can see within 60 feet of you. That creature takes 1d6 + your Wisdom modifier bludgeoning, cold, fire, or lightning damage (your choice) on a hit.</p>
+                <p class="indent">This Channel Divinity ends early if you are incapacitated, or if you use a different Channel Divinity option.</p>
+            </description>
+            <sheet usage="Channel Divinity" alt="Elemental Avatar" action="{{elemental-avatar:action}}">
+                <description>You present your holy symbol. For the next minute, you can use a bonus action on each of your turns to make a ranged spell attack against a creature you can see within 60 feet of you. That creature takes 1d6 + {{wisdom:modifier}} bludgeoning, cold, fire, or lightning damage (your choice) on a hit.</description>
+                <description level="17">You present your holy symbol. For the next minute, you can use a bonus action on each of your turns, including the turn on which you activate it, to make two ranged spell attacks against a creature you can see within 60 feet of you. That creature takes 1d6 + {{wisdom:modifier}} bludgeoning, cold, fire, or lightning damage (your choice) on a hit.</description>
+            </sheet>
+            <rules>
+                <stat name="elemental-avatar:action" inline="true" value="Action" level="2" />
+                <stat name="elemental-avatar:action" inline="true" value="Bonus Action" level="17" />
+            </rules>
+        </element>
+        <element name="Nature’s Energies" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_NATURES_ENERGIES">
+            <description>
+                <p>At 6th level, you can choose to infuse elemental power into yourself when you deal certain damage types: bludgeoning, cold, fire, or lightning. After you receive one of these infusions, the infusion lasts until you receive a different one.</p>
+                <p class="indent"><em><strong>Bludgeoning.</strong></em> You are infused with the power of earth, granting you a +1 bonus to your AC while you wear armor.</p>
+                <p class="indent"><em><strong>Cold.</strong></em> You are infused with the power of water, granting you resistance to cold damage and a swimming speed equal to your walking speed.</p>
+                <p class="indent"><em><strong>Fire.</strong></em> You are infused with the power of fire, granting you resistance to fire damage and a special form of darkvision that lets you see darkness in shades of red, out to a range of 30 feet.</p>
+                <p class="indent"><em><strong>Lightning.</strong></em> You are infused with the power of air, granting you a 15-foot bonus to your speed.</p>
+            </description>
+            <sheet>
+                <description>You can choose to infuse elemental power into yourself when you deal certain damage types: bludgeoning, cold, fire, or lightning. After you receive one of these infusions, the infusion lasts until you receive a different one.</description>
+            </sheet>
+            <rules>
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_NATURES_ENERGIES_BLUDGEONING" level="6" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_NATURES_ENERGIES_COLD" level="6" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_NATURES_ENERGIES_FIRE" level="6" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_NATURES_ENERGIES_LIGHTNING" level="6" />
+            </rules>
+        </element>
+            <element name="Bludgeoning" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_NATURES_ENERGIES_BLUDGEONING">
+                <description>
+                    <p>You are infused with the power of earth, granting you a +1 bonus to your AC while you wear armor.</p>
+                </description>
+                <sheet usage="Nature’s Energies">
+                    <description>You are infused with the power of earth, granting you a +1 bonus to your AC while you wear armor.</description>
+                </sheet>
+            </element>
+            <element name="Cold" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_NATURES_ENERGIES_COLD">
+                <description>
+                    <p>You are infused with the power of water, granting you resistance to cold damage and a swimming speed equal to your walking speed.</p>
+                </description>
+                <sheet usage="Nature’s Energies">
+                    <description>You are infused with the power of water, granting you resistance to cold damage and a swimming speed equal to your walking speed.</description>
+                </sheet>
+            </element>
+            <element name="Fire" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_NATURES_ENERGIES_FIRE">
+                <description>
+                    <p>You are infused with the power of fire, granting you resistance to fire damage and a special form of darkvision that lets you see darkness in shades of red, out to a range of 30 feet.</p>
+                </description>
+                <sheet usage="Nature’s Energies">
+                    <description>You are infused with the power of fire, granting you resistance to fire damage and a special form of darkvision that lets you see darkness in shades of red, out to a range of 30 feet.</description>
+                </sheet>
+            </element>
+            <element name="Lightning" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_NATURES_ENERGIES_LIGHTNING">
+                <description>
+                    <p>You are infused with the power of air, granting you a 15-foot bonus to your speed.</p>
+                </description>
+                <sheet usage="Nature’s Energies">
+                    <description>You are infused with the power of air, granting you a 15-foot bonus to your speed.</description>
+                </sheet>
+            </element>
+        <element name="Potent Spellcasting" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_POTENT_SPELLCASTING">
+            <description>
+                <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+            </description>
+            <sheet>
+                <description>You add {{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
+            </sheet>
+        </element>
+        <element name="Improved Avatar" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_ELEMENTAL_DOMAIN_IMPROVED_AVATAR">
+            <description>
+                <p>At 17th level, you can make two ranged spell attacks, rather than one, when you use the bonus action attack granted by Elemental Avatar. Additionally, you can activate Elemental Avatar as a bonus action, and make the two ranged spell attacks as part of the bonus action used to activate it.</p>
+            </description>
+            <sheet>
+                <description></description>
+            </sheet>
+        </element>
+    
+</elements>

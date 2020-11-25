@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Oath of Cinders Sacred Oath</name>
+        <update version="0.0.1">
+            <file name="paladin-oath-of-cinders.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/paladin-oath-of-cinders.xml" />
+        </update>
+    </info>
+    
+    <element name="Oath of Cinders" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_PALADIN_OATH_OF_CINDERS">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p>The Oath of Cinders was first taken in an age long past, not long after the time man first harnessed the power of fire. The paladins that take this oath are sometimes called pyre knights, red knights, or ashen knights, as their oath grants them command over the element of fire. They are known for their limitless bravery and unwillingness to back down from a losing fight, as they attempt to keep the flame of hope alive no matter the circumstances. Many paladins that take this oath are revolutionaries, fighting against tyranny and protecting the oppressed.</p>
+            <h5>Tenets of Cinders</h5>
+            <p>The tenets of the Oath of Cinders inspire a paladin to always take action and never back down in the face of evil.</p>
+            <p class="indent"><strong><em>Fan the Flames. </em></strong>A flame left unattended will surely go out. By leading through example and never backing down, you can keep your ideals and hopes alive.</p>
+            <p class="indent"><strong><em>Rekindle the Flame. </em></strong>A flame that once burned can burn again. When hope starts to dwindle, be the one that reignites it.</p>
+            <p class="indent"><strong><em>Be the First Spark. </em></strong>A powerful flame can be born from a single spark. In the face of evil and tyranny, be the first to rise against it and bring change.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_OATH_SPELLS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_CHANNEL_DIVINITY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_AURA_OF_FLAMES" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_ASHEN_SOUL" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_LORD_OF_CINDER" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_OATH_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_CHANNEL_DIVINITY" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_AURA_OF_FLAMES" level="7" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_ASHEN_SOUL" level="15" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_LORD_OF_CINDER" level="20" />
+        </rules>
+    </element>
+        <element name="Oath Spells" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_OATH_SPELLS">
+            <description>
+                <p>You gain oath spells at the paladin levels listed.</p>
+                <h5>Oath of Cinders Spells</h5>
+                <table>
+                    <thead>
+                        <tr><td>Paladin Level</td><td>Spells</td></tr>
+                    </thead>
+                    <tr><td>3rd</td><td><i>burning hands, searing smite</i></td></tr>
+                    <tr><td>5th</td><td><i>flaming sphere, pyrotechnics</i></td></tr>
+                    <tr><td>9th</td><td><i>fireball, Melf’s minute meteors</i></td></tr>
+                    <tr><td>13th</td><td><i>fire shield, wall of fire</i></td></tr>
+                    <tr><td>17th</td><td><i>flame strike, immolation</i></td></tr>
+                </table>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Paladin" prepared="true" level="3" />
+                <grant type="Spell" id="ID_PHB_SPELL_SEARING_SMITE" spellcasting="Paladin" prepared="true" level="3" />
+                <grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" spellcasting="Paladin" prepared="true" level="5" />
+                <grant type="Spell" id="ID_XGTE_SPELL_PYROTECHNICS" spellcasting="Paladin" prepared="true" level="5" />
+                <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" spellcasting="Paladin" prepared="true" level="9" />
+                <grant type="Spell" id="ID_XGTE_SPELL_MELFS_MINUTE_METEORS" spellcasting="Paladin" prepared="true" level="9" />
+                <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Paladin" prepared="true" level="13" />
+                <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" spellcasting="Paladin" prepared="true" level="13" />
+                <grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" spellcasting="Paladin" prepared="true" level="17" />
+                <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" spellcasting="Paladin" prepared="true" level="17" />
+            </rules>
+        </element>
+        <element name="Channel Divinity" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_CHANNEL_DIVINITY">
+            <description>
+                <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+                <p class="indent"><strong><em>Branding Blade.</em></strong> As a bonus action, you transform a melee weapon you’re holding into a flaming weapon, using your Channel Divinity. For 1 minute, the weapon’s damage type becomes fire, and it emits bright light in a 10-foot radius and dim light 10 feet beyond that. Also, the fire damage dealt by this weapon ignores fire resistance if its target is a fiend or undead.</p>
+                <p class="indent">Whenever you hit a creature with this weapon, that creature becomes branded until the end of your next turn. If a branded creature attacks a creature other than you, the brand flares, dealing 1d8 fire damage to it. Also, if the branded target is a fiend or undead, its speed is halved and it can’t take reactions for as long as the brand lasts.</p>
+                <p class="indent"><strong><em>From the Embers.</em></strong> When a creature within 30 feet of you dies, you can use your reaction and your Channel Divinity to cause their body to burn away into ash. When you do so, some of the burnt embers fly back to you and imbue you with power. For the next minute, you have resistance to fire damage and gain temporary hit points equal to your Charisma modifier at the start of each of your turns.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+        </element>
+            <element name="Channel Divinity: Branding Blade" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_CD_BRANDING_BLADE">
+                <description>
+                    <p>As a bonus action, you transform a melee weapon you’re holding into a flaming weapon, using your Channel Divinity. For 1 minute, the weapon’s damage type becomes fire, and it emits bright light in a 10-foot radius and dim light 10 feet beyond that. Also, the fire damage dealt by this weapon ignores fire resistance if its target is a fiend or undead.</p>
+                    <p class="indent">Whenever you hit a creature with this weapon, that creature becomes branded until the end of your next turn. If a branded creature attacks a creature other than you, the brand flares, dealing 1d8 fire damage to it. Also, if the branded target is a fiend or undead, its speed is halved and it can’t take reactions for as long as the brand lasts.</p>
+                </description>
+                <sheet usage="Channel Divinity" alt="Branding Blade" action="Bonus Action">
+                    <description>You transform your melee weapon into a flaming weapon and its damage type becomes fire damage. The weapon ignores fire resistance of the target is a fiend or undead. Whenever you hit a creature with this weapon, that creature becomes branded until the end of your next turn. If a branded creature attacks a creature other than you, the brand flares, dealing 1d8 fire damage to it. Also, if the branded target is a fiend or undead, its speed is halved and it can’t take reactions for as long as the brand lasts.</description>
+                </sheet>
+            </element>
+            <element name="Channel Divinity: From the Embers" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_CD_FROM_THE_EMBERS">
+                <description>
+                    <p>When a creature within 30 feet of you dies, you can use your reaction and your Channel Divinity to cause their body to burn away into ash. When you do so, some of the burnt embers fly back to you and imbue you with power. For the next minute, you have resistance to fire damage and gain temporary hit points equal to your Charisma modifier at the start of each of your turns.</p>
+                </description>
+                <sheet usage="Channel Divinity" alt="From the Embers" action="Reaction">
+                    <description>When a creature within 30 feet of you dies, you can cause their body to burn away to ash. Some of the embers fly back to you and grant you, for the next minute, resistance to fire damage and {{from-the-embers:temp-hp}} temporary hit points at the start of each turn.</description>
+                    <description level="15">When a creature within 30 feet of you dies, you can cause their body to burn away to ash. Some of the embers fly back to you and grant you, for the next minute, immunity to fire damage and {{from-the-embers:temp-hp}} temporary hit points at the start of each turn.</description>
+                </sheet>
+                <rules>
+                    <stat name="from-the-embers:temp-hp" value="charisma:modifier" level="3" />
+                    <stat name="from-the-embers:temp-hp" value="5" level="15" />
+                </rules>
+            </element>
+        <element name="Aura of Flames" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_AURA_OF_FLAMES">
+            <description>
+                <p>Beginning at 7th level, you can choose to emit an aura of flames while you’re not incapacitated. The aura extends 10 feet from you in every direction, but not through total cover. Friendly creatures within the aura gain resistance to fire damage.</p>
+                <p class="indent">Flames flit along the edge of this aura, punishing enemies that attempt to leave it. Whenever a hostile creature willingly leaves the aura, it takes fire damage equal to your paladin level.</p>
+                <p class="indent">You can activate and deactivate this aura as a bonus action. Starting at 18th level, you can also use your bonus action to increase this aura’s range to 30 feet, or reduce it back to 10 feet.</p>
+            </description>
+            <sheet action="Bonus Action">
+                <description>You emit an aura of flame 10 feet in all directions, granting friendly creatures within the aura resistance to fire damage. Whenever a hostile creature willingly leaves the aura, it takes {{level:paladin}} fire damage.</description>
+                <description level="18">You emit an aura of flame 10 feet in all directions, granting friendly creatures within the aura resistance to fire damage. Whenever a hostile creature willingly leaves the aura, it takes {{level:paladin}} fire damage. You can use a bonus action to extend the range of the aura to 30 feet or back to 10 feet.</description>
+            </sheet>
+        </element>
+        <element name="Ashen Soul" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_ASHEN_SOUL">
+            <description>
+                <p>Starting at 15th level, harnessing the ashes of the fallen grants you even greater power. When you use your From the Embers Channel Divinity, you gain immunity to fire damage, rather than resistance, and the number of temporary hit points you gain each turn is increased by 5.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+        </element>
+        <element name="Lord of Cinder" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_OATH_OF_CINDERS_LORD_OF_CINDER">
+            <description>
+                <p>At 20th level, you can take the form of an elemental knight of primordial fire. Using your action, you undergo a transformation. For 1 minute, you gain the following benefits:</p>
+                <ul>
+                    <li>Hostile creatures within 10 feet of you that have resistance to fire damage lose that resistance. Creatures within the area that have immunity to fire damage are instead treated as if they had resistance to it.</li>
+                    <li>Once during the duration, you can use one of your Channel Divinity options without needing to spend a use of your Channel Divinity. This does not allow you to combine the effects of the same Channel Divinity if its used multiple times.</li>
+                    <li>When you use your Divine Smite, it deals fire damage to its target, rather than radiant damage. Also, each creature of your choice within 5 feet of the target, other than the target, must succeed on a Dexterity saving throw against your paladin spell save DC or take fire damage equal to the damage dealt by your smite (not including any bonus damage dealt from a critical strike or vulnerability, or other damage increasing effects).</li>
+                </ul>
+                <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+            </description>
+            <sheet action="Action">
+                <description>You transform into an elemental knight of primordial fire. For 1 minute you gain the following benefits: Hostile creatures within 10 feet of you lose resistance to fire damage, or if immune, become resistant; you can use one Channel Divinity option during the duration without spending a use of Channel Divinity; when you use your Divine Smite, it deals fire damage instead of radiant, each creature within 5 feet of the target must make a Dexterity save (save DC {{spellcasting:dc}}) or take damage equal to the Divine Smite damage.</description>
+            </sheet>
+        </element>
+</elements>

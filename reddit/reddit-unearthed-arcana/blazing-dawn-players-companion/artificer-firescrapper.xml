@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Firescrapper Artificer Specialization</name>
+        <update version="0.0.1">
+            <file name="artificer-firescrapper.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/artificer-firescrapper.xml" />
+        </update>
+    </info>
+    
+    <element name="Firescrapper" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_ARTIFICER_FIRESCRAPPER">
+        <supports>Artificer Specialist</supports>
+        <description>
+            <p>As the name implies, firescrappers specialize in the use of pyromantic magic. They are quite unlike wizardly pyromancers, however, as they use this magic to become powerful front-line fighters rather than back-line mages. In the Last War, efforts of firescrappers turned the tides of many a battle, and they were highly valued assets of many different armies. Since the war’s conclusion, the demand for these artificers has decreased dramatically, but there are still many that learn and pass on the techniques of this specialization.</p>
+            <p class="indent"></p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_TOOL_PROFICIENCY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_FIRESCRAPPER_SPELLS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_ARCANE_GAUNTLETS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_EXTRA_ATTACK" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_ENHANCED_WEAPONRY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_CHARGED_DEFENSE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_TOOL_PROFICIENCY" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_FIRESCRAPPER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_ARCANE_GAUNTLETS" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_ENHANCED_WEAPONRY" level="9" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_CHARGED_DEFENSE" level="15" />
+        </rules>
+    </element>
+        <element name="Tool Proficiency" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_TOOL_PROFICIENCY">
+            <description>
+                <p>When you adopt this specialization at 3rd level, you gain proficiency with smith’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_TOOL_PROFICIENCY_SMITHS_TOOLS" requirements="!ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_TOOL_PROFICIENCY_ARTISAN_TOOLS" requirements="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS,!ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+            </rules>
+        </element>
+            <element name="Tool Proficiency: Smiths Tools" type="Archetype Feature" source="source" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_TOOL_PROFICIENCY_SMITHS_TOOLS">
+                <compendium display="false" />
+                <description />
+                <sheet display="false" />
+                <rules>
+                    <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+                </rules>
+            </element>
+            <element name="Tool Proficiency: Artisan Tools" type="Archetype Feature" source="source" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_TOOL_PROFICIENCY_ARTISAN_TOOLS">
+                <compendium display="false" />
+                <description />
+                <sheet display="false" />
+                <rules>
+                    <select type="Proficiency" name="Tool Proficiency (Firescrapper)" supports="Artisan tools" />
+                </rules>
+            </element>
+        <element name="Firescrapper Spells" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_FIRESCRAPPER_SPELLS">
+            <description>
+                <p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Firescrapper Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+                <h5 class="caption">Firescrapper Spells</h5>
+                <table>
+                    <thead>
+                        <tr><td>Artificer Level</td><td>Spells</td></tr>
+                    </thead>
+                    <tr><td>3rd</td><td><em>absorb elements, shield</em></td></tr>
+                    <tr><td>5th</td><td><em>flaming sphere, heat metal</em></td></tr>
+                    <tr><td>9th</td><td><em>fireball, lightning bolt</em></td></tr>
+                    <tr><td>13th</td><td><em>elemental bane, fire shield</em></td></tr>
+                    <tr><td>17th</td><td><em>dawn, immolation</em></td></tr>
+                </table>    
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" spellcasting="Artificer" prepared="true" level="3" />
+                <grant type="Spell" id="ID_PHB_SPELL_SHIELD" spellcasting="Artificer" prepared="true" level="3" />
+                <grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" spellcasting="Artificer" prepared="true" level="5" />
+                <grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" spellcasting="Artificer" prepared="true" level="5" />
+                <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" spellcasting="Artificer" prepared="true" level="9" />
+                <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" spellcasting="Artificer" prepared="true" level="9" />
+                <grant type="Spell" id="ID_XGTE_SPELL_ELEMENTAL_BANE" spellcasting="Artificer" prepared="true" level="13" />
+                <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Artificer" prepared="true" level="13" />
+                <grant type="Spell" id="ID_XGTE_SPELL_DAWN" spellcasting="Artificer" prepared="true" level="17" />
+                <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" spellcasting="Artificer" prepared="true" level="17" />
+            </rules>
+        </element>
+        <element name="Arcane Gauntlets" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_ARCANE_GAUNTLETS">
+            <description>
+                <p>At 3rd level, you learn how to craft magical, technologically enhanced gauntlets that make for brutally effective weapons. Creating a pair of these magical gauntlets takes an hour of uninterrupted work, which can coincide with a short or long rest, and requires the use of smith’s tools and 30 gp of materials. Creating your first pair of gauntlets is free. The gauntlets are specially designed for your body, and are ineffective when used by other creatures. They are considered martial melee weapons with which you are proficient. They deal 1d6 bludgeoning damage on a hit, have the light property, and you use your Intelligence modifier for their attack and damage rolls. Also, when you engage in two-weapon fighting with these gauntlets, you can add this modifier to the damage of the secondary attack. Though the gauntlets are magical, they can still be infused.</p>
+                <p class="indent">While wielding these gauntlets, you can use your bonus action to activate them. Once you activate the gauntlets, you can’t do so again until you finish a long rest. You can also expend a spell slot of 1st level or higher as an alternative way to activate them. If you spend a slot of 2nd level or higher, the first time you hit a creature with the activated gauntlets you deal an additional 1d6 fire damage to the target for each slot level above 1st.</p>
+                <p class="indent">The gauntlets remain activated for up to 1 minute. When you hit a creature with one of your activated gauntlets, you can choose to have the gauntlet deal an additional 1d6 fire damage or lightning damage to its target (you choose when you activate the gauntlets). However, when you do so, each of your gauntlets become heated until the end of the turn. If you choose to deal this bonus damage while your gauntlets are heated, they become overheated. This causes the target to take 3d6 additional fire or lightning damage, rather than 1d6, and each creature in a 15-foot cone behind the target must make a Dexterity saving throw against your artificer spell save DC, as heat is expelled from your gauntlets in a blast of energy. A creature takes 3d6 fire or lightning damage on a failed save, or half as much damage on a successful one. After your gauntlets overheat, they deactivate and cannot be activated again for the next minute.</p>
+            </description>
+            <sheet action="Bonus Action" usage="1/Long Rest">
+                <description>You can activate your firescrapper gauntlets for up to 1 minute. When you hit a creature with one of your activated gauntlets, you can choose to have the gauntlet deal an additional 1d{{arcane-gauntlets:damage-die}} fire damage or lightning damage to its target. If you choose to deal this bonus damage while your gauntlets are heated, they become overheated. This causes the target to take 3d{{arcane-gauntlets:damage-die}} additional fire or lightning damage, rather than 1d6, and each creature in a 15-foot cone behind the target must make a Dexterity saving throw against your artificer spell save DC, as heat is expelled from your gauntlets in a blast of energy. A creature takes 3d{{arcane-gauntlets:damage-die}} fire or lightning damage on a failed save, or half as much damage on a successful one. After your gauntlets overheat, they deactivate and cannot be activated again for the next minute. Creating a pair of these magical gauntlets takes an hour of uninterrupted work, which can coincide with a short or long rest, and requires the use of smith’s tools and 30 gp of materials.</description>
+            </sheet>
+            <rules>
+                <stat name="arcane-gauntlets:damage-die" value="6" bonus="base" />
+            </rules>
+        </element>
+        <element name="Extra Attack" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_EXTRA_ATTACK">
+            <description>
+                <p>Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.</p>
+            </description>
+            <sheet>
+                <description>You can attack twice, rather than once, whenever you take the Attack action on your turn.</description>
+            </sheet>
+            <rules>
+    			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+            </rules>
+        </element>
+        <element name="Enhanced Weaponry" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_ENHANCED_WEAPONRY">
+            <description>
+                <p>By 9th level, you have incorporated a multitude of improvements into your arcane gauntlets:</p>
+                <ul>
+                    <li>Your gauntlets use d8s, rather than d6s, for all of their damage rolls. This includes their weapon damage dice, as well as the damage dice used for their activated effects.</li>
+                    <li>While you wield your gauntlets in both hands, you gain a +1 bonus to your AC.</li>
+                    <li>When you deal fire or lightning damage with your gauntlets, you can choose to push damaged targets up to 10 feet away from you.</li>
+                </ul>
+            </description>
+            <sheet>
+                <description>While you wield your gauntlets in both hands, you gain a +1 bonus to your AC. When you deal fire or lightning damage with your gauntlets, you can choose to push damaged targets up to 10 feet away from you.</description>
+            </sheet>
+            <rules>
+                <stat name="arcane-gauntlets:damage-die" value="8" bonus="base" level="9" />
+            </rules>
+        </element>
+        <element name="Charged Defense" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FIRESCRAPPER_CHARGED_DEFENSE">
+            <description>
+                <p>Starting at 15th level, you can channel the energy within your contraptions into arcane armor. When you hit a creature with a weapon attack, you can use this feature to gain 4d6 temporary hit points that last until the start of your next turn. If any of these temporary hit points remain at the end of their duration, a burst of flame or lightning is expelled from you. Each creature within 5 feet of you takes fire damage or lightning damage (your choice) equal to the remaining temporary hit points.</p>
+                <p class="indent">You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest.</p>
+            </description>
+            <sheet usage="{{charged-defense:uses}}/Long Rest">
+                <description>When you hit a creature with a weapon attack, you can use this feature to gain 4d6 temporary hit points that last until the start of your next turn. If any of these temporary hit points remain at the end of their duration, a burst of flame or lightning is expelled from you. Each creature within 5 feet of you takes fire damage or lightning damage (your choice) equal to the remaining temporary hit points.</description>
+            </sheet>
+            <rules>
+                <stat name="charged-defense:uses" value="1" bonus="base" />
+                <stat name="charged-defense:uses" value="intelligence:modifier" bonus="base" />
+            </rules>
+        </element>
+    
+</elements>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>Blazing Dawn Player’s Companion</name>
+        <update version="0.0.2">
+            <file name="blazing-dawn-players-companion.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion.index" />
+        </update>
+    </info>
+    <files>
+      <!-- Subclasses -->
+        <file name="artificer-firescrapper.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/artificer-firescrapper.xml" />
+        <file name="artificer-lightslinger.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/artificer-lightslinger.xml" />
+        <file name="barbarian-path-of-the-blazing-sun.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/barbarian-path-of-the-blazing-sun.xml" />
+        <file name="barbarian-path-of-the-celestial-avatar.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/barbarian-path-of-the-celestial-avatar.xml" />
+        <file name="bard-college-of-benevolence.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/bard-college-of-benevolence.xml" />
+        <file name="cleric-artistry-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/cleric-artistry-domain.xml" />
+        <file name="cleric-courage-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/cleric-courage-domain.xml" />
+        <file name="cleric-elemental-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/cleric-elemental-domain.xml" />
+        <file name="cleric-hunt-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/cleric-hunt-domain.xml" />
+        <file name="cleric-justice-domain.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/cleric-justice-domain.xml" />
+        <file name="druid-circle-of-flames.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/druid-circle-of-flames.xml" />
+        <file name="druid-circle-of-the-sun.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/druid-circle-of-the-sun.xml" />
+        <file name="fighter-devout.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/fighter-devout.xml" />
+        <file name="fighter-ember-knight.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/fighter-ember-knight.xml" />
+        <file name="monk-way-of-the-eternal-spirit.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/monk-way-of-the-eternal-spirit.xml" />
+        <file name="paladin-oath-of-cinders.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion//paladin-oath-of-cinders.xml" />
+        <file name="paladin-oath-of-radiance.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/paladin-oath-of-radiance.xml" />
+        <file name="ranger-lightcaller.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/ranger-lightcaller.xml" />
+        <file name="rogue-divine-hand.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/rogue-divine-hand.xml" />
+        <file name="sorcerer-flametouched.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/sorcerer-flametouched.xml" />
+        <file name="sorcerer-heroic-ancestry.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/sorcerer-heroic-ancestry.xml" />
+        <file name="warlock-the-elder-sphinx.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/warlock-the-elder-sphinx.xml" />
+        <file name="warlock-the-firebird.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/warlock-the-firebird.xml" />
+        <file name="wizard-school-of-heliomancy.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/wizard-school-of-heliomancy.xml" />
+        <file name="wizard-school-of-pyromancy.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/wizard-school-of-pyromancy.xml" />
+
+      <!-- Races -->
+        <file name="race-astran.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/race-astran.xml" />
+        <file name="race-guardrin.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/race-guardrin.xml" />
+        <file name="race-volcanus.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/race-volcanus.xml" />
+
+      <!-- Miscellaneous -->
+        <file name="warlock-invocations.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/warlock-invocations.xml" />
+        <file name="artificer-infusions.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/artificer-infusions.xml" />
+        <file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/source.xml" />
+        <file name="spells.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/spells.xml" />
+
+    </files>
+</index>

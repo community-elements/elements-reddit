@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Lightslinger Artificer Specialization</name>
+        <update version="0.0.1">
+            <file name="artificer-lightslinger.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/artificer-lightslinger.xml" />
+        </update>
+    </info>
+
+    <element name="Lightslinger" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_ARTIFICER_LIGHTSLINGER">
+        <supports>Artificer Specialist</supports>
+        <description>
+            <p>A Lightslinger learns how to harness magical, radiant energy and put it to use in their weaponry. These artificers create complex machines that channel and focus light, turning that energy into powerful beams that can sear their foes. These machines come in multiple varieties, each with a distinct purpose and common name. The aurum blaster is the generalist weapon, and also the most defensive weapon, considering its common pairing with a shield. The bolt shooter is a long range weapon, capable of outranging longbows and taking out targets with powerful, focused blasts. The lux cannon is a short ranged weapon, capable of hitting multiple foes at once.</p>
+            <p class="indent">Though lightslingers were relatively uncommon in the time of the Last War, those that did exist made versatile combatants that were an asset to any army. Capable both as front-line soldiers and back-line artillery, these artificers are well respected warriors.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_TOOL_PROFICIENCY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_LIGHTSLINGER_SPELLS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_LIGHTSMITH" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_EMPOWERED_AMMUNITION" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_AUGMENTED_ARMAMENTS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_AURUM_BOMBS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_RADIANT_MASTERY" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_TOOL_PROFICIENCY" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_LIGHTSLINGER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_LIGHTSMITH" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_EMPOWERED_AMMUNITION" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_AUGMENTED_ARMAMENTS" level="5" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_AURUM_BOMBS" level="9" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_RADIANT_MASTERY" level="15" />
+        </rules>
+    </element>
+        <element name="Tool Proficiency" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_TOOL_PROFICIENCY">
+            <description>
+                <p>When you adopt this specialization at 3rd level, you gain proficiency with glassblower’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS" requirements="!ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS" />
+                <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_TOOL_PROFICIENCY_ARTISAN_TOOLS" requirements="ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS,!ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS" />
+            </rules>
+        </element>
+            <element name="Tool Proficiency: Glassblower’s Tools" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS">
+                <compendium display="false" />
+                <description />
+                <sheet display="false" />
+                <rules>
+                    <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS" />
+                </rules>
+            </element>
+            <element name="Tool Proficiency: Artisan Tools" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_TOOL_PROFICIENCY_ARTISAN_TOOLS">
+                <compendium display="false" />
+                <description />
+                <sheet display="false" />
+                <rules>
+                    <select type="Proficiency" name="Tool Proficiency (Lightslinger)" supports="Artisan tools" />
+                </rules>
+            </element>
+        <element name="Lightslinger Spells" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_LIGHTSLINGER_SPELLS">
+            <description>
+                <p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Lightslinger Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+                <h5 class="caption">Lightslinger Spells</h5>
+                <table>
+                    <thead>
+                        <tr><td>Artificer Level</td><td>Spells</td></tr>
+                    </thead>
+                    <tr><td>3rd</td><td><em>faerie fire, guiding bolt</em></td></tr>
+                    <tr><td>5th</td><td><em>branding smite, moonbeam</em></td></tr>
+                    <tr><td>9th</td><td><em>crusader’s mantle, daylight</em></td></tr>
+                    <tr><td>13th</td><td><em>guardian of faith, sickening radiance</em></td></tr>
+                    <tr><td>17th</td><td><em>dawn, wall of light</em></td></tr>
+                </table>    
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" spellcasting="Artificer" prepared="true" level="3" />
+                <grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Artificer" prepared="true" level="3" />
+                <grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" spellcasting="Artificer" prepared="true" level="5" />
+                <grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" spellcasting="Artificer" prepared="true" level="5" />
+                <grant type="Spell" id="ID_PHB_SPELL_CRUSADERS_MANTLE" spellcasting="Artificer" prepared="true" level="9" />
+                <grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" spellcasting="Artificer" prepared="true" level="9" />
+                <grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" spellcasting="Artificer" prepared="true" level="13" />
+                <grant type="Spell" id="ID_XGTE_SPELL_SICKENING_RADIANCE" spellcasting="Artificer" prepared="true" level="13" />
+                <grant type="Spell" id="ID_XGTE_SPELL_DAWN" spellcasting="Artificer" prepared="true" level="17" />
+                <grant type="Spell" id="ID_XGTE_SPELL_WALL_OF_LIGHT" spellcasting="Artificer" prepared="true" level="17" />
+            </rules>
+        </element>
+        <element name="Lightsmith" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_LIGHTSMITH">
+            <description>
+                <p>Beginning at 3rd level, whenever you finish a short or long rest, you can magically construct one of the following weapons: an aurum blaster, a lux cannon, or a bolt shooter. If you already have a weapon constructed, you must transform that weapon into a new type rather than constructing a new one. After you gain this subclass, the first weapon you construct is free. If you lose your weapon, however, replacing it requires 50 gp of materials. Transforming your weapon is always free. You are proficient with these weapons, and you use your Intelligence modifier for their attack and damage rolls. They function by channelling your inner magic, and thus cannot be wielded by other creatures. Each of these weapons have the following special property:</p>
+                <p class="indent"><strong><em>Recharge (X).</em></strong> Only X attacks can be made with a weapon that has the recharge property before it needs to be recharged. A weapon can be recharged as a bonus action (even if it still has charges left), but it cannot be recharged on the same turn it is used to make an attack.</p>
+                <p class="indent">The weapons’ other properties are detailed in the following table:</p>
+                <h5 class="caption">Lightsmith Weapons</h5>
+                <table>
+                    <thead>
+                        <tr><td>Weapon</td><td>Damage</td><td>Properties</td></tr>
+                    </thead>
+                    <tr><td>Aurum Blaster</td><td>1d8</td><td>radiant Ranged (60/240), recharge (6)</td></tr>
+                    <tr><td>Bolt Shooter</td><td>1d12</td><td>radiant Ranged (300/1200), recharge (2), two-handed</td></tr>
+                    <tr><td>Lux Cannon</td><td>1d8</td><td>radiant Special, recharge (2), two-handed</td></tr>
+                </table>    
+                <p>The lux cannon’s special property is described below:</p>
+                <p class="indent"><strong><em>Special.</em></strong> You do not make attack rolls with this weapon. Instead, your attacks with it shoot blasts of radiant energy that fill a line 5-feet wide and 10-feet long extending from you. Each creature in the area must succeed on a Dexterity saving throw against your Artificer spell save DC or take the damage of this weapon.</p>
+            </description>
+            <sheet>
+                <description>Whenever you finish a short or long rest, you can magically construct one of the following weapons: an aurum blaster, a lux cannon, or a bolt shooter. Attack Bonus: {{spellcasting:attack}}. Damage Bonus: {{intelligence:modifier}}.</description>
+            </sheet>
+            <rules>
+                <grant type="Proficiency" id="ID_JONOMAN3000_BDPC_PROFICIENCY_WEAPON_LIGHTSLINGER_WEAPONS" />
+            </rules>
+        </element>
+        <element name="Empowered Ammunition" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_EMPOWERED_AMMUNITION">
+            <description>
+                <p>Also at 3rd level, you can expend spell slots to temporarily empower the shots of your Lightsmith weapons. When you recharge one of these weapons, you can expend a spell slot of 1st level or higher. Until the weapon is next recharged, it has the following enhanced effects, based on the weapon’s type:</p>
+                <p class="indent"><strong><em>Aurum Blaster.</em></strong> Attacks made with the weapon deal additional radiant damage on a hit: 1d4 for a 1st level slot, 1d6 for a 2nd level slot, 1d8 for a 3rd level slot, 1d10 for a 4th level slot, and 1d12 for a slot of 5th level or higher.</p>
+                <p class="indent"><strong><em>Bolt Shooter.</em></strong> Attacks made with the weapon explode in a burst of light. Hit or miss, the target and each creature within 5 feet of it must succeed on a Dexterity saving throw against your artificer spell save DC or take 2d4 radiant damage for a 1st level slot, plus 1d4 for each spell level higher than 1st.</p>
+                <p class="indent"><strong><em>Lux Cannon.</em></strong> The area of effect of attacks made with the weapon become cones, rather than lines, and any creature that fails its save against this weapon is pushed up to 5 feet away from you and knocked prone. The cone’s size is equal to the line’s length. Also, if you use a slot of 2nd level or higher, the weapon’s damage is increased by 1d4 for each spell level higher than 1st.</p>
+            </description>
+            <sheet>
+                <description>When you recharge one of your lightslinger weapons, you can expend a spell slot of 1st level or higher. Until the weapon is next recharged, it has enhanced effects, based on the weapon’s type.</description>
+            </sheet>
+        </element>
+        <element name="Augmented Armaments" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_AUGMENTED_ARMAMENTS">
+            <description>
+                <p>At 5th level, all of your weapons are improved. None of these improvements can be combined with the Extra Attack feature.</p>
+                <p class="indent"><strong><em>Aurum Blaster.</em></strong> You can attack twice, instead of once, whenever you take the Attack action on your turn and only attack with your aurum blaster.</p>
+                <p class="indent"><strong><em>Bolt Shooter.</em></strong> When you take the Attack action on your turn, you can make a single attack with your bolt shooter. This attack is made with advantage, and unless this advantage is cancelled out by disadvantage, it deals an additional 1d12 radiant damage on a hit if the lower of the two rolls would also hit the target.</p>
+                <p class="indent"><strong><em>Lux Cannon.</em></strong> The lines created by this weapon have a length of 20 feet, rather than 10 feet, and a creature that succeeds on the save imposed by this weapon takes half damage, rather than none.</p>
+            </description>
+            <sheet>
+                <description>All of your lightslinger weapons are improved.</description>
+            </sheet>
+        </element>
+        <element name="Aurum Bombs" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_AURUM_BOMBS">
+            <description>
+                <p>At 9th level, you learn how to craft magical explosives, called aurum bombs, that create bursts of blinding light. Whenever you finish a long rest, you can create a number of aurum bombs equal to your Intelligence modifier (minimum 1). Unused bombs disappear when you take your next long rest.</p>
+                <p class="indent">As an action, you can throw an aurum bomb at a point you can see within 60 feet of you. The bomb explodes at that point, forcing each creature within a 10-foot radius area to make Dexterity saving throws against your Artificer spell save DC. On a failed save, a creature takes 2d10 radiant damage and is blinded until the end of your next turn. On a successful save, a creature takes half as much damage and is not blinded.</p>
+            </description>
+            <sheet action="Action">
+                <description>You can throw an aurum bomb at a point you can see within 60 feet of you. The bomb explodes at that point, forcing each creature within a 10-foot radius area to make Dexterity saving throws against your Artificer spell save DC. On a failed save, a creature takes {{aurum-bombs:dice-count}}d10 radiant damage and is blinded until the end of your next turn. On a successful save, a creature takes half as much damage and is not blinded. Whenever you finish a long rest, you can create a up to {{aurum-bombs:uses}} aurum bombs. Unused bombs disappear when you take your next long rest.</description>
+            </sheet>
+            <rules>
+                <stat name="aurum-bombs:uses" value="1" bonus="base" />
+                <stat name="aurum-bombs:uses" value="intelligence:bonus" bonus="base" />
+                <stat name="aurum-bombs:dice-count" value="2" level="9" />
+            </rules>
+        </element>
+        <element name="Radiant Mastery" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_LIGHTSLINGER_RADIANT_MASTERY">
+            <description>
+                <p>Starting at 15th level, your Aurum Bombs and Lightsmith Weapons are both improved.</p>
+                <ul>
+                    <li>The damage of your aurum bombs is increased to 4d10.</li>
+                    <li>Each of your Lightsmith Weapons have an additional damage die, for a total of 2d8 for the Aurum Blaster and Lux Cannon and 2d12 for the Bolt Shooter.</li>
+                    <li>Whenever you use your Empowered Ammunition feature, you can transform your Lightsmith weapon into another type immediately before recharging it.</li>
+                </ul>
+            </description>
+            <sheet>
+                <description>Each of your Lightsmith Weapons have an additional damage die, for a total of 2d8 for the Aurum Blaster and Lux Cannon and 2d12 for the Bolt Shooter. Whenever you use your Empowered Ammunition feature, you can transform your Lightsmith weapon into another type immediately before recharging it.</description>
+            </sheet>
+            <rules>
+                <stat name="aurum-bombs:dice-count" value="2" level="15" />
+            </rules>
+        </element>
+
+    <!-- Lightslinger weapons -->
+	<element name="Aurum Blaster" type="Weapon" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_WEAPON_LIGHTSLINGER_WEAPON_AURUM_BLASTER">
+        <requirements>ID_JONOMAN3000_BDPC_ARCHETYPE_ARTIFICER_LIGHTSLINGER</requirements>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_JONOMAN3000_BDPC_WEAPON_PROPERTY_RECHARGE6</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">60/240</set>
+			<set name="damage" type="radiant">1d8</set>
+			<set name="proficiency">ID_JONOMAN3000_BDPC_PROFICIENCY_WEAPON_LIGHTSLINGER_WEAPON_AURUM_BLASTER</set>
+			<set name="reload">6</set>
+		</setters>
+	</element>
+	<element name="Bolt Shooter" type="Weapon" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_WEAPON_LIGHTSLINGER_WEAPON_BOLT_SHOOTER">
+        <requirements>ID_JONOMAN3000_BDPC_ARCHETYPE_ARTIFICER_LIGHTSLINGER</requirements>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDEDID_JONOMAN3000_BDPC_WEAPON_PROPERTY_RECHARGE2</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">300/1200</set>
+			<set name="damage" type="radiant">1d12</set>
+			<set name="proficiency">ID_JONOMAN3000_BDPC_PROFICIENCY_WEAPON_LIGHTSLINGER_WEAPON_BOLT_SHOOTER</set>
+			<set name="reload">2</set>
+		</setters>
+	</element>
+	<element name="Lux Cannon" type="Weapon" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_WEAPON_LIGHTSLINGER_WEAPON_LUX_CANNON">
+        <requirements>ID_JONOMAN3000_BDPC_ARCHETYPE_ARTIFICER_LIGHTSLINGER</requirements>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDEDID_JONOMAN3000_BDPC_WEAPON_PROPERTY_RECHARGE2, ID_JONOMAN3000_BDPC_WEAPON_PROPERTY_LUX_CANNON_SPECIAL</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">special</set>
+			<set name="damage" type="radiant">1d8</set>
+			<set name="proficiency">ID_JONOMAN3000_BDPC_PROFICIENCY_WEAPON_LIGHTSLINGER_WEAPON_LUX_CANNON</set>
+			<set name="reload">2</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Lightslinger Weapons)" type="Proficiency" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_PROFICIENCY_WEAPON_LIGHTSLINGER_WEAPONS">
+        <requirements>ID_JONOMAN3000_BDPC_ARCHETYPE_ARTIFICER_LIGHTSLINGER</requirements>
+		<sheet alt="Lightslinger Weapons" />
+        <rules>
+            <grant type="Proficiency" id="ID_JONOMAN3000_BDPC_PROFICIENCY_WEAPON_LIGHTSLINGER_WEAPON_AURUM_BLASTER" />
+            <grant type="Proficiency" id="ID_JONOMAN3000_BDPC_PROFICIENCY_WEAPON_LIGHTSLINGER_WEAPON_BOLT_SHOOTER" />
+            <grant type="Proficiency" id="ID_JONOMAN3000_BDPC_PROFICIENCY_WEAPON_LIGHTSLINGER_WEAPON_LUX_CANNON" />
+        </rules>
+	</element>
+	<element name="Weapon Proficiency (Aurum Blaster)" type="Proficiency" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_PROFICIENCY_WEAPON_LIGHTSLINGER_WEAPON_AURUM_BLASTER">
+        <requirements>ID_JONOMAN3000_BDPC_ARCHETYPE_ARTIFICER_LIGHTSLINGER</requirements>
+		<supports>Weapon, Martial, Lightslinger, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_JONOMAN3000_BDPC_WEAPON_PROPERTY_RECHARGE6</supports>
+		<sheet alt="Aurum Blaster" />
+	</element>
+	<element name="Weapon Proficiency (Bolt Shooter)" type="Proficiency" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_PROFICIENCY_WEAPON_LIGHTSLINGER_WEAPON_BOLT_SHOOTER">
+        <requirements>ID_JONOMAN3000_BDPC_ARCHETYPE_ARTIFICER_LIGHTSLINGER</requirements>
+		<supports>Weapon, Martial, Lightslinger, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_JONOMAN3000_BDPC_WEAPON_PROPERTY_RECHARGE2</supports>
+		<sheet alt="Bolt Shooter" />
+	</element>
+	<element name="Weapon Proficiency (Lux Cannon)" type="Proficiency" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_PROFICIENCY_WEAPON_LIGHTSLINGER_WEAPON_LUX_CANNON">
+        <requirements>ID_JONOMAN3000_BDPC_ARCHETYPE_ARTIFICER_LIGHTSLINGER</requirements>
+		<supports>Weapon, Martial, Lightslinger, ID_INTERNAL_DAMAGE_TYPE_RADIANT, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_JONOMAN3000_BDPC_WEAPON_PROPERTY_RECHARGE2, ID_JONOMAN3000_BDPC_WEAPON_PROPERTY_LUX_CANNON_SPECIAL</supports>
+		<sheet alt="Lux Cannon" />
+	</element>
+    <!-- Properties -->
+        <element name="Recharge (2)" type="Weapon Property" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_WEAPON_PROPERTY_RECHARGE2">
+            <description>
+                <p class="indent"><strong><em>Recharge (2).</em></strong> Only 2 attacks can be made with a weapon that has the recharge property before it needs to be recharged. A weapon can be recharged as a bonus action (even if it still has charges left), but it cannot be recharged on the same turn it is used to make an attack.</p>
+            </description>
+        </element>
+        <element name="Recharge (6)" type="Weapon Property" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_WEAPON_PROPERTY_RECHARGE6">
+            <description>
+                <p class="indent"><strong><em>Recharge (6).</em></strong> Only 6 attacks can be made with a weapon that has the recharge property before it needs to be recharged. A weapon can be recharged as a bonus action (even if it still has charges left), but it cannot be recharged on the same turn it is used to make an attack.</p>
+            </description>
+        </element>
+        <element name="Lux Cannon: Special" type="Weapon Property" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_WEAPON_PROPERTY_LUX_CANNON_SPECIAL">
+            <description>
+                <p class="indent"><strong><em>Special.</em></strong> You do not make attack rolls with this weapon. Instead, your attacks with it shoot blasts of radiant energy that fill a line 5-feet wide and 10-feet long extending from you. Each creature in the area must succeed on a Dexterity saving throw against your Artificer spell save DC or take the damage of this weapon.</p>
+            </description>
+        </element>
+</elements>

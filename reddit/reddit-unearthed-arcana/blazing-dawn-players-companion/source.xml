@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Blazing Dawn Player's Companion Source Info</name>
+        <update version="0.0.2">
+            <file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/source.xml" />
+        </update>
+    </info>
+    
+    <element name="Blazing Dawn Player’s Companion" type="Source" source="Core" id="ID_JONOMAN3000_BDPC_SOURCE_BLAZING_DAWN_PLAYERS_COMPANION">
+        <description>
+            <![CDATA[<p></p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">BDPC</set>
+            <set name="url">https://drive.google.com/file/d/1QW0PNuxZlYRsc7wqYICyeguoKVc52df3/view</set>
+            <set name="image">https://i.imgur.com/ZJgHwSNl.jpg</set>
+            <set name="author" url="http://guidetohomebrew.blogspot.com/">Jonoman3000</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200812</set>
+        </setters>
+    </element>
+    
+</elements>

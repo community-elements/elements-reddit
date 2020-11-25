@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>School of Heliomancy Arcane Tradition</name>
+        <update version="0.0.1">
+            <file name="wizard-school-of-heliomancy.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/wizard-school-of-heliomancy.xml" />
+        </update>
+    </info>
+    
+    <element name="School of Heliomancy" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_WIZARD_SCHOOL_OF_HELIOMANCY">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p>As a heliomancer, you focus your studies on the magical energy of the sun, and use it to create powerful bursts of radiance and dazzling displays of light. Though much of your magic is normally considered divine, you have managed to emulate these same spells and effects through rigorous study and careful experimentation. Some heliomancers learn their magic with the company of clerics, and become respected members of a temple or shrine. Others learn their magic in academic institutions—though most institutions only focus on the regular schools of magic, some teach rarer traditions such as this one.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_HELIOMANCY_SAVANT" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_IMPROVED_LIGHT" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_POTENT_LUMINOSITY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_SOLAR_MAGIC" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_ARCANE_RADIANCE" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_EXPOSING_LIGHT" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_HELIOMANCY_SAVANT" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_IMPROVED_LIGHT" level="2" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_POTENT_LUMINOSITY" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_SOLAR_MAGIC" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_ARCANE_RADIANCE" level="10" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_EXPOSING_LIGHT" level="14" />
+        </rules>
+    </element>
+        <element name="Heliomancy Savant" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_HELIOMANCY_SAVANT">
+            <description>
+                <p>Beginning when you select this school at 2nd level, the gold and time you must spend to copy a spell that deals radiant damage into your spellbook is halved.</p>
+                <p class="indent">Also, all spells that deal radiant damage are considered to be on the wizard spell list for you, allowing you to add such spells to your spellbook. These spells are considered wizard spells for you, but other wizards can’t copy these spells from your spellbook into their own spellbooks.</p>
+            </description>
+            <sheet>
+                <description>The gold and time you must spend to copy a spell that deals radiant damage into your spellbook is halved. Also, all spells that deal radiant damage are considered to be on the wizard spell list for you, allowing you to add such spells to your spellbook. These spells are considered wizard spells for you, but other wizards can’t copy these spells from your spellbook into their own spellbooks.</description>
+            </sheet>
+        </element>
+        <element name="Improved Light" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_IMPROVED_LIGHT">
+            <description>
+                <p>When you choose this school at 2nd level, you learn the light cantrip. If you already know this cantrip, you learn a different wizard cantrip of your choice. The cantrip doesn’t count against your number of cantrips known.</p>
+                <p class="indent">For you, <em>light</em> has a casting time of 1 bonus action, a casting range of 120 feet, and the spell no longer ends if you cast it again. Instead, you can have a number of lights equal to your Intelligence modifier (a minimum of 1) at once. If you cast <em>light</em> when you already have the maximum number of lights active, you choose one of the lights to dismiss. You can also dismiss a light using your bonus action. Lastly, you can choose to target a creature directly when you cast light. If you target a hostile creature, the creature must succeed on a Constitution saving throw to avoid the spell.</p>
+            </description>
+            <sheet>
+                <description>For you, light has a casting time of 1 bonus action, a casting range of 120 feet, and the spell no longer ends if you cast it again. You can have up to {{improved-light:uses}} lights at once. Lastly, you can choose to target a creature directly when you cast light. If you target a hostile creature, the creature must succeed on a Constitution saving throw to avoid the spell.</description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_LIGHT" spellcaster="Wizard" known="true" />
+                <stat name="improved-light:uses" value="1" bonus="base" />
+                <stat name="improved-light:uses" value="intelligence:modifier" bonus="base" />
+            </rules>
+        </element>
+        <element name="Potent Luminosity" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_POTENT_LUMINOSITY">
+            <description>
+                <p>At 6th level, whenever you cast <em>light</em> and directly target a hostile creature, you can expend a spell slot of 1st level or higher to make the <em>light</em> more potent. You make this choice before the save is rolled, and if the creature fails its save, it is blinded until the end of your next turn if you expended a slot of 1st level or higher. If you expended a slot of 2nd level or higher, the creature also takes 1d10 radiant damage per slot level above 1st on a failed save, or half as much damage on a successful save.</p>
+            </description>
+            <sheet>
+                <description>Whenever you cast light and directly target a hostile creature, you can expend a spell slot of 1st level or higher to make the light more potent. You make this choice before the save is rolled, and if the creature fails its save, it is blinded until the end of your next turn if you expended a slot of 1st level or higher. If you expended a slot of 2nd level or higher, the creature also takes 1d10 radiant damage per slot level above 1st on a failed save, or half as much damage on a successful save.</description>
+            </sheet>
+        </element>
+        <element name="Solar Magic" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_SOLAR_MAGIC">
+            <description>
+                <p>Also at 6th level, you add the <em>daylight</em> spell to your spellbook. For you, <em>daylight</em> can be cast as a ritual.</p>
+            </description>
+            <sheet>
+                <description>For you, daylight can be cast as a ritual.</description>
+            </sheet>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" spellcasting="Wizard" />
+            </rules>
+        </element>
+        <element name="Arcane Radiance" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_ARCANE_RADIANCE">
+            <description>
+                <p>Starting at 10th level, when you use Potent Luminosity or cast a spell of 1st level or higher that deals radiant damage, you are briefly surrounded by an aura of light. Until the start of your next turn, bright light shines from you in a 20-foot radius, and dim light shines 20 feet beyond that. The bright light is considered difficult terrain for hostile creatures, and for the duration your movement doesn’t provoke opportunity attacks. Creatures immune to the blinded condition can still make opportunity attacks against you, however.</p>
+            </description>
+            <sheet>
+                <description>When you use Potent Luminosity or cast a spell of 1st level or higher that deals radiant damage, you are briefly surrounded by an aura of light. Until the start of your next turn, bright light shines from you in a 20-foot radius, and dim light shines 20 feet beyond that. The bright light is considered difficult terrain for hostile creatures, and for the duration your movement doesn’t provoke opportunity attacks.</description>
+            </sheet>
+        </element>
+        <element name="Exposing Light" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_HELIOMANCY_EXPOSING_LIGHT">
+            <description>
+                <p>At 14th level, the light you conjure begins to expose weaknesses of creatures within it. When a creature within an area of bright light that you’ve created would make a saving throw against one of your spells, you can choose to impose disadvantage on that saving throw. Once you impose disadvantage on a saving throw in this way, you can’t impose it against the same creature again until you finish a short or long rest.</p>
+            </description>
+            <sheet usage="1/Short Rest">
+                <description>When a creature within an area of bright light that you’ve created would make a saving throw against one of your spells, you can choose to impose disadvantage on that saving throw.</description>
+            </sheet>
+        </element>
+    
+</elements>

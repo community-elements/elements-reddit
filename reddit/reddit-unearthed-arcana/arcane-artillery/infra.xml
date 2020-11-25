@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Infrastructure</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="infra.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery/infra.xml" />
 		</update>
 	</info>
@@ -89,7 +89,7 @@
 			<grant type="Proficiency" id="ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_RIFLES" />
 			<grant type="Proficiency" id="ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_CARBINES" />
 			<grant type="Proficiency" id="ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SHOTGUNS" />
-			<!-- heavy rifle -->
+			<grant type="Proficiency" id="ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_RIFLE"/>
 			<grant type="Proficiency" id="ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_RIFLES" />
 			
 			<grant type="Proficiency" id="ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_AUTOMATIC_RIFLE" />

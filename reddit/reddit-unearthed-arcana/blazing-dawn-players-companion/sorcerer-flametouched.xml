@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Flametouched Sorcerous Origin</name>
+        <update version="0.0.1">
+            <file name="sorcerer-flametouched.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/sorcerer-flametouched.xml" />
+        </update>
+    </info>
+    
+    <element name="Flametouched" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_SORCERER_FLAMETOUCHED">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p>Your magic stems from the primordial energy of elemental fire. Many sorcerers with this power can trace their ancestry to the creatures of the Plane of Elemental fire, particularly the Efreeti. This origin is not always ancestral, however. Your powers might have manifested after a near-death experience with a creature of fire, like the legendary phoenix, or simply through constant exposure to fire. In rare cases, those that live near volcanoes can spontaneously gain these powers, especially if they’ve lived near one since childhood. Regardless of how this magic manifested, it causes flames to permeate your soul and define your magic.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_FIRE_WITHIN" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_EMBER_MAGIC" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_FLEETING_FLAMES" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_ASHEN_INFERNO" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_ENKINDLED_BODY" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_ASCENDANT_FLAME" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_FIRE_WITHIN" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_EMBER_MAGIC" level="1" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_FLEETING_FLAMES" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_ASHEN_INFERNO" level="6" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_ENKINDLED_BODY" level="14" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_ASCENDANT_FLAME" level="18" />
+        </rules>
+    </element>
+        <element name="Fire Within" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_FIRE_WITHIN">
+            <description>
+                <p>Your inner flame grants you aptitude in all forms of pyromancy. When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from any spell list if the chosen spell deals fire damage. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you. Spells that don’t deal fire damage must still be chosen from the sorcerer spell list, as normal.</p>
+            </description>
+            <sheet>
+                <description>When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from any spell list if the chosen spell deals fire damage.</description>
+            </sheet>
+            <spellcasting name="Sorcerer" extend="true">
+                <extend>fire</extend>
+            </spellcasting>
+        </element>
+        <element name="Ember Magic" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_EMBER_MAGIC">
+            <description>
+                <p>Starting at 1st level, you can cause your fire magic to leave behind magical embers in its wake. Whenever you cast a spell of 1st level or higher that deals fire damage, you can conjure a cloud of embers that fills a 10-foot radius extending out from your body. Alternatively, if the spell you cast has an area of effect (such as burning hands or fireball), you can choose to have the cloud cover the area of the spell, rather than manifest around you. Either way, the cloud remains in the place it was conjured, and lasts for 1 minute or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. The area of the cloud is lightly obscured, and you gain the following benefits while you are within a cloud conjured by this feature:</p>
+                <ul>
+                    <li>As a bonus action, you can teleport up to 15 feet to a point you can see within a cloud. You cannot use this action if your speed is 0, and you cannot cast a spell during the same turn unless that spell is a cantrip with a casting time of 1 action.</li>
+                    <li>Opportunity attacks made by other creatures within the cloud have disadvantage against you.</li>
+                    <li>You can attempt to hide even when you are only lightly obscured by the cloud.</li>
+                </ul>
+            </description>
+            <sheet>
+                <description>Whenever you cast a spell of 1st level or higher that deals fire damage, you can conjure a cloud of embers that fills a 10-foot radius extending out from your body. Alternatively, if the spell you cast has an area of effect (such as burning hands or fireball), you can choose to have the cloud cover the area of the spell, rather than manifest around you. The cloud remains in the place it was conjured for 1 minute or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. The area of the cloud is lightly obscured, and you gain the following benefits while you are within a cloud conjured by this feature: As a bonus action, you can teleport up to 15 feet to a point you can see within a cloud. You cannot use this action if your speed is 0, and you cannot cast a spell during the same turn unless that spell is a cantrip with a casting time of 1 action. Opportunity attacks made by other creatures within the cloud have disadvantage against you. You can attempt to hide even when you are only lightly obscured by the cloud.</description>
+            </sheet>
+        </element>
+        <element name="Fleeting Flames" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_FLEETING_FLAMES">
+            <description>
+                <p>At 6th level, your magic begins to rekindle your spirit. When you cast a spell of 1st level or higher, your speed increases by 10 feet until the end of the turn. This speed bonus is increased to 20 feet at 14th level, and 30 feet at 18th level.</p>
+            </description>
+            <sheet>
+                <description>When you cast a spell of 1st level or higher, your speed increases by {{fleeting-flames:speed}} feet until the end of the turn.</description>
+            </sheet>
+            <rules>
+                <stat name="fleeting-flames:speed" value="10" level="6" />
+                <stat name="fleeting-flames:speed" value="10" level="14" />
+                <stat name="fleeting-flames:speed" value="10" level="18" />
+            </rules>
+        </element>
+        <element name="Ashen Inferno" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_ASHEN_INFERNO">
+            <description>
+                <p>Also at 6th level, you learn how to reignite your conjured embers to burn your foes. Whenever you cast a spell of 1st level or higher that deals fire damage and has an area of effect that intersects with one or more of the clouds of embers conjured with your Ember Magic feature, you can spend 1 sorcery point to cause the spell’s effect to spread throughout the connected clouds, allowing it to affect more creatures.</p>
+                <p class="indent">Creatures of your choice within the connected clouds are affected by the spell as if they were within the spell’s normal area. Also, any creature within the area of intersection between the spell and the clouds takes additional damage equal to the spell’s level. You cannot use your Ember Magic feature on the same turn you use Ashen Inferno.</p>
+                <p class="indent">The sorcery point cost is increased to 2 if you use this feature on a spell of 3rd or 4th level, 3 for a spell of 5th or 6th level, and 4 for a spell of 7th level or higher.</p>
+            </description>
+            <sheet>
+                <description>Whenever you cast a spell of 1st level or higher that deals fire damage and has an area of effect that intersects with one or more of the clouds of embers conjured with your Ember Magic feature, you can spend 1 sorcery point to cause the spell’s effect to spread throughout the connected clouds, allowing it to affect more creatures. The sorcery point cost is increased to 2 if you use this feature on a spell of 3rd or 4th level, 3 for a spell of 5th or 6th level, and 4 for a spell of 7th level or higher.</description>
+            </sheet>
+        </element>
+        <element name="Enkindled Body" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_ENKINDLED_BODY">
+            <description>
+                <p>At 14th level, you become one with your inner flame. You gain resistance to fire damage, and your Ember Magic feature is improved. When you activate that feature, you can create two clouds at once: one that extends out from you, and one that covers the spell’s area of effect. If the spell you cast doesn’t have an area of effect, you create one cloud that fills a 20-foot radius extending out from your body, rather than the normal 10-foot radius cloud. Additionally, the distance you can teleport within these clouds is increased to 60 feet. This teleportation also no longer restricts your spellcasting, and can be used when your speed is 0.</p>
+            </description>
+            <sheet>
+                <description>When you activate your Ember Magic feature, you can create two clouds at once: one that extends out from you with a 20-foot radius, and one that covers the spell’s area of effect. Additionally, the distance you can teleport within these clouds is increased to 60 feet. This teleportation also no longer restricts your spellcasting, and can be used when your speed is 0.</description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            </rules>
+        </element>
+        <element name="Ascendant Flame" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_FLAMETOUCHED_ASCENDANT_FLAME">
+            <description>
+                <p>Starting at 18th level, you can use your bonus action to transform yourself into a fiery form until you lose your concentration (as if you were concentrating on a spell). While this feature lasts, you are immune to fire damage, have a flying speed equal to your walking speed, and any creature that touches you or hits you with a melee weapon attack while within 5 feet of you takes fire damage equal to half your sorcerer level.</p>
+            </description>
+            <sheet action="Bonus Action">
+                <description> You transform yourself into a fiery form until you lose your concentration (as if you were concentrating on a spell). While this feature lasts, you are immune to fire damage, have a flying speed equal to your walking speed, and any creature that touches you or hits you with a melee weapon attack while within 5 feet of you takes {{level:sorcerer:half}} fire damage.</description>
+            </sheet>
+        </element>
+    
+</elements>
