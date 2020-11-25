@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Blazing Dawn Player’s Companion Spells</name>
+        <update version="0.0.1">
+            <file name="spells.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/spells.xml" />
+        </update>
+    </info>
+    
+    <element name="Aegis" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_AEGIS">
+        <supports>Artificer, Cleric, Paladin, Wizard</supports>
+        <description>
+            <p>You touch a nonmagical suit of armor. Until the spell ends, that suit of armor becomes a magical suit of armor that grants a +1 bonus to its wearer’s AC. Also, for the duration the wearer has resistance to damage from spells.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the AC bonus increases to +2. When you use a spell slot of 8th level or higher, the AC bonus increases to +3.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Ambrosia" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_AMBROSIA">
+        <supports>Cleric, Paladin</supports>
+        <description>
+            <p>You spend the casting time speaking a prayer, and then touch the three glass bottles used as this spell’s material component. Each of the bottles become filled with a sweet, aromatic liquid that glows with divine magic. When the spell ends, this liquid instantly evaporates if it was not consumed.</p>
+            <p class="indent">As an action, a creature can drink a bottle of ambrosia or administer it to another creature. The creature is cured of any disease or poison afflicting it, and for the next hour it is rendered immune to disease, poison damage, and the poisoned condition, For the same duration, it has advantage on Constitution saving throws. Also, the ambrosia provides enough nourishment (both food and drink) to sustain a creature for 1 day.</p>
+            <p class="indent">Consistently drinking ambrosia can confer longevity upon those that consume it. A creature that drinks ambrosia every day for 30 days begins to reap this benefit. As long as the creature continues to drink ambrosia every day, it ages at half the normal rate. If the creature ever misses a day, it must drink for another 30 days before its aging begins to slow down again.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, 1 additional bottles-worth of ambrosia is conjured for each slot level above 5th. Additional glass bottles must be provided for each additional bottles-worth of ambrosia.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 minute</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">three fine glass bottles, worth at least 5 gp each</set>
+            <set name="duration">8 hours</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Angel Wings" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_ANGEL_WINGS">
+        <supports>Cleric</supports>
+        <description>
+            <p>You point your finger, and the creature that would’ve been reduced to 0 hit points instead drops to 1 hit point, and then regains additional hit points equal to your spellcasting ability modifier (minimum 1). The creature is also bestowed with large, angelic wings that allow it to immediately use its reaction to fly up to 30 feet without provoking opportunity attacks. The wings disappear at the end of the turn, causing the creature to fall if it ended the turn in the air.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 reaction, which you take when a creature within 60 feet of you that you can see would be reduced to 0 hit points but not killed outright.</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Arsenal of Flame" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_ARSENAL_OF_FLAME">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>You cause an array of flaming, spectral weaponry to spark into existence, and begin to assault your foes. Choose up to six creatures you can see within range. For each creature you target, you conjure a flaming weapon in an unoccupied space within 5 feet of the target. Each weapon then makes a melee spell attack against its target using your spell attack modifier, dealing 6d6 fire damage on a hit.</p>
+            <p class="indent">At the start of each of your turns, each weapon attempts to move up to 30 feet closer to its target if the target is outside of its 5-foot reach, and then repeats its attack if it successfully reached its target. Also, if a weapon’s target leaves its 5-foot reach, the weapon can make an opportunity attack against the target, following the regular rules for opportunity attacks. Each weapon can only make one opportunity attack per round.</p>
+            <p class="indent">If a weapon’s target dies, that weapon dissipates into ash.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 8th level or higher, you can target two additional creatures for each slot level above 7th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 10 minutes</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Bind Spirit" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_BIND_SPIRIT">
+        <supports>Cleric</supports>
+        <description>
+            <p>You touch the piece of jewelry that serves as the material component for this spell to a creature that has died within the last hour. If the creature’s soul is willing, it becomes bound to that piece of jewelry for the duration.</p>
+            <p class="indent">While the soul is bound in this way, it can telepathically communicate with any creature that wears the jewelry it is bound to, and that creature can telepathically communicate to it as well.</p>
+            <p class="indent">The spell ends if the jewelry is destroyed, if the bound creature is returned to life, or if this spell is cast again on the same creature and the creature chooses to leave to the new jewelry.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">necromancy</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a golden ring, bracelet, or necklace inlaid with a ruby, worth at least 200 gp in total</set>
+            <set name="duration">10 days</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Boil" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_BOIL">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You cause the area of a 40-foot cube within range to instantly increase in temperature. This temperature increase lasts for the duration. When the area appears, each creature in it must make a Constitution saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell’s area for the first time on a turn or ends its turn there.</p>
+            <p class="indent">This spell has additional effects when overlapping with areas of water. Being underwater does not confer resistance against the fire damage dealt by this spell. Also, any underwater areas within the spell’s area start bubbling furiously, turning those areas into difficult terrain and causing them to be heavily obscured.</p>
+            <p class="indent">Above water, however, this spell can be difficult to see. A creature that starts its turn within 60 feet of the area and can see the area must make a Wisdom (Perception) check to notice the heat haze caused by this spell, and therefore notice the spell’s effect. The DC for this check equals your spell save DC.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Bonds of Light" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_BONDS_OF_LIGHT">
+        <supports>Artificer, Sorcerer, Ranger, Warlock</supports>
+        <description>
+            <p>You conjure a cord of light, and throw it at a creature you can see within range. The target must make a Strength saving throw. On a failed save, the target takes 2d6 radiant damage and is restrained for the spell’s duration as the cord ensnares it. On a successful save, the cord of light falls to the ground below the target’s space. On a subsequent turn during the duration, you can use your action to pick up the fallen cord if you are within 5 feet of it, and you can start carrying it or throw the cord again at a target within 60 feet of you as part of the same action.</p>
+            <p class="indent">If you are within 60 feet of the restrained target, you can use your action to move it up to 30 feet in a direction of your choice (even vertically), stopping early if it impacts against a solid surface or would move to be more than 60 feet away from you. If the target would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the target strikes the other creature and stops moving. When the target strikes something, the target and what it strikes each take 2d6 bludgeoning damage and 1d6 radiant damage.</p>
+            <p class="indent">To break out, the restrained target can use its action to make a Strength check against your spell save DC. On a success, the target escapes and the cord falls to the ground, where it can be picked up and thrown again as described above.</p>
+            <p class="indent">Also, the bonds shed bright light in a 10-foot radius and dim light 10 feet beyond that.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 10 minutes</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Cauterize" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_CAUTERIZE">
+        <supports>Sorcerer</supports>
+        <description>
+            <p>You touch a creature’s wound, causing the creature to regain a number of hit points equal to 2d8 + your spellcasting ability modifier, while inflicting an excruciating burning sensation. During its next turn, the creature’s speed is halved and it is incapacitated with pain. This spell does not incapacitate nor restore hit points to constructs or undead.</p>
+            <p class="indent">If you attempt to target an unwilling creature, that creature must succeed on a Dexterity saving throw to avoid the spell.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">1 round</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Ceremony" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_CEREMONY">
+        <supports>Cleric, Paladin</supports>
+        <description>
+            <p>You perform a special religious ceremony that is infused with magic. When you cast the spell, choose one of the following rites, the target of which must be within 10 feet of you throughout the casting.</p>
+            <p class="indent"><strong><em>Atonement. </em></strong>You touch one willing creature whose alignment has changed, and you make a DC 20 Wisdom (Insight) check. On a successful check, you restore the target to its original alignment</p>
+            <p class="indent"><strong><em>Bless Water. </em></strong>You touch one vial of water and cause it to become holy water.</p>
+            <p class="indent"><strong><em>Brother of the Faith. </em></strong>You touch one humanoid that has been dedicated to your god’s service for at least one year. A symbol of your god is inscribed somewhere on the target’s body, most commonly upon a hand or on the forehead. This symbol is invisible to other creatures, with the exception of other humanoids that bear the same symbol. A creature with truesight can also see the symbol.</p>
+            <p class="indent">The symbol lasts until it is dispelled.</p>
+            <p class="indent"><strong><em>Coming of Age. </em></strong>You touch one humanoid who is a young adult. For the next 24 hours, whenever the target makes an ability check, it can roll a d4 and add the number rolled to the ability check. A creature can benefit from this rite only once.</p>
+            <p class="indent"><strong><em>Dedication. </em></strong>You touch one humanoid who wishes to be dedicated to your god’s service. For the next 24 hours, whenever the target makes a saving throw, it can roll a d4 and add the number rolled to the save. A creature can benefit from this rite only once.</p>
+            <p class="indent"><strong><em>Funeral Rite. </em></strong>You touch one corpse, and for the next 7 days, the target can’t become undead by any means short of a wish spell.</p>
+            <p class="indent"><strong><em>Wedding. </em></strong>You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 hour</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">25 gp worth of powdered silver, which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">true</set>
+        </setters>
+    </element>
+    <element name="Charm of Protection" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_CHARM_OF_PROTECTION">
+        <supports>Artificer, Cleric, Ranger, Wizard</supports>
+        <description>
+            <p>You touch the piece of jewelry that serves as the material component for this spell, bestowing magical energy into it. This magic activates when certain conditions are met. By default, it activates when an aberration, celestial, elemental, fey, fiend, or undead moves within 30 feet of the jewelry. This trigger can be refined to only activate for a subset of those creature types, and you can choose to exclude specific creatures of your choice from triggering the activation.</p>
+            <p class="indent">When the magic activates, the jewelry begins to glow, emitting bright light in a 10-foot radius and dim light 10 feet beyond that. The color of this light depends on the creature type of the creature that activated this magic: purple for aberrations, white for celestials, blue for elementals, yellow for fey, red for fiends, and green for undead. Also, the jewelry creates a magical ward. Roll 4d4. The ward has hit points equal to the number rolled. Whenever the jewelry’s wearer would take damage from an aberration, celestial, elemental, fey, fiend, or undead, the ward takes the damage instead. If this damage reduces the ward to 0 hit points, the wearer takes any remaining damage.</p>
+            <p class="indent">The magic remains activated for 10 minutes, or until the ward is reduced to 0 hit points. Then the spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the ward’s hit points increase by 2d4 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">abjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 minute</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a golden ring, bracelet, or necklace worth at least 50 gp in total</set>
+            <set name="duration">24 hours</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Cindervines" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_CINDERVINES">
+        <supports>Druid</supports>
+        <description>
+            <p>You conjure two cords of fire and ash, and cause them to lash at one or two creatures within range. If you choose two creatures, those creatures must be within 15 feet of each other, and you make one melee spell attack against each of them. If you choose one creature, you make two melee spell attacks against that creature. On each hit, a target takes 1d4 fire damage. If an effect would allow you to add bonus damage to these attacks, you only add the bonus damage to the first attack that hits.</p>
+            <p class="indent">If you attacked two separate targets and both of your attacks hit, then each target is pulled up to 5 feet closer to the other.</p>
+            <p class="indent">If you attacked a single target and both of your attacks hit, that target is pulled up to 5 feet closer to you.</p>
+            <p class="indent">This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">15 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Circle of Smothering" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_CIRCLE_OF_SMOTHERING">
+        <supports>Bard, Druid, Wizard</supports>
+        <description>
+            <p>You significantly reduce the oxygen content of the air in a 30-foot radius area centered on a point you can see within range. Due to the lack of oxygen, any fires within the area near instantly go out, and creatures within the area have resistance to fire damage.</p>
+            <p class="indent">The area also becomes dangerous for breathing creatures. Any creature that starts its turn within the area or enters it for the first time on its turn must succeed on a Constitution saving or become disoriented until it leaves the area. A disoriented creature has disadvantage on attack rolls and ability checks. The disoriented creature must continue making these saves on subsequent turns. If the creature fails two more of these saves before it leaves the area, it falls unconscious for the remaining duration or until it is removed from the area and then shaken awake or damaged.</p>
+            <p class="indent">A creature that doesn’t need to breathe doesn’t need to make these saves, nor does a creature that starts holding its breath before entering the area. It is especially difficult for a creature to hold its breath within the area, however. A creature that holds its breath while in the area must maintain its concentration on doing so, as if it were concentrating on a spell.</p>
+            <p class="indent">When the spell is cast, a creature within the area can use its reaction to begin holding its breath before the air becomes too dangerous to breathe.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the radius of the area increases by 10 feet for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small piece of a woolen blanket</set>
+            <set name="duration">Concentration, up to 10 minutes</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Conflagration" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_CONFLAGRATION">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>You cause one creature you can see within range to become enveloped in fire. The target must make a Constitution saving throw. It takes 3d12 fire damage on a failed saving throw, or 2d12 fire damage on a successful one. Either way, the target continues burning for the duration. At the end of each of its turns, the target repeats the saving throw. On a failed save, roll the same number of d12s as the last time you dealt damage with this spell. On a successful save, roll one less d12. When no d12s remain, the spell ends early. The target takes damage equal to the number rolled. For example, a creature that succeeds on its saving throw each turn would take 2d12 damage from the initial save, 1d12 from the next save, and the spell would end after the third save is made.</p>
+            <p class="indent">If the target dies before the spell ends, its body is reduced to ash and the flames that enveloped it lash out to strike at nearby foes. Each creature of your choice within a 20-foot radius centered on the target must make a Dexterity saving throw, taking 6d12 fire damage on a failed saving throw or half as much damage on a successful one. Then, the spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 7th level or higher, the area damage dealt when the target dies increases by 1d12 for each slot level above 6th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">150 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Crystalline Eye" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_CRYSTALLINE_EYE">
+        <supports>Bard, Cleric, Warlock, Wizard</supports>
+        <description>
+            <p>You touch the eye used as this spell’s material component, and imbue it with magical power. As long as you are within 100 feet of the eye, you can use your action to see out of it, becoming blinded to your own senses. You can see from it in any direction.</p>
+            <p class="indent">The eye can be manipulated as normal. It can be thrown, rolled across the floor, or subjected to similar effects without damaging it or ending the spell. The eye has 5 hit points and an AC of 13. If the eye is reduced to 0 hit points, the spell ends and the material component is rendered unusable for future castings.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the distance threshold for seeing from the eye increases by 100 feet for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">divination</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a synthetic eye made from glass or crystal, worth at least 50 gp</set>
+            <set name="duration">1 hour</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Destructive Impact" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_DESTRUCTIVE_IMPACT">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You cause an orb of fire and molten rock to come crashing down from the sky, targeting a point on the ground you can see within range. You must be outdoors to cast this spell. When you cast this spell, the fiery orb materializes as an easily visible point in the sky that casts a 5-foot radius shadow centered on the point you targeted. At the start of your next turn, the orb lands at that point and explodes. Each creature in a 40-foot radius sphere centered on that point must make a Dexterity saving throw. The sphere spreads around corners. A creature within a 10-foot radius of the point of impact takes 7d8 fire damage and 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one. Creatures within the remaining area only take the fire damage component of the blast, rather than taking both fire and bludgeoning damage.</p>
+            <p class="indent">This spell deals twice that amount of damage to objects and structures within the area, and ignites flammable objects that aren’t being worn or carried.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the fire damage increases by 1d8 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">300 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">1 round</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Divine Armament" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_DIVINE_ARMAMENT">
+        <supports>Cleric, Paladin</supports>
+        <description>
+            <p>You draw energy from the positive plane, and shape it into solidified light that forms one of the following sets of equipment:</p>
+            <p class="indent"><strong><em>Axes.</em></strong> You form two battleaxes, one in each of your hands. Each axe deals 2d6 radiant damage on a hit, and has the light and thrown properties (range 20/60). If you hit a single target with both axes on the same turn, that target’s speed is reduced to 0 until the start of your next turn.</p>
+            <p class="indent"><strong><em>Bow.</em></strong> You form a longbow in your hands. The bow magically forms ammunition when you pull back the string, and it deals 2d10 radiant damage on a hit. It has the ammunition (range 150/600) and two-handed properties. Any effect that normally only applies to melee weapon attacks can also apply to ranged attacks made with this weapon.</p>
+            <p class="indent"><strong><em>Hammer.</em></strong> You form a maul in your hands. The maul deals 3d8 radiant damage on a hit, and has the two-handed property. When you hit a creature with the maul, you can push that creature up to 10 feet away from you.</p>
+            <p class="indent"><strong><em>Spear.</em></strong> You form a long spear in your hands. The spear deals 3d8 radiant damage on a hit, and has the two-handed property. It also adds 10 feet to your reach when you attack with it.</p>
+            <p class="indent"><strong><em>Sword and Shield.</em></strong> You form a sword in one of your hands and a shield in the other. The sword deals 2d8 radiant damage on a hit, and has the finesse property. The shield provides the same bonus as a normal shield, but also causes ranged attacks to have disadvantage against you.</p>
+            <p class="indent"><strong><em>Whip.</em></strong> You form a whip in one of your hands. The whip deals 3d6 radiant damage on a hit, and has the finesse and reach properties. Whenever you hit a creature with the whip, you can pull the target up to 5 feet closer to you.</p>
+            <p class="indent">Anything conjured by this spell lasts for the duration, and you are considered proficient in wielding any conjured equipment. Also, the equipment sheds bright light in a 10-foot radius and dim light 10 feet beyond that. If you were holding any objects in your hands when you cast this spell, you can choose to shunt some or all of those objects to a temporary demiplane for the duration. When the spell ends, those objects return to your hands.</p>
+            <p class="indent">If you drop a piece of equipment or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause any of the dissipated equipment to reappear in your hands.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Divine Insight" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_DIVINE_INSIGHT">
+        <supports>Cleric</supports>
+        <description>
+            <p>You contact your deity or a divine proxy, and ask for a reminder, advice, or an omen. These three options are described below:</p>
+            <p class="indent"><strong><em>Reminder.</em></strong> You are given information regarding the past. The divine being you are put in contact with reminds you of the most important piece of information that it thinks you may have forgotten or overlooked.</p>
+            <p class="indent"><strong><em>Advice.</em></strong> You are given information regarding the present. The divine being you are put in contact with gives you advice on how to best complete your current task.</p>
+            <p class="indent"><strong><em>Omen.</em></strong> You are given information regarding the future. The divine being you are put in contact with tells you about a significant event that is likely to occur in the near future.</p>
+            <p class="indent">Regardless of the option you choose, the answer will consist of at most a few sentences.</p>
+            <p class="indent">When you choose one of these options, the divine being you are put in contact with could ask you to choose a different option, as the being might not have any information to offer you of the type you sought.</p>
+            <p class="indent">If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer. The DM makes this roll in secret.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">divination</set>
+            <set name="isRitual">true</set>
+            <set name="time">1 minute</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">incense, a drop of your blood, and a vial of holy or unholy water</set>
+            <set name="duration">1 minute</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Druidic Avatar" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_DRUIDIC_AVATAR">
+        <supports>Druid</supports>
+        <description>
+            <p>You call upon powerful magic of the Old Faith, and transform yourself into an avatar of nature. For the duration, you gain the following benefits as you sprout treant-esque limbs and attune yourself to the elements.</p>
+            <ul>
+                <lem>Your size becomes Huge, and your weight is multiplied by 30. If there isn’t enough space for your new form, the spell fails.</lem>
+                <lem>You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.</lem>
+                <lem>You have advantage on Strength saving throws, Constitution saving throws, and Strength checks.</lem>
+                <lem>Your limbs become natural weapons with a 2d8 damage die and a 10-foot reach. You are proficient in attacking with them, and you use your spellcasting ability modifier for their attack and damage rolls.</lem>
+                <lem>You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature that gives you extra attacks.</lem>
+                <lem>
+                    <p>As a bonus action, you can release a burst of elemental energy. Choose earth, air, fire, or water. Each creature within 15 feet of you, other than you, must make a Dexterity saving throw. The effect of this action depends on the element chosen:</p>
+                    <p class="indent"><strong><em>Earth.</em></strong> The earth trembles beneath your feet before it animates and ensnares the creatures around you. Each creature that fails its save is restrained until the start of your next turn.</p>
+                    <p class="indent"><strong><em>Air.</em></strong> The air around you bursts outwards, forcing other creatures away from you. Each creature that fails its save is pushed 30 feet away from you and knocked prone.</p>
+                    <p class="indent"><strong><em>Fire.</em></strong> Flames course around you. Each creature that fails its save takes 4d8 fire damage.</p>
+                    <p class="indent"><strong><em>Water.</em></strong> Tendrils of water grasp at the creatures around you. Each creature that fails its save takes 2d8 bludgeoning damage and is pulled up to 10 feet closer to you.</p>
+                </lem>
+            </ul>
+            <p class="indent">While the spell lasts, your form cannot be changed, whether through Wild Shape, polymorph, enlarge/reduce, or other such magic. When the spell ends, you gain a level of exhaustion.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell with a 9th level spell slot, you gain 75 temporary hit points, rather than 50.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">three twigs, each from a different species of tree.</set>
+            <set name="duration">1 minute</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Encroaching Lava" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_ENCROACHING_LAVA">
+        <supports>Druid, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>Molten lava begins to burst out of a point on the ground that you can see within range, creating a 1-foot thick layer of lava on the ground that fills a 30-foot radius area centered on that point. The lava spreads around corners, and is difficult terrain.</p>
+            <p class="indent">When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Dexterity saving throw. On a failed save, a creature takes 10d6 fire damage, and is ignited for the duration. On a successful save, a creature takes half as much damage and is not ignited. The lava also damages objects in its area, and ignites flammable objects that aren’t being worn or carried.</p>
+            <p class="indent">An ignited creature suffers no additional effect while it remains in the lava. However, if an ignited creature starts its turn outside of the lava, it takes 2d6 fire damage as it continues to burn. To end this effect, the ignited creature or another creature within 5 feet of it can use an action to douse the flames.</p>
+            <p class="indent">At the start of each of your turns, the lava spreads out further, increasing the radius of the area by 10 feet. The lava spreading into a creature’s space does not damage that creature until it starts its turn in the lava.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 8th level or higher, the damage increases by 1d6 for each slot level above 7th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">150 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Endurance" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_ENDURANCE">
+        <supports>Artificer, Bard, Cleric, Druid, Ranger</supports>
+        <description>
+            <p>You touch a creature, granting it supernatural endurance. For the duration, the creature ignores the effects of extreme heat, extreme cold, frigid water, and high altitude. Also, it can hold its breath for twice as long as normal. Lastly, the creature has advantage on any saving throws made to avoid or recover from exhaustion. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can touch an additional creature during the cast time for each slot level above 1st. Each creature you touch is granted this spell’s effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 minute</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">two days worth of rations, worth at least 1 gp in total, which the spell consumes</set>
+            <set name="duration">8 hours</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Fire Bombs" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_FIRE_BOMBS">
+        <supports>Artificer, Sorcerer, Wizard</supports>
+        <description>
+            <p>You conjure three fist-sized fiery orbs and hurl them at targets within range. You can hurl them at one target or several. For each orb hurled at a creature, that creature can make a Dexterity saving throw to avoid the orb. On a failed save, the orb sticks to that creature for the duration. On a successful save, the orb falls, sticking to the ground in that creature’s space. As an action, a creature can remove an orb from itself and let it fall to the ground. Each orb sheds dim light in a 5-foot radius.</p>
+            <p class="indent">As a bonus action, you can cause one of the unexploded orbs to explode. Each creature within 10 feet of the orb must make a Dexterity saving throw, taking 2d4 fire damage on a failed save or half as much damage on a successful one. A creature stuck by the exploding orb automatically fails this saving throw.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, you conjure and throw an additional orb for each slot level above 2nd. If you use a spell of 4th level or higher, you can explode 2 orbs with a single bonus action. This increases to 3 with a 6th level slot, and 4 with an 8th level slot.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">chunks of coal</set>
+            <set name="duration">1 minute</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Fireworks" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_FIREWORKS">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>The ground in a 150-foot-square centered on a point within range cracks and churns, turning the ground in that area into difficult terrain until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.</p>
+            <p class="indent">When you cast this spell and at the start of each of your turns for as long as this spell lasts, choose up to four 5-foot-square portions of this difficult terrain. From each square chosen, a 5-foot-wide, 300-foot-long line of fire is expelled vertically from the ground. Each creature within a line must make a Dexterity saving throw. A creature takes 7d10 fire damage on a failed save, or half as much damage on a successful one. If a creature would be in the area of multiple lines, it only makes one saving throw. The damage roll of that saving throw is increased by 1d10 for each line the creature is in beyond the first.</p>
+            <p class="indent">Each of these lines then become filled with dark, toxic smoke until the start of your next turn, heavily obscuring the areas. A creature that enters the smoke for the first time on a turn or ends its turn there must succeed on a Constitution saving throw or become poisoned until the end of its next turn.</p>
+            <p class="indent">Any line of fire that goes its full distance without stopping on a solid surface explodes in a blast of scintillating colors. These blasts emit thunderous booms audible out to 1000 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">300 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of sulfur, and various powdered metals</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Flaming Serpent" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_FLAMING_SERPENT">
+        <supports>Druid, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You meld elemental fire into the form of a semi-solid floating serpent that circles around a Large or smaller creature you can see within range, sharing its space. For the duration, the serpent sheds bright light in a 10-foot radius and dim light for an additional 10 feet. When you cast this spell, and as an action on each of your turns until the spell ends, you can choose one of the following actions for the serpent to perform if it is within 60 feet of you:</p>
+            <p class="indent"><strong><em>Constrict.</em></strong> The serpent attempts to constrict the creature its circling. That creature must make a Dexterity saving throw. On a failed save, it takes 3d8 fire damage and has disadvantage on attack rolls until the end of your next turn. On a successful save, it takes half as much damage and suffers no other effect.</p>
+            <p class="indent"><strong><em>Protect.</em></strong> The serpent protects the creature its circling. Until the end of your next turn, that creature has resistance to fire damage, attack rolls against it are made with disadvantage, and it makes Dexterity saving throws with advantage.</p>
+            <p class="indent"><strong><em>Reposition.</em></strong> The serpent moves to a different creature that you can see within 60 feet of you, and starts circling that creature instead. It moves to its new target by the shortest possible route. Each creature of your choice along a 5-foot wide line following the serpent’s route must make a Dexterity saving throw. Both the target creature and the creature the serpent was previously circling are valid choices. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+            <p class="indent">If the creature the serpent is circling dies, you must take the reposition action on your next turn. Otherwise, the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">the ashes of a snakeskin</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Halo" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_HALO">
+        <supports>Cleric, Paladin</supports>
+        <description>
+            <p>Radiant energy is expelled from you in a burst of intense light. Each creature within 10 feet of you must make a Strength saving throw. On a failed save, a creature takes 6d8 radiant damage and is pushed up to 10 feet away from you. On a successful save, a creature takes half as much damage and is not pushed.</p>
+            <p class="indent">Then, the light settles into a 10-foot-radius ring that moves with you, centered on you, for the duration. Whenever a creature willingly attempts to enter or leave the ring, you can attempt to block it from passing through the ring (no action required). That creature must make a Strength saving throw. On a failed save, it is unable to willingly attempt to pass through the ring for the duration of the current turn. On a successful save, it is able to pass through the ring at-will for the duration of the current turn.</p>
+            <p class="indent">When a creature ends its turn within the ring, you can choose to deal 3d8 radiant damage to it.</p>
+            <p class="indent">The area within the ring is bright light and it sheds dim light for an additional 10 feet.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, both the initial damage and the damage dealt at the end of a creature’s turn increases by 1d8 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Hand of Helios" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_HAND_OF_HELIOS">
+        <supports>Bard, Cleric, Sorcerer</supports>
+        <description>
+            <p>You form radiant energy into a vaguely hand-shaped form that sweeps forward along a 5-foot-wide line that is up to 20 feet long. The line emanates from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 2d6 radiant damage on a failed save, or half as much damage on a successful one. One creature within the line must also make a Strength saving throw, as the hand attempts to grasp and throw it rather than merely passing through it. On a failed save, it takes 1d6 radiant damage and is thrown up to 10 feet in a horizontal direction of your choice.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage dealt on a failed Dexterity saving throw increases by 1d6 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">20 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Holy Rain" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_HOLY_RAIN">
+        <supports>Cleric, Druid, Paladin</supports>
+        <description>
+            <p>Until the spell ends, a light rain falls in a 60-foot-tall cylinder with a 30-foot radius centered on a point you choose within range. The area is dim light, and exposed flames within the area are doused.</p>
+            <p class="indent">This rain is holy water. An undead or fiend that starts its turn within the area or enters it for the first time on a turn must make a Constitution saving throw, taking 3d6 radiant damage on a failed save or half as much damage on a successful one.</p>
+            <p class="indent">The rain also has healing properties. Any corpse within this area can’t become undead, and any nonhostile, living creature within the area that starts its turn with 0 hit points is stabilized. A nonhostile creature that remains within the area regains 1d4 hit points for every 10 minutes it remains there.</p>
+            <p class="indent">Lastly, if you maintain your concentration on this spell for its whole duration, plants within the area become enriched. For the next 10 days, these plants grow twice as fast.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of holy water</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Incandescent Chain" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_INCANDESCENT_CHAIN">
+        <supports>Cleric, Sorcerer, Warlock</supports>
+        <description>
+            <p>You conjure a chain of light connected to a point on a surface that you can see within range. When the chain is conjured, it attempts to bind itself to a creature within 30 feet of it. The target must make a Dexterity saving throw. On a failed save, the target takes 2d6 radiant damage and is bound by the chain until the start of your next turn. On a successful save, the target takes half as much damage and is not bound. If the spell ends, the bind ends as well.</p>
+            <p class="indent">A bound target’s speed is halved. At the start of your next turn, the chain attempts to pull its target before it unbinds from it. The bound creature must succeed on a Strength saving throw or be pulled up to 15 feet closer to the point the chain is connected to. While the spell lasts, you can use your action to cause the chain the attempt to bind itself to a creature in the same manner as when you first cast the spell. You can target the same creature or a different one, as long as the targeted creature is within 30 feet of the point the chain is connected to.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 minute.</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Jono’s Cozy Shack" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_JONOS_COZY_SHACK">
+        <supports>Artificer, Wizard</supports>
+        <description>
+            <p>The model cabin that serves as the material component of this spell magically expands by a factor of 24, until it becomes the size of a real cabin. The full-size cabin must fit on a square area of ground within range that is no larger than 30 feet on a side. Any creatures within the area are harmlessly pushed out of it as the cabin expands.</p>
+            <p class="indent">The cabin shares the layout of the model used as its material component, which must fit within a 10-inch cube. The model is constructed before the spell is cast. Its walls must make up an enclosed single story area, with one or two doors and up to four windows. The walls are constructed with miniature wooden logs, and are composed of 5-inch tall, 2.5-inch wide panels that are half an inch thick. As the cabin expands by a factor of 24, the walls of the full size cabin are therefore composed of 10-foot tall, 5-foot wide panels that are 1 foot thick. It also has an accordingly sized roof (with attic space) and wooden flooring.</p>
+            <p class="indent">By default, the cabin is unfurnished. 1/24th scale furnishings can be added to the model before the spell is cast. Though these model furnishings require far less raw materials than their full size counterparts, the magical process used to bind them to the cabin makes up for the difference, causing them to cost the same amount as their full size versions. As many furnishings as can fit inside the model can be added.</p>
+            <p class="indent">When the spell ends, any creatures within the cabin are harmlessly ejected, as are any objects that were not a part of the original model. The objects that were a part of the original model are moved back to their original positions within the model, though they are not restored to their original conditions. Objects that were damaged or broken remain so in the model.</p>
+            <p class="indent">As an action, you can end the spell early.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 minute</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a 1/24th scale model cabin, worth at least 100 gp for an unfurnished cabin or more for a furnished one</set>
+            <set name="duration">24 hours</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Jono’s Fiery Portal" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_JONOS_FIERY_PORTAL">
+        <supports>Bard, Sorcerer, Wizard</supports>
+        <description>
+            <p>As you cast this spell, you burn a series of runic marks onto a 10-foot square surface that you can see within range, creating a runic pattern that fills the square and lasts for the duration, unless they are dispelled or the surface they are on is destroyed.</p>
+            <p class="indent">If you have two or more of these patterns active at once, you can use your action to touch one of the patterns, causing the marks of that pattern as well as another active pattern of your choice on the same plane of existence to slowly burn away. After 1 minute, the patterns fully burn away, and both 10-foot square surfaces become connected portals surrounded by a ring of fire. These portals remain open for 1 minute. Any creature or object that enters a portal instantly appears within 5 feet of the opposite portal or in the nearest unoccupied space if that space is occupied, conserving its momentum as it passes through.</p>
+            <p class="indent">When the portals open, you can allow any number of creatures you select to safely move between the portals. If any other creature enters a portal, it takes 4d8 fire damage as it passes through it. The portals can also be seen through.</p>
+            <p class="indent">If one of the portals is dispelled, both portals close.</p>
+            <p class="indent">When the portals close, the spell ends for each portal.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the fire damage increases by 1d8 and the spell’s duration increases by 10 days for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">10 minutes</set>
+            <set name="range">10 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">10 days</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Jono’s Secret Campfire" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_JONOS_SECRET_CAMPFIRE">
+        <supports>Ranger, Sorcerer, Wizard</supports>
+        <description>
+            <p>You create a magical, silver-flamed campfire on an area of ground that you can see within range. Until the spell ends, the campfire fills a 5-foot cube in that area. The fire sheds no smoke, but outside of that and its silver flames it has all the same properties as a nonmagical fire.</p>
+            <p class="indent">For the duration, a 15-foot radius area around the fire is concealed by an illusion. When viewed from outside the area, this illusion causes the area to appear as it did before this spell was cast, thereby concealing new creatures and objects that enter the area. The area is also filled with bright light, which does not extend outside of it.</p>
+            <p class="indent">A creature that uses its action to examine the area can determine that it is concealed by an illusion with a successful Intelligence (Investigation) check against your spell save DC. Similarly, a creature that enters the area immediately discerns the illusion for what it is. If a creature discerns the illusion for what it is, the creature can see through it.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you cast this spell using a spell slot of 3rd level or higher, the duration becomes 8 hours. If you use a spell slot of 5th level or higher, the duration becomes 10 days. If you use a spell slot of 7th level or higher, the spell lasts until it is dispelled.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">illusion</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 minute</set>
+            <set name="range">10 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a set of twigs</set>
+            <set name="duration">1 hour</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Judgment" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_JUDGMENT">
+        <supports>Cleric</supports>
+        <description>
+            <p>Your hand momentarily flashes with light as you try to touch a creature. Make a melee spell attack against the target. You have advantage on the attack roll if the target attacked a creature other than you on its last turn. On a hit, the target takes 1d6 radiant damage, and it begins to shimmer faintly until the start of your next turn. If the target attacks a creature other than you before then, it immediately takes 1d6 radiant damage and the spell ends.</p>
+            <p class="indent">This spell’s damage increases by one die when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">1 round</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Lava Coils" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_LAVA_COILS">
+        <supports>Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You conjure coiling tendrils of lava around up to two creatures of your choice that you can see within range. Each target takes 5d6 fire damage, and must succeed on a Dexterity saving throw or become restrained until the start of your next turn. When the restrain ends, a target takes another 5d6 fire damage.</p>
+            <p class="indent">If a creature dies while restrained by the spell or from this spell’s damage, its body is burned and absorbed into the lava, along with everything it is wearing and carrying other than magic items. The creature can be restored to life only by means of a true resurrection or a wish spell. The lava then falls to the ground, creating a 1-foot thick layer that fills a square area on the ground with sides of the same length as the sides of the deceased creature’s space. The lava pool lasts for 1 minute. A creature that starts its turn within a lava pool or enters it for the first time on a turn must make a Dexterity saving throw, taking 5d6 fire damage on a failed save or half as much damage on a successful one.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 7th level or higher, you can target an additional creature for each slot level above 6th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">1 round/1 minute</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Light Arrows" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_LIGHT_ARROWS">
+        <supports>Ranger</supports>
+        <description>
+            <p>You call upon radiant magic, and imbue it into your quiver. For the duration, your quiver produces an endless supply of radiant arrows or crossbow bolts that you can use for any weapon you wield that requires those ammunitions.</p>
+            <p class="indent">When you attack with this ammunition, your attacks deal 1d8 additional radiant damage on a hit, have triple their normal range, and their damage type becomes radiant. Also, once per turn when you hit a creature with this ammunition, you can force it to make a Constitution saving throw. On a failed save, it is blinded until the start of your next turn, and its speed is halved for the same duration</p>
+            <p class="indent">If the quiver leaves your possession, the spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a 5th level spell slot, the bonus radiant damage becomes 1d12.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a quiver</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Lightshape" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_LIGHTSHAPE">
+        <supports>Bard, Cleric, Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You choose an area of bright and/or dim light that you can see within range and that fits within a 20-foot cube. You affect it in one of the following ways:</p>
+            <ul>
+                <li>You change the light’s color. This change lasts for 1 hour</li>
+                <li>You change the light from dim light to bright light, or vice versa. The change lasts for 1 hour.</li>
+                <li>You focus the light onto a point, causing a flammable object within the area that isn’t being worn or carried to ignite.</li>
+                <li>You cause the light to flash in a creature’s eyes. One creature In the area must succeed on a Constitution saving throw or have disadvantage on the next attack roll it makes before the end of your next turn, and be unable to make opportunity attacks for the same duration. A creature immune to the blinded condition automatically succeeds on this saving throw.</li>
+            </ul>
+            <p>If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous or 1 hour (see below)</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Magma Burst" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_MAGMA_BURST">
+        <supports>Sorcerer, Warlock, Wizard</supports>
+        <description>
+			<p>A mass of magma explodes into existence at a point you can see within range. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes 5d10 fire damage, and is enveloped in magma for the duration. On a successful save, a target takes half as much damage and is not enveloped.</p>
+			<p class="indent">An enveloped creature’s speed is halved, and it takes 2d10 fire damage at the end of each of its turns. As an action, an enveloped creature can make a Strength check against your spell save DC. On a success, the target is no longer enveloped.</p>
+			<p class="indent">As a bonus action on your turn, you can choose one creature you can see within 60 feet of you that is enveloped by this magma, and cause that magma to harden. Beginning at the end of that creature’s next turn, it stops taking fire damage from this spell and instead becomes restrained for as long as it remains enveloped by the hardened magma.</p>
+			<p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the initial damage increases by 1d10 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">conjuration</set>
+			<set name="isRitual">false</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Mend Wounds" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_MEND_WOUNDS">
+        <supports>Bard, Cleric, Druid, Ranger, Paladin</supports>
+        <description>
+            <p>You imbue a creature that you can see within range with positive energy. That creature regains hit points equal to 1d4 + your spellcasting ability modifier, and the number of hit points it has after this healing becomes this spell’s healing threshold for the duration of the spell.</p>
+            <p class="indent">At the start of each of the creature’s turns, it regains 1d4 hit points. This healing cannot bring the creature above this spell’s healing threshold, meaning this healing is only effective against damage dealt after the spell was cast.</p>
+            <p class="indent">If the creature is reduced to 0 hit points during the duration, you must roll a d20. On a roll of 10 or lower, the spell ends.</p>
+            <p class="indent">This spell has no effect on undead or constructs.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the initial healing increases by 2d4 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">evocation</set>
+			<set name="isRitual">false</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of cloth and a drop of holy water</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Mindfire" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_MINDFIRE">
+        <supports>Sorcerer, Warlock, Wizard</supports>
+        <description>
+			<p>You point at a creature you can see within range, and inflict upon it a painful burning sensation that it can feel yet not see. The target must make a Wisdom saving throw, taking 8d4 fire damage on a failed save or half as much damage on a successful one. On a failed save, the target’s mind also burns for the duration.</p>
+			<p class="indent">A burning target takes 2d4 fire damage at the start of each of its turns, has disadvantage on concentration checks, and takes additional fire damage whenever it casts a spell. The fire damage is 2d4 if the creature casts a 1st level spell or a cantrip, and is increased by 1d4 for each slot level above 1st if the creature casts a higher level spell.</p>
+			<p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the initial damage increases by 2d4 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">evocation</set>
+			<set name="isRitual">false</set>
+			<set name="time">1 action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Mirror Shield" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_MIRROR_SHIELD">
+        <supports>Paladin</supports>
+        <description>
+            <p>You transmute your shield, strengthening it and causing its front to take on a mirror-like luster. If the shield isn’t magical already, it grants a +1 bonus to AC while you wield it. This bonus is in addition to the shield’s normal bonus to AC.</p>
+            <p class="indent">Also when you cast this spell, you must choose one of the following damage types: acid, cold, fire, lightning, or thunder. When you would take damage of the choose type while the spell lasts, you can use your reaction to gain resistance to that instance of damage, and cause the shield to reflect a bolt of radiant energy at the creature that damaged you if you can see it and it is within 60 feet of you. That creature must succeed on a Dexterity saving throw or take 1d8 radiant damage. You can reflect this bolt even if the triggering damage causes you to lose concentration.</p>
+            <p class="indent">If the shield leaves your possession, the spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">transmutation</set>
+			<set name="isRitual">false</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shield</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Moonsilver" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_MOONSILVER">
+        <supports>Bard, Cleric, Wizard</supports>
+        <description>
+            <p>After spending the casting time inscribing magical runes into the the nonmagical silvered melee weapon, you touch the diamond to its hilt. The diamond is absorbed into the weapon, transforming it into a magic weapon with a +1 bonus to attack rolls and damage rolls for the spell’s duration.</p>
+            <p class="indent">The weapon also becomes especially effective against creatures whose resistance to bludgeoning, piercing, and slashing damage is counteracted by silvered weapons. Against such a creature, the weapon deals an additional 1d8 radiant damage on a hit. Additionally, the weapon has 16 charges, which can be expended in the following ways by the weapon’s wielder:</p>
+            <ul>
+                <li>As a bonus action, the weapon’s wielder can expend up to 5 charges. Until the end of the turn, the wielder can make ranged weapon attacks by shooting bolts of moonlight from the weapon’s tip. These ranged weapon attacks have a range of 30 times the number of charges spent. They deal the same damage as the weapon’s melee attacks, but their damage type is radiant.</li>
+                <li>When the weapon hits a creature, its wielder can expend 5 charges to attempt to silence that creature. The creature must succeed on a Charisma saving throw or be unable to speak until the end of the wielder’s next turn.</li>
+                <li>When the weapon hits a shapechanger, its wielder can expend 5 charges to force that creature to revert to its true form, and cause it to be unable to change its form for 1 minute. The creature can make a Wisdom saving throw at the end of each of its turns, ending this effect on a success.</li>
+            </ul>
+            <p>There is no restriction on combining the above options during a single turn or for a single attack.</p>
+            <p class="indent">The weapon’s charges are automatically depleted after 24 hours, and can be restored by casting this spell upon the weapon again. Any creature that knows the moonsilver spell can do so. Casting the spell in this way is special: the casting doesn’t require material components, has a reduced casting time of 1 minute, and it restores the weapon to 40 charges for the next 24 hours.</p>
+            <p class="indent">When the spell ends, the diamond used as this spell’s material component is magically ejected from the weapon, allowing it to be reused (if the caster so desires).</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 7th level or higher, the weapon’s maximum number of charges is increased by 20 for each slot level above 6th. Using a slot of 7th level or higher for the special casting increases the number of charges restored by an equivalent amount. If you use an 7th level slot for the initial casting, the duration is 30 days. If you use an 8th level slot, the duration is 1 year. If you use a 9th level slot, the spell lasts until it is dispelled. The bonus to attack and damage rolls is increased to +2 if the slot is of 8th level or higher.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 hour</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a nonmagical silvered melee weapon worth at least 50 gp, and a diamond worth at least 2,500 gp</set>
+            <set name="duration">7 days</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Navigator’s Map" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_NAVIGATORS_MAP">
+        <supports>Artificer, Cleric, Druid, Ranger, Wizard</supports>
+        <description>
+            <p>As you cast this spell, you imbue divination magic into the map and golden pin used as this spell’s material components. While the spell lasts, the map displays your current location as a golden point of light. If you are outside the map’s boundaries when you cast the spell, the spell fails. Similarly, the spell ends if you ever leave the map’s boundaries during the duration.</p>
+            <p class="indent">While the spell lasts, you can stick the golden pin anywhere on the map. As long as the pin is stuck in the map, a golden line marks the most direct route between your current location and the location marked by the pin. This route is conceived using only the information available on the map. When you place the pin, you can mentally choose what information the route should take into account. For example, you could choose to have it prioritize roads, avoid mountains, and avoid water if you are traveling on land. Alternatively, you could have it avoid land if you are traveling by boat. The route suggested by the spell is only as good as the map you’re using. If the map is wrong or overly simplistic, the route could end up being wrong as well. You can place the pin as many times as you’d like over the duration.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">divination</set>
+            <set name="isRitual">true</set>
+            <set name="time">1 minute</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a map worth at least 1 sp, and a golden pin worth at least 5 gp</set>
+            <set name="duration">Concentration, up to 8 hours</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Nobility/Peasantry" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_NOBILITY_PEASANTRY">
+        <supports>Bard, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>This spell changes how other creatures perceive you. When you interact with a creature during the duration, that creature must first make a Wisdom saving throw. A creature that you have already interacted with for at least 1 minute during the past 24 hours before casting this spell automatically succeeds on the saving throw. When you cast the spell, you choose nobility or peasantry as the spell’s effect. The effect of a creature failing this saving throw depends on your choice. A creature that succeeds on the saving throw does not notice your attempted enchantment.</p>
+            <p class="indent">Nobility. You give off an aura of esteem and high status for the duration. On a failed save, a creature sees you as an important, high class member of society, such as a member of a noble family or aristocrat, and treats you as such for the duration. Whenever a creature witnesses you acting in a manner contrary to how a high class member of society is expected to act, the creature can repeat this saving throw, ending the effect on it on a success.</p>
+            <p class="indent">Peasantry. You give off an aura of insignificance and low status for the duration. On a failed save, a creature sees you as an unimportant, low class member of society, such as a lowly farmer or beggar, and treats you as such for the duration. Whenever a creature witnesses you acting in a manner contrary to how a low class member of society is expected to act, the creature can repeat this saving throw, ending the effect on it on a success.</p>
+            <p class="indent">End of the Effect. When this effect ends on a creature, that creature realizes that its perception of you was altered by magic.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the duration of the spell increases by 2 hours for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">enchantment</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Oath of Peace" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_OATH_OF_PEACE">
+        <supports>Bard, Cleric</supports>
+        <description>
+            <p>During the casting time, you and up to eight willing creatures who link hands in a circle take part in an oath to not harm the other oath-takers. For the duration, a creature affected by this spell is unable to directly harm or damage any other creature affected by this casting of the spell. Such a creature is unable to even attempt to perform such an act—any harmful action it attempts against another oath-taker is stopped before it can be completed, causing the creature to waste its action. This spell does not protect against more indirect forms of harm, such as lying or leading others into a trap.</p>
+            <p class="indent">If this effect ends early on a creature, such as through the dispel magic spell, all the other oath-takers immediately know that the effect has ended on that creature.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the duration increases by 72 hours for each slot level above 4th. If you use a 9th level spell slot, the spell instead lasts until it is dispelled.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">enchantment</set>
+            <set name="isRitual">true</set>
+            <set name="time">1 minute</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">an olive branch</set>
+            <set name="duration">24 hours</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Petrifying Light" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_PETRIFYING_LIGHT">
+        <supports>Cleric, Sorcerer, Warlock</supports>
+        <description>
+            <p>A pure white light falls upon a location you specify within range, filling a 60-foot-radius, 100-foot-high cylinder. Until the start of your next turn, bright light fills the area. This light is sunlight. When the light appears, each creature within suffers an effect based on its current hit points:</p>
+            <ul>
+                <li>25 hit points or fewer: The creature turns to stone, subjecting it to the petrified condition until the effect is removed.</li>
+                <li>50 hit points or fewer: The creature must succeed on a Constitution saving throw or turn to stone, subjecting it to the petrified condition until the effect is removed.</li>
+                <li>75 hit points or fewer: The creature must succeed on a Constitution saving throw or temporarily turn to stone, subjecting it to the petrified condition for 30 days or until the effect is removed.</li>
+                <li>100 hit points or fewer: The creature must succeed on a Constitution saving throw or temporarily turn to stone, subjecting it to the petrified condition for 24 hours or until the effect is removed.</li>
+                <li>Over 100 hit points: The creature must succeed on a Constitution saving throw or temporarily turn to stone, subjecting it to the petrified condition for 1 minute or until the effect is removed. The creature can repeat this saving throw at the end of each of its turns.</li>
+            </ul>
+            <p>If a creature enters the light during the duration, it is subjected to the above effect if it hasn’t been subjected to it already for this casting of the spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">1000 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">1 round</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Radiant Blast" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_RADIANT_BLAST">
+        <supports>Bard, Cleric, Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>A line of radiant energy 10 feet long and 5 feet wide emanates from you in a direction you choose. Each creature of your choice within the line must succeed on a Constitution saving throw or take 1d8 radiant damage and have disadvantage on opportunity attacks against you until the end of the turn.</p>
+            <p class="indent">The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">10 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Radiant Deathflare" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_RADIANT_DEATHFLARE">
+        <supports>Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You envelop a creature of your choice that you can see within range in pure white light. The target must make a Constitution saving throw. The target takes 7d8 radiant damage on a failed save, or half as much damage on a successful one.</p>
+            <p class="indent">If the target is reduced to 0 hit points by this damage, the light bursts outwards. Every other creature within 20 feet of the target must make a Dexterity saving throw, taking 7d8 radiant damage on a failed save or half as much damage on a successful one.</p>
+            <p class="indent">If the target is not reduced to 0 hit points, the light instead continues to envelope it until the end of your next turn if it failed its save. Until then, the target sheds dim light in a 10-foot radius, and attacks made against it are made with advantage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Rainbow" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_RAINBOW">
+        <supports>Ranger</supports>
+        <description>
+            <p>You imbue your bow or crossbow with magical energy, causing it to shimmer with scintillating colors. During the duration, when you attack with the weapon you can conjure magical ammunition for the attack. You can conjure this ammunition up to seven times, with each arrow/bolt you conjure having its own unique properties. Once you have conjured all seven, the spell ends.</p>
+            <p class="indent"><b><i>1st Attack.</i></b> You conjure and attack with a red arrow/bolt. Hit or miss, the arrow/bolt explodes once it reaches its target. The target and each creature within 10 feet of it must make a Dexterity saving throw, taking 2d6 fire damage on a failed save or half as much damage on a successful one.</p>
+            <p class="indent"><b><i>2nd Attack.</i></b> You conjure and attack with an orange arrow/bolt. On a hit, the target takes an extra 2d6 acid damage, and another 1d6 acid damage at the end of its next turn.</p>
+            <p class="indent"><b><i>3rd Attack.</i></b> You conjure and attack with a yellow arrow/bolt. On a hit, the target takes an extra 2d6 radiant damage, and must succeed on a Constitution saving throw or become blinded until the start of your next turn.</p>
+            <p class="indent"><b><i>4th Attack.</i></b> You conjure and attack with a green arrow/bolt. On a hit, the target takes an extra 2d8 poison damage, and must succeed on a Constitution saving throw or become poisoned until the start of your next turn.</p>
+            <p class="indent"><b><i>5th Attack.</i></b> You conjure and attack with a blue arrow/bolt. On a hit, the target takes 2d4 cold damage and must make a Strength saving throw as ice envelops it. On a failed save, it is restrained until the start of your next turn. On a successful save, it is not restrained but its speed is halved until the start of your next turn.</p>
+            <p class="indent"><b><i>6th Attack.</i></b> You conjure and attack with an indigo arrow/bolt. On a hit, the target takes an extra 2d6 lightning damage. Also, each creature in a 5-foot wide line between you and the target must make a Dexterity saving throw, taking 2d6 lightning damage on a failed save or half as much damage on a successful one.</p>
+            <p class="indent"><b><i>7th Attack.</i></b> You conjure and attack with a violet arrow/bolt. On a hit, the target takes an extra 2d6 psychic damage, and must succeed on a Wisdom saving throw or become stunned until the start of your next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 minute.</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Restoration" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_RESTORATION">
+        <supports>Cleric, Druid, Wizard</supports>
+        <description>
+            <p>Choose a point in time no more than 30 days ago. You cause the terrain, structures, and inanimate objects within a 300-foot cube in range to return to the condition they were in at the specified point in time. The restoration occurs using only the resources contained within the area—if objects were removed from the area, those objects remain missing when the spell completes. Similarly, objects that were added to the area remain in it.</p>
+            <p class="indent">For example, this spell can be used to rebuild a collapsed or burned down building, restore writing that was scrubbed away from a wall, and/or cause a fallen tree to stand up again. While the spell can restore life to non-sentient plant life (like nonmagical trees), it cannot restore life to dead creatures.</p>
+            <p class="indent">The restoration occurs slowly enough that it cannot trap or damage creatures within the area. Creatures that would be in the way of the restoration are instead safely pushed out of it.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell with an 8th-level spell slot, you can choose a point in time no more than a year ago. With a 9th-level spell slot, you can choose a point in time no more than a century ago.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 hour</set>
+            <set name="range">300 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a golden hourglass, worth at least 250 gp, filled with platinum dust worth at least 500 gp. The dust is consumed by the casting.</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Reveal" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_REVEAL">
+        <supports>Artificer, Bard, Druid, Warlock</supports>
+        <description>
+            <p>You hurl a mote of light at a creature within range. Make a ranged spell attack against the target. On a hit, the target becomes outlined in light until the end of your next turn, or until the spell ends. The light can be colored as you like.</p>
+            <p class="indent">An outlined creature can’t benefit from being invisible, sheds dim light in a 10-foot radius, and its speed is reduced by 10 feet. On a critical hit, its speed is reduced by 20 feet instead. Also, the first attack made against the target while the spell lasts is made with advantage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 round</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Seeking Sunfire" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_SEEKING_SUNFIRE">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>A beam of fire and radiance surges towards a creature you can see within range. That creature must succeed on a Dexterity saving throw or take 3d8 fire damage and 3d8 radiant damage.</p>
+            <p class="indent">Then, you can curve the beam towards a new target that you can see within 30 feet of the previous target. The new target must also make a Dexterity saving throw, suffering the same effect on a failed save. The beam continues curving towards new targets until three targets fail the saving throw, there are no more valid targets (creatures that have already been targeted by this casting of the spell cannot be targeted again), or until you choose to stop.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th. You choose which damage type is increased.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of sulfur</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Sensory Transfer" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_SENSORY_TRANSFER">
+        <supports>Artificer, Bard, Sorcerer, Wizard</supports>
+        <description>
+            <p>You point your finger towards a creature within range. If the creature is willing, you can choose to see through its eyes until the start of your next turn, becoming blinded to your own surroundings until then. Alternatively, you can choose to allow that creature to see through your eyes until the start of your next turn, becoming blinded to its own surroundings until then.</p>
+            <p class="indent">You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel around corners or through openings.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">1 round</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Sheltering Light" type="Spell" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_SPELL_SHELTERING_LIGHT">
+        <supports>Bard, Cleric, Druid</supports>
+        <description>
+            <p>A warm light shines down on a location you specify within range. Until the spell ends, a 30-foot-radius, 40-foot-high cylinder of bright light glimmers there. This light is sunlight.</p>
+            <p class="indent">When a creature within the area starts its turn with 0 hit points, this spell causes it to regain 15 hit points.</p>
+            <p class="indent">The spell ends once it has restored a total of 60 hit points. It ends early if you fall unconscious.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 7th level or higher, the total hit points that this spell can restore before it ends is increased by 15 for each slot level above 6th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">10 minutes</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    
+    
+</elements>
