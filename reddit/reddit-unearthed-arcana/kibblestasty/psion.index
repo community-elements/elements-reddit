@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+    <info>
+        <update version="0.0.1">
+            <file name="psion.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion.index" />
+        </update>
+    </info>
+    <files>
+        <file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/source.xml" />
+            <file name="class-psion.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/class-psion.xml" />
+            <file name="fighter-psychic-warrior.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/fighter-psychic-warrior.xml" />
+            <file name="monk-way-of-the-soul-knife.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/monk-way-of-the-soul-knife.xml" />
+            <file name="psion-expanded.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/psion-expanded.xml" />
+            <file name="psion-talents.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/psion-talents.xml" />
+            <file name="psionic-disciplines.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/psionic-disciplines.xml" />
+            <file name="psionic-spells.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/psionic-spells.xml" />
+
+    </files>
+</index>

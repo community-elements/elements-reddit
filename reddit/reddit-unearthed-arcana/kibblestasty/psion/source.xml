@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>KibblesTasty Psion Source</name>
+        <update version="0.0.1">
+            <file name="source.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/source.xml" />
+        </update>
+    </info>
+    
+    <element name="Kibbles’ Psion" type="Source" source="Core" id="ID_KIBBLESTASTY_GMBINDER_SOURCE_KIBBLESTASTYS_PSION">
+        <description>
+            <![CDATA[<p></p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">KTP</set>
+            <set name="url">https://www.gmbinder.com/share/-LZSNMgmChWNGW979hrj</set>
+            <set name="image"></set>
+            <set name="author" abbreviation="KT" url="https://www.reddit.com/u/KibblesTasty">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200207</set>
+        </setters>
+    </element>
+    
+    <element name="Kibbles’ Psion Expanded" type="Source" source="Core" id="ID_KIBBLESTASTY_GMBINDER_SOURCE_KIBBLESTASTYS_PSION_EXPANDED">
+        <description>
+            <![CDATA[<p></p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">KTPE</set>
+            <set name="url">https://www.gmbinder.com/share/-LvvFPhE7BCvj6PEeMsQ</set>
+            <set name="image"></set>
+            <set name="author" abbreviation="KT" url="https://www.reddit.com/u/KibblesTasty">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">true</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200207</set>
+        </setters>
+    </element>
+    
+</elements>

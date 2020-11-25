@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>KibblesTasty’s Psion Psionic Disciplines</name>
+        <update version="0.0.1">
+            <file name="psionic-disciplines.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/psionic-disciplines.xml" />
+        </update>
+    </info>
+    
+    <element name="Enhancement Discipline" type="Class Feature" source="Kibbles’ Psion" id="ID_KT_PSION_CLASS_FEATURE_PSIONIC_DISCIPLINE_ENHANCEMENT_DISCIPLINE">
+        <supports>Kibbles Psionic Discipline</supports>
+        <description>
+            <p>Enhancement is the ability to interact with a creature’s nature and abilities with your Psionic power.</p>
+            <h5>ENHANCING SKILL</h5>
+            <p>You can focus your psionics to enhance your abilities. Whenever you make a skill check using Strength or Dexterity, you can add 1d4 to the result.</p>
+            <div class="reference">
+                <div element="ID_KT_PSION_PSIONIC_POWER_ENHANCING_SURGE" />
+            </div>
+            <h5>ALTERNATE EFFECTS</h5>
+            <p>Additionally, when you learn the Enhancement psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td><em>heroism, longstrider, unlocked potential</em></td></tr>
+                <tr><td>2</td><td><em>alter self, enlarge/reduce, lesser restoration</em></td></tr>
+                <tr><td>3</td><td><em>catnap, haste</em></td></tr>
+                <tr><td>4</td><td><em>freedom of movement, stoneskin</em></td></tr>
+                <tr><td>5</td><td><em>greater restoration, skill empowerment</em></td></tr>
+            </table>
+            <p class="indent">If a spell can be cast at a higher level, you can spend an additional psi point to cast it at that higher level.</p>
+        </description>
+        <sheet>
+            <description>Whenever you make a skill check using Strength or Dexterity, you can add 1d4 to the result. You can duplicate the effects of spells by spending Psi Points as indicated in the Alternate Effects table. If a spell can be cast at a higher level, you can spend an additional psi point to cast it at that higher level.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_KT_PSIONIC_DISCIPLINE" />
+            <grant type="Spell" id="ID_KT_PSION_PSIONIC_POWER_ENHANCING_SURGE" spellcasting="Psion" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_KT_PSION_SPELL_UNLOCKED_POTENTIAL" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CATNAP" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Psion" known="true" requirements="[psi-limit:4]" />
+            <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" spellcasting="Psion" known="true" requirements="[psi-limit:4]" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SKILL_EMPOWERMENT" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+        </rules>
+    </element>
+    <element name="Projection Discipline" type="Class Feature" source="Kibbles’ Psion" id="ID_KT_PSION_CLASS_FEATURE_PSIONIC_DISCIPLINE_PROJECTION_DISCIPLINE">
+        <supports>Kibbles Psionic Discipline</supports>
+        <description>
+            <p>Projection is the ability to project what is in your mind to the outside world with your Psionic power.</p>
+            <h5>PROJECT ITEM</h5>
+            <p>When you gain this feature, as an action, you can use your powers to project an inanimate object you imagine into your hands. It cannot be larger than 3 feet on any side or weigh more than 10 pounds, and is clearly ethereal in nature. This item behaves as a solid object.</p>
+            <p class="indent">Projected items fade after 1 minute, and you can have no more than 3 projected items at a time.</p>
+            <div class="reference">
+                <div element="ID_KT_PSION_PSIONIC_POWER_ASTRAL_CONSTRUCT" />
+            </div>
+        </description>
+        <sheet action="Action">
+            <description>You can use your powers to project an inanimate object you imagine into your hands. It cannot be larger than 3 feet on any side or weigh more than 10 pounds, and is clearly ethereal in nature. This item behaves as a solid object. Projected items fade after 1 minute, and you can have no more than 3 projected items at a time.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_KT_PSIONIC_DISCIPLINE" />
+            <grant type="Spell" id="ID_KT_PSION_PSIONIC_POWER_ASTRAL_CONSTRUCT" spellcasting="Psion" known="true" />
+        </rules>
+    </element>
+    <element name="Telekinesis Discipline" type="Class Feature" source="Kibbles’ Psion" id="ID_KT_PSION_CLASS_FEATURE_PSIONIC_DISCIPLINE_TELEKINESIS_DISCIPLINE">
+        <supports>Kibbles Psionic Discipline</supports>
+        <description>
+            <p>Telekinesis is the ability to interact with physical objects and energy with your psionic powers.</p>
+            <h5>TELEKINETIC HANDS</h5>
+            <p>When you gain this feature, you can manipulate small objects within 30 feet with your mind as if using your hand to interact with it. You can use this power to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You cannot Attack, activate magical items, or carry more than 10 pounds in this manner. You can move an item you are controlling in this way up to 30 feet during your turn.</p>
+            <p class="indent">You can spend 1 psi point to increase how much you can lift by 100 pounds for 1 turn.</p>
+            <div class="reference">
+                <div element="ID_KT_PSION_PSIONIC_POWER_TELEKINETIC_FORCE" />
+            </div>
+            <h5>ALTERNATE EFFECTS</h5>
+            <p>Additionally, when you learn the Telekinesis psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td><em>jump, catapult, thunderwave</em></td></tr>
+                <tr><td>2</td><td><em>levitate, dust devil, shatter</em></td></tr>
+                <tr><td>3</td><td><em>fly, erupting earth</em></td></tr>
+                <tr><td>4</td><td><em>Otiluke’s resilient sphere</em></td></tr>
+                <tr><td>5</td><td><em>telekinesis, wall of force</em></td></tr>
+            </table>
+            <p class="indent">If a spell can be cast at a higher level, you can spend an additional psi point to cast it at that higher level.</p>
+        </description>
+        <sheet>
+            <description>You can manipulate small objects within 30 feet with your mind as if using your hand to interact with it. You can use this power to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You cannot Attack, activate magical items, or carry more than 10 pounds in this manner. You can move an item you are controlling in this way up to 30 feet during your turn. You can spend 1 psi point to increase how much you can lift by 100 pounds for 1 turn. You can duplicate the effects of spells by spending Psi Points as indicated in the Alternate Effects table. If a spell can be cast at a higher level, you can spend an additional psi point to cast it at that higher level.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_KT_PSIONIC_DISCIPLINE" />
+            <grant type="Spell" id="ID_KT_PSION_PSIONIC_POWER_TELEKINETIC_FORCE" spellcasting="Psion" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_JUMP" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CATAPULT" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEVITATE" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_DUST_DEVIL" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLY" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" spellcasting="Psion" known="true" requirements="[psi-limit:4]" />
+            <grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+        </rules>
+    </element>
+    <element name="Telepathy Discipline" type="Class Feature" source="Kibbles’ Psion" id="ID_KT_PSION_CLASS_FEATURE_PSIONIC_DISCIPLINE_TELEPATHY_DISCIPLINE">
+        <supports>Kibbles Psionic Discipline</supports>
+        <description>
+            <p>Telepathy is the ability to interact with the minds of other creatures using your psionic abilities.</p>
+            <h5>TELEPATHIC COMMUNICATION</h5>
+            <p>When you gain this feature, you can communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</p>
+            <div class="reference">
+                <div element="ID_KT_PSION_PSIONIC_POWER_TELEPATHIC_INTRUSION" />
+            </div>
+            <h5>ALTERNATE EFFECTS</h5>
+            <p>Additionally, when you learn the Telepathy psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td><em>compelled query, command, cause fear</em></td></tr>
+                <tr><td>2</td><td><em>detect thoughts, mind spike, suggestion</em></td></tr>
+                <tr><td>3</td><td><em>delve mind, fear, enemies abound</em></td></tr>
+                <tr><td>4</td><td><em>dominate beast, compulsion, confusion</em></td></tr>
+                <tr><td>5</td><td><em>dominate person, modify memory, telepathic bond, synaptic static</em></td></tr>
+            </table>
+            <p class="indent">If a spell can be cast at a higher level, you can spend an additional psi point to cast it at that higher level.</p>
+        </description>
+        <sheet>
+            <description>You can communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language. You can duplicate the effects of spells by spending Psi Points as indicated in the Alternate Effects table. If a spell can be cast at a higher level, you can spend an additional psi point to cast it at that higher level.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_KT_PSIONIC_DISCIPLINE" />
+            <grant type="Spell" id="ID_KT_PSION_PSIONIC_POWER_TELEPATHIC_INTRUSION" spellcasting="Psion" known="true" />
+            <grant type="Spell" id="ID_KT_PSION_SPELL_COMPELLED_QUERY" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_PHB_SPELL_COMMAND" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_PHB_SPELL_CAUSE_FEAR" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_MIND_SPIKE" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_KT_PSION_SPELL_DELVE_MIND" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEAR" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ENEMIES_ABOUND" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" spellcasting="Psion" known="true" requirements="[psi-limit:4]" />
+            <grant type="Spell" id="ID_PHB_SPELL_COMPULSION" spellcasting="Psion" known="true" requirements="[psi-limit:4]" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" spellcasting="Psion" known="true" requirements="[psi-limit:4]" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+            <grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+            <grant type="Spell" id="ID_PHB_SPELL_TELEPATHIC_BOND" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SYNAPTIC_STATIC" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+        </rules>
+    </element>
+    <element name="Transposition Discipline" type="Class Feature" source="Kibbles’ Psion" id="ID_KT_PSION_CLASS_FEATURE_PSIONIC_DISCIPLINE_TRANSPOSITION_DISCIPLINE">
+        <supports>Kibbles Psionic Discipline</supports>
+        <description>
+            <p>Transposition is the ability to modify the properties of space and manipulate dimensional boundaries with your psionic powers.</p>
+            <h5>PHASING STEPS</h5>
+            <p>When you gain this feature, you can pass through difficult terrain without expending additional movement, including the spaces of friendly creatures.</p>
+            <div class="reference">
+                <div element="ID_KT_PSION_PSIONIC_POWER_PHASE_RIFT" />
+            </div>
+            <h5>ALTERNATE EFFECTS</h5>
+            <p>Additionally, when you learn the Transposition psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td><em>expeditious retreat, flicker, zephyr strike</em></td></tr>
+                <tr><td>2</td><td><em>misty step, blur, pass without trace</em></td></tr>
+                <tr><td>3</td><td><em>blink, nondetection, thunder step</em></td></tr>
+                <tr><td>4</td><td><em>banish, dimension door</em></td></tr>
+                <tr><td>5</td><td><em>far step, steel wind strike</em></td></tr>
+            </table>
+            <p class="indent">If a spell can be cast at a higher level, you can spend an additional psi point to cast it at that higher level.</p>
+        </description>
+        <sheet>
+            <description>You can pass through difficult terrain without expending additional movement, including the spaces of friendly creatures. You can duplicate the effects of spells by spending Psi Points as indicated in the Alternate Effects table. If a spell can be cast at a higher level, you can spend an additional psi point to cast it at that higher level.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_KT_PSIONIC_DISCIPLINE" />
+            <grant type="Spell" id="ID_KT_PSION_PSIONIC_POWER_PHASE_RIFT" spellcasting="Psion" known="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_KT_PSION_SPELL_FLICKER" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLUR" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINK" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISH" spellcasting="Psion" known="true" requirements="[psi-limit:4]" />
+            <grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" spellcasting="Psion" known="true" requirements="[psi-limit:4]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_FAR_STEP" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+        </rules>
+    </element>
+    <element name="Psychokinetics Discipline" type="Class Feature" source="Kibbles’ Psion" id="ID_KT_PSION_CLASS_FEATURE_PSIONIC_DISCIPLINE_PSYCHOKINETICS_DISCIPLINE">
+        <supports>Kibbles Psionic Discipline</supports>
+        <description>
+            <p>Psychokinetics is the mental art of spontaneously creating and controlling energy; sapping energy to freeze or spontaneously creating it create bursts of fire or arcs of lightning. Dangerous and destructive, it provides devestating power.</p>
+            <h5>ENERGY CREATION</h5>
+            <p>When you gain this feature, you can convert your power into elemental form, allowing to produce minor flames, lightning things you touch on fire, freeze small amounts of liquid, or produce sparks of lightning. You can illuminate up to 10 feet of bright light with fire or lightning.</p>
+            <div class="reference">
+                <div element="ID_KT_PSION_PSIONIC_POWER_ELEMENTAL_BLAST" />
+            </div>
+            <h5>ALTERNATE EFFECTS</h5>
+            <p>Additionally, when you learn the Psychokinetics psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td><em>burning hands, ice knife, thunderwave</em></td></tr>
+                <tr><td>2</td><td><em>flaming sphere, scorching ray</em></td></tr>
+                <tr><td>3</td><td><em>fireball, lightning bolt</em></td></tr>
+                <tr><td>4</td><td><em>ice storm, wall of flame</em></td></tr>
+                <tr><td>5</td><td><em>cone of cold, destructive wave</em></td></tr>
+            </table>
+            <p class="indent">If a spell can be cast at a higher level, you can spend an additional psi point to cast it at that higher level.</p>
+            <h5>SPECIALIZATIONS</h5>
+            <p>When you take this Discipline, you may (but do not have to) select a specialization from the following list. You may only select a specialization at the time of gaining the Discipline, and cannot change or remove a Specialization once selected.</p>
+            <h5 class="caption">CRYOKINETIC</h5>
+            <p>You can only deal Cold damage with Elemental Blast. Once per turn, when a target takes Cold damage from your Elemental Blast, it must make a Constitution saving throw, or become restrained by ice until the end of its next turn.</p>
+            <p class="indent">When using your Psionics feature to cast a spell under Alternate Effects, the damage of the spell becomes Cold damage.</p>
+            <h5 class="caption">ELECTROKINETIC</h5>
+            <p>You can only deal Lightning damage with Elemental Blast, but the size of the damage dice of Lightning damage (both the initial damage and arc damage ) is increased by one step (to a d10 initial damage and d10 additional damage per point spent on Amplified, and 1d6 arc damage to a nearby target per die of initial damage).</p>
+            <p class="indent">When using your Psionics feature to cast a spell under Alternate Effects, the damage of the spell becomes Lightning damage.</p>
+            <h5 class="caption">PYROKINETIC</h5>
+            <p>You can only deal Fire damage with Elemental Blast, but the size of the damage dice of fire damage (both the initial damage and burn damage) is increased by one step (to a d10 initial damage and d10 additional damage per point spend on Amplified, and 1d6 burn damage at the start of their turn per die of initial damage).</p>
+            <p class="indent">When using your Psionics feature to cast a spell under Alternate Effects, the damage of the spell becomes Fire damage.</p>
+        </description>
+        <sheet>
+            <description>You can convert your power into elemental form, allowing to produce minor flames, lightning things you touch on fire, freeze small amounts of liquid, or produce sparks of lightning. You can illuminate up to 10 feet of bright light with fire or lightning. You can duplicate the effects of spells by spending Psi Points as indicated in the Alternate Effects table. If a spell can be cast at a higher level, you can spend an additional psi point to cast it at that higher level.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_KT_PSIONIC_DISCIPLINE" />
+            <grant type="Spell" id="ID_KT_PSION_PSIONIC_POWER_ELEMENTAL_BLAST" spellcasting="Psion" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Psion" known="true" requirements="[psi-limit:1]" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Psion" known="true" requirements="[psi-limit:2]" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" spellcasting="Psion" known="true" requirements="[psi-limit:3]" />
+            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" spellcasting="Psion" known="true" requirements="[psi-limit:4]" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FLAME" spellcasting="Psion" known="true" requirements="[psi-limit:4]" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+            <grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" spellcasting="Psion" known="true" requirements="[psi-limit:5]" />
+            <select type="Class Feature" name="Psychokinetic Specialization (Optional)" optional="true" supports="Kibbles Psychokinetic Specialization" />
+        </rules>
+    </element>
+        <element name="Cryokinetic" type="Class Feature" source="Kibbles’ Psion" id="ID_KT_PSION_CLASS_FEATURE_PSYCHOKINETIC_SPECIALIZATION_CRYOKINETIC">
+            <description>
+                <p>You can only deal Cold damage with Elemental Blast. Once per turn, when a target takes Cold damage from your Elemental Blast, it must make a Constitution saving throw, or become restrained by ice until the end of its next turn.</p>
+                <p class="indent">When using your Psionics feature to cast a spell under Alternate Effects, the damage of the spell becomes Cold damage.</p>
+            </description>
+            <sheet>
+                <description>You can only deal Cold damage with Elemental Blast. Once per turn, when a target takes Cold damage from your Elemental Blast, it must make a Constitution saving throw, or become restrained by ice until the end of its next turn. When using your Psionics feature to cast a spell under Alternate Effects, the damage of the spell becomes Cold damage.</description>
+            </sheet>
+        </element>
+        <element name="Electrokinetic" type="Class Feature" source="Kibbles’ Psion" id="ID_KT_PSION_CLASS_FEATURE_PSYCHOKINETIC_SPECIALIZATION_ELECTROKINETIC">
+            <description>
+                <p>You can only deal Lightning damage with Elemental Blast, but the size of the damage dice of Lightning damage (both the initial damage and arc damage ) is increased by one step (to a d10 initial damage and d10 additional damage per point spent on Amplified, and 1d6 arc damage to a nearby target per die of initial damage).</p>
+                <p class="indent">When using your Psionics feature to cast a spell under Alternate Effects, the damage of the spell becomes Lightning damage.</p>
+            </description>
+            <sheet>
+                <description>You can only deal Lightning damage with Elemental Blast, but the size of the damage dice of Lightning damage (both the initial damage and arc damage ) is increased by one step (to a d10 initial damage and d10 additional damage per point spent on Amplified, and 1d6 arc damage to a nearby target per die of initial damage). When using your Psionics feature to cast a spell under Alternate Effects, the damage of the spell becomes Lightning damage.</description>
+            </sheet>
+        </element>
+        <element name="Pyrokinetic" type="Class Feature" source="Kibbles’ Psion" id="ID_KT_PSION_CLASS_FEATURE_PSYCHOKINETIC_SPECIALIZATION_PYROKINETIC">
+            <description>
+                <p>You can only deal Fire damage with Elemental Blast, but the size of the damage dice of fire damage (both the initial damage and burn damage) is increased by one step (to a d10 initial damage and d10 additional damage per point spend on Amplified, and 1d6 burn damage at the start of their turn per die of initial damage).</p>
+                <p class="indent">When using your Psionics feature to cast a spell under Alternate Effects, the damage of the spell becomes Fire damage.</p>
+            </description>
+            <sheet>
+                <description>You can only deal Fire damage with Elemental Blast, but the size of the damage dice of fire damage (both the initial damage and burn damage) is increased by one step (to a d10 initial damage and d10 additional damage per point spend on Amplified, and 1d6 burn damage at the start of their turn per die of initial damage). When using your Psionics feature to cast a spell under Alternate Effects, the damage of the spell becomes Fire damage.</description>
+            </sheet>
+        </element>
+
+</elements>

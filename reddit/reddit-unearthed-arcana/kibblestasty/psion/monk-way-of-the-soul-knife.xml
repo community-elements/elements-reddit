@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Way of the Soul Knife Monastic Tradition</name>
+        <update version="0.0.1">
+            <file name="monk-way-of-the-soul-knife.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/psion/monk-way-of-the-soul-knife.xml" />
+        </update>
+    </info>
+    
+    <element name="Way of the Soul Knife" type="Archetype" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_MONK_WAY_OF_THE_SOUL_KNIFE">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>Monks of the Way of the Soul Knife are monks who have learned to harnass and focus their ki, using their inner will and focus to control psionic powers - primarily into a blade of pure Psionic power: a Soul Knife.</p>
+            <h5>SOULKNIFE QUIRKS</h5>
+            <p>The following are some optional quirks for a player of this Way.</p>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>Quirk</td></tr>
+                </thead>
+                <tr><td>1</td><td>You carry around a bladeless sword hilt for your Soul Knife blade.</td></tr>
+                <tr><td>2</td><td>You occasionally attempt to cut fruit with your Soul Knife.</td></tr>
+                <tr><td>3</td><td>You refer to your actions as the will of the living Ki.</td></tr>
+                <tr><td>4</td><td>You view killing things with your psionic powers as evil, but killing things with your Soul Knife as perfectly okay.</td></tr>
+                <tr><td>5</td><td>You have endless platitudes about temperance and control.</td></tr>
+                <tr><td>6</td><td>You practice obscure martial art form stances every morning.</td></tr>
+            </table>
+            <div element="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_SOUL_KNIFE" />
+            <div element="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_PSIONIC_KI" />
+            <div element="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_ART_OF_THE_SOUL_KNIFE" />
+            <div element="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_POWER_OF_THE_MIND" />
+            <div element="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_TRANSCENDENT_KNIFE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_SOUL_KNIFE" level="3" />
+            <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_PSIONIC_KI" level="3" />
+            <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_ART_OF_THE_SOUL_KNIFE" level="6" />
+            <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_POWER_OF_THE_MIND" level="11" />
+            <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_TRANSCENDENT_KNIFE" level="17" />
+        </rules>
+    </element>
+        <element name="Soul Knife" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_SOUL_KNIFE">
+            <description>
+                <p>Starting when you choose this tradition at 3rd level, you’ve learned to focus your ki into a psionic blade. As a bonus action, you can create a blade of pure scintillating psionic energy. The blade you create this way most typically takes the form of a knife-like blade projecting from your fist, but you can shape it however you choose. You can choose to create multiple blades, but any blade you are not holding vanishes at the end of your turn and must be resummoned.</p>
+                <p class="indent">Regardless of the form it takes, the weapon is a monk weapon for you, deals 1d8 psychic damage, and has the light, finesse, and thrown(20/60) properties.</p>
+            </description>
+            <sheet action="Bonus Action">
+                <description>You can create a blade of pure scintillating psionic energy. The weapon is a monk weapon for you, deals 1d8 psychic damage, and has the light, finesse, and thrown(20/60) properties. You can choose to create multiple blades, but any blade you are not holding vanishes at the end of your turn and must be resummoned.</description>
+            </sheet>
+        </element>
+        <element name="Psionic Ki" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_PSIONIC_KI">
+            <description>
+                <p>Additionally at 3rd level, you gain the Telekinetics Discipline; this can be found under the Disciplines list of the Psion class. You can use ki points as psi points, with a limit of 2 ki points. This limit increases to 3 ki points at level 9, 4 ki points at level 14, and 5 ki points at level 17.</p>
+                <div class="sidebar">
+                    <h5>Psion Integration</h5>
+                    <p>Alternatively, with the agreement of your DM, you can select any one Discipline from the Psion Psionic Disciplines List.</p>
+                </div>
+                <p class="indent">If you spend 1 ki or more on your Discipline abilities as part of your action on your turn, you can then immediately make one unarmed strike as a bonus action.</p>
+            </description>
+            <sheet>
+                <description>You can use ki points as psi points, with a psi limit of {{psi:limit}} ki points. If you spend 1 ki or more on your Discipline abilities as part of your action on your turn, you can then immediately make one unarmed strike as a bonus action.</description>
+            </sheet>
+            <rules>
+                <grant type="Class Feature" id="ID_KT_PSION_CLASS_FEATURE_PSIONIC_DISCIPLINE_TELEKINESIS_DISCIPLINE" />
+                <stat name="psi:limit" value="2" level="3" />
+                <stat name="psi:limit" value="1" level="9" />
+                <stat name="psi:limit" value="1" level="14" />
+                <stat name="psi:limit" value="1" level="17" />
+            </rules>
+        </element>
+        <element name="Art of the Soul Knife" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_ART_OF_THE_SOUL_KNIFE">
+            <description>
+                <p>Starting at 6th level, your expertise with the blade allows you to control it in unique and powerful ways.</p>
+                <p><strong>Extended Knife</strong></p>
+                <p class="indent">You can expend 1 ki point to give your weapon the Reach property until the end of your turn.</p>
+                <p><strong>Psionic Flurry</strong></p>
+                <p class="indent">When you make a Flurry of Blows, you can make the additional attacks with your Soul Knife.</p>
+                <p><strong>Soul Strike</strong></p>
+                <p class="indent">When you take the attack action, you can focus. Make a single attack using your action (forgoing any additional attacks gained from Extra Attack) to ignore all armor a creature has and treating its AC as 10 + its dexterity. On a hit, the creature takes additional damage equal to your wisdom modifier.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_ART_OF_THE_SOUL_KNIFE_EXTENDED_KNIFE" level="6" />
+                <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_ART_OF_THE_SOUL_KNIFE_PSIONIC_FLURRY" level="6" />
+                <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_ART_OF_THE_SOUL_KNIFE_SOUL_STRIKE" level="6" />
+            </rules>
+        </element>
+            <element name="Extended Knife" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_ART_OF_THE_SOUL_KNIFE_EXTENDED_KNIFE">
+                <description>
+                    <p>You can expend 1 ki point to give your weapon the Reach property until the end of your turn.</p>
+                </description>
+                <sheet usage="1 Ki Point">
+                    <description>You can give your weapon the Reach property until the end of your turn.</description>
+                </sheet>
+            </element>
+            <element name="Psionic Flurry" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_ART_OF_THE_SOUL_KNIFE_PSIONIC_FLURRY">
+                <description>
+                    <p>When you make a Flurry of Blows, you can make the additional attacks with your Soul Knife.</p>
+                </description>
+                <sheet>
+                    <description>When you make a Flurry of Blows, you can make the additional attacks with your Soul Knife.</description>
+                </sheet>
+            </element>
+            <element name="Soul Strike" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_ART_OF_THE_SOUL_KNIFE_SOUL_STRIKE">
+                <description>
+                    <p>When you take the attack action, you can focus. Make a single attack using your action (forgoing any additional attacks gained from Extra Attack) to ignore all armor a creature has and treating its AC as 10 + its dexterity. On a hit, the creature takes additional damage equal to your wisdom modifier.</p>
+                </description>
+                <sheet>
+                    <description>When you take the attack action, you can focus. Make a single attack using your action (forgoing any additional attacks gained from Extra Attack) to ignore all armor a creature has and treating its AC as 10 + its dexterity. On a hit, the creature takes an additional {{wisdom:modifier}} damage.</description>
+                </sheet>
+            </element>
+        <element name="Power of the Mind" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_POWER_OF_THE_MIND">
+            <description>
+                <p>Starting at 11th level, your Psionic abilities manifest more completely, giving you greater control and power in your psionic abilities.</p>
+                <p><strong>Ethereal Sweep</strong></p>
+                <p class="indent">When you use Extended Knife, you can sweep or stab through multiple creatures with a single blow. Once per turn, when you make an attack with your Soul Knife, you can make a single additional weapon attack with your Soul Knife against another creature within range.</p>
+                <p><strong>Consumptive Blade</strong></p>
+                <p class="indent">Whenever you kill a creature with your Soul Knife that has an Intelligence of 6 or higher, you can use your reaction draw in part of their Psionic essence. You regain 1d4 hit points and 1 expended ki point.</p>
+                <p><strong>Empowered Discipline</strong></p>
+                <p class="indent">When you use your Discipline, you can expend 1 ki point for free without exhausting the ki point on empowering the Psionic Power granted by the Discipline (this cannot be used on the spells granted by the Discipline).</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_POWER_OF_THE_MIND_ETHEREAL_SWEEP" level="11" />
+                <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_POWER_OF_THE_MIND_CONSUMPTIVE_BLADE" level="11" />
+                <grant type="Archetype Feature" id="ID_KT_PSION_ARCHETYPE_FEATURE_POWER_OF_THE_MIND_EMPOWERED_DISCIPLINE" level="11" />
+            </rules>
+        </element>
+            <element name="Ethereal Sweep" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_POWER_OF_THE_MIND_ETHEREAL_SWEEP">
+                <description>
+                    <p>When you use Extended Knife, you can sweep or stab through multiple creatures with a single blow. Once per turn, when you make an attack with your Soul Knife, you can make a single additional weapon attack with your Soul Knife against another creature within range.</p>
+                </description>
+                <sheet>
+                    <description>Once per turn, when you make an attack with your Soul Knife, you can make a single additional weapon attack with your Soul Knife against another creature within range.</description>
+                </sheet>
+            </element>
+            <element name="Consumptive Blade" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_POWER_OF_THE_MIND_CONSUMPTIVE_BLADE">
+                <description>
+                    <p>Whenever you kill a creature with your Soul Knife that has an Intelligence of 6 or higher, you can use your reaction draw in part of their Psionic essence. You regain 1d4 hit points and 1 expended ki point.</p>
+                </description>
+                <sheet action="Reaction">
+                    <description>Whenever you kill a creature with your Soul Knife that has an Intelligence of 6 or higher, you can draw in part of their Psionic essence. You regain 1d4 hit points and 1 expended ki point.</description>
+                </sheet>
+            </element>
+            <element name="Empowered Discipline" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_POWER_OF_THE_MIND_EMPOWERED_DISCIPLINE">
+                <description>
+                    <p>When you use your Discipline, you can expend 1 ki point for free without exhausting the ki point on empowering the Psionic Power granted by the Discipline (this cannot be used on the spells granted by the Discipline).</p>
+                </description>
+                <sheet>
+                    <description>When you use your Discipline, you can expend 1 ki point for free without exhausting the ki point on empowering the Psionic Power granted by the Discipline (this cannot be used on the spells granted by the Discipline).</description>
+                </sheet>
+            </element>
+        <element name="Transcendent Knife" type="Archetype Feature" source="Kibbles’ Psion" id="ID_KT_PSION_ARCHETYPE_FEATURE_SOUL_KNIFE_TRANSCENDENT_KNIFE">
+            <description>
+                <p>Starting at 17th level, your Soul Knife becomes a peerless weapon. You can add a +1 to its attack and damage rolls. You can choose for your knife to effect inanimate material, causing it to gain the Siege property and deal force damage to it when you choose. Reactions that parry or block to add Armor Class against an attack are ineffective against attacks made with the Soul Knife.</p>
+                <p class="indent">Additionally, critical strikes from your weapon rends soul of the target. If a creature would have less than 50 fifty hit points after taking damage from your critical strike, the creature must make a Charisma saving throw. On failure, its Charisma becomes zero and it dies.</p>
+            </description>
+            <sheet>
+                <description>You can add a +1 to your Soul Knife’s attack and damage rolls. You can choose for your knife to effect inanimate material, causing it to gain the Siege property and deal force damage to it when you choose. Reactions that parry or block to add Armor Class against an attack are ineffective against attacks made with the Soul Knife. Additionally, critical strikes from your weapon rends soul of the target. If a creature would have less than 50 fifty hit points after taking damage from your critical strike, the creature must make a Charisma saving throw. On failure, its Charisma becomes zero and it dies.</description>
+            </sheet>
+        </element>
+    
+    <!-- Magic Items -->
+        <element name="Psi Focus Crystal, +1" type="Magic Item" source="Kibbles’ Psion" id="ID_KT_PSION_MAGIC_ITEM_PSI_FOCUS_CRYSTAL1">
+            <description>
+                <p>Embedded in a ring, braclet, bladeless sword hilt, or similar item, this small gem seems to have minimal value to the casual observer, but has perfect psionic resonance.</p>
+                <p class="indent">While carried by a Way of the Soul Knife Monk, that monk can use this crystal to focus a purer Soul Knife, adding +1 to attack and damage rolls with their Soul Knife.</p>
+            </description>
+            <setters>
+                <set name="category">Wondrous Items</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="0">0 lb.</set>
+                <set name="type">Wondrous Item</set>
+                <set name="rarity">Uncommon</set>
+                <set name="enhancement">1</set>
+            </setters>
+        </element>
+        <element name="Psi Focus Crystal, +2" type="Magic Item" source="Kibbles’ Psion" id="ID_KT_PSION_MAGIC_ITEM_PSI_FOCUS_CRYSTAL2">
+            <description>
+                <p>Embedded in a ring, braclet, bladeless sword hilt, or similar item, this small gem seems to have minimal value to the casual observer, but has perfect psionic resonance.</p>
+                <p class="indent">While carried by a Way of the Soul Knife Monk, that monk can use this crystal to focus a purer Soul Knife, adding +2 to attack and damage rolls with their Soul Knife.</p>
+            </description>
+            <setters>
+                <set name="category">Wondrous Items</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="0">0 lb.</set>
+                <set name="type">Wondrous Item</set>
+                <set name="rarity">Rare</set>
+                <set name="enhancement">2</set>
+            </setters>
+        </element>
+        <element name="Psi Focus Crystal, +3" type="Magic Item" source="Kibbles’ Psion" id="ID_KT_PSION_MAGIC_ITEM_PSI_FOCUS_CRYSTAL3">
+            <description>
+                <p>Embedded in a ring, braclet, bladeless sword hilt, or similar item, this small gem seems to have minimal value to the casual observer, but has perfect psionic resonance.</p>
+                <p class="indent">While carried by a Way of the Soul Knife Monk, that monk can use this crystal to focus a purer Soul Knife, adding +3 to attack and damage rolls with their Soul Knife.</p>
+            </description>
+            <setters>
+                <set name="category">Wondrous Items</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="0">0 lb.</set>
+                <set name="type">Wondrous Item</set>
+                <set name="rarity">Very Rare</set>
+                <set name="enhancement">3</set>
+            </setters>
+        </element>
+</elements>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Stoneheart Sorcerous Origin</name>
+        <update version="0.0.1">
+            <file name="sorcerer-stoneheart.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty/sorcerer-stoneheart.xml" />
+        </update>
+    </info>
+    
+    <element name="Stoneheart Sorcerer" type="Source" source="Core" id="ID_KIBBLESTASTY_GMBINDER_SOURCE_STONEHEART">
+        <description>
+            <![CDATA[<p></p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">SS</set>
+            <set name="url">https://www.gmbinder.com/share/-MCVeS57lDErNlwOKp1F</set>
+            <set name="image"></set>
+            <set name="author" abbreviation="KT" url="https://www.gmbinder.com/profile/kibblestasty">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200930</set>
+        </setters>
+    </element>
+
+    <element name="Stoneheart" type="Archetype" source="Stoneheart Sorcerer" id="ID_KT_SS_ARCHETYPE_SORCERER_STONEHEART">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p>Your blood comes from a steadfast lineage, touched by the elemental forces of the earth itself. Be it the blood of ancient dwarves first formed from stone or from a dao lineage from another plane, your blood runs thicker and your heart beats more steady than others. While particularly common among the genasi and the dwarves, these sorcerers can appear in any bloodline with ancient roots.</p>
+            <p class="indent">Blessed with natural resilience and command over the stones on which they stand, most these sorcerers are solid and deliberate in both action and thought, slow to act, but once set on a course they become stubborn and immovable from their chosen path.</p>
+            <h5 class="caption">VARIANT: ORIGIN SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Sorcerer Level</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>heavy blow*</em></td></tr>
+                <tr><td>3rd</td><td><em>earth ripple*</em></td></tr>
+                <tr><td>5th</td><td><em>erupting earth</em></td></tr>
+                <tr><td>7th</td><td><em>stoneskin</em></td></tr>
+                <tr><td>9th</td><td><em>wall of stone</em></td></tr>
+            </table>
+            <div element="ID_KT_SS_ARCHETYPE_FEATURE_STEADFAST_PROFICIENCIES" />
+            <div element="ID_KT_SS_ARCHETYPE_FEATURE_STONES_DURABILITY" />
+            <div element="ID_KT_SS_ARCHETYPE_FEATURE_STONES_AEGIS" />
+            <div element="ID_KT_SS_ARCHETYPE_FEATURE_STONEWALK" />
+            <div element="ID_KT_SS_ARCHETYPE_FEATURE_UNITY_OF_STONE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_KT_SS_SPELL_HEAVY_BLOW" spellcasting="Sorcerer" known="true" level="1" />
+            <grant type="Spell" id="ID_KT_SS_SPELL_EARTH_RIPPLE" spellcasting="Sorcerer" known="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_ERUPTING_EARTH" spellcasting="Sorcerer" known="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" spellcasting="Sorcerer" known="true" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" spellcasting="Sorcerer" known="true" level="9" />
+            <grant type="Archetype Feature" id="ID_KT_SS_ARCHETYPE_FEATURE_STEADFAST_PROFICIENCIES" level="1" />
+            <grant type="Archetype Feature" id="ID_KT_SS_ARCHETYPE_FEATURE_STONES_DURABILITY" level="1" />
+            <grant type="Archetype Feature" id="ID_KT_SS_ARCHETYPE_FEATURE_STONES_AEGIS" level="6" />
+            <grant type="Archetype Feature" id="ID_KT_SS_ARCHETYPE_FEATURE_STONEWALK" level="14" />
+            <grant type="Archetype Feature" id="ID_KT_SS_ARCHETYPE_FEATURE_UNITY_OF_STONE" level="18" />
+        </rules>
+    </element>
+        <element name="Steadfast Proficiencies" type="Archetype Feature" source="Stoneheart Sorcerer" id="ID_KT_SS_ARCHETYPE_FEATURE_STEADFAST_PROFICIENCIES">
+            <description>
+                <p>At 1st level, you gain proficiency with shields, simple weapons, and martial weapons.</p>
+            </description>
+            <sheet display="false">
+                <description></description>
+            </sheet>
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            </rules>
+        </element>
+        <element name="Stone’s Durability" type="Archetype Feature" source="Stoneheart Sorcerer" id="ID_KT_SS_ARCHETYPE_FEATURE_STONES_DURABILITY">
+            <description>
+                <p>When you choose this Origin at 1st level, your form begins to harden, giving you considerable toughness and durability. Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.</p>
+                <p class="indent">Additionally, your skin is as tough as stone, sometimes even bearing rocky protrusions or rock-like texture. When unarmored, your durable form grants you an AC equals 10 + your Constitution modifier + your Strength or Charisma modifier (your choice).</p>
+            </description>
+            <sheet>
+                <description>When unarmored, your durable form grants you an AC of {{ac:stones durability}}.</description>
+            </sheet>
+            <rules>
+                <stat name="hp" value="level:sorcerer" />
+                <stat name="ac:stones durability:base" value="10" />
+                <stat name="ac:stones durability:dexterity" value="dexterity:modifier" />
+                <stat name="ac:stones durability:ability:base" value="constitution:modifier" bonus="base" />
+                <stat name="ac:stones durability:ability:base" value="charisma:modifier" bonus="base" />
+                <stat name="ac:stones durability:ability" value="ac:stones durability:ability:base" />
+                <stat name="ac:stones durability" value="ac:stones durability:base" />
+                <stat name="ac:stones durability" value="ac:stones durability:dexterity" />
+                <stat name="ac:stones durability" value="ac:stones durability:ability" />
+                <stat name="ac:calculation" value="ac:stones durability" bonus="calculation" equipped="[armor:none]" alt="Stone’s Durability (Monk)" />
+            </rules>
+        </element>
+        <element name="Stone’s Aegis" type="Archetype Feature" source="Stoneheart Sorcerer" id="ID_KT_SS_ARCHETYPE_FEATURE_STONES_AEGIS">
+            <description>
+                <p>Starting at 6th level, you can form a protective aegis around a target.</p>
+                <p class="indent">As a bonus action, you can expend 1 sorcery point to create an aegis protecting yourself or another allied creature you can see within 60 feet. The aegis is a visible aura of protection, though it’s appearance may vary. The aegis lasts for 1 minute, until you use it again, or until you are incapacitated.</p>
+                <p class="indent">Once per turn, when the aegis is struck by bludgeoning, piercing, or slashing damage, it absorbs some of the power from the attack and empowers you with that power. The damage the protected creature takes is reduced by 1d6 and you store the absorbed energy.</p>
+                <p class="indent">You store this energy until you strike a creature with a melee attack, at which point you can expend the stored charges to increase the damage roll of that attack by 1d6 per stored charge. You can store a maximum of two hits (2d6), and once the maximum is reached you must expend the stored power before the aegis can absorb more damage.</p>
+                <p class="indent">The maximum number of hits you can reduce the damage of and store energy from before expending it increases to three (3d6) at 11th level, and again to four at 17th level (4d6).</p>
+            </description>
+            <sheet action="Bonus Action" usage="1 sorcery point">
+                <description>You create an aegis protecting yourself or another allied creature you can see within 60 feet that lasts for up to 1 minute. The aegis is a visible aura of protection, though it’s appearance may vary. Once per turn, when the aegis is struck by bludgeoning, piercing, or slashing damage, it absorbs some of the power from the attack and empowers you with that power. The damage the protected creature takes is reduced by 1d6 and you store the absorbed energy. You store this energy until you strike a creature with a melee attack, at which point you can expend the stored charges to increase the damage roll of that attack by 1d6 per stored charge. You can store a maximum of {{stones-aegis:dice}} hits (d6 each).</description>
+                <description usage="Unlimited" level="18">You create an aegis protecting yourself and one other allied creature you can see within 60 feet that lasts for up to 1 minute. The aegis is a visible aura of protection, though it’s appearance may vary. Once per turn, when the aegis is struck by bludgeoning, piercing, or slashing damage, it absorbs some of the power from the attack and empowers you with that power. The damage the protected creature takes is reduced by 1d6 and you store the absorbed energy. You store this energy until you strike a creature with a melee attack, at which point you can expend the stored charges to increase the damage roll of that attack by 1d6 per stored charge. You can store a maximum of {{stones-aegis:dice}} hits (d6 each).</description>
+            </sheet>
+            <rules>
+                <stat name="stones-aegis:dice" value="2" level="6" />
+                <stat name="stones-aegis:dice" value="1" level="11" />
+                <stat name="stones-aegis:dice" value="1" level="17" />
+            </rules>
+        </element>
+        <element name="Stonewalk" type="Archetype Feature" source="Stoneheart Sorcerer" id="ID_KT_SS_ARCHETYPE_FEATURE_STONEWALK">
+            <description>
+                <p>Starting at 14th level, you gain a burrowing speed of 15 feet, allowing to travel through the earth. You can pass through soil and stone, but when you pass through stone you leave no hole behind you, becoming one with it and passing through. If you would end your turn inside of stone, you get pushed to where you entered the stone surface.</p>
+            </description>
+            <sheet>
+                <description>You can pass through soil and stone, but when you pass through stone you leave no hole behind you, becoming one with it and passing through. If you would end your turn inside of stone, you get pushed to where you entered the stone surface.</description>
+            </sheet>
+            <rules>
+                <stat name="speed:burrow" value="15" bonus="base" />
+            </rules>
+        </element>
+        <element name="Unity of Stone" type="Archetype Feature" source="Stoneheart Sorcerer" id="ID_KT_SS_ARCHETYPE_FEATURE_UNITY_OF_STONE">
+            <description>
+                <p>Starting at 18th level, you can convert raw strength into arcane might, and arcane might into raw strength. When you cast a spell, you can make your Strength modifier your spell casting modifier. When you make an attack, you can use your Charisma modifier in place of your Strength modifier for the attack and damage rolls.</p>
+                <p class="indent">Additionally, your Stone’s Aegis no longer requires Sorcerer points to use, and when you use it on someone other than yourself, both you and the target gain the benefits of the aegis.</p>
+            </description>
+            <sheet>
+                <description>When you cast a spell, you can make your Strength modifier your spell casting modifier. When you make an attack, you can use your Charisma modifier in place of your Strength modifier for the attack and damage rolls.</description>
+            </sheet>
+            <rules>
+            </rules>
+        </element>
+
+
+    <element name="Impact" type="Spell" source="Stoneheart Sorcerer" id="ID_KT_SS_SPELL_IMPACT">
+        <supports>Druid, KT Occultist, Sorcerer</supports>
+        <description>
+            <p>You impart great force into a target you touch. Make a melee spell attack against the target. On hit, the target takes 1d10 bludgeoning damage, and is knocked 5 feet directly away from you.</p>
+            <p class="indent">The spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous.</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Stone Forming" type="Spell" source="Stoneheart Sorcerer" id="ID_KT_SS_SPELL_STONE_FORMING">
+        <supports>Druid, KT Occultist, Sorcerer</supports>
+        <description>
+            <p>You touch a stone surface or the ground, and call forth stone that shapes itself to your command. You can make any roughly shaped item from the stone, including functional simple or martial melee weapons. You are proficient with these weapons. Items crumble to pebbles after 1 minute.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Instantaneous.</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Heavy Blow" type="Spell" source="Stoneheart Sorcerer" id="ID_KT_SS_SPELL_HEAVY_BLOW">
+        <supports>Druid, KT Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You impart great heft to a weapon you are holding. The first time you hit with a melee weapon attack with that weapon during the spell’s duration, your blow strikes with great force, and the attack deals an extra 2d6 bludgeoning damage to the target and must succeed a Constitution saving throw, or become stunned until the start of its next turn.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 2nd. When cast with a spell slot of 4th level or higher, a target that fails the constitution saving throw is stunned until the end of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, up to 1 minute.</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Earth Ripple" type="Spell" source="Stoneheart Sorcerer" id="ID_KT_SS_SPELL_EARTH_RIPPLE">
+        <supports>Druid, KT Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You cause the earth to deform and ripple, a target creature must make a Dexterity saving throw or suffer one of the following effects of your choice:</p>
+            <ul>
+                <li>It is pulled into the earth, taking 1d6 bludgeoning damage and have their movement speed reduced to zero until it or another creature spends an action to dig them free.</li>
+                <li>It is slammed in a direction of your choice, taking 2d8 bludgeoning damage, being moved 5 feet, and knocked prone.</li>
+                <li>It is impaled by a spike of rock, taking 4d8 piercing damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a cracked pebble</set>
+            <set name="duration">Instantaneous.</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Orbital Stones" type="Spell" source="Stoneheart Sorcerer" id="ID_KT_SS_SPELL_ORBITAL_STONES">
+        <supports>Druid, Sorcerer, Warlock</supports>
+        <description>
+            <p>You lift three small to medium rocks or similar objects from within 10 feet of you, causing them defy to gravity and slowly circle you. While all three are in orbit around you, you have total cover against ranged attacks. While two are in orbit, you have three quarters cover, and while only one remains, you have half cover. The spell ends when none of them are orbiting you.</p>
+            <p class="indent">As a bonus action while at least one object remains in orbit, you can magically fling it at target within 60 feet. Make a ranged spell attack roll. On hit, the target takes 2d12 bludgeoning damage and is knocked 5 feet directly away from you.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="duration">Concentration, Up to 1 Minute.</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+
+</elements>
