@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Half-Azer, Jungle Dwarf, and Tundra Dwarf</name>
+        <description>A collection of Dwarf subraces from reddit</description>
+        <author url="https://www.reddit.com/r/DnD/comments/bg1aja/ochomebrew_dwarven_subraces_revitalize_your/">Reddit u/TheArenaGuy</author>
+        <update version="0.0.1">
+            <file name="dwarf-subraces.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-DnD/races/dwarf-subraces.xml" />
+        </update>
+    </info>
+
+    <element name="Half-Azer" type="Sub Race" source="Reddit: DnD" id="ID_RDDT_SUBRACE_DWARF_HALFAZER">
+        <supports>Dwarf</supports>
+        <description>
+            <p>As a half-azer, you are locked in a constant struggle between worlds-that of your ancient dwarven liniage, and that of your relentless elemental cousins.</p>
+            <p>While it is true that youre brethren, the Azers, are beings of pure fire-crafted not born-you belong to a rare linn of dwarves who escaped the bonds of slavery before their blazing corruption by their fire giant and titan captors could be fully realised.</p>
+            <p>When you are angry, your hair becomes hot to the touch, and in sunlight, your skin shines witha brassy glow, often leading you to be ostracized by you're dwarven relatives. Even still, your natural affinity for fire drives you to a life of adventure as you fight with the flaming intensity of an inferno.</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span>Your Strength score increases by 1.<br/>
+                <span class="feature">Volcanic Resilience.</span>You have resistance to fire damage.<br/>
+                <span class="feature">Heat Weapon.</span>As a bonus action you cause one metal melee weapon you're holding to ignite. Forthe next miniute, when you hit a creature with that weapon, the attack deals extra fire damage equal to half your proficiency bonus (rounded down).<br/>
+                <span class="feature">Extra Language.</span>You can speak, read, and write Ignan
+            </p>
+        </description>
+        <setters>
+            <set name="sourceUrl">https://www.reddit.com/r/DnD/comments/bg1aja/ochomebrew_dwarven_subraces_revitalize_your/</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="1" />
+            <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_HALFAZER_DWARF_VOLCANIC_RESISTANCE" />
+            <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_HALFAZER_DWARF_HEAT_WEAPON" />      
+            <grant type="Language" id="ID_MM_LANGUAGE_IGNAN" />
+        </rules>
+    </element>
+    <element name="Volcanic Resistance" type="Racial Trait" source="Reddit: DnD" id="ID_RDDT_RACIAL_TRAIT_HALFAZER_DWARF_VOLCANIC_RESISTANCE">
+        <description>
+	    <p>You have resistance to fire damage.</p>
+	</description>
+        <sheet>
+            <description>You have resistance to fire damage.</description>
+        </sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+    </element>
+    <element name="Heat Weapon" type="Racial Trait" source="Reddit: DnD" id="ID_RDDT_RACIAL_TRAIT_HALFAZER_DWARF_HEAT_WEAPON">
+        <description>
+	    <p>As a bonus action you cause one metal melee weapon you're holding to ignite. Forthe next miniute, when you hit a creature with that weapon, the attack deals extra fire damage equal to half your proficiency bonus (rounded down).</p>
+	</description>
+        <sheet>
+            <description>As a bonus action you cause one metal melee weapon you're holding to ignite. Forthe next miniute, when you hit a creature with that weapon, the attack deals extra fire damage equal to half your proficiency bonus (rounded down).</description>
+        </sheet>
+    </element>
+
+
+    <element name="Jungle Dwarf" type="Sub Race" source="Reddit: DnD" id="ID_RDDT_SUBRACE_DWARF_JUNGLE">
+        <supports>Dwarf</supports>
+        <description>
+            <p>As a jungle dwarf, you are trained to hunt in small groups, and you are accustomed to a life divorced from society. The wild dwarves of Faerûn prownling in the wilderness of Chult, as well as the tenacious Aghar clan of Dragonlance, are jungle dwarves</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 1.<br/>
+                <span class="feature">Tribe Tactics.</span>Once per round on your turn, you have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of it, the ally isn't incapacitated, and the creature has taken damage since the end of your last turn.<br/>
+                <span class="feature">Expanded Tool List.</span>Your tool proficiency options from your dwarf traits also include the herbalism kit and the poisoner's kit.<br/>
+            </p>
+        </description>
+        <setters>
+            <set name="sourceUrl">https://www.reddit.com/r/DnD/comments/bg1aja/ochomebrew_dwarven_subraces_revitalize_your/</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="1" />
+            <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_JUNGLE_DWARF_TRIBE_TACTICS" />
+            <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_JUNGLE_DWARF_EXPANDED_TOOL_LIST" />
+        </rules>
+    </element>
+    <element name="Tribe Tactics" type="Racial Trait" source="Reddit: DnD" id="ID_RDDT_RACIAL_TRAIT_JUNGLE_DWARF_TRIBE_TACTICS">
+        <description>
+	    <p>Once per round on your turn, you have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of it, the ally isn't incapacitated, and the creature has taken damage since the end of your last turn</p>
+	</description>
+        <sheet>
+            <description>Once per round on your turn, you have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of it, the ally isn't incapacitated, and the creature has taken damage since the end of your last turn</description>
+        </sheet>
+    </element>
+
+    <element name="Expanded Tool List" type="Racial Trait" source="Reddit: DnD" id="ID_RDDT_RACIAL_TRAIT_JUNGLE_DWARF_EXPANDED_TOOL_LIST">
+        <description>
+	    <p>Your tool proficiency options from your dwarf traits also include the herbalism kit and the poisoner's kit.</p>
+	</description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Jungle Dwarf: Dwarven Tool Proficiency Expanded" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" /> 
+        </rules>
+    </element>
+
+    <element name="Tundra Dwarf" type="Sub Race" source="Reddit: DnD" id="ID_RDDT_SUBRACE_DWARF_TUNDRA">
+        <supports>Dwarf</supports>
+        <description>
+            <p>As a tundra dwarf, you are acclimated to the harsh realities of a cold world, both in temperature and in regards to isolation from others.  Generations spent steeping in mystical polar energies has granted your people an innate affinity for the arcane.  The arctic dwarves of Faerun are tundra dwarves, as are the Vrakar from the Icereach region in the Dragonlance setting</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span>Your Charisma score increases by 1.<br/>
+                <span class="feature">Arctic Armament.</span>When you reach 3rd level, you can cast spiritual weapon as a 2nd-level spell once with this trait.  When you use this version of spiritual weapon, the weapon deals cold damage instead of force damage.  When you reach 5th level, you can also cast elemental weapon once as a 3rd-level spell, choosing cold as the damage type.  You regain the ability to cast these spells with this trait when you finish a long rest.  Charisma is your spellcasting ability for these spells.<br/>
+		<span class="feature">Cold-Blooded.</span>You can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection
+            </p>
+        </description>
+        <setters>
+            <set name="sourceUrl">https://www.reddit.com/r/DnD/comments/bg1aja/ochomebrew_dwarven_subraces_revitalize_your/</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="1" />
+            <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_TUNDRA_DWARF_COLD-BLOODED" />
+            <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_TUNDRA_ARCTIC_ARMAMENT" level="3" />
+        </rules>
+    </element>
+    <element name="Cold-Blooded" type="Racial Trait" source="Reddit: DnD" id="ID_RDDT_RACIAL_TRAIT_TUNDRA_DWARF_COLD-BLOODED">
+        <description>
+	    <p>You can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection.</p>
+	</description>
+        <sheet>
+            <description>YYou can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection.</description>
+        </sheet>
+    </element>
+    
+    <element name="Arctic Armament" type="Racial Trait" source="Reddit: DnD" id="ID_RDDT_RACIAL_TRAIT_TUNDRA_DWARF_ARCTIC_ARMAMENT">
+        <description>
+	    <p>When you reach 3rd level, you can cast spiritual weapon as a 2nd-level spell once with this trait.  When you use this version of spiritual weapon, the weapon deals cold damage instead of force damage.  When you reach 5th level, you can also cast elemental weapon once as a 3rd-level spell, choosing cold as the damage type.  You regain the ability to cast these spells with this trait when you finish a long rest.  Charisma is your spellcasting ability for these spells.</p>
+	</description>
+        <sheet>
+            <description>You learn the spell spiritual weapon which you you can cast once as a 2nd level spell, when used the weapon will deal cold damage. At 5th level you can also cast the elemental weapon spell once as a 3rd level spell with cold as the required damage type. You regain the ability to cast these spells after a long rest. Charisma is your spellcasting ability for these spells.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" />
+      	    <grant type="Spell" id="ID_PHB_SPELL_ELEMENTAL_WEAPON" level="5"/>
+        </rules>
+    </element>
+</elements>
