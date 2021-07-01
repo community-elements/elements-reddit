@@ -25,5 +25,7 @@
 		<file name="dark-arts-players-companion.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/dark-arts-players-companion.index" />
 		<file name="kibblestasty.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/kibblestasty.index" />
 		<file name="blazing-dawn-players-companion.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion.index" />
+		<!-- need to be updated if ever moved off of my fork -->
+		<file name="ol-gus-errata-beastfolk.index" url="https://raw.githubusercontent.com/SamJenkins1/elements-reddit/master/reddit/reddit-unearthed-arcana/ol-gus-errata-beastfolk.index" />
 	</files>
 </index>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>Ol Gus' Errata: Beastfolk</name>
+        <update version="0.0.2">
+            <file name="ol-gus-errata-beastfolk.index" url="https://raw.githubusercontent.com/SamJenkins1/elements-reddit/master/reddit/reddit-unearthed-arcana/ol-gus-errata-beastfolk.index" />
+        </update>
+    </info>
+    <files>
+      <!-- Races -->
+        
+        <file name="race-aaratica.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/gus-errata-beastfolk/race-aaratica.xml" />
+        
+        <file name="race-skiouros.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/gus-errata-beastfolk/race-skiouros.xml" />
+
+      <!-- Miscellaneous -->
+    </files>
+</index>
