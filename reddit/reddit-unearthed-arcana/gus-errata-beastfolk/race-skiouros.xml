@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Skiouros</name>
+		<update version="0.2">
+			<file name="race-Skiouros.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Skiouros" type="Race" source="Old Gus' Errata: Beastfolk" id="ID_RACE_SKIOUROS">
+		<description>
+			<h4>SHADOW TAILS</h4>
+			<p>The skiouros are a race of beady-eyed, bushy tailed crepuscular people that prefer to live in dark woods. Skiouros have luxurious patches of color in their fur: usually inky blues, deep reds or royal purples, especially
+				on their tails and the tips of their ears. Their unique colorations often see them becoming prized prey for ursine, gnoll or orc tribes who use their pelts as signifiers of position or prestige. For this reason, most skiouros are secretive, and do
+				not trust other races and keep primarily to themselves and a loose network of family relations or close friends that live in the same area. They make their homes in the tops or bases of wide, ancient trees, and eat by
+				scavenging the edible plants of the wood, and hunting birds and snakes. Most skiouros are born as twins or triplets, and single births are considered auspicious, and thought of among their kind as if fate had something
+				special in store for them as an individual. Despite their secretive nature, Skiouros tend toward curiosity, and love to try new foods if they travel, pocketing anything that will keep so they have a snack
+				on hand for later.</p>
+			
+			<h4>SKIOUROS TRAITS</h4>
+			
+			<p class="indent"><strong><em>Ability Score Increase. </em></strong>Your Dexterity score increases by 2 and your wisdom increases by 1.</p>
+			<p class="indent"><strong><em>Age. </em></strong>Skiouros mature at 5 years, and live up to 25 years.</p>
+			<p class="indent"><strong><em>Alignment. </em></strong> Skiouros tend toward neutral alignments,and their independent streaks and natural curiosity see most tending toward chaos.</p>
+			<p class="indent"><strong><em>Size. </em></strong>Skiouros average about 3 feet tall and weigh about 40 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed. </em></strong>You have a base walking speed of 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision. </em></strong>Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Climber. </em></strong>You have a climbing speed equal to your walking speed, and when you aren’t wearing medium or heavy armor, you can descend headfirst.</p>
+			<p class="indent"><strong><em>Nimbleness. </em></strong>You can move through the space of any creature that is of a size larger than yours.</p>
+			<p class="indent"><strong><em>Sneaky. </em></strong>You are proficient in one of the following skills: Acrobatics, Sleight of Hand, Survival or Stealth.</p>
+			<p class="indent"><strong><em>Shadow Legacy. </em></strong>Once you reach 3rd level, you can cast the darkness spell; you must finish a long rest in order to cast the spell again using this trait. When you cast the darkness spell, you are able to see normally inside of it. Once you reach 5th level, you can also cast the locate animals or plants spell; you must finish a long rest in order to cast the spell again using this trait. Wisdom is your spellcasting ability for the spells.</p>
+			<p class="indent"><strong><em>Languages. </em></strong>You can speak, read and write Common and Skiourosi. Skiourosi is a chittering language of squeaks that are barely audible to most species, and is rarely spoken over distances further than 10 feet away.</p>
+			</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2"/>
+			<stat name="wisdom" value="1"/>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON"/>
+			<grant type="Language" id="ID_LANGUAGE_SKIOUROSI" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NIMBLENESS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CLIMBER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SNEAKY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SHADOW_LEGACY" />
+		</rules>
+	</element>
+	<element name="Nimbleness" type="Racial Trait" source="Old Gus' Errata: Beastfolk" id="ID_RACIAL_TRAIT_NIMBLENESS">
+		<description>
+			<p>You can move through the space of any creature that is of a size larger than yours.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any creature that is of a size larger than yours.</description>
+		</sheet>
+	</element>
+	<element name="Climber" type="Racial Trait" source="Old Gus' Errata: Beastfolk" id="ID_RACIAL_TRAIT_CLIMBER">
+		<description>
+			<p>You have a climbing speed equal to your walking speed, and when you aren’t wearing medium or heavy armor, you can descend headfirst.</p>
+		</description>
+		<sheet>
+			<description>You have a climbing speed equal to your walking speed, and when you aren’t wearing medium or heavy armor, you can descend headfirst.</description>
+		</sheet>
+		<rules>
+		<stat name="innate speed:climb" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="Sneaky" type="Racial Trait" source="Old Gus' Errata: Beastfolk" id="ID_RACIAL_TRAIT_SNEAKY">
+		<description>
+			<p>You are proficient in one of the following skills: Acrobatics, Sleight of Hand, Survival or Stealth.</p>
+		</description>
+		<sheet display="false">
+			<description>You are proficient in one of the following skills: Acrobatics, Sleight of Hand, Survival or Stealth..</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Sneaky" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+	<element name="Shadow Legacy" type="Racial Trait" source="Old Gus' Errata: Beastfolk" id="ID_RACIAL_TRAIT_SHADOW_LEGACY">
+		<description>
+			<p>Once you reach 3rd level, you can cast the darkness spell; you must finish a long rest in order to cast the spell again using this trait. When you cast the darkness spell, you are able to see normally inside of it. Once you reach 5th level, you can also cast the locate animals or plants spell; you must finish a long rest in order to cast the spell again using this trait. Wisdom is your spellcasting ability for the spells.</p>
+		</description>
+		<sheet>
+			<description level="3">You can cast the darkness spell; you must finish a long rest in order to cast the spell again using this trait. When you cast the darkness spell, you are able to see normally inside of it. (Wisdom)</description>
+			<description level="5">You can cast the darkness spell; you must finish a long rest in order to cast the spell again using this trait. When you cast the darkness spell, you are able to see normally inside of it. You can also cast the locate animals or plants spell; you must finish a long rest in order to cast the spell again using this trait. Wisdom is your spellcasting ability for the spells (Wisdom)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3"/>
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" level="5"/>
+		</rules>
+	</element>
+	<element name="Skiourosi" type="Language" source="Old Gus' Errata: Beastfolk" id="ID_LANGUAGE_SKIOUROSI">
+		<supports>Exotic</supports>
+		<description>
+			<p>Skiourosi is a chittering language of squeaks that are barely audible to most species, and is rarely spoken over distances further than 10 feet away.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Skiouros</set>
+		</setters>
+	</element>
+</elements>

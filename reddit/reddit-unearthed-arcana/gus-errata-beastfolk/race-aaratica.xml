@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Aaratica</name>
+		<update version="0.2">
+			<file name="race-Aaratica.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Aaratica" type="Race" source="Old Gus' Errata: Beastfolk" id="ID_RACE_AARATICA">
+		<description>
+			<h4>ADVENTURERS ON THE WING</h4>
+			<p>Aaratica are diminutive cousins to the aaracockra, but rather than resemble raptors or other birds of prey, they resemble other types of birds. Most aaratica fear or revere their larger brethren, and will take caution to avoid them should they encounter them in the skies.</p>
+			<p class="indent">Aaratica vary wildly, but most often live in areas where others of their kind are plentiful, or might migrate with their family, tribe or clan. In addition to flight, some are capable swimmers, and others eschew flight altogether, preferring the brisk waters of the open ocean.</p>
+			<h4>Aaratica Traits</h4>
+			
+			<p class="indent"><strong><em>Ability Score Increase. </em></strong>Your Dexterity score increases by 2.</p>
+			<p class="indent"><strong><em>Age. </em></strong>Aaratica reach maturity by age 3 and precious few live longer than 20 years.</p>
+			<p class="indent"><strong><em>Alignment. </em></strong> Most aaratica are good, and take a carefree attitude when it comes to law and chaos.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Choose one of the following subraces: Haan-Hi, Paar-Dal, or Pii-Vin.</p>
+			<p class="indent"><strong><em>Size. </em></strong>Aaratica average about 3 feet tall and weigh about 40 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed. </em></strong>You have a base walking speed of 30 feet.</p>
+			<p class="indent"><strong><em>Languages. </em></strong>You can speak, read, and write Common and Aarakocra.</p>
+
+			
+			</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2"/>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON"/>
+			<grant type="Language" id="ID_LANGUAGE_AARAKOCRA" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AARATICA_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Aaratica Subrace" type="Racial Trait" source="Old Gus' Errata: Beastfolk" id="ID_RACIAL_TRAIT_AARATICA_SUBRACE">
+		<description>
+			<p>Choose one of the following subraces: Haan-Hi, Paar-Dal, or Pii-Vin.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Aaratica Subrace" supports="Aaratica" />
+		</rules>
+	</element>
+	
+	<element name="Haan-Hi" type="Sub Race" source="Old Gus' Errata: Beastfolk" id="ID_SUB_RACE_HAAN_HI">
+		<supports>Aaratica</supports>
+		<description>
+			<p>Haan-hii resemble ducks, geese, pelicans, boobies or other waterfowl. They have a reputation for both passion and formality, and do not suffer fools gladly.</p>
+			<p class="indent"> A flock might include up to three dozen members of an extended family of haan-hi. They migrate with seasons, enjoying traditional meals that can only be enjoyed on their long journeys spent chasing warm weather around the world. They settle in places with a permanently temperate climate to rear their young until they are able to fly, and then most resume their ceaseless journeying.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Haan-hi average 3 feet tall. They have fatty, strong bodies that weigh between 25 and 35 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> You have a base walking speed of 20 feet and a flying speed of 30 feet. You can’t fly while wearing medium or heavy armor.</p>
+			<p class="indent"><strong><em>Natural Swimmer.</em></strong> You succeed checks you make to swim automatically if you aren’t wearing medium or heavy armor.</p>
+			<p class="indent"><strong><em>Compass Sense.</em></strong> If you have an unobstructed view of the sky, you know which way is north.</p>
+			<p class="indent"><strong><em>Well Traveled.</em></strong> You learn two additional languages of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">3'1"</set>
+			<set name="weight" modifier="1d4">30 lb.</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="1"/>
+			<stat name="innate speed" value="20" bonus="base" />
+			<stat name="innate speed:fly" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HAAN_HI_WELL_TRAVELED" />
+		</rules>
+	</element> 	
+	<element name="Well Traveled" type="Racial Trait" source="Old Gus' Errata: Beastfolk" id="ID_RACIAL_TRAIT_HAAN_HI_WELL_TRAVELED">
+		<description>
+			<p>You learn two additioanal languages of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>You learn two additioanal languages of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Well Traveled)" supports="Standard||Exotic" number="2"/>
+		</rules>
+	</element>
+
+	<element name="Paar-Dal" type="Sub Race" source="Old Gus' Errata: Beastfolk" id="ID_SUB_RACE_PAAR_DAL">
+		<supports>Aaratica</supports>
+		<description>
+			<p>Par-Dal resemble cockatoos, sparrows, robins, canaries, nightingales, or other birds with especially bright plumage and loud voices. They tend to be braggarts, and perhaps even a bit selfish, and have developed a reputation for being superficial gossips and chatterboxes.</p>
+			<p class="indent"> Many paar-dal are master craftsmen, and they dedicate a great deal of time and energy to the quality and finery of their home, collecting objects of great beauty to arrange and keep on display.</p>
+			<p class="indent"> Almost all paar-dal families spend countless hours singing, dancing and teaching their children to sing, and it is considered a great shame among them to not be able to sing well and have a wide repertoire of traditional songs. Others extend this love of music and learn to play a musical instrument to supplement their musical prowess.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Paar-Dal average 3 feet tall. They have lean, lightweight bodies that weigh between 20 and 30 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> You have base walking speed of 20 feet and a flying speed of 35 feet. You can’t fly while wearing medium or heavy armor.</p>
+			<p class="indent"><strong><em>Birdsong.</em></strong> You are proficient in the Performance skill and one musical instrument or artisan’s tool of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">3'1"</set>
+			<set name="weight" modifier="1d4">30 lb.</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1"/>
+			<stat name="innate speed" value="20" bonus="base" />
+			<stat name="innate speed:fly" value="35" bonus="base" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PAAR_DAL_BIRDSONG" />
+		</rules>
+	</element>
+	<element name="Birdsong" type="Racial Trait" source="Old Gus' Errata: Beastfolk" id="ID_RACIAL_TRAIT_PAAR_DAL_BIRDSONG">
+		<description>
+			<p>You are proficient in the Performance skill and one musical instrument or artisan’s tool of your choice. </p>
+		</description>
+		<sheet display="false">
+			<description>You are proficient in the Performance skill and one musical instrument or artisan’s tool of your choice. </description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<select type="Proficiency" name="Proficiency (Birdsong)" supports="Musical Instrument||Artisan tools" />
+		</rules>
+	</element>
+
+	<element name="Pii-Vin" type="Sub Race" source="Old Gus' Errata: Beastfolk" id="ID_SUB_RACE_PII_VIN">
+		<supports>Aaratica</supports>
+		<description>
+			<p class="indent"> Pii-vin resemble enormous, hardy, squat penguins. They prefer to eat fresh, raw fish, and prefer to stay along coastlines in colder climates. Most pii-vin children spend as much time in the water as they do on land.</p>
+			
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Pii-vin average 4 feet tall. They have fatty, heavy bodies that weigh between 50 and 80 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> You have a base walking speed of 25 feet and a swimming speed of 35 feet.</p>
+			<p class="indent"><strong><em>Arctic Living.</em></strong> You can hold your breath for 15 minutes and you have resistance to cold damage. Difficult terrain due to snow and ice does not impede your movement.</p>
+			<p class="indent"><strong><em>Aquatic Mastery.</em></strong> You know the shape water cantrip. Once you reach 3rd level, you can cast the ice knife spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the locate animals or plants spell if you can see a body of water; you must finish a long rest in order to cast the spell again using this trait. Wisdom is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">4'1"</set>
+			<set name="weight" modifier="1d4">50 lb.</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<stat name="innate speed:swim" value="35" bonus="base" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PII_VIN_ARCTIC_LIVING" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PII_VIN_AQUATIC_MASTERY" />
+		</rules>
+	</element>
+	<element name="Arctic Living" type="Racial Trait" source="Old Gus' Errata: Beastfolk" id="ID_RACIAL_TRAIT_PII_VIN_ARCTIC_LIVING">
+		<description>
+			<p>You can hold your breath for 15 minutes and you have resistance to cold damage. Difficult terrain due to snow and ice does not impede your movement. </p>
+		</description>
+		<sheet display="true">
+			<description>You can hold your breath for 15 minutes and you have resistance to cold damage. Difficult terrain due to snow and ice does not impede your movement. </description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<element name="Aquatic Mastery" type="Racial Trait" source="Old Gus' Errata: Beastfolk" id="ID_RACIAL_TRAIT_PII_VIN_ARCTIC_LIVING">
+		<description>
+			<p>You know the shape water cantrip. Once you reach 3rd level, you can cast the ice knife spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the locate animals or plants spell if you can see a body of water; you must finish a long rest in order to cast the spell again using this trait. Wisdom is your spellcasting ability for these spells. </p>
+		</description>
+		<sheet display="true">
+			<description>You know the shape water cantrip.  Wisdom is your spellcasting ability for this spells.</description>
+			<description level="3">You know the shape water cantrip, you can also cast the ice knife spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Wisdom is your spellcasting ability for this spells.</description>
+			<description level="5">You know the shape water cantrip. You can cast the ice knife spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. You can also cast the locate animals or plants spell if you can see a body of water; you must finish a long rest in order to cast the spell again using this trait. Wisdom is your spellcasting ability for these spells.</description>
+
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" level="3" />
+		</rules>
+	</element>
+</elements>
